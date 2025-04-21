@@ -18,6 +18,20 @@ ORG 0x7EB94
 POIN LevelUpScreenPal
 POP
 
+PUSH //test
+ORG $5B65C0
+POIN MenuTilesMain
+ORG $5B6BB4
+POIN MenuTilesPal
+POP
+
+ALIGN 4
+MenuTilesMain:
+#incext Png2Dmp --lz77 "FisherKingMenuTilesLong.png" 
+ALIGN 4
+MenuTilesPal:
+#incext Png2Dmp --palette-only "FisherKingMenuTilesLong.png"
+
 ALIGN 4
 LevelUpScreen:
 #incext Png2Dmp "Level Up Screen.png" --lz77

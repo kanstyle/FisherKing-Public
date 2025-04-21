@@ -46,16 +46,16 @@ cmp r0, r1
 bne Loop  
 SkipCheckUnitID: 
 
-ldrb r0, [r5, #1] @ class ID (which is replaced with ailment check)
+ldrb r0, [r5, #1] @ Status ID 
 cmp r0, #0 
-beq SkipCheckClassID
+beq SkipCheckStatusID
 mov r2, #0x30
 ldrb r1, [r4, r2] @ ailment data 
 mov r2, #0xF
 and r1, r2
 cmp r0, r1 
-bne Loop
-SkipCheckClassID:
+bne Loop  
+SkipCheckStatusID:
 
 ldrh r0, [r5, #2] @ flag 
 cmp r0, #0 
