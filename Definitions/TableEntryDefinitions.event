@@ -31,8 +31,14 @@
 #define Bunny 0x8
 #define YoungPrince 0x20
 #define YoungTeacher 0x21
-#define OldPrince 0x22 
+#define OldPrince 0x22
+#define Jerry 0x83
 #define Sigil 0x3B
+
+// Generic Characters
+#define SoldierChar 0x80
+#define Beast 0xAA
+#define Deserter 0x7F
 
 // Classes
 #define UpstartF EirikaLord
@@ -46,9 +52,13 @@
 #define Peer 0x73
 
 // Items
+#define BlankDesc 0x404
+
 #define LowTalon PoisonSword
 #define LowClaw ToxinLance
 #define LowTusk BrightLance
+
+#define Amygdala 0x44
 
 #define Bomb 0xC1
 #define LongFuse 0xC2

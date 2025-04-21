@@ -17,6 +17,7 @@
 [.7] = [.......]
 [Beat] = [ToggleMouthMove]...[.4][ToggleMouthMove]
 [b] = [Beat]
+[4] = [.4]
 [Event] = [LoadOverworldFaces]
 [OpenQuote] = [0xC2][0x93]
 [CloseQuote] = [0xC2][0x94]
@@ -104,6 +105,9 @@
 [LoadCivWomanTeen] = [LoadFace][0x61][0x1]
 [LoadCivWomanTeenBlackHair] = [LoadFace][0x62][0x1]
 [LoadCivGirl] = [LoadFace][0x63][0x1]
+
+[LoadPurpleSoldier] = [LoadFace][0x70][0x1]
+[LoadPurpleFighter] = [LoadFace][0x6C][0x1]
 
 [tmm] = [ToggleMouthMove]
 [ts] = [ToggleSmile]

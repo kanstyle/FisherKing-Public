@@ -188,17 +188,14 @@ And humans were not welcome there.[A][X]
 [ml]
 We've arrived, sire.[....] But the fog...[AN]
 There's no telling what manner of[n]
-creatures hide in it.[AN]
+creatures hide in it.[A]
 
 [mr]
 Yes, they say these hills crawl with[n]
 all manner of fearsome things.[AN]
 Fear, fear...[AN]
-Never fear, my friend.[....] Our promising[n]
-successors will repel whatever comes.[A]
-That blue-haired boy...[....] Why, he's the[n]
-moppet you plucked from obscurity,[AN]
-isn't he?[AN]
+Never fear, my friend.[....] My promising[n]
+successor will repel whatever comes.[A]
 
 [ml]
 Indeed.[.....] He defeated my brother on[n]
@@ -235,8 +232,8 @@ Placeholder.[A][X]
 
 ## Ch0TutorialStart
 
-[ml][LoadYoungPrince]
-[mr][LoadYoungTeacher]
+[mr][LoadYoungPrince]
+[ml][LoadYoungTeacher]
 Tutorial start.[A][X]
 
 ## Ch0TutorialStage1ScrollText
@@ -263,29 +260,71 @@ Stage 2 tutorial placeholder.[A][X]
 
 ## Ch0TutorialStage3
 
-[mr][LoadYoungTeacher]
-Tutorial stage 3.[A][X]
+[mr][LoadPurpleSoldier]
+[ml][LoadPurpleFighter]
+Hey...[....] Need...[....] the staff...[A]
 
-## Ch0TutorialStage3ComeBack
+[mr]
+Huh?[....] Jerry?[....] You don't look so good.[N]
+Wait...[....] Wait![....] Don't tell me you...![AN]
 
-[mr][LoadYoungTeacher]
-Tutorial stage 3[N]
-come back.[A][X]
+[ml]
+I only brought...[....] one sandwich...[....] I had to...[A]
+
+[mr]
+You can't just eat things off the ground![N]
+In the LOWLANDS![AN]
+You're so stupid![A]
+
+[ml]
+Not...[....] stupid...[A] Hun...gry...[N]
+Bleh![AN][X]
+
+## Ch0JerryNo
+
+[mr][LoadPurpleSoldier][MoveMidRight]
+JERRY![A][X]
+
+
+## Ch0JerryComeBack
+
+[ml][LoadPurpleFighter]
+Gurgle...[....] guh...[A]
+[CloseSpeechSlow][ClearFace]
+
+[mr][LoadPurpleSoldier][MoveMidRight]
+No, I can't leave now.[N]
+Jerry's life is in my hands![AN][X]
 
 ## Ch0TutorialStage3ScrollText
 
 Stage 3 tutorial placeholder.[A][X]
 
+## Ch0OldPrinceAppears
+
+[ml][LoadOldPrince][ToggleSmile]
+Oh, yes.[....] It's as I dreamed.[AN]
+The spirits of the dead frolic[N]
+in these lands, I hear...[AN]
+Perhaps these dreary hills are a[N]
+sacred place of rest and rebirth.[AN]
+How pleasant that would be...[A][CloseSpeechSlow]
+[ClearFace]
+
+[mr][LoadYoungPrince][ToggleSmile]
+Father![A][X]
+
 ## Ch0OldPrinceYoungPrinceTalk
 
-[mr][LoadYoungPrince]
+[r][LoadYoungPrince]
+[fr][LoadYoungTeacher]
 [ml][LoadOldPrince]
 Placeholder.[A][X]
 
 ## Ch0DefendAlertScrollText
 
-The Lowland beasts will arrive
-next turn. Position your troops well
+The Lowland beasts will arrive[N]
+next turn. Position your troops well[N]
 to weather the assault.[A][X]
 
 

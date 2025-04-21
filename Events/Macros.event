@@ -64,7 +64,7 @@
 #define CameraLong(character,time) "CAM1 character; STAL 20; FlashCursor(character,time)"
 #define CameraMove(character) "CAM1 [character]"
 #define CameraCursorLocation(X,Y,time) "CAMERA [X,Y]; STAL 20; FlashCursor(X,Y,time)"
-#define Highlight(character) "CUMO [character]; STAL 60; CURE"
+#define Highlight(character) "CUMO character; STAL 60; CURE"
 #define MusicChange(song) "MUSC song"
 #define Music(song) "MUSC song"
 #define PlayHisWorld "MUSC HisWorld" //Need to add His World/define it first lol

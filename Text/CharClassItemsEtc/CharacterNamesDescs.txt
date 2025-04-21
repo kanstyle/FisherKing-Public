@@ -61,6 +61,18 @@ Soldier[X]
 ## SoldierDesc
 Placeholder.[X]
 
+## DeserterName
+Deserter[X]
+
+## DeserterDesc
+Placeholder.[X]
+
+## BeastName
+Beast[X]
+
+## BeastDesc
+Placeholder.[X]
+
 ## OldPrinceName
 Elder Prince[X]
 
@@ -71,6 +83,12 @@ Placeholder.[X]
 Teacher[X]
 
 ## YoungTeacherDesc
+Placeholder.[X]
+
+## JerryName
+Jerry[X]
+
+## JerryDesc
 Placeholder.[X]
 
 ## SigilCharName

@@ -4,12 +4,17 @@ TutorialEventCompletionFlag := 0x10
 Stage1SoldierBattled := 0x7
 Stage1SoldierBattledLabel := 0x1
 
-Stage2CompleteFlag := 0x11
+Stage2BeganFlag := 0x11
 Stage2BeganCheckLabel := 0x11
 Stage2StartLabel := 0x2
 
 Stage2SoldierBattled := 0x8
-StageEndLabel := 0x3
+Stage2EndLabel := 0x3
+
+Stage3BeganFlag := 0x14
+Stage3StartLabel := 0x13
+Stage3CompleteFlag := 0x12
+Stage3EndLabel := 0x14
 
 TurnOffCompletionFlagAndEndLabel := 0x8
 EndLabel := 0x0
@@ -76,20 +81,22 @@ GreenSoldiers:
 	
 	UNIT 0x80 Warrior 0x40 Level(1,NPC,True)     [5,10] 0b 0x0 0x0 0x0 [SteelAxe,IronBow] DoNothingAI
 	UNIT 0x80 Fighter 0x40 Level(1,NPC,True)     [3,10] 0b 0x0 0x0 0x0 [IronAxe] DoNothingAI
-	UNIT 0x80 Fighter 0x40 Level(1,NPC,True)     [11,10] 0b 0x0 0x0 0x0 [IronAxe] DoNothingAI
 	UNIT 0x80 Sniper 0x40 Level(1,NPC,True)     [1,8] 0b 0x0 0x0 0x0 [SteelBow] DoNothingAI
 	UNIT 0x80 Sniper 0x40 Level(1,NPC,True)     [12,7] 0b 0x0 0x0 0x0 [SteelBow] DoNothingAI
 	UNIT 0x80 Soldier 0x40 Level(1,NPC,True)     [6,9] 0b 0x0 0x0 0x0 [IronLance] DoNothingAI
 	UNIT 0x80 Soldier 0x40 Level(1,NPC,True)     [8,9] 0b 0x0 0x0 0x0 [IronLance] DoNothingAI
 	UNIT 0x80 Knight 0x40 Level(1,NPC,True)     [2,9] 0b 0x0 0x0 0x0 [IronLance] DoNothingAI
 	UNIT 0x80 Knight 0x40 Level(1,NPC,True)     [12,9] 0b 0x0 0x0 0x0 [IronLance] DoNothingAI
+	
+	UNIT Jerry Fighter 0x40 Level(1,NPC,True)     [11,10] 0b 0x0 0x0 0x0 [IronAxe] DoNothingAI
+	UNIT 0x84 Priest 0x40 Level(1,NPC,True)     [12,11] 0b 0x0 0x0 0x0 [Restore,Heal] DoNothingAI
 	UNIT
 	
 	//UNIT 0x80 Fighter 0x40 Level(1,NPC,True)     [12,9] 0b 0x0 0x0 0x0 [IronLance] DoNothingAI
 	//Young Hero
 	
 OldPrinceUnit:
-	UNIT OldPrince Peer 0x40 Level(1,NPC,True)     [2,13] 0b 0x0 0x1 REDA4R13 [] DoNothingStationaryAI
+	UNIT OldPrince Peer 0x40 Level(1,NPC,True)     [2,13] 0b 0x0 0x0 0x0 [] DoNothingStationaryAI
 	UNIT
 
 EnemyUnits:
@@ -103,6 +110,7 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
+
 	FadeOutMusic
 	SetBackgroundSlow(ButterflyInverted)
 	STAL 60
@@ -159,6 +167,7 @@ BeginningScene:
 	CenterTextbox(Ch0TutorialStage1FlankingScrollText)
 	ENDA
 	
+ALIGN 4
 TutorialEvent:
 	FlagNotSet(Stage1SoldierBattled,Stage1SoldierBattledLabel)
 		Highlight(YoungTeacher)
@@ -174,8 +183,7 @@ TutorialEvent:
 		GOTO TurnOffCompletionFlagAndEndLabel
 	
 	LABEL Stage1SoldierBattledLabel
-	LABEL Stage2StartLabel
-	FlagNotSet(Stage2CompleteFlag,Stage2BeganCheckLabel)
+	FlagNotSet(Stage2BeganFlag,Stage2StartLabel)
 		UNCR(YoungPrince,0x2) //stage 2 begins
 		SET_ACTIVE 0x0
 		Highlight(YoungTeacher)
@@ -185,11 +193,11 @@ TutorialEvent:
 		CUSE 0x82
 		STAL 15
 		CenterTextbox(Ch0TutorialStage2ScrollText)
-		SetFlag(Stage2CompleteFlag)
+		SetFlag(Stage2BeganFlag)
 		GOTO TurnOffCompletionFlagAndEndLabel
 		LABEL Stage2StartLabel
 		
-	FlagNotSet(Stage2SoldierBattled, StageEndLabel)
+	FlagNotSet(Stage2SoldierBattled,Stage2EndLabel)
 	FlagIsSet(Stage1SoldierBattled,TurnOffCompletionFlagAndEndLabel)
 		Highlight(YoungTeacher)
 		Text(Ch0TutorialComeBack) //come back!
@@ -201,15 +209,27 @@ TutorialEvent:
 		UNCR(YoungPrince, AlreadyMoved)
 		UNCR(YoungPrince, Hide)
 		UNCM(YoungTeacher, AlreadyMoved)
-		SVAL 1 YoungTeacher; SVAL 3 0x2; ASMC UNCR
 		GOTO TurnOffCompletionFlagAndEndLabel
-		LABEL StageEndLabel
+		LABEL Stage2EndLabel
 		
-	FlagNotSet(Stage2SoldierBattled,TurnOffCompletionFlagAndEndLabel)
+	FlagIsSet(Stage2SoldierBattled,TurnOffCompletionFlagAndEndLabel)
+	FlagNotSet(Stage3BeganFlag,Stage3StartLabel)
+		SET_ACTIVE 0
 		UNCR(YoungPrince,0x2)
+		UNCR(YoungTeacher,0x2)
 		STAL 45
+		CAMERA [2,13]
+		
 		LOAD1 0x1 OldPrinceUnit
 		ENUN
+		STAL 30
+		Highlight(OldPrince)
+		STAL 30
+		Text(Ch0OldPrinceAppears)
+		
+		MOVE 5 YoungPrince [3,13]
+		ENUN
+		
 		Highlight(OldPrince)
 		Text(Ch0OldPrinceYoungPrinceTalk)
 		CUSA 0x81
@@ -221,8 +241,6 @@ TutorialEvent:
 		SCOORD sB [5,10]
 		CUSA UnitAtCoordsSlotB
 		SCOORD sB [3,10]
-		CUSA UnitAtCoordsSlotB
-		SCOORD sB [11,10]
 		CUSA UnitAtCoordsSlotB
 		SCOORD sB [1,8]
 		CUSA UnitAtCoordsSlotB
@@ -236,7 +254,31 @@ TutorialEvent:
 		CUSA UnitAtCoordsSlotB
 		SCOORD sB [12,9]
 		CUSA UnitAtCoordsSlotB
-		SetFlag(Stage2CompleteFlag)
+		CUSA Jerry
+		CUSA 0x84
+		SetFlag(Stage3BeganFlag)
+		
+		//stage 3 tutorial
+		STAL 30
+		Highlight(Jerry)
+		STAL 30
+		Text(Ch0TutorialStage3)
+		SVAL 0x1 Jerry
+		SVAL 0x6 0x255
+		ASMC ASMC_SelfDamageLikeBomb|1
+		ENUN
+		
+		UNCM(Jerry,0x2)
+		UNCR(Jerry,0x1)
+		UNCR(Jerry,0x4)
+		SetUnitStatus(Jerry,CurrentHP,1)
+		SetUnitStatus(Jerry,BadStatusType,0xB) //manually petrify jerry
+		
+		Text(Ch0JerryNo)
+		CenterTextbox(Ch0TutorialStage3ScrollText)
+		GOTO TurnOffCompletionFlagAndEndLabel
+		LABEL Stage3StartLabel
+		
 		CenterTextbox(Ch0DefendAlertScrollText)
 		
 		GOTO EndLabel
