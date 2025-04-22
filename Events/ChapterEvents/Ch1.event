@@ -72,6 +72,7 @@ BeginningScene:
 	ENUN
 	LOAD1 0x1 Units1
 	ENUN
+	NoFade
 	ENDA
 
 EndingScene:
