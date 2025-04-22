@@ -19,10 +19,32 @@ POIN LevelUpScreenPal
 POP
 
 PUSH //test
-ORG $5B65C0
+ORG $5B6470
 POIN MenuTilesMain
-ORG $5B6BB4
+ORG $036D2C //main palette
 POIN MenuTilesPal
+
+ORG $5B6450 //pointer 1
+POIN MenuTilesPal
+
+ORG $9A8D8 //Preps Extra
+POIN PrepsExtraGfx
+
+ORG $98468 //Preps Extra 2
+POIN PrepsExtra2Gfx
+
+ORG $0B4E70 //Preps Extra 3
+POIN PrepsExtra3Gfx
+
+ORG $09C7FC //Use Menu
+POIN UseMenu
+
+ORG $09C7FC //Minimug Box Numbers
+POIN MinimugBoxNumbers
+
+ORG $09C7FC //Minimug Box Hp Bar
+POIN MinimugBoxHPBar
+
 POP
 
 ALIGN 4
@@ -31,6 +53,32 @@ MenuTilesMain:
 ALIGN 4
 MenuTilesPal:
 #incext Png2Dmp --palette-only "FisherKingMenuTilesLong.png"
+
+ALIGN 4
+PrepsExtraGfx:
+#incext Png2Dmp --lz77 "FisherKingPrepsExtra.png" 
+
+ALIGN 4
+PrepsExtra2Gfx:
+#incext Png2Dmp --lz77 "FisherKingPrepsExtra2.png" 
+
+ALIGN 4
+PrepsExtra3Gfx:
+#incext Png2Dmp --lz77 "FisherKingPrepsExtra3.png" 
+
+ALIGN 4
+UseMenu:
+#incext Png2Dmp --lz77 "FisherKingUseMenu.png" 
+
+ALIGN 4
+MinimugBoxNumbers:
+#incext Png2Dmp --lz77 "FisherKingMinimugBoxNumbers.png"
+
+ALIGN 4
+MinimugBoxHPBar:
+#incext Png2Dmp --lz77 "FisherKingMinimugBoxHPBar.png"
+
+
 
 ALIGN 4
 LevelUpScreen:
@@ -42,3 +90,85 @@ LevelUpScreenTSA:
 ALIGN 4
 LevelUpScreenPal:
 #incbin "Level Up Screen.png.pal.dmp"
+
+/*NAME=<<Menu GFX>>
+
+TYPE=IMAGE
+
+WIDTH=256
+HEIGHT=32
+
+ZIMAGE_POINTER=0x5B6470//0x5B65C0
+PALETTE_POINTER=0x036D2C//0x5B6BB4
+
+
+
+NAME=<<Preps extra GFX>>
+
+TYPE=IMAGE
+
+WIDTH=120
+HEIGHT=8
+
+ZIMAGE_POINTER=0x09A8D8//0xA1B730
+PALETTE_POINTER=0x036D2C//0x5B6BB4
+
+
+
+NAME=<<Preps Extra GFX 2>>
+
+TYPE=IMAGE
+
+WIDTH=256
+HEIGHT=32
+
+ZIMAGE_POINTER=0x098468//0x015645B0
+PALETTE_POINTER=0x098470//0xA1B638
+
+
+
+NAME=<<Preps Extra GFX 3>>
+
+TYPE=IMAGE
+
+WIDTH=144
+HEIGHT=8
+
+ZIMAGE_POINTER=0x0B4E70//0x9AD9F8
+PALETTE_POINTER=0x036D2C//0x5B6BB4
+
+
+
+NAME=<<Preps Use Menu GFX>>
+
+TYPE=IMAGE
+
+WIDTH=24
+HEIGHT=8
+
+ZIMAGE_POINTER=0x09C7FC//0xA1BAB8
+PALETTE_POINTER=0x036D2C//0x5B6BB4
+
+
+
+NAME=<<Minimug Box Numbers>>
+
+TYPE=IMAGE
+
+WIDTH=80
+HEIGHT=8
+
+ZIMAGE_POINTER=0x08D0B4//0xA16D6C
+PALETTE_POINTER=0x036D2C//0x5B6BB4
+
+
+
+NAME=<<Minimug Box HP Bar GFX>>
+
+TYPE=IMAGE
+
+WIDTH=256
+HEIGHT=32
+
+ZIMAGE_POINTER=0x08D0AC//0xA167C8
+PALETTE_POINTER=0x036D2C//0x5B6BB4
