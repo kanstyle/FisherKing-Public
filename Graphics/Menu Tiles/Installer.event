@@ -24,6 +24,72 @@ POIN MenuTilesMain
 ORG $036D2C //main palette
 POIN MenuTilesPal
 
+ORG 0x36D2C
+POIN MenuTilesPal
+ORG 0x36D34
+POIN MenuTilesPalRed
+ORG 0x36D3C
+POIN MenuTilesPalGreen
+ORG 0x36D48
+POIN MenuTilesPalGray
+
+// Dark Palette
+ORG 0xCEF08
+POIN MenuTilesPal
+
+ORG 0x5B6450
+// Palletes
+POIN MenuTilesPal
+POIN MenuTilesPalRed
+POIN MenuTilesPalGreen
+POIN MenuTilesPalGray
+
+// For the stat screen
+POIN MenuTilesMain
+POIN MenuTilesMain
+POIN MenuTilesMain
+POIN MenuTilesMain
+
+// For each color style
+POIN MenuTilesMain
+POIN MenuTilesMain
+POIN MenuTilesMain
+POIN MenuTilesMain
+
+// For the Minimug Box
+ORG 0x8C2EC
+POIN MenuTilesPal
+ORG 0x8C2F4
+POIN MenuTilesPalRed
+ORG 0x8C2FC
+POIN MenuTilesPalGreen
+
+// Battle Forecast
+ORG 0x36D2C
+POIN MenuTilesPal
+ORG 0x36D34
+POIN MenuTilesPalRed
+ORG 0x36D3C
+POIN MenuTilesPalGreen
+ORG 0x36D48
+POIN MenuTilesPalGray
+
+// Battle Stats Anims Off
+ORG 0x7BDF8
+POIN MenuTilesPal
+ORG 0x7BE00
+POIN MenuTilesPalRed
+ORG 0x7BE08
+POIN MenuTilesPalGreen
+ORG 0x7BE10
+POIN MenuTilesPalGray
+
+// Prep Menu Items Unit Header
+ORG 0x98468
+//POIN BobPrepMenuItemsUnitHeader
+ORG 0x98528
+POIN MenuTilesPal
+
 ORG $5B6450 //pointer 1
 POIN MenuTilesPal
 
@@ -53,6 +119,12 @@ MenuTilesMain:
 ALIGN 4
 MenuTilesPal:
 #incext Png2Dmp --palette-only "FisherKingMenuTilesLong.png"
+MenuTilesPalRed:
+#incext Png2Dmp --palette-only "FisherKingMenuTilesLongRed.png"
+MenuTilesPalGreen:
+#incext Png2Dmp --palette-only "FisherKingMenuTilesLongGreen.png"
+MenuTilesPalGray:
+#incext Png2Dmp --palette-only "FisherKingMenuTilesLongGray.png"
 
 ALIGN 4
 PrepsExtraGfx:
@@ -171,4 +243,4 @@ WIDTH=256
 HEIGHT=32
 
 ZIMAGE_POINTER=0x08D0AC//0xA167C8
-PALETTE_POINTER=0x036D2C//0x5B6BB4
+PALETTE_POINTER=0x036D2C//0x5B6BB4*/

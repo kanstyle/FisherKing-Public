@@ -6,6 +6,7 @@
 
 #include "Extensions/Hack Installation.txt"
 #include "Necessary/PopupRework/Extensions/PopupDefinitions.txt"
+#include "Edits.txt"
 
 // hack configuration file
 #include "Config.event"

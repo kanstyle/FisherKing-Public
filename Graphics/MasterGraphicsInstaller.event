@@ -9,3 +9,20 @@
 #include "Statscreen/StatscreenInstaller.event"
 #include "Menu Tiles/Installer.event"
 
+PUSH
+
+//Preps bg
+ORG $2008C
+POIN PrepsBG
+
+ORG $20088
+POIN PrepsBGPal
+
+POP
+
+ALIGN 4
+PrepsBG:
+#incext Png2Dmp --lz77 "PrepsBG.png" 
+ALIGN 4
+PrepsBGPal:
+#incext Png2Dmp --palette-only "PrepsBG.png" 
