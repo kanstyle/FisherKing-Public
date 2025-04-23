@@ -52,6 +52,20 @@
 #define Peer 0x73
 
 // Items
+#define Sword 0x0
+#define Lance 0x1
+#define Axe 0x2
+#define Bow 0x3
+#define Staff 0x4
+#define Anima 0x5
+#define Light 0x6
+#define Dark 0x7
+#define Item 0x9
+#define Monster 0xB
+#define Ring 0xC
+#define Dragonstone 0x11
+#define DancerRing 0x12
+
 #define BlankDesc 0x404
 
 #define LowTalon PoisonSword
@@ -61,7 +75,7 @@
 #define Amygdala 0x44
 
 #define Bomb 0xC1
-#define LongFuse 0xC2
+#define LongFuseBomb 0xC2
 #define HeavyBomb 0xC3
 #define StickyBomb 0xC4
 #define Firebomb 0xC5

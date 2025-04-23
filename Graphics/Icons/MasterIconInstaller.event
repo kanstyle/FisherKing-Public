@@ -4,11 +4,34 @@
     #define SetIcon(ID) "ORG NewIconTable + ID * 128"
 #endif
 
+#define ItemIconEntry(ItemIconID) "NewItemIcons + (ItemIconID*128)"
+
+PUSH
+ORG $36B4
+POIN NewItemIcons
+ORG $3788
+POIN NewItemIcons
+POP
+
+ALIGN 4
+NewItemIcons:
+FILL 256*128
+
 //#define ItemIconSlot(slot,path) "ORG 0x5926F4+(0x80*slot); #incext Png2Dmp path"
-#define ItemIconSlot(slot,path) "ORG NewIconTable+(0x80*slot); #incext Png2Dmp path"
+#define ItemIconSlot(slot,path) "ORG NewItem+(0x80*slot); #incext Png2Dmp path"
 
 //#include "ExternalIconSheets/ExternalSheetInstaller.event"
 
 PUSH
 //ItemIconSlot(0x1,"png/SwiftSword_Beansy.png") // slim sword
+ItemIconSlot(Bomb,"png/Bomb.png")
+ItemIconSlot(HeavyBomb,"png/HeavyBomb.png")
+ItemIconSlot(LongFuseBomb,"png/LongFuseBomb.png")
+ItemIconSlot(StickyBomb,"png/StickyBomb.png")
+ItemIconSlot(Firebomb,"png/Firebomb.png")
+ItemIconSlot(PowderShell,"png/PowderShell.png")
+ItemIconSlot(ClusterBomb,"png/ClusterBomb.png")
+ItemIconSlot(PowderKeg,"png/PowderKeg.png")
+ItemIconSlot(RedHornet,"png/RedHornet.png")
+ItemIconSlot(GoldHornet,"png/GoldHornet.png")
 POP

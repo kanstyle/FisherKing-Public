@@ -3,9 +3,100 @@
 Bomb[X]
 
 
-## BombDesc
+## BombDesc ^
 
 Standard bomb. Fixed attack power. Hits Res.[X]
+
+
+## HeavyBombName
+
+Heavy Bomb[X]
+
+
+## HeavyBombDesc
+
+Fixed attack power. Hits Res.[X]
+
+
+## LongFuseBombName
+
+Long-Fuse[X]
+
+
+## LongFuseBombDesc
+
+Fixed attack power. Hits Res.[X]
+
+
+## PowderShellName
+
+Powder Shell[X]
+
+
+## PowderShellDesc
+
+Fixed attack power. Hits Res.[X]
+
+
+## FirebombName
+
+Firebomb[X]
+
+
+## FirebombDesc
+
+Eff. vs. [horse]. Fixed attack power. Hits Res.[X]
+
+
+## StickyBombName
+
+Sticky Bomb[X]
+
+
+## StickyBombDesc
+
+Eff. vs. [armor]. Fixed attack power. Hits Res.[X]
+
+
+## ClusterBombName
+
+Cluster Bomb[X]
+
+
+## ClusterBombDesc ^
+
+Brave. Fixed attack power. Hits Res.[X]
+
+
+## PowderKegName
+
+Powder Keg[X]
+
+
+## PowderKegDesc
+
+Fixed attack power. Hits Res.[X]
+
+
+## RedHornetName
+
+Red Hornet[X]
+
+
+## RedHornetDesc
+
+Fixed attack power. Hits Res.[X]
+
+
+## GoldHornetName
+
+Gold Hornet[X]
+
+
+## GoldHornetDesc
+
+Fixed attack power. Hits Res.[X]
+
 
 
 ## AmygdalaName
