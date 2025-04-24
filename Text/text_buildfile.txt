@@ -133,3 +133,4 @@ a skill when used.[X]
 #include "ChapterText/Ch0.txt"
 #include "ChapterText/Ch1.txt"
 #include "ChapterText/Ch3.txt"
+#include "ChapterText/Ch4.txt"
