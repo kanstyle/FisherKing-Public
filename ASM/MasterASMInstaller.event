@@ -14,6 +14,7 @@
 #include "EmotionBubble/Show_map_emotion_Install.event"
 #include "ExtendedDestruction/Installer.event"
 #include "ASMCCheckSuite/ASMC Check Installer.event"
+#include "FixedDamageWeapons/FixedDamageWeapons.event" //credit to sme
 //#include "CritSystem/Installer.event"
 
 //#include "CBaseConvos/BaseConvos.event" //credit to snek

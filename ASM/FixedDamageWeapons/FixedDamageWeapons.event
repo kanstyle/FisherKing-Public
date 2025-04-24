@@ -1,0 +1,19 @@
+
+#ifdef USE_FIXED_DAMAGE_WEAPONS
+
+#include "FixedDamageWeapons.lyn.event"
+
+FixedDamageWeaponList:
+BYTE Bomb
+BYTE HeavyBomb
+BYTE Firebomb
+BYTE StickyBomb
+BYTE LongFuseBomb
+BYTE PowderShell
+BYTE ClusterBomb
+BYTE RedHornet
+BYTE GoldHornet
+BYTE 0
+
+
+#endif // USE_FIXED_DAMAGE_WEAPONS
