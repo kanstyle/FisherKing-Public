@@ -26,16 +26,10 @@
 @echo Bows generated!
 @del png.txt
 
-@cd "%~dp0\Anima"
+@cd "%~dp0\Tomes"
 @dir *.png /b > png.txt
 @for /f "tokens=*" %%m in (png.txt) do ("%Png2Dmp%" "%%~m")
-@echo Anima generated!
-@del png.txt
-
-@cd "%~dp0\Light"
-@dir *.png /b > png.txt
-@for /f "tokens=*" %%m in (png.txt) do ("%Png2Dmp%" "%%~m")
-@echo Light generated!
+@echo Tomes generated!
 @del png.txt
 
 @cd "%~dp0\Dark"
@@ -54,6 +48,12 @@
 @dir *.png /b > png.txt
 @for /f "tokens=*" %%m in (png.txt) do ("%Png2Dmp%" "%%~m")
 @echo Items and Prfs generated!
+@del png.txt
+
+@cd "%~dp0\Bombs"
+@dir *.png /b > png.txt
+@for /f "tokens=*" %%m in (png.txt) do ("%Png2Dmp%" "%%~m")
+@echo Bombs generated!
 @del png.txt
 
 echo Done!

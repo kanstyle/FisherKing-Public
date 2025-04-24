@@ -1,5 +1,5 @@
 #include "Portraits/MasterPortraitInstaller.event"
-#include "ItemIcons/MasterItemIconsInstaller.event"
+#include "ItemIcons/ItemIconInstaller.event"
 #include "ClassCards/MasterClassCardInstaller.event"
 #include "BattleAnimations/MasterBattleAnimationInstaller.event"
 #include "MapAnimations/MasterMapSpriteInstaller.event"
