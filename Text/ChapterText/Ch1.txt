@@ -72,3 +72,21 @@ across her face.[A][X]
 
 [r]
 Name's Dragon.[X]
+
+
+## Ch1Village1Text
+
+[ml][LoadFace][0xFFFF]
+[mr][LoadCivManBald]
+
+[mr]
+Placeholder.[A][X]
+
+
+## Ch1Village2Text
+
+[ml][LoadFace][0xFFFF]
+[mr][LoadCivManBald]
+
+[mr]
+Placeholder.[A][X]

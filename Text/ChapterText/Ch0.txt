@@ -228,48 +228,111 @@ Let it be the final debt I owe to you.[A][X]
 ## Ch0PrinceMonologue
 
 [mr][LoadYoungPrince]
-Placeholder.[A][X]
+[Beat][AN][tmm][CloseEyes]
+(Remember your role.)[AN]
+(Remember your role.)[AN]
+(Remember... The outcome of each hardship[N]
+is in your hands, and yours above all.)[AN][css][OpenEyes]
+(These are my troops.[4] I see.[4][N]
+I can work with this.)[AN][ts]
+(Yes![4] I shall be just fine! And I'll return[N]
+home to see the look on Hero's face!)[AN]
+(A-and Eagle's stunning smile![4][N]
+If I'm lucky!)[AN]
+(And Father...[4] will...[4][AN][ts]
+...Father...)[A][X]
 
 ## Ch0TutorialStart
 
 [mr][LoadYoungPrince]
 [ml][LoadYoungTeacher]
-Tutorial start.[A][X]
+My prince![4] How fare you?[A]
+
+[mr]
+I'm...[4] faring just fine, thank you.[N]
+Is Father well?[A]
+
+[ml]
+Yes.[4] You've nothing to fear.[4][N]
+Focus on your duty, sire.[A]
+
+[mr]
+...Do you think I could--[A]
+
+[ml]
+Sire.[A]
+
+[mr]
+...Right.[4] The outcome of each[N]
+hardship is in my hands.[AN][CloseEyes]
+And mine above all.[A][OpenEyes]
+
+[ml][ts]
+Very good.[4][ts][AN]
+We've time yet before any beasts arrive.[N]
+I want to see your close-quarters form.[A]
+
+[mr]
+Yes, Teacher.[A][css][ClearFace]
+
+[r][LoadPurpleSoldier]
+[fr][LoadPurpleFighter]
+
+[ml]
+You two![4] You'll be his[N]
+sparring partners.[A]
+
+[r]
+S-Sir![A][X]
+
 
 ## Ch0TutorialStage1ScrollText
 
-Stage 1 tutorial placeholder.[A][X]
+[ToggleRed]Crit System Tutorial:[ToggleRed][N]
+In this game, if a unit has over 50[N]
+displayed Crit, the first hit [ToggleRed]that[N]
+connects[ToggleRed] will [ToggleRed]always[ToggleRed] be critical.[AN]
+Conversely, hits with less than 50[N]
+displayed crit will [ToggleRed]never[ToggleRed] be critical.[A][X]
 
 ## Ch0TutorialStage1FlankingScrollText
 
-Stage 1 tutorial placeholder.[A][X]
+Furthermore, each ally adjacent to[N]
+the target ([OpenQuote]flanking") will grant[N]
++20 Crit.[N]
+Try attacking with the Princeling's[N]
+40-crit Rapier.[A][X]
 
 ## Ch0TutorialComeBack
 
 [mr][LoadYoungTeacher]
-What're you doing?[A][X]
+Prince![4] Where are you going?[A][X]
 
 ## Ch0TutorialStage2
 
 [mr][LoadYoungTeacher]
-Continue tutorial.[A][X]
+Formidable![4] Let's see how you fare[N]
+alone, then.[A][X]
 
 ## Ch0TutorialStage2ScrollText
 
-Stage 2 tutorial placeholder.[A][X]
+Weapon triangle advantage grants[N]
++20 Hit and +2 Attack, and +15 Crit.[N]
+With 40 Crit, the Rapier can critically hit[N]
+axe-users without any flanking allies.[A][X]
 
 ## Ch0TutorialStage3
 
 [mr][LoadPurpleSoldier]
 [ml][LoadPurpleFighter]
-Hey...[....] Need...[....] the staff...[A]
+Hey...[4] Need...[4] the staff...[A]
 
 [mr]
-Huh?[....] Jerry?[....] You don't look so good.[N]
-Wait...[....] Wait![....] Don't tell me you...![AN]
+Huh?[4] Jerry?[4] You don't look so good.[N]
+Wait...[4] Wait![4] Don't tell me you...![AN]
 
 [ml]
-I only brought...[....] one sandwich...[....] I had to...[A]
+I only brought...[4] one sandwich...[4] I had to...[A]
 
 [mr]
 You can't just eat things off the ground![N]
@@ -277,8 +340,8 @@ In the LOWLANDS![AN]
 You're so stupid![A]
 
 [ml]
-Not...[....] stupid...[A] Hun...gry...[N]
-Bleh![AN][X]
+Not...[4] stupid...[A] Hun...gry...[N]
+[4][4]Bleh![A][X]
 
 ## Ch0JerryNo
 
@@ -298,7 +361,12 @@ Jerry's life is in my hands![AN][X]
 
 ## Ch0TutorialStage3ScrollText
 
-Stage 3 tutorial placeholder.[A][X]
+In this game, when player units reach[N]
+0 HP, they will not die.[AN]
+Instead, they enter a [Red]Dying[Red] state and must[N]
+be healed with a [Red]Restore[Red] staff before 3[N]
+turns are up.[AN]
+Otherwise, they will die permanently.[A][X]
 
 ## Ch0OldPrinceAppears
 
@@ -318,43 +386,185 @@ Father![A][X]
 
 [r][LoadYoungPrince]
 [fr][LoadYoungTeacher]
-[ml][LoadOldPrince]
-Placeholder.[A][X]
+[ml][LoadOldPrince][ts]
+Ah, my son.[4] You walk with[N]
+wonderful poise.[A][ts]
+
+[r]
+...Yes, Father.[4] I no longer feel out[N]
+of place on the battlefield.[A]
+
+[ml]
+Yet your worries eat away at you, do they[N]
+not?[4] You have something to ask me.[A]
+
+[r]
+I...[4] yes. I wanted to ask Teacher,[N]
+actually.[A]
+
+[fr]
+Oh?[4] What is it, sire?[A]
+
+[r]
+When Father...[4] is gone...[N]
+Will you remain with me, in the capital?[AN]
+Without you as an...[4] advisor, I fear[N]
+the challenges ahead will be--[A]
+
+[fr]
+I...[A]
+
+[ml]
+My son.[4] Is this a question, or an order?[A]
+
+[r]
+It's a request.[A]
+
+[ml]
+Answer freely, Teacher.[4] You've played your[N]
+role masterfully for many years.[AN]
+You've more than enough right to choose[N]
+that which will make your life complete.[A]
+
+[r]
+[Beat][A][X]
+
+
+## Ch0DontRemember
+
+I don't remember how I answered.[A][X]
+
 
 ## Ch0DefendAlertScrollText
 
-The Lowland beasts will arrive[N]
-next turn. Position your troops well[N]
-to weather the assault.[A][X]
+The Lowland beasts will arrive soon.[N]
+Position your troops, then end your[N]
+turn when you're ready.[A][X]
 
 
+## Ch0FogBreaks
 
-## Ch0PrinceHeroIntro
+[mr][LoadYoungPrince]
+Ready yourselves, soldiers![N]
+The fog is breaking![A][X]
 
-[ml][LoadYoungHero]
-[mr][LoadYoungPrince][CloseEyes]
 
-[ml][ToggleSmile]
-Hey.[....] Lost in thought?[AN][CloseSpeechSlow]
-
-[mr][ToggleSmile][OpenEyes][MoveMidRight]
-Ah![AN]
-...Mm.[....] You caught me, I suppose.[AN]
+## Ch0Surprise
 
 [ml]
-You'll still have us, you know?[....][n]
-Your dad isn't your only family.[AN]
+Wh...[4] What is this...?[A]
 
 [mr]
-...I'm trying not to let those thoughts[n]
-distract me.[AN]
-We've enough to worry about already,[n]
-being in a place like this.[AN]
+I-It can't![4] It can't be![A][X]
+
+
+## Ch0OutroNarration
+
+That day, the Elder Prince[N]
+lost his life.[AN]
+My dearest friend.[AN]
+The man who had no fear.[A][X]
+
+
+## Ch0BunnyTalk
+
+[ml][LoadBunny][CloseEyes]
+Oh man, what do I do...?[N]
+Gotta get my nerves under control...[A]
+
+[mr][LoadYoungPrince]
+Miss?[4] Is there a problem?[A][css]
+
+[ml][OpenEyes][MoveMidLeft]
+Ah![4] Your Highness![4] I, uh, I'm okay![N]
+You don't need to waste your time on me.[AN]
+
+[mr] 
+Oh, no.[4] It's my duty to see that my[N]
+troops are able to fight their best.[A]
 
 [ml]
-Good call.[....] Let's practice a bit while[n]
-we've still got some peace and quiet.[AN]
+Er...[4] well...[4] In that case...[4][N]
+You know about Lowland daemons, right,[N]
+milord?[AN]
+They're invisible bugs that can infect[N]
+your brain,[A] and make you see things[N]
+that aren't there,[A] and remember things[N]
+that didn't happen...[AN]
+We could all be infected right now![AN]
+Er, that's what I'm worried about,[N]
+I-I mean.[A]
 
 [mr]
-Hey![....] You two wanna[n]
-give us a hand?[A][X]
+Um...[A][X]
+
+
+## Ch0IDoubtIt
+
+I doubt it.[X]
+
+## Ch0IDoubtItDesc
+
+This girl isn't as charming as Eagle.[X]
+
+## Ch0ItCouldBe
+
+It could be...[X]
+
+## Ch0ItCouldBeDesc
+
+She is rather charming, though...[X]
+
+
+## Ch0BunnyTalkDemons
+
+[ml][LoadBunny]
+[mr][LoadYoungPrince]
+That is a rather unsettling notion...[N]
+Where did you hear such a thing?[A]
+
+[ml]
+The other soldiers. The ones from the[N]
+training camps talk about this stuff a lot.[A]
+
+[mr]
+Hmm...[4] The training camps?[4][N]
+Are you sure?[A][css]
+
+[ml][MoveMidLeft]
+No, I'm not![4] That's the scariest part![A][X]
+
+## Ch0BunnyTalkNoDemons
+
+[ml][LoadBunny]
+[mr][LoadYoungPrince][ts]
+Have no fear.[4] My friend, Eagle, once[N]
+asked me if perhaps life is but a dream.[AN]
+Who are we to say it's not?[A]
+
+[ml][ts]
+Er, true, but...[4][AN]
+What if the daemons told you the sky is blue,[N]
+but they told someone else the sky is red?[A]
+
+[mr]
+Um...[A]
+
+[ml]
+It's kinda scary, right?[N]
+What would you do?[A]
+
+[mr][ts]
+Well, I am the prince, so my word[N]
+would win out, wouldn't it?[4] Haha![A]
+
+[ml]
+Ahaha...[AN][tmm]
+(That's a really scary joke...!)[A][X]
+
+## Ch0ChoiceTutorial
+
+You will occasionally be faced[N]
+with choices. These may have[N]
+effects on both story and[N]
+gameplay.[A][X]
