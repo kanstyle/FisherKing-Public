@@ -1,0 +1,35 @@
+## GSMStart
+
+Start Game[X]
+
+
+## GSMStartDesc
+
+Start the game.[X]
+
+
+## GSMChapterSelect
+
+Chapter Select[X]
+
+
+## GSMChapterSelectDesc
+
+Start at a given chapter with[N]
+all items and units obtainable[N]
+up to that point.[X]
+
+
+## GSMBack
+
+Back...[X]
+
+
+## GSMNext
+
+Next...[X]
+
+
+## DebugPauseText
+
+Placeholder.[A][X]

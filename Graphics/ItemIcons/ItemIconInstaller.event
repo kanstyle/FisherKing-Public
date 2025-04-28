@@ -381,6 +381,12 @@ ORG ItemIconEntry(Debilitation)
 //ORG ItemIconEntry(Trismegistos)
 //#incbin "ItemsPrfs/Trismegistos.dmp"	// Ereshkigal
 
+ORG ItemIconEntry(Vulnerary)
+#incbin "ItemsPrfs/Vulnerary.dmp"
+
+ORG ItemIconEntry(MasterSeal)
+#incbin "ItemsPrfs/Vulnerary.dmp"
+
 // bombs
 ORG ItemIconEntry(Bomb)
 #incbin "Bombs/Bomb.dmp"

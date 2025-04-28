@@ -2,34 +2,49 @@
 Hero[X]
 
 ## HeroDesc
-Placeholder.[X]
+[oq]His smile shone like the sun,[N]	
+and he led so decisively, yet with[N]
+a sense of desperation."[X]
 
 ## TeacherName
 Teacher[X]
 
 ## TeacherDesc
-Placeholder.[X]
+[oq]I had no lands, no children.[N]
+And here I was, hunting for[N]
+meaning in my twilight years."[X]
+
+## YoungTeacherName
+Teacher[X]
 
 ## YoungTeacherDesc
-Placeholder.[X]
+[oq]By fifty, I had fulfilled all the duties my[N]
+station could ask of me, barring the[N]
+one that ate at the back of my mind."[X]
 
 ## DragonName
 Dragon[X]
 
 ## DragonDesc
-Placeholder.[X]
+[oq]Her hard eyes and rough manner[N]
+belied a devotion to justice, bordering[N]
+on obsession."[X]
 
 ## PillowName
 Pillow[X]
 
 ## PillowDesc
-Pillowy.[X]
+[oq]The cultists scattered and fell,[N]
+and in the wreckage lay a legless[N]
+girl, whom none dared approach."[X]
 
 ## BrotherName
 Brother[X]
 
 ## BrotherDesc
-Placeholder.[X]
+[oq]...His streetwise eye never softened,[N]
+but he took the clergy's path to heart,[N]
+in his own begrudging way."[X]
 
 ## HunterName
 Hunter[X]
@@ -49,23 +64,34 @@ Bunny[X]
 ## BunnyDesc
 Placeholder.[X]
 
+## Ch0BunnyDesc
+[oq]Be it the Jabberwocky's claws or[N]
+the call of spirits, the Lowlands held[N]
+little to know and much to fear."[X]
+
 ## YoungPrinceName
 Princeling[X]
 
 ## YoungPrinceDesc
-Placeholder.[X]
+[oq]Unusual for his station, the fledgling[N]
+Prince took to his duties skillfully,[N]
+but rarely spoke his mind."[X]
 
 ## SoldierName
 Soldier[X]
 
 ## SoldierDesc
-Placeholder.[X]
+[oq]Forged by the harsh climate and the[N]
+House of Wings' training, even larger[N]
+nations knew our cockroach resilience."[X]
 
 ## DeserterName
 Deserter[X]
 
 ## DeserterDesc
-Placeholder.[X]
+[oq]The Highlands had known nothing[N]
+but war through their infancy, and the[N]
+people demanded relief."[X]
 
 ## BeastName
 Beast[X]
@@ -77,23 +103,21 @@ Placeholder.[X]
 Elder Prince[X]
 
 ## OldPrinceDesc
-Placeholder.[X]
-
-## YoungTeacherName
-Teacher[X]
-
-## YoungTeacherDesc
-Placeholder.[X]
+[oq]The most authentically alive man I[N]
+had ever met. One who changed[N]
+the course of my life many times over."[X]
 
 ## JerryName
 Jerry[X]
 
 ## JerryDesc
-Placeholder.[X]
+(Teacher's writings never once mention[N]
+anyone by the name of "Jerry".)[X]
 
 ## SigilCharName
 Sigil[X]
 
 ## SigilCharDesc
-"Quote about Pillow moving[N]
-via teleportation..."[X]
+"Pillow had a habit of appearing when[N]
+you least expected, or disappearing off[N]
+to do who-knows-what."[X]

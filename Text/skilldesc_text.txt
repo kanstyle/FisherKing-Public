@@ -1,3 +1,8 @@
+## SD_Jaded
+Jaded: Teacher does not gain EXP from[N]
+combat. Instead, he can be strengthened[N]
+with certain items or story events.[X]
+
 ## SD_ExtendedDestruction
 Extended Destruction!!!: Activate to gain[N]
 +2 Move and +5 Attack at 1 range.[N]

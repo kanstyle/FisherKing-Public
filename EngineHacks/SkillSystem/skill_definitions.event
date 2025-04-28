@@ -3,6 +3,9 @@
 //Skills are categorized broadly by where their effect is applied, in no particular order within each category.
 
 //My Skills
+//Jaded
+#define JadedID 51
+
 //ExtendedDestruction
 #define ExtendedDestructionID 210
 
@@ -318,7 +321,7 @@
 
 //Aptitude: +20% to all growth rates.
 //By Sme
-#define AptitudeID 51
+#define AptitudeID 255
 
 
 //HP Restoration Skills

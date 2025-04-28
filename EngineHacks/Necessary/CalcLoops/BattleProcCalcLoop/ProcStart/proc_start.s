@@ -175,11 +175,11 @@ b   	End
 @now to check for a crit
 @if crit:
 Crit:
-ldrh r0, [r7, #0xc] @crit rate
-mov r1, #0
-blh d100Result
-cmp r0, #1
-bne End
+@ldrh r0, [r7, #0xc] @crit rate
+@mov r1, #0
+@blh d100Result
+@cmp r0, #1
+@bne End
 
 @if crit:
 mov r0,r5		@defender

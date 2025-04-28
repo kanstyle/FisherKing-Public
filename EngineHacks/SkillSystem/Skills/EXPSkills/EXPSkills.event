@@ -21,3 +21,9 @@ VoidCurse:
 #incbin "VoidCurse/VoidCurse.dmp"
 POIN SkillTester
 WORD VoidCurseID
+
+ALIGN 4
+Jaded:
+#incbin "Jaded/Jaded.dmp"
+POIN SkillTester
+WORD VoidCurseID

@@ -1,5 +1,9 @@
 EventPointerTable(Ch1EventsID, PointerList)
 
+#define Ch1Village1Flag 0x7
+#define Ch1Village2Flag 0x8
+//#define Ch1Village3Flag 0x9
+
 PointerList:
 	POIN TurnBasedEvents
 	POIN CharacterBasedEvents
@@ -27,7 +31,9 @@ MiscBasedEvents:
 	END_MAIN
 
 LocationBasedEvents:
-
+	Village(Ch1Village1Flag,Ch1Village1Event,5,7)
+	Village(Ch1Village2Flag,Ch1Village2Event,4,0)
+	//Village(Ch1Village3Flag,Ch1Village3Event,villX,villY)
 	END_MAIN
 
 Dunno1:
@@ -48,15 +54,37 @@ Tutorial:
 
 Units1:
 
-	UNIT Teacher Paladin 0x40 Level(20,Ally,False)     [11,9] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT HeroChar UpstartM 0x40 Level(3,Ally,False)     [9,9] 0b 0x0 0x0 0x0 [IronBow, IronSword, Bomb, Restore] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Headsman 0x40 Level(3,Ally,False)     [10,8] 0b 0x0 0x0 0x0 [IronAxe, Bomb, Vulnerary] [0x0,0x0,0x0,0x0]
-	UNIT Pillow LowVoice 0x40 Level(3,Ally,False)     [11,8] 0b 0x0 0x0 0x0 [Flux] [0x0,0x0,0x0,0x0]
+	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [14,9] 0b 0x0 0x1 REDA10R9 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT HeroChar UpstartM 0x40 Level(3,Ally,False)     [14,9] 0b 0x0 0x1 REDA9R9 [IronBow, IronSword, Bomb, Restore] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Headsman 0x40 Level(3,Ally,False)     [14,8] 0b 0x0 0x1 REDA9R8 [IronAxe, Bomb, Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT Pillow LowVoice 0x40 Level(3,Ally,False)     [11,8] 0b 0x0 0x0 0x0 [Amygdala, Flux] [0x0,0x0,0x0,0x0]
 	UNIT
 
 EnemyUnits:
-
-	UNIT 0x7F Soldier 0x40 Level(3,Enemy,True)     [5,8] 0b 0x0 0x0 0x0 [IronLance] [0x0,0x3,0x0,0x0]
+	
+	//t1
+	UNIT 0x7F Mercenary 0x40 Level(3,Enemy,True)     [4,8] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	UNIT 0x7F Fighter 0x40 Level(3,Enemy,True)     [5,9] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+	UNIT 0x7F Knight 0x40 Level(3,Enemy,True)     [3,8] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	
+	//t2
+	UNIT 0x7F Mage 0x40 Level(3,Enemy,True)     [1,5] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	UNIT 0x7F Archer 0x40 Level(3,Enemy,True)     [3,4] 0b 0x0 0x0 0x0 [IronBow] AttackInRangeAI
+	UNIT 0x7F Cavalier 0x40 Level(3,Enemy,True)     [0,0] 0b 0x0 0x0 0x0 [IronLance] ChargeAI
+	
+	//t3
+	UNIT 0x7F Myrmidon 0x40 Level(3,Enemy,True)     [6,1] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	UNIT 0x7F Soldier 0x40 Level(3,Enemy,True)     [7,2] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	
+	//t4
+	UNIT 0x7F Shaman 0x40 Level(3,Enemy,True)     [11,3] 0b 0x0 0x0 0x0 [Flux] AttackInRangeAI
+	UNIT 0x7F Fighter 0x40 Level(3,Enemy,True)     [12,0] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+	UNIT 0x7F Cavalier 0x40 Level(3,Enemy,True)     [13,2] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	
+	//t5
+	UNIT 0x7F Knight 0x40 Level(3,Enemy,True)     [14,5] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT 0x7F Fighter 0x40 Level(3,Enemy,True)     [14,0] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+	
 	UNIT
 
 Traps1:
@@ -72,6 +100,7 @@ BeginningScene:
 	ENUN
 	LOAD1 0x1 Units1
 	ENUN
+	SetUnitStatus(Teacher,Exp,0xFF)
 	NoFade
 	ENDA
 
@@ -89,3 +118,26 @@ BleedoutChapterTurnEvent:
 	CALL BleedoutTurnEvent
 	NoFade
 	ENDA
+	
+Ch1Village1Event:
+	FADI 16
+	SetBackground(HouseBG)
+	Text(Ch1Village1Text)
+	RemoveBackground
+	FADU 16
+	GiveItem(HandAxe,0xFFFF)
+	NoFade
+	ENDA
+	
+Ch1Village2Event:
+	FADI 16
+	SetBackground(HouseBG)
+	Text(Ch1Village2Text)
+	RemoveBackground
+	FADU 16
+	GiveItem(LongFuseBomb,0xFFFF)
+	NoFade
+	ENDA
+	
+//Ch1Village3Event:
+	//ENDA

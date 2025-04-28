@@ -19,6 +19,10 @@ Stage3EndLabel := 0x14
 TurnOffCompletionFlagAndEndLabel := 0x8
 EndLabel := 0x0
 
+SkipStartEvent := 0x15
+
+#define Ch0BunnyTalkFlag 0x15
+
 PointerList:
 	POIN TurnBasedEvents
 	POIN CharacterBasedEvents
@@ -37,7 +41,7 @@ TurnBasedEvents:
 
 ALIGN 32
 CharacterBasedEvents:
-
+	CharacterEvent(Ch0BunnyTalkFlag,Ch0BunnyPrinceTalk,YoungPrince,Ch0Bunny)
 	END_MAIN
 
 MiscBasedEvents:
@@ -71,8 +75,16 @@ Units1:
 	UNIT YoungPrince Noble 0x40 Level(1,Ally,False)     [5,14] 0b 0x0 0x0 0x0 [Rapier] [0x0,0x0,0x0,0x0]
 	UNIT
 	
+UnitsCh1:
+	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [13,9] 0b 0x0 0x1 REDA11R9 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT HeroChar UpstartM 0x40 Level(3,Ally,False)     [14,9] 0b 0x0 0x1 REDA9R9 [IronBow, IronSword, Bomb, Restore] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Headsman 0x40 Level(3,Ally,False)     [11,8] 0b 0x0 0x1 REDA10R8 [IronAxe, Bomb, Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT Pillow LowVoice 0x40 Level(3,Ally,False)     [11,8] 0b 0x0 0x0 0x0 [Amygdala, Flux] [0x0,0x0,0x0,0x0]
+	// remember to add Brother here
+	UNIT
+	
 TeacherUnit:
-	UNIT YoungTeacher Paladin 0x40 Level(20,Ally,False)     [2,13] 0b 0x0 0x1 REDA3R14 [IronLance,SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT YoungTeacher Paladin 0x40 Level(10,Ally,False)     [2,13] 0b 0x0 0x1 REDA3R14 [IronLance,SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT
 	
 GreenSoldiers:
@@ -83,7 +95,7 @@ GreenSoldiers:
 	UNIT 0x80 Fighter 0x40 Level(1,NPC,True)     [3,10] 0b 0x0 0x0 0x0 [IronAxe] DoNothingAI
 	UNIT 0x80 Sniper 0x40 Level(1,NPC,True)     [1,8] 0b 0x0 0x0 0x0 [SteelBow] DoNothingAI
 	UNIT 0x80 Sniper 0x40 Level(1,NPC,True)     [12,7] 0b 0x0 0x0 0x0 [SteelBow] DoNothingAI
-	UNIT 0x80 Soldier 0x40 Level(1,NPC,True)     [6,9] 0b 0x0 0x0 0x0 [IronLance] DoNothingAI
+	UNIT Ch0Bunny BunnyRecruit 0x40 Level(1,NPC,True)     [6,9] 0b 0x0 0x0 0x0 [IronLance] DoNothingAI
 	UNIT 0x80 Soldier 0x40 Level(1,NPC,True)     [8,9] 0b 0x0 0x0 0x0 [IronLance] DoNothingAI
 	UNIT 0x80 Knight 0x40 Level(1,NPC,True)     [2,9] 0b 0x0 0x0 0x0 [IronLance] DoNothingAI
 	UNIT 0x80 Knight 0x40 Level(1,NPC,True)     [12,9] 0b 0x0 0x0 0x0 [IronLance] DoNothingAI
@@ -110,10 +122,15 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
-
 	FadeOutMusic
+	
+	CALL GameStartMenuEvent
+	
+	FlagNotSet(SkipStartEvent,0x0)
+	
 	SetBackgroundSlow(ButterflyInverted)
 	STAL 60
+	
 	CenterTextbox(Ch0ButterflyIntro)
 	RemoveBackgroundSlow
 	
@@ -131,6 +148,7 @@ BeginningScene:
 	SetBackground(0x35)
 	CenterTextbox(Ch0LowlandLore)
 	RemoveBackgroundSlow
+	FOGVISION 4
 	
 	FADU 4
 	BROWNBOXTEXT Ch0LowlandBrownBox [8,8]
@@ -141,6 +159,7 @@ BeginningScene:
 	RemoveBackgroundSlow
 	LOAD1 0x1 GreenSoldiers
 	ENUN
+	SetFlag(Ch0BunnyTalkFlag)
 	FADU 4
 	
 	STAL 60
@@ -165,6 +184,8 @@ BeginningScene:
 	UNCM(YoungTeacher,AlreadyMoved)
 	STAL 15
 	CenterTextbox(Ch0TutorialStage1FlankingScrollText)
+	LABEL 0x0
+	NoFade
 	ENDA
 	
 ALIGN 4
@@ -232,6 +253,11 @@ TutorialEvent:
 		
 		Highlight(OldPrince)
 		Text(Ch0OldPrinceYoungPrinceTalk)
+		SetBackground(ButterflyInverted)
+		CenterTextbox(Ch0DontRemember)
+		RemoveBackground
+		FADU 16
+		
 		CUSA 0x81
 		SetUnitFullHP(0x81)
 		CUSA 0x82
@@ -257,9 +283,13 @@ TutorialEvent:
 		CUSA Jerry
 		CUSA 0x84
 		SetFlag(Stage3BeganFlag)
+		UnsetFlag(Ch0BunnyTalkFlag)
+		
+		CenterTextbox(Ch0DefendAlertScrollText)
+		MOVE 5 YoungPrince [5,14]
 		
 		//stage 3 tutorial
-		STAL 30
+		STAL 60
 		Highlight(Jerry)
 		STAL 30
 		Text(Ch0TutorialStage3)
@@ -279,8 +309,6 @@ TutorialEvent:
 		GOTO TurnOffCompletionFlagAndEndLabel
 		LABEL Stage3StartLabel
 		
-		CenterTextbox(Ch0DefendAlertScrollText)
-		
 		GOTO EndLabel
 		LABEL TurnOffCompletionFlagAndEndLabel
 		UnsetFlag(TutorialEventCompletionFlag)
@@ -290,7 +318,26 @@ TutorialEvent:
 	NoFade
 	ENDA
 
+ALIGN 4
+Ch0BunnyPrinceTalk:
+	Text(Ch0BunnyTalk)
+	CallMenu(Ch0BunnyMenu)
+	BEQ 0 0xC 0x0
+		SetFlag(BelieveInDemonsFlag)
+		Text(Ch0BunnyTalkDemons)
+		GOTO 0x1
+	LABEL 0x0
+	Text(Ch0BunnyTalkNoDemons)
+	LABEL 0x1
+	CenterTextbox(Ch0ChoiceTutorial)
+	NoFade
+	ENDA
+
 EndingScene:
+	CAMERA [0,0]
+	Text(Ch0FogBreaks)
+	Text(Ch0Surprise)
+	
 	DISA YoungTeacher
 	DISA YoungPrince
 	
@@ -306,5 +353,162 @@ BleedoutChapterAlwaysEvent:
 
 BleedoutChapterTurnEvent:
 	CALL BleedoutTurnEvent
+	NoFade
+	ENDA
+	
+	
+// Chapter Select Menu
+Start := 0x1000
+CSPg1 := 0x8001
+CSPg2 := 0x8002
+CSGo := 0x8010
+EndPage := 0x8999
+GoToNextPage := 0x9000
+GoBack := 0x9001
+
+EndMenuSkipStartEvent := 0x9003
+EndMenu := 0x9002
+
+GameStartMenuEvent:
+LABEL Start
+	CLEAN
+	SetBackground(0x35)
+	FADU 16
+	CallMenu(GameStartMenu)
+	BEQ 0x0 0xC 0
+	SVAL 8 1
+	BEQ 0x1 0xC 8
+	
+	LABEL 0x1
+	CallMenu(GSMChapterSelectPg1)
+	GOTO CSPg1
+	
+	LABEL 0x0
+	GOTO EndMenu
+
+LABEL CSPg1
+// result in slot 0xC
+/*
+0: Back
+1: Ch 1
+2: Ch 2
+3: Ch 3
+4: Ch 4
+5: Ch 5
+6: Ch 6
+7: Next Page
+*/
+// Slot 2 has chapter number to check
+// Slot 8 will have target chapter number
+
+	SADD 5 0xC 0
+	SVAL 2 0x0
+	BEQ GoBack 5 2
+	CenterTextbox(DebugPauseText)
+	SVAL 2 0x1
+	BEQ 0x11 5 2
+	CenterTextbox(DebugPauseText)
+	SVAL 2 0x2
+	BEQ 0x12 5 2
+	CenterTextbox(DebugPauseText)
+	SVAL 2 0x3
+	BEQ 0x13 5 2
+	CenterTextbox(DebugPauseText)
+	SVAL 2 0x4
+	BEQ 0x14 5 2
+	CenterTextbox(DebugPauseText)
+	SVAL 2 0x5
+	BEQ 0x15 5 2
+	CenterTextbox(DebugPauseText)
+	SVAL 2 0x6
+	BEQ 0x16 5 2
+	CenterTextbox(DebugPauseText)
+	SVAL 2 0x7
+	BEQ GoToNextPage 5 2
+
+	LABEL GoBack
+		CenterTextbox(DebugPauseText)
+		GOTO Start
+	
+	LABEL 0x11
+		SVAL 8 Ch1
+		CenterTextbox(DebugPauseText)
+		GOTO EndPage
+		
+	LABEL 0x12
+		SVAL 8 Ch2
+		CenterTextbox(DebugPauseText)
+		GOTO EndPage
+		
+	LABEL 0x13
+		SVAL 8 Ch3
+		CenterTextbox(DebugPauseText)
+		GOTO EndPage
+		
+	LABEL 0x14
+		SVAL 8 Ch4
+		CenterTextbox(DebugPauseText)
+		GOTO EndPage
+		
+	LABEL 0x15
+		SVAL 8 Ch5
+		CenterTextbox(DebugPauseText)
+		GOTO EndPage
+		
+	LABEL 0x16
+		SVAL 8 Ch6
+		CenterTextbox(DebugPauseText)
+		GOTO EndPage
+		
+	LABEL GoToNextPage
+		CenterTextbox(DebugPauseText)
+		GOTO CSPg2
+
+	LABEL EndPage
+		CenterTextbox(DebugPauseText)
+		GOTO CSGo
+		
+//------------------------	
+	LABEL CSPg2
+	GOTO Start
+	
+//------------------------
+	LABEL CSGo
+	//SVAL 7 0x1
+	//SADD 8 8 7 //increase target chapter number by 0x1, so you can do less-than
+	//actually don't need to do this
+	
+	CenterTextbox(DebugPauseText)
+	SVAL 7 Ch1
+	BLT EndMenuSkipStartEvent 8 7
+		CenterTextbox(DebugPauseText)
+		MNC2 Ch1
+		GOTO EndMenuSkipStartEvent
+	
+	CenterTextbox(DebugPauseText)
+	SVAL 7 Ch2
+	BLT EndMenuSkipStartEvent 8 7
+		CenterTextbox(DebugPauseText)
+		LOAD1 0x1 UnitsCh1
+		GiveItem(HandAxe,Dragon)
+		GiveItem(LongFuseBomb,Dragon)
+		MNC2 Ch2
+		GOTO EndMenuSkipStartEvent
+	
+	CenterTextbox(DebugPauseText)	
+	SVAL 7 Ch3
+	BLT EndMenuSkipStartEvent 8 7
+		// fill this in later with ch. 2 stuff
+		CenterTextbox(DebugPauseText)
+		MNC2 Ch3
+		GOTO EndMenuSkipStartEvent
+	
+	LABEL EndMenuSkipStartEvent
+	CenterTextbox(DebugPauseText)
+	SetFlag(SkipStartEvent)
+	LABEL EndMenu
+	CenterTextbox(DebugPauseText)
+	FADI 16
+	CLEAN
 	NoFade
 	ENDA

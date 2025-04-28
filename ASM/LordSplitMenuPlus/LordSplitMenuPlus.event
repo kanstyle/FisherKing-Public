@@ -1,0 +1,63 @@
+#define MenuDefinition(x, y, w, h, style, commands) "BYTE x y w h; WORD style; POIN commands; WORD 0 0 0 0 0x0804F521 0x0804F459"
+#define MenuOption(name, desc, flag) "WORD 0; SHORT name desc; BYTE 0 flag 0 0; POIN FlagUsabilityMenuOption 0 ChoiceMenu_OnSelect 0 0 0"
+#define MenuTerminator "WORD 0 0 0 0 0 0 0 0 0"
+#define CallMenu(menu) "SVAL s1 menu|IsPointer; ASMC CallChoiceMenuASMC|1"
+
+
+// example menu provided below. there are a couple moving parts but it's not as daunting as it looks.
+// MenuDefinition() creates a menu under a specific label. the parameters are x, y, width, height, style (0 or 1), and a label for the menu options.
+// MenuOption() creates a menu option under a specific label. the parameters are option name, option description, and flag. if the flag is NOT set, the menu option will be grayed out and disabled.
+// CallMenu() calls that choice menu in events
+
+
+ALIGN 4
+ExampleMenu:
+MenuDefinition(6, 8, 18, 0, 1, ExampleMenuOptions)
+
+ALIGN 4
+ExampleMenuOptions:
+MenuOption(0xC15, 0xC16, 0)
+MenuOption(0xC16, 0xC15, 0x11)
+MenuTerminator
+
+ALIGN 4
+Ch0BunnyMenu:
+MenuDefinition(6, 8, 18, 0, 1, Ch0BunnyMenuOptions)
+
+ALIGN 4
+Ch0BunnyMenuOptions:
+MenuOption(Ch0IDoubtIt, Ch0IDoubtItDesc, 0)
+MenuOption(Ch0ItCouldBe, Ch0ItCouldBeDesc, 0)
+MenuTerminator
+
+
+//Game Start Menu
+
+ALIGN 4
+GameStartMenu:
+MenuDefinition(6, 1, 18, 0, 1, GameStartMenuOptions)
+
+ALIGN 4
+GameStartMenuOptions:
+MenuOption(GSMStart, GSMStartDesc, 0)
+MenuOption(GSMChapterSelect, GSMChapterSelectDesc, 0)
+MenuTerminator
+
+ALIGN 4
+GSMChapterSelectPg1:
+MenuDefinition(6, 1, 18, 0, 1, GSMChapterSelectPg1Options)
+
+ALIGN 4
+GSMChapterSelectPg1Options:
+MenuOption(GSMBack, 0, 0)
+MenuOption(Ch1Title, 0, 0)
+MenuOption(Ch2Title, 0, 0)
+MenuOption(Ch3Title, 0, 0)
+MenuOption(Ch4Title, 0, 0)
+MenuOption(Ch5Title, 0, 0)
+MenuOption(Ch6Title, 0, 0)
+MenuOption(GSMNext, 0, 0)
+MenuTerminator
+
+
+#include "LordSplitMenuPlus.lyn.event"

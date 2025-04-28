@@ -3,6 +3,8 @@
 #define BleedoutFlag 0x12B
 #define HeroGenderswapFlag 0x28
 
+#define BelieveInDemonsFlag 0x78
+
 //AI
 
 #define DoNothingStationaryAI [0x6,0x3,0x4,0x20]

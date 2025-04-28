@@ -1,4 +1,4 @@
-
+#define USE_FIXED_DAMAGE_WEAPONS
 #ifdef USE_FIXED_DAMAGE_WEAPONS
 
 #include "FixedDamageWeapons.lyn.event"

@@ -1,7 +1,7 @@
 INLINE PersonalSkillTable,Skill
 None,0x0
 Hero,GenderswapID
-Teacher,0x0
+Teacher,JadedID
 Pillow,SummonID
 Dragon,RevolutionID
 Brother,0x0
