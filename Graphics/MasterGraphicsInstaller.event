@@ -45,4 +45,4 @@ StatusBGPal:
 #incext Png2Dmp --palette-only "StatusBG.png" 
 ALIGN 4
 StatusBGTSA:
-#incext TSAGenerator.py "StatusBG.png"
+#incext compress "StatusBG.tsa"
