@@ -32,6 +32,7 @@
 #define YoungPrince 0x20
 #define YoungTeacher 0x21
 #define OldPrince 0x22
+#define Ch0Bunny 0x24
 #define Jerry 0x83
 #define Sigil 0x3B
 
@@ -57,8 +58,8 @@
 #define Axe 0x2
 #define Bow 0x3
 #define Staff 0x4
-#define Anima 0x5
-#define Light 0x6
+#define Tome 0x5
+#define Special 0x6
 #define Dark 0x7
 #define Item 0x9
 #define Monster 0xB

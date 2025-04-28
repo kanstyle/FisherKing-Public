@@ -25,7 +25,6 @@ FILL 256
 // e.g. `SetLockAssociation(IronSword,1)`
 // Then instead of putting this in byte 4 of the weapon ability word just set bit 0x01000000
 
-
 #include "AdvWeaponLocks.lyn.event"
 
 #define SoftCharLock 0
@@ -39,5 +38,9 @@ BYTE HardClassLock
 BYTE EirikaLord
 BYTE Rogue
 BYTE EndLockArray
+
+PillowLock:
+BYTE HardCharLock
+BYTE Pillow
 
 #endif // ADV_WEAPON_LOCKS

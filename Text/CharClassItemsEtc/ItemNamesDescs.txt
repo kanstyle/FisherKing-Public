@@ -102,3 +102,8 @@ Fixed attack power. Hits Res.[X]
 ## AmygdalaName
 
 Amygdala[X]
+
+
+## AmygdalaDesc
+
+[lock]Pillow.[X]

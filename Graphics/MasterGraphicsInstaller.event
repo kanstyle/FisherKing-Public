@@ -18,6 +18,16 @@ POIN PrepsBG
 ORG $20088
 POIN PrepsBGPal
 
+//Status bg
+ORG $88638
+POIN StatusBG
+
+ORG $88640
+POIN StatusBGPal
+
+ORG $88644
+POIN StatusBGTSA
+
 POP
 
 ALIGN 4
@@ -26,3 +36,13 @@ PrepsBG:
 ALIGN 4
 PrepsBGPal:
 #incext Png2Dmp --palette-only "PrepsBG.png" 
+
+ALIGN 4
+StatusBG:
+#incext Png2Dmp --lz77 "StatusBG.png" 
+ALIGN 4
+StatusBGPal:
+#incext Png2Dmp --palette-only "StatusBG.png" 
+ALIGN 4
+StatusBGTSA:
+#incext TSAGenerator.py "StatusBG.png"

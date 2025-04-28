@@ -3,6 +3,7 @@
 #include ChapterDefinitions.event
 #include EventDefinitions.event
 #include MusicDefinitions.event
+#include WeaponLockDefs.event
 
 /*#include MacroDefinitions.event
 #include ExtraSkillDefinitions.event
