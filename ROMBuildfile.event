@@ -16,9 +16,6 @@
     #include "Tables/TableInstaller.event"
 	#include "Tables/EATableInstaller.event"
     MESSAGE Used table space ends at currentOffset
-	
-	//ASM
-	#include "ASM/MasterASMInstaller.event"
 
     //Engine Hacks
     #include "EngineHacks/_MasterHackInstaller.event"
@@ -27,10 +24,13 @@
     //Events
 	#ifdef USE_TEST_MAP
 		//#include "Events/Release_map.event"
-	#endif // USE_TEST_MAP
 	
     #include "Events/WorldMapEvents.event"
+		#endif // USE_TEST_MAP
 	
+		//ASM
+	#include "ASM/MasterASMInstaller.event"
+
 	#include "Events/Events Installer.event"
 	
 	//Graphics
