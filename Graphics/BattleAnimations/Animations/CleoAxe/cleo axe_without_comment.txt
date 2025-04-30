@@ -1,0 +1,223 @@
+/// - Mode 1
+C03
+C07
+1 p- cleo axe_000.png
+2 p- cleo axe_001.png
+C1B
+2 p- cleo axe_002.png
+C41
+2 p- cleo axe_003.png
+2 p- cleo axe_004.png
+2 p- cleo axe_005.png
+6 p- cleo axe_006.png
+C37
+18 p- cleo axe_007.png
+5 p- cleo axe_008.png
+5 p- cleo axe_009.png
+5 p- cleo axe_010.png
+14 p- cleo axe_011.png
+C42
+2 p- cleo axe_012.png
+C21
+C04
+C1A
+4 p- cleo axe_013.png
+6 p- cleo axe_014.png
+5 p- cleo axe_015.png
+4 p- cleo axe_016.png
+3 p- cleo axe_017.png
+1 p- cleo axe_018.png
+C01
+2 p- cleo axe_019.png
+C42
+2 p- cleo axe_020.png
+2 p- cleo axe_021.png
+3 p- cleo axe_022.png
+3 p- cleo axe_023.png
+3 p- cleo axe_024.png
+C06
+3 p- cleo axe_025.png
+3 p- cleo axe_026.png
+C0D
+~~~
+/// - Mode 3
+C03
+C07
+1 p- cleo axe_000.png
+3 p- cleo axe_027.png
+2 p- cleo axe_028.png
+C42
+2 p- cleo axe_029.png
+2 p- cleo axe_030.png
+C38
+2 p- cleo axe_031.png
+2 p- cleo axe_032.png
+2 p- cleo axe_033.png
+2 p- cleo axe_034.png
+C37
+5 p- cleo axe_035.png
+22 p- cleo axe_036.png
+C25
+4 p- cleo axe_037.png
+C15
+2 p- cleo axe_038.png
+2 p- cleo axe_039.png
+2 p- cleo axe_040.png
+2 p- cleo axe_041.png
+4 p- cleo axe_042.png
+6 p- cleo axe_043.png
+2 p- cleo axe_044.png
+2 p- cleo axe_045.png
+2 p- cleo axe_046.png
+3 p- cleo axe_047.png
+C04
+C21
+C0C
+3 p- cleo axe_048.png
+2 p- cleo axe_049.png
+2 p- cleo axe_050.png
+2 p- cleo axe_051.png
+1 p- cleo axe_052.png
+C01
+C42
+4 p- cleo axe_053.png
+4 p- cleo axe_054.png
+2 p- cleo axe_055.png
+C25
+5 p- cleo axe_056.png
+5 p- cleo axe_057.png
+5 p- cleo axe_058.png
+5 p- cleo axe_059.png
+C06
+4 p- cleo axe_060.png
+4 p- cleo axe_000.png
+C0D
+~~~
+/// - Mode 5
+C03
+C07
+1 p- cleo axe_000.png
+2 p- cleo axe_027.png
+2 p- cleo axe_061.png
+C41
+2 p- cleo axe_062.png
+2 p- cleo axe_063.png
+5 p- cleo axe_064.png
+C05
+1 p- cleo axe_065.png
+C01
+2 p- cleo axe_064.png
+2 p- cleo axe_063.png
+C41
+2 p- cleo axe_061.png
+C06
+2 p- cleo axe_027.png
+2 p- cleo axe_000.png
+C0D
+~~~
+/// - Mode 6
+C03
+C07
+1 p- cleo axe_000.png
+2 p- cleo axe_027.png
+2 p- cleo axe_061.png
+C41
+2 p- cleo axe_062.png
+2 p- cleo axe_063.png
+28 p- cleo axe_064.png
+2 p- cleo axe_065.png
+2 p- cleo axe_066.png
+2 p- cleo axe_065.png
+2 p- cleo axe_066.png
+2 p- cleo axe_065.png
+2 p- cleo axe_066.png
+C05
+1 p- cleo axe_064.png
+C01
+2 p- cleo axe_063.png
+C41
+2 p- cleo axe_061.png
+C06
+2 p- cleo axe_027.png
+2 p- cleo axe_000.png
+C0D
+~~~
+/// - Mode 7
+C02
+1 p- cleo axe_000.png
+C0E
+2 p- cleo axe_067.png
+2 p- cleo axe_068.png
+25 p- cleo axe_069.png
+C01
+2 p- cleo axe_068.png
+2 p- cleo axe_067.png
+3 p- cleo axe_000.png
+C0D
+~~~
+/// - Mode 8
+C02
+1 p- cleo axe_000.png
+C0E
+2 p- cleo axe_067.png
+2 p- cleo axe_068.png
+25 p- cleo axe_069.png
+C01
+2 p- cleo axe_068.png
+2 p- cleo axe_067.png
+3 p- cleo axe_000.png
+C0D
+~~~
+/// - Mode 9
+1 p- cleo axe_000.png
+C01
+~~~
+/// - Mode 10
+1 p- cleo axe_000.png
+C01
+~~~
+/// - Mode 11
+1 p- cleo axe_000.png
+C01
+~~~
+/// - Mode 12
+C03
+C07
+1 p- cleo axe_000.png
+2 p- cleo axe_001.png
+C1B
+2 p- cleo axe_002.png
+C41
+2 p- cleo axe_003.png
+2 p- cleo axe_004.png
+2 p- cleo axe_005.png
+6 p- cleo axe_006.png
+C37
+18 p- cleo axe_007.png
+5 p- cleo axe_008.png
+5 p- cleo axe_009.png
+5 p- cleo axe_010.png
+14 p- cleo axe_011.png
+C42
+2 p- cleo axe_012.png
+C04
+4 p- cleo axe_013.png
+6 p- cleo axe_014.png
+5 p- cleo axe_015.png
+4 p- cleo axe_016.png
+3 p- cleo axe_017.png
+1 p- cleo axe_018.png
+C01
+2 p- cleo axe_019.png
+C42
+2 p- cleo axe_020.png
+2 p- cleo axe_021.png
+3 p- cleo axe_022.png
+3 p- cleo axe_023.png
+3 p- cleo axe_024.png
+C06
+3 p- cleo axe_025.png
+3 p- cleo axe_026.png
+C0D
+~~~
+/// - End of animation

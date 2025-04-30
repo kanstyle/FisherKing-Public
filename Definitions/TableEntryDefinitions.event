@@ -73,7 +73,13 @@
 #define LowClaw ToxinLance
 #define LowTusk BrightLance
 
-#define Amygdala 0x44
+#define Loneliness 0x44
+#define Pain 0x45
+#define Deception 0x46
+#define Exploitation 0x47
+#define Unfamiliarity 0x48
+#define Torture 0x49
+#define Death 0x4a
 
 #define Bomb 0xC1
 #define LongFuseBomb 0xC2

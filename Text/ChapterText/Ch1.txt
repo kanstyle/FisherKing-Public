@@ -76,7 +76,7 @@ Name's Dragon.[X]
 
 ## Ch1Village1Text
 
-[ml][LoadFace][0xFFFF]
+[ml][LoadActive]
 [mr][LoadCivManBald]
 
 [mr]
@@ -85,7 +85,7 @@ Placeholder.[A][X]
 
 ## Ch1Village2Text
 
-[ml][LoadFace][0xFFFF]
+[ml][LoadActive]
 [mr][LoadCivManBald]
 
 [mr]

@@ -1,0 +1,237 @@
+#######################################################
+#A1 Skyseeker Hand Axe
+#
+#When importing to FEditorAdv delete # and after each line.
+#######################################################
+/// - Mode 1               #Melee Animation
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- cleo hand axe_000.png
+2 p- cleo hand axe_001.png
+C1B                               #Play quick "heavy step" SFE
+2 p- cleo hand axe_002.png
+2 p- cleo hand axe_003.png
+2 p- cleo hand axe_004.png
+15 p- cleo hand axe_005.png
+C22                               #Play short sword swinging SFE
+4 p- cleo hand axe_006.png
+C05                               #Call spell associated with equipped weapon
+4 p- cleo hand axe_007.png
+4 p- cleo hand axe_008.png
+4 p- cleo hand axe_009.png
+4 p- cleo hand axe_010.png
+4 p- cleo hand axe_011.png
+1 p- cleo hand axe_012.png
+C1B                               #Play quick "heavy step" SFE
+C13                               #ranged attack - hand axe for Hector
+3 p- cleo hand axe_013.png
+2 p- cleo hand axe_004.png
+1 p- cleo hand axe_005.png
+C01                               #NOP
+2 p- cleo hand axe_014.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+2 p- cleo hand axe_015.png
+3 p- cleo hand axe_000.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 3               #Melee Critical Animation
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- cleo hand axe_000.png
+3 p- cleo hand axe_016.png
+C22                               #Play short sword swinging SFE
+2 p- cleo hand axe_017.png
+5 p- cleo hand axe_018.png
+3 p- cleo hand axe_019.png
+2 p- cleo hand axe_020.png
+3 p- cleo hand axe_021.png
+5 p- cleo hand axe_022.png
+3 p- cleo hand axe_023.png
+2 p- cleo hand axe_024.png
+C23                               #Play shorter sword swinging SFE
+3 p- cleo hand axe_025.png
+5 p- cleo hand axe_026.png
+3 p- cleo hand axe_027.png
+2 p- cleo hand axe_028.png
+3 p- cleo hand axe_029.png
+5 p- cleo hand axe_030.png
+3 p- cleo hand axe_031.png
+5 p- cleo hand axe_032.png
+C1B                               #Play quick "heavy step" SFE
+3 p- cleo hand axe_033.png
+3 p- cleo hand axe_034.png
+21 p- cleo hand axe_035.png
+8 p- cleo hand axe_036.png
+8 p- cleo hand axe_005.png
+C22                               #Play short sword swinging SFE
+4 p- cleo hand axe_006.png
+C05                               #Call spell associated with equipped weapon
+4 p- cleo hand axe_007.png
+4 p- cleo hand axe_008.png
+4 p- cleo hand axe_009.png
+4 p- cleo hand axe_010.png
+4 p- cleo hand axe_011.png
+1 p- cleo hand axe_012.png
+C1B                               #Play quick "heavy step" SFE
+C13                               #ranged attack - hand axe for Hector
+3 p- cleo hand axe_013.png
+2 p- cleo hand axe_004.png
+1 p- cleo hand axe_005.png
+C01                               #NOP
+2 p- cleo hand axe_014.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+2 p- cleo hand axe_015.png
+3 p- cleo hand axe_000.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 5               #Ranged Animation 
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- cleo hand axe_000.png
+2 p- cleo hand axe_001.png
+C1B                               #Play quick "heavy step" SFE
+2 p- cleo hand axe_002.png
+2 p- cleo hand axe_003.png
+2 p- cleo hand axe_004.png
+15 p- cleo hand axe_005.png
+C22                               #Play short sword swinging SFE
+4 p- cleo hand axe_006.png
+C05                               #Call spell associated with equipped weapon
+4 p- cleo hand axe_007.png
+4 p- cleo hand axe_008.png
+4 p- cleo hand axe_009.png
+4 p- cleo hand axe_010.png
+4 p- cleo hand axe_011.png
+1 p- cleo hand axe_012.png
+C13                               #ranged attack - hand axe for Hector
+C1B                               #Play quick "heavy step" SFE
+3 p- cleo hand axe_013.png
+2 p- cleo hand axe_004.png
+1 p- cleo hand axe_005.png
+C01                               #NOP
+2 p- cleo hand axe_014.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+2 p- cleo hand axe_015.png
+3 p- cleo hand axe_000.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 6               #Ranged Critical Animation
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- cleo hand axe_000.png
+3 p- cleo hand axe_016.png
+C22                               #Play short sword swinging SFE
+2 p- cleo hand axe_017.png
+5 p- cleo hand axe_018.png
+3 p- cleo hand axe_019.png
+2 p- cleo hand axe_020.png
+3 p- cleo hand axe_021.png
+5 p- cleo hand axe_022.png
+3 p- cleo hand axe_023.png
+2 p- cleo hand axe_024.png
+C23                               #Play shorter sword swinging SFE
+3 p- cleo hand axe_025.png
+5 p- cleo hand axe_026.png
+3 p- cleo hand axe_027.png
+2 p- cleo hand axe_028.png
+3 p- cleo hand axe_029.png
+5 p- cleo hand axe_030.png
+3 p- cleo hand axe_031.png
+5 p- cleo hand axe_032.png
+C1B                               #Play quick "heavy step" SFE
+3 p- cleo hand axe_033.png
+3 p- cleo hand axe_034.png
+21 p- cleo hand axe_035.png
+8 p- cleo hand axe_036.png
+8 p- cleo hand axe_005.png
+C22                               #Play short sword swinging SFE
+4 p- cleo hand axe_006.png
+C05                               #Call spell associated with equipped weapon
+4 p- cleo hand axe_007.png
+4 p- cleo hand axe_008.png
+4 p- cleo hand axe_009.png
+4 p- cleo hand axe_010.png
+4 p- cleo hand axe_011.png
+1 p- cleo hand axe_012.png
+C13                               #ranged attack - hand axe for Hector
+C1B                               #Play quick "heavy step" SFE
+3 p- cleo hand axe_013.png
+2 p- cleo hand axe_004.png
+1 p- cleo hand axe_005.png
+C01                               #NOP
+2 p- cleo hand axe_014.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+2 p- cleo hand axe_015.png
+3 p- cleo hand axe_000.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 7               #Dodge Melee Attack
+C02                               #Start of dodge
+1 p- cleo hand axe_000.png
+C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
+2 p- cleo hand axe_037.png
+2 p- cleo hand axe_038.png
+1 p- cleo hand axe_039.png
+C01                               #NOP
+2 p- cleo hand axe_038.png
+2 p- cleo hand axe_037.png
+1 p- cleo hand axe_000.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 8               #Dodge Ranged Attack
+C02                               #Start of dodge
+1 p- cleo hand axe_000.png
+C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
+2 p- cleo hand axe_037.png
+2 p- cleo hand axe_038.png
+1 p- cleo hand axe_039.png
+C01                               #NOP
+2 p- cleo hand axe_038.png
+2 p- cleo hand axe_037.png
+1 p- cleo hand axe_000.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 9               #Equiped with Melee Weapon
+1 p- cleo hand axe_000.png
+C01                               #NOP
+~~~
+/// - Mode 10               #Standing motions
+1 p- cleo hand axe_000.png
+C01                               #NOP
+~~~
+/// - Mode 11               #Equiped with Ranged weapon
+1 p- cleo hand axe_000.png
+C01                               #NOP
+~~~
+/// - Mode 12               #Attack Missed Animation
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- cleo hand axe_000.png
+2 p- cleo hand axe_001.png
+C1B                               #Play quick "heavy step" SFE
+2 p- cleo hand axe_002.png
+2 p- cleo hand axe_003.png
+2 p- cleo hand axe_004.png
+15 p- cleo hand axe_005.png
+C22                               #Play short sword swinging SFE
+4 p- cleo hand axe_006.png
+C05                               #Call spell associated with equipped weapon
+4 p- cleo hand axe_007.png
+4 p- cleo hand axe_008.png
+4 p- cleo hand axe_009.png
+4 p- cleo hand axe_010.png
+4 p- cleo hand axe_011.png
+1 p- cleo hand axe_012.png
+C13                               #ranged attack - hand axe for Hector
+C1B                               #Play quick "heavy step" SFE
+3 p- cleo hand axe_013.png
+2 p- cleo hand axe_004.png
+1 p- cleo hand axe_005.png
+C01                               #NOP
+2 p- cleo hand axe_014.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+2 p- cleo hand axe_015.png
+3 p- cleo hand axe_000.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - End of animation

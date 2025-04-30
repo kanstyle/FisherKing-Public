@@ -98,12 +98,61 @@ Gold Hornet[X]
 Fixed attack power. Hits Res.[X]
 
 
+## PainName
 
-## AmygdalaName
-
-Amygdala[X]
+Pain[X]
 
 
-## AmygdalaDesc
+## DeceptionName
+
+Deception[X]
+
+
+## DeceptionDesc
+
+Ignores Res.[X]
+
+
+## ExploitationName
+
+Drains HP into caster.[X]
+
+
+## ExploitationDesc
+
+Drains HP into caster.[X]
+
+
+## DeathName
+
+Death[X]
+
+
+## UnfamiliarityName
+
+Unfamiliarity[X]
+
+
+## UnfamiliarityDesc
+
+[lock]Pillow.[X]
+
+
+## TortureName
+
+Torture[X]
+
+
+## TortureDesc
+
+[lock]Pillow.[X]
+
+
+## LonelinessName
+
+Loneliness[X]
+
+
+## LonelinessDesc
 
 [lock]Pillow.[X]

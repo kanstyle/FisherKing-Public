@@ -244,11 +244,26 @@ ORG ItemIconEntry(AngelicLife)
 */
 
 // dark
-ORG ItemIconEntry(Flux)
-#incbin "Dark/BasicFlux.dmp"		// Ereshkigal
+ORG ItemIconEntry(Pain)
+#incbin "Dark/pain.dmp"		// Ereshkigal
 
-ORG ItemIconEntry(Amygdala)
-#incbin "Dark/Amygdala.dmp"
+ORG ItemIconEntry(Loneliness)
+#incbin "Dark/loneliness.dmp"
+
+ORG ItemIconEntry(Deception)
+#incbin "Dark/deception.dmp"
+
+ORG ItemIconEntry(Exploitation)
+#incbin "Dark/exploitation.dmp"
+
+ORG ItemIconEntry(Unfamiliarity)
+#incbin "Dark/unfamiliarity.dmp"
+
+ORG ItemIconEntry(Torture)
+#incbin "Dark/torture.dmp"
+
+ORG ItemIconEntry(Death)
+#incbin "Dark/death.dmp"
 
 /*
 ORG ItemIconEntry(MaleficFlux)

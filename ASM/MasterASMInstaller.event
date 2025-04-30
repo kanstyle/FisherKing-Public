@@ -16,6 +16,8 @@
 #include "ASMCCheckSuite/ASMC Check Installer.event"
 #include "FixedDamageWeapons/FixedDamageWeapons.event" //credit to sme
 #include "LordSplitMenuPlus/LordSplitMenuPlus.event"
+#include "SummonFix/Installer.event"
+
 //#include "CritSystem/Installer.event"
 
 //#include "CBaseConvos/BaseConvos.event" //credit to snek

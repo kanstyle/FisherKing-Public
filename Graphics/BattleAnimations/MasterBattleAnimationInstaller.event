@@ -1,6 +1,6 @@
-#ifndef ClassAnimTable
+/*#ifndef ClassAnimTable
   #define ClassAnimTable (0xc00008-0x20)
-#endif
+#endif*/
 
 #define AnimTableEntry(index) "ORG ClassAnimTable + (index * 0x20)"
 
@@ -16,6 +16,17 @@
 #define DarkAnim(Animation) "BYTE Dark 0x01 ; SHORT Animation"
 #define UnarmedAnim(Animation) "BYTE Disarmed 0x01 ; SHORT Animation"
 #define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
+
+{
+#include "Animations/CleoAxe/cleo axe Installer.event"
+#include "Animations/CleoHAxe/cleo hand axe Installer.event"
+}
+ALIGN 4
+HeadswomanAnim:
+AxeAnim(0xD2)
+HandAxeAnim(0xD3)
+UnarmedAnim(0xD2)
+WORD 0x0 // Seperator
 
 {
 #include "Animations/EliwoodRepal Installer.event"
