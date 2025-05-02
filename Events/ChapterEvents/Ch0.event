@@ -37,6 +37,7 @@ PointerList:
 
 TurnBasedEvents:
 	TurnEventPlayer(0x0,BleedoutChapterTurnEvent,1,255)
+	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
 	END_MAIN
 
 ALIGN 32
@@ -510,5 +511,10 @@ LABEL CSPg1
 	CenterTextbox(DebugPauseText)
 	FADI 16
 	CLEAN
+	NoFade
+	ENDA
+	
+HeroGenderFlagTurnEvent:
+	UnsetFlag(HeroGenderswapFlag)
 	NoFade
 	ENDA

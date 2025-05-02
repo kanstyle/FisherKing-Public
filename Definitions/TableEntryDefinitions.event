@@ -52,7 +52,7 @@
 #define SigilClass 0x77
 #define Peer 0x73
 
-// Items
+// Item Types
 #define Sword 0x0
 #define Lance 0x1
 #define Axe 0x2
@@ -68,6 +68,9 @@
 #define DancerRing 0x12
 
 #define BlankDesc 0x404
+
+// Items
+#define HerosFlair 0xA
 
 #define LowTalon PoisonSword
 #define LowClaw ToxinLance
@@ -90,7 +93,9 @@
 #define ClusterBomb 0xC7
 #define PowderKeg 0xC8
 #define RedHornet 0xC9
-#define GoldHornet 0xD0
+#define GoldHornet 0xCA
+
+#define SlimAxe 0xCB
 
 //Statuses
 #define SpecialStatusID 5

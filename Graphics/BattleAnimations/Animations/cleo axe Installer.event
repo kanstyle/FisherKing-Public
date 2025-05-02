@@ -1,7 +1,7 @@
 ///////Animation Install.event///////
     
 PUSH
-AnimTableEntry(0xD2) //CHANGE THIS TO THE SLOT YOU ARE REPLACING
+AnimTableEntry(0xCA) //CHANGE THIS TO THE SLOT YOU ARE REPLACING
 WORD 0 0 0 //empty name field, who cares
 POIN Anim_cleo_axe_sectiondata
 POIN Anim_cleo_axe_framedata

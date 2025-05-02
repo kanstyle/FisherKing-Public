@@ -56,22 +56,81 @@ you too, miss.[A][X]
 
 Beside him stood a young woman,[N]
 tall and hard-eyed, bearing a[N]
-large axe.[AN]
-His second, stranger companion[N]
-laid on a bed of pillows, her legs[N]
-missing below the knee.[N]
-She wore an ominous metal crown[N]
-across her face.[A][X]
+large axe.[A][X]
 
 
 ## Ch1HeroGreetsTeacher2
 
 [ml][LoadTeacher]
 [r][LoadDragon]
-[fr][LoadPillow]
+[fr][LoadHeroM]
 
 [r]
-Name's Dragon.[X]
+They call you [oq]Teacher", right?[A]
+
+[ml]
+They have, yes.[A]
+
+[r]
+Fine with me.[4] I'm Dragon.[A]
+
+[fr][ToggleSmile]
+Don't worry, though![4] She's not REALLY the[N]
+type to pick out a nickname like that.[AN]
+Or at least not JUST that type.[N]
+She's ACTUALLY cool![A]
+
+[r]
+...Hey, Teacher.[4] Want to see[N]
+how far I can throw him?[A]
+
+[ml][tmm]
+(What a delightful pair.)[A][X]
+
+
+## Ch1PillowDescription
+
+The final, strangest companion[N]
+laid on a bed of pillows, her legs[N]
+missing below the knee.[N]
+She wore an ominous metal crown[N]
+across her face.[A][X]
+
+
+## Ch1HeroGreetsTeacher3
+
+[ml][LoadTeacher]
+[mr][LoadPillow][ts]
+Hi, Teacher.[4] I'm Pillow.[4][N]
+Good to meet you.[AN]
+
+[ml][ts]
+Well met.[4][N]
+...[A]
+
+[mr]
+...?[4][N]
+...Sorry. I have to wear it.[AN]
+It keeps the demons inside.[A]
+
+[ml][CloseEyes]
+No.[4] You needn't apologize.[4][N][OpenEyes]
+I didn't meant to stare.[AN]
+I owe you Low Mages a large debt.[4] That's all.[A]
+
+[mr]
+Er...[4] Well, you don't owe me anything.[4][N]
+[ts]I mean, we just met.[4] Ahaha...[A]
+
+[ml][ts]
+What I mean is--[A]
+
+[mr]
+No, I know what you mean.[4] I'd... just[N]
+rather talk about other things.[A]
+
+[ml]
+...Right.[4] I understand.[A][X]
 
 
 ## Ch1Village1Text

@@ -28,7 +28,7 @@
 #define FlasubanVillageObjectID 0x88
 #define FlasubanVillagePaletteID 0x89
 #define FlasubanVillageConfigID 0x8A
-#define FlasubanVillageTileAnimationsID 0x8B
+#define FlasubanVillageTileAnimationsID 0x5
 #define FlasubanVillageOurplePaletteID 0x97
 
 #define DesertBastionNightSkyObjectID 0x8C

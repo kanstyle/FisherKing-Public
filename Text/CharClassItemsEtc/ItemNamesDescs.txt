@@ -1,3 +1,8 @@
+## SlimAxeName
+
+Slim Axe[X]
+
+
 ## BombName
 
 Bomb[X]
@@ -115,7 +120,7 @@ Ignores Res.[X]
 
 ## ExploitationName
 
-Drains HP into caster.[X]
+Exploitation[X]
 
 
 ## ExploitationDesc
@@ -155,4 +160,14 @@ Loneliness[X]
 
 ## LonelinessDesc
 
-[lock]Pillow.[X]
+[.][lock]Pillow.[X]
+
+
+## HerosFlairName
+
+Hero's Flair[X]
+
+
+## HerosFlairDesc ^
+
+[.][lock]Hero. On kill, heal 50% HP to allies within 2 tiles.[X]

@@ -57,6 +57,9 @@ ORG ItemIconEntry(LightBrand)
 ORG ItemIconEntry(Runesword)
 #incbin "Swords/Runesword-Ereshkigal.dmp"	// Batima
 
+ORG ItemIconEntry(HerosFlair)
+#incbin "Swords/HerosFlair.dmp"	// Batima
+
 // lances
 ORG ItemIconEntry(IronLance)
 #incbin "Lances/IronLance.dmp"		// Ereshkigal
@@ -112,6 +115,9 @@ ORG ItemIconEntry(KillerAxe)
 
 ORG ItemIconEntry(Swordreaver)
 #incbin "Axes/Swordreaver.dmp"		// Ereshkigal
+
+ORG ItemIconEntry(SlimAxe)
+#incbin "Axes/SlimAxe.dmp"		// Ereshkigal
 
 // bows
 ORG ItemIconEntry(IronBow)

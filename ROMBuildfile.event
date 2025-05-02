@@ -4,9 +4,9 @@
 //PROTECT $25224
     ORG FreeSpace
 	
-    #include "Tables/Repointed/_MasterRepointer.event"
+    //#include "Tables/Repointed/_MasterRepointer.event"
 
-    //#include "repointedTextTable.event"
+    #include "repointedTextTable.event"
 	
 	//#include "Split_PTABLE.event"
 

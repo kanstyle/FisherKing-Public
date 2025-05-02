@@ -39,8 +39,16 @@ BYTE EirikaLord
 BYTE Rogue
 BYTE EndLockArray
 
-PillowLock:
+#define PillowLock 0x01000000
+PillowArray:
 BYTE HardCharLock
 BYTE Pillow
+BYTE EndLockArray
+
+
+HeroArray:
+BYTE HardCharLock
+BYTE Hero
+BYTE EndLockArray
 
 #endif // ADV_WEAPON_LOCKS

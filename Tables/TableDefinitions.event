@@ -62,7 +62,8 @@
 #endif
 
 //Used For Consolidated AdvWeaponLocks 
-#define AdvWeaponLock 0x01000000
+#define PillowLock 0x01000000
+#define HeroLock 0x02000000
 
 
 // Weapon Effect

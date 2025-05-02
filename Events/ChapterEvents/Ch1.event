@@ -18,6 +18,7 @@ PointerList:
 
 TurnBasedEvents:
 	TurnEventPlayer(0x0,BleedoutChapterTurnEvent,1,255)
+	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
 	END_MAIN
 
 ALIGN 32
@@ -55,9 +56,10 @@ Tutorial:
 Units1:
 
 	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [14,9] 0b 0x0 0x1 REDA10R9 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT HeroChar UpstartM 0x40 Level(3,Ally,False)     [14,9] 0b 0x0 0x1 REDA9R9 [IronBow, IronSword, Bomb, Restore] [0x0,0x0,0x0,0x0]
+	UNIT HeroChar UpstartM 0x40 Level(3,Ally,False)     [14,9] 0b 0x0 0x1 REDA9R9 [IronBow, IronSword, HerosFlair, Restore] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Headsman 0x40 Level(3,Ally,False)     [14,8] 0b 0x0 0x1 REDA9R8 [IronAxe, Bomb, Vulnerary] [0x0,0x0,0x0,0x0]
 	UNIT Pillow LowVoice 0x40 Level(3,Ally,False)     [11,8] 0b 0x0 0x0 0x0 [Loneliness, Pain] [0x0,0x0,0x0,0x0]
+	UNIT YoungPrince Noble 0x40 Level(1,Ally,False)     [6,9] 0b 0x0 0x0 0x0 [Rapier] [0x0,0x0,0x0,0x0]
 	UNIT
 
 EnemyUnits:
@@ -119,6 +121,11 @@ BleedoutChapterTurnEvent:
 	NoFade
 	ENDA
 	
+HeroGenderFlagTurnEvent:
+	UnsetFlag(HeroGenderswapFlag)
+	NoFade
+	ENDA
+	
 Ch1Village1Event:
 	FADI 16
 	SetBackground(HouseBG)
@@ -141,3 +148,4 @@ Ch1Village2Event:
 	
 //Ch1Village3Event:
 	//ENDA
+	

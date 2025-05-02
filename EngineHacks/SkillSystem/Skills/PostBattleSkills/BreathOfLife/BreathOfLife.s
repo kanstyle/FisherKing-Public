@@ -13,6 +13,10 @@ ldrb	r0, [r4,#0x13]
 cmp	r0, #0x00
 beq	End
 
+ldrb    r0, [r5,#0x13]
+cmp    r0, #0x00
+bne    End
+
 @check if attacked this turn
 ldrb 	r0, [r6,#0x11]	@action taken this turn
 cmp	r0, #0x2 @attack
@@ -78,7 +82,7 @@ mov	lr, r2
 @r0 is ram data
 mov	r7, r0
 ldrb	r0, [r7,#0x12]	@max hp
-mov	r1, #0x05
+mov	r1, #0x02
 swi	#0x06		@r0 max hp/5
 ldrb	r1, [r7,#0x13]	@r1 = current hp
 cmp	r1, #0x00	@checking if the unit is already dead, probably not needed but w/e
