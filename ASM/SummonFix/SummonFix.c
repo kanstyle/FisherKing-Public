@@ -4,7 +4,7 @@
 void AddAsTarget_IfPositionCleanForSummon(int x, int y) {
 	struct Unit temp;
 	temp.pClassData = GetClassData(0x77);
-	gEventSlots[9] = &(temp.pClassData->pMovCostTable[0]); //currently giving 08FFA360
+	gEventSlots[9] = temp.pClassData->pMovCostTable[0]; //currently giving 08FFA360
 	
     if (gBmMapUnit[y][x] != 0) {
         return;
