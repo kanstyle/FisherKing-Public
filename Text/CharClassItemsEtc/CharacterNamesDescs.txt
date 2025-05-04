@@ -118,6 +118,12 @@ anyone by the name of "Jerry".)[X]
 Sigil[X]
 
 ## SigilCharDesc
-"Pillow had a habit of appearing when[N]
+[oq]Pillow had a habit of appearing when[N]
 you least expected, or disappearing off[N]
 to do who-knows-what."[X]
+
+## SkullName
+Skull[X]
+
+## SkullDesc
+Placeholder.[X]

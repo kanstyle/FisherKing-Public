@@ -6,7 +6,7 @@
 
 // Player Units
 DeathQuote(Teacher,0xFF,0x0,0x0,TeacherDeathQuoteEvent)
-DeathQuote(Hero,0xFF,0x0,0x0,HeroDeathQuoteEvent)
+DeathQuote(HeroChar,0xFF,0x0,0x0,HeroDeathQuoteEvent)
 DeathQuote(Dragon,0xFF,0x0,0x0,DragonDeathQuoteEvent)
 DeathQuote(Pillow,0xFF,0x0,0x0,PillowDeathQuoteEvent)
 

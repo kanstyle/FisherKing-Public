@@ -33,6 +33,7 @@
 #define YoungTeacher 0x21
 #define OldPrince 0x22
 #define Ch0Bunny 0x24
+#define Skull 0x25
 #define Jerry 0x83
 #define Sigil 0x3B
 

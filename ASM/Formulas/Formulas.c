@@ -15,6 +15,17 @@ void NewComputeBattleUnitDodgeRate(struct BattleUnit* bu) {
     bu->battleDodgeRate = 0;
 }
 
+void ComputeBattleUnitAvoidRate(struct BattleUnit* bu) {
+    bu->battleAvoidRate = (bu->battleSpeed) + bu->terrainAvoid + (bu->unit.lck * 2);
+
+    if (bu->battleAvoidRate < 0)
+        bu->battleAvoidRate = 0;
+}
+
+void ComputeBattleUnitHitRate(struct BattleUnit* bu) {
+    bu->battleHitRate = (bu->unit.skl * 2) + GetItemHit(bu->weapon) + (bu->unit.lck) + bu->wTriangleHitBonus;
+}
+
 void NewComputeBattleUnitStatusBonuses(struct BattleUnit* bu) {
     switch (bu->unit.statusIndex) {
 
@@ -35,6 +46,14 @@ void NewComputeBattleUnitStatusBonuses(struct BattleUnit* bu) {
         break;
 
     } // switch (bu->unit.statusIndex)
+}
+
+int GetUnitAid(struct Unit* unit) { //universal 20 aid
+    if (gSubjectUnit->pClassData->number == 0x77) { //sigil class
+        return 0;
+    }
+	
+	return 20;
 }
 
 /*void BattleGenerateHitAttributes(struct BattleUnit* attacker, struct BattleUnit* defender) {

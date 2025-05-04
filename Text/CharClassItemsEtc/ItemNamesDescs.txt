@@ -140,7 +140,7 @@ Unfamiliarity[X]
 
 ## UnfamiliarityDesc
 
-[lock]Pillow.[X]
+[lock] Pillow.[X]
 
 
 ## TortureName
@@ -150,7 +150,7 @@ Torture[X]
 
 ## TortureDesc
 
-[lock]Pillow.[X]
+[lock] Pillow.[X]
 
 
 ## LonelinessName
@@ -160,7 +160,7 @@ Loneliness[X]
 
 ## LonelinessDesc
 
-[.][lock]Pillow.[X]
+[.][lock] Pillow.[X]
 
 
 ## HerosFlairName
@@ -170,4 +170,5 @@ Hero's Flair[X]
 
 ## HerosFlairDesc ^
 
-[.][lock]Hero. On kill, heal 50% HP to allies within 2 tiles.[X]
+[.][lock] Hero. On kill, heal 50% HP to allies[N]
+within 2 tiles.[X]

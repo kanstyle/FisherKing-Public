@@ -172,7 +172,8 @@ void DoGaleforce(struct Proc* proc) {
 		gActiveUnit->state &= ~0x40; //unset has_moved
 		gActiveUnit->state &= ~0x2; //unset unselectable
 		gActiveUnit->state |= 0x400; //set galeforce bit
-		gActiveUnit->supports[6] = 0x2;
+		//gActiveUnit->supports[6] = 0x2;
+		PlaySoundEffect(0x127);
 	}
 }
 

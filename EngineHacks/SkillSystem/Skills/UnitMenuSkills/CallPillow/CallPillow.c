@@ -18,7 +18,14 @@ enum MenuEffect {
     ME_END_AFTER = (1 << 7),
 };
  
-int CallPillow_Usability(struct MenuProc* menu) { 
+int CallPillow_Usability(struct MenuProc* menu) {
+	struct Unit* unit = GetUnit(0x3);
+	
+	if (!CanUnitCrossTerrain(unit, gBmMapTerrain[gActiveUnit->yPos][gActiveUnit->xPos])) { //can't call pillow if she can't stand (sit) there
+		gEventSlots[6] = 1;
+        return 3;
+	}
+	
 	if (SkillTester(gActiveUnit, CallPillowID_Link) == 0) { 
 		return 3; // false 
 	}

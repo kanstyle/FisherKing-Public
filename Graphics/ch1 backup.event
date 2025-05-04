@@ -65,28 +65,28 @@ Units1:
 EnemyUnits:
 	
 	//t1
-	UNIT 0x81 Mercenary 0x40 Level(3,Enemy,True)     [4,8] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
-	UNIT 0x81 Fighter 0x40 Level(3,Enemy,True)     [5,9] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
-	UNIT 0x81 Knight 0x40 Level(3,Enemy,True)     [3,8] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT 0x7F Mercenary 0x40 Level(3,Enemy,True)     [4,8] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	UNIT 0x7F Fighter 0x40 Level(3,Enemy,True)     [5,9] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+	UNIT 0x7F Knight 0x40 Level(3,Enemy,True)     [3,8] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 	
 	//t2
-	UNIT 0x81 Mage 0x40 Level(3,Enemy,True)     [1,5] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
-	UNIT 0x81 Archer 0x40 Level(3,Enemy,True)     [3,4] 0b 0x0 0x0 0x0 [IronBow] AttackInRangeAI
-	UNIT 0x81 Cavalier 0x40 Level(3,Enemy,True)     [0,0] 0b 0x0 0x0 0x0 [IronLance] ChargeAI
+	UNIT 0x7F Mage 0x40 Level(3,Enemy,True)     [1,5] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	UNIT 0x7F Archer 0x40 Level(3,Enemy,True)     [3,4] 0b 0x0 0x0 0x0 [IronBow] AttackInRangeAI
+	UNIT 0x7F Cavalier 0x40 Level(3,Enemy,True)     [0,0] 0b 0x0 0x0 0x0 [IronLance] ChargeAI
 	
 	//t3
-	UNIT 0x81 Myrmidon 0x40 Level(3,Enemy,True)     [5,1] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
-	UNIT 0x81 Mercenary 0x40 Level(3,Enemy,True)     [10,1] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
-	UNIT 0x81 Soldier 0x40 Level(3,Enemy,True)     [6,2] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT 0x7F Myrmidon 0x40 Level(3,Enemy,True)     [5,1] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	UNIT 0x7F Mercenary 0x40 Level(3,Enemy,True)     [10,1] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	UNIT 0x7F Soldier 0x40 Level(3,Enemy,True)     [6,2] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 	
 	//t4
-	UNIT 0x81 Mage 0x40 Level(3,Enemy,True)     [11,3] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
-	UNIT 0x81 Fighter 0x40 Level(3,Enemy,True)     [12,0] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
-	UNIT 0x81 Cavalier 0x40 Level(3,Enemy,True)     [13,2] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT 0x7F Mage 0x40 Level(3,Enemy,True)     [11,3] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	UNIT 0x7F Fighter 0x40 Level(3,Enemy,True)     [12,0] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+	UNIT 0x7F Cavalier 0x40 Level(3,Enemy,True)     [13,2] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 	
 	//t5
-	UNIT 0x81 Knight 0x40 Level(3,Enemy,True)     [14,5] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
-	UNIT 0x81 Fighter 0x40 Level(3,Enemy,True)     [14,0] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+	UNIT 0x7F Knight 0x40 Level(3,Enemy,True)     [14,5] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT 0x7F Fighter 0x40 Level(3,Enemy,True)     [14,0] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
 	
 	UNIT
 

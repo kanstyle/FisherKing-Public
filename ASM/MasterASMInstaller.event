@@ -17,6 +17,8 @@
 #include "FixedDamageWeapons/FixedDamageWeapons.event" //credit to sme
 #include "LordSplitMenuPlus/LordSplitMenuPlus.event"
 #include "Music/MusicAsmInstaller.event"
+#include "SummonFix/Installer.event"
+#include "SigilActions/Installer.event"
 
 //#include "CritSystem/Installer.event"
 
