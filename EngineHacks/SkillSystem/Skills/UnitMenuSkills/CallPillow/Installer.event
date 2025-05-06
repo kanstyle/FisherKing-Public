@@ -4,6 +4,10 @@ ALIGN 4
 CallPillowID_Link: 
 WORD CallPillowID
 
+ALIGN 4 
+NoSkillQuotesFlag_Link: 
+WORD NoSkillQuotesFlag
+
 //sB SigilXSigilY (0xXXXXYYYY)
 //s3 PillowXP
 ALIGN 4  
@@ -29,6 +33,31 @@ MOVEONTO 65535 Pillow 0x3B
 DISA 0x3B
 ENUN
 REVEAL Pillow
+CHECK_COORDS Pillow //get pillow coords
+SADD 0xB 0xC 0 //copy pillow coords to slot B
+SET_CURSOR_SB //put cursor on pillow
 EVBIT_MODIFY 0
 NoFade 
 ENDA 
+
+ALIGN 4
+ZoopQuoteEvent:
+Text(CallPillowZoop)
+NoFade
+ENDA
+
+ALIGN 4
+HelloQuoteEvent:
+Text(CallPillowHello)
+NoFade
+ENDA
+
+ALIGN 4
+ZoopHelloEvent:
+CenterTutorialTextBox
+TUTORIALTEXTBOXSTART 
+TEXTSHOW CallPillowZoopHello
+TEXTEND
+REMA
+NoFade
+ENDA

@@ -1,0 +1,34 @@
+## CallPillowZoop
+
+[mr][LoadPillow][ts]
+Zoop![A][X]
+
+## CallPillowHello
+
+[mr][LoadPillow][ts]
+Hello...[A][X]
+
+## CallPillowZoopHello
+
+Wow! You got the legendary[N]
+Zoop + Hello combo![A][X]
+
+## RevolutionWhosNext
+
+[mr][LoadDragon]
+Who's next?![A][X]
+
+## RevolutionStayDown
+
+[mr][LoadDragon]
+Stay...[4][4][MoveMidRight] down![A][X]
+
+## GenderswapMTF
+
+[mr][LoadHeroF][ts]
+Wooo![4] Check this out![A][X]
+
+## GenderswapFTM
+
+[mr][LoadHeroM]
+Alright! Classic it is.[A][X]

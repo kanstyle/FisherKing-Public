@@ -3,3 +3,19 @@
 ALIGN 4 
 RevolutionID_Link: 
 WORD RevolutionID
+
+ALIGN 4 
+NoSkillQuotesFlag_Link: 
+WORD NoSkillQuotesFlag
+
+ALIGN 4
+WhosNextQuoteEvent:
+Text(RevolutionWhosNext)
+NoFade
+ENDA
+
+ALIGN 4
+StayDownQuoteEvent:
+Text(RevolutionStayDown)
+NoFade
+ENDA

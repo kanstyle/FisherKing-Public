@@ -214,8 +214,8 @@ Slayer: Deal effective damage[N]
 to monster units.[X]
 
 ## SD_Summon
-Summon: Can conjure a phantom[N]
-soldier to fight alongside you.[X]
+Summon: Can conjure a temporary[N]
+allied unit.[X]
 
 ## SD_Dance
 Dance: Refresh an ally unit[N]

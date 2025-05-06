@@ -5,6 +5,10 @@ GenderswapID_Link:
 WORD GenderswapID
 
 ALIGN 4 
+NoSkillQuotesFlag_Link: 
+WORD NoSkillQuotesFlag
+
+ALIGN 4 
 UpstartF_Link: 
 WORD UpstartF
 
@@ -27,6 +31,18 @@ GenderswapEvent:
 ASMC ASMC_HealLikeVulnerary|1
 NoFade 
 ENDA 
+
+ALIGN 4
+MTFQuoteEvent:
+Text(GenderswapMTF)
+NoFade
+ENDA
+
+ALIGN 4
+FTMQuoteEvent:
+Text(GenderswapFTM)
+NoFade
+ENDA
 
 
 

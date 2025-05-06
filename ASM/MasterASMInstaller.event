@@ -20,6 +20,8 @@
 #include "SummonFix/Installer.event"
 #include "SigilActions/Installer.event"
 
+#include "FE8-Walking_Sounds_Fix/FE8-Walking_Sounds_EA.event"
+
 //#include "CritSystem/Installer.event"
 
 //#include "CBaseConvos/BaseConvos.event" //credit to snek

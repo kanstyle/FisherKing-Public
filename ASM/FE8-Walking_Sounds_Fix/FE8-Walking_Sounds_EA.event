@@ -1,0 +1,37 @@
+//FE8 Walking Sounds Fix patch
+//By Tequila
+
+/*0x0	Walking
+0x1 Mounts (horses)
+0x2 Wyverns
+0x3 Pegasi
+0x4 Armored units/Dragons
+0x5 Fleet
+0x6 F!Mamkute
+0x7 Zombies
+0x8 Skeletons
+0x9 Spiders
+0xA Dogs
+0xB Mogalls
+0xC Gorgon*/
+
+#include EAstdlib.event
+
+#ifdef _FE8_
+	//#define table1 0x78D90
+	#define table2 0x78E90
+	//ORG table1
+	//#incbin walking_sounds_class_dict.dmp
+	PUSH 
+	ORG table2
+	#incbin walking_sounds_pointer_table.dmp
+	
+	ORG 0x78D78
+	BYTE 0x03 0x49 0x08 0x5C 0x03 0x49 0x80 0x00 0x09 0x18 0x0D 0x68 0x33 0xE1 0xC0 0x46
+	POIN WalkingSoundTable
+	POIN table2
+	POP
+	
+#else
+	ERROR "You're not assembling FE8 events!"
+#endif

@@ -129,3 +129,5 @@
 #define AttackThenLootAI [0x00, 0x04, 0x04, 0x00]
 #define DoNotAttack07AI [0x07, 0x0A, 0x04, 0x00]
 
+#define IfHeroMale(label) "SVAL s1 0x1; CHECK_CLASS HeroChar; SSUB sC sC s1; BNE (label) 0xc 0x0;"
+#define IfHeroFemale(label) "SVAL s1 0x1; CHECK_CLASS HeroChar; SSUB sC sC s1; BEQ (label) 0xc 0x0;"

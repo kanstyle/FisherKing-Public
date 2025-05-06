@@ -359,6 +359,7 @@ BleedoutChapterTurnEvent:
 	
 	
 // Chapter Select Menu
+
 Start := 0x1000
 CSPg1 := 0x8001
 CSPg2 := 0x8002
@@ -372,6 +373,7 @@ EndMenu := 0x9002
 
 GameStartMenuEvent:
 LABEL Start
+	PreventSkipping
 	CLEAN
 	SetBackground(0x35)
 	FADU 16
@@ -405,68 +407,68 @@ LABEL CSPg1
 	SADD 5 0xC 0
 	SVAL 2 0x0
 	BEQ GoBack 5 2
-	CenterTextbox(DebugPauseText)
+	//CenterTextbox(DebugPauseText)
 	SVAL 2 0x1
 	BEQ 0x11 5 2
-	CenterTextbox(DebugPauseText)
+	//CenterTextbox(DebugPauseText)
 	SVAL 2 0x2
 	BEQ 0x12 5 2
-	CenterTextbox(DebugPauseText)
+	//CenterTextbox(DebugPauseText)
 	SVAL 2 0x3
 	BEQ 0x13 5 2
-	CenterTextbox(DebugPauseText)
+	//CenterTextbox(DebugPauseText)
 	SVAL 2 0x4
 	BEQ 0x14 5 2
-	CenterTextbox(DebugPauseText)
+	//CenterTextbox(DebugPauseText)
 	SVAL 2 0x5
 	BEQ 0x15 5 2
-	CenterTextbox(DebugPauseText)
+	//CenterTextbox(DebugPauseText)
 	SVAL 2 0x6
 	BEQ 0x16 5 2
-	CenterTextbox(DebugPauseText)
+	//CenterTextbox(DebugPauseText)
 	SVAL 2 0x7
 	BEQ GoToNextPage 5 2
 
 	LABEL GoBack
-		CenterTextbox(DebugPauseText)
+		//CenterTextbox(DebugPauseText)
 		GOTO Start
 	
 	LABEL 0x11
 		SVAL 8 Ch1
-		CenterTextbox(DebugPauseText)
+		//CenterTextbox(DebugPauseText)
 		GOTO EndPage
 		
 	LABEL 0x12
 		SVAL 8 Ch2
-		CenterTextbox(DebugPauseText)
+		//CenterTextbox(DebugPauseText)
 		GOTO EndPage
 		
 	LABEL 0x13
 		SVAL 8 Ch3
-		CenterTextbox(DebugPauseText)
+		//CenterTextbox(DebugPauseText)
 		GOTO EndPage
 		
 	LABEL 0x14
 		SVAL 8 Ch4
-		CenterTextbox(DebugPauseText)
+		//CenterTextbox(DebugPauseText)
 		GOTO EndPage
 		
 	LABEL 0x15
 		SVAL 8 Ch5
-		CenterTextbox(DebugPauseText)
+		//CenterTextbox(DebugPauseText)
 		GOTO EndPage
 		
 	LABEL 0x16
 		SVAL 8 Ch6
-		CenterTextbox(DebugPauseText)
+		//CenterTextbox(DebugPauseText)
 		GOTO EndPage
 		
 	LABEL GoToNextPage
-		CenterTextbox(DebugPauseText)
+		//CenterTextbox(DebugPauseText)
 		GOTO CSPg2
 
 	LABEL EndPage
-		CenterTextbox(DebugPauseText)
+		//CenterTextbox(DebugPauseText)
 		GOTO CSGo
 		
 //------------------------	
@@ -479,36 +481,36 @@ LABEL CSPg1
 	//SADD 8 8 7 //increase target chapter number by 0x1, so you can do less-than
 	//actually don't need to do this
 	
-	CenterTextbox(DebugPauseText)
+	//CenterTextbox(DebugPauseText)
 	SVAL 7 Ch1
 	BLT EndMenuSkipStartEvent 8 7
-		CenterTextbox(DebugPauseText)
+		//CenterTextbox(DebugPauseText)
 		MNC2 Ch1
 		GOTO EndMenuSkipStartEvent
 	
-	CenterTextbox(DebugPauseText)
+	//CenterTextbox(DebugPauseText)
 	SVAL 7 Ch2
 	BLT EndMenuSkipStartEvent 8 7
-		CenterTextbox(DebugPauseText)
+		//CenterTextbox(DebugPauseText)
 		LOAD1 0x1 UnitsCh1
 		GiveItem(HandAxe,Dragon)
 		GiveItem(LongFuseBomb,Dragon)
 		MNC2 Ch2
 		GOTO EndMenuSkipStartEvent
 	
-	CenterTextbox(DebugPauseText)	
+	//CenterTextbox(DebugPauseText)	
 	SVAL 7 Ch3
 	BLT EndMenuSkipStartEvent 8 7
 		// fill this in later with ch. 2 stuff
-		CenterTextbox(DebugPauseText)
+		//CenterTextbox(DebugPauseText)
 		MNC2 Ch3
 		GOTO EndMenuSkipStartEvent
 	
 	LABEL EndMenuSkipStartEvent
-	CenterTextbox(DebugPauseText)
+	//CenterTextbox(DebugPauseText)
 	SetFlag(SkipStartEvent)
 	LABEL EndMenu
-	CenterTextbox(DebugPauseText)
+	//CenterTextbox(DebugPauseText)
 	FADI 16
 	CLEAN
 	NoFade

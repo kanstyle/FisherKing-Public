@@ -139,3 +139,5 @@ a skill when used.[X]
 #include "ChapterText/Ch6.txt"
 
 #include "GameStartMenuText.txt"
+
+#include "skillquotes.txt"

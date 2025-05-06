@@ -149,3 +149,173 @@ Placeholder.[A][X]
 
 [mr]
 Placeholder.[A][X]
+
+
+## Ch1BrotherTeacherTalkText
+
+[ml][LoadTeacher]
+[mr][LoadBrother]
+
+[mr]
+Wait![4] Old man![4] Hold up![A][N]
+I'm a priest![4] I got no weapons, alright?[AN]
+You turn the other way, and I'll[N]
+just slip away real quiet.[AN]
+No trouble.[A]
+
+[ml][tmm]
+([oq]Old man"... I wish [oq]young man"[N]
+had the same bite to it.)[AN][tmm]
+I see.[4] And what's that sack you've got[N]
+under your robe, pray tell?[A]
+
+[mr]
+Askin' a guy about his sack...[AN]
+It's medicine, alright?[AN]
+We got sick orphans at the church[N]
+in the city--[A]
+
+[ml]
+Medicine.[4] In spherical jars.[4][N]
+Smelling of sulfur.[A]
+
+[mr][MoveMidRight]
+Look, man--[A]
+
+[ml]
+Relax, lad.[4] I'm no agent of the law.[N]
+If you want my advice, come with us.[AN]
+We've got questions for you.[4] Furthermore...[AN]
+You wouldn't want to run across the Baron's[N]
+knights when he sends reinforcements, hm?[AN]
+
+[mr][CloseEyes]
+Ah, dammit...[AN][OpenEyes]
+You're mercs, right?[4] Look.[4] I need money.[4][N]
+And not just for me.[4] You get me?[AN]
+I could heal you, and all that,[N]
+and I'll do it cheap.[A]
+
+[ml]
+I see.[4][4][ts] So you're a healer from[N]
+the Church of Bombs, then?[AN]
+I've heard they place a powder keg on[N]
+the altar, lighting firecrackers in its name...[A]
+
+[mr][ts]
+...Church of Bombs?[4] What?[A]
+
+[ml]
+A joke.[4] Never mind.[4][4][N]
+Tell the boss you have my blessing.[A][css][ClearFace]
+
+[mr][tmm][CloseEyes]
+(Those damn old people, man...)[A]
+[X]
+
+
+## Ch1BrotherHeroMTalkText
+
+[ml][LoadHeroM]
+[mr][LoadBrother]
+
+[mr]
+Hey, man![4] Hold up![N]
+I've got no weapons, alright?[AN]
+You turn the other way, and I'll[N]
+just slip away real quiet.[AN]
+No trouble.[A]
+
+[ml][ts]
+Whoa, hey![4] I like that idea.[N]
+What's your name, man?[A]
+
+[mr][ts]
+Uh...[4] Just call me Brother.[N]
+I'm with the church in the city.[A]
+
+[ml][ts]
+Uh-huh.[4] And what've you got in[N]
+that sack, Brother?[A]
+
+[mr][ts]
+Wh--[4][4] I-I mean,[4] damn,[4] you don't just[N]
+ask a guy what's in his sack...[A]
+
+[ml][ts]
+Hey, I don't judge![4] Y'know, why don't[N]
+I make you an offer?[AN]
+I'm Hero, of Hero's Company! We're small,[N]
+sure, but headed right for the top.[AN]
+
+[mr][ts][tmm]
+(Small?[4] You've only got like four guys...)[4][4][N][tmm]
+Uh...[4] can you pay?[A] Look, I need[N]
+money.[4] And not just for me.[4] You get it?[AN]
+
+[ml][ts]
+Yeah, I get it.[4] We'll get you out[N]
+of here, and we'll get you your money.[AN]
+No worries, Brother.[A][css][ClearFace]
+
+[mr][ts][tmm][MoveMidLeft]
+(...Phew.[4] Something off about that guy.[4][N]
+[CloseEyes]Whatever.[4] Just do what you gotta do...)[A]
+[X]
+
+
+## Ch1BrotherHeroFTalkText
+
+[ml][LoadHeroF]
+[mr][LoadBrother]
+
+[mr]
+Hey![4] Hold up![N]
+I've got no weapons, alright?[AN]
+You turn the other way, and I'll[N]
+just slip away real quiet.[AN]
+No trouble.[A]
+
+[ml][ts]
+Whoa, hey![4] I like that idea.[N]
+What's your name, hmm?[A]
+
+[mr][ts]
+Uh...[4] Just call me Brother.[N]
+I'm with the church in the city.[A]
+
+[ml][ts]
+Uh-huh.[4] And what've you got in[N]
+that sack, Brother?[A]
+
+[mr][ts]
+Wh--[4][4] Er,[4] uh,[4] I-I mean,[4] damn,[4][4] you're[N]
+askin' a guy what's in his sack...[A]
+
+[ml][ts]
+Oh, sorry![4] Didn't mean to make you[N]
+get all flustered.[AN]
+
+[mr][ts]
+Th-that's not what I--[A]
+
+[ml][ts]
+Hey, I don't judge a guy by his sack![4][N]
+In fact, why don't I make you an offer?[AN]
+I'm Hero, of Hero's Company![4] We're small,[N]
+sure, but headed right for the top.[AN]
+
+[mr][tmm][ts]
+(Small?[4] You've only got like four guys...)[4][4][N][tmm]
+Uh...[4] can you pay?[A] Look, I need[N]
+money.[4] And not just for me.[4] You get it?[AN]
+
+[ml][ts]
+Yeah, I get it.[4] We'll get you out[N]
+of here, and we'll get you your money.[AN]
+No worries, Brother.[A][css][ClearFace]
+
+[mr][ts][tmm][MoveMidLeft]
+(...Phew.[4] Something off about that girl.[4][4][N]
+[CloseEyes]Whatever.[4] Just do what you gotta do...)[A]
+[X]

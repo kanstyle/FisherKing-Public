@@ -3,6 +3,7 @@ EventPointerTable(Ch1EventsID, PointerList)
 #define Ch1Village1Flag 0x7
 #define Ch1Village2Flag 0x8
 //#define Ch1Village3Flag 0x9
+#define Ch1BrotherTalkFlag 0xA
 
 PointerList:
 	POIN TurnBasedEvents
@@ -23,7 +24,8 @@ TurnBasedEvents:
 
 ALIGN 32
 CharacterBasedEvents:
-
+	CharacterEventBothWays(Ch1BrotherTalkFlag,Ch1BrotherTeacherTalk,Teacher,Brother)
+	CharacterEventBothWays(Ch1BrotherTalkFlag,Ch1BrotherHeroTalk,HeroChar,Brother)
 	END_MAIN
 
 MiscBasedEvents:
@@ -59,10 +61,10 @@ Units1:
 	UNIT HeroChar UpstartM 0x40 Level(3,Ally,False)     [14,9] 0b 0x0 0x1 REDA9R9 [IronBow, IronSword, HerosFlair, Restore] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Headsman 0x40 Level(3,Ally,False)     [14,8] 0b 0x0 0x1 REDA9R8 [SteelAxe, SlimAxe, Bomb, Vulnerary] [0x0,0x0,0x0,0x0]
 	UNIT Pillow LowVoice 0x40 Level(3,Ally,False)     [11,8] 0b 0x0 0x0 0x0 [Loneliness, Pain] [0x0,0x0,0x0,0x0]
-	//UNIT YoungPrince Noble 0x40 Level(1,Ally,False)     [6,9] 0b 0x0 0x0 0x0 [Rapier] [0x0,0x0,0x0,0x0]
 	UNIT
 
 EnemyUnits:
+	UNIT Brother Priest 0x40 Level(3,Enemy,False)     [4,0] 0b 0x0 0x0 0x0 [Heal, Bomb] DoNothingAI
 	
 	//t1
 	UNIT 0x81 Mercenary 0x40 Level(3,Enemy,True)     [4,8] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
@@ -86,7 +88,7 @@ EnemyUnits:
 	
 	//t5
 	UNIT 0x81 Knight 0x40 Level(3,Enemy,True)     [14,5] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
-	UNIT 0x81 Fighter 0x40 Level(3,Enemy,True)     [14,0] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+	UNIT Skull Fighter 0x40 Level(3,Enemy,True)     [14,0] 0b 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
 	
 	UNIT
 
@@ -149,3 +151,20 @@ Ch1Village2Event:
 	
 //Ch1Village3Event:
 	//ENDA
+	
+Ch1BrotherTeacherTalk:
+	Text(Ch1BrotherTeacherTalkText)
+	CUSA Brother
+	NoFade
+	ENDA
+	
+Ch1BrotherHeroTalk:
+	IfHeroMale(0x0)
+		Text(Ch1BrotherHeroMTalkText)
+		GOTO 0x1
+	LABEL 0x0
+	Text(Ch1BrotherHeroFTalkText)
+	LABEL 0x1
+	CUSA Brother
+	NoFade
+	ENDA

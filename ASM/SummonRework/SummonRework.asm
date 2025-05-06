@@ -236,7 +236,7 @@ GiveMonsterWeapon:
 mov r0, #0xAD			@rotten claw
 
 StoreWeapon:
-strb r0, [r6, #0xC]
+@strb r0, [r6, #0xC]
 
 DoneWeapon:
 mov r4, #0x0

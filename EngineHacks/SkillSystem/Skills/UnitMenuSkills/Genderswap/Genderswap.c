@@ -4,9 +4,12 @@
 extern int SkillTester(struct Unit* unit, int id); 
 extern int GenderswapID_Link;
 extern int GenderswapFlag_Link;
+extern int NoSkillQuotesFlag_Link;
 extern int UpstartM_Link;
 extern int UpstartF_Link;
 extern u16* GenderswapEvent; 
+extern u16* MTFQuoteEvent; 
+extern u16* FTMQuoteEvent; 
 
 enum MenuEffect {
     //
@@ -48,6 +51,10 @@ int GenderswapAction(struct Proc* proc) {
 		gActiveUnit->ranks[4] = 0; //clear staff rank
 		
 		gActiveUnit->pClassData = GetClassData(UpstartF_Link);
+		
+		if (NextRN_100() < 10 && CheckFlag(NoSkillQuotesFlag_Link) == 0) {
+		CallEvent(&MTFQuoteEvent, 1); 
+		}
 	}
 	
 	//female to male
@@ -61,6 +68,10 @@ int GenderswapAction(struct Proc* proc) {
 		gActiveUnit->ranks[6] = 0; //clear bomb rank
 		
 		gActiveUnit->pClassData = GetClassData(UpstartM_Link);
+		
+		if (NextRN_100() < 10 && CheckFlag(NoSkillQuotesFlag_Link) == 0) {
+		CallEvent(&FTMQuoteEvent, 1); 
+		}
 	}
 	
 	int actorHP = gActiveUnit->curHP;

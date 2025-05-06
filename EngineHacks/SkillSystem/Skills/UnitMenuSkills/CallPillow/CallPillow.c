@@ -4,6 +4,10 @@
 extern int SkillTester(struct Unit* unit, int id); 
 extern int CallPillowID_Link;
 extern u16* CallPillowEvent; 
+extern int NoSkillQuotesFlag_Link;
+extern u16* ZoopQuoteEvent;
+extern u16* HelloQuoteEvent;
+extern u16* ZoopHelloEvent;
 
 enum MenuEffect {
     //
@@ -46,7 +50,27 @@ int CallPillowAction(struct Proc* proc) {
 	gEventSlots[0x3] = gEventSlots[7] << 16;
 	gEventSlots[0x3] += gEventSlots[8];
 	
-	CallEvent(&CallPillowEvent, 1); 
+	gEventSlots[7] = 0;
+	gEventSlots[8] = 0;
+	
+	if (NextRN_100() < 10 && CheckFlag(NoSkillQuotesFlag_Link) == 0) {
+		CallEvent(&ZoopQuoteEvent, 1); 
+		gEventSlots[7] = 1;
+	}
+	
+	CallEvent(&CallPillowEvent, 1);
+	
+	if (NextRN_100() < 10 && CheckFlag(NoSkillQuotesFlag_Link) == 0) {
+		CallEvent(&HelloQuoteEvent, 1); 
+		gEventSlots[8] = 1;
+	}
+	
+	if (gEventSlots[7] == 1 && gEventSlots[8] == 1) {
+		CallEvent(&ZoopHelloEvent, 1); 
+	}
+
+	gEventSlots[7] = 0;
+	gEventSlots[8] = 0;
 
 	return (ME_DISABLE | ME_END | ME_PLAY_BEEP | ME_CLEAR_GFX); // parent proc yields 
 } 

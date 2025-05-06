@@ -15,6 +15,7 @@
     MESSAGE Used text space ends at currentOffset
 
     //CSV tables
+	#include "Tables/NightmareModules/CharactersClasses/WalkingSoundDefs.event"
     #include "Tables/TableInstaller.event"
 	#include "Tables/EATableInstaller.event"
     MESSAGE Used table space ends at currentOffset
@@ -42,7 +43,7 @@
     #include "Maps/MasterMapInstaller.event"
 	
 	//Music
-	//#include "Music/Music Installer.event"
+	#include "Music/Music Installer.event"
 	
 	ASSERT (FreeSpaceEnd - currentOffset) // So that you don't overwrite vanilla tables if using default freespace
 	

@@ -4,6 +4,9 @@
  // skill sys 
 extern int SkillTester(struct Unit* unit, int id); 
 extern int RevolutionID_Link;
+extern int NoSkillQuotesFlag_Link;
+extern u16* WhosNextQuoteEvent;
+extern u16* StayDownQuoteEvent;
 
 /*enum MenuEffect {
     //
@@ -169,6 +172,13 @@ bool CheckOHKO(struct Proc* proc) {
 
 void DoGaleforce(struct Proc* proc) {
 	if (!(gActiveUnit->state & 0x400)) { //check galeforce bit
+	
+		if (NextRN_100() < 10 && CheckFlag(NoSkillQuotesFlag_Link) == 0) {
+			CallEvent(&WhosNextQuoteEvent, 1); 
+		} else if (NextRN_100() < 10 && CheckFlag(NoSkillQuotesFlag_Link) == 0) {
+			CallEvent(&StayDownQuoteEvent, 1); 
+		}
+		
 		gActiveUnit->state &= ~0x40; //unset has_moved
 		gActiveUnit->state &= ~0x2; //unset unselectable
 		gActiveUnit->state |= 0x400; //set galeforce bit

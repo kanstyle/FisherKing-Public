@@ -2,6 +2,7 @@
 
 #define BleedoutFlag 0x12B
 #define HeroGenderswapFlag 0x28
+#define NoSkillQuotesFlag 0x27
 
 #define BelieveInDemonsFlag 0x78
 
