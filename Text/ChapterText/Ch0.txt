@@ -568,3 +568,22 @@ You will occasionally be faced[N]
 with choices. These may have[N]
 effects on both story and[N]
 gameplay.[A][X]
+
+
+## Ch0OldPrinceDied
+
+That day, the Elder Prince perished.[A][X]
+
+
+## Ch0MyDearestFriend
+
+My dearest friend.[AN]
+The man who had no fear.[A]
+[X]
+
+## Ch0WanderOff
+
+[mr][LoadYoungPrince]
+I shouldn't wander off[N]
+by myself.[AN]
+That was careless.[A][X]

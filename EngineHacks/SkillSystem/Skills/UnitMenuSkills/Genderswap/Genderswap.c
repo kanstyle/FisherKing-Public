@@ -91,5 +91,14 @@ int GenderswapAction(struct Proc* proc) {
 
 	return (ME_DISABLE | ME_END | ME_PLAY_BEEP | ME_CLEAR_GFX); // parent proc yields 
 } 
+
+u8 GenderswapMovBuff(u8 stat, struct Unit* unit) {
+	if (CheckFlag(GenderswapFlag_Link) == 1) {
+		if (SkillTester(unit, GenderswapID_Link) != 0) {
+			stat += 1;
+		}
+	}
+	return stat;
+}
  
  

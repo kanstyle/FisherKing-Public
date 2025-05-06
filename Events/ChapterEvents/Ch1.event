@@ -66,30 +66,29 @@ Units1:
 EnemyUnits:
 	UNIT Brother Priest 0x40 Level(3,Enemy,False)     [4,0] 0b 0x0 0x0 0x0 [Heal, Bomb] DoNothingAI
 	
-	//t1
-	UNIT 0x81 Mercenary 0x40 Level(3,Enemy,True)     [4,8] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
-	UNIT 0x81 Fighter 0x40 Level(3,Enemy,True)     [5,9] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
-	UNIT 0x81 Knight 0x40 Level(3,Enemy,True)     [3,8] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	//t1: kill merc, fighter, knight, bait mage, cav
+	UNIT 0x81 Mercenary 0x40 Level(3,Enemy,True)     [3,8] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	UNIT 0x81 Fighter 0x40 Level(3,Enemy,True)     [4,8] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+	UNIT 0x81 Knight 0x40 Level(3,Enemy,True)     [5,9] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 	
-	//t2
+	//t2: kill mage, cav, bait archer, myrm 
 	UNIT 0x81 Mage 0x40 Level(3,Enemy,True)     [1,5] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
-	UNIT 0x81 Archer 0x40 Level(3,Enemy,True)     [3,4] 0b 0x0 0x0 0x0 [IronBow] AttackInRangeAI
 	UNIT 0x81 Cavalier 0x40 Level(3,Enemy,True)     [0,0] 0b 0x0 0x0 0x0 [IronLance] ChargeAI
 	
-	//t3
-	UNIT 0x81 Myrmidon 0x40 Level(3,Enemy,True)     [5,1] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
-	UNIT 0x81 Mercenary 0x40 Level(3,Enemy,True)     [10,1] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
-	UNIT 0x81 Soldier 0x40 Level(3,Enemy,True)     [6,2] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	//t3: kill archer, myrm, bait merc, soldier
+	UNIT 0x81 Myrmidon 0x40 Level(3,Enemy,True)     [2,0] 0b 0x0 0x0 0x0 [IronSword] AttackIn2RangeAI
+	UNIT 0x81 Archer 0x40 Level(3,Enemy,True)     [3,4] 0b 0x0 0x0 0x0 [IronBow] AttackInRangeAI
 	
-	//t4
-	UNIT 0x81 Mage 0x40 Level(3,Enemy,True)     [11,3] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
-	UNIT 0x81 Fighter 0x40 Level(3,Enemy,True)     [12,0] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
-	UNIT 0x81 Cavalier 0x40 Level(3,Enemy,True)     [13,2] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	//t4: kill merc, soldier, recruit brother, kill cav, bait skull and the rest
+	UNIT 0x81 Mercenary 0x40 Level(3,Enemy,True)     [5,1] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	UNIT 0x81 Soldier 0x40 Level(3,Enemy,True)     [6,2] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT 0x81 Cavalier 0x40 Level(3,Enemy,True)     [14,3] 0b 0x0 0x0 0x0 [IronLance] AttackIn2RangeAI
 	
 	//t5
-	UNIT 0x81 Knight 0x40 Level(3,Enemy,True)     [14,5] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
-	UNIT Skull Fighter 0x40 Level(3,Enemy,True)     [14,0] 0b 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
-	
+	UNIT 0x81 Mage 0x40 Level(3,Enemy,True)     [12,4] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	UNIT 0x81 Fighter 0x40 Level(3,Enemy,True)     [12,0] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+	UNIT 0x81 Knight 0x40 Level(3,Enemy,True)     [11,5] 0b 0x0 0x0 0x0 [IronLance] AttackIn2RangeAI
+	UNIT Skull Fighter 0x40 Level(3,Enemy,True)     [14,0] 0b 0x0 0x0 0x0 [SteelAxe] AttackIn2RangeAI
 	UNIT
 
 Traps1:
@@ -135,14 +134,20 @@ Ch1Village1Event:
 	Text(Ch1Village1Text)
 	RemoveBackground
 	FADU 16
-	GiveItem(HandAxe,0xFFFF)
+	CallMenu(Ch1Village1Menu)
+	BEQ 0x0 0xC 0x0
+		GiveItem(HandAxe,0xFFFF)
+		GOTO 0x1
+	LABEL 0x0
+	GiveItem(Javelin,0xFFFF)
+	LABEL 0x1
 	NoFade
 	ENDA
 	
 Ch1Village2Event:
 	FADI 16
 	SetBackground(HouseBG)
-	Text(Ch1Village2Text)
+	CenterTextbox(Ch1Village2Text)
 	RemoveBackground
 	FADU 16
 	GiveItem(LongFuseBomb,0xFFFF)

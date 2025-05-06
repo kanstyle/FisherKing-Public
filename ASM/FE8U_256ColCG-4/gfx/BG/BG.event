@@ -75,6 +75,7 @@ WORD 0x0 0x0 0x0                                    // Not sure what this is use
 WORD 0x0 0x0 0x0                                    // ID used for random BG.
 POIN ButterflyInverted224BG; WORD 0x1; POIN ButterflyInverted224Pal  // TSA == 0 indicates 256-colour BGs. TSA == 1 indicates 224-colour BGs.
 POIN FogMountains224BG; WORD 0x1; POIN FogMountains224Pal
+POIN White224BG; WORD 0x1; POIN White224Pal
 
 ALIGN 4; ButterflyInverted224BG:
 #incbin "224ButterflyInverted.dmp"
@@ -85,3 +86,8 @@ ALIGN 4; FogMountains224BG:
 #incbin "224FogMountains.dmp"
 ALIGN 4; FogMountains224Pal:
 #incbin "224FogMountainsPal.dmp"
+
+ALIGN 4; White224BG:
+#incbin "224White.dmp"
+ALIGN 4; White224Pal:
+#incbin "224WhitePal.dmp"

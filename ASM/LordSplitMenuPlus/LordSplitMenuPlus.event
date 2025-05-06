@@ -30,6 +30,16 @@ MenuOption(Ch0IDoubtIt, Ch0IDoubtItDesc, 0)
 MenuOption(Ch0ItCouldBe, Ch0ItCouldBeDesc, 0)
 MenuTerminator
 
+ALIGN 4
+Ch1Village1Menu:
+MenuDefinition(6, 8, 18, 0, 1, Ch1Village1MenuOptions)
+
+ALIGN 4
+Ch1Village1MenuOptions:
+MenuOption(Ch1Village1Javelin, Ch1Village1JavelinDesc, 0)
+MenuOption(Ch1Village1HandAxe, Ch1Village1HandAxeDesc, 0)
+MenuTerminator
+
 
 //Game Start Menu
 

@@ -38,6 +38,8 @@ PointerList:
 TurnBasedEvents:
 	TurnEventPlayer(0x0,BleedoutChapterTurnEvent,1,255)
 	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
+	TurnEventPlayer(0x0,WaitTeacher,1,255)
+	TurnEventEnemy(0x0,EndChapter,1,255)
 	END_MAIN
 
 ALIGN 32
@@ -49,6 +51,7 @@ MiscBasedEvents:
 	CauseGameOverIfLordDies
 	AFEV BleedoutFlag BleedoutChapterAlwaysEvent 0x0
 	AFEV TutorialEventCompletionFlag TutorialEvent 0x0
+	AFEV 0x0 RefreshPrince 0x0
 	END_MAIN
 
 LocationBasedEvents:
@@ -121,6 +124,36 @@ Traps1:
 Traps2:
 	ENDTRAP
 	ALIGN 4
+	
+RefreshPrince:
+	UNCR(YoungPrince,AlreadyMoved)
+	GetUnitStatus(YoungPrince,YCoord)
+	SVAL s1 7
+	BGT 0x0 sC s1
+		SET_ACTIVE 0x0
+		FADI 8
+		CAMERA [5,14]
+		MOVE 65535 YoungPrince [5,14]
+		FADU 8
+		Highlight(YoungPrince)
+		Text(Ch0WanderOff)
+	LABEL 0x0
+	NoFade
+	ENDA
+
+EndChapter:
+	FlagIsSet(Stage3BeganFlag,0x0)
+		CALL EndingScene
+	LABEL 0x0
+	NoFade
+	ENDA
+	
+WaitTeacher:
+	FlagNotSet(Stage3BeganFlag,0x0)
+		UNCM(YoungTeacher,AlreadyMoved)
+	LABEL 0x0
+	NoFade
+	ENDA
 
 BeginningScene:
 	FadeOutMusic
@@ -132,6 +165,7 @@ BeginningScene:
 	SetBackgroundSlow(ButterflyInverted)
 	STAL 60
 	
+	AllowSkipping
 	CenterTextbox(Ch0ButterflyIntro)
 	RemoveBackgroundSlow
 	
@@ -263,6 +297,7 @@ TutorialEvent:
 		SetUnitFullHP(0x81)
 		CUSA 0x82
 		SetUnitFullHP(0x82)
+		SetUnitFullHP(YoungPrince)
 		
 		//set the boys to allies
 		SCOORD sB [5,10]
@@ -337,7 +372,17 @@ Ch0BunnyPrinceTalk:
 EndingScene:
 	CAMERA [0,0]
 	Text(Ch0FogBreaks)
+	FAWI 5
+	REMOVEPORTRAITS
+	BACG WhiteBG
+	FAWU 16
 	Text(Ch0Surprise)
+	RemoveBackgroundSlow
+	SetBackgroundSlow(BlackBG)
+	
+	CenterTextbox(Ch0OldPrinceDied)
+	CenterTextbox(Ch0MyDearestFriend)
+	FADI 16
 	
 	DISA YoungTeacher
 	DISA YoungPrince

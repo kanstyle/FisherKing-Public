@@ -13,12 +13,6 @@ ORG 0x897C4
 SHORT 0x200E 0x5620 //mov r0, #0x0E; ldsb r0, [r4, r0]
 POP
 
-//Should fix lock icon at the start of text entries
-PUSH
-ORG 0x891E8
-SHORT 0x7800 0x2820 0xD007 0x46C0
-POP
-
 //Sets Vulnerary HP Recovery to 20hp.
 PUSH
 ORG 0x2FEC6

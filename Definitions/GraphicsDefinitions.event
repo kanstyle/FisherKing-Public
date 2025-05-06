@@ -21,5 +21,7 @@
 #define SigilCard 0x77
 
 //Backgrounds
+#define BlackBG 0x35
 #define ButterflyInverted 0x38
 #define FogMountains 0x39
+#define WhiteBG 0x3A

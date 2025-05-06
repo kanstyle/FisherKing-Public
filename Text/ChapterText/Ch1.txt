@@ -2,6 +2,26 @@
 
 Ch. 1: Hero[X]
 
+## Ch1OpeningNarration
+
+I had served the crown since I was[N]
+old enough to hold a lance.[N]
+To the late king, I was a brother and[N]
+a confidant. To his son, a teacher[N]
+and a dear friend.[A] To the armies of[N]
+the Highlands, a quiet, undying pillar.[N]
+Even if the sky cracked in two and[N]
+blood rose to my knees, I would[N]
+give my orders ceaselessly.[A] Even
+as my colleagues and underlings fell[N]
+around me, their screams echoing[N]
+in my ears, I stood.[A] I watched many[N]
+lay down their lives for our fledgling[N]
+nation, but I never followed.[A][X]
+
+## Ch1OpeningNarration
+
+Then, one day, I left.[A][X]
 
 ## Ch1VillageNarration
 
@@ -139,16 +159,45 @@ rather talk about other things.[A]
 [mr][LoadCivManBald]
 
 [mr]
-Placeholder.[A][X]
+Things were peaceful, once, when the[N]
+elder Prince was alive.[AN]
+Since his son took the throne, the[N]
+Lowlands have teemed with beasts.[AN]
+These soldiers'll just make things[N]
+worse.[....] It's hopeless, I say.[AN]
+Take one of these and get 'em out[N]
+of here, will you?[A][X]
+
+## Ch1Village1Javelin
+
+Take the javelin.[X]
+
+
+## Ch1Village1HandAxe
+
+Take the hand axe.[X]
+
+## Ch1Village1JavelinDesc
+
+Throwing spear.[X]
+
+
+## Ch1Village1HandAxeDesc
+
+Throwing axe.[X]
 
 
 ## Ch1Village2Text
 
-[ml][LoadActive]
-[mr][LoadCivManBald]
-
-[mr]
-Placeholder.[A][X]
+The priest's house is poorly-[N]
+maintained. There's a glass[N]
+cupboard full of alcohol, but[N]
+it's shut with multiple locks.[AN]
+He seems to have left in a[N]
+hurry -- one of the floorboards[N]
+is slightly raised, and you find[N]
+a compartment full of explosives[N]
+underneath.[A][X]
 
 
 ## Ch1BrotherTeacherTalkText
