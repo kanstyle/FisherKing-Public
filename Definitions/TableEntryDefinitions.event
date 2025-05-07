@@ -53,6 +53,24 @@
 #define SigilClass 0x77
 #define Peer 0x73
 
+// Terrain Move Costs
+#define InfantryMC 0x880b849
+#define PromoInfantryMC 0x880b808
+#define CavalryMC 0x880ba92
+#define PromoCavalryMC 0x880bad3
+#define AgileCavalryMC 0x880bb55
+#define AgileMonsterMC 0x880BB14
+#define ArmorMC 0x880b88a
+#define AxeInfantryMC 0x880B8CB
+#define BrigandMC 0x880B94D
+#define PirateMC 0x880B98E
+#define BerserkerMC 0x880B90C
+#define MageMC 0x880ba10
+#define ThiefMC 0x880b9cf
+#define FlierMC 0x880bb96
+#define CivilianMC 0x880ba51
+#define DemonKingMC 0x880bbd7
+
 // Item Types
 #define Sword 0x0
 #define Lance 0x1

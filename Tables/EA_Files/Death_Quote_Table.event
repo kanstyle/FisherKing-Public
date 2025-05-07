@@ -10,6 +10,10 @@ DeathQuote(HeroChar,0xFF,0x0,0x0,HeroDeathQuoteEvent)
 DeathQuote(Dragon,0xFF,0x0,0x0,DragonDeathQuoteEvent)
 DeathQuote(Pillow,0xFF,0x0,0x0,PillowDeathQuoteEvent)
 
+// Enemy Units
+
+DeathQuote(Skull,0xFF,DefeatBossFlag,0x0)
+
 DeathQuote(0xFFFF,0,0,0) // terminator
 
 
@@ -45,8 +49,3 @@ SVAL 0x7 Pillow
 ENUF BleedoutFlag
 NoFade
 ENDA
-
-
-// Enemy Units
-
-DeathQuote(Skull,0xFF,0x3,0x0)

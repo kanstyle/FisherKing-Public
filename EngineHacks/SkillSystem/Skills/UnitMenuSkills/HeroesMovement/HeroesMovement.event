@@ -44,8 +44,8 @@ prSwapCommand_Availability:
 prShoveCommand_Availability:
 	rGetWrapper
 		rIfUnitHasNotState(US_CANTOING)
-			rWithConstant(ShoveID)
-				rCallExternal(SkillTester)
+			rIfUnitHasNotAttribute(CA_MOUNTEDAID)
+				rConstant(True)
 
 prSmiteCommand_Availability:
 	rGetWrapper

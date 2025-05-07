@@ -50,6 +50,7 @@ ALIGN 4
 
 ThiefSkillList:
 BYTE 1 StealID
+BYTE 1 LocktouchID
 BYTE 00 00
 ALIGN 4
 

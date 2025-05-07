@@ -153,7 +153,7 @@ What is it?[AN]
 
 [mr]
 In the coming weeks, I want you to take[n]
-me to the Lowlands.[....][n]
+me to the Lowlands.[AN]
 I'd like to see them, at the end of my life.[AN]
 
 [ml]

@@ -183,7 +183,6 @@ BeginningScene:
 	SetBackground(0x35)
 	CenterTextbox(Ch0LowlandLore)
 	RemoveBackgroundSlow
-	FOGVISION 4
 	
 	FADU 4
 	BROWNBOXTEXT Ch0LowlandBrownBox [8,8]
@@ -192,6 +191,7 @@ BeginningScene:
 	SetBackground(Fort)
 	Text(Ch0LowlandsArrival)
 	RemoveBackgroundSlow
+	FOGVISION 4
 	LOAD1 0x1 GreenSoldiers
 	ENUN
 	SetFlag(Ch0BunnyTalkFlag)
