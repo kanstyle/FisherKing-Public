@@ -1,6 +1,15 @@
 ## Ch0Title
 Prologue: The Elder Prince[X]
 
+## Ch0Objective
+
+Defeat/Defend[X]
+
+## Ch0ObjectiveLong ^
+
+Defeat the boss while[N]
+defending the Elder Prince.[X]
+
 ## Ch0ButterflyIntro
 
 Imagine a butterfly.[AN]

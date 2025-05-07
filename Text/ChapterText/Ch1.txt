@@ -2,6 +2,14 @@
 
 Ch. 1: Hero[X]
 
+## Ch1Objective
+
+Defeat Skull[X]
+
+## Ch1ObjectiveLong
+
+Defeat Skull.[X]
+
 ## Ch1OpeningNarration
 
 I had served the crown since I was[N]

@@ -219,6 +219,7 @@ BeginningScene:
 	UNCM(YoungTeacher,AlreadyMoved)
 	STAL 15
 	CenterTextbox(Ch0TutorialStage1FlankingScrollText)
+	CursorOn(YoungPrince)
 	LABEL 0x0
 	NoFade
 	ENDA
@@ -236,6 +237,7 @@ TutorialEvent:
 		UNCR(YoungPrince, AlreadyMoved)
 		UNCR(YoungPrince, Hide)
 		UNCM(YoungTeacher, AlreadyMoved)
+		CursorOn(YoungPrince)
 		GOTO TurnOffCompletionFlagAndEndLabel
 	
 	LABEL Stage1SoldierBattledLabel
@@ -250,6 +252,7 @@ TutorialEvent:
 		STAL 15
 		CenterTextbox(Ch0TutorialStage2ScrollText)
 		SetFlag(Stage2BeganFlag)
+		CursorOn(YoungPrince)
 		GOTO TurnOffCompletionFlagAndEndLabel
 		LABEL Stage2StartLabel
 		
@@ -265,6 +268,7 @@ TutorialEvent:
 		UNCR(YoungPrince, AlreadyMoved)
 		UNCR(YoungPrince, Hide)
 		UNCM(YoungTeacher, AlreadyMoved)
+		CursorOn(YoungPrince)
 		GOTO TurnOffCompletionFlagAndEndLabel
 		LABEL Stage2EndLabel
 		
@@ -342,6 +346,7 @@ TutorialEvent:
 		
 		Text(Ch0JerryNo)
 		CenterTextbox(Ch0TutorialStage3ScrollText)
+		CursorOn(YoungPrince)
 		GOTO TurnOffCompletionFlagAndEndLabel
 		LABEL Stage3StartLabel
 		

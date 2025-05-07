@@ -23,14 +23,14 @@ void AddAsTarget_IfPositionCleanForSummon(int x, int y) {
         return;
     }
 	
-	if (gActiveUnit->pCharacterData->number == 0x3) {
+	if (gSubjectUnit->pCharacterData->number == 0x3) {
 		//gEventSlots[8] = 1;
 		if (!CanSigilCrossTerrain(gBmMapTerrain[y][x])) { //returning false, should be true
 			//gEventSlots[7] = 1;
         return;
 		}
     }
-    else if (!CanUnitCrossTerrain(gActiveUnit, gBmMapTerrain[y][x])) {
+    else if (!CanUnitCrossTerrain(gSubjectUnit, gBmMapTerrain[y][x])) {
 		//gEventSlots[6] = 1;
         return;
 	}

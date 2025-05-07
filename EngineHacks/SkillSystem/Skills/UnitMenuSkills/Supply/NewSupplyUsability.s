@@ -40,6 +40,10 @@ bl IsPhantom
 cmp r0,#0x1
 beq ReturnFalse
 
+bl IsSigil
+cmp r0,#0x1
+beq ReturnFalse
+
 bl IsAdjacent
 cmp r0,#0x1
 beq ReturnTrue
@@ -92,6 +96,35 @@ IsPhantom_ReturnTrue:
 mov r0,#0x01
 
 IsPhantom_Exit:
+pop {r1}
+bx r1
+
+IsSigil:
+push {lr}
+ldr r1,=gActiveUnit
+ldr r3,[r1]
+
+ldr r0,[r3,#4]  @RAMUnit->Class
+ldrb r0,[r0,#4] @RAMUnit->Class->ID
+
+mov r1, #0x77
+cmp r0,r1           @check #0x51
+beq IsSigil_ReturnTrue
+
+@check 7743's summon
+ldrb r1, [r3, #0xF] @ramunit->status4
+lsr  r1,#0x7
+cmp r1,#0x01
+beq IsSigil_ReturnTrue
+
+IsSigil_ReturnFalse:
+mov r0,#0x0
+b IsSigil_Exit
+
+IsSigil_ReturnTrue:
+mov r0,#0x01
+
+IsSigil_Exit:
 pop {r1}
 bx r1
 

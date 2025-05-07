@@ -45,3 +45,8 @@ SVAL 0x7 Pillow
 ENUF BleedoutFlag
 NoFade
 ENDA
+
+
+// Enemy Units
+
+DeathQuote(Skull,0xFF,0x3,0x0)

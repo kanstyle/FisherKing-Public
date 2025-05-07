@@ -1,0 +1,12 @@
+PUSH
+
+ORG 0x59EE20
+#incbin "Player.pal"
+
+ORG 0x59EE40
+#incbin "Enemy.pal"
+
+ORG 0x59EE60
+#incbin "NPC.pal"
+
+POP

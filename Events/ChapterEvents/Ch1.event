@@ -30,6 +30,7 @@ CharacterBasedEvents:
 
 MiscBasedEvents:
 	CauseGameOverIfLordDies
+	DefeatBoss
 	AFEV BleedoutFlag BleedoutChapterAlwaysEvent 0x0
 	END_MAIN
 
