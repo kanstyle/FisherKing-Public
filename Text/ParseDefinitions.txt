@@ -115,6 +115,9 @@
 [tmm] = [ToggleMouthMove]
 [ts] = [ToggleSmile]
 [css] = [CloseSpeechSlow]
+[ce] = [CloseEyes]
+[oe] = [OpenEyes]
+[hce] = [HalfCloseEyes]
 
 [period] = [0xDE][0x82]
 [dquote] = [0xDE][0x83]

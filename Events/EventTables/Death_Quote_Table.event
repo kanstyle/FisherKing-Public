@@ -9,10 +9,14 @@ DeathQuote(Teacher,0xFF,0x0,0x0,TeacherDeathQuoteEvent)
 DeathQuote(HeroChar,0xFF,0x0,0x0,HeroDeathQuoteEvent)
 DeathQuote(Dragon,0xFF,0x0,0x0,DragonDeathQuoteEvent)
 DeathQuote(Pillow,0xFF,0x0,0x0,PillowDeathQuoteEvent)
+DeathQuote(Brother,0xFF,0x0,0x0,BrotherDeathQuoteEvent)
+DeathQuote(Hunter,0xFF,0x0,0x0,HunterDeathQuoteEvent)
+DeathQuote(Pigeon,0xFF,0x0,0x0,PigeonDeathQuoteEvent)
+
 
 // Enemy Units
 
-DeathQuote(Skull,0xFF,DefeatBossFlag,0x0)
+DeathQuote(Skull,0xFF,DefeatBossFlag,Ch1SkullDQ)
 
 DeathQuote(0xFFFF,0,0,0) // terminator
 
@@ -29,7 +33,7 @@ ENDA
 ALIGN 4
 HeroDeathQuoteEvent:
 Text(HeroDQ)
-SVAL 0x7 Hero
+SVAL 0x7 HeroChar
 ENUF BleedoutFlag
 NoFade
 ENDA
@@ -46,6 +50,30 @@ ALIGN 4
 PillowDeathQuoteEvent:
 Text(PillowDQ)
 SVAL 0x7 Pillow
+ENUF BleedoutFlag
+NoFade
+ENDA
+
+ALIGN 4
+BrotherDeathQuoteEvent:
+Text(BrotherDQ)
+SVAL 0x7 Brother
+ENUF BleedoutFlag
+NoFade
+ENDA
+
+ALIGN 4
+HunterDeathQuoteEvent:
+Text(HunterDQ)
+SVAL 0x7 Hunter
+ENUF BleedoutFlag
+NoFade
+ENDA
+
+ALIGN 4
+PigeonDeathQuoteEvent:
+Text(PigeonDQ)
+SVAL 0x7 Pigeon
 ENUF BleedoutFlag
 NoFade
 ENDA

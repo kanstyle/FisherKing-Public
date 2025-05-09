@@ -3,6 +3,7 @@
 
 ALIGN 4
 BossBGMTable:
+BossBGMTerminator
 
 PUSH
 

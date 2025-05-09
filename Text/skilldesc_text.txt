@@ -23,7 +23,7 @@ this sigil's location.[X]
 
 ## SD_Genderswap ^
 Genderswap: Switch genders, swapping Bow/Staff[N]
-rank with Sword/Bomb. Recover 25% HP and[N]
+rank with Sword/Special. Recover 25% HP and[N]
 gain +1 Mov until end of turn. Once per turn.[X]
 
 ## SD_Savior

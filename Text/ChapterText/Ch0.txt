@@ -315,7 +315,12 @@ Try attacking with the Princeling's[N]
 ## Ch0TutorialComeBack
 
 [mr][LoadYoungTeacher]
-Prince![4] Where are you going?[A][X]
+Prince![4] What are you doing?[A][X]
+
+## Ch0TutorialShove
+
+[mr][LoadYoungTeacher][HalfCloseEyes]
+Yes, my prince.[4] Very clever.[A][X]
 
 ## Ch0TutorialStage2
 

@@ -20,14 +20,14 @@ and a dear friend.[A] To the armies of[N]
 the Highlands, a quiet, undying pillar.[N]
 Even if the sky cracked in two and[N]
 blood rose to my knees, I would[N]
-give my orders ceaselessly.[A] Even
+give my orders ceaselessly.[A] Even[N]
 as my colleagues and underlings fell[N]
 around me, their screams echoing[N]
 in my ears, I stood.[A] I watched many[N]
 lay down their lives for our fledgling[N]
 nation, but I never followed.[A][X]
 
-## Ch1OpeningNarration
+## Ch1OpeningNarration2
 
 Then, one day, I left.[A][X]
 
@@ -39,127 +39,212 @@ a home in a small, rural village.[AN]
 I wanted to feel the sort of[N]
 relaxation in nature that the Elder[N]
 Prince treasured so.[AN]
-And yet, I found that I felt uneasy
+And yet, I found that I felt uneasy[N]
 alone in wide-open spaces.[AN]
-"This fence needs mending," I would[N]
-say. "If the eastern front is ever[N]
+[oq]This fence needs mending," I would[N]
+say. [oq]If the eastern front is ever[N]
 breached, this village will fall in[N]
 an instant."[AN]
-"You used to be a soldier, didn't you?"[N]
-a kind woman would laugh. "Don't worry.[N]
+[oq]You used to be a soldier, didn't you?"[N]
+a kind woman would laugh. [oq]Don't worry.[N]
 There's nothing to pillage here."[N]
 I would smile, but the unease remained.[AN]
 And thus, five years passed.[N]
 Until a hero appeared at my doorstep.[A][X]
 
+## Ch1TeacherTavern
 
-## Ch1HeroGreetsTeacher
+[mr][LoadTeacher][tmm]
+So...[4] remind me.[4] What's the job?[A][X]
+
+## Ch1HeroIntro
+
+My compatriots and I sat around a[N]
+table in a dingy bar.[AN]
+Across from me was Hero. A boy -- a young[N]
+man, but somehow his childish energy[N]
+had never waned.[A] His attitude would[N]
+get one killed on the battlefield, but[N]
+always had shrewdness propping it up.[A][X]
+
+## Ch1HeroIntroDialogue
+
+[ml][LoadHeroM][mr][LoadTeacher]
+[ml][ts]
+Pretty simple! Just picking off some[N]
+deserters who were causing a stir.[AN]
+We're supposed to grab their leader, too.[N]
+Someone who goes by [oq]Songbird".[A]
+
+[mr][ts]
+Deserters, hmm...[A]
+
+[ffr]
+Should go pretty quick.[A][X]
+
+## Ch1DragonIntro
+
+To my left sat a tall woman. Only a[N]
+few years older than the boy, and yet[N]
+she dwarfed him in presence and[N]
+notoriety.[AN]
+She had the hard, judging[N]
+eye of a noble, but feared nothing.[N]
+Her scars were proof enough of that.[A]
+[X]
+
+## Ch1DragonIntroDialogue
+[r][LoadTeacher][ml][LoadHeroM]
+[fr][LoadDragon]
+Hope this means it'll really pay[N]
+for once, too.[A]
+
+[ml][ts]
+Oh, you can leave that to me.[AN]
+If we nail this job, we'll be on track[N]
+to meet our budget expectations cleanly.[AN]
+We can start taking on new recruits by the[N]
+time our barracks is built.[4] Exciting, huh?[AN]
+I'm gonna milk this baron like a rented cow.[A]
+
+[fr][ts]
+Don't say that.[4] No one says that.[A]
+
+[r]
+One doesn't rent a cow.[A]
+
+[ml]
+Um, who among us has the agricultural[N]
+background?[4][ts] That's right, yours truly![A]
+
+[r][ts]
+I'll ask the locals about their cow rentals[N]
+when we arrive, then.[AN]
+
+[ml][ce]
+Well, they're not gonna be doing that[N]
+in some backwater.[AN][oe]
+More of a cutting-edge, industrial thing.[A]
+
+[fr]
+You know, if you keep screwing around, why[N]
+don't we just feed you to the cows?[AN][css][4][4][4]
+...Wait--[A]
+
+[r]
+Cows don't eat--[A]
+
+[fr][ce]
+Forget it.[4] I know.[4] Just forget it.[A]
+
+[ffl]
+...We get to feed the cows...?[A]
+[X]
+
+## Ch1PillowIntro
+
+Our final companion laid beside the[N]
+table on a bed of pillows, her legs[N]
+missing below the knee.[AN]
+She was older than the others, quiet, and[N]
+concerned more with the details of life.[A]
+[X]
+
+## Ch1PillowIntroDialogue
+
+[r][LoadTeacher][l][LoadHeroM]
+[fr][LoadDragon][fl][LoadPillow]
+[fr][ts]
+Morning, Pillow.[4] Good nap?[A]
+
+[fl]
+Mm-hmm.[4] I'd say so.[A]
+
+[fr]
+Good.[A]
+
+[r][ts]
+Forgive me for bringing this up[N]
+the minute you awaken, but...[AN]
+You've all fought before, correct?[A]
+
+[fr]
+'Course.[4] The scar's not for show.[A]
+
+[fl]
+You don't need to worry about me, either.[AN]
+[ts]It is kind of nice to have people worry[N]
+about me, though... heehee.[A]
+
+[r][ts]
+You're a second-generation Low Mage,[N]
+aren't you?[AN]
+You're the one I'm least worried about.[AN][tmm]
+(Low Mages might be more dangerous with[N]
+fewer limbs, even...)[A][tmm]
+
+[fl]
+Oh...[4] So you're worried about Hero?[A]
+
+[l][ts]
+C'mon, Teacher! I was at the top of your[N]
+class at the military academy, remember?[A]
+
+[r][ts]
+Were you, now?[4] That was the Prince,[N]
+I believe.[A]
+
+[l]
+Oh, whatever...[A]
+
+[r][ts]
+Heh.[A]
+[X]
+
+## VillageBrownBoxText
+
+Border Village[X]
+
+## Ch1SkullIntro
+
+[mr][LoadSkull]
+Blast![4] The baron's dogs're on us.[AN]
+You, merc![4] Ride ahead and tell the[N]
+commander![4] We'll hold them here.[A]
+
+[ml][LoadPigeon]
+Yeah, yeah.[4] On it.[A][X]
+
+## Ch1SkullIntro2
+
+[mr][LoadSkull]
+Rest of you, hold your ground![N]
+Remember why we're doin' this![A][X]
+
+## Ch1TeacherArrivesNarration
+
+The moment I saw the deserters, I knew[N]
+they couldn't stand up to us.[N]
+Anyone could see their weapons clutched[N]
+loosely in tired hands.[AN]
+A painful sight, but a pain I was[N]
+well-trained to ignore.[A][X]
+
+## Ch1HeroTeacher
 
 [mr][LoadHeroM]
 [ml][LoadTeacher]
-Who is it?[A]
+[mr][ts]
+What do you think, Teacher?[N]
+Happy with our chances?[A]
+
+[ml][ts]
+I'm merely your humble knight, Hero.[N]
+That's your call to make.[A]
 
 [mr][ts]
-Hey![4] You're the Silver General,[N]
-right?[4] Remember me?[A]
-
-[ml]
-I'm afraid I don't.[A]
-
-[mr][ts][CloseEyes]
-Ah, damn.[4] Gotta work[N]
-on my memorability...[A]
-[css][MoveRight]
-
-[fr][LoadDragon]
-You're plenty memorable.[N]
-He's just old.[A]
-
-[ml]
-...A pleasure to meet[N]
-you too, miss.[A][X]
-
-
-## Ch1DragonDescription
-
-Beside him stood a young woman,[N]
-tall and hard-eyed, bearing a[N]
-large axe.[A][X]
-
-
-## Ch1HeroGreetsTeacher2
-
-[ml][LoadTeacher]
-[r][LoadDragon]
-[fr][LoadHeroM]
-
-[r]
-They call you [oq]Teacher", right?[A]
-
-[ml]
-They have, yes.[A]
-
-[r]
-Fine with me.[4] I'm Dragon.[A]
-
-[fr][ToggleSmile]
-Don't worry, though![4] She's not REALLY the[N]
-type to pick out a nickname like that.[AN]
-Or at least not JUST that type.[N]
-She's ACTUALLY cool![A]
-
-[r]
-...Hey, Teacher.[4] Want to see[N]
-how far I can throw him?[A]
-
-[ml][tmm]
-(What a delightful pair.)[A][X]
-
-
-## Ch1PillowDescription
-
-The final, strangest companion[N]
-laid on a bed of pillows, her legs[N]
-missing below the knee.[N]
-She wore an ominous metal crown[N]
-across her face.[A][X]
-
-
-## Ch1HeroGreetsTeacher3
-
-[ml][LoadTeacher]
-[mr][LoadPillow][ts]
-Hi, Teacher.[4] I'm Pillow.[4][N]
-Good to meet you.[AN]
-
-[ml][ts]
-Well met.[4][N]
-...[A]
-
-[mr]
-...?[4][N]
-...Sorry. I have to wear it.[AN]
-It keeps the demons inside.[A]
-
-[ml][CloseEyes]
-No.[4] You needn't apologize.[4][N][OpenEyes]
-I didn't meant to stare.[AN]
-I owe you Low Mages a large debt.[4] That's all.[A]
-
-[mr]
-Er...[4] Well, you don't owe me anything.[4][N]
-[ts]I mean, we just met.[4] Ahaha...[A]
-
-[ml][ts]
-What I mean is--[A]
-
-[mr]
-No, I know what you mean.[4] I'd... just[N]
-rather talk about other things.[A]
-
-[ml]
-...Right.[4] I understand.[A][X]
-
+Heh.[4] Hearing that feels pretty good.[AN]
+Alright, everybody![4] Let's get started![A][X]
 
 ## Ch1Village1Text
 
@@ -376,3 +461,263 @@ No worries, Brother.[A][css][ClearFace]
 (...Phew.[4] Something off about that girl.[4][4][N]
 [CloseEyes]Whatever.[4] Just do what you gotta do...)[A]
 [X]
+
+## Ch1SkullBQ
+
+[ml][LoadSkull]
+So you're real soldiers, huh?[N]
+Well, so're we![AN]
+And you're not gettin'[N]
+Songbird, you bastards![A]
+[X]
+
+## Ch1SkullTeacherBQ
+
+[mr][LoadTeacher]
+Hold, there.[4] Lower your axe.[A]
+[clear]
+
+[ml][LoadSkull]
+And who're you supposed to be?[N]
+[clear]
+
+[mr][LoadTeacher]
+Mercenaries.[4] Nothing more.[4] And we'd[N]
+like to let you keep your lives.[A]
+The rest of you, anyway.[A]
+[clear]
+
+[ml][LoadSkull][ts]
+Ha! Don't lie. You want us to fight[N]
+in your new war that bad?[AN]
+You look like you've served.[N]
+You should know what's coming.[A]
+[clear]
+
+[mr][LoadTeacher]
+A new war?[4] What are you[N]
+talking about?[A]
+[clear]
+
+[mr][LoadSkull]
+Fine, then.[4] If you're gonna play[N]
+dumb,[A] I guess you didn't wanna[N]
+talk after all.[A][clear]
+[X]
+
+## Ch1SkullHeroBQ
+
+[mr][LoadHeroM]
+Hey![4] So you're in charge[N]
+of this outfit?[A]
+[clear]
+
+[ml][LoadSkull]
+So what if I am, twerp?[A]
+[clear]
+
+[mr][LoadHeroM]
+Where's Songbird?[AN]
+It'd be a shame if we had to[N]
+make you tell us a different way.[A]
+[clear]
+
+[ml][LoadSkull][ts]
+Ha![4] Songbird's long gone.[N]
+You'll never find 'em.[A]
+[clear]
+
+[mr][LoadHeroM][ts]
+Whatever.[4] Your funeral.[A]
+[clear]
+[X]
+
+## Ch1SkullDQ
+
+[ml][LoadSkull]
+B-Blast...[4][4] You'll have...[4][4][N]
+to kill me...[4][4] 'fore I...[A]
+[X]
+
+
+## Storybook1Text
+[SetName]????[N]
+There was once a boy who had[N]
+fallen in love with a girl.[A]
+[X]
+
+## Storybook2Text
+[SetName]????[N]
+The boy's lands were in disarray.[AN]
+They had been ravaged by war[N]
+for as long as he knew.[AN]
+The war made him ill, and his heart[N]
+unsteady.[AN]
+And thus he felt unworthy of the[N]
+girl's love.[A]
+[X]
+
+## Storybook3Text
+[SetName]????[N]
+No matter how fiercely he clashed[N]
+against his foes,[A] the wavering of[N]
+his heart remained.[A]
+[X]
+
+## Storybook4Text
+[SetName]????[N]
+As a prince, the boy could not[N]
+right his world.[A]
+[X]
+
+## Storybook5Text
+[SetName]????[N]
+And so he sought the source.[AN]
+He traveled out of his lands and[N]
+into the world beneath.[A]
+[X]
+
+## Storybook6Text
+[SetName]????[N]
+And in the depths of the deep[N]
+mountains,[A] he found the[N]
+Lowland Queen.[AN]
+He demanded to know the reason[N]
+behind the war,[A] but she would[N]
+not share her secrets.[A]
+[X]
+
+## Storybook7Text
+[SetName]????[N]
+Thus they struggled, and thus[N]
+he struck her down.[AN]
+He split her breast in twain and[N]
+pulled from it her heart.[A]
+[X]
+
+## Storybook8Text
+[SetName]????[N]
+Devouring it, he took her boundless[N]
+wisdom into himself.[A]
+[X]
+
+## Storybook9Text
+[SetName]????[N]
+The light once again filled his[N]
+lands, and all was clear.[AN]
+The war within his heart ceased,[N]
+and he and the girl became one.[AN]
+His dream had finally come true.[A]
+[X]
+
+
+
+
+
+
+## Ch1HeroGreetsTeacher
+
+[mr][LoadHeroM]
+[ml][LoadTeacher]
+Who is it?[A]
+
+[mr][ts]
+Hey![4] You're the Silver General,[N]
+right?[4] Remember me?[A]
+
+[ml]
+I'm afraid I don't.[A]
+
+[mr][ts][CloseEyes]
+Ah, damn.[4] Gotta work[N]
+on my memorability...[A]
+[css][MoveRight]
+
+[fr][LoadDragon]
+You're plenty memorable.[N]
+He's just old.[A]
+
+[ml]
+...A pleasure to meet[N]
+you too, miss.[A][X]
+
+
+## Ch1DragonDescription
+
+Beside him stood a young woman,[N]
+tall and hard-eyed, bearing a[N]
+large axe.[A][X]
+
+
+## Ch1HeroGreetsTeacher2
+
+[ml][LoadTeacher]
+[r][LoadDragon]
+[fr][LoadHeroM]
+
+[r]
+They call you [oq]Teacher", right?[A]
+
+[ml]
+They have, yes.[A]
+
+[r]
+Fine with me.[4] I'm Dragon.[A]
+
+[fr][ToggleSmile]
+Don't worry, though![4] She's not REALLY the[N]
+type to pick out a nickname like that.[AN]
+Or at least not JUST that type.[N]
+She's ACTUALLY cool![A]
+
+[r]
+...Hey, Teacher.[4] Want to see[N]
+how far I can throw him?[A]
+
+[ml][tmm]
+(What a delightful pair.)[A][X]
+
+
+## Ch1PillowDescription
+
+The final, strangest companion[N]
+laid on a bed of pillows, her legs[N]
+missing below the knee.[N]
+She wore an ominous metal crown[N]
+across her face.[A][X]
+
+
+## Ch1HeroGreetsTeacher3
+
+[ml][LoadTeacher]
+[mr][LoadPillow][ts]
+Hi, Teacher.[4] I'm Pillow.[4][N]
+Good to meet you.[AN]
+
+[ml][ts]
+Well met.[4][N]
+...[A]
+
+[mr]
+...?[4][N]
+...Sorry. I have to wear it.[AN]
+It keeps the demons inside.[A]
+
+[ml][CloseEyes]
+No.[4] You needn't apologize.[4][N][OpenEyes]
+I didn't meant to stare.[AN]
+I owe you Low Mages a large debt.[4] That's all.[A]
+
+[mr]
+Er...[4] Well, you don't owe me anything.[4][N]
+[ts]I mean, we just met.[4] Ahaha...[A]
+
+[ml][ts]
+What I mean is--[A]
+
+[mr]
+No, I know what you mean.[4] I'd... just[N]
+rather talk about other things.[A]
+
+[ml]
+...Right.[4] I understand.[A][X]

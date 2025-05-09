@@ -138,6 +138,15 @@ RefreshPrince:
 		Highlight(YoungPrince)
 		Text(Ch0WanderOff)
 	LABEL 0x0
+	
+	GetUnitStatus(YoungTeacher,YCoord)
+	SVAL s1 3
+	BEQ 0x1 sC s1
+		SET_ACTIVE 0x0
+		//Text(Ch0TutorialShove)
+		MOVE 5 YoungTeacher [3,12]; ENUN
+		CursorOn(YoungPrince)
+	LABEL 0x1
 	NoFade
 	ENDA
 
@@ -391,6 +400,25 @@ EndingScene:
 	
 	DISA YoungTeacher
 	DISA YoungPrince
+	
+	DISA 0x80
+	DISA 0x80
+	DISA 0x80
+	DISA 0x80
+	DISA 0x80
+	
+	DISA 0x80
+	DISA 0x80
+	DISA 0x80
+	DISA 0x80
+	DISA 0x80
+	
+	DISA 0x80
+	DISA Ch0Bunny
+	DISA Jerry
+	DISA 0x81
+	DISA 0x82
+	DISA 0x84
 	
 	MNC2 Ch1
 	

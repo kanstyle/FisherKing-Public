@@ -17,8 +17,8 @@ ASMC PetrifyDeathQuote|1
 ALIGN 4
 BleedoutTurnEvent:
 LABEL 0x1
-ASMC GetDyingPetrifiedUnit|1
-BEQ 0x0 0xC 0x0 //if no one dying, go to end
+ASMC GetDyingPetrifiedUnit|1 //check if any units are eligible to die of bleedout
+BEQ 0x0 0xC 0x0 //if no one is eligible, go to end
 	CALL KillEvent
 	GOTO 0x1 //if someone is dying, loop again
 LABEL 0x0

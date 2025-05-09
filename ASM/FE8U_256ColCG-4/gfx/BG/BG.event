@@ -76,6 +76,15 @@ WORD 0x0 0x0 0x0                                    // ID used for random BG.
 POIN ButterflyInverted224BG; WORD 0x1; POIN ButterflyInverted224Pal  // TSA == 0 indicates 256-colour BGs. TSA == 1 indicates 224-colour BGs.
 POIN FogMountains224BG; WORD 0x1; POIN FogMountains224Pal
 POIN White224BG; WORD 0x1; POIN White224Pal
+POIN Storybook1_256BG; WORD 0x0; POIN Storybook1_256Pal
+POIN Storybook2_256BG; WORD 0x0; POIN Storybook2_256Pal
+POIN Storybook3_256BG; WORD 0x0; POIN Storybook3_256Pal
+POIN Storybook4_256BG; WORD 0x0; POIN Storybook4_256Pal
+POIN Storybook5_256BG; WORD 0x0; POIN Storybook5_256Pal
+POIN Storybook6_256BG; WORD 0x0; POIN Storybook6_256Pal
+POIN Storybook7_256BG; WORD 0x0; POIN Storybook7_256Pal
+POIN Storybook8_256BG; WORD 0x0; POIN Storybook8_256Pal
+POIN Storybook9_256BG; WORD 0x0; POIN Storybook9_256Pal
 
 ALIGN 4; ButterflyInverted224BG:
 #incbin "224ButterflyInverted.dmp"
@@ -91,3 +100,48 @@ ALIGN 4; White224BG:
 #incbin "224White.dmp"
 ALIGN 4; White224Pal:
 #incbin "224WhitePal.dmp"
+
+ALIGN 4; Storybook1_256BG:
+#incbin "256storybook1.dmp"
+ALIGN 4; Storybook1_256Pal:
+#incbin "256storybook1Pal.dmp"
+
+ALIGN 4; Storybook2_256BG:
+#incbin "256storybook2.dmp"
+ALIGN 4; Storybook2_256Pal:
+#incbin "256storybook2Pal.dmp"
+
+ALIGN 4; Storybook3_256BG:
+#incbin "256storybook3.dmp"
+ALIGN 4; Storybook3_256Pal:
+#incbin "256storybook3Pal.dmp"
+
+ALIGN 4; Storybook4_256BG:
+#incbin "256storybook4.dmp"
+ALIGN 4; Storybook4_256Pal:
+#incbin "256storybook4Pal.dmp"
+
+ALIGN 4; Storybook5_256BG:
+#incbin "256storybook5.dmp"
+ALIGN 4; Storybook5_256Pal:
+#incbin "256storybook5Pal.dmp"
+
+ALIGN 4; Storybook6_256BG:
+#incbin "256storybook6.dmp"
+ALIGN 4; Storybook6_256Pal:
+#incbin "256storybook6Pal.dmp"
+
+ALIGN 4; Storybook7_256BG:
+#incbin "256storybook7.dmp"
+ALIGN 4; Storybook7_256Pal:
+#incbin "256storybook7Pal.dmp"
+
+ALIGN 4; Storybook8_256BG:
+#incbin "256storybook8.dmp"
+ALIGN 4; Storybook8_256Pal:
+#incbin "256storybook8Pal.dmp"
+
+ALIGN 4; Storybook9_256BG:
+#incbin "256storybook9.dmp"
+ALIGN 4; Storybook9_256Pal:
+#incbin "256storybook9Pal.dmp"

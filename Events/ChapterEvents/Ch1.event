@@ -4,6 +4,9 @@ EventPointerTable(Ch1EventsID, PointerList)
 #define Ch1Village2Flag 0x8
 //#define Ch1Village3Flag 0x9
 #define Ch1BrotherTalkFlag 0xA
+#define Ch1SkullTeacherBQFlag 0xB
+#define Ch1SkullHeroBQFlag 0xB
+#define Ch1SkullBQFLag 0x10
 
 PointerList:
 	POIN TurnBasedEvents
@@ -35,7 +38,7 @@ MiscBasedEvents:
 	END_MAIN
 
 LocationBasedEvents:
-	Village(Ch1Village1Flag,Ch1Village1Event,5,7)
+	Village(Ch1Village1Flag,Ch1Village1Event,8,0)
 	Village(Ch1Village2Flag,Ch1Village2Event,4,0)
 	//Village(Ch1Village3Flag,Ch1Village3Event,villX,villY)
 	END_MAIN
@@ -61,11 +64,15 @@ Units1:
 	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [14,9] 0b 0x0 0x1 REDA10R9 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT HeroChar UpstartM 0x40 Level(3,Ally,False)     [14,9] 0b 0x0 0x1 REDA9R9 [IronBow, IronSword, HerosFlair, Restore] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Headsman 0x40 Level(3,Ally,False)     [14,8] 0b 0x0 0x1 REDA9R8 [SteelAxe, SlimAxe, Bomb, Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+UnitsPillow:
 	UNIT Pillow LowVoice 0x40 Level(3,Ally,False)     [11,8] 0b 0x0 0x0 0x0 [Loneliness, Pain] [0x0,0x0,0x0,0x0]
 	UNIT
-
+	
 EnemyUnits:
 	UNIT Brother Priest 0x40 Level(3,Enemy,False)     [4,0] 0b 0x0 0x0 0x0 [Heal, Bomb] DoNothingAI
+	UNIT Pigeon SkyRat 0x40 Level(3,Enemy,False)     [13,1] 0b 0x0 0x0 0x0 [IronSword] DoNothingAI
 	
 	//t1: kill merc, fighter, knight, bait mage, cav
 	UNIT 0x81 Mercenary 0x40 Level(3,Enemy,True)     [3,8] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
@@ -101,15 +108,88 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
+	SetFlag(BleedoutFlag)
+	
+	SetBackground(BlackBG)
+	CenterTextbox(Ch1OpeningNarration)
+	STAL 30
+	CenterTextbox(Ch1OpeningNarration2)
+	RemoveBackground
+	
+	SetBackgroundSlow(Outside_Village_Evening)
+	Music(FF5_Nostalgia)
+	CenterTextbox(Ch1VillageNarration)
+	RemoveBackground
+	FadeOutMusic
+	
+	SetBackgroundSlow(Inn)
+	Music(PubID)
+	Text(Ch1TeacherTavern)
+	CenterTextbox(Ch1HeroIntro)
+	Text(Ch1HeroIntroDialogue)
+	CenterTextbox(Ch1DragonIntro)
+	Text(Ch1DragonIntroDialogue)
+	CenterTextbox(Ch1PillowIntro)
+	Text(Ch1PillowIntroDialogue)
+	RemoveBackgroundSlow
+	
 	LOAD1 0x1 EnemyUnits
 	ENUN
+	FADU 6
+	Highlight(Skull)
+	Text(Ch1SkullIntro)
+	SingleUnitMove(Pigeon, 8, 0, 1)
+	DISA Pigeon
+	Text(Ch1SkullIntro2)
+	
+	LOAD1 0x1 UnitsPillow
+	UNCM(Pillow,Hide)
 	LOAD1 0x1 Units1
 	ENUN
+	STAL 30
+	WARPIN [11,8]
+	UNCR(Pillow,Hide)
+	ENDWARP
+	STAL 30
+	Highlight(Teacher)
+	CenterTextbox(Ch1TeacherArrivesNarration)
+	Highlight(HeroChar)
+	Text(Ch1HeroTeacher)
+	
 	SetUnitStatus(Teacher,Exp,0xFF)
 	NoFade
 	ENDA
 
 EndingScene:
+	Music(0x777F)
+	SetBackgroundSlow(Storybook1)
+	CGText(Storybook1Text)
+	RemoveBackground
+	SetBackground(Storybook2)
+	CGText(Storybook2Text)
+	RemoveBackground
+	SetBackground(Storybook3)
+	CGText(Storybook3Text)
+	RemoveBackground
+	SetBackground(Storybook4)
+	CGText(Storybook4Text)
+	RemoveBackground
+	SetBackground(Storybook5)
+	CGText(Storybook5Text)
+	RemoveBackground
+	SetBackground(Storybook6)
+	CGText(Storybook6Text)
+	RemoveBackground
+	SetBackground(Storybook7)
+	CGText(Storybook7Text)
+	RemoveBackground
+	SetBackground(Storybook8)
+	CGText(Storybook8Text)
+	RemoveBackground
+	SetBackground(Storybook9)
+	CGText(Storybook9Text)
+	RemoveBackground
+	
 	MNC2 Ch0
 	NoFade
 	ENDA

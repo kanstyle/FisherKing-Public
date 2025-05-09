@@ -25,3 +25,13 @@
 #define ButterflyInverted 0x38
 #define FogMountains 0x39
 #define WhiteBG 0x3A
+
+#define Storybook1 0x3B
+#define Storybook2 0x3C
+#define Storybook3 0x3D
+#define Storybook4 0x3E
+#define Storybook5 0x3F
+#define Storybook6 0x40
+#define Storybook7 0x41
+#define Storybook8 0x42
+#define Storybook9 0x43

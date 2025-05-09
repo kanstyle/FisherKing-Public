@@ -21,6 +21,8 @@ SongTable(DKCVoicesOfTheTempleID,song0A,MapMusicGroup)
 SongTable(PMD_MtThunderID,song26,MapMusicGroup)
 #include "MusicEvents/FF5 - Cursed Earth {RandomWizard}.event"
 SongTable(FF5CursedEarthID,song1B,MapMusicGroup)
+#include "MusicEvents/FFTA - Pub Theme {A Reliable Chair}.event"
+SongTable(PubID,song05,MapMusicGroup)
 
 #include "MusicEvents/lufiadoom.event"
 SongTable(Lufia_Doom,lufiadoom,MapMusicGroup)

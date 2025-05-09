@@ -51,6 +51,7 @@
 #define BowArmor Mercenary_F
 #define Noble 0x76
 #define SigilClass 0x77
+#define SkyRat 0x80
 #define Peer 0x73
 
 // Terrain Move Costs

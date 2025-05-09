@@ -1,19 +1,43 @@
 ## TeacherDQ
 
-[mr][LoadTeacher]
-Placeholder.[AN][X]
+[mr][LoadTeacher][tmm]
+(...[4][4]No.[4] It won't happen.[4][N]
+Not yet.)[A][X]
 
 ## HeroDQ
 
-[mr][LoadHeroM]
-Placeholder.[AN][X]
+[mr][LoadHeroM][ts]
+You...[4][4] bastards think...[4][4][N]
+you can stop me...?[A][X]
 
 ## DragonDQ
 
 [mr][LoadDragon]
-Placeholder.[AN][X]
+This...[4] isn't it.[4][N]
+[ce]I won't...[4][4] die.[AN]
+[oe]Hero...[4] Tell that bastard...[4][4][N]
+I'm still coming for him...[A][X]
 
 ## PillowDQ
 
 [mr][LoadPillow]
-Placeholder.[AN][X]
+Ah...[4][4] So it's going to...[4][4][N]
+end like this...?[A][X]
+
+## BrotherDQ
+
+[mr][LoadBrother]
+Gah...[4][4] [oe](I wonder if...[4][4]
+I made it.[AN]
+Wonder if the King'll...[4][4] take me...)[A][X]
+
+## HunterDQ
+
+[mr][LoadHunter][ts]
+Heh...[4] How fun it was...[4][N]
+How sporting indeed...![A][X]
+
+## PigeonDQ
+
+[mr][LoadPigeon]
+Placeholder.[A][X]

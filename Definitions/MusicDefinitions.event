@@ -96,6 +96,7 @@
 #define DKCVoicesOfTheTempleID 0x282
 #define PMD_MtThunderID 0x283
 #define FF5CursedEarthID 0x284
+#define PubID 0x285
 
 // Vanilla
 #define TiesOfFriendship 0x7

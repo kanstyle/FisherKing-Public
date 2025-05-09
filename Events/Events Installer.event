@@ -4,9 +4,26 @@ ALIGN 4
 #include "Escape Points.event"
 
 #include "ChapterEvents/ChapterEventsInstaller.event"
+#include "EventTables/BossMusicTable.event"
+#include "EventTables/EndingsTables.event"
+#include "EventTables/Guide.event"
 
 ALIGN 4
-//#include "DeathQuoteEvents/DeathQuoteEvents.event"
+BattleQuoteTable:
+#include "EventTables/Battle_Quote_Table.event"
+
+ALIGN 4
+DeathQuoteTable:
+#include "EventTables/Death_Quote_Table.event"
+
+PUSH
+ORG $8472C
+POIN DeathQuoteTable
+
+ORG $846AC
+POIN BattleQuoteTable
+
+POP
 
 
 ALIGN 4

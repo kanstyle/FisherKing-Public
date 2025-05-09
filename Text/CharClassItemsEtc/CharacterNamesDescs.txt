@@ -2,9 +2,9 @@
 Hero[X]
 
 ## HeroDesc
-[oq]His smile shone like the sun,[N]	
-and he led so decisively, yet with[N]
-a sense of desperation."[X]
+[oq]His smile shone like the sun,[N]
+and he led so decisively, yet[N]
+with a sense of desperation..."[X]
 
 ## TeacherName
 Teacher[X]
@@ -112,7 +112,7 @@ Jerry[X]
 
 ## JerryDesc
 (Teacher's writings never once mention[N]
-anyone by the name of "Jerry".)[X]
+anyone by the name of [oq]Jerry".)[X]
 
 ## SigilCharName
 Sigil[X]

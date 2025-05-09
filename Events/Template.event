@@ -64,6 +64,7 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
+	SetFlag(BleedoutFlag)
 	LOAD1 0x1 EnemyUnits
 	ENUN
 	GotoPrepScreen
@@ -83,3 +84,4 @@ BleedoutChapterTurnEvent:
 	CALL BleedoutTurnEvent
 	NoFade
 	ENDA
+	

@@ -17,8 +17,11 @@
 #define UnarmedAnim(Animation) "BYTE Disarmed 0x01 ; SHORT Animation"
 #define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
 
+ALIGN 4
 {
 #include "Animations/CleoAxe/cleo axe Installer.event"
+}
+{
 #include "Animations/CleoHAxe/cleo hand axe Installer.event"
 }
 ALIGN 4
