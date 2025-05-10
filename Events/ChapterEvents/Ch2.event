@@ -1,0 +1,101 @@
+EventPointerTable(Ch2EventsID, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	TurnEventPlayer(0x0,BleedoutChapterTurnEvent,1,255)
+	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
+	END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+
+	END_MAIN
+
+MiscBasedEvents:
+	CauseGameOverIfLordDies
+	AFEV BleedoutFlag BleedoutChapterAlwaysEvent 0x0
+	END_MAIN
+
+LocationBasedEvents:
+
+	END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [14,9] 0b 0x0 0x1 REDA10R9 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [14,9] 0b 0x0 0x1 REDA10R9 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [14,9] 0b 0x0 0x1 REDA10R9 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [14,9] 0b 0x0 0x1 REDA10R9 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [14,9] 0b 0x0 0x1 REDA10R9 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+UnitsStartEvent:
+	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [14,9] 0b 0x0 0x1 REDA10R9 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT HeroChar UpstartM 0x40 Level(3,Ally,False)     [14,9] 0b 0x0 0x1 REDA9R9 [IronBow, IronSword, HerosFlair, Restore] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Headsman 0x40 Level(3,Ally,False)     [14,8] 0b 0x0 0x1 REDA9R8 [SteelAxe, SlimAxe, Bomb, Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+UnitsPillowStartEvent:
+	UNIT Pillow LowVoice 0x40 Level(3,Ally,False)     [11,8] 0b 0x0 0x0 0x0 [Loneliness, Pain] [0x0,0x0,0x0,0x0]
+	UNIT
+
+EnemyUnits:
+
+	UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	SetFlag(BleedoutFlag)
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	GotoPrepScreen
+	ENDA
+
+EndingScene:
+	MNC2 next_chapter
+	NoFade
+	ENDA
+
+BleedoutChapterAlwaysEvent:
+	ASMC ReviveAndSetPetrify|1
+	NoFade
+	ENDA
+
+BleedoutChapterTurnEvent:
+	CALL BleedoutTurnEvent
+	NoFade
+	ENDA
+	

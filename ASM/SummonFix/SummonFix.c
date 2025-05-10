@@ -10,6 +10,7 @@ bool CanSigilCrossTerrain(int terrain) {
 	if (lookup[terrain] > 0) {
 		gEventSlots[5] = lookup[terrain];
 	}
+	ClearUnit(&temp);
     return (lookup[terrain] > 0) ? TRUE : FALSE;
 }
 

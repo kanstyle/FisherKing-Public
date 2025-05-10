@@ -13,6 +13,14 @@
 	#include "ConvoTableDefs.event"
 	PUSH
 
+
+	Chapter(0)
+		Entry
+			name(DefaultBaseConvoName)
+			bg(0x1)
+			text(DefaultBaseConvoContent)
+			eventID(0x07)
+
 	/*Chapter(MilitaryAccept3) // Here are a couple example generic base support convos.
 		Entry
 			bg(0x18)

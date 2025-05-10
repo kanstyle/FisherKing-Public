@@ -25,7 +25,7 @@
 
 //#include "CritSystem/Installer.event"
 
-//#include "CBaseConvos/BaseConvos.event" //credit to snek
+#include "CBaseConvos/BaseConvos.event" //credit to snek
 //#include "BaseConversations/BaseConvos.event" //credit to snek
 
 #include "FE8U_256ColCG-4/CGCol.event" //credit to Huichelaar
