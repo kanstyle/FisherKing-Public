@@ -23,6 +23,10 @@ SongTable(PMD_MtThunderID,song26,MapMusicGroup)
 SongTable(FF5CursedEarthID,song1B,MapMusicGroup)
 #include "MusicEvents/FFTA - Pub Theme {A Reliable Chair}.event"
 SongTable(PubID,song05,MapMusicGroup)
+#include "MusicEvents/Pokemon BW - Embracing One's Duty {Thegis}.event"
+SongTable(EmbracingOnesDutyID,song5F,MapMusicGroup)
+#include "MusicEvents/Secret of Mana - Wild Fields {Pandan}.event"
+SongTable(WildFieldsID,song13,MapMusicGroup)
 
 #include "MusicEvents/lufiadoom.event"
 SongTable(Lufia_Doom,lufiadoom,MapMusicGroup)

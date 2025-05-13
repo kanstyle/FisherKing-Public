@@ -132,6 +132,9 @@ ORG ItemIconEntry(SilverBow)
 ORG ItemIconEntry(Longbow)
 #incbin "Bows/OakLongbow.dmp"		// Ereshkigal
 
+ORG ItemIconEntry(HuntersBow)
+#incbin "Bows/HuntersBow.dmp"		
+
 // Tomes!!! Tomes!!!
 ORG ItemIconEntry(Fire)
 #incbin "Tomes/ClassicFire.dmp"		// Ereshkigal
@@ -407,6 +410,25 @@ ORG ItemIconEntry(Vulnerary)
 
 ORG ItemIconEntry(MasterSeal)
 #incbin "ItemsPrfs/Vulnerary.dmp"
+
+// monster weapons
+ORG ItemIconEntry(RottenClaw)
+#incbin "ItemsPrfs/{2WB} (Vanilla + Blitz) Rotten Claw.dmp"
+
+ORG ItemIconEntry(FetidClaw)
+#incbin "ItemsPrfs/{2WB} (Vanilla + Blitz) Fetid Claw.dmp"
+
+ORG ItemIconEntry(SharpClaw)
+#incbin "ItemsPrfs/{2WB} (Vanilla + Blitz) Sharp Claw.dmp"
+
+ORG ItemIconEntry(EvilEye)
+#incbin "ItemsPrfs/{2WB} (Vanilla + Blitz) Evil Eye.dmp"
+
+ORG ItemIconEntry(BloodyEye)
+#incbin "ItemsPrfs/{2WB} (Vanilla + Blitz) Crimson Eye.dmp"
+
+ORG ItemIconEntry(FireFang)
+#incbin "ItemsPrfs/{2WB} (Vanilla + Blitz) Fiery Fang.dmp"
 
 // bombs
 ORG ItemIconEntry(Bomb)

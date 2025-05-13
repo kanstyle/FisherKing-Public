@@ -97,6 +97,8 @@
 #define PMD_MtThunderID 0x283
 #define FF5CursedEarthID 0x284
 #define PubID 0x285
+#define EmbracingOnesDutyID 0x286
+#define WildFieldsID 0x287
 
 // Vanilla
 #define TiesOfFriendship 0x7

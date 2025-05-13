@@ -190,7 +190,7 @@ EndingScene:
 	CGText(Storybook9Text)
 	RemoveBackground
 	
-	MNC2 Ch0
+	MNC2 Ch2
 	NoFade
 	ENDA
 

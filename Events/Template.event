@@ -84,4 +84,8 @@ BleedoutChapterTurnEvent:
 	CALL BleedoutTurnEvent
 	NoFade
 	ENDA
-	
+
+HeroGenderFlagTurnEvent:
+	UnsetFlag(HeroGenderswapFlag)
+	NoFade
+	ENDA

@@ -1,3 +1,8 @@
+## SD_SteadySteady
+Steady, Steady...: When moving less than[N]
+full movement, gain +15 Crit, +30 Hit,[N]
+and +25% weapon Mt.[X]
+
 ## SD_Jaded
 Jaded: Teacher does not gain EXP from[N]
 combat. Instead, he can be strengthened[N]

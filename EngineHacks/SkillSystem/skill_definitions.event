@@ -3,6 +3,10 @@
 //Skills are categorized broadly by where their effect is applied, in no particular order within each category.
 
 //My Skills
+
+//SteadySteady
+#define SteadySteadyID 115
+
 //Jaded
 #define JadedID 51
 
@@ -1451,7 +1455,7 @@
 //Display-Only Skills
 
 #define CunningID 4
-#define NiceThighsID 115
+#define NiceThighsID 255
 #define PersonalityID 116
 
 

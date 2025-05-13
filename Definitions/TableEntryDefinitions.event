@@ -33,7 +33,11 @@
 #define YoungTeacher 0x21
 #define OldPrince 0x22
 #define Ch0Bunny 0x24
+
 #define Skull 0x25
+
+#define Ch2BeastBoss 0xAB
+
 #define Jerry 0x83
 #define Sigil 0x3B
 
@@ -49,6 +53,9 @@
 #define Headsman General_F
 #define BunnyRecruit Cavalier_F
 #define BowArmor Mercenary_F
+
+#define MogallClass 0x5F
+
 #define Noble 0x76
 #define SigilClass 0x77
 #define SkyRat 0x80
@@ -95,6 +102,8 @@
 #define LowTalon PoisonSword
 #define LowClaw ToxinLance
 #define LowTusk BrightLance
+
+#define HuntersBow PoisonBow
 
 #define Loneliness 0x44
 #define Pain 0x45

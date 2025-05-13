@@ -1,3 +1,192 @@
 ## Ch2Title
 
 Ch. 2: Songbird[X]
+
+## Ch2BaseHeroPillowName
+
+Hero on Femininity (*)[X]
+
+## Ch2BaseHeroPillow
+
+[ml][LoadHeroM]
+[mr][LoadPillow]
+
+[ml][ts]
+Hey, Pillow.[4] Doing okay?[N]
+The Lowlands give you headaches, right?[A]
+
+[mr][ts]
+Hm?[4] Oh, I'm fine.[4] The daemons haven't[N]
+been bothering me as much lately.[AN]
+[ts]...Thanks for asking, though.[A]
+
+[ml]
+Well, I gotta make sure everyone's in[N]
+tip-top shape.[A]
+
+[mr][ts]
+I was curious about something, actually...[N]
+It might be kind of a weird question.[AN]
+You don't have to answer, if you'd rather...[A]
+
+[ml]
+What is it?[4] Try me.[A]
+
+[mr]
+Okay...[AN]
+Why do you change weapons when you,[4][N]
+er,[4] change between a man and a woman?[A]
+
+[ml][ce][ts][MoveMidLeft]
+Oho![4] Ohoho![4][4] Allow me to regale[N]
+you with a stirring tale.[AN]
+
+[mr]
+Oooh, please do![A]
+
+[ml][oe]
+There I stood upon the battlefield, bow[N]
+in hand. [ce]When I felt the... call to femininity.[A]
+
+[mr]
+As one does.[A]
+
+[ml][oe]
+As one does![4] So I transformed from a brave[N]
+bowman into a bold battle-maiden.[AN][LoadHeroF]
+But as I was drawing my sword, I spied a[N]
+target over yonder -- the perfect shot.[AN]
+Luckily, I was still holding my bow.[N]
+So I took aim and fired.[A]
+
+[mr]
+Did your arrow fly true?[A]
+
+[ml][ce][ts]
+Nope. That's when tragedy struck.[N]
+Or rather... my bowstring did.[A]
+
+[mr]
+Ouch...[A]
+
+[ml]
+But that's not the worst of it, no.[N]
+I also let out a horribly...[4] uh...[4][4] uncouth sound.[A]
+
+[mr][ts]
+You...[4][4] moaned?[A]
+
+[ml][oe][ts]
+I--[4] No, it was more like...[4][4] a squeal.[A]
+
+[mr][ts]
+Like...[4][4] a pig?[A]
+
+[ml][ts][MoveMidLeft]
+N-no![A]
+
+[mr][ts]
+Ehehee.[A]
+
+[ml][ts][ce]
+Anyway, I was shaken.[4] My knees trembled.[AN]
+And an honorless thug took the opportunity[N]
+to strike![oe][AN]
+So, eager to restore my wounded pride,[N]
+I grabbed my sword--[A]
+
+[mr]
+You grasped it?[4] The hilt?[A]
+
+[ml]
+Yes--[A]
+
+[mr]
+Firmly?[4] And pulled?[A]
+
+[ml]
+Indeed--[A]
+
+[mr][MoveMidRight]
+Wow...[4][4] On the battlefield, too...[A]
+
+[ml][ts]
+And then I stuck him! Like a pig![A]
+
+[mr]
+And then HE squealed.[A]
+
+[ml]
+Yes![4] And that's why they call me...[4] er...[4][4][N]
+Life-Stealer, the Foe-Squealer![A]
+
+[mr]
+That WAS a stirring tale...[N]
+If I ever need to make a man squeal,[AN]
+I'll let you know.[A]
+
+[ml]
+Please do![A]
+[X]
+
+
+
+
+## Ch2NorthHouseIntro
+
+The door to the dilapidated house coughs[N]
+dust in your face as it creaks open.[N]
+The windows are all muddied, shrouding the[N]
+interior in darkness.[AN]
+As your eyes adjust, however, you can see[N]
+a group of children playing amidst the[N]
+little cracks of light.[AN]
+Three of them giggle and whisper about a[N]
+treasure they've found, while the fourth[N]
+watches from a distance.[A]
+[X]
+
+## Ch2NorthHouseGroupChoice
+
+Approach the group of three.[X]
+
+## Ch2NorthHouseGroupDesc
+
+They've found a shiny blade.[X]
+
+## Ch2NorthHouseSingleChoice
+
+Approach the lonely child.[X]
+
+## Ch2NorthHouseSingleDesc
+
+A butterfly flits about him.[X]
+
+## Ch2NorthHouseGroupText
+
+[oq]The three children crouch over a[N]
+shiny object laying upon the floorboards.[N]
+[oq]...It's so pretty."[N]
+[oq]Hold it up to the light again!"[N]
+[oq]What's it for?"[AN]
+[oq]I already told you! It was going to[N]
+be a gift for someone.[N]
+But she's gone now..."[N]
+[oq]Oh..."[AN]
+As you step closer, the children fade,[N]
+leaving only their treasure behind.[A]
+[X]
+
+## Ch2NorthHouseSingleText
+
+The child's face lights up as you[N]
+approach.[N]
+[oq]Grandpa! Is that you...?" He reaches[N]
+out a hand. [oq]I've been practicing with[N]
+my bow every day. So I can hunt like you."[AN]
+He smiles, but then turns sullen.[N]
+[oq]Are you happy... on the other side?[N]
+What's it like there? Are you alone?"[AN]
+Before you can answer, the spirits of the[N]
+children fade, leaving the house silent.[AN]
+[X]

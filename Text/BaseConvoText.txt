@@ -62,4 +62,4 @@ DocumentPrepDesc[X]
 
 ## BaseConvoSelectConvoText
 
-BaseConvoSelectConvoText[X]
+Select a conversation.[X]
