@@ -133,3 +133,4 @@
 #define IfHeroFemale(label) "SVAL s1 0x1; CHECK_CLASS HeroChar; SSUB sC sC s1; BEQ (label) 0xc 0x0;"
 #define CursorOn(unit) "CHECK_COORDS (unit); SADD 0xB 0xC 0; SET_CURSOR_SB;"
 #define WarpInCoords(x,y) "SVAL sB ([x,y]); WARP_IN; STAL 0x32; ENDWARP;"
+#define IfActiveUnitIs(id, label) "CHECK_ACTIVEID (id); BEQ (label) 0xc 0x0;"

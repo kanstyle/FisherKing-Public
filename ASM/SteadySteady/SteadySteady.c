@@ -13,8 +13,8 @@ void SteadySteadyEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB) {
 			gEventSlots[9] = gActionData.moveCount;
 			if (gActionData.moveCount <= ((prMovGetter(&gBattleActor.unit)/2) - 1)) {
 				gBattleActor.battleCritRate += 15;
-				gBattleActor.battleHitRate += 30;
-				gBattleActor.battleAttack += (GetItemMight(&gBattleActor.weapon) / 4);
+				gBattleActor.battleHitRate += 50;
+				gBattleActor.battleAttack += (GetItemMight(&gBattleActor.weapon) / 2);
 			}
 		}
 	}

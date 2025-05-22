@@ -130,7 +130,11 @@ Please do![A]
 [X]
 
 
+## Ch2BrotherPigeonTalkText
+[X]
 
+## Ch2HeroPigeonTalkText
+[X]
 
 ## Ch2NorthHouseIntro
 

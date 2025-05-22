@@ -461,5 +461,7 @@ ORG ItemIconEntry(RedHornet)
 ORG ItemIconEntry(GoldHornet)
 #incbin "Bombs/GoldHornet.dmp"
 
+ORG ItemIconEntry(Moonshine)
+#incbin "Bombs/Moonshine.dmp"
 
 POP

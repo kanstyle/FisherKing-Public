@@ -4,6 +4,12 @@
 
 //My Skills
 
+//Sweep
+#define SweepID 34
+
+//AnvilDrop
+#define AnvilDropID 156
+
 //SteadySteady
 #define SteadySteadyID 115
 
@@ -152,7 +158,7 @@
 
 //Armorboost: +4 attack and defense against armored enemies if within 3 spaces of an armored ally.
 //By Sme
-#define ArmorboostID 156
+#define ArmorboostID 255
 #define ArmorBoostID ArmorboostID //Alias\
 
 //PastelVeil: Allies in a 3 tile radius are immune to poison.
@@ -957,7 +963,7 @@
 
 //Flare: Halve enemy resistance. (Skill% activation)
 //By Sme
-#define FlareID 34
+#define FlareID 255
 
 //Foresight: Avoid the damage from enemy Critical Hits and Skill Activations.
 //By Leonarth

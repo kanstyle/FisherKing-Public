@@ -103,7 +103,7 @@ PigeonMugData: // LL
 #incbin "dmp/Pigeon_frames.dmp"
 #incbin "dmp/Pigeon_palette.dmp"
 #incbin "dmp/Pigeon_minimug.dmp"
-setMugEntry(PigeonMug, PigeonMugData, 2, 5, 1, 3)
+setMugEntryExtend(PigeonMug, PigeonMugData, 2, 5, 1, 3, 10, 4, 0, 0)
 
 ALIGN 16
 StormMugData: // LL
@@ -144,3 +144,11 @@ EnvoyMugData: // LL
 #incbin "dmp/Envoy_palette.dmp"
 #incbin "dmp/Envoy_minimug.dmp"
 setMugEntry(EnvoyMug, EnvoyMugData, 2, 6, 2, 4)
+
+ALIGN 16
+SongbirdMugData: // LL
+#incbin "dmp/Songbird_mug.dmp"
+#incbin "dmp/Songbird_frames.dmp"
+#incbin "dmp/Songbird_palette.dmp"
+#incbin "dmp/Songbird_minimug.dmp"
+setMugEntry(SongbirdMug, SongbirdMugData, 3, 5, 3, 3)

@@ -176,3 +176,11 @@ within 2 tiles.[X]
 ## HuntersBowName
 
 Hunter's Bow[X]
+
+## MoonshineName
+
+No.[X]
+
+## MoonshineDesc
+
+Don't even think about it.[X]

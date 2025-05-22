@@ -292,6 +292,56 @@ is slightly raised, and you find[N]
 a compartment full of explosives[N]
 underneath.[A][X]
 
+## Ch1Village2TextBrother
+
+You doubt you'll ever be back here[N]
+again, the way things are going.[N]
+It's a dump anyway, so that's[N]
+fine.[AN]
+As you crouch down to reach your[N]
+bomb storage under the floorboards,[N]
+the liquor cabinet catches your[N]
+eye. You wish it hadn't.[A][X]
+
+## Ch1Village2Bomb
+
+Take a bomb.[X]
+
+## Ch1Village2Liquor
+
+Peruse the liquor cabinet.[X]
+
+## Ch1Village2BombDesc
+
+The smart option.[X]
+
+## Ch1Village2LiquorDesc
+
+You hardly even remember[N]
+what's locked up in here.[X]
+
+## Ch1Village2BombText
+
+You shake off the temptation.[N]
+Today's the day you finally[N]
+let that stuff go. The boys[N]
+back at the church'll be happy[N]
+to hear that.[AN]
+They don't need to know about[N]
+the bombs, though.[A][X]
+
+## Ch1Village2LiquorText
+
+The temptation grips you, but[N]
+no. You're not letting yourself[N]
+get pulled back in so easy.[AN]
+You shove aside the good bottles[N]
+and reach into the back.[N]
+You pull out a positively horrendous[N]
+jar of sludge -- a crime even by[N]
+moonshine standards.[AN]
+You're confident it could kill an[N]
+alcoholic whale, let alone you.[A][X]
 
 ## Ch1BrotherTeacherTalkText
 
@@ -537,6 +587,153 @@ Whatever.[4] Your funeral.[A]
 [ml][LoadSkull]
 B-Blast...[4][4] You'll have...[4][4][N]
 to kill me...[4][4] 'fore I...[A]
+[X]
+
+## Ch1EndEventText1
+
+[ml][LoadHeroM]
+[mr][LoadSkull]
+[ml]
+Alright.[4] Tied up nice and snug.[N]
+All yours, Teacher![A]
+[css][ClearFace]
+
+[ml][LoadTeacher]
+Time for some questions, soldier.[4][N]
+Our orders are to capture Songbird alive.[4][AN]
+We've no reason to harm them or you.[4][N]
+Understand?[A]
+
+[mr][LoadSkull]
+Oh, I understand.[4] Yeah, let's talk.[4][AN]
+You work for the baron, right?[4][N]
+And the crown right behind 'im.[A]
+
+[ml]
+And if we do?[A]
+
+[mr]
+Not from around here, huh?[AN]
+Guess you haven't heard about the Lowlands[N]
+eatin' the villages alive.[AN]
+Ever since the new prince took the throne,[N]
+it's gone on.[AN]
+Every day, people go missin'.[4] Rivers run[N]
+black.[4] Children see spirits.[4][AN]
+Village north of here?[4] Half the people[N]
+vanish overnight.[4] Gone without a trace.[AN]
+And what's the baron do?[4] Nothing![A]
+
+[ml][ce]...[4][4][AN]
+[oe]I understand how you must feel, but the[N]
+prince jinxing you with black magic--[A]
+
+[mr]
+Ha![4] What do you know about it, fool?[N]
+We didn't even do a thing![AN]
+Songbird spoke in the city plaza, and[N]
+the baron suddenly wants their head.[AN]
+Mercs like you ran us right out of town.[A]
+
+[ml]
+...That's a shame, but there's nothing to[N]
+be done about it now.[AN]
+Once again:[4] tell us where this Songbird is,[4][N]
+and we'll not harm them or you.[AN]
+
+[mr]
+I've a better idea.[A]
+[X]
+
+## Ch1EndEventText2
+
+In a flash, the man crouched behind[N]
+Pillow and hooked his tied hands[N]
+around her neck.[A][X]
+
+## Ch1EndEventText3
+
+[r][LoadDragon]
+[fr][LoadTeacher]
+[l][LoadPillow]
+[fl][LoadSkull]
+[l][MoveRight]
+Hurk...![A][css]
+
+[fr]
+You fool![A]
+
+[r][MoveRight]
+Bastard![4] Get your hands off her![A]
+
+[fl]
+Easy, now.[4] If you don't want me to--[A][css]
+
+[fr][clear][LoadHeroM]
+Pillow![4] Don't kill him![A]
+[X]
+
+## Ch1EndEventText4
+
+The man's forearm twisted violently,[N]
+tearing apart his bonds.[....][N]
+The flesh turned red, then purple.[A][X]
+
+## Ch1EndEventText5
+
+[r][LoadPillow]
+[fr][LoadHeroM]
+[l][LoadSkull]
+[MoveFarLeft]
+Gaaah![4] W-witch![A]
+
+[r][ce][ce]
+<cough, cough>
+[MoveRight][4][MoveRight][A]
+
+[css][clear][LoadDragon]
+You're not going anywhere![A]
+
+[fr]
+Let him go, Dragon.[A]
+[X]
+
+## Ch1EndEventText6
+
+[fr][LoadTeacher]
+[r][LoadHeroM]
+[l][LoadPillow][ce][ce]
+[fl][LoadDragon]
+Are you serious?[4][N]
+That bastard took a hostage.[A]
+
+[l]
+<cough>[MoveLeft][AN]
+[oe]...I'm okay.[AN]
+[ts]Heh.[4] That was kind of exciting,[N]
+actually.[4] Now I'm all jittery.[A][css]
+
+[fl][ts][ce]
+Pillow...[A]
+
+[fr][ce]
+I was ready for his head[N]
+to burst like a grape.[A][oe]
+
+[r][ts]
+C'mon, give Pillow some credit.[N]
+She knows what she's doing.[A]
+
+[l]
+Haha...[4][4] Well, low-mages don't exactly[N]
+have the best reputation...[A]
+
+[fr][ts]
+...Forgive me.[4] Let's focus[N]
+on the task at hand.[AN]
+
+[r][ts]
+Right![4] We've got a songbird to catch.[A]
 [X]
 
 

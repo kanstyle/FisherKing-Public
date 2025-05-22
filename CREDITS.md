@@ -51,3 +51,4 @@ adding yourself!
 - Nuramon: Villager battle animation
 - Der: Bandana Archer battle animation
 - Dominus Vobiscum: Noble map sprite
+- Flasuban: Sword peg anim, village v2 tileset

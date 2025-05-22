@@ -21,6 +21,7 @@
 #include "SigilActions/Installer.event"
 #include "ExtendWeaponDescBox/Installer.event"
 #include "SteadySteady/Installer.event"
+#include "AnvilDrop/Installer.event"
 
 #include "FE8-Walking_Sounds_Fix/FE8-Walking_Sounds_EA.event"
 

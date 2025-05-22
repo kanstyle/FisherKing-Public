@@ -1,8 +1,15 @@
+## UM_Sweep
+ Sweep[X]
+ 
+## UM_SweepDesc
+Negates defenses. Can't crit,[N]
+double, or be countered.[X]
+
 ## UM_ExtendedDestruction
  Destroy![X]
  
 ## UM_ExtendedDestructionDesc
-Gain Extended Destruction
+Gain Extended Destruction[N]
 buff until healed.[X]
 
 ## UM_CallPillow

@@ -1,12 +1,12 @@
 INLINE PersonalSkillTable,Skill
 None,0x0
 Hero,GenderswapID
-Teacher,JadedID
+Teacher,LunaID
 Pillow,SummonID
 Dragon,RevolutionID
 Brother,ArmsthriftID
 Hunter,SteadySteadyID
-Pigeon,ItFindsYouID
+Pigeon,AnvilDropID
 Bunny,ExtendedDestructionID
 Colm,0x0
 Garcia,0x0

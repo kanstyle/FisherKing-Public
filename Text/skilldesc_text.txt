@@ -1,6 +1,11 @@
+## SD_AnvilDrop
+Anvil Drop: When unable to double-attack,[N]
+gain bonus Attack equal to 50% of[N]
+weapon Mt.[X]
+
 ## SD_SteadySteady
 Steady, Steady...: When moving less than[N]
-full movement, gain +15 Crit, +30 Hit,[N]
+full movement, gain +15 Crit, +50 Hit,[N]
 and +25% weapon Mt.[X]
 
 ## SD_Jaded

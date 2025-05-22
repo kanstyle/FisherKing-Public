@@ -19,6 +19,7 @@
 #define PillowCivMug 0x11
 #define EnvoyMug 0x12
 #define BunnyMug 0x13
+#define SongbirdMug 0x14
 
 // Characters
 #define HeroChar 0x1
@@ -29,6 +30,7 @@
 #define Hunter 0x6
 #define Pigeon 0x7
 #define Bunny 0x8
+#define Songbird 0x9
 #define YoungPrince 0x20
 #define YoungTeacher 0x21
 #define OldPrince 0x22
@@ -105,7 +107,7 @@
 
 #define HuntersBow PoisonBow
 
-#define Loneliness 0x44
+#define Loneliness 0xBD
 #define Pain 0x45
 #define Deception 0x46
 #define Exploitation 0x47
@@ -114,8 +116,8 @@
 #define Death 0x4a
 
 #define Bomb 0xC1
-#define LongFuseBomb 0xC2
-#define HeavyBomb 0xC3
+#define HeavyBomb 0xC2
+#define LongFuseBomb 0xC3
 #define StickyBomb 0xC4
 #define Firebomb 0xC5
 #define PowderShell 0xC6
@@ -123,6 +125,7 @@
 #define PowderKeg 0xC8
 #define RedHornet 0xC9
 #define GoldHornet 0xCA
+#define Moonshine 0xCC
 
 #define SlimAxe 0xCB
 

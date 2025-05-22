@@ -1,5 +1,7 @@
 EventPointerTable(Ch2EventsID, PointerList)
 
+#define Ch2PigeonTalkFlag 0x7
+
 PointerList:
 	POIN TurnBasedEvents
 	POIN CharacterBasedEvents
@@ -19,7 +21,8 @@ TurnBasedEvents:
 
 ALIGN 32
 CharacterBasedEvents:
-
+	CharacterEventBothWays(Ch2PigeonTalkFlag,Ch2BrotherPigeonTalk,Pigeon,Brother)
+	CharacterEventBothWays(Ch2PigeonTalkFlag,Ch2HeroPigeonTalk,HeroChar,Pigeon)
 	END_MAIN
 
 MiscBasedEvents:
@@ -53,6 +56,7 @@ Units1:
 	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [19,12] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [18,13] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [17,14] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [16,12] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT
 	
 UnitsStartEvent:
@@ -68,29 +72,42 @@ UnitsPillowStartEvent:
 EnemyUnits:
 	//t1
 	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [13,13] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
+	UNIT Beast MogallClass 0x40 Level(3,Enemy,True)     [13,11] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+	UNIT Beast Bonewalker 0x40 Level(3,Enemy,True)     [14,12] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	
+	//t2
+	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [10,12] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
 	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [11,11] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
-	UNIT Beast MogallClass 0x40 Level(3,Enemy,True)     [17,10] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
-	UNIT Beast Bonewalker 0x40 Level(3,Enemy,True)     [19,3] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT Beast Bonewalker 0x40 Level(3,Enemy,True)     [7,12] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
 	
-	//t2 north
-	UNIT Beast Bonewalker 0x40 Level(3,Enemy,True)     [15,6] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	UNIT Pigeon SkyRat 0x40 Level(3,Enemy,False)     [12,3] 0b 0x0 0x0 0x0 [SteelLance, IronLance, Vulnerary] [0x0,0x0,0x0,0x0]
 	
-	//t2 south
-	UNIT Beast Bonewalker 0x40 Level(3,Enemy,True)     [9,12] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	//t3
+	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [14,2] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
+	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [15,0] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
 	
-	//t3 north
-	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [14,2] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
-	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [15,0] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
+	//t4
+	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [4,13] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
+	UNIT Beast MogallClass 0x40 Level(3,Enemy,True)     [2,14] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [5,8] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
+	UNIT Beast MogallClass 0x40 Level(3,Enemy,True)     [8,7] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
 	
-	//t3 south
-	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [6,14] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
-	UNIT Beast Bonewalker 0x40 Level(3,Enemy,True)     [6,9] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	//t5
+	UNIT Beast Gargoyle 0x40 Level(3,Enemy,True)     [9,4] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT Beast Gargoyle 0x40 Level(3,Enemy,True)     [0,5] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	
+	//t6
+	UNIT Beast Bonewalker 0x40 Level(3,Enemy,True)     [6,5] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [2,4] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
+	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [5,0] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
+
+
 	
 	UNIT Ch2BeastBoss Mauthedoog 0x40 Level(8,Enemy,True)     [2,2] 0b 0x0 0x0 0x0 [FireFang] AttackInRangeAI
-	UNIT
+	UNIT Songbird Bard 0x40 Level(3,Enemy,False)     [3,1] 0b 0x0 0x0 0x0 [0x0] DoNothingAI
 
 HunterUnits:
-	UNIT Hunter BowArmor 0x40 Level(6,Ally,False)     [15,13] 0b 0x0 0x0 0x0 [HuntersBow,SteelBow] [0x0,0x0,0x0,0x0]
+	UNIT Hunter BowArmor 0x40 Level(6,Ally,False)     [15,13] 0b 0x0 0x0 0x0 [HuntersBow,SteelBow,Vulnerary] [0x0,0x0,0x0,0x0]
 
 Traps1:
 	ENDTRAP
@@ -110,6 +127,18 @@ BeginningScene:
 
 EndingScene:
 	MNC2 Ch0
+	NoFade
+	ENDA
+	
+Ch2HeroPigeonTalk:
+	Text(Ch2HeroPigeonTalkText)
+	CUSA(Pigeon)
+	NoFade
+	ENDA
+	
+Ch2BrotherPigeonTalk:
+	Text(Ch2BrotherPigeonTalkText)
+	CUSA(Pigeon)
 	NoFade
 	ENDA
 

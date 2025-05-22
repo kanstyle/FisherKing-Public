@@ -81,10 +81,10 @@ Units1:
 	
 UnitsCh1:
 	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [13,9] 0b 0x0 0x1 REDA11R9 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT HeroChar UpstartM 0x40 Level(3,Ally,False)     [14,9] 0b 0x0 0x1 REDA9R9 [IronBow, IronSword, Bomb, Restore] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Headsman 0x40 Level(3,Ally,False)     [11,8] 0b 0x0 0x1 REDA10R8 [IronAxe, Bomb, Vulnerary] [0x0,0x0,0x0,0x0]
-	UNIT Pillow LowVoice 0x40 Level(3,Ally,False)     [11,8] 0b 0x0 0x0 0x0 [Loneliness, Pain] [0x0,0x0,0x0,0x0]
-	// remember to add Brother here
+	UNIT HeroChar UpstartM 0x40 Level(4,Ally,True)     [14,9] 0b 0x0 0x1 REDA9R9 [IronBow, IronSword, Bomb, Restore] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Headsman 0x40 Level(4,Ally,True)     [11,8] 0b 0x0 0x1 REDA10R8 [IronAxe, Bomb, Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT Pillow LowVoice 0x40 Level(4,Ally,True)     [11,8] 0b 0x0 0x0 0x0 [Loneliness, Pain] [0x0,0x0,0x0,0x0]
+	UNIT Brother Priest 0x40 Level(4,Enemy,True)     [4,0] 0b 0x0 0x0 0x0 [Heal, Bomb] DoNothingAI
 	UNIT
 	
 TeacherUnit:
@@ -555,8 +555,8 @@ LABEL CSPg1
 	
 //------------------------
 	LABEL CSGo
-	//SVAL 7 0x1
-	//SADD 8 8 7 //increase target chapter number by 0x1, so you can do less-than
+	SVAL 7 0x1
+	SSUB 8 8 7 //increase target chapter number by 0x1, so you can do less-than
 	//actually don't need to do this
 	
 	//CenterTextbox(DebugPauseText)
@@ -569,10 +569,10 @@ LABEL CSPg1
 	//CenterTextbox(DebugPauseText)
 	SVAL 7 Ch2
 	BLT EndMenuSkipStartEvent 8 7
-		//CenterTextbox(DebugPauseText)
+		CenterTextbox(DebugPauseText)
 		LOAD1 0x1 UnitsCh1
 		GiveItem(HandAxe,Dragon)
-		GiveItem(LongFuseBomb,Dragon)
+		GiveItem(LongFuseBomb,Brother)
 		MNC2 Ch2
 		GOTO EndMenuSkipStartEvent
 	

@@ -83,7 +83,7 @@ mov	lr, r2
 mov	r7, r0
 ldrb	r0, [r7,#0x12]	@max hp
 mov	r1, #0x02
-swi	#0x06		@r0 max hp/5
+swi	#0x06		@r0 max hp/2
 ldrb	r1, [r7,#0x13]	@r1 = current hp
 cmp	r1, #0x00	@checking if the unit is already dead, probably not needed but w/e
 beq	NextLoop

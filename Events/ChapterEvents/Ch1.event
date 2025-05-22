@@ -98,6 +98,13 @@ EnemyUnits:
 	UNIT 0x81 Knight 0x40 Level(3,Enemy,True)     [11,5] 0b 0x0 0x0 0x0 [IronLance] AttackIn2RangeAI
 	UNIT Skull Fighter 0x40 Level(3,Enemy,True)     [14,0] 0b 0x0 0x0 0x0 [SteelAxe] AttackIn2RangeAI
 	UNIT
+	
+EndEventUnits:
+	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [13,2] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT HeroChar UpstartM 0x40 Level(3,Ally,False)     [12,3] 0b 0x0 0x0 0x0 [IronBow, IronSword, HerosFlair, Restore] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Headsman 0x40 Level(3,Ally,False)     [12,1] 0b 0x0 0x0 0x0 [SteelAxe, SlimAxe, Bomb, Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT Pillow LowVoice 0x40 Level(3,Ally,False)     [11,2] 0b 0x0 0x0 0x0 [Loneliness, Pain] [0x0,0x0,0x0,0x0]
+	UNIT Skull Fighter 0x40 Level(3,Enemy,True)     [12,2] 0b 0x0 0x0 0x0 [SteelAxe] AttackIn2RangeAI
 
 Traps1:
 	ENDTRAP
@@ -161,6 +168,33 @@ BeginningScene:
 	ENDA
 
 EndingScene:
+	FADI 5
+	DoAllThree
+	LOAD2 0x1 EndEventUnits
+	ENUN
+	FADU 5
+	
+	STAL 60
+	Highlight(HeroChar)
+	SetBackground(Outside_Village_Day)
+	Text(Ch1EndEventText1)
+	RemoveBackground
+	FADU 16
+	MOVE 10 Skull [10,2]
+	ENUN
+	CenterTextbox(Ch1EndEventText2)
+	Text(Ch1EndEventText3)
+	CenterTextbox(Ch1EndEventText4)
+	MOVE 20 Skull [9,2]; ENUN
+	Text(Ch1EndEventText5)
+	MOVE 10 Skull [0,2]; ENUN
+	DISA Skull
+	Highlight(Dragon)
+	SetBackground(Outside_Village_Day)
+	Text(Ch1EndEventText6)
+	RemoveBackgroundSlow
+	
+	/*
 	Music(0x777F)
 	SetBackgroundSlow(Storybook1)
 	CGText(Storybook1Text)
@@ -189,6 +223,7 @@ EndingScene:
 	SetBackground(Storybook9)
 	CGText(Storybook9Text)
 	RemoveBackground
+	*/
 	
 	MNC2 Ch2
 	NoFade
@@ -228,10 +263,27 @@ Ch1Village1Event:
 Ch1Village2Event:
 	FADI 16
 	SetBackground(HouseBG)
+	IfActiveUnitIs(Brother,0x0)
+		CenterTextbox(Ch1Village2TextBrother)
+		CallMenu(Ch1Village2Menu)
+			BNE 0x1 0xC 0x0
+			CenterTextbox(Ch1Village2BombText)
+			RemoveBackground
+			FADU 16
+			GiveItem(LongFuseBomb,0xFFFF)
+			GOTO 0x2
+		LABEL 0x1
+			CenterTextbox(Ch1Village2LiquorText)
+			RemoveBackground
+			FADU 16
+			GiveItem(Moonshine,0xFFFF)
+			GOTO 0x2
+	LABEL 0x0
 	CenterTextbox(Ch1Village2Text)
 	RemoveBackground
 	FADU 16
 	GiveItem(LongFuseBomb,0xFFFF)
+	LABEL 0x2
 	NoFade
 	ENDA
 	
