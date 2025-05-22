@@ -64,11 +64,19 @@ UpstartFMoving:
 
 ALIGN 4
 SkyRatStanding:
-#incbin "Dmp/Pegasi (F) T1 Helmless Sword {Sephie}-stand.dmp"
+#incbin "Dmp/SkyRat-stand.dmp"
 
 ALIGN 4
 SkyRatMoving:
-#incbin "Dmp/Pegasi (F) T1 Helmless Sword {Sephie}-walk.dmp"
+#incbin "Dmp/SkyRat-walk.dmp"
+
+ALIGN 4
+BardStanding:
+#incbin "Dmp/Bard-stand.dmp"
+
+ALIGN 4
+BardMoving:
+#incbin "Dmp/Bard-walk.dmp"
 
 /*ALIGN 4
 SwordCavStanding:

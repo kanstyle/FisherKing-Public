@@ -19,6 +19,16 @@
 
 ALIGN 4
 {
+#include "Animations/PegLance/Lance Installer.event"
+}
+ALIGN 4
+SkyRatAnim:
+SwordAnim(0xD2)
+UnarmedAnim(0xD2)
+WORD 0x0 // Seperator
+
+ALIGN 4
+{
 #include "Animations/CleoAxe/cleo axe Installer.event"
 }
 {
