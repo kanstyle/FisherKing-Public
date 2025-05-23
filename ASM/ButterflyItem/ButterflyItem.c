@@ -3,6 +3,7 @@
  
  // skill sys 
 extern u16* ButterflyItemEvent;
+extern u16* ButterflyItemEvent2;
 
 void ExecButterflyWrapper() {
     asm("     mov r0,r6; \
@@ -16,6 +17,7 @@ void ButterflyItemEffect(ProcPtr proc) {
 	BattleInitItemEffect(GetUnit(gActionData.subjectIndex), gActionData.itemSlotIndex);
 	
 	CallEvent(&ButterflyItemEvent, 1);
+	CallEvent(&ButterflyItemEvent2, 1);
 	
 	BattleApplyItemEffect(proc);
     //BeginBattleAnimations();
