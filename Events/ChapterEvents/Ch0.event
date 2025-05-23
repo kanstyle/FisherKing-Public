@@ -568,14 +568,14 @@ LABEL CSPg1
 	//CenterTextbox(DebugPauseText)
 	SVAL 7 Ch2
 	BLT EndMenuSkipStartEvent 8 7
-		CenterTextbox(DebugPauseText)
+		//CenterTextbox(DebugPauseText)
 		LOAD1 0x1 UnitsCh1
 		SetUnitStatus(Teacher,Exp,0xFF)
-		CenterTextbox(DebugPauseText)
+		//CenterTextbox(DebugPauseText)
 		GiveItem(HandAxe,Dragon)
-		CenterTextbox(DebugPauseText)
+		//CenterTextbox(DebugPauseText)
 		GiveItem(LongFuseBomb,Brother)
-		CenterTextbox(DebugPauseText)
+		//CenterTextbox(DebugPauseText)
 		MNC2 Ch2
 		//GOTO EndMenuSkipStartEvent
 	

@@ -2,8 +2,11 @@
 
 ALIGN 4 
 ButterflyItemEvent:
-SetUnitStatus(Teacher,Exp,0)
+/*SetUnitStatus(Teacher,Exp,0)
 GiveExp(Teacher,100)
-SetUnitStatus(Teacher,Exp,0xFF)
+SetUnitStatus(Teacher,Exp,0xFF)*/
+TUTORIALTEXTBOXSTART
+TEXTSHOW DebugPauseText
+REMA
 NoFade
 ENDA
