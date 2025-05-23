@@ -129,5 +129,10 @@
 
 #define SlimAxe 0xCB
 
+#define Butterfly 0xCD
+
 //Statuses
 #define SpecialStatusID 5
+
+//Item Effects
+#define ButterflyItemEffectID 0x39

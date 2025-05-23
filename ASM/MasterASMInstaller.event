@@ -1,3 +1,4 @@
+#include "GiveExp/Installer.event" //credit to 7743
 #include "Hack-mug_exceed_(Pikmin)/EA.event" //credit to pikmin1211
 #include "MMB/Installers/MMBInstallerCatball_1.event" //credit to zane
 #include "DynamicPortraits/DynamicPortraitsInstaller.event" //credit to scraiza
@@ -22,6 +23,7 @@
 #include "ExtendWeaponDescBox/Installer.event"
 #include "SteadySteady/Installer.event"
 #include "AnvilDrop/Installer.event"
+#include "ButterflyItem/Installer.event"
 
 #include "FE8-Walking_Sounds_Fix/FE8-Walking_Sounds_EA.event"
 

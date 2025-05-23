@@ -179,8 +179,21 @@ Hunter's Bow[X]
 
 ## MoonshineName
 
-No.[X]
+"Moonshine"[X]
 
 ## MoonshineDesc
 
 Don't even think about it.[X]
+
+## ButterflyName
+
+Butterfly[X]
+
+## ButterflyDesc
+
+Give this to Teacher.[X]
+
+## ButterflyUseDesc
+
+A precious[N]
+little memory.[X]

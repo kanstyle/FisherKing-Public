@@ -55,7 +55,6 @@ MiscBasedEvents:
 	END_MAIN
 
 LocationBasedEvents:
-
 	END_MAIN
 
 Dunno1:
@@ -80,11 +79,11 @@ Units1:
 	UNIT
 	
 UnitsCh1:
-	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [13,9] 0b 0x0 0x1 REDA11R9 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT HeroChar UpstartM 0x40 Level(4,Ally,True)     [14,9] 0b 0x0 0x1 REDA9R9 [IronBow, IronSword, Bomb, Restore] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Headsman 0x40 Level(4,Ally,True)     [11,8] 0b 0x0 0x1 REDA10R8 [IronAxe, Bomb, Vulnerary] [0x0,0x0,0x0,0x0]
-	UNIT Pillow LowVoice 0x40 Level(4,Ally,True)     [11,8] 0b 0x0 0x0 0x0 [Loneliness, Pain] [0x0,0x0,0x0,0x0]
-	UNIT Brother Priest 0x40 Level(4,Enemy,True)     [4,0] 0b 0x0 0x0 0x0 [Heal, Bomb] DoNothingAI
+	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     	[13,9] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT HeroChar UpstartM 0x40 Level(4,Ally,True)     	[14,9] 0b 0x0 0x0 0x0 [IronBow, IronSword, HerosFlair, Restore] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Headsman 0x40 Level(4,Ally,True)     	[11,8] 0b 0x0 0x0 0x0 [SteelAxe, SlimAxe, Bomb, Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT Pillow LowVoice 0x40 Level(4,Ally,True)     	[11,8] 0b 0x0 0x0 0x0 [Loneliness, Pain] [0x0,0x0,0x0,0x0]
+	UNIT Brother Priest 0x40 Level(4,Ally,True)     	[4,0] 0b 0x0 0x0 0x0 [Heal, Bomb] DoNothingAI
 	UNIT
 	
 TeacherUnit:
@@ -450,11 +449,11 @@ EndMenuSkipStartEvent := 0x9003
 EndMenu := 0x9002
 
 GameStartMenuEvent:
-LABEL Start
 	PreventSkipping
 	CLEAN
 	SetBackground(0x35)
 	FADU 16
+LABEL Start
 	CallMenu(GameStartMenu)
 	BEQ 0x0 0xC 0
 	SVAL 8 1
@@ -555,8 +554,8 @@ LABEL CSPg1
 	
 //------------------------
 	LABEL CSGo
-	SVAL 7 0x1
-	SSUB 8 8 7 //increase target chapter number by 0x1, so you can do less-than
+	//SVAL 7 0x1
+	//SSUB 8 8 7 //increase target chapter number by 0x1, so you can do less-than
 	//actually don't need to do this
 	
 	//CenterTextbox(DebugPauseText)
@@ -564,25 +563,30 @@ LABEL CSPg1
 	BLT EndMenuSkipStartEvent 8 7
 		//CenterTextbox(DebugPauseText)
 		MNC2 Ch1
-		GOTO EndMenuSkipStartEvent
+		//GOTO EndMenuSkipStartEvent
 	
 	//CenterTextbox(DebugPauseText)
 	SVAL 7 Ch2
 	BLT EndMenuSkipStartEvent 8 7
 		CenterTextbox(DebugPauseText)
 		LOAD1 0x1 UnitsCh1
+		SetUnitStatus(Teacher,Exp,0xFF)
+		CenterTextbox(DebugPauseText)
 		GiveItem(HandAxe,Dragon)
+		CenterTextbox(DebugPauseText)
 		GiveItem(LongFuseBomb,Brother)
+		CenterTextbox(DebugPauseText)
 		MNC2 Ch2
-		GOTO EndMenuSkipStartEvent
+		//GOTO EndMenuSkipStartEvent
 	
 	//CenterTextbox(DebugPauseText)	
 	SVAL 7 Ch3
+	CenterTextbox(DebugPauseText)
 	BLT EndMenuSkipStartEvent 8 7
 		// fill this in later with ch. 2 stuff
 		//CenterTextbox(DebugPauseText)
 		MNC2 Ch3
-		GOTO EndMenuSkipStartEvent
+		//GOTO EndMenuSkipStartEvent
 	
 	LABEL EndMenuSkipStartEvent
 	//CenterTextbox(DebugPauseText)

@@ -1,0 +1,9 @@
+#include "ButterflyItem.lyn.event" 
+
+ALIGN 4 
+ButterflyItemEvent:
+SetUnitStatus(Teacher,Exp,0)
+GiveExp(Teacher,100)
+SetUnitStatus(Teacher,Exp,0xFF)
+NoFade
+ENDA
