@@ -12,6 +12,26 @@ void ExecButterflyWrapper() {
     ");
 }
 
+void ButterflyUsabilityFunctionWrapper() {
+    asm("mov r0,r4;    \
+         mov r1,r5; \
+         bl ButterflyItemUsability; \
+         pop {r4,r5}; \
+         pop {r1}; \
+         bx r1; \
+    ");    
+}
+
+/*void IERTargetingFunctionWrapper() {
+    asm("    mov r0, r5; \
+            mov r2, r4; \
+            bl IERTargetingFunction; \
+            pop {r4-r5}; \
+            pop {r0}; \
+            bx r0; \
+    ");
+}*/
+
 void ButterflyItemEffect(ProcPtr proc) {
 	BattleInitItemEffect(GetUnit(gActionData.subjectIndex), gActionData.itemSlotIndex);
 	

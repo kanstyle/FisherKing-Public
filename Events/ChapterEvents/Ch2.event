@@ -185,7 +185,7 @@ Ch2VillageEvent:
 		CenterTextbox(Ch2NorthHouseGroupText)
 		RemoveBackground
 		FADU 16
-		GiveItem(SteelLance,0xFFFF)
+		GiveItem(CrystalKnife,0xFFFF)
 		GOTO 0x2
 	LABEL 0x1
 		SetBackground(TentBG)

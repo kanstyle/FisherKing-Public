@@ -130,6 +130,7 @@
 #define SlimAxe 0xCB
 
 #define Butterfly 0xCD
+#define CrystalKnife 0xCE
 
 //Statuses
 #define SpecialStatusID 5

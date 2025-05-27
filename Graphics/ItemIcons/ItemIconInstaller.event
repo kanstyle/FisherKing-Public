@@ -60,6 +60,9 @@ ORG ItemIconEntry(Runesword)
 ORG ItemIconEntry(HerosFlair)
 #incbin "Swords/HerosFlair.dmp"	// Batima
 
+ORG ItemIconEntry(CrystalKnife)
+#incbin "Swords/GlassDagger.dmp"	// Batima
+
 // lances
 ORG ItemIconEntry(IronLance)
 #incbin "Lances/IronLance.dmp"		// Ereshkigal

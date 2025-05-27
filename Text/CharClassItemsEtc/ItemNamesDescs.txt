@@ -195,5 +195,13 @@ Give this to Teacher.[X]
 
 ## ButterflyUseDesc
 
-A precious[N]
-little memory.[X]
+Someone's precious[N]
+memory.[X]
+
+## CrystalKnifeName
+
+Crystal Knife[X]
+
+## CrystalKnifeDesc
+
+Placeholder.[X]
