@@ -572,9 +572,9 @@ LABEL CSPg1
 		LOAD1 0x1 UnitsCh1
 		SetUnitStatus(Teacher,Exp,0xFF)
 		//CenterTextbox(DebugPauseText)
-		GiveItem(HandAxe,Dragon)
+		SilentGiveItem(HandAxe,Dragon)
 		//CenterTextbox(DebugPauseText)
-		GiveItem(LongFuseBomb,Brother)
+		SilentGiveItem(LongFuseBomb,Brother)
 		//CenterTextbox(DebugPauseText)
 		MNC2 Ch2
 		//GOTO EndMenuSkipStartEvent

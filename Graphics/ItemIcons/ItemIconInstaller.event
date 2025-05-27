@@ -409,7 +409,10 @@ ORG ItemIconEntry(Vulnerary)
 #incbin "ItemsPrfs/Vulnerary.dmp"
 
 ORG ItemIconEntry(MasterSeal)
-#incbin "ItemsPrfs/Vulnerary.dmp"
+#incbin "ItemsPrfs/{Batima} Master Seal.dmp"
+
+ORG ItemIconEntry(Butterfly)
+#incbin "ItemsPrfs/Butterfly.dmp"
 
 // monster weapons
 ORG ItemIconEntry(RottenClaw)

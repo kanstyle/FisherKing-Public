@@ -24,6 +24,7 @@
 #include "SteadySteady/Installer.event"
 #include "AnvilDrop/Installer.event"
 #include "ButterflyItem/Installer.event"
+#include "EVENTSCRIPT/EVENTSCRIPT_Installer.event"
 
 #include "FE8-Walking_Sounds_Fix/FE8-Walking_Sounds_EA.event"
 

@@ -129,6 +129,104 @@ I'll let you know.[A]
 Please do![A]
 [X]
 
+## Ch2BaseDragonTeacherName
+
+Elder Abuse (*)[X]
+
+## Ch2BaseDragonTeacher
+
+[mr][LoadDragon]
+[ml][LoadTeacher]
+[mr]
+Hey, Teacher.[A]
+
+[ml]
+What can I do for you?[A]
+
+[mr][ce]
+...[A]
+[oe]Alright.[4] Look.[AN]
+I'm not good at beating around the bush,[N]
+so I'll come out and say it.[AN]
+
+[ml][tmm]
+(Ah, this'll be fun.)[A]
+
+[mr][tmm]
+Aren't you too old for this?[A]
+
+[ml][ce]
+Oh, dear...[A]
+
+[mr]
+I'm just asking![4] Not like it's an[N]
+insult, or something.[A]
+
+[ml][oe]
+Well, the less even-tempered among[N]
+my peers might not agree...[A]
+
+[mr]
+You know what I mean![AN]
+I've never seen a guy this old fight[N]
+like this, is what I'm saying.[A]
+
+[ml]
+Like what?[A]
+
+[mr]
+Like...[4][4] well.[4] Or at all.[A]
+
+[ml][ce][ce][tmm]
+(The blows keep on coming...)[A][oe][oe]
+
+[mr][tmm]
+My father's your age, and he can't[N]
+fight worth a damn.[A]
+
+[ml]
+Is he, now?[4] And how old am I,[N]
+do you reckon?[A]
+
+[mr]
+Eighty.[A][css]
+
+[ml][clear]
+
+[mr][MoveRight]
+Wait![4] Teacher![4] I was joking![A][css]
+
+[ml][LoadTeacher]
+This is where I'd say something derisive[N]
+about the youths of today,[AN]
+but I don't want to lend any more[N]
+credence to your case.[AN]
+To answer your question, I fight because[N]
+I'm better at it than I am at much else.[AN]
+That's most of the reason.[A]
+[css]
+
+[r][MoveMidRight][ts]
+Heh.[4] Same here.[AN]
+You know, I figured you'd be more[N]
+uptight, but you're not so bad.[A]
+
+[ml][ts][tmm]
+(How does Pillow put up with her?)[A]
+[X]
+
+## Ch2IntroSkullDialogue
+[mr][LoadSongbird]
+[l][LoadSkull]
+[fl][LoadPigeon]
+Placeholder.[A][X]
+
+## Ch2NarrationText
+Placeholder.[A][X]
+
+## Ch2IntroPigeonDialogue
+[mr][LoadPigeon]
+Placeholder.[A][X]
 
 ## Ch2BrotherPigeonTalkText
 [X]
@@ -194,3 +292,6 @@ What's it like there? Are you alone?"[AN]
 Before you can answer, the spirits of the[N]
 children fade, leaving the house silent.[AN]
 [X]
+
+## Ch2TentText
+Placeholder.[A][X]

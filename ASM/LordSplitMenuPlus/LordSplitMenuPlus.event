@@ -50,6 +50,18 @@ MenuOption(Ch1Village2Bomb, Ch1Village2BombDesc, 0)
 MenuOption(Ch1Village2Liquor, Ch1Village2LiquorDesc, 0)
 MenuTerminator
 
+ALIGN 4
+Ch2VillageMenu:
+MenuDefinition(6, 8, 18, 0, 1, Ch2VillageMenuOptions)
+
+ALIGN 4
+Ch2VillageMenuOptions:
+MenuOption(Ch2NorthHouseGroupChoice, Ch2NorthHouseGroupDesc, 0)
+MenuOption(Ch2NorthHouseSingleChoice, Ch2NorthHouseSingleDesc, 0)
+MenuTerminator
+
+
+
 
 //Game Start Menu
 

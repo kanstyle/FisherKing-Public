@@ -62,6 +62,12 @@ Units1:
 	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [16,12] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT
 	
+UnitsSongbird:
+	UNIT Songbird Bard 0x40 Level(3,Enemy,False)     [3,1] 0b 0x0 0x0 0x0 [0x0] DoNothingAI
+	UNIT Skull Fighter 0x40 Level(3,Enemy,True)     [4,2] 0b 0x0 0x0 0x0 [SteelAxe] AttackIn2RangeAI
+	UNIT Pigeon SkyRat 0x40 Level(3,Enemy,False)     [5,1] 0b 0x0 0x0 0x0 [SteelLance, IronLance, Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT
+	
 UnitsStartEvent:
 	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [14,9] 0b 0x0 0x1 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT HeroChar UpstartM 0x40 Level(3,Ally,False)     [14,9] 0b 0x0 0x1 REDA9R9 [IronBow, IronSword, HerosFlair, Restore] [0x0,0x0,0x0,0x0]
@@ -122,6 +128,19 @@ Traps2:
 
 BeginningScene:
 	SetFlag(BleedoutFlag)
+	
+	CAMERA [3,1]
+	LOAD2 0x1 UnitsSongbird
+	ENUN
+	FADU 6
+	Highlight(Skull)
+	/*Text(Ch2IntroSkullDialogue1)
+	SetBackground(SongbirdHug)
+	CGText(Ch2IntroSkullDialogue2)
+	RemoveBackground
+	Text(Ch2IntroSkullDialogue1)*/
+	DoAllThree
+	
 	LOAD1 0x1 EnemyUnits
 	LOAD1 0x1 HunterUnits
 	ENUN
@@ -147,10 +166,36 @@ Ch2BrotherPigeonTalk:
 	ENDA
 
 Ch2TentEvent:
+	SetBackground(TentBG)
+	CenterTextbox(Ch2TentText)
+	GiveItem(SteelLance,0xFFFF)
+	RemoveBackground
 	NoFade
 	ENDA
 
 Ch2VillageEvent:
+	FADI 16
+	SetBackground(TentBG)
+	CenterTextbox(Ch2NorthHouseIntro)
+	RemoveBackground
+	SetBackground(BlackBG)
+	CallMenu(Ch2VillageMenu)
+		BNE 0x1 0xC 0x0
+		SetBackground(TentBG)
+		CenterTextbox(Ch2NorthHouseGroupText)
+		RemoveBackground
+		FADU 16
+		GiveItem(SteelLance,0xFFFF)
+		GOTO 0x2
+	LABEL 0x1
+		SetBackground(TentBG)
+		CenterTextbox(Ch2NorthHouseSingleText)
+		RemoveBackground
+		FADU 16
+		GiveItem(Butterfly,0xFFFF)
+		GOTO 0x2
+	RemoveBackgroundSlow
+	LABEL 0x2
 	NoFade
 	ENDA
 

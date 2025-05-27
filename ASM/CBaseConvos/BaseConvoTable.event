@@ -31,7 +31,13 @@
 			music(WildFieldsID)
 			bg(0x18)
 			text(Ch2BaseHeroPillow)
-			eventID(0x07)
+			eventID(0x25)
+		Entry
+			name(Ch2BaseDragonTeacherName)
+			music(WildFieldsID)
+			bg(0x18)
+			text(Ch2BaseDragonTeacher)
+			eventID(0x24)
 	POP
 	}
 #endif // BASE_CONVO_TABLE

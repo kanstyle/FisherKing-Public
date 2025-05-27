@@ -85,6 +85,10 @@ POIN Storybook6_256BG; WORD 0x0; POIN Storybook6_256Pal
 POIN Storybook7_256BG; WORD 0x0; POIN Storybook7_256Pal
 POIN Storybook8_256BG; WORD 0x0; POIN Storybook8_256Pal
 POIN Storybook9_256BG; WORD 0x0; POIN Storybook9_256Pal
+POIN DarkHouseBG; WORD 0x0; POIN DarkHouseBGPal
+POIN SongbirdHugBG; WORD 0x1; POIN SongbirdHugBGPal
+POIN LowlandForestBG; WORD 0x1; POIN LowlandForestBGPal
+POIN FE9TentBG; WORD 0x1; POIN FE9TentBGPal
 
 ALIGN 4; ButterflyInverted224BG:
 #incbin "224ButterflyInverted.dmp"
@@ -145,3 +149,23 @@ ALIGN 4; Storybook9_256BG:
 #incbin "256storybook9.dmp"
 ALIGN 4; Storybook9_256Pal:
 #incbin "256storybook9Pal.dmp"
+
+ALIGN 4; DarkHouseBG:
+#incbin "224DarkHouse.dmp"
+ALIGN 4; DarkHouseBGPal:
+#incbin "224DarkHousePal.dmp"
+
+ALIGN 4; SongbirdHugBG:
+#incbin "224SongbirdHug.dmp"
+ALIGN 4; SongbirdHugBGPal:
+#incbin "224SongbirdHugPal.dmp"
+
+ALIGN 4; LowlandForestBG:
+#incbin "224LowlandForest.dmp"
+ALIGN 4; LowlandForestBGPal:
+#incbin "224LowlandForestPal.dmp"
+
+ALIGN 4; FE9TentBG:
+#incbin "224Tent.dmp"
+ALIGN 4; FE9TentBGPal:
+#incbin "224TentPal.dmp"
