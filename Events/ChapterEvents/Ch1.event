@@ -163,7 +163,7 @@ BeginningScene:
 	Highlight(HeroChar)
 	Text(Ch1HeroTeacher)
 	
-	SetUnitStatus(Teacher,Exp,0xFF)
+	//SetUnitStatus(Teacher,Exp,0xFF)
 	NoFade
 	ENDA
 

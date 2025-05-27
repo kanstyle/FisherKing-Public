@@ -9,8 +9,8 @@
 
 push {r4,r14}
 mov r4, r0
-mov r0, r1
-ldr r1, JadedID
+mov r0, r1 @changed this from mov r0, r2 to mov r0, r1
+ldr r1, JadedID @changed this from void curse to jaded
 ldr r2, SkillTester
 mov lr, r2
 .short  0xF800
