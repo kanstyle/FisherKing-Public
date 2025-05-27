@@ -570,7 +570,6 @@ LABEL CSPg1
 	BLT EndMenuSkipStartEvent 8 7
 		//CenterTextbox(DebugPauseText)
 		LOAD1 0x1 UnitsCh1
-		SetUnitStatus(Teacher,Exp,0xFF)
 		//CenterTextbox(DebugPauseText)
 		SilentGiveItem(HandAxe,Dragon)
 		//CenterTextbox(DebugPauseText)
