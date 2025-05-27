@@ -19,7 +19,6 @@ void ButterflyItemEffect(ProcPtr proc) {
 	
 	BattleApplyItemEffect(proc);
     //BeginBattleAnimations();
-	//penis penis
 	return;
 } 
 
