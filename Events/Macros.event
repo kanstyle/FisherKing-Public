@@ -2,6 +2,7 @@
 #define LootOnlyThenEscapeAI [0x6,0x5,0x4,0x0]
 #define StationaryBossAI [0x3, 0x3, 0x0, 0x20]
 #define AttackInPlaceAI [0x3,0x3,0x4,0x0]
+#define RemoveBackgroundFast "FADI 16; CLEAN"
 #define RemoveBackground "FADI 6; CLEAN"
 #define RemoveBackgroundSlow "FADI 3; CLEAN"
 #define SetBackgroundSlow(bgID) "REMOVEPORTRAITS; BACG bgID; FADU 3"

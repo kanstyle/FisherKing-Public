@@ -25,6 +25,8 @@ ALIGN 32
 CharacterBasedEvents:
 	CharacterEventBothWays(Ch2PigeonTalkFlag,Ch2BrotherPigeonTalk,Pigeon,Brother)
 	CharacterEventBothWays(Ch2PigeonTalkFlag,Ch2HeroPigeonTalk,HeroChar,Pigeon)
+	CharacterEventBothWays(SeizeFlag,Ch2HeroSongbirdTalkEvent,HeroChar,Songbird)
+	CharacterEventBothWays(SeizeFlag,Ch2TeacherSongbirdTalkEvent,Teacher,Songbird)
 	END_MAIN
 
 MiscBasedEvents:
@@ -69,13 +71,13 @@ UnitsSongbird:
 	UNIT
 	
 UnitsStartEvent:
-	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [14,9] 0b 0x0 0x1 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT HeroChar UpstartM 0x40 Level(3,Ally,False)     [14,9] 0b 0x0 0x1 REDA9R9 [IronBow, IronSword, HerosFlair, Restore] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Headsman 0x40 Level(3,Ally,False)     [14,8] 0b 0x0 0x1 REDA9R8 [SteelAxe, SlimAxe, Bomb, Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [19,14] 0b 0x0 0x1 REDA19R13 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT HeroChar UpstartM 0x40 Level(3,Ally,False)     [18,14] 0b 0x0 0x1 REDA18R12 [IronBow, IronSword, HerosFlair, Restore] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Headsman 0x40 Level(3,Ally,False)     [17,14] 0b 0x0 0x1 REDA17R13 [SteelAxe, SlimAxe, Bomb, Vulnerary] [0x0,0x0,0x0,0x0]
 	UNIT
 	
 UnitsPillowStartEvent:
-	UNIT Pillow LowVoice 0x40 Level(3,Ally,False)     [11,8] 0b 0x0 0x0 0x0 [Loneliness, Pain] [0x0,0x0,0x0,0x0]
+	UNIT Pillow LowVoice 0x40 Level(3,Ally,False)     [19,12] 0b 0x0 0x0 0x0 [Loneliness, Pain] [0x0,0x0,0x0,0x0]
 	UNIT
 
 EnemyUnits:
@@ -114,9 +116,29 @@ EnemyUnits:
 	
 	UNIT Ch2BeastBoss Mauthedoog 0x40 Level(8,Enemy,True)     [2,2] 0b 0x0 0x0 0x0 [FireFang] AttackInRangeAI
 	UNIT Songbird Bard 0x40 Level(3,Enemy,False)     [3,1] 0b 0x0 0x0 0x0 [0x0] DoNothingAI
+	UNIT
+
+EnemyUnitsStartEvent:
+	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [15,3] 0b 0x0 0x1 REDA14R8 [RottenClaw] AttackInRangeAI
+	UNIT Beast Bonewalker 0x40 Level(3,Enemy,True)     [14,3] 0b 0x0 0x1 REDA15R9 [RottenClaw] AttackInRangeAI
+	UNIT Beast MogallClass 0x40 Level(3,Enemy,True)     [16,3] 0b 0x0 0x1 REDA17R10 [RottenClaw] AttackInRangeAI
+	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [8,14] 0b 0x0 0x1 REDA11R11 [IronLance] AttackInRangeAI
+	UNIT Beast Bonewalker 0x40 Level(3,Enemy,True)     [7,14] 0b 0x0 0x1 REDA12R10 [IronLance] AttackInRangeAI
+	UNIT Beast Mauthedoog 0x40 Level(3,Enemy,True)     [7,14] 0b 0x0 0x1 REDA10R13 [IronLance] AttackInRangeAI
+	UNIT Beast MogallClass 0x40 Level(3,Enemy,True)     [5,4] 0b 0x0 0x1 REDA2R14 [EvilEye] AttackInRangeAI
+	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [6,4] 0b 0x0 0x1 REDA5R8 [RottenClaw] AttackInRangeAI
+	UNIT Beast MogallClass 0x40 Level(3,Enemy,True)     [7,7] 0b 0x0 0x1 REDA8R7 [EvilEye] AttackInRangeAI
+	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [14,2] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
+	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [15,0] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
+	UNIT
+	
+PigeonUnits:
+	UNIT Pigeon SkyRat 0x40 Level(3,Enemy,False)     [19,3] 0b 0x0 0x1 REDA12R3 [SteelLance, IronLance, Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT
 
 HunterUnits:
-	UNIT Hunter BowArmor 0x40 Level(6,Ally,False)     [15,13] 0b 0x0 0x0 0x0 [HuntersBow,SteelBow,Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT Hunter BowArmor 0x40 Level(6,Ally,False)     [17,14] 0b 0x0 0x1 REDA16R13 [HuntersBow,SteelBow,Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT
 
 Traps1:
 	ENDTRAP
@@ -134,15 +156,60 @@ BeginningScene:
 	ENUN
 	FADU 6
 	Highlight(Skull)
-	/*Text(Ch2IntroSkullDialogue1)
+	Text(Ch2IntroSkullDialogue1)
 	SetBackground(SongbirdHug)
-	CGText(Ch2IntroSkullDialogue2)
+	STAL 30
+	CGText(Ch2IntroSkullHug1)
+	CGText(Ch2IntroSkullHug2)
+	CGText(Ch2IntroSkullHug3)
+	CGText(Ch2IntroSkullHug4)
 	RemoveBackground
-	Text(Ch2IntroSkullDialogue1)*/
+	FADU 16
+	Text(Ch2IntroSkullDialogue2)
+	MOVE 8 Skull [17,3]
+	MOVE 8 Pigeon [15,8]
+	FADI 8
+	ENUN
 	DoAllThree
 	
-	LOAD1 0x1 EnemyUnits
+	CAMERA [17,12]
+	FADU 3
 	LOAD1 0x1 HunterUnits
+	ENUN
+	STAL 15
+	Highlight(Hunter)
+	Text(Ch2IntroHunter)
+	CenterTextbox(Ch2IntroHunterNarration)
+	STAL 15
+	LOAD2 0x1 UnitsPillowStartEvent
+	UNCM(Pillow,Hide)
+	LOAD2 0x1 UnitsStartEvent
+	ENUN
+	STAL 30
+	WARPIN [19,12]
+	UNCR(Pillow,Hide)
+	ENDWARP
+	STAL 30
+	
+	Highlight(Dragon)
+	SetBackground(LowlandForest)
+	Text(Ch2IntroDragonConvo)
+	RemoveBackground
+	FADU 8
+	LOAD2 0x1 EnemyUnitsStartEvent
+	ENUN
+	Text(Ch2IntroEnemiesSpawned)
+	
+	CAMERA [19,0]
+	LOAD2 0x1 PigeonUnits
+	ENUN
+	Highlight(Pigeon)
+	Text(Ch2IntroPigeon)
+	FADI 16
+	STAL 30
+	
+	DoAllThree
+	LOAD1 0x1 EnemyUnits
 	ENUN
 	GotoPrepScreen
 	GiveItem(Teacher,Butterfly)
@@ -177,7 +244,7 @@ Ch2VillageEvent:
 	FADI 16
 	SetBackground(TentBG)
 	CenterTextbox(Ch2NorthHouseIntro)
-	RemoveBackground
+	RemoveBackgroundFast
 	SetBackground(BlackBG)
 	CallMenu(Ch2VillageMenu)
 		BNE 0x1 0xC 0x0
@@ -196,6 +263,16 @@ Ch2VillageEvent:
 		GOTO 0x2
 	RemoveBackgroundSlow
 	LABEL 0x2
+	NoFade
+	ENDA
+	
+Ch2HeroSongbirdTalkEvent:
+	Text(Ch2HeroSongbirdTalk)
+	NoFade
+	ENDA
+	
+Ch2TeacherSongbirdTalkEvent:
+	Text(Ch2TeacherSongbirdTalk)
 	NoFade
 	ENDA
 

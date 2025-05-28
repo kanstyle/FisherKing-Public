@@ -2,6 +2,14 @@
 
 Ch. 2: Songbird[X]
 
+## Ch2Objective ^
+
+Talk to Songbird[X]
+
+## Ch2ObjectiveLong
+
+Talk to Songbird.[X]
+
 ## Ch2BaseHeroPillowName
 
 Hero on Femininity (*)[X]
@@ -215,11 +223,99 @@ uptight, but you're not so bad.[A]
 (How does Pillow put up with her?)[A]
 [X]
 
-## Ch2IntroSkullDialogue
-[mr][LoadSongbird]
-[l][LoadSkull]
-[fl][LoadPigeon]
+## Ch2IntroSkullDialogue1
+[ml][LoadSongbird]
+[r][LoadSkull]
+[fr][LoadPigeon]
 Placeholder.[A][X]
+
+
+## Ch2IntroSkullHug1
+
+[SetName]Skull[.][N]
+Songbird--[A][X]
+
+
+## Ch2IntroSkullHug2
+
+[SetName]Songbird[N]
+You have a son, don't you?[A][X]
+
+
+## Ch2IntroSkullHug3
+
+[SetName]Skull[.][N]
+I...[4][4] I do.[A][X]
+
+
+## Ch2IntroSkullHug4
+
+[SetName]Songbird[N]
+Then go to him.[A][X]
+
+
+## Ch2IntroSkullDialogue2
+
+[ml][LoadSongbird]
+[r][LoadSkull]
+[fr][LoadPigeon]
+Placeholder.[A][X]
+
+## Ch2IntroHunter
+
+[ml][LoadHunter]
+This way, fellows![A][X]
+
+## Ch2IntroHunterNarration
+
+Having asked around for a tracker,[N]
+we'd met a mirthful bowman with[N]
+some substantial armor.[N]
+And a notable mustache.[N]
+Here I am, noting it, anyway.[AN]
+He knew the area, and claimed he[N]
+could track anything, no payment[N]
+required.[AN]
+Dragon and I were skeptical, but[N]
+Hero reasoned Pillow could crumple[N]
+his armor like tin if necessary.[AN]
+I wondered whether this was the[N]
+casual brutality of mercenary life,[N]
+or if those two were just a bit[N]
+strange.[A]
+[X]
+
+## Ch2IntroDragonConvo
+
+[r][LoadDragon]
+[fr][LoadPillow]
+[l][LoadHunter]
+[fl][LoadTeacher]
+[r]
+Placeholder.[A]
+[X]
+
+
+## Ch2IntroEnemiesSpawned
+
+[ml][LoadHunter]
+Placeholder.[A]
+
+[mr][LoadHeroM]
+Placeholder![A]
+[X]
+
+
+## Ch2IntroPigeon
+
+[ml][LoadPigeon]
+Placeholder.[A]
+[X]
+
+
+
+
+
 
 ## Ch2NarrationText
 Placeholder.[A][X]
@@ -273,7 +369,7 @@ shiny object laying upon the floorboards.[N]
 [oq]What's it for?"[AN]
 [oq]I already told you! It was going to[N]
 be a gift for someone.[N]
-But she's gone now..."[N]
+But they're gone now..."[N]
 [oq]Oh..."[AN]
 As you step closer, the children fade,[N]
 leaving only their treasure behind.[A]
@@ -294,4 +390,16 @@ children fade, leaving the house silent.[AN]
 [X]
 
 ## Ch2TentText
+Placeholder.[A][X]
+
+## Ch2HeroSongbirdTalk
+
+[mr][LoadHeroM]
+[ml][LoadSongbird]
+Placeholder.[A][X]
+
+## Ch2TeacherSongbirdTalk
+
+[mr][LoadTeacher]
+[ml][LoadSongbird]
 Placeholder.[A][X]

@@ -43,7 +43,7 @@ StandingMapSprite(0x63,0,NobleStanding)
 MovingMapSprite(Noble,NormalAP,NobleMoving)
 
 StandingMapSprite(0x77,0,BardStanding)
-MovingMapSprite(Bard,NormalAP,BardMoving)
+MovingMapSprite(Bard,BardAP,BardMoving)
 
 /*
 StandingMapSprite(0x0,0,BluEliwoodStanding)
