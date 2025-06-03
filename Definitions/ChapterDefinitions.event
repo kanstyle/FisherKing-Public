@@ -2,6 +2,8 @@
 #define Ch0 0x0
 #define Ch1 0x1
 #define Ch2 0x2
+#define Ch3 0x3
+#define MidnightCh 0x2C
 #ifdef USE_TEST_MAP
 	#define BossRush 0x0
 #else
@@ -23,6 +25,12 @@
 #define Ch2MapID 0x16
 #define Ch2MapChangesID 0x17
 #define Ch2EventsID 0x18
+
+#define MidnightMapID 0x19
+
+#define Ch3MapID 0x1A
+#define Ch3MapChangesID 0x1B
+#define Ch3EventsID 0x1C
 
 //TILESET IDs (START FROM 0x88 when replacing stuff)
 #define VanillaFieldsObjectID 0x1
@@ -94,3 +102,7 @@
 #define SuperFieldsObjectID 0xB7
 #define SuperFieldsPaletteID 0xB8
 #define SuperFieldsConfigID 0xB9
+
+#define ValniObjectID 0xBA
+#define ValniPaletteID 0xBB
+#define ValniConfigID 0xBC

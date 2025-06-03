@@ -52,6 +52,9 @@ int GetUnitAid(struct Unit* unit) { //universal 20 aid
     if (gSubjectUnit->pClassData->number == 0x77) { //sigil class
         return 0;
     }
+	if (gSubjectUnit->pCharacterData->number == 0x20) { //princeling
+        return 0;
+    }
 	
 	return 20;
 }

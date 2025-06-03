@@ -64,3 +64,9 @@ Prince[X]
 
 ## PeerClassDesc
 Placeholder.[X]
+
+## MageGeneralClassName ^
+Mage-General[X]
+
+## MageGeneralClassDesc
+Placeholder.[X]

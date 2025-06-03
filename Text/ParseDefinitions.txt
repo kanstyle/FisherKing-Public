@@ -96,6 +96,7 @@
 [LoadEnvoy] = [LoadFace][0x12][0x1]
 [LoadBunny] = [LoadFace][0x13][0x1]
 [LoadSongbird] = [LoadFace][0x14][0x1]
+[LoadEagle] = [LoadFace][0x15][0x1]
 
 [LoadCivManBald] = [LoadFace][0x58][0x1]
 [LoadCivManOld] = [LoadFace][0x59][0x1]
@@ -116,9 +117,9 @@
 [tmm] = [ToggleMouthMove]
 [ts] = [ToggleSmile]
 [css] = [CloseSpeechSlow]
-[ce] = [CloseEyes]
-[oe] = [OpenEyes]
-[hce] = [HalfCloseEyes]
+[ce] = [CloseEyes][CloseEyes][CloseEyes]
+[oe] = [OpenEyes][OpenEyes][OpenEyes]
+[hce] = [HalfCloseEyes][HalfCloseEyes][HalfCloseEyes]
 
 [period] = [0xDE][0x82]
 [dquote] = [0xDE][0x83]

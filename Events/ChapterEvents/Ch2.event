@@ -139,6 +139,22 @@ PigeonUnits:
 HunterUnits:
 	UNIT Hunter BowArmor 0x40 Level(6,Ally,False)     [17,14] 0b 0x0 0x1 REDA16R13 [HuntersBow,SteelBow,Vulnerary] [0x0,0x0,0x0,0x0]
 	UNIT
+	
+TeacherUnits:
+	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [4,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+PrinceUnits:
+	UNIT Prince Noble 0x40 Level(6,NPC,False)     [8,5] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+EagleUnits:
+	UNIT Eagle MageGeneral 0x40 Level(6,NPC,False)     [7,9] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+EnvoyUnits:
+	UNIT Songbird Bard 0x40 Level(3,NPC,False)     [7,5] 0b 0x0 0x0 0x0 [0x0] DoNothingAI
+	UNIT
 
 Traps1:
 	ENDTRAP
@@ -201,6 +217,10 @@ BeginningScene:
 	Text(Ch2IntroEnemiesSpawned)
 	
 	CAMERA [19,0]
+	SetBackground(LowlandForest)
+	Text(Ch2IntroPigeonSkull)
+	RemoveBackground
+	FADU 16
 	LOAD2 0x1 PigeonUnits
 	ENUN
 	Highlight(Pigeon)
@@ -216,6 +236,78 @@ BeginningScene:
 	ENDA
 
 EndingScene:
+	FADI 8
+	MUSC 0x7FFF
+	DoAllThree
+	
+	CAMERA [5,14]
+	LOAD2 0x1 TeacherUnits
+	FADU 8
+	CenterTextbox(Ch2EndNarration)
+	MOVE 10 Teacher [17,12]
+	STAL 45
+	FADI 8
+	ENUN
+	SetBackground(LowlandForest)
+	Text(Ch2EndSongbirdTalk)
+	RemoveBackgroundSlow
+	DoAllThree
+	
+	LOMA MidnightCh
+	LOAD2 0x1 PrinceUnits
+	FADU 6
+	BROWNBOXTEXT Ch2EndMidnightLocation [8,8]
+	Highlight(Prince)
+	Text(Ch2EndPrinceEagle1)
+	STAL 30
+	LOAD2 0x1 EagleUnits
+	STAL 60
+	MOVE 5 Eagle [7,8]
+	STAL 60
+	MOVE 5 Eagle [7,5]
+	ENUN
+	Highlight(Eagle)
+	Text(Ch2EndPrinceEagle2)
+	FADI 4
+	STAL 120
+	
+	DoAllThree
+	LOAD2 0x1 PrinceUnits
+	LOAD2 0x1 EnvoyUnits
+	FADU 4
+	STAL 45
+	Highlight(Songbird)
+	Text(Ch2EndEnvoyPrince)
+	FADI 8
+	Music(0x777F)
+	SetBackgroundSlow(Storybook1)
+	CGText(Storybook1Text)
+	RemoveBackground
+	SetBackground(Storybook2)
+	CGText(Storybook2Text)
+	RemoveBackground
+	SetBackground(Storybook3)
+	CGText(Storybook3Text)
+	RemoveBackground
+	SetBackground(Storybook4)
+	CGText(Storybook4Text)
+	RemoveBackground
+	SetBackground(Storybook5)
+	CGText(Storybook5Text)
+	RemoveBackground
+	SetBackground(Storybook6)
+	CGText(Storybook6Text)
+	RemoveBackground
+	SetBackground(Storybook7)
+	CGText(Storybook7Text)
+	RemoveBackground
+	SetBackground(Storybook8)
+	CGText(Storybook8Text)
+	RemoveBackground
+	SetBackground(Storybook9)
+	CGText(Storybook9Text)
+	RemoveBackground
+	
 	MNC2 Ch0
 	NoFade
 	ENDA
@@ -234,8 +326,8 @@ Ch2BrotherPigeonTalk:
 
 Ch2TentEvent:
 	SetBackground(TentBG)
-	CenterTextbox(Ch2TentText)
-	GiveItem(SteelLance,0xFFFF)
+	CenterTextbox(Ch2TentTextGeneric)
+	GiveItem(SteelBow,0xFFFF)
 	RemoveBackground
 	NoFade
 	ENDA
@@ -268,11 +360,13 @@ Ch2VillageEvent:
 	
 Ch2HeroSongbirdTalkEvent:
 	Text(Ch2HeroSongbirdTalk)
+	CALL EndingScene
 	NoFade
 	ENDA
 	
 Ch2TeacherSongbirdTalkEvent:
 	Text(Ch2TeacherSongbirdTalk)
+	CALL EndingScene
 	NoFade
 	ENDA
 

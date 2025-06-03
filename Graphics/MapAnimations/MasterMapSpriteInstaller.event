@@ -45,6 +45,9 @@ MovingMapSprite(Noble,NormalAP,NobleMoving)
 StandingMapSprite(0x77,0,BardStanding)
 MovingMapSprite(Bard,BardAP,BardMoving)
 
+StandingMapSprite(0x78,0,MageGeneralStanding)
+MovingMapSprite(MageGeneral,NormalAP,MageGeneralMoving)
+
 /*
 StandingMapSprite(0x0,0,BluEliwoodStanding)
 StandingMapSprite(0x2,1,MasterKnight_Standing)

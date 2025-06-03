@@ -99,6 +99,7 @@
 #define PubID 0x285
 #define EmbracingOnesDutyID 0x286
 #define WildFieldsID 0x287
+#define RoadTakenID 0x288
 
 // Vanilla
 #define TiesOfFriendship 0x7

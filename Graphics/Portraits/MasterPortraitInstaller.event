@@ -152,3 +152,11 @@ SongbirdMugData: // LL
 #incbin "dmp/Songbird_palette.dmp"
 #incbin "dmp/Songbird_minimug.dmp"
 setMugEntry(SongbirdMug, SongbirdMugData, 3, 5, 3, 3)
+
+ALIGN 16
+EagleMugData: // LL
+#incbin "dmp/Eagle_mug.dmp"
+#incbin "dmp/Eagle_frames.dmp"
+#incbin "dmp/Eagle_palette.dmp"
+#incbin "dmp/Eagle_minimug.dmp"
+setMugEntry(EagleMug, EagleMugData, 3, 5, 4, 3)

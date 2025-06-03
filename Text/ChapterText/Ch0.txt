@@ -140,7 +140,7 @@ you?[AN]
 
 [mr][ToggleSmile]
 I'm serious![....] You have your orders,[n]
-soldier; off to the study with you![AN][CloseSpeechSlow]
+soldier; off to the study with you![AN][CloseSpeechSlow][ts]
 
 [ml][MoveFarLeft]
 Alright, alright![AN]

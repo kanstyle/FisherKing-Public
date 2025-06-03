@@ -138,13 +138,14 @@ RefreshPrince:
 		Text(Ch0WanderOff)
 	LABEL 0x0
 	
-	GetUnitStatus(YoungTeacher,YCoord)
-	SVAL s1 3
-	BEQ 0x1 sC s1
-		SET_ACTIVE 0x0
-		//Text(Ch0TutorialShove)
-		MOVE 5 YoungTeacher [3,12]; ENUN
-		CursorOn(YoungPrince)
+	FlagNotSet(Stage3BeganFlag,0x1)
+		GetUnitStatus(YoungTeacher,YCoord)
+			SVAL s1 3
+			BEQ 0x1 sC s1
+				SET_ACTIVE 0x0
+				//Text(Ch0TutorialShove)
+				MOVE 5 YoungTeacher [3,12]; ENUN
+				CursorOn(YoungPrince)
 	LABEL 0x1
 	NoFade
 	ENDA
@@ -187,11 +188,12 @@ BeginningScene:
 	BROWNBOXTEXT Ch0OldPrinceBirthdayBrownBox [8,8]
 	Text(Ch0OldPrinceBirthday)
 	RemoveBackgroundSlow
-	
+	MusicChange(PMDSteamCaveID)
 	SetBackground(0x35)
 	CenterTextbox(Ch0LowlandLore)
 	RemoveBackgroundSlow
 	
+	MusicChange(PMD_MtThunderID)
 	FADU 4
 	BROWNBOXTEXT Ch0LowlandBrownBox [8,8]
 	CameraCursorLocation(2,13,60)
@@ -385,6 +387,7 @@ Ch0BunnyPrinceTalk:
 EndingScene:
 	CAMERA [0,0]
 	Text(Ch0FogBreaks)
+	FadeOutMusic
 	FAWI 5
 	REMOVEPORTRAITS
 	BACG WhiteBG

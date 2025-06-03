@@ -138,10 +138,12 @@ BeginningScene:
 	Text(Ch1DragonIntroDialogue)
 	CenterTextbox(Ch1PillowIntro)
 	Text(Ch1PillowIntroDialogue)
+	FadeOutMusic
 	RemoveBackgroundSlow
 	
 	LOAD1 0x1 EnemyUnits
 	ENUN
+	Music(FFTAnxiety)
 	FADU 6
 	Highlight(Skull)
 	Text(Ch1SkullIntro)
@@ -149,6 +151,7 @@ BeginningScene:
 	DISA Pigeon
 	Text(Ch1SkullIntro2)
 	
+	Music(HarvestDance)
 	LOAD1 0x1 UnitsPillow
 	UNCM(Pillow,Hide)
 	LOAD1 0x1 Units1

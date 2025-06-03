@@ -227,13 +227,39 @@ uptight, but you're not so bad.[A]
 [ml][LoadSongbird]
 [r][LoadSkull]
 [fr][LoadPigeon]
-Placeholder.[A][X]
+[r]
+Didn't have time to cover my tracks.[N]
+They'll be on us any minute.[AN]
+Pigeon, was it?[4] You could fly us out.[A]
+
+[fr]
+Fat chance![4] This old pegasus can't[N]
+carry three of us.[A]
+
+[r]
+...I'll be the one to stay behind, then.[A]
+
+[ml]
+You already know what I'm going to say,[N]
+don't you?[A]
+
+[r]
+Yeah, and to hell with it![A]
+
+[ml]
+The creatures of this land can't[N]
+harm me.[A] And the soldiers won't[N]
+kill me.[4] I have nothing to fear.[A]
+
+[r][MoveRight]
+You don't know that, dammit![A]
+[X]
 
 
 ## Ch2IntroSkullHug1
 
 [SetName]Skull[.][N]
-Songbird--[A][X]
+Songbird...![A][X]
 
 
 ## Ch2IntroSkullHug2
@@ -259,7 +285,11 @@ Then go to him.[A][X]
 [ml][LoadSongbird]
 [r][LoadSkull]
 [fr][LoadPigeon]
-Placeholder.[A][X]
+[r]...[A]
+
+[fr]
+C'mon, we gotta go![A]
+[X]
 
 ## Ch2IntroHunter
 
@@ -292,24 +322,99 @@ strange.[A]
 [l][LoadHunter]
 [fl][LoadTeacher]
 [r]
-Placeholder.[A]
+The rivers really are black.[N]
+What even is this stuff?[A]
+
+[l]
+Nothing good, missy![4][4] I suggest keeping[N]
+your hands quite clear of it.[AN]
+It's got hands of its own, you see.[N]
+See there?[4] Where it splashes up?[A]
+
+[fl][tmm]
+(It does look oddly like fingers...)[A][tmm]
+
+[r][ce]
+...Let's just make this quick.[A][oe]
+
+[l]
+Splendid directive![4] The Lowlands are[N]
+an acquired taste, to put it mildly.[A]
+
+[r]
+Hey, Pillow?[4] How're you holding up?[A]
+
+[fr]
+I...[4] um...[4] I-I can handle it.[A]
+
+[l]
+Oh?[4] Is something the matter?[A]
+
+[fr]
+The daemons get...[4][4] agitated when[N]
+I'm in the Lowlands.[AN]
+M-my crown helps, but...[A]
+
+[r]
+If it gets bad, just get yourself out.[N]
+We'll handle the rest.[A]
+
+[fr][ts]
+Mm-hmm.[4] Thanks.[A]
 [X]
 
 
 ## Ch2IntroEnemiesSpawned
 
-[ml][LoadHunter]
-Placeholder.[A]
+[ml][LoadHunter][ts]
+Ah, and here they are![N]
+Hello, lads.[4] Come to play?[A]
 
 [mr][LoadHeroM]
-Placeholder![A]
+Careful, everyone![N]
+These things're tough.[A]
 [X]
 
+## Ch2IntroPigeonSkull
+[mr][LoadPigeon][MoveMidLeft]
+[mr][LoadSkull]
+We're goin' to the city.[4][4] We've[N]
+got to tell Storm what happened.[A]
+
+[ml]
+You can tell him.[4] I'm quitting.[N]
+Sorry, but I need money.[A]
+
+[mr]
+...I see.[AN]
+Fair enough, then.[4][4][N]
+I don't blame you.[A]
+
+[ml]
+...[A]
+
+[mr]
+I'm sure Songbird won't, either.[A]
+
+[ml]
+[ce]...[AN][css][MoveMidLeft]
+[oe]Dammit![4][4] Okay, I'm dropping you off here![N]
+You can walk the rest a' the way![A]
+
+[mr]
+What?![4][4] What're you--[A]
+
+[ml]
+Tired a' this![4][4] Tired a' running![N]
+I'm gonna go help Songbird![A]
+[X]
 
 ## Ch2IntroPigeon
 
-[ml][LoadPigeon]
-Placeholder.[A]
+[ml][LoadPigeon][tmm]
+(There they are.[N]
+I said all that, but what am I gonna do...?)[A]
+(Whatever! I'll figure it out!)[A]
 [X]
 
 
@@ -317,17 +422,82 @@ Placeholder.[A]
 
 
 
-## Ch2NarrationText
-Placeholder.[A][X]
-
-## Ch2IntroPigeonDialogue
-[mr][LoadPigeon]
-Placeholder.[A][X]
 
 ## Ch2BrotherPigeonTalkText
+[mr][LoadPigeon]
+[ml][LoadBrother]
+Huh?[4] What the hell're--[A]
+
+[mr]
+Huh?[4] What the hell're YOU[N]
+doing here?![A]
+
+[ml]
+You first![4] You're gonna get[N]
+shot, stupid![AN]
+Lose your pegasus, and then what?[N]
+You're too broke for that![A]
+
+[mr][ce]
+...Dammit![4][4][oe] I hate this![AN]
+I'm so sick of not bein' able to[N]
+DO anything![A]
+
+[ml]
+...Same here.[A]
+
+[mr]
+They're paying you, right?[N]
+Get me signed up, too.[A]
+
+[ml]
+I dunno how much money they've got,[N]
+but I'll see what I can do...[A]
+
+[mr][tmm]
+(Gotta make sure they[N]
+don't hurt Songbird.)[A]
 [X]
 
 ## Ch2HeroPigeonTalkText
+[mr][LoadPigeon]
+[ml][LoadHeroM]
+[mr]
+You![4] You're after Songbird, right?[A]
+
+[ml]
+Whoa, whoa![4][4] Let's not get ahead[N]
+of ourselves.[AN]
+You a friend of theirs?[A]
+
+[mr]
+Yeah, I am![A]
+
+[ml]
+Well, sorry, but we've gotta[N]
+bring 'em in.[AN]
+We're not gonna hurt them or[N]
+anything, though.[4] Plus...[AN]
+You probably don't want to take[N]
+us all on, do you?[A]
+
+[mr][ce][tmm]
+(I knew this was going to happen.[N]
+I knew it, but I just...!)[AN][oe]
+You're mercenaries, right?[N]
+I want in.[A]
+
+[ml]
+Oh, hey![N] I didn't even[N]
+have to ask.[AN]
+Budget's a little tight, but[N]
+I'm sure we can squeeze you in.[A]
+
+[mr][tmm]
+(Now I can make sure they don't[N]
+lay a finger on Songbird.)[AN][oe]
+(...[N]
+Sorry, Songbird.)[A]
 [X]
 
 ## Ch2NorthHouseIntro
@@ -389,17 +559,290 @@ Before you can answer, the spirits of the[N]
 children fade, leaving the house silent.[AN]
 [X]
 
-## Ch2TentText
-Placeholder.[A][X]
+## Ch2TentTextGeneric
+You've no idea why someone would hunt[N]
+in the Lowlands, let alone sleep out[N]
+there.[AN]
+The tent contains a high-quality bow,[N]
+and no owner in sight.[N]
+You decide to take it.[A][X]
+
+## Ch2TentTextHunter
+[ml][LoadHunter]
+Ah![4] Seems I'd forgotten to break[N]
+camp.[4] How foolish of me![AN]
+I'll have this packed up in a moment...[A][X]
 
 ## Ch2HeroSongbirdTalk
 
 [mr][LoadHeroM]
 [ml][LoadSongbird]
-Placeholder.[A][X]
+Greetings.[4][4] I am Songbird.[N]
+I will not resist.[A]
+
+[mr][ts]
+Music to my ears![AN]
+We'll tie your hands real quick,[N]
+and then saddle you up with Teacher.[A]
+[X]
 
 ## Ch2TeacherSongbirdTalk
 
 [mr][LoadTeacher]
 [ml][LoadSongbird]
-Placeholder.[A][X]
+Greetings.[4][4] I am Songbird.[N]
+I will not resist.[A]
+
+[mr]
+That's fortunate.[AN]
+Apologies, but I must tie[N]
+your hands nonetheless.[AN]
+You'll be riding with me.[A]
+[X]
+
+## Ch2EndNarration
+
+True to their word, Songbird uttered[N]
+not a single complaint as we bound[N]
+them for the journey.[AN]
+They conducted themselves with[N]
+a detached, almost unnerving[N]
+serenity, as if barely aware of[N]
+their surroundings.[A][X]
+
+## Ch2EndSongbirdTalk
+
+[ml][LoadTeacher][MoveRight]
+[l][LoadSongbird]
+
+[r]
+So, Songbird.[A]
+
+[l]
+Yes?[4][4] Am I free to speak, you mean?[A]
+
+[r]
+Yes, if you wouldn't mind.[N]
+Who are you, may I ask?[AN]
+Were you born in the Highlands?[A]
+
+[l][ts]
+Ah.[4][4] Interested, are you?[4][4][N][ts]
+I'm afraid the memories are hazy for me.[AN]
+People like me emerge in times like these,[N]
+I'm told.[A]
+
+[r]
+[oq]Times like these"?[A]
+
+[l]
+There are great turmoils afoot in the[N]
+Highlands.[4][4] Turmoils of the heart.[A]
+
+[r]
+Rebellious sentiment, you mean?[A]
+
+[l]
+In one facet, yes.[4][4] But you seem[N]
+content with affairs as they are.[A]
+
+[r]
+One doesn't serve so long as I did[N]
+without any dissatisfaction.[AN]
+But that's behind me.[4] My duty's done.[AN]
+I've earned the right to let the cards[N]
+fall where they may.[A]
+
+[l]
+And yet, at the center of this turmoil...[4][4][N]
+stands the Prince himself.[A]
+
+[r][tmm]
+...[AN]
+Let's talk about something else.[A][X]
+
+## Ch2EndMidnightLocation
+Midnight[X]
+
+## Ch2EndPrinceEagle1
+
+[mr][LoadPrince][tmm]
+(I haven't been followed, have I?[N][ce]
+Finally, some peace and quiet.)[A][X]
+
+## Ch2EndPrinceEagle2
+
+[mr][LoadPrince][ce]
+[fl][LoadEagle]
+[4][4][4][MoveMidLeft][4][4][4][MoveLeft][4][4][4][4][4][4]
+...Meep meep meep.[A][css]
+
+[mr][oe][MoveMidRight]
+Gah![A]
+
+[l][ts]
+Ahahahaha![4][4][N][css][MoveMidLeft]
+Oh, that was a good one, I say...[AN]
+Sorry for interrupting, but I[N]
+simply had to.[A]
+
+[mr]
+Careful, or your meeping might summon[N]
+the wily warping worm.[AN]
+With his fearsome flagellate fork![A]
+
+[ml][MoveMidLeft]
+Ehehee...[AN]
+Oh, I fear our sense of humor will[N]
+never recover from this.[AN]
+We'll be utterly unintelligible by[N]
+year's end.[A]
+
+[mr]
+Good, I say.[AN][ts][ce]
+Explaining myself to other people is[N]
+quickly becoming my most hated activity.[AN][oe]
+Every minister and noble that darkens my[N]
+door, with their endless concerns...[AN]
+If you weren't so busy with the war[N]
+councils, I'd always have you with me.[A]
+
+[ml]
+Ah...[4] Perhaps you need a change of[N]
+advisors?[A]
+
+[mr]
+They're all the same.[4] They don't[N]
+understand I'm not like my father--[AN]
+I'm not some boundless fount of wonder[N]
+and wisdom to be congregated around.[AN][ce]
+I tire.[4][4] I falter.[4][4] I err.[4][4][N][oe]
+And too much, at that...[A]
+
+[ml]
+Hmm...[4][4] I'm sorry there's so[N]
+little I can do.[A]
+
+[mr]
+...I'll manage somehow.[4] There's royal[N]
+blood in my veins, after all.[AN]
+What of you?[4][4][N]
+How fare the war councils?[A]
+
+[ml]
+The ceasefire on the eastern front[N]
+is holding.[AN][ts]
+But there's still contingencies to plan,[N]
+scenarios to model...[AN][ts][ce]
+And I have to mute my enthusiasm for it[N]
+all, of course.[AN][oe]
+As if seeing beauty in war makes me[N]
+some kind of beast.[A]
+
+[mr]
+I'd be jealous, if I were the other[N]
+generals.[4] They hardly hold a candle.[A]
+
+[ml][ts]
+Haha...[4][4] You needn't feed my ego.[AN][ts]
+They're right to be solemn.[4][N]
+It's me who's unusual.[A]
+
+[mr][ts]
+Well, we can be unusual together.[A]
+
+[ml]
+Indeed...[A]
+[X]
+
+## Ch2EndEnvoyPrince
+[ml][LoadEnvoy]
+[mr][LoadPrince]
+[ml]
+Hello, my prince.[A]
+
+[mr]
+Hm?[4][4] ...![A][css]
+[MoveFarRight]
+Who are you?[N][4]
+How did you get in here?[A]
+
+[ml]
+Oh, my apologies.[4][4] I'm but a[N]
+humble envoy, milord.[AN]
+I've come to see you.[A]
+
+[mr]
+...[4][4][4]You...[4][4] You're a Lowland daemon,[N][4][4]
+aren't you?[A]
+
+[ml]
+Yes... from far to the west, I've come.[N][4][4]
+From the root of the deep mountains.[A][css]
+
+[mr][MoveMidRight]
+What is it you want?[A]
+
+[ml]
+To tell you a story.[4][4] That's all.[A]
+
+[mr]
+...I'm listening.[A][X]
+
+
+## Ch2EndEnvoyPrinceAlt
+[mr][LoadEnvoy]
+[ml][LoadPrince]
+[mr]
+Hello, my prince.[A]
+
+[ml]
+Hm?[4][4] ...![A][css]
+[MoveFarLeft]
+Who are you?[N][4]
+How did you get in here?[A]
+
+[mr]
+Oh, my apologies.[4][4] I'm but a[N]
+humble envoy, milord.[AN]
+I've come to see you.[A]
+
+[ml]
+...[4][4][4]You...[4][4] You're a Lowland daemon,[4][4]
+aren't you?[A]
+
+[mr]
+Yes... from far to the west, I've come.[N][4][4]
+From the root of the deep mountains.[A][css]
+
+[ml][MoveMidLeft]
+What is it you want?[A]
+
+[mr]
+To satisfy my curiosities, and offer a bit[N]
+of help.[4][4] That's all.[A]
+
+[ml]
+I'm listening.[A]
+
+[mr]
+Why is it they call you a "prince"?[AN]
+Are you not a king?[A]
+
+[ml]
+You don't know?[N][4]
+The King is the one who embodies the land.[AN]
+When they are pleased, the world flourishes.[N][4]
+When they are ill, the world wilts.[A]
+
+[mr]
+Others would call that a god.[A]
+
+[ml]
+The Highlands have no gods.[N][4]
+Our King was once mortal.[A]
+
+[mr]
+Ah![4] Is that not cosmic insolence?[AN]
+
+[X]

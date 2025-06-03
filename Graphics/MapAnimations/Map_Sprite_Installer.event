@@ -78,6 +78,14 @@ ALIGN 4
 BardMoving:
 #incbin "Dmp/Bard-walk.dmp"
 
+ALIGN 4
+MageGeneralStanding:
+#incbin "Dmp/MageGeneral-stand.dmp"
+
+ALIGN 4
+MageGeneralMoving:
+#incbin "Dmp/MageGeneral-walk.dmp"
+
 /*ALIGN 4
 SwordCavStanding:
 #incbin "Dmp/Cavalier (M) Sword {SALVAGED}-stand.dmp" 

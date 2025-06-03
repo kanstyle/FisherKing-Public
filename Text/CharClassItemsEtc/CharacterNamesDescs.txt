@@ -133,3 +133,15 @@ Songbird[X]
 
 ## SongbirdDesc
 Placeholder.[X]
+
+## PrinceName
+Prince[X]
+
+## PrinceDesc
+Placeholder.[X]
+
+## EagleName
+Eagle[X]
+
+## EagleDesc
+Placeholder.[X]

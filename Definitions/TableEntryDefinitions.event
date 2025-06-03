@@ -20,6 +20,7 @@
 #define EnvoyMug 0x12
 #define BunnyMug 0x13
 #define SongbirdMug 0x14
+#define EagleMug 0x15
 
 // Characters
 #define HeroChar 0x1
@@ -31,6 +32,8 @@
 #define Pigeon 0x7
 #define Bunny 0x8
 #define Songbird 0x9
+#define Prince 0xA
+#define Eagle 0xB
 #define YoungPrince 0x20
 #define YoungTeacher 0x21
 #define OldPrince 0x22
@@ -61,6 +64,7 @@
 #define Noble 0x76
 #define SigilClass 0x77
 #define SkyRat 0x80
+#define MageGeneral 0x81
 #define Peer 0x73
 
 // Terrain Move Costs

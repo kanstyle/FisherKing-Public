@@ -27,6 +27,8 @@ SongTable(PubID,song05,MapMusicGroup)
 SongTable(EmbracingOnesDutyID,song5F,MapMusicGroup)
 #include "MusicEvents/Secret of Mana - Wild Fields {Pandan}.event"
 SongTable(WildFieldsID,song13,MapMusicGroup)
+#include "MusicEvents/FE14 - Road Taken V1 (SurfingKyogre).event"
+SongTable(RoadTakenID,song06,MapMusicGroup)
 
 #include "MusicEvents/lufiadoom.event"
 SongTable(Lufia_Doom,lufiadoom,MapMusicGroup)

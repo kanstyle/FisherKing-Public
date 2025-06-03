@@ -2,6 +2,106 @@
 
 Ch. 3: The Mundane[X]
 
+## Ch3Objective
+
+Make money[X]
+
+## Ch3ObjectiveLong ^
+
+Fight in the arena[N]
+and solve a mystery.[X]
+
+## Ch3BaseHunter
+
+[r][LoadTeacher]
+[fr][LoadHeroF]
+[ml][LoadHunter]
+Top of the morning, fellows![N]
+What's our next move, then, eh?[A]
+
+[r]
+Good morning, Hunter.[A]
+
+[fr]
+Just the man I wanted to see![A]
+
+[ml]
+Ah![4] What've you got for me?[A]
+
+[fr]
+Now, don't take this the wrong way,[N]
+but...[4][4] why are you still here?[AN]
+I'm grateful you helped us track down[N]
+Songbird free of charge,[AN]
+but isn't coming all the way here a[N]
+little excessive?[A]
+
+[r][tmm]
+(I didn't even notice he followed us all[N]
+the way to town.[4] Must be a good hunter.)[A][tmm]
+
+[ml][ts]
+Oh, don't worry yourselves about it.[N]
+Money's no obstacle for me.[AN]
+I'm happy to follow you lot wherever--[4][N]
+so long as you keep a bow in my hand, eh?[A]
+
+[r][ts]
+...Are you quite sure?[4] You've no[N]
+family to support, or anything?[A]
+
+[ml]
+No, no.[4] My family lives somewhere far[N]
+away, you see.[AN]
+You've got a soldier's look about you,[N]
+friend.[4] I'm the same way.[AN][ts]
+I quit that old life some time ago,[N]
+and now I'm living my own![A]
+
+[fr]
+Well, as long as you're happy,[N]
+we're glad to have you![A]
+
+[ml]
+Likewise, my good lady![4][N]
+If that's all, I'll be off, then.[A][ts]
+[css][clear][4][4][4][4]
+
+[r][clear][ml][LoadTeacher][fr][MoveMidRight][ml]
+Well, that's nice of him.[A]
+
+[mr]
+I'll say![4] Nice for our ledger, too.[N]
+REAL nice.[A]
+
+[ml]
+Though, one thing still nags at me...[N][4]
+Has he eaten any meals with us?[A]
+
+[mr]
+Hmm...[4] I don't think so?[AN]
+But that's not THAT weird, is it?[N][4]
+He's a hunter.[AN]
+Maybe he catches squirrels and roasts[N]
+them on a spit, or something.[A]
+
+[ml]
+Ah.[4][4] True dedication[N]
+to the craft.[A]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## BaseConvoPillowCat1
 

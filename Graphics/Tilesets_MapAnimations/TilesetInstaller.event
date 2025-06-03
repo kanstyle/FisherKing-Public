@@ -148,6 +148,22 @@
     ALIGN 4
     SnowyBernConfigCloudy:
     #incbin "Dmp/Config/SnowyBernCloudyConfig_comp.dmp"
+	
+	ALIGN 4
+    ValniConfig:
+    #incbin "Dmp/Config/Valni_comp.dmp"
+
+    ALIGN 4
+    ValniObject:
+    #incbin "Dmp/Object/Valni.dmp"
+
+    ALIGN 4
+    ValniPalette:
+    #incbin "Dmp/Palette/Valni_pal.dmp"
+
+	EventPointerTable(ValniObjectID,ValniObject)
+    EventPointerTable(ValniPaletteID,ValniPalette)
+    EventPointerTable(ValniConfigID,ValniConfig)
 
     EventPointerTable(FlasubanVillageObjectID,FlasubanVillageObject)
     EventPointerTable(FlasubanVillagePaletteID,FlasubanVillagePalette)
