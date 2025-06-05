@@ -182,8 +182,13 @@ BeginningScene:
 	RemoveBackground
 	FADU 16
 	Text(Ch2IntroSkullDialogue2)
-	MOVE 8 Skull [17,3]
+	STAL 30
+	MOVE 8 Skull [5,1]
+	ENUN
+	DISA Skull
+	STAL 30
 	MOVE 8 Pigeon [15,8]
+	STAL 40
 	FADI 8
 	ENUN
 	DoAllThree

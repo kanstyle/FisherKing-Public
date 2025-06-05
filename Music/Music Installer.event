@@ -29,6 +29,25 @@ SongTable(EmbracingOnesDutyID,song5F,MapMusicGroup)
 SongTable(WildFieldsID,song13,MapMusicGroup)
 #include "MusicEvents/FE14 - Road Taken V1 (SurfingKyogre).event"
 SongTable(RoadTakenID,song06,MapMusicGroup)
+#include "MusicEvents/ForANewLife.event"
+SongTable(ForANewLifeID,ForANewLife,MapMusicGroup) //nikki
+#include "MusicEvents/InTheMorningSun.event"
+SongTable(InTheMorningSunID,IntheMorningSun,MapMusicGroup) //nikki
+#include "MusicEvents/LaLWordsofTrust2.event"
+SongTable(WordsofTrustID,LaLWordsofTrust2,MapMusicGroup) //nikki
+#include "MusicEvents/MomentofSerenity.event"
+SongTable(MomentofSerenityID,MomentofSerenity,MapMusicGroup) //nikki
+#include "MusicEvents/PlanetsParalysis.event"
+SongTable(PlanetsParalysisID,Planet_sParalysis,MapMusicGroup) //nikki
+#include "MusicEvents/TimeGear.event"
+SongTable(TimeGearID,TimeGear,MapMusicGroup) //nikki
+#include "MusicEvents/UnderTheFake.event"
+SongTable(UnderTheFakeID,UnderTheFake,MapMusicGroup) //nikki
+#include "MusicEvents/UpperSteamCave.event"
+SongTable(UpperSteamCaveID,UpperSteamCave,MapMusicGroup) //nikki
+#include "MusicEvents/WaterfallUT.event"
+SongTable(WaterfallUTID,WaterfallUT,MapMusicGroup) //
+
 
 #include "MusicEvents/lufiadoom.event"
 SongTable(Lufia_Doom,lufiadoom,MapMusicGroup)

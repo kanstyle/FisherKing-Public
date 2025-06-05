@@ -86,6 +86,11 @@ UnitsCh1:
 	UNIT Brother Priest 0x40 Level(4,Ally,True)     	[4,0] 0b 0x0 0x0 0x0 [Heal, Bomb] DoNothingAI
 	UNIT
 	
+UnitsCh2:
+	UNIT Hunter BowArmor 0x40 Level(6,Ally,False)     [17,14] 0b 0x0 0x0 0x0 [HuntersBow,SteelBow,Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT Pigeon SkyRat 0x40 Level(5,Ally,False)     [19,3] 0b 0x0 0x0 0x0 [SteelLance, IronLance, Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT
+	
 TeacherUnit:
 	UNIT YoungTeacher Paladin 0x40 Level(10,Ally,False)     [2,13] 0b 0x0 0x1 REDA3R14 [IronLance,SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT
@@ -184,6 +189,7 @@ BeginningScene:
 	CenterTextbox(Ch0HighlandsLore)
 	RemoveBackgroundSlow
 	
+	MusicChange(WordsofTrustID)
 	SetBackgroundSlow(Castle_Room)
 	BROWNBOXTEXT Ch0OldPrinceBirthdayBrownBox [8,8]
 	Text(Ch0OldPrinceBirthday)
@@ -586,7 +592,14 @@ LABEL CSPg1
 	CenterTextbox(DebugPauseText)
 	BLT EndMenuSkipStartEvent 8 7
 		// fill this in later with ch. 2 stuff
-		//CenterTextbox(DebugPauseText)
+		LOAD1 0x1 UnitsCh2
+		SilentGiveItem(SteelBow,Hunter)
+		//SilentGiveItem(CrystalKnife,HeroChar)
+		SilentGiveItem(Butterfly,Teacher)
+		CenterTextbox(DebugPauseText)
+		SVAL s1 HeroChar
+		SVAL s2 10
+		ASMC AutoLevelASMC|1
 		MNC2 Ch3
 		//GOTO EndMenuSkipStartEvent
 	

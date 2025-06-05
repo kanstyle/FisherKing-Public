@@ -136,4 +136,6 @@
 #define WarpInCoords(x,y) "SVAL sB ([x,y]); WARP_IN; STAL 0x32; ENDWARP;"
 #define IfActiveUnitIs(id, label) "CHECK_ACTIVEID (id); BEQ (label) 0xc 0x0;"
 
+#define AutoLevel(id, targetLevel) "ENUT 0xEF; SVAL s1 (id); SVAL s2 (id); ASMC AutoLevelASMC|1; ENUF 0xEF"
+
 //#define GiveExp(Unit,Amount) "SVAL 1 (Unit); SVAL 4 (Amount); ASMC ASMC_GiveExp|1"

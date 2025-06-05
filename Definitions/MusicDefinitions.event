@@ -100,6 +100,15 @@
 #define EmbracingOnesDutyID 0x286
 #define WildFieldsID 0x287
 #define RoadTakenID 0x288
+#define ForANewLifeID 0x289
+#define InTheMorningSunID 0x28A
+#define WordsofTrustID 0x28B
+#define MomentofSerenityID 0x28C
+#define PlanetsParalysisID 0x28D
+#define TimeGearID 0x28E
+#define UnderTheFakeID 0x28F
+#define UpperSteamCaveID 0x290
+#define WaterfallUTID 0x291
 
 // Vanilla
 #define TiesOfFriendship 0x7

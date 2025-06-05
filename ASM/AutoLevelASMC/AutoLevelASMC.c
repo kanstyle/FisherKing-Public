@@ -6,7 +6,7 @@ void AutoLevelASMC(ProcPtr proc) { //target unit in slot1, target level in slot2
 	u16 unitID = gEventSlots[1];
 	int targetLevel = gEventSlots[2];
 	if (unitID == 0xFFFF) {
-		unitID = GetUnitStructFromEventParameter(proc->pEventCurrent[1]);
+		unitID = gActiveUnit;
 	} else {
 		unit = GetUnitFromCharId(unitID);
 	}
@@ -15,7 +15,7 @@ void AutoLevelASMC(ProcPtr proc) { //target unit in slot1, target level in slot2
 
     tmpBattleUnit.expGain = 0;
 
-    levelsLeft = (targetLevel - unit->pCharacterData->baseLevel);
+    levelsLeft = (targetLevel - unit->level);
 
     if (levelsLeft) {
         for (unit->level -= levelsLeft; levelsLeft > 0; --levelsLeft) {
@@ -25,11 +25,12 @@ void AutoLevelASMC(ProcPtr proc) { //target unit in slot1, target level in slot2
             CheckBattleUnitLevelUp(&tmpBattleUnit);
 
             UpdateUnitFromBattle(unit, &tmpBattleUnit);
+			unit->level++;
         }
     }
 }
 
-void AutoLevelAllUnpromoASMC(ProcPtr proc) { //target level in slot2
+/*void AutoLevelAllUnpromoASMC(ProcPtr proc) { //target level in slot2
 	int targetLevel = gEventSlots[2];
 	
     int faction = gPlaySt.faction;
@@ -44,4 +45,4 @@ void AutoLevelAllUnpromoASMC(ProcPtr proc) { //target level in slot2
         
         unitID++;
     }    
-}
+}*/

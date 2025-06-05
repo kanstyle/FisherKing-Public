@@ -1,0 +1,4512 @@
+//Event file generated from Sappy .s format.
+        #include "MPlayDef.event"
+
+        #define    Planet_sParalysis_grp  voicegroup000
+        #define    Planet_sParalysis_pri  0
+        #define    Planet_sParalysis_rev  0
+        #define    Planet_sParalysis_key  0
+
+        // .rodata
+        // Planet_sParalysis
+        ALIGN 4
+
+//****************** Track 0 (Midi-Chn.0) ******************//
+
+Planet_sParalysis_0:
+        BYTE   KEYSH   Planet_sParalysis_key+0
+// 000   ----------------------------------------
+        BYTE   TEMPO   106/2
+        BYTE           VOICE   4
+        BYTE           VOL     75
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+        BYTE   W96
+// 009   ----------------------------------------
+        BYTE   W96
+// 010   ----------------------------------------
+        BYTE   W96
+// 011   ----------------------------------------
+        BYTE   W96
+// 012   ----------------------------------------
+        BYTE   W96
+// 013   ----------------------------------------
+        BYTE   W96
+// 014   ----------------------------------------
+        BYTE   W96
+// 015   ----------------------------------------
+        BYTE   W96
+// 016   ----------------------------------------
+Planet_sParalysis_0_LOOP:
+        BYTE   W96
+// 017   ----------------------------------------
+        BYTE   W96
+// 018   ----------------------------------------
+        BYTE   W96
+// 019   ----------------------------------------
+        BYTE   W96
+// 020   ----------------------------------------
+        BYTE   W96
+// 021   ----------------------------------------
+        BYTE   W96
+// 022   ----------------------------------------
+        BYTE   W96
+// 023   ----------------------------------------
+        BYTE   W96
+// 024   ----------------------------------------
+        BYTE   W12
+        BYTE           N04     En2   v127
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W05
+        BYTE           PAN     c_v+20
+        BYTE   W01
+        BYTE           N04     Gn2
+        BYTE   W11
+        BYTE           PAN     c_v-20
+        BYTE   W01
+        BYTE           N04     En2
+        BYTE   W11
+        BYTE           PAN     c_v+20
+        BYTE   W01
+        BYTE           N04     Bn2
+        BYTE   W11
+        BYTE           PAN     c_v-20
+        BYTE   W01
+        BYTE           N04     Gn2
+        BYTE   W11
+        BYTE           PAN     c_v+20
+        BYTE   W01
+        BYTE           N04     Dn3
+        BYTE   W11
+        BYTE           PAN     c_v-20
+        BYTE   W01
+        BYTE           N04     Bn2
+        BYTE   W12
+// 025   ----------------------------------------
+Planet_sParalysis_0_25:
+        BYTE   W11
+        BYTE           PAN     c_v+0
+        BYTE   W01
+        BYTE           N04     En2   v127
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W05
+        BYTE           PAN     c_v+20
+        BYTE   W01
+        BYTE           N04     Gn2
+        BYTE   W11
+        BYTE           PAN     c_v-20
+        BYTE   W01
+        BYTE           N04     En2
+        BYTE   W11
+        BYTE           PAN     c_v+20
+        BYTE   W01
+        BYTE           N04     Bn2
+        BYTE   W11
+        BYTE           PAN     c_v-20
+        BYTE   W01
+        BYTE           N04     Gn2
+        BYTE   W11
+        BYTE           PAN     c_v+20
+        BYTE   W01
+        BYTE           N04     Dn3
+        BYTE   W11
+        BYTE           PAN     c_v-20
+        BYTE   W01
+        BYTE           N04     Bn2
+        BYTE   W12
+        BYTE   PEND
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_0_25
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_0_25
+// 028   ----------------------------------------
+Planet_sParalysis_0_28:
+        BYTE   W11
+        BYTE           PAN     c_v+0
+        BYTE   W01
+        BYTE           N04     Fn2   v127
+        BYTE   W06
+        BYTE                   Gn2
+        BYTE   W05
+        BYTE           PAN     c_v+20
+        BYTE   W01
+        BYTE           N04     An2
+        BYTE   W11
+        BYTE           PAN     c_v-20
+        BYTE   W01
+        BYTE           N04     Fn2
+        BYTE   W11
+        BYTE           PAN     c_v+20
+        BYTE   W01
+        BYTE           N04     Cn3
+        BYTE   W11
+        BYTE           PAN     c_v-20
+        BYTE   W01
+        BYTE           N04     An2
+        BYTE   W11
+        BYTE           PAN     c_v+20
+        BYTE   W01
+        BYTE           N04     En3
+        BYTE   W11
+        BYTE           PAN     c_v-20
+        BYTE   W01
+        BYTE           N04     Cn3
+        BYTE   W12
+        BYTE   PEND
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_0_28
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_0_28
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_0_28
+// 032   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_0_25
+// 033   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_0_25
+// 034   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_0_25
+// 035   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_0_25
+// 036   ----------------------------------------
+Planet_sParalysis_0_36:
+        BYTE   W11
+        BYTE           PAN     c_v+0
+        BYTE   W01
+        BYTE           N04     Gn2   v127
+        BYTE   W06
+        BYTE                   An2
+        BYTE   W05
+        BYTE           PAN     c_v+20
+        BYTE   W01
+        BYTE           N04     As2
+        BYTE   W11
+        BYTE           PAN     c_v-20
+        BYTE   W01
+        BYTE           N04     Gn2
+        BYTE   W11
+        BYTE           PAN     c_v+20
+        BYTE   W01
+        BYTE           N04     Dn3
+        BYTE   W11
+        BYTE           PAN     c_v-20
+        BYTE   W01
+        BYTE           N04     As2
+        BYTE   W11
+        BYTE           PAN     c_v+20
+        BYTE   W01
+        BYTE           N04     Fn3
+        BYTE   W11
+        BYTE           PAN     c_v-20
+        BYTE   W01
+        BYTE           N04     Dn3
+        BYTE   W12
+        BYTE   PEND
+// 037   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_0_36
+// 038   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_0_28
+// 039   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_0_28
+// 040   ----------------------------------------
+Planet_sParalysis_0_40:
+        BYTE   W11
+        BYTE           PAN     c_v+0
+        BYTE   W01
+        BYTE           N04     En2   v127
+        BYTE   W11
+        BYTE           PAN     c_v+20
+        BYTE   W01
+        BYTE           N04     Gn2
+        BYTE   W11
+        BYTE           PAN     c_v-20
+        BYTE   W01
+        BYTE           N04     En2
+        BYTE   W11
+        BYTE           PAN     c_v+20
+        BYTE   W01
+        BYTE           N04     Bn2
+        BYTE   W11
+        BYTE           PAN     c_v-20
+        BYTE   W01
+        BYTE           N04     Gn2
+        BYTE   W11
+        BYTE           PAN     c_v+20
+        BYTE   W01
+        BYTE           N04     Dn3
+        BYTE   W11
+        BYTE           PAN     c_v-20
+        BYTE   W01
+        BYTE           N04     An2
+        BYTE   W12
+        BYTE   PEND
+// 041   ----------------------------------------
+Planet_sParalysis_0_41:
+        BYTE           N04     Bn2   v127
+        BYTE   W11
+        BYTE           PAN     c_v+0
+        BYTE   W01
+        BYTE           N04     Gn2
+        BYTE   W11
+        BYTE           PAN     c_v+20
+        BYTE   W01
+        BYTE           N04     An2
+        BYTE   W11
+        BYTE           PAN     c_v-20
+        BYTE   W01
+        BYTE           N04     Fs2
+        BYTE   W11
+        BYTE           PAN     c_v+20
+        BYTE   W01
+        BYTE           N04     Gn2
+        BYTE   W11
+        BYTE           PAN     c_v-20
+        BYTE   W01
+        BYTE           N04     En2
+        BYTE   W11
+        BYTE           PAN     c_v+20
+        BYTE   W01
+        BYTE           N16     Fn2
+        BYTE   W11
+        BYTE           PAN     c_v-20
+        BYTE   W13
+        BYTE   PEND
+// 042   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_0_40
+// 043   ----------------------------------------
+Planet_sParalysis_0_43:
+        BYTE           N04     Bn2   v127
+        BYTE   W11
+        BYTE           PAN     c_v+0
+        BYTE   W01
+        BYTE           N04     Gn2
+        BYTE   W11
+        BYTE           PAN     c_v+20
+        BYTE   W01
+        BYTE           N04     An2
+        BYTE   W11
+        BYTE           PAN     c_v-20
+        BYTE   W01
+        BYTE           N04     Fs2
+        BYTE   W11
+        BYTE           PAN     c_v+20
+        BYTE   W01
+        BYTE           N04     Gn2
+        BYTE   W11
+        BYTE           PAN     c_v-20
+        BYTE   W01
+        BYTE           N04     En2
+        BYTE   W11
+        BYTE           PAN     c_v+20
+        BYTE   W01
+        BYTE           N16     Dn2
+        BYTE   W11
+        BYTE           PAN     c_v-20
+        BYTE   W13
+        BYTE   PEND
+// 044   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_0_40
+// 045   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_0_41
+// 046   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_0_40
+// 047   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_0_43
+// 048   ----------------------------------------
+        BYTE   W96
+// 049   ----------------------------------------
+        BYTE   W96
+// 050   ----------------------------------------
+        BYTE   W96
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE   W96
+// 053   ----------------------------------------
+        BYTE   W96
+// 054   ----------------------------------------
+        BYTE   W96
+// 055   ----------------------------------------
+        BYTE   W96
+// 056   ----------------------------------------
+        BYTE   W96
+// 057   ----------------------------------------
+        BYTE   W96
+// 058   ----------------------------------------
+        BYTE   W96
+// 059   ----------------------------------------
+        BYTE   W96
+// 060   ----------------------------------------
+        BYTE           PAN     c_v+0
+        BYTE   GoTo
+         POIN2  Planet_sParalysis_0_LOOP
+        BYTE   W96
+// 061   ----------------------------------------
+        BYTE   W96
+// 062   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE   FINE
+
+//****************** Track 1 (Midi-Chn.2) ******************//
+
+Planet_sParalysis_1:
+        BYTE   KEYSH   Planet_sParalysis_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   100
+        BYTE           VOL     87
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+Planet_sParalysis_1_8:
+        BYTE           N06     Bn3   v100
+        BYTE   W12
+        BYTE                   Bn3   v050
+        BYTE   W12
+        BYTE                   Bn3   v060
+        BYTE   W12
+        BYTE                   Gn3   v100
+        BYTE   W12
+        BYTE                   Gn3   v055
+        BYTE   W12
+        BYTE                   Gn3   v060
+        BYTE   W12
+        BYTE                   Fs4   v085
+        BYTE   W12
+        BYTE                   Fs4   v050
+        BYTE   W12
+        BYTE   PEND
+// 009   ----------------------------------------
+Planet_sParalysis_1_9:
+        BYTE           N06     Fs4   v040
+        BYTE   W12
+        BYTE                   Fs4   v060
+        BYTE   W12
+        BYTE                   Fs4   v040
+        BYTE   W12
+        BYTE                   Fs4   v035
+        BYTE   W12
+        BYTE                   Fs4   v050
+        BYTE   W12
+        BYTE                   Fs4   v040
+        BYTE   W12
+        BYTE                   Fs4   v035
+        BYTE   W12
+        BYTE                   Fs4   v045
+        BYTE   W12
+        BYTE   PEND
+// 010   ----------------------------------------
+Planet_sParalysis_1_10:
+        BYTE           N06     Fs4   v035
+        BYTE   W12
+        BYTE                   Fs4   v030
+        BYTE   W84
+        BYTE   PEND
+// 011   ----------------------------------------
+        BYTE   W96
+// 012   ----------------------------------------
+Planet_sParalysis_1_12:
+        BYTE           N06     Dn4   v100
+        BYTE   W12
+        BYTE                   Dn4   v050
+        BYTE   W12
+        BYTE                   Dn4   v060
+        BYTE   W12
+        BYTE                   As3   v100
+        BYTE   W12
+        BYTE                   As3   v055
+        BYTE   W12
+        BYTE                   As3   v060
+        BYTE   W12
+        BYTE                   An4   v085
+        BYTE   W12
+        BYTE                   An4   v050
+        BYTE   W12
+        BYTE   PEND
+// 013   ----------------------------------------
+Planet_sParalysis_1_13:
+        BYTE           N06     An4   v040
+        BYTE   W12
+        BYTE                   An4   v060
+        BYTE   W12
+        BYTE                   An4   v040
+        BYTE   W12
+        BYTE                   An4   v035
+        BYTE   W12
+        BYTE                   An4   v050
+        BYTE   W12
+        BYTE                   An4   v040
+        BYTE   W12
+        BYTE                   An4   v035
+        BYTE   W12
+        BYTE                   An4   v045
+        BYTE   W12
+        BYTE   PEND
+// 014   ----------------------------------------
+Planet_sParalysis_1_14:
+        BYTE           N06     An4   v035
+        BYTE   W12
+        BYTE                   An4   v030
+        BYTE   W84
+        BYTE   PEND
+// 015   ----------------------------------------
+        BYTE   W96
+// 016   ----------------------------------------
+Planet_sParalysis_1_LOOP:
+        BYTE           N06     Bn3   v100
+        BYTE   W12
+        BYTE                   Bn3   v050
+        BYTE   W12
+        BYTE                   Bn3   v060
+        BYTE   W12
+        BYTE                   Gn3   v100
+        BYTE   W12
+        BYTE                   Gn3   v055
+        BYTE   W12
+        BYTE                   Gn3   v060
+        BYTE   W12
+        BYTE                   Fs4   v085
+        BYTE   W12
+        BYTE                   Fs4   v050
+        BYTE   W12
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_9
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_10
+// 019   ----------------------------------------
+        BYTE   W96
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_12
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_13
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_14
+// 023   ----------------------------------------
+        BYTE   W96
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_8
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_9
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_10
+// 027   ----------------------------------------
+        BYTE   W96
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_12
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_13
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_14
+// 031   ----------------------------------------
+        BYTE   W96
+// 032   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_8
+// 033   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_9
+// 034   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_10
+// 035   ----------------------------------------
+        BYTE   W96
+// 036   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_12
+// 037   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_13
+// 038   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_14
+// 039   ----------------------------------------
+        BYTE   W96
+// 040   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_8
+// 041   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_9
+// 042   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_10
+// 043   ----------------------------------------
+        BYTE   W96
+// 044   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_8
+// 045   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_9
+// 046   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_10
+// 047   ----------------------------------------
+        BYTE   W96
+// 048   ----------------------------------------
+        BYTE   W96
+// 049   ----------------------------------------
+        BYTE   W96
+// 050   ----------------------------------------
+        BYTE   W96
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_8
+// 053   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_9
+// 054   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_10
+// 055   ----------------------------------------
+        BYTE   W96
+// 056   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_12
+// 057   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_13
+// 058   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_1_14
+// 059   ----------------------------------------
+        BYTE   W96
+// 060   ----------------------------------------
+        BYTE           N06     Bn3   v100
+        BYTE   GoTo
+         POIN2  Planet_sParalysis_1_LOOP
+        BYTE   W96
+// 061   ----------------------------------------
+        BYTE   W96
+// 062   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE   FINE
+
+//****************** Track 2 (Midi-Chn.3) ******************//
+
+Planet_sParalysis_2:
+        BYTE   KEYSH   Planet_sParalysis_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   48
+        BYTE           VOL     46
+        BYTE           PAN     c_v+20
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE           TIE     Cn3   v110
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W68
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W24
+        BYTE   W01
+// 008   ----------------------------------------
+        BYTE           TIE     Bn2
+        BYTE   W96
+// 009   ----------------------------------------
+        BYTE   W96
+// 010   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 011   ----------------------------------------
+        BYTE   W96
+// 012   ----------------------------------------
+        BYTE           TIE     Cn3
+        BYTE   W96
+// 013   ----------------------------------------
+        BYTE   W96
+// 014   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 015   ----------------------------------------
+        BYTE   W96
+// 016   ----------------------------------------
+Planet_sParalysis_2_LOOP:
+        BYTE           TIE     Bn2   v110
+        BYTE   W96
+// 017   ----------------------------------------
+        BYTE   W96
+// 018   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 019   ----------------------------------------
+        BYTE   W96
+// 020   ----------------------------------------
+        BYTE           TIE     Cn3
+        BYTE   W96
+// 021   ----------------------------------------
+        BYTE   W96
+// 022   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 023   ----------------------------------------
+        BYTE   W96
+// 024   ----------------------------------------
+        BYTE   W96
+// 025   ----------------------------------------
+        BYTE   W96
+// 026   ----------------------------------------
+        BYTE   W96
+// 027   ----------------------------------------
+        BYTE   W96
+// 028   ----------------------------------------
+        BYTE   W96
+// 029   ----------------------------------------
+        BYTE   W96
+// 030   ----------------------------------------
+        BYTE   W96
+// 031   ----------------------------------------
+        BYTE   W96
+// 032   ----------------------------------------
+        BYTE   W96
+// 033   ----------------------------------------
+        BYTE   W96
+// 034   ----------------------------------------
+        BYTE   W96
+// 035   ----------------------------------------
+        BYTE   W96
+// 036   ----------------------------------------
+        BYTE   W96
+// 037   ----------------------------------------
+        BYTE   W96
+// 038   ----------------------------------------
+        BYTE   W96
+// 039   ----------------------------------------
+        BYTE   W96
+// 040   ----------------------------------------
+        BYTE   W96
+// 041   ----------------------------------------
+        BYTE   W96
+// 042   ----------------------------------------
+        BYTE   W96
+// 043   ----------------------------------------
+        BYTE   W96
+// 044   ----------------------------------------
+        BYTE   W96
+// 045   ----------------------------------------
+        BYTE   W96
+// 046   ----------------------------------------
+        BYTE   W96
+// 047   ----------------------------------------
+        BYTE   W96
+// 048   ----------------------------------------
+        BYTE   W96
+// 049   ----------------------------------------
+        BYTE   W96
+// 050   ----------------------------------------
+        BYTE   W96
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE           TIE     Bn2
+        BYTE   W96
+// 053   ----------------------------------------
+        BYTE   W96
+// 054   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 055   ----------------------------------------
+        BYTE   W96
+// 056   ----------------------------------------
+        BYTE           TIE     Cn3
+        BYTE   W96
+// 057   ----------------------------------------
+        BYTE   W96
+// 058   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 059   ----------------------------------------
+        BYTE   W96
+// 060   ----------------------------------------
+        BYTE           TIE     Bn2
+        BYTE   GoTo
+         POIN2  Planet_sParalysis_2_LOOP
+        BYTE   W96
+// 061   ----------------------------------------
+        BYTE   W96
+// 062   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   FINE
+
+//****************** Track 3 (Midi-Chn.4) ******************//
+
+Planet_sParalysis_3:
+        BYTE   KEYSH   Planet_sParalysis_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   40
+        BYTE           VOL     90
+        BYTE           TIE     En0   v127
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 002   ----------------------------------------
+        BYTE           TIE
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 004   ----------------------------------------
+        BYTE           TIE
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 006   ----------------------------------------
+        BYTE           TIE
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 008   ----------------------------------------
+        BYTE           TIE
+        BYTE   W96
+// 009   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 010   ----------------------------------------
+        BYTE           TIE
+        BYTE   W96
+// 011   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 012   ----------------------------------------
+        BYTE           TIE     Fn0
+        BYTE   W96
+// 013   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 014   ----------------------------------------
+        BYTE           TIE
+        BYTE   W96
+// 015   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 016   ----------------------------------------
+Planet_sParalysis_3_LOOP:
+        BYTE           TIE     En0   v127
+        BYTE   W96
+// 017   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 018   ----------------------------------------
+        BYTE           TIE
+        BYTE   W96
+// 019   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 020   ----------------------------------------
+        BYTE           TIE     Fn0
+        BYTE   W96
+// 021   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 022   ----------------------------------------
+        BYTE           TIE
+        BYTE   W96
+// 023   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 024   ----------------------------------------
+        BYTE           TIE     En0
+        BYTE   W96
+// 025   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 026   ----------------------------------------
+        BYTE           TIE
+        BYTE   W96
+// 027   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 028   ----------------------------------------
+        BYTE           TIE     Fn0
+        BYTE   W96
+// 029   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 030   ----------------------------------------
+        BYTE           TIE
+        BYTE   W96
+// 031   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 032   ----------------------------------------
+        BYTE           TIE     En0
+        BYTE   W96
+// 033   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 034   ----------------------------------------
+        BYTE           TIE
+        BYTE   W96
+// 035   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 036   ----------------------------------------
+        BYTE           TIE     Fn0
+        BYTE   W96
+// 037   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 038   ----------------------------------------
+        BYTE           TIE     Gn0
+        BYTE   W96
+// 039   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 040   ----------------------------------------
+        BYTE           TIE     An0
+        BYTE   W96
+// 041   ----------------------------------------
+Planet_sParalysis_3_41:
+        BYTE   W68
+        BYTE   W03
+        BYTE           EOT     An0
+        BYTE   W01
+        BYTE           N23     As0   v127
+        BYTE   W24
+        BYTE   PEND
+// 042   ----------------------------------------
+        BYTE           TIE     An0
+        BYTE   W96
+// 043   ----------------------------------------
+        BYTE   W68
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+        BYTE           N23     Gs0
+        BYTE   W24
+// 044   ----------------------------------------
+        BYTE           TIE     An0
+        BYTE   W96
+// 045   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_3_41
+// 046   ----------------------------------------
+        BYTE           TIE     An0   v127
+        BYTE   W96
+// 047   ----------------------------------------
+        BYTE   W44
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+        BYTE           N44     Dn0   v127   gtp3
+        BYTE   W48
+// 048   ----------------------------------------
+        BYTE           TIE     En0
+        BYTE   W96
+// 049   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 050   ----------------------------------------
+        BYTE           TIE
+        BYTE   W96
+// 051   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 052   ----------------------------------------
+        BYTE           TIE
+        BYTE   W96
+// 053   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 054   ----------------------------------------
+        BYTE           TIE
+        BYTE   W96
+// 055   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 056   ----------------------------------------
+        BYTE           TIE     Fn0
+        BYTE   W96
+// 057   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 058   ----------------------------------------
+        BYTE           TIE
+        BYTE   W96
+// 059   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 060   ----------------------------------------
+        BYTE           TIE     En0
+        BYTE   GoTo
+         POIN2  Planet_sParalysis_3_LOOP
+        BYTE   W96
+// 061   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 062   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE   FINE
+
+//****************** Track 4 (Midi-Chn.5) ******************//
+
+Planet_sParalysis_4:
+        BYTE   KEYSH   Planet_sParalysis_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   41
+        BYTE           VOL     87
+        BYTE           PAN     c_v-20
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+Planet_sParalysis_4_8:
+        BYTE   W44
+        BYTE   W03
+        BYTE           VOL     0
+        BYTE   W01
+        BYTE           TIE     Bn3   v110
+        BYTE   W05
+        BYTE           VOL     4
+        BYTE   W04
+        BYTE                   6
+        BYTE   W04
+        BYTE                   8
+        BYTE   W04
+        BYTE                   9
+        BYTE   W04
+        BYTE                   12
+        BYTE   W04
+        BYTE                   14
+        BYTE   W04
+        BYTE                   16
+        BYTE   W04
+        BYTE                   18
+        BYTE   W02
+        BYTE                   20
+        BYTE   W04
+        BYTE                   21
+        BYTE   W04
+        BYTE                   24
+        BYTE   W04
+        BYTE                   25
+        BYTE   W01
+        BYTE   PEND
+// 009   ----------------------------------------
+Planet_sParalysis_4_9:
+        BYTE   W03
+        BYTE           VOL     28
+        BYTE   W04
+        BYTE                   30
+        BYTE   W04
+        BYTE                   31
+        BYTE   W04
+        BYTE                   34
+        BYTE   W02
+        BYTE                   35
+        BYTE   W04
+        BYTE                   39
+        BYTE   W04
+        BYTE                   40
+        BYTE   W04
+        BYTE                   43
+        BYTE   W04
+        BYTE                   44
+        BYTE   W04
+        BYTE                   46
+        BYTE   W08
+        BYTE                   47
+        BYTE   W04
+        BYTE                   48
+        BYTE   W02
+        BYTE                   49
+        BYTE   W04
+        BYTE                   50
+        BYTE   W08
+        BYTE                   52
+        BYTE   W04
+        BYTE                   53
+        BYTE   W04
+        BYTE                   54
+        BYTE   W04
+        BYTE                   55
+        BYTE   W04
+        BYTE                   56
+        BYTE   W02
+        BYTE                   57
+        BYTE   W08
+        BYTE                   59
+        BYTE   W04
+        BYTE                   61
+        BYTE   W03
+        BYTE   PEND
+// 010   ----------------------------------------
+Planet_sParalysis_4_10:
+        BYTE   W05
+        BYTE           VOL     62
+        BYTE   W04
+        BYTE                   63
+        BYTE   W04
+        BYTE                   65
+        BYTE   W06
+        BYTE                   66
+        BYTE   W04
+        BYTE                   67
+        BYTE   W04
+        BYTE                   68
+        BYTE   W04
+        BYTE                   67
+        BYTE   W04
+        BYTE                   69
+        BYTE   W04
+        BYTE                   70
+        BYTE   W04
+        BYTE                   71
+        BYTE   W06
+        BYTE                   72
+        BYTE   W08
+        BYTE                   73
+        BYTE   W08
+        BYTE                   72
+        BYTE   W08
+        BYTE                   71
+        BYTE   W06
+        BYTE                   70
+        BYTE   W04
+        BYTE                   69
+        BYTE   W08
+        BYTE                   68
+        BYTE   W04
+        BYTE                   67
+        BYTE   W01
+        BYTE   PEND
+// 011   ----------------------------------------
+Planet_sParalysis_4_11:
+        BYTE   W03
+        BYTE           VOL     66
+        BYTE   W08
+        BYTE                   65
+        BYTE   W06
+        BYTE                   64
+        BYTE   W04
+        BYTE                   63
+        BYTE   W04
+        BYTE                   62
+        BYTE   W04
+        BYTE                   61
+        BYTE   W12
+        BYTE                   59
+        BYTE   W04
+        BYTE                   57
+        BYTE   W06
+        BYTE                   56
+        BYTE   W04
+        BYTE                   54
+        BYTE   W04
+        BYTE                   53
+        BYTE   W04
+        BYTE                   51
+        BYTE   W04
+        BYTE                   50
+        BYTE   W04
+        BYTE                   49
+        BYTE   W04
+        BYTE                   47
+        BYTE   W04
+        BYTE                   46
+        BYTE   W06
+        BYTE                   44
+        BYTE   W04
+        BYTE                   41
+        BYTE   W04
+        BYTE                   40
+        BYTE   W03
+        BYTE   PEND
+// 012   ----------------------------------------
+Planet_sParalysis_4_12:
+        BYTE   W01
+        BYTE           VOL     39
+        BYTE   W04
+        BYTE                   37
+        BYTE   W04
+        BYTE                   35
+        BYTE   W04
+        BYTE                   32
+        BYTE   W02
+        BYTE                   31
+        BYTE   W04
+        BYTE                   30
+        BYTE   W04
+        BYTE                   27
+        BYTE   W04
+        BYTE                   25
+        BYTE   W04
+        BYTE                   23
+        BYTE   W04
+        BYTE                   20
+        BYTE   W04
+        BYTE                   19
+        BYTE   W04
+        BYTE                   16
+        BYTE   W04
+        BYTE           EOT     Bn3
+        BYTE           VOL     0
+        BYTE   W01
+        BYTE           TIE     As3   v110
+        BYTE   W05
+        BYTE           VOL     4
+        BYTE   W04
+        BYTE                   6
+        BYTE   W04
+        BYTE                   8
+        BYTE   W04
+        BYTE                   9
+        BYTE   W04
+        BYTE                   12
+        BYTE   W04
+        BYTE                   14
+        BYTE   W04
+        BYTE                   16
+        BYTE   W04
+        BYTE                   18
+        BYTE   W02
+        BYTE                   20
+        BYTE   W04
+        BYTE                   21
+        BYTE   W04
+        BYTE                   24
+        BYTE   W04
+        BYTE                   25
+        BYTE   W01
+        BYTE   PEND
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_9
+// 014   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_10
+// 015   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_11
+// 016   ----------------------------------------
+Planet_sParalysis_4_LOOP:
+        BYTE   W01
+        BYTE           VOL     39
+        BYTE   W04
+        BYTE                   37
+        BYTE   W04
+        BYTE                   35
+        BYTE   W04
+        BYTE                   32
+        BYTE   W02
+        BYTE                   31
+        BYTE   W04
+        BYTE                   30
+        BYTE   W04
+        BYTE                   27
+        BYTE   W04
+        BYTE                   25
+        BYTE   W04
+        BYTE                   23
+        BYTE   W04
+        BYTE                   20
+        BYTE   W04
+        BYTE                   19
+        BYTE   W04
+        BYTE                   16
+        BYTE   W04
+        BYTE           EOT     As3
+        BYTE           VOL     0
+        BYTE   W01
+        BYTE           TIE     Bn3   v110
+        BYTE   W05
+        BYTE           VOL     4
+        BYTE   W04
+        BYTE                   6
+        BYTE   W04
+        BYTE                   8
+        BYTE   W04
+        BYTE                   9
+        BYTE   W04
+        BYTE                   12
+        BYTE   W04
+        BYTE                   14
+        BYTE   W04
+        BYTE                   16
+        BYTE   W04
+        BYTE                   18
+        BYTE   W02
+        BYTE                   20
+        BYTE   W04
+        BYTE                   21
+        BYTE   W04
+        BYTE                   24
+        BYTE   W04
+        BYTE                   25
+        BYTE   W01
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_9
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_10
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_11
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_12
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_9
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_10
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_11
+// 024   ----------------------------------------
+        BYTE   W01
+        BYTE           VOL     39
+        BYTE   W04
+        BYTE                   37
+        BYTE   W04
+        BYTE                   35
+        BYTE   W04
+        BYTE                   32
+        BYTE   W02
+        BYTE                   31
+        BYTE   W04
+        BYTE                   30
+        BYTE   W04
+        BYTE                   27
+        BYTE   W04
+        BYTE                   25
+        BYTE   W04
+        BYTE                   23
+        BYTE   W04
+        BYTE                   20
+        BYTE   W04
+        BYTE                   19
+        BYTE   W04
+        BYTE                   16
+        BYTE   W04
+        BYTE           EOT     As3
+        BYTE   W48
+        BYTE   W01
+// 025   ----------------------------------------
+        BYTE   W96
+// 026   ----------------------------------------
+        BYTE   W96
+// 027   ----------------------------------------
+        BYTE   W96
+// 028   ----------------------------------------
+        BYTE   W96
+// 029   ----------------------------------------
+        BYTE   W96
+// 030   ----------------------------------------
+        BYTE   W96
+// 031   ----------------------------------------
+        BYTE   W96
+// 032   ----------------------------------------
+        BYTE   W96
+// 033   ----------------------------------------
+        BYTE   W96
+// 034   ----------------------------------------
+        BYTE   W96
+// 035   ----------------------------------------
+        BYTE   W96
+// 036   ----------------------------------------
+        BYTE   W96
+// 037   ----------------------------------------
+        BYTE   W96
+// 038   ----------------------------------------
+        BYTE   W96
+// 039   ----------------------------------------
+        BYTE   W96
+// 040   ----------------------------------------
+        BYTE   W96
+// 041   ----------------------------------------
+        BYTE   W96
+// 042   ----------------------------------------
+        BYTE   W96
+// 043   ----------------------------------------
+        BYTE   W96
+// 044   ----------------------------------------
+        BYTE   W96
+// 045   ----------------------------------------
+        BYTE   W96
+// 046   ----------------------------------------
+        BYTE   W96
+// 047   ----------------------------------------
+        BYTE   W96
+// 048   ----------------------------------------
+        BYTE   W96
+// 049   ----------------------------------------
+        BYTE   W96
+// 050   ----------------------------------------
+        BYTE   W96
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_8
+// 053   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_9
+// 054   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_10
+// 055   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_11
+// 056   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_12
+// 057   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_9
+// 058   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_10
+// 059   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_11
+// 060   ----------------------------------------
+        BYTE   GoTo
+         POIN2  Planet_sParalysis_4_LOOP
+        BYTE   W44
+        BYTE   W03
+        BYTE           EOT     As3
+        BYTE   W48
+        BYTE   W01
+// 061   ----------------------------------------
+        BYTE   W96
+// 062   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE   FINE
+
+//****************** Track 5 (Midi-Chn.6) ******************//
+
+Planet_sParalysis_5:
+        BYTE   KEYSH   Planet_sParalysis_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   54
+        BYTE           VOL     87
+        BYTE           PAN     c_v-40
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+Planet_sParalysis_5_8:
+        BYTE   W44
+        BYTE   W03
+        BYTE           VOL     0
+        BYTE   W01
+        BYTE           TIE     Dn4   v110
+        BYTE   W05
+        BYTE           VOL     4
+        BYTE   W04
+        BYTE                   6
+        BYTE   W04
+        BYTE                   8
+        BYTE   W04
+        BYTE                   9
+        BYTE   W04
+        BYTE                   12
+        BYTE   W04
+        BYTE                   14
+        BYTE   W04
+        BYTE                   16
+        BYTE   W04
+        BYTE                   18
+        BYTE   W02
+        BYTE                   20
+        BYTE   W04
+        BYTE                   21
+        BYTE   W04
+        BYTE                   24
+        BYTE   W04
+        BYTE                   25
+        BYTE   W01
+        BYTE   PEND
+// 009   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_9
+// 010   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_10
+// 011   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_11
+// 012   ----------------------------------------
+Planet_sParalysis_5_12:
+        BYTE   W01
+        BYTE           VOL     39
+        BYTE   W04
+        BYTE                   37
+        BYTE   W04
+        BYTE                   35
+        BYTE   W04
+        BYTE                   32
+        BYTE   W02
+        BYTE                   31
+        BYTE   W04
+        BYTE                   30
+        BYTE   W04
+        BYTE                   27
+        BYTE   W04
+        BYTE                   25
+        BYTE   W04
+        BYTE                   23
+        BYTE   W04
+        BYTE                   20
+        BYTE   W04
+        BYTE                   19
+        BYTE   W04
+        BYTE                   16
+        BYTE   W04
+        BYTE           EOT     Dn4
+        BYTE           VOL     0
+        BYTE   W01
+        BYTE           TIE     Dn4   v110
+        BYTE   W05
+        BYTE           VOL     4
+        BYTE   W04
+        BYTE                   6
+        BYTE   W04
+        BYTE                   8
+        BYTE   W04
+        BYTE                   9
+        BYTE   W04
+        BYTE                   12
+        BYTE   W04
+        BYTE                   14
+        BYTE   W04
+        BYTE                   16
+        BYTE   W04
+        BYTE                   18
+        BYTE   W02
+        BYTE                   20
+        BYTE   W04
+        BYTE                   21
+        BYTE   W04
+        BYTE                   24
+        BYTE   W04
+        BYTE                   25
+        BYTE   W01
+        BYTE   PEND
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_9
+// 014   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_10
+// 015   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_11
+// 016   ----------------------------------------
+Planet_sParalysis_5_LOOP:
+        BYTE   W01
+        BYTE           VOL     39
+        BYTE   W04
+        BYTE                   37
+        BYTE   W04
+        BYTE                   35
+        BYTE   W04
+        BYTE                   32
+        BYTE   W02
+        BYTE                   31
+        BYTE   W04
+        BYTE                   30
+        BYTE   W04
+        BYTE                   27
+        BYTE   W04
+        BYTE                   25
+        BYTE   W04
+        BYTE                   23
+        BYTE   W04
+        BYTE                   20
+        BYTE   W04
+        BYTE                   19
+        BYTE   W04
+        BYTE                   16
+        BYTE   W04
+        BYTE           EOT     Dn4
+        BYTE           VOL     0
+        BYTE   W01
+        BYTE           TIE     Dn4   v110
+        BYTE   W05
+        BYTE           VOL     4
+        BYTE   W04
+        BYTE                   6
+        BYTE   W04
+        BYTE                   8
+        BYTE   W04
+        BYTE                   9
+        BYTE   W04
+        BYTE                   12
+        BYTE   W04
+        BYTE                   14
+        BYTE   W04
+        BYTE                   16
+        BYTE   W04
+        BYTE                   18
+        BYTE   W02
+        BYTE                   20
+        BYTE   W04
+        BYTE                   21
+        BYTE   W04
+        BYTE                   24
+        BYTE   W04
+        BYTE                   25
+        BYTE   W01
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_9
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_10
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_11
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_5_12
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_9
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_10
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_11
+// 024   ----------------------------------------
+        BYTE   W01
+        BYTE           VOL     39
+        BYTE   W04
+        BYTE                   37
+        BYTE   W04
+        BYTE                   35
+        BYTE   W04
+        BYTE                   32
+        BYTE   W02
+        BYTE                   31
+        BYTE   W04
+        BYTE                   30
+        BYTE   W04
+        BYTE                   27
+        BYTE   W04
+        BYTE                   25
+        BYTE   W04
+        BYTE                   23
+        BYTE   W04
+        BYTE                   20
+        BYTE   W04
+        BYTE                   19
+        BYTE   W04
+        BYTE                   16
+        BYTE   W04
+        BYTE           EOT     Dn4
+        BYTE   W48
+        BYTE   W01
+// 025   ----------------------------------------
+        BYTE   W96
+// 026   ----------------------------------------
+        BYTE   W96
+// 027   ----------------------------------------
+        BYTE   W96
+// 028   ----------------------------------------
+        BYTE   W96
+// 029   ----------------------------------------
+        BYTE   W96
+// 030   ----------------------------------------
+        BYTE   W96
+// 031   ----------------------------------------
+        BYTE   W96
+// 032   ----------------------------------------
+        BYTE   W96
+// 033   ----------------------------------------
+        BYTE   W96
+// 034   ----------------------------------------
+        BYTE   W96
+// 035   ----------------------------------------
+        BYTE   W96
+// 036   ----------------------------------------
+        BYTE   W96
+// 037   ----------------------------------------
+        BYTE   W96
+// 038   ----------------------------------------
+        BYTE   W96
+// 039   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           VOL     87
+        BYTE   W01
+// 040   ----------------------------------------
+        BYTE           TIE     An3   v090
+        BYTE   W96
+// 041   ----------------------------------------
+Planet_sParalysis_5_41:
+        BYTE   W56
+        BYTE   W03
+        BYTE           EOT     An3
+        BYTE   W13
+        BYTE           N23     As3   v090
+        BYTE   W24
+        BYTE   PEND
+// 042   ----------------------------------------
+        BYTE           TIE     An3
+        BYTE   W96
+// 043   ----------------------------------------
+        BYTE   W56
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W13
+        BYTE           N23     Gs3
+        BYTE   W24
+// 044   ----------------------------------------
+        BYTE           TIE     An3
+        BYTE   W96
+// 045   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_5_41
+// 046   ----------------------------------------
+        BYTE           TIE     An3   v090
+        BYTE   W96
+// 047   ----------------------------------------
+        BYTE   W32
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W13
+        BYTE           N44     An3   v090   gtp3
+        BYTE   W48
+// 048   ----------------------------------------
+        BYTE           TIE     Bn3
+        BYTE   W06
+        BYTE           VOL     83
+        BYTE   W06
+        BYTE                   82
+        BYTE   W06
+        BYTE                   81
+        BYTE   W06
+        BYTE                   80
+        BYTE   W06
+        BYTE                   79
+        BYTE   W06
+        BYTE                   78
+        BYTE   W06
+        BYTE                   76
+        BYTE   W12
+        BYTE                   75
+        BYTE   W06
+        BYTE                   73
+        BYTE   W06
+        BYTE                   72
+        BYTE   W06
+        BYTE                   71
+        BYTE   W12
+        BYTE                   69
+        BYTE   W12
+// 049   ----------------------------------------
+        BYTE                   67
+        BYTE   W06
+        BYTE                   65
+        BYTE   W06
+        BYTE                   62
+        BYTE   W06
+        BYTE                   60
+        BYTE   W06
+        BYTE                   57
+        BYTE   W06
+        BYTE                   55
+        BYTE   W06
+        BYTE                   53
+        BYTE   W06
+        BYTE                   49
+        BYTE   W06
+        BYTE                   46
+        BYTE   W06
+        BYTE                   41
+        BYTE   W06
+        BYTE                   37
+        BYTE   W06
+        BYTE                   34
+        BYTE   W06
+        BYTE                   30
+        BYTE   W06
+        BYTE                   25
+        BYTE   W06
+        BYTE                   22
+        BYTE   W11
+        BYTE           EOT
+        BYTE   W01
+// 050   ----------------------------------------
+        BYTE   W96
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_5_8
+// 053   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_9
+// 054   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_10
+// 055   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_11
+// 056   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_5_12
+// 057   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_9
+// 058   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_10
+// 059   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_11
+// 060   ----------------------------------------
+        BYTE   GoTo
+         POIN2  Planet_sParalysis_5_LOOP
+        BYTE   W44
+        BYTE   W03
+        BYTE           EOT     Dn4
+        BYTE   W48
+        BYTE   W01
+// 061   ----------------------------------------
+        BYTE   W96
+// 062   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE   FINE
+
+//****************** Track 6 (Midi-Chn.7) ******************//
+
+Planet_sParalysis_6:
+        BYTE   KEYSH   Planet_sParalysis_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   52
+        BYTE           VOL     87
+        BYTE           PAN     c_v+40
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+Planet_sParalysis_6_8:
+        BYTE   W44
+        BYTE   W03
+        BYTE           VOL     0
+        BYTE   W01
+        BYTE           TIE     Fs4   v110
+        BYTE   W05
+        BYTE           VOL     4
+        BYTE   W04
+        BYTE                   6
+        BYTE   W04
+        BYTE                   8
+        BYTE   W04
+        BYTE                   9
+        BYTE   W04
+        BYTE                   12
+        BYTE   W04
+        BYTE                   14
+        BYTE   W04
+        BYTE                   16
+        BYTE   W04
+        BYTE                   18
+        BYTE   W02
+        BYTE                   20
+        BYTE   W04
+        BYTE                   21
+        BYTE   W04
+        BYTE                   24
+        BYTE   W04
+        BYTE                   25
+        BYTE   W01
+        BYTE   PEND
+// 009   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_9
+// 010   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_10
+// 011   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_11
+// 012   ----------------------------------------
+Planet_sParalysis_6_12:
+        BYTE   W01
+        BYTE           VOL     39
+        BYTE   W04
+        BYTE                   37
+        BYTE   W04
+        BYTE                   35
+        BYTE   W04
+        BYTE                   32
+        BYTE   W02
+        BYTE                   31
+        BYTE   W04
+        BYTE                   30
+        BYTE   W04
+        BYTE                   27
+        BYTE   W04
+        BYTE                   25
+        BYTE   W04
+        BYTE                   23
+        BYTE   W04
+        BYTE                   20
+        BYTE   W04
+        BYTE                   19
+        BYTE   W04
+        BYTE                   16
+        BYTE   W04
+        BYTE           EOT     Fs4
+        BYTE           VOL     0
+        BYTE   W01
+        BYTE           TIE     Fn4   v110
+        BYTE   W05
+        BYTE           VOL     4
+        BYTE   W04
+        BYTE                   6
+        BYTE   W04
+        BYTE                   8
+        BYTE   W04
+        BYTE                   9
+        BYTE   W04
+        BYTE                   12
+        BYTE   W04
+        BYTE                   14
+        BYTE   W04
+        BYTE                   16
+        BYTE   W04
+        BYTE                   18
+        BYTE   W02
+        BYTE                   20
+        BYTE   W04
+        BYTE                   21
+        BYTE   W04
+        BYTE                   24
+        BYTE   W04
+        BYTE                   25
+        BYTE   W01
+        BYTE   PEND
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_9
+// 014   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_10
+// 015   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_11
+// 016   ----------------------------------------
+Planet_sParalysis_6_LOOP:
+        BYTE   W01
+        BYTE           VOL     39
+        BYTE   W04
+        BYTE                   37
+        BYTE   W04
+        BYTE                   35
+        BYTE   W04
+        BYTE                   32
+        BYTE   W02
+        BYTE                   31
+        BYTE   W04
+        BYTE                   30
+        BYTE   W04
+        BYTE                   27
+        BYTE   W04
+        BYTE                   25
+        BYTE   W04
+        BYTE                   23
+        BYTE   W04
+        BYTE                   20
+        BYTE   W04
+        BYTE                   19
+        BYTE   W04
+        BYTE                   16
+        BYTE   W04
+        BYTE           EOT     Fn4
+        BYTE           VOL     0
+        BYTE   W01
+        BYTE           TIE     Fs4   v110
+        BYTE   W05
+        BYTE           VOL     4
+        BYTE   W04
+        BYTE                   6
+        BYTE   W04
+        BYTE                   8
+        BYTE   W04
+        BYTE                   9
+        BYTE   W04
+        BYTE                   12
+        BYTE   W04
+        BYTE                   14
+        BYTE   W04
+        BYTE                   16
+        BYTE   W04
+        BYTE                   18
+        BYTE   W02
+        BYTE                   20
+        BYTE   W04
+        BYTE                   21
+        BYTE   W04
+        BYTE                   24
+        BYTE   W04
+        BYTE                   25
+        BYTE   W01
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_9
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_10
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_11
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_6_12
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_9
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_10
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_11
+// 024   ----------------------------------------
+        BYTE   W01
+        BYTE           VOL     39
+        BYTE   W04
+        BYTE                   37
+        BYTE   W04
+        BYTE                   35
+        BYTE   W04
+        BYTE                   32
+        BYTE   W02
+        BYTE                   31
+        BYTE   W04
+        BYTE                   30
+        BYTE   W04
+        BYTE                   27
+        BYTE   W04
+        BYTE                   25
+        BYTE   W04
+        BYTE                   23
+        BYTE   W04
+        BYTE                   20
+        BYTE   W04
+        BYTE                   19
+        BYTE   W04
+        BYTE                   16
+        BYTE   W04
+        BYTE           EOT     Fn4
+        BYTE   W48
+        BYTE   W01
+// 025   ----------------------------------------
+        BYTE   W96
+// 026   ----------------------------------------
+        BYTE   W96
+// 027   ----------------------------------------
+        BYTE   W96
+// 028   ----------------------------------------
+        BYTE   W96
+// 029   ----------------------------------------
+        BYTE   W96
+// 030   ----------------------------------------
+        BYTE   W96
+// 031   ----------------------------------------
+        BYTE   W96
+// 032   ----------------------------------------
+        BYTE   W96
+// 033   ----------------------------------------
+        BYTE   W96
+// 034   ----------------------------------------
+        BYTE   W96
+// 035   ----------------------------------------
+        BYTE   W96
+// 036   ----------------------------------------
+        BYTE   W96
+// 037   ----------------------------------------
+        BYTE   W96
+// 038   ----------------------------------------
+        BYTE   W96
+// 039   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           VOL     87
+        BYTE   W01
+// 040   ----------------------------------------
+        BYTE           TIE     Gn4   v090
+        BYTE   W96
+// 041   ----------------------------------------
+Planet_sParalysis_6_41:
+        BYTE   W56
+        BYTE   W03
+        BYTE           EOT     Gn4
+        BYTE   W13
+        BYTE           N23     Gs4   v090
+        BYTE   W24
+        BYTE   PEND
+// 042   ----------------------------------------
+        BYTE           TIE     Gn4
+        BYTE   W96
+// 043   ----------------------------------------
+        BYTE   W56
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W13
+        BYTE           N23     Fs4
+        BYTE   W24
+// 044   ----------------------------------------
+        BYTE           TIE     Gn4
+        BYTE   W96
+// 045   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_6_41
+// 046   ----------------------------------------
+        BYTE           TIE     Gn4   v090
+        BYTE   W96
+// 047   ----------------------------------------
+        BYTE   W32
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W13
+        BYTE           N44     Fs4   v090   gtp3
+        BYTE   W48
+// 048   ----------------------------------------
+        BYTE           TIE     Gn4
+        BYTE   W06
+        BYTE           VOL     83
+        BYTE   W06
+        BYTE                   82
+        BYTE   W06
+        BYTE                   81
+        BYTE   W06
+        BYTE                   80
+        BYTE   W06
+        BYTE                   79
+        BYTE   W06
+        BYTE                   78
+        BYTE   W06
+        BYTE                   76
+        BYTE   W12
+        BYTE                   75
+        BYTE   W06
+        BYTE                   73
+        BYTE   W06
+        BYTE                   72
+        BYTE   W06
+        BYTE                   71
+        BYTE   W12
+        BYTE                   69
+        BYTE   W12
+// 049   ----------------------------------------
+        BYTE                   67
+        BYTE   W06
+        BYTE                   65
+        BYTE   W06
+        BYTE                   62
+        BYTE   W06
+        BYTE                   60
+        BYTE   W06
+        BYTE                   57
+        BYTE   W06
+        BYTE                   55
+        BYTE   W06
+        BYTE                   53
+        BYTE   W06
+        BYTE                   49
+        BYTE   W06
+        BYTE                   46
+        BYTE   W06
+        BYTE                   41
+        BYTE   W06
+        BYTE                   37
+        BYTE   W06
+        BYTE                   34
+        BYTE   W06
+        BYTE                   30
+        BYTE   W06
+        BYTE                   25
+        BYTE   W06
+        BYTE                   22
+        BYTE   W11
+        BYTE           EOT
+        BYTE   W01
+// 050   ----------------------------------------
+        BYTE   W96
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_6_8
+// 053   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_9
+// 054   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_10
+// 055   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_11
+// 056   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_6_12
+// 057   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_9
+// 058   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_10
+// 059   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_4_11
+// 060   ----------------------------------------
+        BYTE   GoTo
+         POIN2  Planet_sParalysis_6_LOOP
+        BYTE   W44
+        BYTE   W03
+        BYTE           EOT     Fn4
+        BYTE   W48
+        BYTE   W01
+// 061   ----------------------------------------
+        BYTE   W96
+// 062   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE   FINE
+
+//****************** Track 7 (Midi-Chn.8) ******************//
+
+Planet_sParalysis_7:
+        BYTE   KEYSH   Planet_sParalysis_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   50
+        BYTE           VOL     66
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+        BYTE   W96
+// 009   ----------------------------------------
+        BYTE   W96
+// 010   ----------------------------------------
+        BYTE   W96
+// 011   ----------------------------------------
+        BYTE   W96
+// 012   ----------------------------------------
+        BYTE   W96
+// 013   ----------------------------------------
+        BYTE   W96
+// 014   ----------------------------------------
+        BYTE   W96
+// 015   ----------------------------------------
+        BYTE   W96
+// 016   ----------------------------------------
+Planet_sParalysis_7_LOOP:
+        BYTE   W96
+// 017   ----------------------------------------
+        BYTE   W96
+// 018   ----------------------------------------
+        BYTE   W96
+// 019   ----------------------------------------
+        BYTE   W96
+// 020   ----------------------------------------
+        BYTE   W96
+// 021   ----------------------------------------
+        BYTE   W96
+// 022   ----------------------------------------
+        BYTE   W96
+// 023   ----------------------------------------
+        BYTE   W96
+// 024   ----------------------------------------
+        BYTE           TIE     Dn3   v110
+        BYTE   W96
+// 025   ----------------------------------------
+        BYTE   W96
+// 026   ----------------------------------------
+        BYTE   W96
+// 027   ----------------------------------------
+        BYTE   W44
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+        BYTE           N44     Gn3   v110   gtp3
+        BYTE   W48
+// 028   ----------------------------------------
+        BYTE           TIE     Fn3
+        BYTE   W96
+// 029   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 030   ----------------------------------------
+        BYTE           N92     Dn3   v110   gtp3
+        BYTE   W96
+// 031   ----------------------------------------
+        BYTE                   Fn3
+        BYTE   W96
+// 032   ----------------------------------------
+        BYTE           TIE     En3
+        BYTE   W96
+// 033   ----------------------------------------
+        BYTE   W96
+// 034   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 035   ----------------------------------------
+        BYTE           N44     En3   v110   gtp3
+        BYTE   W48
+        BYTE                   Fs3
+        BYTE   W48
+// 036   ----------------------------------------
+        BYTE           N92     Gn3   v110   gtp3
+        BYTE   W96
+// 037   ----------------------------------------
+        BYTE                   As3
+        BYTE   W96
+// 038   ----------------------------------------
+        BYTE                   An3
+        BYTE   W96
+// 039   ----------------------------------------
+        BYTE                   Cn4
+        BYTE   W96
+// 040   ----------------------------------------
+        BYTE           TIE     Bn3   v095
+        BYTE   W96
+// 041   ----------------------------------------
+Planet_sParalysis_7_41:
+        BYTE   W56
+        BYTE   W03
+        BYTE           EOT     Bn3
+        BYTE   W13
+        BYTE           N23     Cn4   v095
+        BYTE   W24
+        BYTE   PEND
+// 042   ----------------------------------------
+        BYTE           TIE     Bn3
+        BYTE   W96
+// 043   ----------------------------------------
+        BYTE   W56
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W13
+        BYTE           N23     As3
+        BYTE   W24
+// 044   ----------------------------------------
+        BYTE           TIE     Bn3
+        BYTE   W96
+// 045   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_7_41
+// 046   ----------------------------------------
+        BYTE           TIE     Bn3   v095
+        BYTE   W96
+// 047   ----------------------------------------
+        BYTE   W32
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W13
+        BYTE           N44     As3   v095   gtp3
+        BYTE   W48
+// 048   ----------------------------------------
+        BYTE           TIE     Bn3
+        BYTE   W06
+        BYTE           VOL     63
+        BYTE   W06
+        BYTE                   62
+        BYTE   W12
+        BYTE                   61
+        BYTE   W06
+        BYTE                   60
+        BYTE   W06
+        BYTE                   59
+        BYTE   W06
+        BYTE                   58
+        BYTE   W12
+        BYTE                   57
+        BYTE   W06
+        BYTE                   56
+        BYTE   W06
+        BYTE                   55
+        BYTE   W06
+        BYTE                   54
+        BYTE   W12
+        BYTE                   53
+        BYTE   W06
+        BYTE                   52
+        BYTE   W06
+// 049   ----------------------------------------
+        BYTE                   51
+        BYTE   W06
+        BYTE                   49
+        BYTE   W06
+        BYTE                   47
+        BYTE   W06
+        BYTE                   45
+        BYTE   W06
+        BYTE                   44
+        BYTE   W06
+        BYTE                   42
+        BYTE   W06
+        BYTE                   40
+        BYTE   W06
+        BYTE                   37
+        BYTE   W06
+        BYTE                   35
+        BYTE   W06
+        BYTE                   31
+        BYTE   W06
+        BYTE                   28
+        BYTE   W06
+        BYTE                   26
+        BYTE   W06
+        BYTE                   23
+        BYTE   W06
+        BYTE                   19
+        BYTE   W06
+        BYTE                   17
+        BYTE   W11
+        BYTE           EOT
+        BYTE   W01
+// 050   ----------------------------------------
+        BYTE   W96
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE           VOL     66
+        BYTE   W96
+// 053   ----------------------------------------
+        BYTE   W96
+// 054   ----------------------------------------
+        BYTE   W96
+// 055   ----------------------------------------
+        BYTE   W96
+// 056   ----------------------------------------
+        BYTE   W96
+// 057   ----------------------------------------
+        BYTE   W96
+// 058   ----------------------------------------
+        BYTE   W96
+// 059   ----------------------------------------
+        BYTE   W96
+// 060   ----------------------------------------
+        BYTE   GoTo
+         POIN2  Planet_sParalysis_7_LOOP
+        BYTE   W96
+// 061   ----------------------------------------
+        BYTE   W96
+// 062   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE   FINE
+
+//***************** Track 8 (Midi-Chn.11) ******************//
+
+Planet_sParalysis_8:
+        BYTE   KEYSH   Planet_sParalysis_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   40
+        BYTE           VOL     71
+        BYTE           PAN     c_v-15
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+        BYTE   W96
+// 009   ----------------------------------------
+        BYTE   W96
+// 010   ----------------------------------------
+        BYTE   W96
+// 011   ----------------------------------------
+        BYTE   W96
+// 012   ----------------------------------------
+        BYTE   W96
+// 013   ----------------------------------------
+        BYTE   W96
+// 014   ----------------------------------------
+        BYTE   W96
+// 015   ----------------------------------------
+        BYTE   W96
+// 016   ----------------------------------------
+Planet_sParalysis_8_LOOP:
+        BYTE   W96
+// 017   ----------------------------------------
+        BYTE   W96
+// 018   ----------------------------------------
+        BYTE   W96
+// 019   ----------------------------------------
+        BYTE   W96
+// 020   ----------------------------------------
+        BYTE   W96
+// 021   ----------------------------------------
+        BYTE   W96
+// 022   ----------------------------------------
+        BYTE   W96
+// 023   ----------------------------------------
+        BYTE   W96
+// 024   ----------------------------------------
+        BYTE           TIE     Bn2   v110
+        BYTE   W96
+// 025   ----------------------------------------
+        BYTE   W96
+// 026   ----------------------------------------
+        BYTE   W96
+// 027   ----------------------------------------
+        BYTE   W44
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+        BYTE           N44     Dn3   v110   gtp3
+        BYTE   W48
+// 028   ----------------------------------------
+        BYTE           TIE
+        BYTE   W96
+// 029   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 030   ----------------------------------------
+        BYTE           N92     Cn3   v110   gtp3
+        BYTE   W96
+// 031   ----------------------------------------
+        BYTE                   Cn3
+        BYTE   W96
+// 032   ----------------------------------------
+        BYTE           TIE     Bn2
+        BYTE   W96
+// 033   ----------------------------------------
+        BYTE   W96
+// 034   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 035   ----------------------------------------
+        BYTE           N44     Bn2   v110   gtp3
+        BYTE   W48
+        BYTE                   Dn3
+        BYTE   W48
+// 036   ----------------------------------------
+        BYTE           N92     Ds3   v110   gtp3
+        BYTE   W96
+// 037   ----------------------------------------
+        BYTE                   Gn3
+        BYTE   W96
+// 038   ----------------------------------------
+        BYTE                   Fn3
+        BYTE   W96
+// 039   ----------------------------------------
+        BYTE                   An3
+        BYTE   W96
+// 040   ----------------------------------------
+        BYTE           TIE     Gn3   v095
+        BYTE   W96
+// 041   ----------------------------------------
+Planet_sParalysis_8_41:
+        BYTE   W56
+        BYTE   W03
+        BYTE           EOT     Gn3
+        BYTE   W13
+        BYTE           N23     Gs3   v095
+        BYTE   W24
+        BYTE   PEND
+// 042   ----------------------------------------
+        BYTE           TIE     Gn3
+        BYTE   W96
+// 043   ----------------------------------------
+        BYTE   W56
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W13
+        BYTE           N23     Fs3
+        BYTE   W24
+// 044   ----------------------------------------
+        BYTE           TIE     Gn3
+        BYTE   W96
+// 045   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_8_41
+// 046   ----------------------------------------
+        BYTE           TIE     Gn3   v095
+        BYTE   W96
+// 047   ----------------------------------------
+        BYTE   W32
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W13
+        BYTE           N44     Fs3   v095   gtp3
+        BYTE   W48
+// 048   ----------------------------------------
+        BYTE           TIE     Gn3
+        BYTE   W06
+        BYTE           VOL     68
+        BYTE   W06
+        BYTE                   67
+        BYTE   W12
+        BYTE                   66
+        BYTE   W06
+        BYTE                   65
+        BYTE   W06
+        BYTE                   64
+        BYTE   W06
+        BYTE                   63
+        BYTE   W12
+        BYTE                   61
+        BYTE   W06
+        BYTE                   60
+        BYTE   W06
+        BYTE                   59
+        BYTE   W06
+        BYTE                   58
+        BYTE   W12
+        BYTE                   57
+        BYTE   W06
+        BYTE                   56
+        BYTE   W06
+// 049   ----------------------------------------
+        BYTE                   55
+        BYTE   W06
+        BYTE                   53
+        BYTE   W06
+        BYTE                   51
+        BYTE   W06
+        BYTE                   49
+        BYTE   W06
+        BYTE                   47
+        BYTE   W06
+        BYTE                   45
+        BYTE   W06
+        BYTE                   43
+        BYTE   W06
+        BYTE                   40
+        BYTE   W06
+        BYTE                   37
+        BYTE   W06
+        BYTE                   34
+        BYTE   W06
+        BYTE                   30
+        BYTE   W06
+        BYTE                   28
+        BYTE   W06
+        BYTE                   25
+        BYTE   W06
+        BYTE                   21
+        BYTE   W06
+        BYTE                   18
+        BYTE   W11
+        BYTE           EOT
+        BYTE   W01
+// 050   ----------------------------------------
+        BYTE   W96
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE           VOL     71
+        BYTE   W96
+// 053   ----------------------------------------
+        BYTE   W96
+// 054   ----------------------------------------
+        BYTE   W96
+// 055   ----------------------------------------
+        BYTE   W96
+// 056   ----------------------------------------
+        BYTE   W96
+// 057   ----------------------------------------
+        BYTE   W96
+// 058   ----------------------------------------
+        BYTE   W96
+// 059   ----------------------------------------
+        BYTE   W96
+// 060   ----------------------------------------
+        BYTE   GoTo
+         POIN2  Planet_sParalysis_8_LOOP
+        BYTE   W96
+// 061   ----------------------------------------
+        BYTE   W96
+// 062   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE   FINE
+
+//***************** Track 9 (Midi-Chn.10) ******************//
+
+Planet_sParalysis_9:
+        BYTE   KEYSH   Planet_sParalysis_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   61
+        BYTE           VOL     78
+        BYTE           PAN     c_v+15
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+        BYTE   W96
+// 009   ----------------------------------------
+        BYTE   W96
+// 010   ----------------------------------------
+        BYTE   W96
+// 011   ----------------------------------------
+        BYTE   W96
+// 012   ----------------------------------------
+        BYTE   W96
+// 013   ----------------------------------------
+        BYTE   W96
+// 014   ----------------------------------------
+        BYTE   W96
+// 015   ----------------------------------------
+        BYTE   W96
+// 016   ----------------------------------------
+Planet_sParalysis_9_LOOP:
+        BYTE   W96
+// 017   ----------------------------------------
+        BYTE   W96
+// 018   ----------------------------------------
+        BYTE   W96
+// 019   ----------------------------------------
+        BYTE   W96
+// 020   ----------------------------------------
+        BYTE   W96
+// 021   ----------------------------------------
+        BYTE   W96
+// 022   ----------------------------------------
+        BYTE   W96
+// 023   ----------------------------------------
+        BYTE   W96
+// 024   ----------------------------------------
+        BYTE           TIE     Gn2   v110
+        BYTE   W96
+// 025   ----------------------------------------
+        BYTE   W96
+// 026   ----------------------------------------
+        BYTE   W96
+// 027   ----------------------------------------
+        BYTE   W44
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+        BYTE           N44     Bn2   v110   gtp3
+        BYTE   W48
+// 028   ----------------------------------------
+        BYTE           TIE     Cn3
+        BYTE   W96
+// 029   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 030   ----------------------------------------
+        BYTE           N92     An2   v110   gtp3
+        BYTE   W96
+// 031   ----------------------------------------
+        BYTE                   An2
+        BYTE   W96
+// 032   ----------------------------------------
+        BYTE           TIE     Gn2
+        BYTE   W96
+// 033   ----------------------------------------
+        BYTE   W96
+// 034   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W01
+// 035   ----------------------------------------
+        BYTE           N44     Gn2   v110   gtp3
+        BYTE   W48
+        BYTE                   Bn2
+        BYTE   W48
+// 036   ----------------------------------------
+        BYTE           N92     As2   v110   gtp3
+        BYTE   W96
+// 037   ----------------------------------------
+        BYTE                   Ds3
+        BYTE   W96
+// 038   ----------------------------------------
+        BYTE                   Dn3
+        BYTE   W96
+// 039   ----------------------------------------
+        BYTE                   Fn3
+        BYTE   W96
+// 040   ----------------------------------------
+        BYTE           TIE     Dn3   v095
+        BYTE   W96
+// 041   ----------------------------------------
+Planet_sParalysis_9_41:
+        BYTE   W56
+        BYTE   W03
+        BYTE           EOT     Dn3
+        BYTE   W13
+        BYTE           N23     Ds3   v095
+        BYTE   W24
+        BYTE   PEND
+// 042   ----------------------------------------
+        BYTE           TIE     Dn3
+        BYTE   W96
+// 043   ----------------------------------------
+        BYTE   W56
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W13
+        BYTE           N23
+        BYTE   W24
+// 044   ----------------------------------------
+        BYTE           TIE
+        BYTE   W96
+// 045   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_9_41
+// 046   ----------------------------------------
+        BYTE           TIE     Dn3   v095
+        BYTE   W96
+// 047   ----------------------------------------
+        BYTE   W32
+        BYTE   W03
+        BYTE           EOT
+        BYTE   W13
+        BYTE           N44     Dn3   v095   gtp3
+        BYTE   W48
+// 048   ----------------------------------------
+        BYTE           TIE
+        BYTE   W06
+        BYTE           VOL     74
+        BYTE   W12
+        BYTE                   73
+        BYTE   W06
+        BYTE                   72
+        BYTE   W06
+        BYTE                   71
+        BYTE   W06
+        BYTE                   70
+        BYTE   W06
+        BYTE                   69
+        BYTE   W12
+        BYTE                   67
+        BYTE   W06
+        BYTE                   66
+        BYTE   W06
+        BYTE                   65
+        BYTE   W06
+        BYTE                   64
+        BYTE   W12
+        BYTE                   62
+        BYTE   W12
+// 049   ----------------------------------------
+        BYTE                   60
+        BYTE   W06
+        BYTE                   58
+        BYTE   W06
+        BYTE                   56
+        BYTE   W06
+        BYTE                   54
+        BYTE   W06
+        BYTE                   52
+        BYTE   W06
+        BYTE                   50
+        BYTE   W06
+        BYTE                   47
+        BYTE   W06
+        BYTE                   44
+        BYTE   W06
+        BYTE                   41
+        BYTE   W06
+        BYTE                   37
+        BYTE   W06
+        BYTE                   33
+        BYTE   W06
+        BYTE                   30
+        BYTE   W06
+        BYTE                   27
+        BYTE   W06
+        BYTE                   23
+        BYTE   W06
+        BYTE                   20
+        BYTE   W11
+        BYTE           EOT
+        BYTE   W01
+// 050   ----------------------------------------
+        BYTE   W96
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE           VOL     78
+        BYTE   W96
+// 053   ----------------------------------------
+        BYTE   W96
+// 054   ----------------------------------------
+        BYTE   W96
+// 055   ----------------------------------------
+        BYTE   W96
+// 056   ----------------------------------------
+        BYTE   W96
+// 057   ----------------------------------------
+        BYTE   W96
+// 058   ----------------------------------------
+        BYTE   W96
+// 059   ----------------------------------------
+        BYTE   W96
+// 060   ----------------------------------------
+        BYTE   GoTo
+         POIN2  Planet_sParalysis_9_LOOP
+        BYTE   W96
+// 061   ----------------------------------------
+        BYTE   W96
+// 062   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE   FINE
+
+//***************** Track 10 (Midi-Chn.12) *****************//
+
+Planet_sParalysis_10:
+        BYTE   KEYSH   Planet_sParalysis_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   14
+        BYTE           VOL     87
+        BYTE           PAN     c_v+40
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+Planet_sParalysis_10_8:
+        BYTE   W48
+        BYTE           N04     Bn3   v065
+        BYTE   W12
+        BYTE                   Bn3   v045
+        BYTE   W06
+        BYTE                   Bn3   v055
+        BYTE   W18
+        BYTE                   Bn3   v045
+        BYTE   W12
+        BYTE   PEND
+// 009   ----------------------------------------
+Planet_sParalysis_10_9:
+        BYTE           N04     Bn3   v080
+        BYTE   W12
+        BYTE                   Bn3   v050
+        BYTE   W06
+        BYTE                   Bn3   v070
+        BYTE   W18
+        BYTE                   Bn3   v050
+        BYTE   W12
+        BYTE                   Bn3   v095
+        BYTE   W12
+        BYTE                   Bn3   v050
+        BYTE   W06
+        BYTE                   Bn3   v085
+        BYTE   W18
+        BYTE                   Bn3   v050
+        BYTE   W12
+        BYTE   PEND
+// 010   ----------------------------------------
+Planet_sParalysis_10_10:
+        BYTE           N04     Bn3   v100
+        BYTE   W12
+        BYTE                   Bn3   v050
+        BYTE   W06
+        BYTE                   Bn3   v090
+        BYTE   W18
+        BYTE                   Bn3   v050
+        BYTE   W12
+        BYTE                   Bn3   v095
+        BYTE   W12
+        BYTE                   Bn3   v050
+        BYTE   W06
+        BYTE                   Bn3   v085
+        BYTE   W18
+        BYTE                   Bn3   v050
+        BYTE   W12
+        BYTE   PEND
+// 011   ----------------------------------------
+Planet_sParalysis_10_11:
+        BYTE           N04     Bn3   v085
+        BYTE   W12
+        BYTE                   Bn3   v050
+        BYTE   W06
+        BYTE                   Bn3   v075
+        BYTE   W18
+        BYTE                   Bn3   v050
+        BYTE   W12
+        BYTE                   Bn3   v070
+        BYTE   W12
+        BYTE                   Bn3   v050
+        BYTE   W06
+        BYTE                   Bn3   v060
+        BYTE   W18
+        BYTE                   Bn3   v050
+        BYTE   W12
+        BYTE   PEND
+// 012   ----------------------------------------
+        BYTE   W48
+        BYTE                   Cn4   v065
+        BYTE   W12
+        BYTE                   Cn4   v045
+        BYTE   W06
+        BYTE                   Cn4   v055
+        BYTE   W18
+        BYTE                   Cn4   v045
+        BYTE   W12
+// 013   ----------------------------------------
+        BYTE                   Cn4   v080
+        BYTE   W12
+        BYTE                   Cn4   v050
+        BYTE   W06
+        BYTE                   Cn4   v070
+        BYTE   W18
+        BYTE                   Cn4   v050
+        BYTE   W12
+        BYTE                   Cn4   v095
+        BYTE   W12
+        BYTE                   Cn4   v050
+        BYTE   W06
+        BYTE                   Cn4   v085
+        BYTE   W18
+        BYTE                   Cn4   v050
+        BYTE   W12
+// 014   ----------------------------------------
+        BYTE                   Cn4   v100
+        BYTE   W12
+        BYTE                   Cn4   v050
+        BYTE   W06
+        BYTE                   Cn4   v090
+        BYTE   W18
+        BYTE                   Cn4   v050
+        BYTE   W12
+        BYTE                   Cn4   v095
+        BYTE   W12
+        BYTE                   Cn4   v050
+        BYTE   W06
+        BYTE                   Cn4   v085
+        BYTE   W18
+        BYTE                   Cn4   v050
+        BYTE   W12
+// 015   ----------------------------------------
+        BYTE                   Cn4   v085
+        BYTE   W12
+        BYTE                   Cn4   v050
+        BYTE   W06
+        BYTE                   Cn4   v075
+        BYTE   W18
+        BYTE                   Cn4   v050
+        BYTE   W12
+        BYTE                   Cn4   v070
+        BYTE   W12
+        BYTE                   Cn4   v050
+        BYTE   W06
+        BYTE                   Cn4   v060
+        BYTE   W18
+        BYTE                   Cn4   v050
+        BYTE   W12
+// 016   ----------------------------------------
+Planet_sParalysis_10_LOOP:
+        BYTE   W48
+        BYTE           N04     Bn3   v065
+        BYTE   W12
+        BYTE                   Bn3   v045
+        BYTE   W06
+        BYTE                   Bn3   v055
+        BYTE   W18
+        BYTE                   Bn3   v045
+        BYTE   W12
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_10_9
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_10_10
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_10_11
+// 020   ----------------------------------------
+        BYTE   W48
+        BYTE           N04     As3   v065
+        BYTE   W12
+        BYTE                   As3   v045
+        BYTE   W06
+        BYTE                   As3   v055
+        BYTE   W18
+        BYTE                   As3   v045
+        BYTE   W12
+// 021   ----------------------------------------
+        BYTE                   As3   v080
+        BYTE   W12
+        BYTE                   As3   v050
+        BYTE   W06
+        BYTE                   As3   v070
+        BYTE   W18
+        BYTE                   As3   v050
+        BYTE   W12
+        BYTE                   As3   v095
+        BYTE   W12
+        BYTE                   As3   v050
+        BYTE   W06
+        BYTE                   As3   v085
+        BYTE   W18
+        BYTE                   As3   v050
+        BYTE   W12
+// 022   ----------------------------------------
+        BYTE                   As3   v100
+        BYTE   W12
+        BYTE                   As3   v050
+        BYTE   W06
+        BYTE                   As3   v090
+        BYTE   W18
+        BYTE                   As3   v050
+        BYTE   W12
+        BYTE                   As3   v095
+        BYTE   W12
+        BYTE                   As3   v050
+        BYTE   W06
+        BYTE                   As3   v085
+        BYTE   W18
+        BYTE                   As3   v050
+        BYTE   W12
+// 023   ----------------------------------------
+        BYTE                   As3   v085
+        BYTE   W12
+        BYTE                   As3   v050
+        BYTE   W06
+        BYTE                   As3   v075
+        BYTE   W18
+        BYTE                   As3   v050
+        BYTE   W12
+        BYTE                   As3   v070
+        BYTE   W12
+        BYTE                   As3   v050
+        BYTE   W06
+        BYTE                   As3   v060
+        BYTE   W18
+        BYTE                   As3   v050
+        BYTE   W12
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_10_8
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_10_9
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_10_10
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_10_11
+// 028   ----------------------------------------
+Planet_sParalysis_10_28:
+        BYTE   W48
+        BYTE           N04     Gn3   v065
+        BYTE   W12
+        BYTE                   Gn3   v045
+        BYTE   W06
+        BYTE                   Gn3   v055
+        BYTE   W18
+        BYTE                   Gn3   v045
+        BYTE   W12
+        BYTE   PEND
+// 029   ----------------------------------------
+Planet_sParalysis_10_29:
+        BYTE           N04     Gn3   v080
+        BYTE   W12
+        BYTE                   Gn3   v050
+        BYTE   W06
+        BYTE                   Gn3   v070
+        BYTE   W18
+        BYTE                   Gn3   v050
+        BYTE   W12
+        BYTE                   Gn3   v095
+        BYTE   W12
+        BYTE                   Gn3   v050
+        BYTE   W06
+        BYTE                   Gn3   v085
+        BYTE   W18
+        BYTE                   Gn3   v050
+        BYTE   W12
+        BYTE   PEND
+// 030   ----------------------------------------
+Planet_sParalysis_10_30:
+        BYTE           N04     Gn3   v100
+        BYTE   W12
+        BYTE                   Gn3   v050
+        BYTE   W06
+        BYTE                   Gn3   v090
+        BYTE   W18
+        BYTE                   Gn3   v050
+        BYTE   W12
+        BYTE                   Gn3   v095
+        BYTE   W12
+        BYTE                   Gn3   v050
+        BYTE   W06
+        BYTE                   Gn3   v085
+        BYTE   W18
+        BYTE                   Gn3   v050
+        BYTE   W12
+        BYTE   PEND
+// 031   ----------------------------------------
+Planet_sParalysis_10_31:
+        BYTE           N04     Gn3   v085
+        BYTE   W12
+        BYTE                   Gn3   v050
+        BYTE   W06
+        BYTE                   Gn3   v075
+        BYTE   W18
+        BYTE                   Gn3   v050
+        BYTE   W12
+        BYTE                   Gn3   v070
+        BYTE   W12
+        BYTE                   Gn3   v050
+        BYTE   W06
+        BYTE                   Gn3   v060
+        BYTE   W18
+        BYTE                   Gn3   v050
+        BYTE   W12
+        BYTE   PEND
+// 032   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_10_8
+// 033   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_10_9
+// 034   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_10_10
+// 035   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_10_11
+// 036   ----------------------------------------
+        BYTE   W48
+        BYTE           N04     Gn4   v065
+        BYTE   W12
+        BYTE                   Gn4   v045
+        BYTE   W06
+        BYTE                   Gn4   v055
+        BYTE   W18
+        BYTE                   Gn4   v045
+        BYTE   W12
+// 037   ----------------------------------------
+        BYTE                   Gn4   v080
+        BYTE   W12
+        BYTE                   Gn4   v050
+        BYTE   W06
+        BYTE                   Gn4   v070
+        BYTE   W18
+        BYTE                   Gn4   v050
+        BYTE   W12
+        BYTE                   Gn4   v095
+        BYTE   W12
+        BYTE                   Gn4   v050
+        BYTE   W06
+        BYTE                   Gn4   v085
+        BYTE   W18
+        BYTE                   Gn4   v050
+        BYTE   W12
+// 038   ----------------------------------------
+        BYTE                   An4   v100
+        BYTE   W12
+        BYTE                   An4   v050
+        BYTE   W06
+        BYTE                   An4   v090
+        BYTE   W18
+        BYTE                   An4   v050
+        BYTE   W12
+        BYTE                   An4   v095
+        BYTE   W12
+        BYTE                   An4   v050
+        BYTE   W06
+        BYTE                   An4   v085
+        BYTE   W18
+        BYTE                   An4   v050
+        BYTE   W12
+// 039   ----------------------------------------
+        BYTE                   An4   v085
+        BYTE   W12
+        BYTE                   An4   v050
+        BYTE   W06
+        BYTE                   An4   v075
+        BYTE   W18
+        BYTE                   An4   v050
+        BYTE   W12
+        BYTE                   An4   v070
+        BYTE   W12
+        BYTE                   An4   v050
+        BYTE   W06
+        BYTE                   An4   v060
+        BYTE   W18
+        BYTE                   An4   v050
+        BYTE   W12
+// 040   ----------------------------------------
+        BYTE   W96
+// 041   ----------------------------------------
+        BYTE   W96
+// 042   ----------------------------------------
+        BYTE   W96
+// 043   ----------------------------------------
+        BYTE   W96
+// 044   ----------------------------------------
+        BYTE   W96
+// 045   ----------------------------------------
+        BYTE   W96
+// 046   ----------------------------------------
+        BYTE   W96
+// 047   ----------------------------------------
+        BYTE   W96
+// 048   ----------------------------------------
+        BYTE   W96
+// 049   ----------------------------------------
+        BYTE   W96
+// 050   ----------------------------------------
+        BYTE   W96
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE   W48
+        BYTE                   An3   v065
+        BYTE   W12
+        BYTE                   An3   v045
+        BYTE   W06
+        BYTE                   An3   v055
+        BYTE   W18
+        BYTE                   An3   v045
+        BYTE   W12
+// 053   ----------------------------------------
+        BYTE                   An3   v080
+        BYTE   W12
+        BYTE                   An3   v050
+        BYTE   W06
+        BYTE                   An3   v070
+        BYTE   W18
+        BYTE                   An3   v050
+        BYTE   W12
+        BYTE                   An3   v095
+        BYTE   W12
+        BYTE                   An3   v050
+        BYTE   W06
+        BYTE                   An3   v085
+        BYTE   W18
+        BYTE                   An3   v050
+        BYTE   W12
+// 054   ----------------------------------------
+        BYTE                   An3   v100
+        BYTE   W12
+        BYTE                   An3   v050
+        BYTE   W06
+        BYTE                   An3   v090
+        BYTE   W18
+        BYTE                   An3   v050
+        BYTE   W12
+        BYTE                   An3   v095
+        BYTE   W12
+        BYTE                   An3   v050
+        BYTE   W06
+        BYTE                   An3   v085
+        BYTE   W18
+        BYTE                   An3   v050
+        BYTE   W12
+// 055   ----------------------------------------
+        BYTE                   An3   v085
+        BYTE   W12
+        BYTE                   An3   v050
+        BYTE   W06
+        BYTE                   An3   v075
+        BYTE   W18
+        BYTE                   An3   v050
+        BYTE   W12
+        BYTE                   An3   v070
+        BYTE   W12
+        BYTE                   An3   v050
+        BYTE   W06
+        BYTE                   An3   v060
+        BYTE   W18
+        BYTE                   An3   v050
+        BYTE   W12
+// 056   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_10_28
+// 057   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_10_29
+// 058   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_10_30
+// 059   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_10_31
+// 060   ----------------------------------------
+        BYTE   GoTo
+         POIN2  Planet_sParalysis_10_LOOP
+        BYTE   W96
+// 061   ----------------------------------------
+        BYTE   W96
+// 062   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE   FINE
+
+//***************** Track 11 (Midi-Chn.13) *****************//
+
+Planet_sParalysis_11:
+        BYTE   KEYSH   Planet_sParalysis_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   14
+        BYTE           VOL     87
+        BYTE           PAN     c_v-40
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+Planet_sParalysis_11_8:
+        BYTE   W48
+        BYTE           N04     En4   v065
+        BYTE   W12
+        BYTE                   En4   v045
+        BYTE   W06
+        BYTE                   En4   v055
+        BYTE   W18
+        BYTE                   En4   v045
+        BYTE   W12
+        BYTE   PEND
+// 009   ----------------------------------------
+Planet_sParalysis_11_9:
+        BYTE           N04     En4   v080
+        BYTE   W12
+        BYTE                   En4   v050
+        BYTE   W06
+        BYTE                   En4   v070
+        BYTE   W18
+        BYTE                   En4   v050
+        BYTE   W12
+        BYTE                   En4   v095
+        BYTE   W12
+        BYTE                   En4   v050
+        BYTE   W06
+        BYTE                   En4   v085
+        BYTE   W18
+        BYTE                   En4   v050
+        BYTE   W12
+        BYTE   PEND
+// 010   ----------------------------------------
+Planet_sParalysis_11_10:
+        BYTE           N04     En4   v100
+        BYTE   W12
+        BYTE                   En4   v050
+        BYTE   W06
+        BYTE                   En4   v090
+        BYTE   W18
+        BYTE                   En4   v050
+        BYTE   W12
+        BYTE                   En4   v095
+        BYTE   W12
+        BYTE                   En4   v050
+        BYTE   W06
+        BYTE                   En4   v085
+        BYTE   W18
+        BYTE                   En4   v050
+        BYTE   W12
+        BYTE   PEND
+// 011   ----------------------------------------
+Planet_sParalysis_11_11:
+        BYTE           N04     En4   v085
+        BYTE   W12
+        BYTE                   En4   v050
+        BYTE   W06
+        BYTE                   En4   v075
+        BYTE   W18
+        BYTE                   En4   v050
+        BYTE   W12
+        BYTE                   En4   v070
+        BYTE   W12
+        BYTE                   En4   v050
+        BYTE   W06
+        BYTE                   En4   v060
+        BYTE   W18
+        BYTE                   En4   v050
+        BYTE   W12
+        BYTE   PEND
+// 012   ----------------------------------------
+Planet_sParalysis_11_12:
+        BYTE   W48
+        BYTE           N04     Dn4   v065
+        BYTE   W12
+        BYTE                   Dn4   v045
+        BYTE   W06
+        BYTE                   Dn4   v055
+        BYTE   W18
+        BYTE                   Dn4   v045
+        BYTE   W12
+        BYTE   PEND
+// 013   ----------------------------------------
+Planet_sParalysis_11_13:
+        BYTE           N04     Dn4   v080
+        BYTE   W12
+        BYTE                   Dn4   v050
+        BYTE   W06
+        BYTE                   Dn4   v070
+        BYTE   W18
+        BYTE                   Dn4   v050
+        BYTE   W12
+        BYTE                   Dn4   v095
+        BYTE   W12
+        BYTE                   Dn4   v050
+        BYTE   W06
+        BYTE                   Dn4   v085
+        BYTE   W18
+        BYTE                   Dn4   v050
+        BYTE   W12
+        BYTE   PEND
+// 014   ----------------------------------------
+Planet_sParalysis_11_14:
+        BYTE           N04     Dn4   v100
+        BYTE   W12
+        BYTE                   Dn4   v050
+        BYTE   W06
+        BYTE                   Dn4   v090
+        BYTE   W18
+        BYTE                   Dn4   v050
+        BYTE   W12
+        BYTE                   Dn4   v095
+        BYTE   W12
+        BYTE                   Dn4   v050
+        BYTE   W06
+        BYTE                   Dn4   v085
+        BYTE   W18
+        BYTE                   Dn4   v050
+        BYTE   W12
+        BYTE   PEND
+// 015   ----------------------------------------
+Planet_sParalysis_11_15:
+        BYTE           N04     Dn4   v085
+        BYTE   W12
+        BYTE                   Dn4   v050
+        BYTE   W06
+        BYTE                   Dn4   v075
+        BYTE   W18
+        BYTE                   Dn4   v050
+        BYTE   W12
+        BYTE                   Dn4   v070
+        BYTE   W12
+        BYTE                   Dn4   v050
+        BYTE   W06
+        BYTE                   Dn4   v060
+        BYTE   W18
+        BYTE                   Dn4   v050
+        BYTE   W12
+        BYTE   PEND
+// 016   ----------------------------------------
+Planet_sParalysis_11_LOOP:
+        BYTE   W48
+        BYTE           N04     En4   v065
+        BYTE   W12
+        BYTE                   En4   v045
+        BYTE   W06
+        BYTE                   En4   v055
+        BYTE   W18
+        BYTE                   En4   v045
+        BYTE   W12
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_9
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_10
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_11
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_12
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_13
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_14
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_15
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_8
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_9
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_10
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_11
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_12
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_13
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_14
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_15
+// 032   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_8
+// 033   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_9
+// 034   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_10
+// 035   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_11
+// 036   ----------------------------------------
+        BYTE   W48
+        BYTE           N04     Ds4   v065
+        BYTE   W12
+        BYTE                   Ds4   v045
+        BYTE   W06
+        BYTE                   Ds4   v055
+        BYTE   W18
+        BYTE                   Ds4   v045
+        BYTE   W12
+// 037   ----------------------------------------
+        BYTE                   Ds4   v080
+        BYTE   W12
+        BYTE                   Ds4   v050
+        BYTE   W06
+        BYTE                   Ds4   v070
+        BYTE   W18
+        BYTE                   Ds4   v050
+        BYTE   W12
+        BYTE                   Ds4   v095
+        BYTE   W12
+        BYTE                   Ds4   v050
+        BYTE   W06
+        BYTE                   Ds4   v085
+        BYTE   W18
+        BYTE                   Ds4   v050
+        BYTE   W12
+// 038   ----------------------------------------
+        BYTE                   Fn4   v100
+        BYTE   W12
+        BYTE                   Fn4   v050
+        BYTE   W06
+        BYTE                   Fn4   v090
+        BYTE   W18
+        BYTE                   Fn4   v050
+        BYTE   W12
+        BYTE                   Fn4   v095
+        BYTE   W12
+        BYTE                   Fn4   v050
+        BYTE   W06
+        BYTE                   Fn4   v085
+        BYTE   W18
+        BYTE                   Fn4   v050
+        BYTE   W12
+// 039   ----------------------------------------
+        BYTE                   Fn4   v085
+        BYTE   W12
+        BYTE                   Fn4   v050
+        BYTE   W06
+        BYTE                   Fn4   v075
+        BYTE   W18
+        BYTE                   Fn4   v050
+        BYTE   W12
+        BYTE                   Fn4   v070
+        BYTE   W12
+        BYTE                   Fn4   v050
+        BYTE   W06
+        BYTE                   Fn4   v060
+        BYTE   W18
+        BYTE                   Fn4   v050
+        BYTE   W12
+// 040   ----------------------------------------
+        BYTE   W96
+// 041   ----------------------------------------
+        BYTE   W96
+// 042   ----------------------------------------
+        BYTE   W96
+// 043   ----------------------------------------
+        BYTE   W96
+// 044   ----------------------------------------
+        BYTE   W96
+// 045   ----------------------------------------
+        BYTE   W96
+// 046   ----------------------------------------
+        BYTE   W96
+// 047   ----------------------------------------
+        BYTE   W96
+// 048   ----------------------------------------
+        BYTE   W96
+// 049   ----------------------------------------
+        BYTE   W96
+// 050   ----------------------------------------
+        BYTE   W96
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_8
+// 053   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_9
+// 054   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_10
+// 055   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_11
+// 056   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_12
+// 057   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_13
+// 058   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_14
+// 059   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_11_15
+// 060   ----------------------------------------
+        BYTE   GoTo
+         POIN2  Planet_sParalysis_11_LOOP
+        BYTE   W96
+// 061   ----------------------------------------
+        BYTE   W96
+// 062   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE   FINE
+
+//***************** Track 12 (Midi-Chn.14) *****************//
+
+Planet_sParalysis_12:
+        BYTE   KEYSH   Planet_sParalysis_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   47
+        BYTE           VOL     110
+        BYTE   W96
+// 001   ----------------------------------------
+Planet_sParalysis_12_1:
+        BYTE   W84
+        BYTE           N02     Bn1   v115
+        BYTE   W03
+        BYTE                   Bn1   v060
+        BYTE   W03
+        BYTE                   Bn1   v085
+        BYTE   W03
+        BYTE                   Bn1   v060
+        BYTE   W03
+        BYTE   PEND
+// 002   ----------------------------------------
+Planet_sParalysis_12_2:
+        BYTE           N04     En2   v115
+        BYTE   W06
+        BYTE                   En2   v060
+        BYTE   W12
+        BYTE                   En2   v115
+        BYTE   W18
+        BYTE                   Bn1   v080
+        BYTE   W06
+        BYTE                   Bn1   v035
+        BYTE   W06
+        BYTE                   En2   v115
+        BYTE   W48
+        BYTE   PEND
+// 003   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_1
+// 004   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_2
+// 005   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_1
+// 006   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_2
+// 007   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_1
+// 008   ----------------------------------------
+Planet_sParalysis_12_8:
+        BYTE           N04     En2   v115
+        BYTE   W06
+        BYTE                   En2   v060
+        BYTE   W12
+        BYTE                   En2   v115
+        BYTE   W18
+        BYTE                   Bn1   v080
+        BYTE   W06
+        BYTE                   Bn1   v035
+        BYTE   W06
+        BYTE                   En2   v115
+        BYTE   W36
+        BYTE                   Bn1   v080
+        BYTE   W06
+        BYTE                   Bn1   v035
+        BYTE   W06
+        BYTE   PEND
+// 009   ----------------------------------------
+Planet_sParalysis_12_9:
+        BYTE           N04     En2   v115
+        BYTE   W06
+        BYTE                   En2   v060
+        BYTE   W12
+        BYTE                   En2   v115
+        BYTE   W18
+        BYTE                   Bn1   v080
+        BYTE   W06
+        BYTE                   Bn1   v035
+        BYTE   W06
+        BYTE                   En2   v115
+        BYTE   W36
+        BYTE                   Bn1   v090
+        BYTE   W06
+        BYTE                   Bn1   v035
+        BYTE   W06
+        BYTE   PEND
+// 010   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_8
+// 011   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_9
+// 012   ----------------------------------------
+Planet_sParalysis_12_12:
+        BYTE           N04     Fn2   v115
+        BYTE   W06
+        BYTE                   Fn2   v060
+        BYTE   W12
+        BYTE                   Fn2   v115
+        BYTE   W18
+        BYTE                   Cn2   v080
+        BYTE   W06
+        BYTE                   Cn2   v035
+        BYTE   W06
+        BYTE                   Fn2   v115
+        BYTE   W36
+        BYTE                   Cn2   v080
+        BYTE   W06
+        BYTE                   Cn2   v035
+        BYTE   W06
+        BYTE   PEND
+// 013   ----------------------------------------
+Planet_sParalysis_12_13:
+        BYTE           N04     Fn2   v115
+        BYTE   W06
+        BYTE                   Fn2   v060
+        BYTE   W12
+        BYTE                   Fn2   v115
+        BYTE   W18
+        BYTE                   Cn2   v080
+        BYTE   W06
+        BYTE                   Cn2   v035
+        BYTE   W06
+        BYTE                   Fn2   v115
+        BYTE   W36
+        BYTE                   Cn2   v090
+        BYTE   W06
+        BYTE                   Cn2   v035
+        BYTE   W06
+        BYTE   PEND
+// 014   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_12
+// 015   ----------------------------------------
+Planet_sParalysis_12_15:
+        BYTE           N04     Fn2   v115
+        BYTE   W06
+        BYTE                   Fn2   v060
+        BYTE   W12
+        BYTE                   Fn2   v115
+        BYTE   W18
+        BYTE                   Cn2   v080
+        BYTE   W06
+        BYTE                   Cn2   v035
+        BYTE   W06
+        BYTE                   Fn2   v115
+        BYTE   W36
+        BYTE                   Bn1   v090
+        BYTE   W06
+        BYTE                   Bn1   v035
+        BYTE   W06
+        BYTE   PEND
+// 016   ----------------------------------------
+Planet_sParalysis_12_LOOP:
+        BYTE           N04     En2   v115
+        BYTE   W06
+        BYTE                   En2   v060
+        BYTE   W12
+        BYTE                   En2   v115
+        BYTE   W18
+        BYTE                   Bn1   v080
+        BYTE   W06
+        BYTE                   Bn1   v035
+        BYTE   W06
+        BYTE                   En2   v115
+        BYTE   W36
+        BYTE                   Bn1   v080
+        BYTE   W06
+        BYTE                   Bn1   v035
+        BYTE   W06
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_9
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_8
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_9
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_12
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_13
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_12
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_15
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_8
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_9
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_8
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_9
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_12
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_13
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_12
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_15
+// 032   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_8
+// 033   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_9
+// 034   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_8
+// 035   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_9
+// 036   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_12
+// 037   ----------------------------------------
+        BYTE           N04     Fn2   v115
+        BYTE   W06
+        BYTE                   Fn2   v060
+        BYTE   W12
+        BYTE                   Fn2   v115
+        BYTE   W18
+        BYTE                   Cn2   v080
+        BYTE   W06
+        BYTE                   Cn2   v035
+        BYTE   W06
+        BYTE                   Fn2   v115
+        BYTE   W36
+        BYTE                   Dn2   v090
+        BYTE   W06
+        BYTE                   Dn2   v035
+        BYTE   W06
+// 038   ----------------------------------------
+        BYTE                   Gn2   v115
+        BYTE   W06
+        BYTE                   Gn2   v060
+        BYTE   W12
+        BYTE                   Gn2   v115
+        BYTE   W18
+        BYTE                   Dn2   v080
+        BYTE   W06
+        BYTE                   Dn2   v035
+        BYTE   W06
+        BYTE                   Gn2   v115
+        BYTE   W36
+        BYTE                   Dn2   v080
+        BYTE   W06
+        BYTE                   Dn2   v035
+        BYTE   W06
+// 039   ----------------------------------------
+        BYTE                   Gn2   v115
+        BYTE   W06
+        BYTE                   Gn2   v060
+        BYTE   W12
+        BYTE                   Gn2   v115
+        BYTE   W18
+        BYTE                   Dn2   v080
+        BYTE   W06
+        BYTE                   Dn2   v035
+        BYTE   W06
+        BYTE                   Gn2   v115
+        BYTE   W36
+        BYTE                   Dn2   v090
+        BYTE   W06
+        BYTE                   Dn2   v035
+        BYTE   W06
+// 040   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_2
+// 041   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_2
+// 042   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_2
+// 043   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_2
+// 044   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_2
+// 045   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_2
+// 046   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_2
+// 047   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_2
+// 048   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_2
+// 049   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_2
+// 050   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_2
+// 051   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_2
+// 052   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_8
+// 053   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_9
+// 054   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_8
+// 055   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_9
+// 056   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_12
+// 057   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_13
+// 058   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_12
+// 059   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_12_15
+// 060   ----------------------------------------
+        BYTE           N04     En2   v115
+        BYTE   GoTo
+         POIN2  Planet_sParalysis_12_LOOP
+        BYTE   W96
+// 061   ----------------------------------------
+        BYTE   W96
+// 062   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE   FINE
+
+//***************** Track 13 (Midi-Chn.15) *****************//
+
+Planet_sParalysis_13:
+        BYTE   KEYSH   Planet_sParalysis_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   112
+        BYTE           VOL     110
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE           N92     Bn1   v080   gtp3
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE                   Bn1
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE                   Bn1
+        BYTE   W96
+// 008   ----------------------------------------
+Planet_sParalysis_13_8:
+        BYTE           N44     Fs1   v090   gtp3
+        BYTE                   Gn1
+        BYTE   W48
+        BYTE                   Bn1   v080
+        BYTE   W48
+        BYTE   PEND
+// 009   ----------------------------------------
+Planet_sParalysis_13_9:
+        BYTE   W48
+        BYTE           N44     Bn1   v080   gtp3
+        BYTE   W48
+        BYTE   PEND
+// 010   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 011   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 012   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 014   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 015   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 016   ----------------------------------------
+Planet_sParalysis_13_LOOP:
+        BYTE   W48
+        BYTE           N44     Bn1   v080   gtp3
+        BYTE   W48
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 024   ----------------------------------------
+Planet_sParalysis_13_24:
+        BYTE           N23     Fs1   v085
+        BYTE           N23     Gn1
+        BYTE   W48
+        BYTE           N44     Bn1   v080   gtp3
+        BYTE   W48
+        BYTE   PEND
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_24
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 032   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_24
+// 033   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 034   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 035   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 036   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_24
+// 037   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 038   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_24
+// 039   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 040   ----------------------------------------
+Planet_sParalysis_13_40:
+        BYTE           N23     Fs1   v080
+        BYTE           N23     Cs2
+        BYTE   W72
+        BYTE                   Bn1
+        BYTE   W24
+        BYTE   PEND
+// 041   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_40
+// 042   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_40
+// 043   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_40
+// 044   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_40
+// 045   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_40
+// 046   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_40
+// 047   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_40
+// 048   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_40
+// 049   ----------------------------------------
+        BYTE   W96
+// 050   ----------------------------------------
+        BYTE   W72
+        BYTE           N23     Bn1   v080
+        BYTE   W24
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_8
+// 053   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 054   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 055   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 056   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 057   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 058   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 059   ----------------------------------------
+        BYTE   PATT
+         POIN2  Planet_sParalysis_13_9
+// 060   ----------------------------------------
+        BYTE   GoTo
+         POIN2  Planet_sParalysis_13_LOOP
+        BYTE   W96
+// 061   ----------------------------------------
+        BYTE   W96
+// 062   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE   FINE
+
+
+//********************** End of Song ***********************//
+
+        ALIGN 4
+Planet_sParalysis:
+        BYTE   14                      // Num Tracks
+        BYTE   0                       // Unknown
+        BYTE   Planet_sParalysis_pri   // Priority
+        BYTE   Planet_sParalysis_rev   // Reverb
+
+        POIN2   Planet_sParalysis_grp  
+
+        POIN2   Planet_sParalysis_0
+        POIN2   Planet_sParalysis_1
+        POIN2   Planet_sParalysis_2
+        POIN2   Planet_sParalysis_3
+        POIN2   Planet_sParalysis_4
+        POIN2   Planet_sParalysis_5
+        POIN2   Planet_sParalysis_6
+        POIN2   Planet_sParalysis_7
+        POIN2   Planet_sParalysis_8
+        POIN2   Planet_sParalysis_9
+        POIN2   Planet_sParalysis_10
+        POIN2   Planet_sParalysis_11
+        POIN2   Planet_sParalysis_12
+        POIN2   Planet_sParalysis_13
+
+        

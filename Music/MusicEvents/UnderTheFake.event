@@ -1,0 +1,1699 @@
+//Event file generated from Sappy .s format.
+        #include "MPlayDef.event"
+
+        #define    UnderTheFake_grp  voicegroup000
+        #define    UnderTheFake_pri  0
+        #define    UnderTheFake_rev  0
+        #define    UnderTheFake_key  0
+
+        // .rodata
+        // UnderTheFake
+        ALIGN 4
+
+//****************** Track 0 (Midi-Chn.0) ******************//
+
+UnderTheFake_0:
+        BYTE   KEYSH   UnderTheFake_key+0
+// 000   ----------------------------------------
+        BYTE   TEMPO   116/2
+        BYTE           PAN     c_v-22
+        BYTE           VOICE   46
+        BYTE           VOL     76
+        BYTE   W12
+        BYTE           N06     Bn1   v127
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W06
+        BYTE                   Bn2
+        BYTE   W06
+        BYTE           N12     Dn3
+        BYTE   W12
+        BYTE           N06     Fs2
+        BYTE   W06
+        BYTE                   En2
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W06
+        BYTE                   An2
+        BYTE   W06
+        BYTE           N12     Bn2
+        BYTE   W12
+        BYTE                   An2
+        BYTE   W12
+        BYTE           N18     Bn2
+        BYTE   W06
+// 001   ----------------------------------------
+UnderTheFake_0_1:
+        BYTE   W12
+        BYTE           N06     Bn1   v127
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W06
+        BYTE                   Bn2
+        BYTE   W06
+        BYTE           N12     Dn3
+        BYTE   W12
+        BYTE           N06     Fs2
+        BYTE   W06
+        BYTE                   En2
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W06
+        BYTE                   An2
+        BYTE   W06
+        BYTE           N12     Bn2
+        BYTE   W12
+        BYTE                   An2
+        BYTE   W12
+        BYTE           N18     Bn2
+        BYTE   W06
+        BYTE   PEND
+// 002   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_1
+// 003   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_1
+// 004   ----------------------------------------
+UnderTheFake_0_LOOP:
+        BYTE   W12
+        BYTE           N06     Bn1   v127
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W06
+        BYTE                   Bn2
+        BYTE   W06
+        BYTE           N12     Dn3
+        BYTE   W12
+        BYTE           N06     Fs2
+        BYTE   W06
+        BYTE                   En2
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W06
+        BYTE                   An2
+        BYTE   W06
+        BYTE           N12     Bn2
+        BYTE   W12
+        BYTE                   An2
+        BYTE   W12
+        BYTE           N18     Bn2
+        BYTE   W06
+// 005   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_1
+// 006   ----------------------------------------
+UnderTheFake_0_6:
+        BYTE   W12
+        BYTE           N06     Bn1   v127
+        BYTE   W06
+        BYTE                   En2
+        BYTE   W06
+        BYTE                   Bn2
+        BYTE   W06
+        BYTE           N12     En3
+        BYTE   W12
+        BYTE           N06     En2
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W06
+        BYTE                   Gn2
+        BYTE   W06
+        BYTE                   An2
+        BYTE   W06
+        BYTE           N12     Bn2
+        BYTE   W12
+        BYTE                   An2
+        BYTE   W12
+        BYTE           N18     Bn2
+        BYTE   W06
+        BYTE   PEND
+// 007   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_1
+// 008   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_6
+// 009   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_1
+// 010   ----------------------------------------
+UnderTheFake_0_10:
+        BYTE   W12
+        BYTE           N06     Bn1   v127
+        BYTE   W06
+        BYTE                   Cs2
+        BYTE   W06
+        BYTE                   Gs2
+        BYTE   W06
+        BYTE           N12     Bn2
+        BYTE   W12
+        BYTE           N06     Fn2
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W06
+        BYTE                   Gs2
+        BYTE   W06
+        BYTE                   Bn2
+        BYTE   W06
+        BYTE           N12     Cs3
+        BYTE   W12
+        BYTE                   As2
+        BYTE   W12
+        BYTE           N18     Bn2
+        BYTE   W06
+        BYTE   PEND
+// 011   ----------------------------------------
+UnderTheFake_0_11:
+        BYTE   W12
+        BYTE           N06     Cs2   v127
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W06
+        BYTE                   As2
+        BYTE   W06
+        BYTE           N12     Cs3
+        BYTE   W12
+        BYTE           N06     Fs2
+        BYTE   W06
+        BYTE                   Gs2
+        BYTE   W06
+        BYTE                   As2
+        BYTE   W06
+        BYTE                   Bn2
+        BYTE   W06
+        BYTE           N12     Cs3
+        BYTE   W12
+        BYTE                   Gs2
+        BYTE   W12
+        BYTE           N18     As2
+        BYTE   W06
+        BYTE   PEND
+// 012   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_1
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_10
+// 014   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_11
+// 015   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_11
+// 016   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_1
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_1
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_1
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_1
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_6
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_1
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_6
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_1
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_10
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_11
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_1
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_10
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_11
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_11
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_1
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_0_1
+// 032   ----------------------------------------
+        BYTE   GoTo
+         POIN2  UnderTheFake_0_LOOP
+        BYTE   W21
+        BYTE   FINE
+
+//****************** Track 1 (Midi-Chn.5) ******************//
+
+UnderTheFake_1:
+        BYTE   KEYSH   UnderTheFake_key+0
+// 000   ----------------------------------------
+        BYTE           PAN     c_v+39
+        BYTE           VOICE   46
+        BYTE           VOL     45
+        BYTE   W21
+        BYTE           N06     Bn1   v127
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W06
+        BYTE                   Bn2
+        BYTE   W06
+        BYTE           N12     Dn3
+        BYTE   W12
+        BYTE           N06     Fs2
+        BYTE   W06
+        BYTE                   En2
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W06
+        BYTE                   An2
+        BYTE   W06
+        BYTE           N12     Bn2
+        BYTE   W12
+        BYTE                   An2
+        BYTE   W09
+// 001   ----------------------------------------
+UnderTheFake_1_1:
+        BYTE   W03
+        BYTE           N18     Bn2   v127
+        BYTE   W18
+        BYTE           N06     Bn1
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W06
+        BYTE                   Bn2
+        BYTE   W06
+        BYTE           N12     Dn3
+        BYTE   W12
+        BYTE           N06     Fs2
+        BYTE   W06
+        BYTE                   En2
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W06
+        BYTE                   An2
+        BYTE   W06
+        BYTE           N12     Bn2
+        BYTE   W12
+        BYTE                   An2
+        BYTE   W09
+        BYTE   PEND
+// 002   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_1
+// 003   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_1
+// 004   ----------------------------------------
+UnderTheFake_1_LOOP:
+        BYTE   W03
+        BYTE           N18     Bn2   v127
+        BYTE   W18
+        BYTE           N06     Bn1
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W06
+        BYTE                   Bn2
+        BYTE   W06
+        BYTE           N12     Dn3
+        BYTE   W12
+        BYTE           N06     Fs2
+        BYTE   W06
+        BYTE                   En2
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W06
+        BYTE                   An2
+        BYTE   W06
+        BYTE           N12     Bn2
+        BYTE   W12
+        BYTE                   An2
+        BYTE   W09
+// 005   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_1
+// 006   ----------------------------------------
+UnderTheFake_1_6:
+        BYTE   W03
+        BYTE           N18     Bn2   v127
+        BYTE   W18
+        BYTE           N06     Bn1
+        BYTE   W06
+        BYTE                   En2
+        BYTE   W06
+        BYTE                   Bn2
+        BYTE   W06
+        BYTE           N12     En3
+        BYTE   W12
+        BYTE           N06     En2
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W06
+        BYTE                   Gn2
+        BYTE   W06
+        BYTE                   An2
+        BYTE   W06
+        BYTE           N12     Bn2
+        BYTE   W12
+        BYTE                   An2
+        BYTE   W09
+        BYTE   PEND
+// 007   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_1
+// 008   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_6
+// 009   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_1
+// 010   ----------------------------------------
+UnderTheFake_1_10:
+        BYTE   W03
+        BYTE           N18     Bn2   v127
+        BYTE   W18
+        BYTE           N06     Bn1
+        BYTE   W06
+        BYTE                   Cs2
+        BYTE   W06
+        BYTE                   Gs2
+        BYTE   W06
+        BYTE           N12     Bn2
+        BYTE   W12
+        BYTE           N06     Fn2
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W06
+        BYTE                   Gs2
+        BYTE   W06
+        BYTE                   Bn2
+        BYTE   W06
+        BYTE           N12     Cs3
+        BYTE   W12
+        BYTE                   As2
+        BYTE   W09
+        BYTE   PEND
+// 011   ----------------------------------------
+UnderTheFake_1_11:
+        BYTE   W03
+        BYTE           N18     Bn2   v127
+        BYTE   W18
+        BYTE           N06     Cs2
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W06
+        BYTE                   As2
+        BYTE   W06
+        BYTE           N12     Cs3
+        BYTE   W12
+        BYTE           N06     Fs2
+        BYTE   W06
+        BYTE                   Gs2
+        BYTE   W06
+        BYTE                   As2
+        BYTE   W06
+        BYTE                   Bn2
+        BYTE   W06
+        BYTE           N12     Cs3
+        BYTE   W12
+        BYTE                   Gs2
+        BYTE   W09
+        BYTE   PEND
+// 012   ----------------------------------------
+UnderTheFake_1_12:
+        BYTE   W03
+        BYTE           N18     As2   v127
+        BYTE   W18
+        BYTE           N06     Bn1
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W06
+        BYTE                   Bn2
+        BYTE   W06
+        BYTE           N12     Dn3
+        BYTE   W12
+        BYTE           N06     Fs2
+        BYTE   W06
+        BYTE                   En2
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W06
+        BYTE                   An2
+        BYTE   W06
+        BYTE           N12     Bn2
+        BYTE   W12
+        BYTE                   An2
+        BYTE   W09
+        BYTE   PEND
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_10
+// 014   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_11
+// 015   ----------------------------------------
+UnderTheFake_1_15:
+        BYTE   W03
+        BYTE           N18     As2   v127
+        BYTE   W18
+        BYTE           N06     Cs2
+        BYTE   W06
+        BYTE                   Fs2
+        BYTE   W06
+        BYTE                   As2
+        BYTE   W06
+        BYTE           N12     Cs3
+        BYTE   W12
+        BYTE           N06     Fs2
+        BYTE   W06
+        BYTE                   Gs2
+        BYTE   W06
+        BYTE                   As2
+        BYTE   W06
+        BYTE                   Bn2
+        BYTE   W06
+        BYTE           N12     Cs3
+        BYTE   W12
+        BYTE                   Gs2
+        BYTE   W09
+        BYTE   PEND
+// 016   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_12
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_1
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_1
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_1
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_6
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_1
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_6
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_1
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_10
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_11
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_12
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_10
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_11
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_15
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_12
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_1_1
+// 032   ----------------------------------------
+        BYTE   GoTo
+         POIN2  UnderTheFake_1_LOOP
+        BYTE   W03
+        BYTE           N18     Bn2   v127
+        BYTE   W18
+        BYTE   FINE
+
+//****************** Track 2 (Midi-Chn.6) ******************//
+
+UnderTheFake_2:
+        BYTE   KEYSH   UnderTheFake_key+0
+// 000   ----------------------------------------
+        BYTE           VOL     78
+        BYTE           VOICE   127
+        BYTE           N12     Bn0   v127
+        BYTE           N06     Fs2
+        BYTE   W06
+        BYTE                   Fs2   v102
+        BYTE   W06
+        BYTE                   Fs2   v076
+        BYTE   W06
+        BYTE                   Fs2   v051
+        BYTE   W06
+        BYTE           N12     Bn4   v127
+        BYTE           N06     An3
+        BYTE   W06
+        BYTE                   An3   v102
+        BYTE   W06
+        BYTE           N12     Bn0   v127
+        BYTE           N06     An3   v076
+        BYTE   W06
+        BYTE                   An3   v051
+        BYTE   W06
+        BYTE           N12     Bn0   v127
+        BYTE           N06     Ds4
+        BYTE   W06
+        BYTE                   Ds4   v102
+        BYTE   W06
+        BYTE                   Ds4   v076
+        BYTE   W06
+        BYTE                   An3   v127
+        BYTE           N06     Ds4   v051
+        BYTE   W06
+        BYTE           N12     En1   v127
+        BYTE           N06     An3
+        BYTE   W06
+        BYTE                   An3   v102
+        BYTE   W06
+        BYTE                   Bn0   v127
+        BYTE           N06     An3   v076
+        BYTE   W06
+        BYTE                   En1   v127
+        BYTE           N06     An3   v051
+        BYTE   W06
+// 001   ----------------------------------------
+UnderTheFake_2_1:
+        BYTE           N12     Bn0   v127
+        BYTE           N06     Fs2
+        BYTE   W06
+        BYTE                   Fs2   v102
+        BYTE   W06
+        BYTE                   Fs2   v076
+        BYTE   W06
+        BYTE                   Fs2   v051
+        BYTE   W06
+        BYTE           N12     Bn4   v127
+        BYTE           N06     An3
+        BYTE   W06
+        BYTE                   An3   v102
+        BYTE   W06
+        BYTE           N12     Bn0   v127
+        BYTE           N06     An3   v076
+        BYTE   W06
+        BYTE                   An3   v051
+        BYTE   W06
+        BYTE           N12     Bn0   v127
+        BYTE           N06     Ds4
+        BYTE   W06
+        BYTE                   Ds4   v102
+        BYTE   W06
+        BYTE                   Ds4   v076
+        BYTE   W06
+        BYTE                   An3   v127
+        BYTE           N06     Ds4   v051
+        BYTE   W06
+        BYTE           N12     En1   v127
+        BYTE           N06     An3
+        BYTE   W06
+        BYTE                   An3   v102
+        BYTE   W06
+        BYTE                   Bn0   v127
+        BYTE           N06     An3   v076
+        BYTE   W06
+        BYTE                   En1   v127
+        BYTE           N06     An3   v051
+        BYTE   W06
+        BYTE   PEND
+// 002   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 003   ----------------------------------------
+        BYTE           N12     Bn0   v127
+        BYTE           N06     Fs2
+        BYTE   W06
+        BYTE                   Fs2   v102
+        BYTE   W06
+        BYTE                   Fs2   v076
+        BYTE   W06
+        BYTE                   Fs2   v051
+        BYTE   W06
+        BYTE           N12     Bn4   v127
+        BYTE           N06     An3
+        BYTE   W06
+        BYTE                   An3   v102
+        BYTE   W06
+        BYTE           N12     Bn0   v127
+        BYTE           N06     An3   v076
+        BYTE   W06
+        BYTE                   An3   v051
+        BYTE   W06
+        BYTE                   Ds4   v127
+        BYTE           N06     En1
+        BYTE   W06
+        BYTE                   Ds4   v102
+        BYTE           N06     Bn0   v127
+        BYTE   W06
+        BYTE                   Ds4   v076
+        BYTE           N06     En1   v127
+        BYTE   W06
+        BYTE                   An3
+        BYTE           N06     Ds4   v051
+        BYTE           N06     Bn0   v127
+        BYTE   W06
+        BYTE                   An3
+        BYTE           N06     En1
+        BYTE   W06
+        BYTE                   An3   v102
+        BYTE           N06     En1   v127
+        BYTE   W06
+        BYTE                   An3   v076
+        BYTE           N06     En1   v127
+        BYTE   W06
+        BYTE                   An3   v051
+        BYTE           N06     En1   v127
+        BYTE   W06
+// 004   ----------------------------------------
+UnderTheFake_2_LOOP:
+        BYTE           N12     Bn0   v127
+        BYTE           N06     Fs2
+        BYTE   W06
+        BYTE                   Fs2   v102
+        BYTE   W06
+        BYTE                   Fs2   v076
+        BYTE   W06
+        BYTE                   Fs2   v051
+        BYTE   W06
+        BYTE           N12     Bn4   v127
+        BYTE           N06     An3
+        BYTE   W06
+        BYTE                   An3   v102
+        BYTE   W06
+        BYTE           N12     Bn0   v127
+        BYTE           N06     An3   v076
+        BYTE   W06
+        BYTE                   An3   v051
+        BYTE   W06
+        BYTE           N12     Bn0   v127
+        BYTE           N06     Ds4
+        BYTE   W06
+        BYTE                   Ds4   v102
+        BYTE   W06
+        BYTE                   Ds4   v076
+        BYTE   W06
+        BYTE                   An3   v127
+        BYTE           N06     Ds4   v051
+        BYTE   W06
+        BYTE           N12     En1   v127
+        BYTE           N06     An3
+        BYTE   W06
+        BYTE                   An3   v102
+        BYTE   W06
+        BYTE                   Bn0   v127
+        BYTE           N06     An3   v076
+        BYTE   W06
+        BYTE                   En1   v127
+        BYTE           N06     An3   v051
+        BYTE   W06
+// 005   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 006   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 007   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 008   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 009   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 010   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 011   ----------------------------------------
+UnderTheFake_2_11:
+        BYTE           N12     Bn0   v127
+        BYTE           N06     Fs2
+        BYTE   W06
+        BYTE                   Fs2   v102
+        BYTE   W06
+        BYTE                   Fs2   v076
+        BYTE   W06
+        BYTE                   Fs2   v051
+        BYTE   W06
+        BYTE           N12     Bn4   v127
+        BYTE           N06     An3
+        BYTE   W06
+        BYTE                   An3   v102
+        BYTE   W06
+        BYTE           N12     Bn0   v127
+        BYTE           N06     An3   v076
+        BYTE   W06
+        BYTE                   An3   v051
+        BYTE   W06
+        BYTE           N12     Bn0   v127
+        BYTE           N06     Ds4
+        BYTE   W06
+        BYTE                   Ds4   v102
+        BYTE           N06     En1   v076
+        BYTE   W06
+        BYTE                   Ds4
+        BYTE           N06     En1   v127
+        BYTE   W06
+        BYTE                   An3
+        BYTE           N06     Ds4   v051
+        BYTE   W06
+        BYTE                   An3   v127
+        BYTE           N06     En1
+        BYTE   W06
+        BYTE                   An3   v102
+        BYTE           N06     En1   v076
+        BYTE   W06
+        BYTE                   An3
+        BYTE           N06     En1   v127
+        BYTE   W06
+        BYTE                   En1
+        BYTE           N06     An3   v051
+        BYTE   W06
+        BYTE   PEND
+// 012   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 014   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 015   ----------------------------------------
+UnderTheFake_2_15:
+        BYTE           N12     Bn0   v127
+        BYTE           N06     Fs2
+        BYTE   W06
+        BYTE                   Fs2   v102
+        BYTE   W06
+        BYTE                   Fs2   v076
+        BYTE   W06
+        BYTE                   Fs2   v051
+        BYTE   W06
+        BYTE           N12     Bn4   v127
+        BYTE           N06     An3
+        BYTE   W06
+        BYTE                   An3   v102
+        BYTE   W06
+        BYTE           N12     Bn0   v127
+        BYTE           N06     An3   v076
+        BYTE   W06
+        BYTE                   An3   v051
+        BYTE   W06
+        BYTE           N12     Bn0   v127
+        BYTE           N06     Ds4
+        BYTE   W06
+        BYTE                   Ds4   v102
+        BYTE           N06     En1   v127
+        BYTE   W06
+        BYTE                   Ds4   v076
+        BYTE   W06
+        BYTE                   An3   v127
+        BYTE           N06     Ds4   v051
+        BYTE           N06     En1   v127
+        BYTE   W06
+        BYTE                   An3
+        BYTE           N06     En1
+        BYTE   W06
+        BYTE                   An3   v102
+        BYTE   W06
+        BYTE                   Bn0   v127
+        BYTE           N06     An3   v076
+        BYTE   W06
+        BYTE                   En1   v127
+        BYTE           N06     An3   v051
+        BYTE   W06
+        BYTE   PEND
+// 016   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 017   ----------------------------------------
+UnderTheFake_2_17:
+        BYTE           N12     Bn0   v127
+        BYTE           N06     Fs2
+        BYTE   W06
+        BYTE                   Fs2   v102
+        BYTE   W06
+        BYTE                   Fs2   v076
+        BYTE   W06
+        BYTE                   Fs2   v051
+        BYTE   W06
+        BYTE           N12     Bn4   v127
+        BYTE           N06     An3
+        BYTE   W06
+        BYTE                   An3   v102
+        BYTE   W06
+        BYTE           N12     Bn0   v127
+        BYTE           N06     An3   v076
+        BYTE   W06
+        BYTE                   An3   v051
+        BYTE   W06
+        BYTE           N12     Bn0   v127
+        BYTE           N06     Ds4
+        BYTE           N06     En1
+        BYTE   W06
+        BYTE                   Ds4   v102
+        BYTE   W06
+        BYTE                   Ds4   v076
+        BYTE           N06     En1   v127
+        BYTE   W06
+        BYTE                   An3
+        BYTE           N06     Ds4   v051
+        BYTE   W06
+        BYTE                   An3   v127
+        BYTE           N06     En1
+        BYTE   W06
+        BYTE                   An3   v102
+        BYTE           N06     En1   v127
+        BYTE   W06
+        BYTE                   An3   v076
+        BYTE           N06     En1   v127
+        BYTE   W06
+        BYTE                   En1
+        BYTE           N06     An3   v051
+        BYTE   W06
+        BYTE   PEND
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_11
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_15
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_1
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_2_17
+// 032   ----------------------------------------
+        BYTE   GoTo
+         POIN2  UnderTheFake_2_LOOP
+        BYTE   W21
+        BYTE   FINE
+
+//****************** Track 3 (Midi-Chn.1) ******************//
+
+UnderTheFake_3:
+        BYTE   KEYSH   UnderTheFake_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   24
+        BYTE           VOL     103
+        BYTE           PAN     c_v+6
+        BYTE           N36     Fs1   v127
+        BYTE   W36
+        BYTE           N30     Bn1
+        BYTE   W30
+        BYTE           N18     Bn1   v102
+        BYTE   W18
+        BYTE           N12     Bn1   v127
+        BYTE   W12
+// 001   ----------------------------------------
+UnderTheFake_3_1:
+        BYTE           N36     Fs1   v127
+        BYTE   W36
+        BYTE           N30     Bn1
+        BYTE   W30
+        BYTE           N18     Bn1   v102
+        BYTE   W18
+        BYTE           N12     Bn1   v127
+        BYTE   W12
+        BYTE   PEND
+// 002   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_1
+// 003   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_1
+// 004   ----------------------------------------
+UnderTheFake_3_LOOP:
+        BYTE           N36     Fs1   v127
+        BYTE   W36
+        BYTE           N30     Bn1
+        BYTE   W30
+        BYTE           N18     Bn1   v102
+        BYTE   W18
+        BYTE           N12     Bn1   v127
+        BYTE   W12
+// 005   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_1
+// 006   ----------------------------------------
+UnderTheFake_3_6:
+        BYTE           N36     En1   v127
+        BYTE   W36
+        BYTE           N30     Bn1
+        BYTE   W30
+        BYTE           N18     Bn1   v102
+        BYTE   W18
+        BYTE           N12     Bn1   v127
+        BYTE   W12
+        BYTE   PEND
+// 007   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_1
+// 008   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_6
+// 009   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_1
+// 010   ----------------------------------------
+UnderTheFake_3_10:
+        BYTE           N36     Fn1   v127
+        BYTE   W36
+        BYTE           N30     Cs2
+        BYTE   W30
+        BYTE           N18     Bn1   v102
+        BYTE   W18
+        BYTE           N12     Bn1   v127
+        BYTE   W12
+        BYTE   PEND
+// 011   ----------------------------------------
+UnderTheFake_3_11:
+        BYTE           N36     Fs1   v127
+        BYTE   W36
+        BYTE           N30     Cs2
+        BYTE   W30
+        BYTE           N18     As1   v102
+        BYTE   W18
+        BYTE           N12     Cs2   v127
+        BYTE   W12
+        BYTE   PEND
+// 012   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_1
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_10
+// 014   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_11
+// 015   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_11
+// 016   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_1
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_1
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_1
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_1
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_6
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_1
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_6
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_1
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_10
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_11
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_1
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_10
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_11
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_11
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_1
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_3_1
+// 032   ----------------------------------------
+        BYTE   GoTo
+         POIN2  UnderTheFake_3_LOOP
+        BYTE   W21
+        BYTE   FINE
+
+//****************** Track 4 (Midi-Chn.2) ******************//
+
+UnderTheFake_4:
+        BYTE   KEYSH   UnderTheFake_key+0
+// 000   ----------------------------------------
+        BYTE           VOL     93
+        BYTE           VOICE   36
+        BYTE           PAN     c_v+6
+        BYTE           N24     BnM1   v127
+        BYTE   W24
+        BYTE                   Bn0
+        BYTE   W24
+        BYTE           N06     An0
+        BYTE   W06
+        BYTE           N18     Bn0
+        BYTE   W18
+        BYTE           N24     Fs1
+        BYTE   W24
+// 001   ----------------------------------------
+UnderTheFake_4_1:
+        BYTE           N24     BnM1   v127
+        BYTE   W24
+        BYTE                   Bn0
+        BYTE   W24
+        BYTE           N06     An0
+        BYTE   W06
+        BYTE           N18     Bn0
+        BYTE   W18
+        BYTE           N24     Fs1
+        BYTE   W24
+        BYTE   PEND
+// 002   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_1
+// 003   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_1
+// 004   ----------------------------------------
+UnderTheFake_4_LOOP:
+        BYTE           N24     BnM1   v127
+        BYTE   W24
+        BYTE                   Bn0
+        BYTE   W24
+        BYTE           N06     An0
+        BYTE   W06
+        BYTE           N18     Bn0
+        BYTE   W18
+        BYTE           N24     Fs1
+        BYTE   W24
+// 005   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_1
+// 006   ----------------------------------------
+UnderTheFake_4_6:
+        BYTE           N24     En0   v127
+        BYTE   W24
+        BYTE                   En1
+        BYTE   W24
+        BYTE           N06     Dn1
+        BYTE   W06
+        BYTE           N18     En1
+        BYTE   W18
+        BYTE           N24
+        BYTE   W24
+        BYTE   PEND
+// 007   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_1
+// 008   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_6
+// 009   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_1
+// 010   ----------------------------------------
+UnderTheFake_4_10:
+        BYTE           N24     Fn0   v127
+        BYTE   W24
+        BYTE                   Fn1
+        BYTE   W24
+        BYTE           N06     Ds1
+        BYTE   W06
+        BYTE           N18     Fn1
+        BYTE   W18
+        BYTE           N24     Gs1
+        BYTE   W24
+        BYTE   PEND
+// 011   ----------------------------------------
+UnderTheFake_4_11:
+        BYTE           N24     Fs0   v127
+        BYTE   W24
+        BYTE                   Fs1
+        BYTE   W24
+        BYTE           N06     Fn1
+        BYTE   W06
+        BYTE           N18     Fs1
+        BYTE   W18
+        BYTE           N24     Cs2
+        BYTE   W24
+        BYTE   PEND
+// 012   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_1
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_10
+// 014   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_11
+// 015   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_11
+// 016   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_1
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_1
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_1
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_1
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_6
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_1
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_6
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_1
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_10
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_11
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_1
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_10
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_11
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_11
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_1
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_4_1
+// 032   ----------------------------------------
+        BYTE   GoTo
+         POIN2  UnderTheFake_4_LOOP
+        BYTE   W21
+        BYTE   FINE
+
+//****************** Track 5 (Midi-Chn.4) ******************//
+
+UnderTheFake_5:
+        BYTE   KEYSH   UnderTheFake_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   76
+        BYTE           PAN     c_v-11
+        BYTE           VOL     83
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W72
+        BYTE           N24     Fs4   v127
+        BYTE   W24
+// 004   ----------------------------------------
+UnderTheFake_5_LOOP:
+        BYTE           N72     Bn4   v127
+        BYTE   W72
+        BYTE           N24     Cs5
+        BYTE   W24
+// 005   ----------------------------------------
+UnderTheFake_5_5:
+        BYTE           N72     Fs4   v127
+        BYTE   W72
+        BYTE           N24     An4
+        BYTE   W24
+        BYTE   PEND
+// 006   ----------------------------------------
+UnderTheFake_5_6:
+        BYTE           N06     Gn4   v127
+        BYTE   W06
+        BYTE                   An4
+        BYTE   W06
+        BYTE                   Gn4
+        BYTE   W06
+        BYTE                   Fs4
+        BYTE   W06
+        BYTE           N48     En4
+        BYTE   W48
+        BYTE           N12     Dn4
+        BYTE   W12
+        BYTE                   Cs4
+        BYTE   W12
+        BYTE   PEND
+// 007   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_5_5
+// 008   ----------------------------------------
+UnderTheFake_5_8:
+        BYTE           N06     Gn4   v127
+        BYTE   W06
+        BYTE                   An4
+        BYTE   W06
+        BYTE                   En4
+        BYTE   W06
+        BYTE                   Fs4
+        BYTE   W06
+        BYTE           N36     Gn4
+        BYTE   W36
+        BYTE           N12     Bn4
+        BYTE   W12
+        BYTE                   Cs5
+        BYTE   W12
+        BYTE                   Bn4
+        BYTE   W12
+        BYTE   PEND
+// 009   ----------------------------------------
+UnderTheFake_5_9:
+        BYTE           N36     Dn5   v127
+        BYTE   W36
+        BYTE                   Fs4
+        BYTE   W36
+        BYTE           N24     Dn5
+        BYTE   W24
+        BYTE   PEND
+// 010   ----------------------------------------
+UnderTheFake_5_10:
+        BYTE           N24     Cs5   v127
+        BYTE   W24
+        BYTE           N48     Gs4
+        BYTE   W48
+        BYTE           N24     Cs5
+        BYTE   W24
+        BYTE   PEND
+// 011   ----------------------------------------
+UnderTheFake_5_11:
+        BYTE           N06     As4   v127
+        BYTE   W06
+        BYTE                   Bn4
+        BYTE   W06
+        BYTE                   As4
+        BYTE   W06
+        BYTE                   Gs4
+        BYTE   W06
+        BYTE           N48     As4
+        BYTE   W48
+        BYTE           N24     Fs4
+        BYTE   W24
+        BYTE   PEND
+// 012   ----------------------------------------
+UnderTheFake_5_12:
+        BYTE           N36     Dn5   v127
+        BYTE   W36
+        BYTE           N12     Fs4
+        BYTE   W12
+        BYTE           N24
+        BYTE   W24
+        BYTE                   Dn5
+        BYTE   W24
+        BYTE   PEND
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_5_10
+// 014   ----------------------------------------
+UnderTheFake_5_14:
+        BYTE           N84     Bn4   v127
+        BYTE   W84
+        BYTE           N06     As4
+        BYTE   W06
+        BYTE                   Gs4
+        BYTE   W06
+        BYTE   PEND
+// 015   ----------------------------------------
+UnderTheFake_5_15:
+        BYTE           N72     As4   v127
+        BYTE   W72
+        BYTE           N24
+        BYTE   W24
+        BYTE   PEND
+// 016   ----------------------------------------
+UnderTheFake_5_16:
+        BYTE           N08     Bn4   v127
+        BYTE   W08
+        BYTE                   Dn5
+        BYTE   W08
+        BYTE                   Cs5
+        BYTE   W08
+        BYTE           TIE     Bn4
+        BYTE   W72
+        BYTE   PEND
+// 017   ----------------------------------------
+UnderTheFake_5_17:
+        BYTE   W48
+        BYTE           EOT     Bn4
+        BYTE   W24
+        BYTE           N24     Fs4   v127
+        BYTE   W24
+        BYTE   PEND
+// 018   ----------------------------------------
+        BYTE           N72     Bn4
+        BYTE   W72
+        BYTE           N24     Cs5
+        BYTE   W24
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_5_5
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_5_6
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_5_5
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_5_8
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_5_9
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_5_10
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_5_11
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_5_12
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_5_10
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_5_14
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_5_15
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_5_16
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_5_17
+// 032   ----------------------------------------
+        BYTE   GoTo
+         POIN2  UnderTheFake_5_LOOP
+        BYTE   W21
+        BYTE   FINE
+
+//****************** Track 6 (Midi-Chn.3) ******************//
+
+UnderTheFake_6:
+        BYTE   KEYSH   UnderTheFake_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   76
+        BYTE           PAN     c_v+26
+        BYTE           VOL     50
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W84
+        BYTE           N24     Fs4   v127
+        BYTE   W12
+// 004   ----------------------------------------
+UnderTheFake_6_LOOP:
+        BYTE   W12
+        BYTE           N72     Bn4   v127
+        BYTE   W72
+        BYTE           N24     Cs5
+        BYTE   W12
+// 005   ----------------------------------------
+UnderTheFake_6_5:
+        BYTE   W12
+        BYTE           N72     Fs4   v127
+        BYTE   W72
+        BYTE           N24     An4
+        BYTE   W12
+        BYTE   PEND
+// 006   ----------------------------------------
+UnderTheFake_6_6:
+        BYTE   W12
+        BYTE           N06     Gn4   v127
+        BYTE   W06
+        BYTE                   An4
+        BYTE   W06
+        BYTE                   Gn4
+        BYTE   W06
+        BYTE                   Fs4
+        BYTE   W06
+        BYTE           N48     En4
+        BYTE   W48
+        BYTE           N12     Dn4
+        BYTE   W12
+        BYTE   PEND
+// 007   ----------------------------------------
+UnderTheFake_6_7:
+        BYTE           N12     Cs4   v127
+        BYTE   W12
+        BYTE           N72     Fs4
+        BYTE   W72
+        BYTE           N24     An4
+        BYTE   W12
+        BYTE   PEND
+// 008   ----------------------------------------
+UnderTheFake_6_8:
+        BYTE   W12
+        BYTE           N06     Gn4   v127
+        BYTE   W06
+        BYTE                   An4
+        BYTE   W06
+        BYTE                   En4
+        BYTE   W06
+        BYTE                   Fs4
+        BYTE   W06
+        BYTE           N36     Gn4
+        BYTE   W36
+        BYTE           N12     Bn4
+        BYTE   W12
+        BYTE                   Cs5
+        BYTE   W12
+        BYTE   PEND
+// 009   ----------------------------------------
+UnderTheFake_6_9:
+        BYTE           N12     Bn4   v127
+        BYTE   W12
+        BYTE           N36     Dn5
+        BYTE   W36
+        BYTE                   Fs4
+        BYTE   W36
+        BYTE           N24     Dn5
+        BYTE   W12
+        BYTE   PEND
+// 010   ----------------------------------------
+UnderTheFake_6_10:
+        BYTE   W12
+        BYTE           N24     Cs5   v127
+        BYTE   W24
+        BYTE           N48     Gs4
+        BYTE   W48
+        BYTE           N24     Cs5
+        BYTE   W12
+        BYTE   PEND
+// 011   ----------------------------------------
+UnderTheFake_6_11:
+        BYTE   W12
+        BYTE           N06     As4   v127
+        BYTE   W06
+        BYTE                   Bn4
+        BYTE   W06
+        BYTE                   As4
+        BYTE   W06
+        BYTE                   Gs4
+        BYTE   W06
+        BYTE           N48     As4
+        BYTE   W48
+        BYTE           N24     Fs4
+        BYTE   W12
+        BYTE   PEND
+// 012   ----------------------------------------
+UnderTheFake_6_12:
+        BYTE   W12
+        BYTE           N36     Dn5   v127
+        BYTE   W36
+        BYTE           N12     Fs4
+        BYTE   W12
+        BYTE           N24
+        BYTE   W24
+        BYTE                   Dn5
+        BYTE   W12
+        BYTE   PEND
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_6_10
+// 014   ----------------------------------------
+UnderTheFake_6_14:
+        BYTE   W12
+        BYTE           N84     Bn4   v127
+        BYTE   W84
+        BYTE   PEND
+// 015   ----------------------------------------
+UnderTheFake_6_15:
+        BYTE           N06     As4   v127
+        BYTE   W06
+        BYTE                   Gs4
+        BYTE   W06
+        BYTE           N72     As4
+        BYTE   W72
+        BYTE           N24
+        BYTE   W12
+        BYTE   PEND
+// 016   ----------------------------------------
+UnderTheFake_6_16:
+        BYTE   W12
+        BYTE           N08     Bn4   v127
+        BYTE   W08
+        BYTE                   Dn5
+        BYTE   W08
+        BYTE                   Cs5
+        BYTE   W08
+        BYTE           TIE     Bn4
+        BYTE   W60
+        BYTE   PEND
+// 017   ----------------------------------------
+UnderTheFake_6_17:
+        BYTE   W60
+        BYTE           EOT     Bn4
+        BYTE   W24
+        BYTE           N24     Fs4   v127
+        BYTE   W12
+        BYTE   PEND
+// 018   ----------------------------------------
+        BYTE   W12
+        BYTE           N72     Bn4
+        BYTE   W72
+        BYTE           N24     Cs5
+        BYTE   W12
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_6_5
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_6_6
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_6_7
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_6_8
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_6_9
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_6_10
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_6_11
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_6_12
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_6_10
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_6_14
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_6_15
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_6_16
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  UnderTheFake_6_17
+// 032   ----------------------------------------
+        BYTE   GoTo
+         POIN2  UnderTheFake_6_LOOP
+        BYTE   W21
+        BYTE   FINE
+
+
+//********************** End of Song ***********************//
+
+        ALIGN 4
+UnderTheFake:
+        BYTE   7                       // Num Tracks
+        BYTE   0                       // Unknown
+        BYTE   UnderTheFake_pri        // Priority
+        BYTE   UnderTheFake_rev        // Reverb
+
+        POIN2   UnderTheFake_grp       
+
+        POIN2   UnderTheFake_0
+        POIN2   UnderTheFake_1
+        POIN2   UnderTheFake_2
+        POIN2   UnderTheFake_3
+        POIN2   UnderTheFake_4
+        POIN2   UnderTheFake_5
+        POIN2   UnderTheFake_6
+
+        

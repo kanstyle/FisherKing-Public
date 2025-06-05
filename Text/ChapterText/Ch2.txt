@@ -370,7 +370,7 @@ Mm-hmm.[4] Thanks.[A]
 Ah, and here they are![N]
 Hello, lads.[4] Come to play?[A]
 
-[mr][LoadHeroM]
+[mr][LoadHeroM][ts]
 Careful, everyone![N]
 These things're tough.[A]
 [X]
@@ -412,14 +412,15 @@ I'm gonna go help Songbird![A]
 ## Ch2IntroPigeon
 
 [ml][LoadPigeon][tmm]
-(There they are.[N]
-I said all that, but what am I gonna do...?)[A]
+(There they are.)[AN]
+(I said all that,[N]
+but what am I gonna do...?)[AN]
 (Whatever! I'll figure it out!)[A]
 [X]
 
 
 
-
+ 
 
 
 
