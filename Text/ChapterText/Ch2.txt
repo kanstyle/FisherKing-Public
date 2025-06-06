@@ -488,17 +488,16 @@ I knew it, but I just...!)[AN][oe]
 You're mercenaries, right?[N]
 I want in.[A]
 
-[ml]
-Oh, hey![N] I didn't even[N]
+[ml][ts]
+Oh, hey![4] I didn't even[N]
 have to ask.[AN]
 Budget's a little tight, but[N]
 I'm sure we can squeeze you in.[A]
 
-[mr][tmm]
+[mr][tmm][ts]
 (Now I can make sure they don't[N]
 lay a finger on Songbird.)[AN][oe]
-(...[N]
-Sorry, Songbird.)[A]
+(...[4][4]Sorry, Songbird.)[A]
 [X]
 
 ## Ch2NorthHouseIntro

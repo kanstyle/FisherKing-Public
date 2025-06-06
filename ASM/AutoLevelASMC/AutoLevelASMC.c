@@ -30,7 +30,25 @@ void AutoLevelASMC(ProcPtr proc) { //target unit in slot1, target level in slot2
     }
 }
 
-/*void AutoLevelAllUnpromoASMC(ProcPtr proc) { //target level in slot2
+void AutoLevelAllUnpromoASMC(ProcPtr proc) { //target level in slot2
+	int targetLevel = gEventSlots[2]; 
+	
+    int faction = gPlaySt.faction;
+    int unitID = faction+1;
+    int maxCount;
+    
+    while ((unitID - FACTION_BLUE) < 62) {
+        //clear Fortune bit
+		gEventSlots[1] = unitID;
+		if (UNIT_CATTRIBUTES(unit) & ~CA_PROMOTED) {
+			AutoLevelASMC(proc);
+		}
+        
+        unitID++;
+    }    
+}
+
+void AutoLevelAllPromoASMC(ProcPtr proc) { //target level in slot2
 	int targetLevel = gEventSlots[2];
 	
     int faction = gPlaySt.faction;
@@ -40,9 +58,10 @@ void AutoLevelASMC(ProcPtr proc) { //target unit in slot1, target level in slot2
     while ((unitID - FACTION_BLUE) < 62) {
         //clear Fortune bit
 		gEventSlots[1] = unitID;
-		if (GetUnitFromCharId(unitID)->
-        AutoLevelASMC(proc);
+		if (UNIT_CATTRIBUTES(unit) & CA_PROMOTED) {
+			AutoLevelASMC(proc);
+		}
         
         unitID++;
     }    
-}*/
+}
