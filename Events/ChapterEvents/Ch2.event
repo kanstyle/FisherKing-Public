@@ -81,41 +81,45 @@ UnitsPillowStartEvent:
 	UNIT
 
 EnemyUnits:
-	//t1
+	//t1 pp
 	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [13,13] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
 	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [13,11] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
 	UNIT Beast Bonewalker 0x40 Level(4,Enemy,True)     [14,12] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 	
-	//t2
+	//t1 ep
 	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [10,12] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
-	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [11,11] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
 	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [10,10] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
-	UNIT Beast Bonewalker 0x40 Level(4,Enemy,True)     [6,12] 0b 0x0 0x0 0x0 [IronSword] ChargeAI
 	
+	//t2 pp
+	UNIT Beast Bonewalker 0x40 Level(4,Enemy,True)     [6,12] 0b 0x0 0x0 0x0 [IronSword] ChargeAI
 	UNIT Pigeon SkyRat 0x40 Level(4,Enemy,False)     [12,3] 0b 0x0 0x0 0x0 [SteelLance, IronLance, Vulnerary] [0x0,0x0,0x0,0x0]
 	
-	//t3
+	//t2 ep
 	UNIT Beast Bonewalker 0x40 Level(4,Enemy,True)     [7,10] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
-	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [5,6] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [3,9] 0b 0x0 0x0 0x0 [EvilEye] ChargeAI
+
 	
 	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [11,0] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
 	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [13,0] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
 	
-	//t4
-	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [4,13] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
-	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [2,14] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+	//t3 pp
+	UNIT Beast Tarvos 0x40 Level(4,Enemy,True)     [8,5] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI // group AI with the nearby skeleton and mogall
+	UNIT Beast Bonewalker 0x40 Level(4,Enemy,True)     [6,5] 0b 0x0 0x0 0x0 [Javelin] AttackIn2RangeAI
+	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [5,6] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI 
+	
+	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [4,13] 0b 0x0 0x0 0x0 [RottenClaw] StationaryBossAI
+	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [0,14] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+
+	//t3 ep
 	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [5,8] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
-	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [8,7] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+	
+	//t4 pp
+	UNIT Beast Gargoyle 0x40 Level(4,Enemy,True)     [0,5] 0b 0x0 0x0 0x0 [IronLance] AttackIn2RangeAI
+	UNIT Beast Tarvos 0x40 Level(4,Enemy,True)     [7,0] 0b 0x0 0x0 0x0 [IronLance] AttackIn2RangeAI
 	
 	//t5
 	UNIT Beast Gargoyle 0x40 Level(4,Enemy,True)     [0,3] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
-	UNIT Beast Tarvos 0x40 Level(4,Enemy,True)     [8,5] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
-	UNIT Beast Gargoyle 0x40 Level(4,Enemy,True)     [0,5] 0b 0x0 0x0 0x0 [IronLance] AttackIn2RangeAI
-	UNIT Beast Tarvos 0x40 Level(4,Enemy,True)     [4,3] 0b 0x0 0x0 0x0 [IronLance] AttackIn2RangeAI
 	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [0,8] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
-	
-	//t6
-	UNIT Beast Bonewalker 0x40 Level(4,Enemy,True)     [6,5] 0b 0x0 0x0 0x0 [Javelin] AttackInRangeAI
 	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [2,4] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
 	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [5,0] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
 	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [11,2] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
@@ -176,19 +180,23 @@ Traps2:
 BeginningScene:
 	SetFlag(BleedoutFlag)
 	
+	MusicChange(FFTAnxiety)
 	CAMERA [3,1]
 	LOAD2 0x1 UnitsSongbird
 	ENUN
 	FADU 6
+	BROWNBOXTEXT Ch0LowlandBrownBox [8,8]
 	Highlight(Skull)
 	Text(Ch2IntroSkullDialogue1)
 	SetBackground(SongbirdHug)
+	FadeOutMusic
 	STAL 30
 	CGText(Ch2IntroSkullHug1)
 	CGText(Ch2IntroSkullHug2)
 	CGText(Ch2IntroSkullHug3)
 	CGText(Ch2IntroSkullHug4)
 	RemoveBackground
+	MusicChange(FFTAnxiety)
 	FADU 16
 	Text(Ch2IntroSkullDialogue2)
 	STAL 30
@@ -203,6 +211,7 @@ BeginningScene:
 	DoAllThree
 	
 	CAMERA [17,12]
+	MusicChange(PMDSteamCaveID)
 	FADU 3
 	LOAD1 0x1 HunterUnits
 	ENUN
@@ -231,6 +240,7 @@ BeginningScene:
 	Text(Ch2IntroEnemiesSpawned)
 	
 	CAMERA [19,0]
+	MusicChange(FFTAnxiety)
 	SetBackground(LowlandForest)
 	Text(Ch2IntroPigeonSkull)
 	RemoveBackground
@@ -263,6 +273,7 @@ EndingScene:
 	FADI 8
 	ENUN
 	SetBackground(LowlandForest)
+	MusicChange(SoftSwooshSoundEffect)
 	Text(Ch2EndSongbirdTalk)
 	RemoveBackgroundSlow
 	DoAllThree
@@ -281,11 +292,14 @@ EndingScene:
 	MOVE 5 Eagle [7,5]
 	ENUN
 	Highlight(Eagle)
+	MusicChange(MomentofSerenityID)
 	Text(Ch2EndPrinceEagle2)
+	FadeOutMusic
 	FADI 4
 	STAL 120
 	
 	DoAllThree
+	MusicChange(SoftSwooshSoundEffect)
 	LOAD2 0x1 PrinceUnits
 	LOAD2 0x1 EnvoyUnits
 	FADU 4

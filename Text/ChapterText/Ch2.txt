@@ -14,6 +14,10 @@ Talk to Songbird.[X]
 
 Hero on Femininity (*)[X]
 
+## Ch2LocationText
+
+Lowlands Edge[X]
+
 ## Ch2BaseHeroPillow
 
 [ml][LoadHeroM]
