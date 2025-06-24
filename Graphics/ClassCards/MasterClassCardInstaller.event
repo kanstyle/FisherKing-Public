@@ -9,7 +9,67 @@ SigilPortraitPalette:
 
 setCardEntry(SigilCard,SigilPortrait,SigilPortraitPalette)
 
-KnightPortrait:
+AxeBonePortrait:
+#incext Png2Dmp "Cards/Bonewalker Axe {Epicer, Doin Thangs}.png" --lz77
+AxeBonePortraitPalette:
+#incext Png2Dmp "Cards/Bonewalker Axe {Epicer, Doin Thangs}.png" --palette-only
+setCardEntry(AxeBoneCard,AxeBonePortrait,AxeBonePortraitPalette)
+
+LanceBonePortrait:
+#incext Png2Dmp "Cards/Bonewalker Lance {Epicer}.png" --lz77
+LanceBonePortraitPalette:
+#incext Png2Dmp "Cards/Bonewalker Lance {Epicer}.png" --palette-only
+setCardEntry(LanceBoneCard,LanceBonePortrait,LanceBonePortraitPalette)
+
+LanceCavPortrait:
+#incext Png2Dmp "Cards/Cavalier (M) Helmless Lance {RobertFPY}.png" --lz77
+LanceCavPortraitPalette:
+#incext Png2Dmp "Cards/Cavalier (M) Helmless Lance {RobertFPY}.png" --palette-only
+setCardEntry(LanceCavCard,LanceCavPortrait,LanceCavPortraitPalette)
+
+AxeCavPortrait:
+#incext Png2Dmp "Cards/Cavalier (M) Helmless Axe {RobertFPY}.png" --lz77
+AxeCavPortraitPalette:
+#incext Png2Dmp "Cards/Cavalier (M) Helmless Axe {RobertFPY}.png" --palette-only
+setCardEntry(SwordCavCard,SwordCavPortrait,SwordCavPortraitPalette)
+
+SwordCavPortrait:
+#incext Png2Dmp "Cards/Cavalier (F) Sword {RobertFPY}.png" --lz77
+SwordCavPortraitPalette:
+#incext Png2Dmp "Cards/Cavalier (F) Sword {RobertFPY}.png" --palette-only
+setCardEntry(AxeCavCard,AxeCavPortrait,AxeCavPortraitPalette)
+
+BowCavPortrait:
+#incext Png2Dmp "Cards/Bow Knight (M) {flasuban, RobertFPY}.png" --lz77
+BowCavPortraitPalette:
+#incext Png2Dmp "Cards/Bow Knight (M) {flasuban, RobertFPY}.png" --palette-only
+setCardEntry(BowCavCard,BowCavPortrait,BowCavPortraitPalette)
+
+LancePalPortrait:
+#incext Png2Dmp "Cards/Paladin (M) Lance {IS}.png" --lz77
+LancePalPortraitPalette:
+#incext Png2Dmp "Cards/Paladin (M) Lance {IS}.png" --palette-only
+setCardEntry(LancePalCard,LancePalPortrait,LancePalPortraitPalette)
+
+AxePalPortrait:
+#incext Png2Dmp "Cards/Paladin (M) Axe {MeatOfJustice}.png" --lz77
+AxePalPortraitPalette:
+#incext Png2Dmp "Cards/Paladin (M) Axe {MeatOfJustice}.png" --palette-only
+setCardEntry(AxePalCard,AxePalPortrait,AxePalPortraitPalette)
+
+SwordPalPortrait:
+#incext Png2Dmp "Cards/Paladin (F) SALVAGED Sword {Shtick, SALVAGED}.png" --lz77
+SwordPalPortraitPalette:
+#incext Png2Dmp "Cards/Paladin (F) SALVAGED Sword {Shtick, SALVAGED}.png" --palette-only
+setCardEntry(SwordPalCard,SwordPalPortrait,SwordPalPortraitPalette)
+
+BowPalPortrait:
+#incext Png2Dmp "Cards/Paladin (M) Bow {Leif}.png" --lz77
+BowPalPortraitPalette:
+#incext Png2Dmp "Cards/Paladin (M) Bow {Leif}.png" --palette-only
+setCardEntry(BowPalCard,BowPalPortrait,BowPalPortraitPalette)
+
+/*KnightPortrait:
 #incext Png2Dmp "Cards/axe_knight_der_epicer2.png" --lz77
 KnightPortraitPalette:
 #incext Png2Dmp "Cards/axe_knight_der_epicer2.png" --palette-only
@@ -41,6 +101,6 @@ HalbPortraitPalette:
 
 //#define HalbCard 0x9b
 #define HalbCard 0x9c
-setCardEntry(HalbCard,HalbPortrait,HalbPortraitPalette)
+setCardEntry(HalbCard,HalbPortrait,HalbPortraitPalette)*/
 
 

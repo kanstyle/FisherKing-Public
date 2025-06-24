@@ -145,3 +145,21 @@ Eagle[X]
 
 ## EagleDesc
 Placeholder.[X]
+
+## BaronName
+Baron[X]
+
+## BaronDesc
+Placeholder.[X]
+
+## CombatantName
+Combatant[X]
+
+## CombatantDesc
+Placeholder.[X]
+
+## BabyName
+Baby[X]
+
+## BabyDesc
+Placeholder.[X]

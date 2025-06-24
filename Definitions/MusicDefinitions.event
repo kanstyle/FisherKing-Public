@@ -109,6 +109,7 @@
 #define UnderTheFakeID 0x28F
 #define UpperSteamCaveID 0x290
 #define WaterfallUTID 0x291
+#define ForbiddenForestID 0x292
 
 // Vanilla
 #define TiesOfFriendship 0x7

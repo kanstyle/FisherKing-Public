@@ -47,3 +47,20 @@ StatusBGPal:
 ALIGN 4
 StatusBGTSA:
 #incext compress "StatusBG.tsa"
+
+PUSH
+
+//MMB status graphics
+ORG $0008C450
+POIN StatusNames
+
+ORG $000898C0
+POIN StatusNamesPal
+
+POP
+
+ALIGN 4
+StatusNames:
+#incext Png2Dmp --lz77 "StatusNames.png"
+StatusNamesPal:
+#incext Png2Dmp --palette-only "StatusNames.png" 

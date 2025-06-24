@@ -86,6 +86,78 @@ ALIGN 4
 MageGeneralMoving:
 #incbin "Dmp/MageGeneral-walk.dmp"
 
+ALIGN 4
+LanceBoneStanding:
+#incbin "Dmp/BoneLance-stand.dmp"
+
+ALIGN 4
+LanceBoneMoving:
+#incbin "Dmp/BoneLance-walk.dmp"
+
+ALIGN 4
+AxeBoneStanding:
+#incbin "Dmp/AxeBone-stand.dmp"
+
+ALIGN 4
+AxeBoneMoving:
+#incbin "Dmp/AxeBone-walk.dmp"
+
+ALIGN 4
+LanceCavStanding:
+#incbin "Dmp/LanceCav-stand.dmp"
+
+ALIGN 4
+LanceCavMoving:
+#incbin "Dmp/LanceCav-walk.dmp"
+
+ALIGN 4
+SwordCavStanding:
+#incbin "Dmp/SwordCav-stand.dmp"
+
+ALIGN 4
+SwordCavMoving:
+#incbin "Dmp/SwordCav-walk.dmp"
+
+ALIGN 4
+AxeCavStanding:
+#incbin "Dmp/AxeCav-stand.dmp"
+
+ALIGN 4
+AxeCavMoving:
+#incbin "Dmp/AxeCav-walk.dmp"
+
+ALIGN 4
+BowCavStanding:
+#incbin "Dmp/BowCav-stand.dmp"
+
+ALIGN 4
+BowCavMoving:
+#incbin "Dmp/BowCav-walk.dmp"
+
+ALIGN 4
+BowPalStanding:
+#incbin "Dmp/BowPal-stand.dmp"
+
+ALIGN 4
+BowPalMoving:
+#incbin "Dmp/BowPal-walk.dmp"
+
+ALIGN 4
+SwordPalStanding:
+#incbin "Dmp/SwordPal-stand.dmp"
+
+ALIGN 4
+SwordPalMoving:
+#incbin "Dmp/SwordPal-walk.dmp"
+
+ALIGN 4
+AxePalStanding:
+#incbin "Dmp/AxePal-stand.dmp"
+
+ALIGN 4
+AxePalMoving:
+#incbin "Dmp/AxePal-walk.dmp"
+
 /*ALIGN 4
 SwordCavStanding:
 #incbin "Dmp/Cavalier (M) Sword {SALVAGED}-stand.dmp" 

@@ -204,4 +204,12 @@ Crystal Knife[X]
 
 ## CrystalKnifeDesc
 
-Placeholder.[X]
+Grants 6x WExp.[X]
+
+## SkewerName
+
+Skewer[X]
+
+## SkewerDesc
+
++1 Attack per tile moved.[X]

@@ -21,6 +21,20 @@
 #define BunnyMug 0x13
 #define SongbirdMug 0x14
 #define EagleMug 0x15
+#define BaronMug 0x16
+#define BabyMug 0x17
+#define FHeroDressMug 0x18
+
+#define AxeBoneCard 0xAD
+#define LanceBoneCard 0xAE
+#define SwordCavCard 0xAF
+#define LanceCavCard 0xB0
+#define AxeCavCard 0xB1
+#define BowCavCard 0xB2
+#define SwordPalCard 0xB3
+#define LancePalCard 0xB4
+#define AxePalCard 0xB5
+#define BowPalCard 0xB6
 
 // Characters
 #define HeroChar 0x1
@@ -34,12 +48,14 @@
 #define Songbird 0x9
 #define Prince 0xA
 #define Eagle 0xB
+#define Baby 0xC
 #define YoungPrince 0x20
 #define YoungTeacher 0x21
 #define OldPrince 0x22
 #define Ch0Bunny 0x24
 
 #define Skull 0x25
+#define Baron 0x26
 
 #define Ch2BeastBoss 0xAB
 
@@ -50,6 +66,7 @@
 #define SoldierChar 0x80
 #define Beast 0xAA
 #define Deserter 0x7F
+#define Combatant 0x85
 
 // Classes
 #define UpstartF EirikaLord
@@ -66,6 +83,20 @@
 #define SkyRat 0x80
 #define MageGeneral 0x81
 #define Peer 0x73
+#define LanceBone 0x82
+#define AxeBone 0x83
+#define BowBone 0x55
+#define SwordBone 0x54
+
+#define SwordCav 0x84
+#define AxeCav 0x85
+#define LanceCav 0x5
+#define BowCav 0x86
+#define SwordPal 0x87
+#define AxePal 0x88
+#define BowPal 0x89
+
+#define Veteran 0x7
 
 // Terrain Move Costs
 #define InfantryMC 0x880b849
@@ -135,6 +166,7 @@
 
 #define Butterfly 0xCD
 #define CrystalKnife 0xCE
+#define Skewer 0xCF
 
 //Statuses
 #define SpecialStatusID 5

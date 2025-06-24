@@ -122,6 +122,28 @@ void BattleGenerateHitAttributes(struct BattleUnit* attacker, struct BattleUnit*
         attacker->nonZeroDamage = TRUE;
 }
 
+void ForEachUnitInMovement(void(*func)(struct Unit* unit)) {
+    int ix;
+    int iy;
+
+    for (iy = gBmMapSize.y - 1; iy >= 0; iy--) {
+        for (ix = gBmMapSize.x - 1; ix >= 0; ix--) {
+
+            if (gMapMovementSigned[iy][ix] == 0) {
+                continue;
+            }
+
+            if (gBmMapUnit[iy][ix] == 0) {
+                continue;
+            }
+
+            func(GetUnit(gBmMapUnit[iy][ix]));
+        }
+    }
+
+    return;
+}
+
 
 
 /*bool CheckOHKO(struct Proc* proc) {	

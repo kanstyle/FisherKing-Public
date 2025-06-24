@@ -342,8 +342,9 @@ See there?[4] Where it splashes up?[A]
 ...Let's just make this quick.[A][oe]
 
 [l]
-Splendid directive![4] The Lowlands are[N]
-an acquired taste, to put it mildly.[A]
+Splendid directive![4] This is a land[N]
+where spirits dwell.[A] Best conclude our[N]
+business before they get curious, eh?[A]
 
 [r]
 Hey, Pillow?[4] How're you holding up?[A]

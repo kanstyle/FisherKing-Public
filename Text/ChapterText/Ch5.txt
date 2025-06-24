@@ -1,3 +1,45 @@
 ## Ch5Title
 
 Ch. 5: My Dearest Friend[X]
+
+## Ch5OldPrinceDeath
+
+[fr][LoadPurpleSoldier]
+[r][LoadYoungTeacher]
+[l][LoadOldPrince]
+[fl][LoadPurpleFighter]
+
+[fr]
+The Elder Prince has fallen!
+Fetch the healers!
+
+[fl]
+He's still breathing! Sire,
+we must move you to--
+
+[ml]
+It's all right.
+Calm yourselves.
+
+[fl]
+But, sire--
+
+[mr][MoveMidRight]
+Silence!
+Leave us, you fools!
+
+
+[X]
+
+## Ch5TeacherCries
+
+I could not attend your funeral.
+I couldn't listen to others talk
+about you. They hadn't known you
+as I had known you.
+
+But I wonder if I even knew you myself.
+How could you die like that? With a smile on your face?
+How did you find such satisfaction in your life?
+How could you love this world so much?
+[X]

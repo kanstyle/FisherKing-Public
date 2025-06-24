@@ -70,3 +70,9 @@ Mage-General[X]
 
 ## MageGeneralClassDesc
 Placeholder.[X]
+
+## VeteranClassName
+Veteran[X]
+
+## VeteranClassDesc
+Placeholder.[X]

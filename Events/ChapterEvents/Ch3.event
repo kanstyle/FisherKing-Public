@@ -15,6 +15,7 @@ PointerList:
 TurnBasedEvents:
 	TurnEventPlayer(0x0,BleedoutChapterTurnEvent,1,255)
 	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
+	TurnEventPlayer(0x0,ArenaTurnEvent,1,255)
 	END_MAIN
 
 ALIGN 32
@@ -29,7 +30,6 @@ MiscBasedEvents:
 	END_MAIN
 
 LocationBasedEvents:
-
 	END_MAIN
 
 Dunno1:
@@ -49,18 +49,90 @@ Tutorial:
 	END_MAIN
 
 Units1:
-	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [0,21] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT HeroChar UpstartM 0x40 Level(10,Ally,False)     [0,7] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Paladin 0x40 Level(10,Ally,False)     [0,6] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Paladin 0x40 Level(10,Ally,False)     [0,5] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Paladin 0x40 Level(10,Ally,False)     [0,8] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Paladin 0x40 Level(10,Ally,False)     [0,9] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Paladin 0x40 Level(10,Ally,False)     [1,6] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Paladin 0x40 Level(10,Ally,False)     [1,8] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Teacher Veteran 0x40 Level(10,Ally,False)     [3,17] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Headsman 0x40 Level(10,Ally,False)     [0,6] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Headsman 0x40 Level(10,Ally,False)     [0,5] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Headsman 0x40 Level(10,Ally,False)     [0,8] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Headsman 0x40 Level(10,Ally,False)     [0,9] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Headsman 0x40 Level(10,Ally,False)     [1,6] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Headsman 0x40 Level(10,Ally,False)     [1,8] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT
 
-EnemyUnits:
-	UNIT 0x81 Mercenary 0x40 Level(3,Enemy,True)     [18,7] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+EnemyUnits1:
+	UNIT Combatant SwordCav 0x40 Level(5,Enemy,True)     [17,6] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
+	UNIT Combatant SwordCav 0x40 Level(5,Enemy,True)     [17,8] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
+	UNIT Combatant LanceCav 0x40 Level(5,Enemy,True)     [18,5] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT Combatant LanceCav 0x40 Level(5,Enemy,True)     [18,9] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT Combatant AxeCav 0x40 Level(5,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
+	UNIT Combatant AxeCav 0x40 Level(5,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
+	UNIT Combatant PegasusKnight 0x40 Level(5,Enemy,True)     [18,7] 0b 0x0 0x0 0x0 [KillerLance] ChargeAI
+	UNIT
+	
+EnemyUnits2:
+	UNIT Combatant Mercenary 0x40 Level(5,Enemy,True)     [17,6] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
+	UNIT Combatant Mercenary 0x40 Level(5,Enemy,True)     [17,8] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
+	UNIT Combatant Knight 0x40 Level(5,Enemy,True)     [18,5] 0b 0x0 0x0 0x0 [KillerLance] ChargeAI
+	UNIT Combatant Knight 0x40 Level(5,Enemy,True)     [18,9] 0b 0x0 0x0 0x0 [KillerLance] ChargeAI
+	UNIT Combatant Fighter 0x40 Level(5,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [KillerAxe] ChargeAI
+	UNIT Combatant Fighter 0x40 Level(5,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [KillerAxe] ChargeAI
+	UNIT Combatant Shaman 0x40 Level(5,Enemy,True)     [18,7] 0b 0x0 0x0 0x0 [Pain] ChargeAI
+	UNIT
+
+EnemyUnits3:
+	UNIT Combatant Mercenary 0x40 Level(5,Enemy,True)     [17,6] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
+	UNIT Combatant Mercenary 0x40 Level(5,Enemy,True)     [17,8] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
+	UNIT Combatant Knight 0x40 Level(5,Enemy,True)     [18,5] 0b 0x0 0x0 0x0 [KillerLance] ChargeAI
+	UNIT Combatant Knight 0x40 Level(5,Enemy,True)     [18,9] 0b 0x0 0x0 0x0 [KillerLance] ChargeAI
+	UNIT Combatant Fighter 0x40 Level(5,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [KillerAxe] ChargeAI
+	UNIT Combatant Fighter 0x40 Level(5,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [KillerAxe] ChargeAI
+	UNIT Combatant Shaman 0x40 Level(5,Enemy,True)     [18,7] 0b 0x0 0x0 0x0 [Pain] ChargeAI
+	UNIT
+	
+EnemyUnits4:
+	UNIT Combatant Mercenary 0x40 Level(5,Enemy,True)     [17,6] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
+	UNIT Combatant Mercenary 0x40 Level(5,Enemy,True)     [17,8] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
+	UNIT Combatant Knight 0x40 Level(5,Enemy,True)     [18,5] 0b 0x0 0x0 0x0 [KillerLance] ChargeAI
+	UNIT Combatant Knight 0x40 Level(5,Enemy,True)     [18,9] 0b 0x0 0x0 0x0 [KillerLance] ChargeAI
+	UNIT Combatant Fighter 0x40 Level(5,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [KillerAxe] ChargeAI
+	UNIT Combatant Fighter 0x40 Level(5,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [KillerAxe] ChargeAI
+	UNIT Combatant Shaman 0x40 Level(5,Enemy,True)     [18,7] 0b 0x0 0x0 0x0 [Pain] ChargeAI
+	UNIT
+
+TeacherHeroSongbirdUnits:
+	UNIT Teacher Veteran 0x40 Level(10,Ally,False)     [6,9] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT HeroChar UpstartM 0x40 Level(10,Ally,False)     [8,9] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Songbird Bard 0x40 Level(3,Enemy,False)     [7,9] 0b 0x0 0x0 0x0 [0x0] DoNothingAI
+	UNIT
+	
+ManorGuardUnits:
+	UNIT 0x80 Soldier 0x40 Level(10,NPC,False)     [8,0] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Baron Peer 0x40 Level(10,NPC,False)     [7,0] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT 0x81 Fighter 0x40 Level(10,NPC,False)     [6,0] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+HeroTownUnits:
+	UNIT Teacher Veteran 0x40 Level(10,Ally,False)     [12,18] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Headsman 0x40 Level(10,Ally,False)     [11,18] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT HeroChar UpstartM 0x40 Level(10,Ally,False)     [11,19] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Pillow LowVoice 0x40 Level(3,Ally,False)     [12,19] 0b 0x0 0x0 0x0 [Loneliness, Pain] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+TownGuardUnits:
+	UNIT 0x81 Fighter 0x40 Level(10,NPC,False)     [15,20] 0b 0x0 0x0 0x0 [IronAxe] [0x0,0x0,0x0,0x0]
+	UNIT 0x80 Soldier 0x40 Level(10,NPC,False)     [15,19] 0b 0x0 0x0 0x0 [IronLance] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+TeacherTownUnits:
+	UNIT Teacher Veteran 0x40 Level(10,Ally,False)     [3,17] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
+
+BunnyUnits:
+	UNIT Bunny BunnyRecruit 0x40 Level(5,NPC,False)     [2,18] 0b 0x0 0x0 0x0 [Axereaver,Javelin] DoNothingAI	
+	UNIT
+	
+BabyUnits:
+	UNIT Baby Mage_F 0x40 Level(5,NPC,False)     [18,19] 0b 0x0 0x0 0x0 [Fire] DoNothingAI	
 	UNIT
 
 Traps1:
@@ -73,13 +145,151 @@ Traps2:
 
 BeginningScene:
 	SetFlag(BleedoutFlag)
-	LOAD1 0x1 EnemyUnits
+	
+	SetBackgroundSlow(Town_Gate)
+	BROWNBOXTEXT Ch3CityGatesBrownBox [8,8]
+	Text(Ch3StartGates)
+	FADI 6
+	
+	LOMA BaronManorEntranceCh
+	FADU 6
+	BROWNBOXTEXT Ch3BaronManorBrownBox [8,8]
+	LOAD2 0x1 TeacherHeroSongbirdUnits
 	ENUN
+	MOVE 5 Teacher [6,5]
+	MOVE 5 Songbird [7,5]
+	MOVE 5 HeroChar [8,5]
+	ENUN
+	STAL 30
+	LOAD2 0x1 ManorGuardUnits
+	ENUN
+	MOVE 5 0x80 [8,3]
+	MOVE 5 Baron [7,2]
+	MOVE 5 0x81 [6,3]
+	ENUN
+	Highlight(Baron)
+	Text(Ch3StartManorOutside)
+	MOVE 5 HeroChar [9,5]
+	MOVE 5 Teacher [5,5]
+	ENUN
+	STAL 30
+	MOVE 5 0x80 [8,5]
+	MOVE 5 0x81 [6,5]
+	ENUN
+	STAL 30
+	MOVE 5 0x80 [8,9]
+	MOVE 5 Songbird [7,9]
+	MOVE 5 0x81 [6,9]
+	ENUN
+	DISA 0x80
+	DISA 0x81
+	DISA Songbird
+	STAL 45
+	
+	Highlight(Baron)
+	Text(Ch3StartManorOutside2)
+	FADI 6
+	DoAllThree
+	SetBackground(Castle_Hall)
+	Text(Ch3StartManorInside)
+	FADI 6
+	
+	LOMA Ch3
+	CAMERA [18,21]
+	LOAD2 0x1 HeroTownUnits
+	ENUN
+	
+	FADU 6
+	BROWNBOXTEXT Ch3PlazaBrownBox [8,8]
+	STAL 30
+	Highlight(Dragon)
+	SetBackground(Town_Day)
+	Text(Ch3StartTown)
+	RemoveBackground
+
+	LOAD2 0x1 BunnyUnits
+	MOVE 5 Bunny [10,18]
+	ENUN
+	Highlight(Bunny)
+	Text(Ch3StartBunny)
+	FADI 6
+	
+	DoAllThree
+	CAMERA [0,18]
+	LOAD2 0x1 TeacherTownUnits
+	LOAD2 0x1 TownGuardUnits
+	FADU 6
+	STAL 60
+	
+	MOVE 5 0x80 [7,18]
+	MOVE 5 0x81 [8,19]
+	Highlight(0x80)
+	Text(Ch3StartGuards)
+	Highlight(Teacher)
+	Text(Ch3StartCommotion)
+	FADI 6
+	
+	LOAD2 0x1 BunnyUnits
+	MOVE 65535 Bunny [1,7]
+	CUSA Bunny
+	LOAD1 0x1 EnemyUnits1
+	ENUN
+
 	GotoPrepScreen
+	SVAL 2 0x20
+	ASMC AutoLevelAllPromoASMC|1
+	
 	ENDA
+	
+
 
 EndingScene:
 	MNC2 Ch0
+	NoFade
+	ENDA
+	
+Turn1BabyIntro:
+	CAMERA [0,21]
+	MOVE 5 Teacher [14,19]
+	Highlight(Teacher)
+	Text(Ch3T1SoldierTalk)
+
+	LOAD2 0x1 BabyUnits
+	MOVE 5 Baby [13,19]
+	//Text(Ch3BabyIntro)
+	//CenterTextbox(Ch3BabyIntroNarration)
+	CenterTextbox(Ch3MysteryRules)
+	NoFade
+	ENDA
+	
+ArenaTurnEvent:
+	CHECK_ALIVE Combatant
+	BNE 0x0 0x0 0xC //if combatants are not alive, skip
+		COUNTER_INC 1 //increase counter 1 by 1
+		CenterTextbox(DebugPauseText)
+		COUNTER_CHECK 1
+		CenterTextbox(DebugPauseText)
+		
+		SVAL 1 0x10 //if counter is not 1, skip, repeat for each arena round
+		BNE 0x2 0x1 0xC
+			CenterTextbox(DebugPauseText)
+			LOAD2 0x1 EnemyUnits2
+		LABEL 0x2
+		
+		SVAL 1 0x20
+		BNE 0x3 0x1 0xC
+			CenterTextbox(DebugPauseText)
+			LOAD2 0x1 EnemyUnits3
+		LABEL 0x3
+		
+		SVAL 1 0x30
+		BNE 0x4 0x1 0xC
+			CenterTextbox(DebugPauseText)
+			LOAD2 0x1 EnemyUnits4
+		LABEL 0x4
+		CenterTextbox(DebugPauseText)
+	LABEL 0x0
+	CenterTextbox(DebugPauseText)
 	NoFade
 	ENDA
 

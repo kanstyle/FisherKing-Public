@@ -52,3 +52,10 @@ adding yourself!
 - Der: Bandana Archer battle animation
 - Dominus Vobiscum: Noble map sprite
 - Flasuban: Sword peg anim, village v2 tileset
+- epicer: Lance Bonewalker map sprite, class card
+- Snerdels: Axe Bonewalker map sprite
+- SALVAGED: Monoweapon cav map sprites, monoweapon pal class cards
+- Flasuban: Bow cav map sprites, Village V2
+- RobertFPY: Monoweapon paladin map sprites, cav class cards
+- Leif: Bow paladin map sprites, class card
+- MeatOfJustice: Axe pal class card

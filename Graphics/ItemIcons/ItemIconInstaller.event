@@ -78,7 +78,7 @@ ORG ItemIconEntry(BraveLance)
 
 ORG ItemIconEntry(SteelLance)
 #incbin "Lances/SteelLance.dmp"		// Ereshkigal
-
+ 
 ORG ItemIconEntry(Horseslayer)
 #incbin "Lances/Horseslayer-Ereshkigal.dmp"		// Ereshkigal
 
@@ -92,7 +92,10 @@ ORG ItemIconEntry(KillerLance)
 #incbin "Lances/KillerLance-Ereshkigal.dmp"		// Ereshkigal
 
 ORG ItemIconEntry(Axereaver)
-#incbin "Lances/Axereaver.dmp"		// Ereshkigal
+#incbin "Lances/Axereaver-Ereshkigal.dmp"		// Ereshkigal
+
+ORG ItemIconEntry(Skewer)
+#incbin "Lances/Skewer.dmp"		// Ereshkigal
 
 // axes
 ORG ItemIconEntry(IronAxe)

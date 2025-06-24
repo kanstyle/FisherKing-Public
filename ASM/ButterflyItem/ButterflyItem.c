@@ -38,9 +38,25 @@ void ButterflyItemEffect(ProcPtr proc) {
 	CallEvent(&ButterflyItemEvent, 1);
 	
 	BattleApplyItemEffect(proc);
+    BeginBattleAnimations();
+	return;
+}
+
+/*void ButterflyItemEffect(ProcPtr proc) {
+	BattleInitItemEffect(GetUnit(gActionData.subjectIndex), gActionData.itemSlotIndex);
+	for (int i = 0; i < 5; ++i) {
+		if(GetItemIndex(gActiveUnit->items[i]) == 0xCD){  
+			gActiveUnit->items[i] = GetItemAfterUse(gActiveUnit->items[i]);
+			break;
+		} 
+	}
+	
+	CallEvent(&ButterflyItemEvent, 1);
+	
+	BattleApplyItemEffect(proc);
     //BeginBattleAnimations();
 	return;
-} 
+}*/ 
 
 s8 ButterflyItemUsability(struct Unit* unit)
 {

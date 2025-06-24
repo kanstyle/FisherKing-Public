@@ -5,6 +5,7 @@
 #define Ch2 0x2
 #define Ch3 0x3
 #define MidnightCh 0x2C
+#define BaronManorEntranceCh 0x2D
 #ifdef USE_TEST_MAP
 	#define BossRush 0x0
 #else
@@ -32,6 +33,8 @@
 #define Ch3MapID 0x1A
 #define Ch3MapChangesID 0x1B
 #define Ch3EventsID 0x1C
+
+#define BaronManorEntranceMapID 0x1D
 
 //TILESET IDs (START FROM 0x88 when replacing stuff)
 #define VanillaFieldsObjectID 0x1

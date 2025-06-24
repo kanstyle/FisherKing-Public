@@ -160,3 +160,27 @@ EagleMugData: // LL
 #incbin "dmp/Eagle_palette.dmp"
 #incbin "dmp/Eagle_minimug.dmp"
 setMugEntry(EagleMug, EagleMugData, 3, 5, 4, 3)
+
+ALIGN 16
+BaronMugData: // LL
+#incbin "dmp/Baron_mug.dmp"
+#incbin "dmp/Baron_frames.dmp"
+#incbin "dmp/Baron_palette.dmp"
+#incbin "dmp/Baron_minimug.dmp"
+setMugEntry(BaronMug, BaronMugData, 2, 5, 2, 3)
+
+ALIGN 16
+BabyMugData: // LL
+#incbin "dmp/Baby_mug.dmp"
+#incbin "dmp/Baby_frames.dmp"
+#incbin "dmp/Baby_palette.dmp"
+#incbin "dmp/Baby_minimug.dmp"
+setMugEntry(BabyMug, BabyMugData, 2, 7, 3, 5)
+
+ALIGN 16
+FHeroDressMugData: // LL
+#incbin "dmp/FHeroDress_mug.dmp"
+#incbin "dmp/FHeroDress_frames.dmp"
+#incbin "dmp/FHeroDress_palette.dmp"
+#incbin "dmp/FHeroDress_minimug.dmp"
+setMugEntry(FHeroDressMug, FHeroDressMugData, 3, 5, 3, 3)

@@ -56,12 +56,12 @@ Tutorial:
 	END_MAIN
 
 Units1:
-	UNIT Dragon Paladin 0x40 Level(10,Ally,False)     [16,13] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Paladin 0x40 Level(10,Ally,False)     [17,12] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Paladin 0x40 Level(10,Ally,False)     [19,12] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Paladin 0x40 Level(10,Ally,False)     [18,13] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Paladin 0x40 Level(10,Ally,False)     [17,14] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Paladin 0x40 Level(10,Ally,False)     [16,12] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [16,13] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [17,12] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [19,12] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [18,13] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [17,14] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [16,12] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT
 	
 UnitsSongbird:
@@ -71,7 +71,7 @@ UnitsSongbird:
 	UNIT
 	
 UnitsStartEvent:
-	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [19,14] 0b 0x0 0x1 REDA19R13 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Teacher Veteran 0x40 Level(10,Ally,False)     [19,14] 0b 0x0 0x1 REDA19R13 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT HeroChar UpstartM 0x40 Level(3,Ally,False)     [18,14] 0b 0x0 0x1 REDA18R12 [IronBow, IronSword, HerosFlair, Restore] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Headsman 0x40 Level(3,Ally,False)     [17,14] 0b 0x0 0x1 REDA17R13 [SteelAxe, SlimAxe, Bomb, Vulnerary] [0x0,0x0,0x0,0x0]
 	UNIT
@@ -84,18 +84,18 @@ EnemyUnits:
 	//t1 pp
 	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [13,13] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
 	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [13,11] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
-	UNIT Beast Bonewalker 0x40 Level(4,Enemy,True)     [14,12] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT Beast LanceBone 0x40 Level(4,Enemy,True)     [14,12] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 	
 	//t1 ep
 	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [10,12] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
 	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [10,10] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
 	
 	//t2 pp
-	UNIT Beast Bonewalker 0x40 Level(4,Enemy,True)     [6,12] 0b 0x0 0x0 0x0 [IronSword] ChargeAI
+	UNIT Beast AxeBone 0x40 Level(4,Enemy,True)     [6,12] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
 	UNIT Pigeon SkyRat 0x40 Level(4,Enemy,False)     [12,3] 0b 0x0 0x0 0x0 [SteelLance, IronLance, Vulnerary] [0x0,0x0,0x0,0x0]
 	
 	//t2 ep
-	UNIT Beast Bonewalker 0x40 Level(4,Enemy,True)     [7,10] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	UNIT Beast AxeBone 0x40 Level(4,Enemy,True)     [7,10] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
 	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [3,9] 0b 0x0 0x0 0x0 [EvilEye] ChargeAI
 
 	
@@ -103,8 +103,8 @@ EnemyUnits:
 	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [13,0] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
 	
 	//t3 pp
-	UNIT Beast Tarvos 0x40 Level(4,Enemy,True)     [8,5] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI // group AI with the nearby skeleton and mogall
-	UNIT Beast Bonewalker 0x40 Level(4,Enemy,True)     [6,5] 0b 0x0 0x0 0x0 [Javelin] AttackIn2RangeAI
+	UNIT Beast AxeBone 0x40 Level(4,Enemy,True)     [8,5] 0b 0x0 0x0 0x0 [IronAxe] AttackIn2RangeAI // group AI with the nearby skeleton and mogall
+	UNIT Beast LanceBone 0x40 Level(4,Enemy,True)     [6,5] 0b 0x0 0x0 0x0 [Javelin] AttackIn2RangeAI
 	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [5,6] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI 
 	
 	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [4,13] 0b 0x0 0x0 0x0 [RottenClaw] StationaryBossAI
@@ -115,7 +115,7 @@ EnemyUnits:
 	
 	//t4 pp
 	UNIT Beast Gargoyle 0x40 Level(4,Enemy,True)     [0,5] 0b 0x0 0x0 0x0 [IronLance] AttackIn2RangeAI
-	UNIT Beast Tarvos 0x40 Level(4,Enemy,True)     [7,0] 0b 0x0 0x0 0x0 [IronLance] AttackIn2RangeAI
+	UNIT Beast Tarvos 0x40 Level(4,Enemy,True)     [7,0] 0b 0x0 0x0 0x0 [IronAxe] AttackIn2RangeAI
 	
 	//t5
 	UNIT Beast Gargoyle 0x40 Level(4,Enemy,True)     [0,3] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
@@ -154,7 +154,7 @@ HunterUnits:
 	UNIT
 	
 TeacherUnits:
-	UNIT Teacher Paladin 0x40 Level(10,Ally,False)     [4,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Teacher Veteran 0x40 Level(10,Ally,False)     [4,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT
 	
 PrinceUnits:
@@ -276,6 +276,7 @@ EndingScene:
 	MusicChange(SoftSwooshSoundEffect)
 	Text(Ch2EndSongbirdTalk)
 	RemoveBackgroundSlow
+	FadeOutMusic
 	DoAllThree
 	
 	LOMA MidnightCh
@@ -292,7 +293,7 @@ EndingScene:
 	MOVE 5 Eagle [7,5]
 	ENUN
 	Highlight(Eagle)
-	MusicChange(MomentofSerenityID)
+	MusicChange(ForbiddenForestID)
 	Text(Ch2EndPrinceEagle2)
 	FadeOutMusic
 	FADI 4
@@ -336,7 +337,7 @@ EndingScene:
 	CGText(Storybook9Text)
 	RemoveBackground
 	
-	MNC2 Ch0
+	MNC2 Ch3
 	NoFade
 	ENDA
 	

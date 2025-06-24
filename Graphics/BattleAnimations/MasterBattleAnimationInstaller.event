@@ -19,6 +19,112 @@
 
 ALIGN 4
 {
+#include "Animations/AxeBone/Axe Installer.event"
+}
+{
+#include "Animations/HaxeBone/Handaxe Installer.event"
+}
+ALIGN 4
+AxeBoneAnim:
+AxeAnim(0xDC)
+HandAxeAnim(0xDD)
+UnarmedAnim(0xDC)
+WORD 0x0 // Seperator
+
+ALIGN 4
+VeteranAnim:
+SpearAnim(0x3A)
+SwordAnim(0x3B)
+HandAxeAnim(0xDB)
+AxeAnim(0xDA)
+UnarmedAnim(0x3C)
+WORD 0x0 // Seperator
+
+ALIGN 4
+PalLanceAnim:
+SpearAnim(0x3A)
+UnarmedAnim(0x3C)
+WORD 0x0 // Seperator
+
+ALIGN 4
+PalSwordAnim:
+SwordAnim(0x3B)
+UnarmedAnim(0x3C)
+WORD 0x0 // Seperator
+
+ALIGN 4
+{
+#include "Animations/PalAxe/Axe Installer.event"
+}
+{
+#include "Animations/PalHandaxe/Handaxe Installer.event"
+}
+ALIGN 4
+PalAxeAnim:
+HandAxeAnim(0xDB)
+AxeAnim(0xDA)
+UnarmedAnim(0x3C)
+WORD 0x0 // Seperator
+
+ALIGN 4
+{
+#include "Animations/PalBow/Bow Installer.event"
+}
+ALIGN 4
+PalBowAnim:
+BowAnim(0xD9)
+UnarmedAnim(0x3C)
+WORD 0x0 // Seperator
+
+ALIGN 4
+{
+#include "Animations/CavBow/Bow Installer.event"
+}
+ALIGN 4
+CavBowAnim:
+BowAnim(0xD8)
+UnarmedAnim(0xD3)
+WORD 0x0 // Seperator
+
+ALIGN 4
+{
+#include "Animations/CavAxe/Axe Installer.event"
+}
+{
+#include "Animations/CavHaxe/Handaxe Installer.event"
+}
+ALIGN 4
+CavAxeAnim:
+HandAxeAnim(0xD7)
+AxeAnim(0xD6)
+UnarmedAnim(0xD3)
+WORD 0x0 // Seperator
+
+ALIGN 4
+{
+#include "Animations/CavLance/Lance Installer.event"
+}
+{
+#include "Animations/CavUnarmed/Unarmed Installer.event"
+}
+ALIGN 4
+CavLanceAnim:
+SpearAnim(0xD5)
+UnarmedAnim(0xD3)
+WORD 0x0 // Seperator
+
+ALIGN 4
+{
+#include "Animations/CavSword/Sword Installer.event"
+}
+ALIGN 4
+CavSwordAnim:
+SwordAnim(0xD4)
+UnarmedAnim(0xD4)
+WORD 0x0 // Seperator
+
+ALIGN 4
+{
 #include "Animations/PegLance/Lance Installer.event"
 }
 ALIGN 4

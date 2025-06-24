@@ -87,12 +87,293 @@ them on a spit, or something.[A]
 
 [ml]
 Ah.[4][4] True dedication[N]
-to the craft.[A]
+to the craft.[A][X]
 
+## Ch3CityGatesBrownBox
+City Gates[X]
 
+## Ch3BaronManorBrownBox
+Baron's Manor[X]
 
+## Ch3PlazaBrownBox
+Later...[X]
 
+## Ch3StartGates
+[r][LoadTeacher]
+[fr][LoadHeroM]
+[l][LoadDragon]
+[fl][LoadPillow]
+[fr][ts]
+Alright, we're here![N]
+Payday![A]
 
+[fl]
+Woohoo![A]
+
+[l][ts]
+Finally.[A]
+
+[r]
+We're turning in the bounty[N]
+straightaway, then?[AN]
+
+[fr]
+You got it.[4] Let's go pay[N]
+the baron a visit.[A]
+
+[fl]
+Ah.[4] You can go without me,[N]
+then.[4] You know, in case...[A]
+
+[r]
+In case the baron isn't fond[N]
+of low mages, you mean?[A]
+
+[fl]
+Mm-hmm.[A]
+
+[l][ts]
+I'll stay behind with you, then.[N]
+We'll let the guys do the grunt work.[A][css]
+
+[fr][ts][MoveFarRight]
+What?![4] Like getting a fat[N]
+paycheck isn't the fun part?[A]
+
+[l][ts]
+The fun part's hanging out with Pillow,[N]
+for me.[4] The rest is just work.[A]
+
+[fl]
+Awww...[A]
+
+[fr][ts][ce]
+Yeah, yeah.[4][oe] See you in a while, then.[A]
+[X]
+
+## Ch3StartManorOutside
+[r][LoadSongbird]
+[fr][LoadHeroM]
+[l][LoadPurpleSoldier]
+[fl][LoadBaron][ts]
+Ah, splendid![4] There's the one.[4][N]
+Hero's Company, was it?[AN]
+
+[fr]
+That's us, milord![4][N]
+One Songbird, as promised.[A]
+
+[fl]
+Indeed.[4] Was the fighting fierce?[A]
+
+[fr]
+Nothing we couldn't handle.[A]
+
+[fl]
+A worthy answer.[4] And you, Songbird.[N]
+Have you anything to say to me?[AN][ts]
+There must be something, knowing how[N]
+long you agitated in my city.[A]
+
+[r]
+I will not resist.[4] You need not harm me.[N][4][4]
+No good will come of doing so.[A]
+
+[fl]
+Ha![4][4] Is that really all?[A]
+
+[r]
+I want my words to reach the hearts of[N]
+all the people in this land.[AN]
+You are but one of them.[4][4] That's all.[A]
+
+[fl]
+Hm.[4] Well-spoken.[A]
+
+[l]
+Shall we take them away, milord?[A]
+
+[fl]
+Please do.[A]
+[X]
+
+## Ch3StartEllipsis
+[mr][LoadTeacher]
+...[A][X]
+
+## Ch3StartFlashback
+[mr][LoadYoungTeacher]
+[ml][LoadOldPrince]
+[mr]
+You're [oq]but one of the people",[N]
+you say?[AN]
+And that's why you don't want a[N]
+fancy funeral?[A]
+
+[ml]
+Well, not that I think it's a[N]
+realistic request, per se...[A]
+
+[mr]
+If you're trying to convince me of[N]
+your humility, it won't work.[AN]
+I've seen when you win at cards.[A]
+
+[ml][ts]
+Ha![4] No, no![4] Even I'm not[N]
+so delusional.[AN]
+No, this is a selfish request,[N]
+through and through.[A]
+
+[mr][ts]
+And how's that?[A]
+
+[ml]
+Well![4] It's said that in death,[N]
+the spirit splits in two.[AN]
+One half goes to the land of the dead,[N]
+to rest deep beneath the earth.[AN]
+And the other is given to the daemons,[AN]
+who puppeteer it through the hearts and[N]
+minds of those who knew you.[AN]
+Thus, by their play, shaping your legacy.[A]
+
+[mr]
+The work of daemons, hmm?[A]
+
+[ml]
+And I thought -- wouldn't it be lonely?[AN]
+Your true self, watching from afar, while[N]
+the daemons parade your skin about?[AN]
+And none of the living can tell the[N]
+difference?[AN]
+Why, I'd be jealous of my other self.[AN]
+[ce]Especially if he had large muscles,[N]
+and could hold his liquor well...[A]
+
+[ml][ts]
+Ah, not to worry, my prince.[AN]
+If such rumors spread, I'd set[N]
+them straight immediately.[A]
+
+[mr][oe]
+Ha![4][4] On second thought, some[N]
+embellishment may be good...[A]
+
+[X]
+
+## Ch3StartManorOutside2
+[fr][LoadTeacher]
+[r][LoadHeroM]
+[ml][LoadBaron]
+Placeholder.[A]
+[X]
+
+## Ch3StartManorInside
+[r][LoadTeacher]
+[fr][LoadHeroM]
+[ml][LoadBaron]
+Placeholder.[A]
+[X]
+
+## Ch3StartTown
+[r][LoadTeacher]
+[fr][LoadHeroM]
+[l][LoadDragon]
+[fl][LoadPillow]
+Placeholder.[A]
+[X]
+
+## Ch3StartBunny
+[r][LoadHeroM]
+[fr][LoadDragon]
+[ml][LoadBunny]
+Placeholder.[A]
+[X]
+
+## Ch3StartGuards
+[r][LoadPurpleSoldier]
+[fr][LoadPurpleFighter]
+Placeholder![A]
+[X]
+
+## Ch3StartCommotion
+[ml][LoadTeacher]
+Placeholder?[A]
+[X]
+
+## Ch3T1SoldierTalk
+[ml][LoadTeacher]
+[r][LoadPurpleSoldier]
+[fr][LoadPurpleFighter]
+Placeholder?[A]
+[X]
+
+## Ch3MysteryRules
+
+Teacher will have to solve[N]
+a mystery in this chapter by[N]
+gathering information and then[N]
+answering a series of questions.[AN]
+He will have [ToggleRed]unlimited movement[N]
+and talks[ToggleRed] during each turn;[N]
+however, answering a question[N]
+wrong will end his turn without[N]
+progressing.[AN]
+He has [ToggleRed]unlimited attempts[ToggleRed] to[N]
+solve the mystery, but solving[N]
+it quicker will result in a[N]
+better reward.[A][X]
+
+## Ch3BabyIntro
+
+[mr][LoadTeacher]
+[l][LoadCivBoy]
+[fl][LoadCivGirl]
+
+[mr]
+No, I'm not [oq]stupid." In fact, I'd[N]
+wager I'm smarter than any child.[A]
+
+[l]
+Oh yeah?[4][4] Prove it![A]
+
+[mr]
+Hmm...[AN]
+[ts]Alright.[4][4] Imagine you are trapped in a[N]
+basement, faced with three doors.[A]
+
+[l][MoveLeft][ts]
+Middle door![A]
+
+[fl][MoveFarLeft]
+No, dummy![4][4] Wait 'till he's done![A]
+
+[mr][ts]
+Behind two doors is a terrifying beast,[N]
+and behind the third is your escape.[AN]
+You choose the middle door. Your friend opens[N]
+the left, sees a beast, and closes it.[AN]
+Should you change your guess to the right?[A]
+
+[l]
+Middle door, baby![A]
+
+[fl][ts][MoveFarLeft]
+No![4] You're supposed to--[4][4]
+[mr][ts][ClearFace]
+[fl][ts]
+[N]Hey, wait![4][4] He's leaving![A]
+[X]
+
+## Ch3BabyIntroNarration
+
+[oq]Heh. That one never fails,"[N]
+I thought with a smile on my face.[N]
+You have to appreciate your small[N]
+victories, even over people one-[N]
+eighth your age.[A]
+[X]
 
 
 
@@ -266,3 +547,13 @@ Bye![b][AN]
 [ml][clear]
 [r][tmm]
 (Heh... my headache went away.)[AN][X]
+
+
+## Ch3Notes
+
+As you know, the founder of our nation[N]
+sought to learn the nature of all things.[AN]
+She traveled to the Lowlands in pursuit[N]
+of wisdom, where she became one with the earth.[A]
+Thus 
+[X]
