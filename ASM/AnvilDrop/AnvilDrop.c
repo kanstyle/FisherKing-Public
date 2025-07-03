@@ -13,7 +13,7 @@ void AnvilDropEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB) {
 		}
 	}
 	return;
-}
+} //penis
 
 /*void AnvilDropEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB) {
 	if (&gBattleActor == bunitB) {
