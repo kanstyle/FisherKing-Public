@@ -7,13 +7,13 @@ extern int prMovGetter(struct Unit* unit);
 extern int AnvilDropID_Link;
 
 void AnvilDropEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB) {
-	if(SkillTester(bunitA, AnvilDropID_Link)) {
-		if (ABS(bunitA->battleSpeed - bunitB->battleSpeed) < BATTLE_FOLLOWUP_SPEED_THRESHOLD) {
-			bunitA->battleAttack += (GetItemMight(bunitA->weapon));
+	if(SkillTester(bunitB, AnvilDropID_Link) == true) {
+		if (!((bunitB->battleSpeed - bunitA->battleSpeed) > BATTLE_FOLLOWUP_SPEED_THRESHOLD)) {
+			bunitB->battleAttack += (GetItemMight(bunitB->weapon));
 		}
 	}
 	return;
-} //penis
+}
 
 /*void AnvilDropEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB) {
 	if (&gBattleActor == bunitB) {
