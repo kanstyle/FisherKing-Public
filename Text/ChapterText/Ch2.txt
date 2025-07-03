@@ -371,13 +371,27 @@ Mm-hmm.[4] Thanks.[A]
 
 ## Ch2IntroEnemiesSpawned
 
-[ml][LoadHunter][ts]
+[r][LoadHunter][ts]
 Ah, and here they are![N]
 Hello, lads.[4] Come to play?[A]
 
-[mr][LoadHeroM][ts]
-Careful, everyone![N]
-These things're tough.[A]
+[fr][LoadHeroM][ts]
+Hold on.[4] Those are humans![N]
+...Aren't they?[A]
+
+[r]
+Indeed.[4] It appears so, anyway.[4]
+I call 'em Lowlanders.[AN]
+First saw them a few years back.[N]
+They don't speak, but they hunt.[A]
+
+[fr]
+But the Lowlands aren't populated![4]
+How could--[A]
+
+[r]
+Sorry, lad, but there's little[N]
+time to discuss![A]
 [X]
 
 ## Ch2IntroPigeonSkull
@@ -565,12 +579,15 @@ children fade, leaving the house silent.[AN]
 [X]
 
 ## Ch2TentTextGeneric
-You've no idea why someone would hunt[N]
-in the Lowlands, let alone sleep out[N]
-there.[AN]
-The tent contains a high-quality bow,[N]
-and no owner in sight.[N]
-You decide to take it.[A][X]
+Do the Lowlanders live here?[N]
+The tent stands, but there's[N]
+no sign of food stores or[N]
+bedding.[AN]
+All the tent contains is a[N]
+high-quality bow, and no[N]
+owner in sight.[N]
+You decide to take it, hoping[N]
+it isn't cursed.[A][X]
 
 ## Ch2TentTextHunter
 [ml][LoadHunter]

@@ -15,7 +15,9 @@ PointerList:
 TurnBasedEvents:
 	TurnEventPlayer(0x0,BleedoutChapterTurnEvent,1,255)
 	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
+	
 	TurnEventPlayer(0x0,ArenaTurnEvent,1,255)
+	TurnEventPlayer(0x0,Turn1BabyIntro,1,1)
 	END_MAIN
 
 ALIGN 32
@@ -119,8 +121,8 @@ HeroTownUnits:
 	UNIT
 	
 TownGuardUnits:
-	UNIT 0x81 Fighter 0x40 Level(10,NPC,False)     [15,20] 0b 0x0 0x0 0x0 [IronAxe] [0x0,0x0,0x0,0x0]
-	UNIT 0x80 Soldier 0x40 Level(10,NPC,False)     [15,19] 0b 0x0 0x0 0x0 [IronLance] [0x0,0x0,0x0,0x0]
+	UNIT 0x81 Fighter 0x40 Level(10,NPC,False)     [7,18] 0b 0x0 0x0 0x0 [IronAxe] [0x0,0x0,0x0,0x0]
+	UNIT 0x80 Soldier 0x40 Level(10,NPC,False)     [8,19] 0b 0x0 0x0 0x0 [IronLance] [0x0,0x0,0x0,0x0]
 	UNIT
 	
 TeacherTownUnits:
@@ -206,6 +208,7 @@ BeginningScene:
 	SetBackground(Town_Day)
 	Text(Ch3StartTown)
 	RemoveBackground
+	FADU 16
 
 	LOAD2 0x1 BunnyUnits
 	MOVE 5 Bunny [10,18]
@@ -223,10 +226,13 @@ BeginningScene:
 	
 	MOVE 5 0x80 [7,18]
 	MOVE 5 0x81 [8,19]
+	ENUN
 	Highlight(0x80)
 	Text(Ch3StartGuards)
 	Highlight(Teacher)
 	Text(Ch3StartCommotion)
+	MOVE 5 Teacher [6,18]
+	
 	FADI 6
 	
 	LOAD2 0x1 BunnyUnits
@@ -240,8 +246,6 @@ BeginningScene:
 	ASMC AutoLevelAllPromoASMC|1
 	
 	ENDA
-	
-
 
 EndingScene:
 	MNC2 Ch0
@@ -250,12 +254,15 @@ EndingScene:
 	
 Turn1BabyIntro:
 	CAMERA [0,21]
-	MOVE 5 Teacher [14,19]
+	MOVE 5 Teacher [6,18]
+	ENUN
 	Highlight(Teacher)
 	Text(Ch3T1SoldierTalk)
 
 	LOAD2 0x1 BabyUnits
-	MOVE 5 Baby [13,19]
+	ENUN
+	MOVE 5 Baby [6,19]
+	ENUN
 	//Text(Ch3BabyIntro)
 	//CenterTextbox(Ch3BabyIntroNarration)
 	CenterTextbox(Ch3MysteryRules)

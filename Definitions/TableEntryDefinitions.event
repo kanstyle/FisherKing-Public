@@ -65,6 +65,7 @@
 // Generic Characters
 #define SoldierChar 0x80
 #define Beast 0xAA
+#define Lowlander 0xAC
 #define Deserter 0x7F
 #define Combatant 0x85
 

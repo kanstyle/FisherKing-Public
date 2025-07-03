@@ -153,7 +153,7 @@ Baron[X]
 Placeholder.[X]
 
 ## CombatantName
-Combatant[X]
+Gladiator[X]
 
 ## CombatantDesc
 Placeholder.[X]
@@ -162,4 +162,10 @@ Placeholder.[X]
 Baby[X]
 
 ## BabyDesc
+Placeholder.[X]
+
+## LowlanderName
+Lowlander[X]
+
+## LowlanderDesc
 Placeholder.[X]

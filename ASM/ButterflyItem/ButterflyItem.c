@@ -32,7 +32,7 @@ void ButterflyUsabilityFunctionWrapper() {
     ");
 }*/
 
-void ButterflyItemEffect(ProcPtr proc) {
+/*void ButterflyItemEffect(ProcPtr proc) {
 	BattleInitItemEffect(GetUnit(gActionData.subjectIndex), gActionData.itemSlotIndex);
 	
 	CallEvent(&ButterflyItemEvent, 1);
@@ -40,9 +40,9 @@ void ButterflyItemEffect(ProcPtr proc) {
 	BattleApplyItemEffect(proc);
     BeginBattleAnimations();
 	return;
-}
+}*/
 
-/*void ButterflyItemEffect(ProcPtr proc) {
+void ButterflyItemEffect(ProcPtr proc) {
 	BattleInitItemEffect(GetUnit(gActionData.subjectIndex), gActionData.itemSlotIndex);
 	for (int i = 0; i < 5; ++i) {
 		if(GetItemIndex(gActiveUnit->items[i]) == 0xCD){  
@@ -56,7 +56,7 @@ void ButterflyItemEffect(ProcPtr proc) {
 	BattleApplyItemEffect(proc);
     //BeginBattleAnimations();
 	return;
-}*/ 
+} 
 
 s8 ButterflyItemUsability(struct Unit* unit)
 {
