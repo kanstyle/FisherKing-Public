@@ -46,7 +46,7 @@ int GenderswapAction(struct Proc* proc) {
 		int staffRank = gActiveUnit->ranks[4];
 		
 		gActiveUnit->ranks[0] = bowRank; //bow turns into sword
-		gActiveUnit->ranks[6] = staffRank; //staff turns into bomb
+		gActiveUnit->ranks[5] = staffRank; //staff turns into tome
 		gActiveUnit->ranks[3] = 0; //clear bow rank
 		gActiveUnit->ranks[4] = 0; //clear staff rank
 		
@@ -60,12 +60,12 @@ int GenderswapAction(struct Proc* proc) {
 	//female to male
 	else if (gActiveUnit->pClassData->number == UpstartF_Link) {		
 		int swordRank = gActiveUnit->ranks[0];
-		int bombRank = gActiveUnit->ranks[6];
+		int tomeRank = gActiveUnit->ranks[5];
 		
 		gActiveUnit->ranks[3] = swordRank; //sword turns into bow
-		gActiveUnit->ranks[4] = bombRank; //bomb turns into staff
+		gActiveUnit->ranks[4] = tomeRank; //tome turns into staff
 		gActiveUnit->ranks[0] = 0; //clear sword rank
-		gActiveUnit->ranks[6] = 0; //clear bomb rank
+		gActiveUnit->ranks[5] = 0; //clear tome rank
 		
 		gActiveUnit->pClassData = GetClassData(UpstartM_Link);
 		

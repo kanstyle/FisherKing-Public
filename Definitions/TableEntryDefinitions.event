@@ -24,6 +24,9 @@
 #define BaronMug 0x16
 #define BabyMug 0x17
 #define FHeroDressMug 0x18
+#define AssassinMug 0x19
+#define SnotMug 0x1A
+#define WiseMug 0x1B
 
 #define AxeBoneCard 0xAD
 #define LanceBoneCard 0xAE
@@ -35,6 +38,8 @@
 #define LancePalCard 0xB4
 #define AxePalCard 0xB5
 #define BowPalCard 0xB6
+#define CivilianCard 0xB7
+#define CarriageCard 0xB8
 
 // Characters
 #define HeroChar 0x1
@@ -49,6 +54,7 @@
 #define Prince 0xA
 #define Eagle 0xB
 #define Baby 0xC
+#define Snot 0xD
 #define YoungPrince 0x20
 #define YoungTeacher 0x21
 #define OldPrince 0x22
@@ -56,6 +62,7 @@
 
 #define Skull 0x25
 #define Baron 0x26
+#define Wise 0x27
 
 #define Ch2BeastBoss 0xAB
 
@@ -68,6 +75,8 @@
 #define Lowlander 0xAC
 #define Deserter 0x7F
 #define Combatant 0x85
+#define Civilian 0xF4
+#define Cart 0xF5
 
 // Classes
 #define UpstartF EirikaLord
@@ -99,9 +108,18 @@
 
 #define Veteran 0x7
 
+#define CivBoy 0x6D
+#define CivGirl 0x6E
+#define CivMan 0x6F
+#define CivWoman 0x70
+#define CivMan2 0x71
+#define CivWoman2 0x72
+
+#define Carriage 0x88
+
 // Terrain Move Costs
-#define InfantryMC 0x880b849
 #define PromoInfantryMC 0x880b808
+#define InfantryMC 0x880b849
 #define CavalryMC 0x880ba92
 #define PromoCavalryMC 0x880bad3
 #define AgileCavalryMC 0x880bb55

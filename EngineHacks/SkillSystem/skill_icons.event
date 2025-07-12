@@ -8,6 +8,9 @@ SkillIcons:
 /*ORG SkillIcon(ItFindsYouID)
 #incbin "SkillIcons/ItFindsYou.dmp"*/
 
+ORG SkillIcon(WideEyedID)
+#incbin "SkillIcons/WideEyed.dmp"
+
 ORG SkillIcon(AnvilDropID)
 #incbin "SkillIcons/AnvilDrop.dmp"
 

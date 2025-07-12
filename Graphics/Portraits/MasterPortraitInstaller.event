@@ -184,3 +184,27 @@ FHeroDressMugData: // LL
 #incbin "dmp/FHeroDress_palette.dmp"
 #incbin "dmp/FHeroDress_minimug.dmp"
 setMugEntry(FHeroDressMug, FHeroDressMugData, 3, 5, 3, 3)
+
+ALIGN 16
+AssassinMugData: // LL
+#incbin "dmp/Assassin_mug.dmp"
+#incbin "dmp/Assassin_frames.dmp"
+#incbin "dmp/Assassin_palette.dmp"
+#incbin "dmp/Assassin_minimug.dmp"
+setMugEntry(AssassinMug, AssassinMugData, 2, 6, 2, 3)
+
+ALIGN 16
+SnotMugData: // LL
+#incbin "dmp/Snot_mug.dmp"
+#incbin "dmp/Snot_frames.dmp"
+#incbin "dmp/Snot_palette.dmp"
+#incbin "dmp/Snot_minimug.dmp"
+setMugEntry(SnotMug, SnotMugData, 3, 8, 2, 6)
+
+ALIGN 16
+WiseMugData: // LL
+#incbin "dmp/Wise_mug.dmp"
+#incbin "dmp/Wise_frames.dmp"
+#incbin "dmp/Wise_palette.dmp"
+#incbin "dmp/Wise_minimug.dmp"
+setMugEntry(WiseMug, WiseMugData, 2, 6, 2, 4)

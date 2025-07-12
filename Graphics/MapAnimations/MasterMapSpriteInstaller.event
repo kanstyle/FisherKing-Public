@@ -75,6 +75,9 @@ MovingMapSprite(AxePal,NormalAP,AxePalMoving)
 StandingMapSprite(0x82,1,SwordPalStanding)
 MovingMapSprite(SwordPal,NormalAP,SwordPalMoving)
 
+StandingMapSprite(0x83,1,CarriageStanding)
+MovingMapSprite(Carriage,NormalAP,CarriageMoving)
+
 
 
 /*

@@ -9,6 +9,7 @@
 #define NoSkillQuotesFlag 0x27
 
 #define BelieveInDemonsFlag 0x78
+#define ThiefDealFlag 0x79
 
 //AI
 

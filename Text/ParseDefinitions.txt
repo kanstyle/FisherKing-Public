@@ -43,6 +43,13 @@
 [fr] = [OpenFarRight]
 [ffr] = [OpenFarFarRight]
 
+[mfl] = [MoveFarLeft]
+[mml] = [MoveMidLeft]
+[mvl] = [MoveLeft]
+[mvr] = [MoveRight]
+[mmr] = [MoveMidRight]
+[mfr] = [MoveFarRight]
+
 [<-......] = [FarFarLeft]
 [<-] = [FarFarLeft]
 [v.....] = [FarLeft]
@@ -100,6 +107,9 @@
 [LoadBaron] = [LoadFace][0x16][0x1]
 [LoadBaby] = [LoadFace][0x17][0x1]
 [LoadHeroDress] = [LoadFace][0x18][0x1]
+[LoadAssassin] = [LoadFace][0x19][0x1]
+[LoadSnot] = [LoadFace][0x1A][0x1]
+[LoadWise] = [LoadFace][0x1B][0x1]
 
 [LoadCivManBald] = [LoadFace][0x58][0x1]
 [LoadCivManOld] = [LoadFace][0x59][0x1]

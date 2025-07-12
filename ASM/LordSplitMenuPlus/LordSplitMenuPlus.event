@@ -60,6 +60,16 @@ MenuOption(Ch2NorthHouseGroupChoice, Ch2NorthHouseGroupDesc, 0)
 MenuOption(Ch2NorthHouseSingleChoice, Ch2NorthHouseSingleDesc, 0)
 MenuTerminator
 
+ALIGN 4
+Ch3ThiefMenu:
+MenuDefinition(4, 8, 21, 0, 1, Ch3ThiefMenuOptions)
+
+ALIGN 4
+Ch3ThiefMenuOptions:
+MenuOption(Ch3ThiefNoDealChoice, Ch3ThiefNoDealDesc, 0)
+MenuOption(Ch3ThiefDealChoice, Ch3ThiefDealDesc, 0)
+MenuTerminator
+
 
 
 

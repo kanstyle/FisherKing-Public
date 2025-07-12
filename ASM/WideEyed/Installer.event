@@ -1,0 +1,18 @@
+#include "WideEyed.lyn.event" 
+
+ALIGN 4 
+WideEyedID_Link: 
+WORD WideEyedID
+
+ALIGN 4
+ASMC_SelfDamageLikeBomb:
+#incbin "ASMC_SelfDamageLikeBomb.dmp"
+POIN WaitForMotionEndProc
+
+ALIGN 4
+WideEyedKillEvent:
+SVAL 0x1 0xD
+SVAL 0x6 0x255
+ASMC ASMC_SelfDamageLikeBomb|1
+NoFade
+ENDA

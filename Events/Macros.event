@@ -13,6 +13,8 @@
 
 #define PreventSkipping "EVBIT_MODIFY 1"
 #define AllowSkipping "EVBIT_MODIFY 0"
+#define PreventSkippingAllowB "EVBIT_MODIFY 3"
+#define StopSkipping "EVBIT_F 2"
 #define SetUnitFullHP(charID) "CheckMaxHP(charID); SADD s1 sC s0; SET_HP charID"
 
 #define DefeatBoss "AFEV 3 EndingScene 2"

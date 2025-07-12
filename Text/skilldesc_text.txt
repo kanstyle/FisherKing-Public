@@ -1,3 +1,8 @@
+## SD_WideEyed
+Wide-Eyed: +50 Crit. After combat,[N]
+35-Luck% chance of brain hemorrhage[N]
+(at the horrors you have wrought).[X]
+
 ## SD_AnvilDrop
 Anvil Drop: When unable to double-attack,[N]
 gain bonus Attack equal to 50% of[N]
@@ -15,7 +20,7 @@ with certain items or story events.[X]
 
 ## SD_ExtendedDestruction
 Extended Destruction!!!: Activate to gain[N]
-+2 Move and +5 Attack at 1 range.[N]
++2 Move and +5 Attack for 9 turns.[N]
 Lose buff if healed.[X]
 
 ## SD_ItFindsYou

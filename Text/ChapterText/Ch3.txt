@@ -259,7 +259,6 @@ them straight immediately.[A]
 [mr][oe]
 Ha![4][4] On second thought, some[N]
 embellishment may be good...[A]
-
 [X]
 
 ## Ch3StartManorOutside2
@@ -282,6 +281,109 @@ Placeholder.[A]
 [l][LoadDragon]
 [fl][LoadPillow]
 Placeholder.[A]
+[X]
+
+## Ch3StartInnBrownBox
+Elsewhere...[X]
+
+## Ch3StartBrotherThief
+[ml][LoadBrother]
+[mr][LoadAssassin]
+
+Hey![4] Where does the cat[N]
+come out to play?[A]
+
+[ml]
+Under the half-moon light.[A]
+
+[mr]
+Good answer.[4] So you got the stuff?[A]
+
+[ml]
+Yeah, I do.[4] Should be enough[N]
+to bring down a few walls.[AN]
+It'll run you 1,000 gold.[A][css]
+
+[mr][MoveMidRight]
+Stingy![A]
+
+[ml]
+Take it or leave it.[AN]
+I'm quitting this business[N]
+soon, anyway.[A]
+
+[mr]
+[ce]Dammit.[4][4][oe] Alright.[4] So I don't[N]
+have 1,000 right now.[A]
+
+[ml]
+Then there's no deal.[A]
+
+[mr]
+But![4][4] BUT![AN]
+If you lend it to me now, I'll pay[N]
+you back half the baron's treasury.[AN]
+How's that sound, eh?[N]
+Gotta be way more than 1,000.[A]
+
+[ml]
+...[A]
+[X]
+
+## Ch3ThiefNoDealChoice
+Sell the blasting powder elsewhere.[X]
+
+## Ch3ThiefNoDealDesc
+I'm not that dumb. Anymore.[X]
+
+## Ch3ThiefDealChoice
+Trust in the thief's scheme.[X]
+
+## Ch3ThiefDealDesc
+I'm due a lucky break...[X]
+
+## Ch3StartBrotherThiefDeal
+[ml][LoadBrother]
+[mr][LoadAssassin]
+
+[ml]
+Fine.[4] Deal.[A]
+
+[mr]
+That's what I like to hear![N]
+You ain't gonna regret this.[A][ClearFace]
+
+[ml]
+[tmm](I probably will...[A] ...Whatever.[4][N]
+Could use some excitement.)[A][ClearFace][4][4][4]
+
+[ml]
+[LoadPigeon]
+(Huh?[4] Was that Brother?)[A]
+[X]
+
+## Ch3StartBrotherThiefNoDeal
+[ml][LoadBrother]
+[mr][LoadAssassin]
+
+[ml]
+I made you the damn powder,[N]
+and you think I'm stupid?[AN]
+
+[mr]
+Well, now I do![4] Have fun eating[N]
+gruel with your priest buddies.[AN]
+When you're starving later, better[N]
+not come running![A]
+
+[ml]
+Yeah, yeah.[4] Keep dreaming.[N]
+I'm done with all this.[A][ClearFace]
+[mr][ClearFace][4][4][4]
+
+[ml]
+[LoadPigeon]
+(Huh?[4] Was that Brother?)[A]
 [X]
 
 ## Ch3StartBunny
@@ -328,8 +430,51 @@ better reward.[A][X]
 ## Ch3BabyIntro
 
 [mr][LoadTeacher]
-[l][LoadCivBoy]
-[fl][LoadCivGirl]
+[ml][LoadBaby]
+
+[ml][ts]
+Hello there, sir![4] Couldn't help[N]
+but notice your odd dress.[AN]
+Are you an agent of the state, perhaps?[A]
+
+[mr][ts]
+Me?[4] No.[4] And what's strange about[N]
+my dress?[A]
+
+[ml][ts]
+The spikes, I'd say![4] I quite like[N]
+them, but I wonder about the practicality.[A]
+
+[mr][ts]
+You do, do you?[4] Well, I'd go so far as[N]
+to say that hat of yours is far stranger.[AN]
+It's so large.[4] What utility could a hat[N]
+so large possibly serve?[A]
+
+[ml][ts]
+Heehee.[4] You're not privy to the[N]
+intricacies of a mage's craft, are you?[A]
+
+[mr][ts]
+True.[A]
+
+[ml][ts][ce]
+Well, there you go.[A][oe]
+
+[mr][ts]
+I suppose there I do go.[A]
+And there, I'm going to go,[N]
+if you don't mind, miss.[A]
+
+[ml][ts]
+I don't![4] In fact, I'm sure[N]
+we'll meet again very soon.[A]
+
+[mr][ts]
+...Okay.[4] If you say so.[A]
+[X]
+
+## Ch3UnusedBabyText
 
 [mr]
 No, I'm not [oq]stupid." In fact, I'd[N]
@@ -375,10 +520,275 @@ victories, even over people one-[N]
 eighth your age.[A]
 [X]
 
+## Ch3Wave1Intro
 
+[ml][LoadSkull]
+Placeholder![A]
+[X]
 
+## Ch3Wave2Intro
 
+[ml][LoadSkull]
+Placeholder![A]
+[X]
 
+## Ch3Wave3Intro
+
+[ml][LoadSkull]
+Placeholder![A]
+[X]
+
+## Ch3Wave4Intro
+
+[ml][LoadSkull]
+Placeholder![A]
+[X]
+
+## Ch3Wave4Intro2
+
+[mr][LoadWise]
+...Steady.[AN]
+[ce]Steady...[A]
+
+[ml][LoadPurpleFighter]
+How're you holding up, Wise?[A]
+
+[mr]
+[oe]...[A]
+[X]
+
+## Ch3Wave4Intro22
+[mr][LoadWise]
+[ml][LoadPurpleFighter]
+[mr]
+...It's been worse.[4][N]
+Don't worry about me, kid.[A]
+
+[ml]
+Alright.[4] You got it, chief.[A]
+[X]
+
+## Ch3Wave4Intro3
+
+[ml][LoadPillow]
+[r][LoadDragon]
+[fr][LoadHeroM]
+Low mage.[4] Looking a little[N]
+tougher than the rest.[A]
+
+[ml][MoveMidLeft]
+Ah![4] Oh, no...[A]
+
+[r]
+What's wrong, Pillow?[A]
+
+[ml]
+I know him.[4] That's Wise.[AN]
+And his magic's unstable...[A]
+
+[r]
+You mean...[A]
+
+[ml]
+He's untreated.[4] I think.[N]
+He's holding it together, but...[AN]
+He shouldn't be fighting like this.[A]
+
+[fr]
+Is the audience in danger, you think?[A]
+
+[ml]
+I don't think so, but he is.[AN]
+If we don't stop the fight,[N]
+he could end up...[A]
+
+[fr]
+Alright.[4] I'm on it.[A]
+[X]
+
+## Ch3PillowWiseTalkText
+[ml][LoadPillow]
+[mr][LoadWise]
+[ml]
+Wise![A]
+
+[mr]
+...Pillow?[AN]
+[ce]...[AN][oe]
+It IS you.[A]
+
+[ml]
+Yeah, it's me![N]
+But I don't want to fight![AN]
+I'll give you the winnings;[N]
+you just need to--[A]
+
+[mr]
+[ts]Heh.[4] You really are a good kid,[N]
+huh?[A] That attitude'll get you[N]
+killed someday, you know that?[A]
+
+[ml]
+[ts]Don't talk to me like that.[N]
+I'm trying to help you.[A]
+
+[mr]
+
+[X]
+
+## Ch3HeroWiseTalkText
+[X]
+
+## Ch3WomanText
+
+[mr][LoadCivWomanOld]
+[MoveMidRight]
+Urgh...[4][4] Blasted thing...[A]
+
+[ml][LoadTeacher]
+Hey, there.[4] Perhaps you could[N]
+use a hand with that.[A]
+
+[mr]
+Oh, thank you.[4] Yes, that'd[N]
+be quite a help.[A]
+
+[ml]
+Loading this cart is hardly a[N]
+job for one.[AN] Not to pry, but[N]
+haven't you anyone else around?[A]
+
+[mr]
+Well, I used to.[4] My husband[N]
+passed a while back.[A]
+
+[ml]
+Ah.[4] Sorry to hear that.[A]
+
+[mr]
+He was deployed to the Lowlands one[N]
+day, and when he came back,[AN]
+he was different.[4][4] Less himself.[AN]
+I think it was the daemons[N]
+what got him.[AN]
+And a short while later, he died.[A]
+
+[ml]
+My condolences.[4] There's been many[N]
+good people lost to that place.[A]
+
+[mr][ts]
+I've heard the barrier between life[N]
+and death is thin there.[AN]
+So maybe I'll see him again, eh?[A]
+
+[ml]
+Heh.[4] I wish you luck with that.[A]
+[X]
+
+## Ch3Village1Text
+
+[ml][LoadTeacher]
+[mr][LoadCivWoman]
+Hello there, sir.[4] Did you see a[N]
+young woman about, with white hair?[AN]
+She wears blue armor, and carries[N]
+a lance with her.[A]
+
+[ml]
+I believe I did.[4] About this tall?[N]
+Her hair is sort of...[4] er...[4] poofy?[A]
+
+[mr]
+Yes, that's the one![A]
+
+[ml]
+She approached me and my compatriots,[N]
+and took them to the arena.[A]
+
+[mr]
+...I see.[A]
+
+[ml]
+She seemed rather sure of herself.[N]
+I bet she'll be quite alright.[A]
+
+[mr]
+...No, that's not it.[4] She's my[N]
+daughter, you see.[4] Or she was.[AN]
+Five years ago, she joined the army[N]
+and was taken to the Lowlands.[A]
+
+[ml][tmm]
+(Ah.[4] Something about her[N]
+was familiar...)[A][tmm]
+
+[mr]
+She returned recently.[4] She told me she[N]
+had died,[AN] but she met a daemon[N]
+there.[4] The spirit of an old soldier.[A]
+
+[ml]
+She met a daemon, you say?[N]
+Is that even possible?[A]
+
+[mr]
+I don't know, but...[4] she's not my[N]
+daughter any longer.[AN]
+It really is as if her body was taken,[N]
+somehow, by another person.[A]
+
+[ml]
+Hmm.[4] I'm sorry to hear that.[A]
+
+[mr]
+I've...[4][4] come to accept it, somewhat.[AN]
+When you see her, could you give her[N]
+this?[AN]
+It would've been her birthday this[N]
+month.[A]
+
+[ml]
+I will.[4] Any words you'd like me[N]
+to pass on?[A]
+
+[mr]
+Ah...[4][4][ce] No, no.[4] It's time I[N]
+stopped clinging to her.[A][oe]
+
+[ml]
+I understand.[4]
+Best of luck to you.[A]
+[X]
+
+## Ch3Village2Text
+
+[ml][LoadTeacher]
+[mr][LoadCivManOld]
+Daemons?[A] Whazzat?[4] Daemons,[4][N]
+did you say?[A]
+
+[ml]
+I haven't said anything, actually.[A]
+
+[mr]
+Well, now![4] I'll have you know that[N]
+if anyone does, they're crazy.[AN]
+Daemons aren't real, plain and[N]
+simple.[AN]
+It's just what the low mages call[N]
+their demented delusions,[AN]
+and the local superstition.[A]
+
+[ml]
+[X]
+
+## Ch3BabyText1
+
+[ml][LoadTeacher]
+[mr][LoadBaby][ts]
+Placeholder![A]
+[X]
 
 
 

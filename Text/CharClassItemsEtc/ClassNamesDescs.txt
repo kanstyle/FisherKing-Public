@@ -76,3 +76,9 @@ Veteran[X]
 
 ## VeteranClassDesc
 Placeholder.[X]
+
+## CarriageClassName
+Carriage[X]
+
+## CarriageClassDesc
+Placeholder.[X]

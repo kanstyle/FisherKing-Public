@@ -96,7 +96,7 @@ EnemyUnits:
 	
 	//t2 ep
 	UNIT Lowlander Fighter 0x40 Level(4,Enemy,True)     [7,10] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
-	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [3,9] 0b 0x0 0x0 0x0 [EvilEye] ChargeAI
+	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [3,9] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
 
 	
 	UNIT Lowlander Fighter 0x40 Level(4,Enemy,True)     [11,0] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
@@ -115,14 +115,14 @@ EnemyUnits:
 	
 	//t4 pp
 	UNIT Lowlander WyvernRider 0x40 Level(4,Enemy,True)     [0,5] 0b 0x0 0x0 0x0 [IronLance] AttackIn2RangeAI
-	UNIT Beast Tarvos 0x40 Level(4,Enemy,True)     [7,0] 0b 0x0 0x0 0x0 [IronAxe] AttackIn2RangeAI
+	UNIT Lowlander AxeCav 0x40 Level(4,Enemy,True)     [7,0] 0b 0x0 0x0 0x0 [IronAxe] AttackIn2RangeAI
 	
 	//t5
-	UNIT Lowlander WyvernRider 0x40 Level(4,Enemy,True)     [0,3] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT Beast Gargoyle 0x40 Level(4,Enemy,True)     [0,3] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [0,7] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
 	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [2,4] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
 	UNIT Lowlander Mercenary 0x40 Level(4,Enemy,True)     [5,0] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
-	UNIT Lowlander Shaman 0x40 Level(4,Enemy,True)     [11,2] 0b 0x0 0x0 0x0 [Pain] AttackInRangeAI
+	//UNIT Lowlander Shaman 0x40 Level(4,Enemy,True)     [11,2] 0b 0x0 0x0 0x0 [Pain] AttackInRangeAI
 	UNIT Lowlander Mage 0x40 Level(4,Enemy,True)     [0,0] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
 
 

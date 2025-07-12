@@ -169,3 +169,27 @@ Lowlander[X]
 
 ## LowlanderDesc
 Placeholder.[X]
+
+## SnotName
+Snot[X]
+
+## SnotDesc
+Placeholder.[X]
+
+## WiseName
+Wise[X]
+
+## WiseDesc
+Placeholder.[X]
+
+## CivilianName
+Civilian[X]
+
+## CivilianDesc
+Placeholder.[X]
+
+## CartName
+Cart[X]
+
+## CartDesc
+Placeholder.[X]

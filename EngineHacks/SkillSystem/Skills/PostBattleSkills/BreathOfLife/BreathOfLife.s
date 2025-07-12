@@ -35,6 +35,45 @@ mov	lr, r3
 cmp	r0,#0x00
 beq	End
 
+@ Heal Self (from lifetaker)
+@killed enemy, then heal 50%hp
+mov	r0,r4
+ldr	r3,=#0x8019190	@max hp getter
+mov	lr,r3
+.short	0xF800
+mov	r1,r0
+push	{r1}
+mov	r0,r4
+ldr	r3,=#0x8019150	@current hp getter
+mov	lr,r3
+.short	0xF800
+mov	r2,r0
+pop	{r1}
+cmp	r1, r2		@check if hp is already max
+beq	AoeHeal
+
+
+@this used to just add curHP to curHP and set that as new curHP
+@make r0 = 1/2 maxHP
+lsr r0,r1,#1 @maxHP/2
+
+add	r2, r0		@total healing
+cmp	r2, r1		@is the new hp higher than max?
+ble	StoreHP
+mov	r2, r1		@if so, set to max
+StoreHP:
+strb	r2, [r4,#0x13]
+
+SelfEvent:
+mov	r6, #0x00		@reset counter
+ldr	r0,=#0x800D07C		@event engine thingy
+mov	lr, r0
+ldr	r0, BreathOfLifeEvent	@this event is just "play some sound effects"
+mov	r1, #0x01		@0x01 = wait for events
+.short	0xF800
+
+AoeHeal:
+@ AOE Heal
 @Check if there are allies in 2 spaces
 ldr	r0, GetUnitsInRange
 mov	lr, r0

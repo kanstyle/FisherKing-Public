@@ -1,5 +1,9 @@
 EventPointerTable(Ch3EventsID, PointerList)
 
+#define Ch3WiseTalkFlag 0x7
+#define Ch3Village1Flag 0x8
+#define Ch3Village2Flag 0x9
+
 PointerList:
 	POIN TurnBasedEvents
 	POIN CharacterBasedEvents
@@ -18,11 +22,13 @@ TurnBasedEvents:
 	
 	TurnEventPlayer(0x0,ArenaTurnEvent,1,255)
 	TurnEventPlayer(0x0,Turn1BabyIntro,1,1)
+	TurnEventPlayer(0x0,ArenaWave1Intro,1,1)
 	END_MAIN
 
 ALIGN 32
 CharacterBasedEvents:
-
+	CharacterEventBothWays(Ch3WiseTalkFlag,Ch3PillowWiseTalk,Pillow,Wise)
+	CharacterEventBothWays(Ch3WiseTalkFlag,Ch3HeroWiseTalk,HeroChar,Wise)
 	END_MAIN
 
 MiscBasedEvents:
@@ -32,6 +38,11 @@ MiscBasedEvents:
 	END_MAIN
 
 LocationBasedEvents:
+	Village(Ch3Village1Flag,Ch3Village1Event,4,20)
+	Village(Ch3Village2Flag,Ch3Village2Event,11,15)
+	
+	Armory(Ch3Armory,3,15)
+	Vendor(Ch3Vendor,14,18)
 	END_MAIN
 
 Dunno1:
@@ -60,15 +71,18 @@ Units1:
 	UNIT Dragon Headsman 0x40 Level(10,Ally,False)     [1,6] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Headsman 0x40 Level(10,Ally,False)     [1,8] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT
+	
+SnotUnits:
+	UNIT Snot Thief 0x40 Level(1,Ally,False)     [17,7] 0b 0x0 0x0 0x0 [IronSword] [0x0,0x0,0x0,0x0]
 
 EnemyUnits1:
 	UNIT Combatant SwordCav 0x40 Level(5,Enemy,True)     [17,6] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
 	UNIT Combatant SwordCav 0x40 Level(5,Enemy,True)     [17,8] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
 	UNIT Combatant LanceCav 0x40 Level(5,Enemy,True)     [18,5] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
 	UNIT Combatant LanceCav 0x40 Level(5,Enemy,True)     [18,9] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
-	UNIT Combatant AxeCav 0x40 Level(5,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
-	UNIT Combatant AxeCav 0x40 Level(5,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
-	UNIT Combatant PegasusKnight 0x40 Level(5,Enemy,True)     [18,7] 0b 0x0 0x0 0x0 [KillerLance] ChargeAI
+	UNIT Combatant Fighter 0x40 Level(5,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
+	UNIT Combatant Fighter 0x40 Level(5,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
+	UNIT Combatant PegasusKnight 0x40 Level(7,Enemy,True)     [18,7] 0b 0x0 0x0 0x0 [KillerLance] ChargeAI
 	UNIT
 	
 EnemyUnits2:
@@ -76,29 +90,38 @@ EnemyUnits2:
 	UNIT Combatant Mercenary 0x40 Level(5,Enemy,True)     [17,8] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
 	UNIT Combatant Knight 0x40 Level(5,Enemy,True)     [18,5] 0b 0x0 0x0 0x0 [KillerLance] ChargeAI
 	UNIT Combatant Knight 0x40 Level(5,Enemy,True)     [18,9] 0b 0x0 0x0 0x0 [KillerLance] ChargeAI
-	UNIT Combatant Fighter 0x40 Level(5,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [KillerAxe] ChargeAI
-	UNIT Combatant Fighter 0x40 Level(5,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [KillerAxe] ChargeAI
-	UNIT Combatant Shaman 0x40 Level(5,Enemy,True)     [18,7] 0b 0x0 0x0 0x0 [Pain] ChargeAI
+	UNIT Combatant AxeCav 0x40 Level(5,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [KillerAxe] ChargeAI
+	UNIT Combatant AxeCav 0x40 Level(5,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [KillerAxe] ChargeAI
+	UNIT Combatant Shaman 0x40 Level(7,Enemy,True)     [18,7] 0b 0x0 0x0 0x0 [Pain] ChargeAI
 	UNIT
 
 EnemyUnits3:
-	UNIT Combatant Mercenary 0x40 Level(5,Enemy,True)     [17,6] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
-	UNIT Combatant Mercenary 0x40 Level(5,Enemy,True)     [17,8] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
-	UNIT Combatant Knight 0x40 Level(5,Enemy,True)     [18,5] 0b 0x0 0x0 0x0 [KillerLance] ChargeAI
-	UNIT Combatant Knight 0x40 Level(5,Enemy,True)     [18,9] 0b 0x0 0x0 0x0 [KillerLance] ChargeAI
-	UNIT Combatant Fighter 0x40 Level(5,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [KillerAxe] ChargeAI
-	UNIT Combatant Fighter 0x40 Level(5,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [KillerAxe] ChargeAI
-	UNIT Combatant Shaman 0x40 Level(5,Enemy,True)     [18,7] 0b 0x0 0x0 0x0 [Pain] ChargeAI
+	UNIT Combatant Myrmidon 0x40 Level(5,Enemy,True)     [17,6] 0b 0x0 0x0 0x0 [SlimSword] ChargeAI
+	UNIT Combatant Myrmidon 0x40 Level(5,Enemy,True)     [17,8] 0b 0x0 0x0 0x0 [SlimSword] ChargeAI
+	UNIT Combatant Mage 0x40 Level(5,Enemy,True)     [18,5] 0b 0x0 0x0 0x0 [Thunder] ChargeAI
+	UNIT Combatant Mage 0x40 Level(5,Enemy,True)     [18,9] 0b 0x0 0x0 0x0 [Thunder] ChargeAI
+	UNIT Combatant PegasusKnight 0x40 Level(5,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [HeavySpear] ChargeAI
+	UNIT Combatant PegasusKnight 0x40 Level(5,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT Combatant Shaman 0x40 Level(7,Enemy,True)     [18,7] 0b 0x0 0x0 0x0 [Pain] ChargeAI
 	UNIT
 	
 EnemyUnits4:
-	UNIT Combatant Mercenary 0x40 Level(5,Enemy,True)     [17,6] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
-	UNIT Combatant Mercenary 0x40 Level(5,Enemy,True)     [17,8] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
-	UNIT Combatant Knight 0x40 Level(5,Enemy,True)     [18,5] 0b 0x0 0x0 0x0 [KillerLance] ChargeAI
-	UNIT Combatant Knight 0x40 Level(5,Enemy,True)     [18,9] 0b 0x0 0x0 0x0 [KillerLance] ChargeAI
-	UNIT Combatant Fighter 0x40 Level(5,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [KillerAxe] ChargeAI
-	UNIT Combatant Fighter 0x40 Level(5,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [KillerAxe] ChargeAI
-	UNIT Combatant Shaman 0x40 Level(5,Enemy,True)     [18,7] 0b 0x0 0x0 0x0 [Pain] ChargeAI
+	UNIT Combatant SwordCav 0x40 Level(5,Enemy,True)     [17,6] 0b 0x0 0x0 0x0 [LightBrand] ChargeAI
+	UNIT Combatant SwordCav 0x40 Level(5,Enemy,True)     [17,8] 0b 0x0 0x0 0x0 [LightBrand] ChargeAI
+	UNIT Combatant WyvernRider 0x40 Level(5,Enemy,True)     [18,5] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT Combatant WyvernRider 0x40 Level(5,Enemy,True)     [18,9] 0b 0x0 0x0 0x0 [Axereaver] ChargeAI
+	UNIT Combatant Archer 0x40 Level(5,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [SteelBow] ChargeAI
+	UNIT Combatant Archer 0x40 Level(5,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [SteelBow] ChargeAI
+	UNIT Wise Shaman 0x40 Level(8,Enemy,True)     [18,7] 0b 0x0 0x0 0x0 [Exploitation] ChargeAI
+	UNIT
+	
+WiseHallucinationUnits:
+	UNIT Beast MogallClass 0x40 Level(5,Enemy,True)     [9,10] 0b 0x0 0x0 0x0 [LightBrand] ChargeAI
+	UNIT Beast MogallClass 0x40 Level(5,Enemy,True)     [15,11] 0b 0x0 0x0 0x0 [LightBrand] ChargeAI
+	UNIT Beast MogallClass 0x40 Level(5,Enemy,True)     [17,4] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT Beast MogallClass 0x40 Level(5,Enemy,True)     [12,7] 0b 0x0 0x0 0x0 [Axereaver] ChargeAI
+	UNIT Beast MogallClass 0x40 Level(5,Enemy,True)     [10,5] 0b 0x0 0x0 0x0 [SteelBow] ChargeAI
+	UNIT Beast MogallClass 0x40 Level(5,Enemy,True)     [11,8] 0b 0x0 0x0 0x0 [SteelBow] ChargeAI
 	UNIT
 
 TeacherHeroSongbirdUnits:
@@ -125,12 +148,17 @@ TownGuardUnits:
 	UNIT 0x80 Soldier 0x40 Level(10,NPC,False)     [8,19] 0b 0x0 0x0 0x0 [IronLance] [0x0,0x0,0x0,0x0]
 	UNIT
 	
+WomanCartUnits:
+	UNIT Civilian CivWoman 0x40 Level(1,NPC,False)     [11,19] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT Cart Carriage 0x40 Level(1,NPC,False)     [12,19] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT
+	
 TeacherTownUnits:
 	UNIT Teacher Veteran 0x40 Level(10,Ally,False)     [3,17] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT
 
 BunnyUnits:
-	UNIT Bunny BunnyRecruit 0x40 Level(5,NPC,False)     [2,18] 0b 0x0 0x0 0x0 [Axereaver,Javelin] DoNothingAI	
+	UNIT Bunny BunnyRecruit 0x40 Level(5,NPC,False)     [2,18] 0b 0x0 0x0 0x0 [Axereaver,Javelin,IronLance] DoNothingAI	
 	UNIT
 	
 BabyUnits:
@@ -194,13 +222,40 @@ BeginningScene:
 	DoAllThree
 	SetBackground(Castle_Hall)
 	Text(Ch3StartManorInside)
-	FADI 6
+	RemoveBackgroundSlow
 	
+		//brother event
+	CHECK_ALIVE Brother
+	BEQ 1 0x0 0xC
+		PreventSkippingAllowB
+		SetBackgroundSlow(Inn)
+		BROWNBOXTEXT Ch3StartInnBrownBox [8,8]
+		Text(Ch3StartBrotherThief)
+		StopSkipping
+		PreventSkipping
+		CallMenu(Ch3ThiefMenu)
+			BNE 0x3 0xC 0x0
+			AllowSkipping
+			Text(Ch3StartBrotherThiefNoDeal)
+			RemoveBackground
+			SetBackground(BlackBG)
+			GiveGold(1000)
+			GOTO 0x2
+		LABEL 0x3
+			AllowSkipping
+			Text(Ch3StartBrotherThiefDeal)
+			SetFlag(ThiefDealFlag)
+			GOTO 0x2
+		LABEL 0x2
+		RemoveBackgroundSlow
+	LABEL 1
+	
+	//back to plaza
 	LOMA Ch3
 	CAMERA [18,21]
 	LOAD2 0x1 HeroTownUnits
 	ENUN
-	
+
 	FADU 6
 	BROWNBOXTEXT Ch3PlazaBrownBox [8,8]
 	STAL 30
@@ -218,27 +273,14 @@ BeginningScene:
 	FADI 6
 	
 	DoAllThree
-	CAMERA [0,18]
-	LOAD2 0x1 TeacherTownUnits
-	LOAD2 0x1 TownGuardUnits
-	FADU 6
-	STAL 60
-	
-	MOVE 5 0x80 [7,18]
-	MOVE 5 0x81 [8,19]
-	ENUN
-	Highlight(0x80)
-	Text(Ch3StartGuards)
-	Highlight(Teacher)
-	Text(Ch3StartCommotion)
-	MOVE 5 Teacher [6,18]
-	
-	FADI 6
 	
 	LOAD2 0x1 BunnyUnits
 	MOVE 65535 Bunny [1,7]
 	CUSA Bunny
 	LOAD1 0x1 EnemyUnits1
+	ENUN
+	
+	LOAD1 0x1 SnotUnits
 	ENUN
 
 	GotoPrepScreen
@@ -253,53 +295,135 @@ EndingScene:
 	ENDA
 	
 Turn1BabyIntro:
-	CAMERA [0,21]
-	MOVE 5 Teacher [6,18]
-	ENUN
-	Highlight(Teacher)
-	Text(Ch3T1SoldierTalk)
-
 	LOAD2 0x1 BabyUnits
 	ENUN
-	MOVE 5 Baby [6,19]
+	MOVE 5 Baby [4,17]
 	ENUN
-	//Text(Ch3BabyIntro)
-	//CenterTextbox(Ch3BabyIntroNarration)
-	CenterTextbox(Ch3MysteryRules)
+	Text(Ch3BabyIntro)
 	NoFade
 	ENDA
 	
-ArenaTurnEvent:
-	CHECK_ALIVE Combatant
-	BNE 0x0 0x0 0xC //if combatants are not alive, skip
-		COUNTER_INC 1 //increase counter 1 by 1
-		CenterTextbox(DebugPauseText)
-		COUNTER_CHECK 1
-		CenterTextbox(DebugPauseText)
-		
-		SVAL 1 0x10 //if counter is not 1, skip, repeat for each arena round
-		BNE 0x2 0x1 0xC
-			CenterTextbox(DebugPauseText)
-			LOAD2 0x1 EnemyUnits2
-		LABEL 0x2
-		
-		SVAL 1 0x20
-		BNE 0x3 0x1 0xC
-			CenterTextbox(DebugPauseText)
-			LOAD2 0x1 EnemyUnits3
-		LABEL 0x3
-		
-		SVAL 1 0x30
-		BNE 0x4 0x1 0xC
-			CenterTextbox(DebugPauseText)
-			LOAD2 0x1 EnemyUnits4
-		LABEL 0x4
-		CenterTextbox(DebugPauseText)
-	LABEL 0x0
-	CenterTextbox(DebugPauseText)
+ArenaWave1Intro:
+	Text(Ch3Wave1Intro)
 	NoFade
 	ENDA
 
+ArenaTurnEvent:
+	CHECK_ALIVE Combatant
+	BNE 0x0 0x0 0xC //if combatants are alive, skip
+		COUNTER_INC 1 //increase counter 1 by 1
+		//CenterTextbox(DebugPauseText)
+		COUNTER_CHECK 1
+		//CenterTextbox(DebugPauseText)
+		
+		SVAL 8 0x01 //if counter is not 1, skip, repeat for each arena round
+		//CenterTextbox(DebugPauseText)
+		COUNTER_CHECK 1
+		BNE 0x2 0x8 0xC
+			//CenterTextbox(DebugPauseText)
+			CAMERA [18,5]
+			Text(Ch3Wave2Intro)
+			LOAD2 0x1 EnemyUnits2
+		LABEL 0x2
+		
+		SVAL 8 0x02
+		//CenterTextbox(DebugPauseText)
+		COUNTER_CHECK 1
+		BNE 0x3 0x8 0xC
+			//CenterTextbox(DebugPauseText)
+			CAMERA [18,5]
+			Text(Ch3Wave3Intro)
+			LOAD2 0x1 EnemyUnits3
+		LABEL 0x3
+		
+		SVAL 8 0x03
+		//CenterTextbox(DebugPauseText)
+		COUNTER_CHECK 1
+		BNE 0x4 0x8 0xC
+			//CenterTextbox(DebugPauseText)
+			CAMERA [18,5]
+			Text(Ch3Wave4Intro)
+			LOAD2 0x1 EnemyUnits4
+			Highlight(Wise)
+			Text(Ch3Wave4Intro2)
+			FADI 16
+			LOAD2 0x1 WiseHallucinationUnits
+			FADU 16
+			STAL 60
+			FADI 16
+			DISA Beast
+			DISA Beast
+			DISA Beast
+			DISA Beast
+			DISA Beast
+			DISA Beast
+			FADU 16
+			Text(Ch3Wave4Intro22)
+			Highlight(Pillow)
+			Text(Ch3Wave4Intro3)
+		LABEL 0x4
+		//CenterTextbox(DebugPauseText)
+	LABEL 0x0
+	//CenterTextbox(DebugPauseText)
+	NoFade
+	ENDA
+	
+Ch3PillowWiseTalk:
+	DISA Wise
+	NoFade
+	ENDA
+	
+Ch3HeroWiseTalk:
+	DISA Wise
+	NoFade
+	ENDA
+	
+Ch3Village1Event:
+	FADI 16
+	SetBackground(HouseBG)
+	Text(Ch3Village1Text)
+	RemoveBackground
+	MOVE 65535 Baby [4,21]
+	ENUN
+	
+	FADU 16
+	GiveItem(HeavySpear,0xFFFF)
+	SET_ACTIVE 0
+	STAL 30
+	Highlight(Baby)
+	Text(Ch3BabyText1)
+	NoFade
+	ENDA
+	
+Ch3Village2Event:
+	FADI 16
+	SetBackground(HouseBG)
+	Text(Ch1Village1Text)
+	RemoveBackground
+	MOVE 65535 Baby [11,16]
+	ENUN
+	
+	FADU 16
+	//GiveItem(Javelin,0xFFFF)
+	SET_ACTIVE 0
+	STAL 30
+	Highlight(Baby)
+	//Text(Ch1Village1Text)
+	NoFade
+	ENDA
+	
+PigeonLeavesEvent:
+	CHECK_ALIVE Pigeon
+		BEQ 0x0 0x0 0xC //if pigeon is not alive, skip paying her, but get snot
+		//Check money, if don't have money go to 0x2
+		//otherwise pay pigeon, then skip to end
+	GOTO 0x1
+	LABEL 0x2
+	//pigeon leaves
+	LABEL 0x0
+	//get snot
+	LABEL 0x1
+		
 BleedoutChapterAlwaysEvent:
 	ASMC ReviveAndSetPetrify|1
 	NoFade
@@ -314,3 +438,27 @@ HeroGenderFlagTurnEvent:
 	UnsetFlag(HeroGenderswapFlag)
 	NoFade
 	ENDA
+	
+ALIGN 4
+Ch3Armory:
+	SHORT SteelSword
+	SHORT SteelLance
+	SHORT SteelAxe
+	SHORT SlimSword
+	SHORT SlimLance
+	SHORT SlimAxe
+	SHORT Javelin
+	SHORT HandAxe
+	SHORT 0
+	SHORT 0
+	
+ALIGN 4
+Ch3Vendor:
+	SHORT Fire
+	SHORT Thunder
+	SHORT Pain
+	SHORT Heal
+	SHORT Restore
+	SHORT Torch
+	SHORT 0
+	SHORT 0

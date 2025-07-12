@@ -69,6 +69,18 @@ BowPalPortraitPalette:
 #incext Png2Dmp "Cards/Paladin (M) Bow {Leif}.png" --palette-only
 setCardEntry(BowPalCard,BowPalPortrait,BowPalPortraitPalette)
 
+CivilianPortrait:
+#incext Png2Dmp "Cards/Villager (U) Updated {Ghast, HyperGammaSpaces}.png" --lz77
+CivilianPortraitPalette:
+#incext Png2Dmp "Cards/Villager (U) Updated {Ghast, HyperGammaSpaces}.png" --palette-only
+setCardEntry(CivilianCard,CivilianPortrait,CivilianPortraitPalette)
+
+CarriagePortrait:
+#incext Png2Dmp "Cards/Wooden Crate (U) T2 {Laurent Lacroix}.png" --lz77
+CarriagePortraitPalette:
+#incext Png2Dmp "Cards/Wooden Crate (U) T2 {Laurent Lacroix}.png" --palette-only
+setCardEntry(CarriageCard,CarriagePortrait,CarriagePortraitPalette)
+
 /*KnightPortrait:
 #incext Png2Dmp "Cards/axe_knight_der_epicer2.png" --lz77
 KnightPortraitPalette:

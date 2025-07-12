@@ -21,14 +21,14 @@ Who's next?![A][X]
 ## RevolutionStayDown
 
 [mr][LoadDragon]
-Stay...[4][4][MoveMidRight] down![A][X]
+You can't even slow me down.[A][X]
 
 ## GenderswapMTF
 
 [mr][LoadHeroF][ts]
-Wooo![4] Check this out![A][X]
+[CloseEyes]Man, I look so good...[A][X]
 
 ## GenderswapFTM
 
 [mr][LoadHeroM]
-Alright! Classic it is.[A][X]
+Alright, back to the classic.[A][X]

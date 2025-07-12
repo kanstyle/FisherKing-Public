@@ -4,6 +4,9 @@
 
 //My Skills
 
+//WideEyed
+#define WideEyedID 214
+
 //Sweep
 #define SweepID 34
 
@@ -616,7 +619,7 @@
 
 //Elbow Room: +3 damage dealt when on open terrain.
 //Author Unknown (Initial Commit)
-#define ElbowRoomID 214
+#define ElbowRoomID 255
 
 //Even/Odd Rhythm: +10 Hit and Avoid on even or odd numbered turns.
 //Author Unknown (Initial Commit)
