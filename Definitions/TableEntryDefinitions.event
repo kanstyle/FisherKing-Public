@@ -75,8 +75,8 @@
 #define Lowlander 0xAC
 #define Deserter 0x7F
 #define Combatant 0x85
+#define Cart 0xF3
 #define Civilian 0xF4
-#define Cart 0xF5
 
 // Classes
 #define UpstartF EirikaLord
@@ -115,7 +115,7 @@
 #define CivMan2 0x71
 #define CivWoman2 0x72
 
-#define Carriage 0x88
+#define Carriage 0x8B
 
 // Terrain Move Costs
 #define PromoInfantryMC 0x880b808

@@ -9,7 +9,7 @@ Make money[X]
 ## Ch3ObjectiveLong ^
 
 Fight in the arena[N]
-and solve a mystery.[X]
+and run errands.[X]
 
 ## Ch3BaseHunter
 
@@ -429,48 +429,48 @@ better reward.[A][X]
 
 ## Ch3BabyIntro
 
-[mr][LoadTeacher]
-[ml][LoadBaby]
+[ml][LoadTeacher]
+[mr][LoadBaby]
 
-[ml][ts]
+[mr][ts]
 Hello there, sir![4] Couldn't help[N]
 but notice your odd dress.[AN]
 Are you an agent of the state, perhaps?[A]
 
-[mr][ts]
+[ml][ts]
 Me?[4] No.[4] And what's strange about[N]
 my dress?[A]
 
-[ml][ts]
+[mr][ts]
 The spikes, I'd say![4] I quite like[N]
 them, but I wonder about the practicality.[A]
 
-[mr][ts]
+[ml][ts]
 You do, do you?[4] Well, I'd go so far as[N]
 to say that hat of yours is far stranger.[AN]
 It's so large.[4] What utility could a hat[N]
 so large possibly serve?[A]
 
-[ml][ts]
+[mr][ts]
 Heehee.[4] You're not privy to the[N]
 intricacies of a mage's craft, are you?[A]
 
-[mr][ts]
+[ml][ts]
 True.[A]
 
-[ml][ts][ce]
+[mr][ts][ce]
 Well, there you go.[A][oe]
 
-[mr][ts]
+[ml][ts]
 I suppose there I do go.[A]
 And there, I'm going to go,[N]
 if you don't mind, miss.[A]
 
-[ml][ts]
+[mr][ts]
 I don't![4] In fact, I'm sure[N]
 we'll meet again very soon.[A]
 
-[mr][ts]
+[ml][ts]
 ...Okay.[4] If you say so.[A]
 [X]
 
@@ -522,26 +522,62 @@ eighth your age.[A]
 
 ## Ch3Wave1Intro
 
-[ml][LoadSkull]
+[mr][LoadSkull]
 Placeholder![A]
+[X]
+
+## Ch3Wave1Intro2
+
+[l][LoadPillow]
+[fl][LoadDragon]
+
+[l]
+Wait...[4] Isn't that...?[A]
+[fl]
+Guess he's got a day job.[A]
+[X]
+
+
+## Ch3Wave1Win
+
+[mr][LoadSkull]
+Hero's Company wins![A]
 [X]
 
 ## Ch3Wave2Intro
 
-[ml][LoadSkull]
+[mr][LoadSkull]
 Placeholder![A]
+[X]
+
+## Ch3Wave2Win
+
+[mr][LoadSkull]
+Hero's Company wins![A]
 [X]
 
 ## Ch3Wave3Intro
 
-[ml][LoadSkull]
+[mr][LoadSkull]
 Placeholder![A]
+[X]
+
+## Ch3Wave3Win
+
+[mr][LoadSkull]
+Hero's Company wins![A]
 [X]
 
 ## Ch3Wave4Intro
 
-[ml][LoadSkull]
+[mr][LoadSkull]
 Placeholder![A]
+[X]
+
+## Ch3Wave4Win
+
+[mr][LoadSkull]
+Hero's Company wins![A]
 [X]
 
 ## Ch3Wave4Intro2
@@ -604,6 +640,10 @@ he could end up...[A]
 
 [fr]
 Alright.[4] I'm on it.[A]
+
+[ml]
+Leave it to me.[N]
+I'll talk to him.[A]
 [X]
 
 ## Ch3PillowWiseTalkText
@@ -613,33 +653,53 @@ Alright.[4] I'm on it.[A]
 Wise![A]
 
 [mr]
-...Pillow?[AN]
-[ce]...[AN][oe]
-It IS you.[A]
+...Pillow?[A]
 
 [ml]
 Yeah, it's me![N]
 But I don't want to fight![AN]
 I'll give you the winnings;[N]
-you just need to--[A]
+you just need to get out of here![A]
 
 [mr]
 [ts]Heh.[4] You really are a good kid,[N]
-huh?[A] That attitude'll get you[N]
-killed someday, you know that?[A]
+huh?[A] I'd like to trust you, but[N]
+I'm afraid I need that money...[A]
 
 [ml]
-[ts]Don't talk to me like that.[N]
-I'm trying to help you.[A]
+[ts]I'm just trying to help you, Wise![AN]
+...Do you want my crown?[4][4] You can have[N]
+it as collateral.[A]
 
 [mr]
+Hmm...[4] [ts]No, no.[4] I trust you.[AN]
+My daemons never make offers like that.[N]
+Heh, heh.[A]
 
+[ml]
+Wise...[A]
+
+[mr]
+Alright.[4] I forfeit.[4] We'll speak later.[A]
 [X]
 
 ## Ch3HeroWiseTalkText
+
+[ml][LoadHeroM]
+[mr][LoadWise]
+
+Hmm?[4] What are you doing?[A]
+
+[ml]
+I'm just here to talk.[N]
+You know Pillow, don't you?[A]
+
+[mr]
+I do, but I don't know you.[N]
+
 [X]
 
-## Ch3WomanText
+## Ch3WomanTextOld
 
 [mr][LoadCivWomanOld]
 [MoveMidRight]
@@ -655,7 +715,7 @@ be quite a help.[A]
 
 [ml]
 Loading this cart is hardly a[N]
-job for one.[AN] Not to pry, but[N]
+job for one.[A] Not to pry, but[N]
 haven't you anyone else around?[A]
 
 [mr]
@@ -684,6 +744,40 @@ So maybe I'll see him again, eh?[A]
 
 [ml]
 Heh.[4] I wish you luck with that.[A]
+[X]
+
+## Ch3WomanText
+
+[mr][LoadCivWomanOld]
+[MoveMidRight]
+Urgh...[4][4] Blasted thing...[A]
+
+[ml][LoadTeacher]
+Hey, there.[4] Perhaps you could[N]
+use a hand with that?[A]
+Loading a cart that size is hardly[N]
+a job for one.[A]
+
+[mr]
+Oh, thank you.[4] Yes, that'd[N]
+be quite a help.[A][ts]
+Heh.[4][4] You're not even the[N]
+first to offer, today.[A]
+A kind young man came by, just[N]
+a short while ago.[A]
+
+[ml]
+Oh?[4] That's a heartening thing[N]
+to see.[A]
+
+[mr]
+Isn't it? And hear this-- when I[N]
+asked his name, he said,[AN]
+Just call me [oq]Hero".[4] With this[N]
+big old smile on his face.[4] Haha![A]
+
+[ml]
+Heh.[4] What a funny young man indeed.[A]
 [X]
 
 ## Ch3Village1Text
@@ -725,7 +819,7 @@ was familiar...)[A][tmm]
 
 [mr]
 She returned recently.[4] She told me she[N]
-had died,[AN] but she met a daemon[N]
+had died,[A] but she met a daemon[N]
 there.[4] The spirit of an old soldier.[A]
 
 [ml]
@@ -757,7 +851,7 @@ Ah...[4][4][ce] No, no.[4] It's time I[N]
 stopped clinging to her.[A][oe]
 
 [ml]
-I understand.[4]
+I understand.[4][N]
 Best of luck to you.[A]
 [X]
 
@@ -787,8 +881,183 @@ and the local superstition.[A]
 
 [ml][LoadTeacher]
 [mr][LoadBaby][ts]
-Placeholder![A]
+Well, well.[A]
+
+[ml][ts]
+Well, well, indeed.[AN]
+Are you following me?[A]
+
+[mr][ts]
+Yes.[4] But not in a malicious way.[A]
+
+[ml][ts]
+And how's that, then?[A]
+
+[mr][ts]
+I'm doing cultural studies, you see.[N]
+Well, that's what I call it.[A]
+
+[ml][ts]
+Ah.[4] So you're a foreigner?[4] I can't[N]
+imagine who'd employ such a tiny spy.[A]
+
+[mr]
+I'm no spy![4] I'm studying abroad.[N][4]
+Building bridges between nations![A]
+
+[ml]
+Hmm...[4] You come from the desert[N]
+across the southern range, then?[AN]
+I've heard that's a very rich land.[A]
+
+[mr][mmr][ts]
+That's correct![4] You're more worldly[N]
+than the average Wetlander, I see.[A]
+
+[ml][ts]
+...I hope you haven't been calling[N]
+other strangers by that name.[A]
 [X]
+
+
+## Ch3ChurchConvo
+
+[ml][LoadTeacher]
+[mr][LoadCivManBald]
+
+[mr]
+Good day, Father.[A]
+
+[ml]
+And good day to you, too.[N]
+I saw you and your company ride in.[A]
+
+[mr]
+Ah, yes.[4][4] Mercenary business.[A]
+
+[ml]
+Heh. I won't pry.[4][4] Rather, I'd like[N]
+to know something else...[AN]
+There was a young priest with you,[N]
+correct?[A]
+
+[mr]
+Indeed.[4][4] Do you know him?[A]
+
+[ml]
+Yes, I know him very well.[X]
+
+## Ch3EndWise
+[X]
+
+## Ch3EndDress
+[l][LoadHeroF]
+[fl][LoadDragon]
+[r][LoadTeacher]
+[fr][LoadPillow]
+
+[fl]
+Placeholder.[A]
+[X]
+
+## Ch3EndPaidPigeon
+[l][LoadHeroF]
+[fl][LoadDragon]
+[r][LoadTeacher]
+[fr][LoadPillow]
+
+[fl]
+Placeholder.[A]
+[X]
+
+## Ch3EndDidntPayPigeon
+[l][LoadHeroF]
+[fl][LoadDragon]
+[r][LoadTeacher]
+[fr][LoadPillow]
+
+[fl]
+Placeholder.[A]
+[X]
+
+## Ch3WiseEndIntro
+[l][LoadHeroF]
+[fl][LoadDragon]
+[r][LoadWise]
+[fr][LoadPillow]
+
+[l]
+Placeholder.[A]
+[X]
+
+## Ch3WiseYesChoice
+Give him the winnings.
+[X]
+
+## Ch3WiseYesDesc
+Help the man in front of you.
+[X]
+
+## Ch3WiseNoChoice
+Keep the winnings.
+[X]
+
+## Ch3WiseNoDesc
+Maybe the money could be put[N]
+towards a greater cause...
+[X]
+
+## Ch3WiseYesText
+[l][LoadHeroF]
+[fl][LoadDragon]
+[r][LoadWise]
+[fr][LoadPillow]
+
+[l]
+Placeholder.[A]
+[X]
+
+## Ch3WiseNoText
+[l][LoadHeroF]
+[fl][LoadDragon]
+[r][LoadWise]
+[fr][LoadPillow]
+
+[l]
+Placeholder.[A]
+[X]
+
+## Ch3SeizeTutorial
+Fight in the arena to earn[N]
+gold, and run any necessary[N]
+errands with Teacher.[AN]
+Once finished, move to the[N]
+highlighted tile and [oq]Seize"[N]
+to end the chapter.[A]
+[X]
+
+## Ch3TeacherErrands
+[ml][LoadTeacher][tmm]
+(So, the dress will run us 1000[N]
+gold...[4] I'll set that aside now.)[AN]
+(Wasn't there something else,[N]
+as well?[4] The thought's escaping me.)[A]
+[X]
+
+## Ch3PigeonTutorial
+Remember to reserve 1000 Gold[N]
+to pay Brother and Pigeon.[AN]
+[ToggleRed]If you have less than 1000[N]
+Gold by the end of the chapter,[N]
+Pigeon will leave your party.[ToggleRed][N]
+This may twist the thread of[N]
+fate in an unexpected way...[A]
+[X]
+
+
+
+
+
 
 
 

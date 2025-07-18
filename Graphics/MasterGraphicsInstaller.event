@@ -64,3 +64,31 @@ StatusNames:
 #incext Png2Dmp --lz77 "StatusNames.png"
 StatusNamesPal:
 #incext Png2Dmp --palette-only "StatusNames.png" 
+
+PUSH
+
+//weapon icons
+ORG $9DC5C
+POIN WeaponIcon
+ORG $9F0E0
+POIN WeaponIcon
+
+ORG $91178
+POIN WeaponIconPal
+ORG $9DC64
+POIN WeaponIconPal
+ORG $9F0E8
+POIN WeaponIconPal
+ORG $B53F4
+POIN WeaponIconPal
+
+POP
+
+ALIGN 4
+WeaponIcon:
+#incext Png2Dmp --lz77 "WeaponIcon.png"
+WeaponIconPal:
+#incext Png2Dmp --palette-only "WeaponIcon.png" 
+
+//vanilla light icon at 5961F4 (item icons table)
+//vanilla anima icon at 596174 (ditto)

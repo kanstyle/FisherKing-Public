@@ -10,6 +10,7 @@
 
 #define BelieveInDemonsFlag 0x78
 #define ThiefDealFlag 0x79
+#define HelpedWiseFlag 0x80
 
 //AI
 

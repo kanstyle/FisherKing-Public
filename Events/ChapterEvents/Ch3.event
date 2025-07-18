@@ -3,6 +3,7 @@ EventPointerTable(Ch3EventsID, PointerList)
 #define Ch3WiseTalkFlag 0x7
 #define Ch3Village1Flag 0x8
 #define Ch3Village2Flag 0x9
+#define Ch3WomanTalkFlag 0xA
 
 PointerList:
 	POIN TurnBasedEvents
@@ -28,7 +29,7 @@ TurnBasedEvents:
 ALIGN 32
 CharacterBasedEvents:
 	CharacterEventBothWays(Ch3WiseTalkFlag,Ch3PillowWiseTalk,Pillow,Wise)
-	CharacterEventBothWays(Ch3WiseTalkFlag,Ch3HeroWiseTalk,HeroChar,Wise)
+	CharacterEventBothWays(Ch3WomanTalkFlag,Ch3WomanTalkEvent,Teacher,Civilian)
 	END_MAIN
 
 MiscBasedEvents:
@@ -43,6 +44,8 @@ LocationBasedEvents:
 	
 	Armory(Ch3Armory,3,15)
 	Vendor(Ch3Vendor,14,18)
+	
+	Seize(17,19)
 	END_MAIN
 
 Dunno1:
@@ -143,6 +146,17 @@ HeroTownUnits:
 	UNIT Pillow LowVoice 0x40 Level(3,Ally,False)     [12,19] 0b 0x0 0x0 0x0 [Loneliness, Pain] [0x0,0x0,0x0,0x0]
 	UNIT
 	
+ArenaSpectatorUnits:
+	UNIT Skull Fighter 0x40 Level(4,NPC,False)     [9,0] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0xF5 CivMan 0x40 Level(10,NPC,False)     [4,0] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0xF5 CivMan 0x40 Level(10,NPC,False)     [11,0] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0xF5 CivWoman 0x40 Level(10,NPC,False)     [14,0] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0xF5 CivMan 0x40 Level(10,NPC,False)     [16,0] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0xF5 CivWoman 0x40 Level(10,NPC,False)     [17,2] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0xF5 CivMan 0x40 Level(10,NPC,False)     [1,2] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0xF5 CivWoman 0x40 Level(10,NPC,False)     [2,1] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT
+	
 TownGuardUnits:
 	UNIT 0x81 Fighter 0x40 Level(10,NPC,False)     [7,18] 0b 0x0 0x0 0x0 [IronAxe] [0x0,0x0,0x0,0x0]
 	UNIT 0x80 Soldier 0x40 Level(10,NPC,False)     [8,19] 0b 0x0 0x0 0x0 [IronLance] [0x0,0x0,0x0,0x0]
@@ -150,7 +164,7 @@ TownGuardUnits:
 	
 WomanCartUnits:
 	UNIT Civilian CivWoman 0x40 Level(1,NPC,False)     [11,19] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
-	UNIT Cart Carriage 0x40 Level(1,NPC,False)     [12,19] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	//UNIT Cart Carriage 0x40 Level(1,NPC,False)     [12,19] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
 	UNIT
 	
 TeacherTownUnits:
@@ -222,6 +236,7 @@ BeginningScene:
 	DoAllThree
 	SetBackground(Castle_Hall)
 	Text(Ch3StartManorInside)
+	GiveGold(2500)
 	RemoveBackgroundSlow
 	
 		//brother event
@@ -280,31 +295,49 @@ BeginningScene:
 	LOAD1 0x1 EnemyUnits1
 	ENUN
 	
-	LOAD1 0x1 SnotUnits
+	//LOAD1 0x1 SnotUnits
+	LOAD1 0x1 WomanCartUnits
+	LOAD1 0x1 ArenaSpectatorUnits
 	ENUN
 
 	GotoPrepScreen
-	SVAL 2 0x20
-	ASMC AutoLevelAllPromoASMC|1
+	//SVAL 2 0x20
+	//ASMC AutoLevelAllPromoASMC|1
+	AddTrap(GreenSigilTrapID,17,19)
 	
 	ENDA
 
 EndingScene:
+	FADI 6
+	SetBackgroundSlow(0x5)
+	Text(Ch3EndDress)
+	RemoveBackground
+	
+	//SetBackground(
+
 	MNC2 Ch0
 	NoFade
 	ENDA
 	
 Turn1BabyIntro:
+	CameraMove(Teacher)
 	LOAD2 0x1 BabyUnits
 	ENUN
 	MOVE 5 Baby [4,17]
 	ENUN
 	Text(Ch3BabyIntro)
 	NoFade
+	
+	CameraCursorLocation(17,19,60)
+	CenterTextbox(Ch3SeizeTutorial)
+	CameraHighlight(Teacher)
+	Text(Ch3TeacherErrands)
+	CenterTextbox(Ch3PigeonTutorial)
 	ENDA
 	
 ArenaWave1Intro:
 	Text(Ch3Wave1Intro)
+	Text(Ch3Wave1Intro2)
 	NoFade
 	ENDA
 
@@ -373,11 +406,6 @@ Ch3PillowWiseTalk:
 	NoFade
 	ENDA
 	
-Ch3HeroWiseTalk:
-	DISA Wise
-	NoFade
-	ENDA
-	
 Ch3Village1Event:
 	FADI 16
 	SetBackground(HouseBG)
@@ -392,6 +420,7 @@ Ch3Village1Event:
 	STAL 30
 	Highlight(Baby)
 	Text(Ch3BabyText1)
+	UNCM(YoungTeacher,AlreadyMoved)
 	NoFade
 	ENDA
 	
@@ -404,24 +433,67 @@ Ch3Village2Event:
 	ENUN
 	
 	FADU 16
-	//GiveItem(Javelin,0xFFFF)
+	GiveItem(TorchStaff,0xFFFF)
 	SET_ACTIVE 0
 	STAL 30
 	Highlight(Baby)
 	//Text(Ch1Village1Text)
+	UNCM(YoungTeacher,AlreadyMoved)
+	NoFade
+	ENDA
+	
+Ch3WomanTalkEvent:
+	Text(Ch3WomanText)
+	/*MOVE 5 Civilian [12,19]
+	DISA Civilian
+	STAL 30
+	MOVE 5 Cart [18,19]
+	DISA Cart*/
+	NoFade
+	ENDA
+	
+WiseEndEvent:
+	FlagIsSet(Ch3WiseTalkFlag, 0x0)
+		PreventSkippingAllowB
+		SetBackgroundSlow(0x5)
+		Text(Ch3WiseEndIntro)
+		StopSkipping
+		PreventSkipping
+		CallMenu(Ch3WiseMenu)
+			BNE 0x3 0xC 0x0
+			AllowSkipping
+			Text(Ch3WiseYesText)
+			SetFlag(HelpedWiseFlag)
+			RemoveBackground
+			SetBackground(BlackBG)
+			GOTO 0x2
+		LABEL 0x3
+			AllowSkipping
+			Text(Ch3WiseNoText)
+			RemoveBackground
+			SetBackground(BlackBG)
+			GiveGold(1000)
+			GOTO 0x2
+		LABEL 0x2
+		RemoveBackground
+	LABEL 0x0
 	NoFade
 	ENDA
 	
 PigeonLeavesEvent:
 	CHECK_ALIVE Pigeon
 		BEQ 0x0 0x0 0xC //if pigeon is not alive, skip paying her, but get snot
-		//Check money, if don't have money go to 0x2
-		//otherwise pay pigeon, then skip to end
-	GOTO 0x1
+			CHECK_MONEY
+			SVAL 1 1000
+			BLT 0x2 0xC 0x1 //Check money, if don't have money go to 0x2
+			//otherwise pay pigeon, then skip to end
+			GOTO 0x1
 	LABEL 0x2
-	//pigeon leaves
+		REMU Pigeon
+		//pigeon leaves
 	LABEL 0x0
-	//get snot
+		LOAD1 0x1 SnotUnits
+		//get snot
 	LABEL 0x1
 		
 BleedoutChapterAlwaysEvent:
@@ -449,6 +521,7 @@ Ch3Armory:
 	SHORT SlimAxe
 	SHORT Javelin
 	SHORT HandAxe
+	SHORT Hammer
 	SHORT 0
 	SHORT 0
 	
@@ -460,5 +533,7 @@ Ch3Vendor:
 	SHORT Heal
 	SHORT Restore
 	SHORT Torch
+	SHORT Bomb
+	SHORT HeavyBomb
 	SHORT 0
 	SHORT 0

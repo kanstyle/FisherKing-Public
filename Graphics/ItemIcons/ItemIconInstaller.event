@@ -18,6 +18,9 @@ ORG ItemIconEntry(IronSword)
 ORG ItemIconEntry(SlimSword)
 #incbin "Swords/SlimSword.dmp"		// Batima
 
+ORG ItemIconEntry(SteelSword)
+#incbin "Swords/{Batima} Regal Sword (Old).dmp"		// Batima
+
 ORG ItemIconEntry(SilverSword)
 #incbin "Swords/SilverSword.dmp"		// Ereshkigal
 
@@ -81,6 +84,9 @@ ORG ItemIconEntry(SteelLance)
  
 ORG ItemIconEntry(Horseslayer)
 #incbin "Lances/Horseslayer-Ereshkigal.dmp"		// Ereshkigal
+
+ORG ItemIconEntry(HeavySpear)
+#incbin "Lances/Horseslayer-old-Ereshkigal.dmp"		// Ereshkigal
 
 ORG ItemIconEntry(Javelin)
 #incbin "Lances/Javelin.dmp"		// Ereshkigal
@@ -337,19 +343,20 @@ ORG ItemIconEntry(DemonicVoid)
 ORG ItemIconEntry(Heal)
 #incbin "Staves/HealInjuries.dmp"		// Ereshkigal
 
-/*
-ORG ItemIconEntry(MendWounds)
+ORG ItemIconEntry(TorchStaff)
+#incbin "Staves/Illumination.dmp"		// Ereshkigal
+
+ORG ItemIconEntry(Mend)
 #incbin "Staves/MendWounds.dmp"		// Ereshkigal
 
-ORG ItemIconEntry(FullRecover)
+ORG ItemIconEntry(Recover)
 #incbin "Staves/FullRecover.dmp"		// Ereshkigal
 
-ORG ItemIconEntry(LongPhysick)
+ORG ItemIconEntry(Physic)
 #incbin "Staves/LongPhysick.dmp"		// Ereshkigal
 
-ORG ItemIconEntry(Fortification)
+ORG ItemIconEntry(Fortify)
 #incbin "Staves/Fortification.dmp"		// Ereshkigal
-*/
 
 ORG ItemIconEntry(Restore)
 #incbin "Staves/Restoration.dmp"		// Ereshkigal
@@ -419,6 +426,12 @@ ORG ItemIconEntry(MasterSeal)
 
 ORG ItemIconEntry(Butterfly)
 #incbin "ItemsPrfs/Butterfly.dmp"
+
+ORG ItemIconEntry(Torch)
+#incbin "ItemsPrfs/{Beansy} Torch.dmp"
+
+ORG ItemIconEntry(Elixir)
+#incbin "ItemsPrfs/{2WB} (Vanilla + Blitz) Elixir.dmp"
 
 // monster weapons
 ORG ItemIconEntry(RottenClaw)

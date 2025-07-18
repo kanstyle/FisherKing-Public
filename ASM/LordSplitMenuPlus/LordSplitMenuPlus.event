@@ -70,6 +70,16 @@ MenuOption(Ch3ThiefNoDealChoice, Ch3ThiefNoDealDesc, 0)
 MenuOption(Ch3ThiefDealChoice, Ch3ThiefDealDesc, 0)
 MenuTerminator
 
+ALIGN 4
+Ch3WiseMenu:
+MenuDefinition(4, 8, 21, 0, 1, Ch3WiseMenuOptions)
+
+ALIGN 4
+Ch3WiseMenuOptions:
+MenuOption(Ch3WiseYesChoice, Ch3WiseYesDesc, 0)
+MenuOption(Ch3WiseNoChoice, Ch3WiseNoDesc, 0)
+MenuTerminator
+
 
 
 

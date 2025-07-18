@@ -170,7 +170,7 @@ Hero's Flair[X]
 
 ## HerosFlairDesc ^
 
-[.][lock] Hero. On kill, heal 50% HP to self[N]zz
+[.][lock] Hero. On kill, heal 50% HP to self[N]
 and allies within 2 tiles.[X]
 
 ## HuntersBowName
