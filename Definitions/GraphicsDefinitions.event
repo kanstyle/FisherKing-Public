@@ -40,3 +40,4 @@
 #define SongbirdHug 0x45
 #define LowlandForest 0x46
 #define TentBG 0x47
+#define Heart 0x48

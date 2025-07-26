@@ -4,6 +4,10 @@ EventPointerTable(Ch3EventsID, PointerList)
 #define Ch3Village1Flag 0x8
 #define Ch3Village2Flag 0x9
 #define Ch3WomanTalkFlag 0xA
+#define Ch3PillowWiseBQFlag 0xB
+#define Ch3DragonWiseBQFlag 0xC
+#define Ch3BunnyWiseBQFlag 0xD
+#define Ch3WiseBQFlag 0xE
 
 PointerList:
 	POIN TurnBasedEvents
@@ -23,7 +27,7 @@ TurnBasedEvents:
 	
 	TurnEventPlayer(0x0,ArenaTurnEvent,1,255)
 	TurnEventPlayer(0x0,Turn1BabyIntro,1,1)
-	TurnEventPlayer(0x0,ArenaWave1Intro,1,1)
+	TurnEventPlayer(0x0,ArenaWave1Intro,1,1) 
 	END_MAIN
 
 ALIGN 32
@@ -39,13 +43,14 @@ MiscBasedEvents:
 	END_MAIN
 
 LocationBasedEvents:
-	Village(Ch3Village1Flag,Ch3Village1Event,4,20)
+	Village(Ch3Village1Flag,Ch3Village1Event,7,15)
 	Village(Ch3Village2Flag,Ch3Village2Event,11,15)
+	Seize(0x0,Ch3SeizeEvent,17,19)
 	
 	Armory(Ch3Armory,3,15)
-	Vendor(Ch3Vendor,14,18)
+	Vendor(Ch3Vendor,13,18)
 	
-	Seize(17,19)
+	//Seize(17,19)
 	END_MAIN
 
 Dunno1:
@@ -65,8 +70,8 @@ Tutorial:
 	END_MAIN
 
 Units1:
-	UNIT HeroChar UpstartM 0x40 Level(10,Ally,False)     [0,7] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Teacher Veteran 0x40 Level(10,Ally,False)     [3,17] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT HeroChar UpstartM 0x40 Level(10,Ally,False)     [0,7] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Headsman 0x40 Level(10,Ally,False)     [0,6] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Headsman 0x40 Level(10,Ally,False)     [0,5] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Headsman 0x40 Level(10,Ally,False)     [0,8] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
@@ -176,7 +181,15 @@ BunnyUnits:
 	UNIT
 	
 BabyUnits:
-	UNIT Baby Mage_F 0x40 Level(5,NPC,False)     [18,19] 0b 0x0 0x0 0x0 [Fire] DoNothingAI	
+	UNIT Baby Mage_F 0x40 Level(5,NPC,False)     [18,19] 0b 0x0 0x0 0x0 [Lightning,Fire] DoNothingAI	
+	UNIT
+	
+BabyRecruitUnits:
+	UNIT Baby Mage_F 0x40 Level(5,Ally,False)     [18,19] 0b 0x0 0x0 0x0 [Lightning,Fire] DoNothingAI	
+	UNIT
+	
+BabyTeacherUnits:
+	UNIT 0xF5 CivMan 0x40 Level(10,NPC,False)     [11,15] 0b 0x0 0x1 REDA11R16 [0x0] DoNothingAI	
 	UNIT
 
 Traps1:
@@ -188,6 +201,8 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
+	Music(ThraciaPreparationsID)
+	ASMC ForceHeroMale|1
 	SetFlag(BleedoutFlag)
 	
 	SetBackgroundSlow(Town_Gate)
@@ -236,9 +251,32 @@ BeginningScene:
 	DoAllThree
 	SetBackground(Castle_Hall)
 	Text(Ch3StartManorInside)
-	GiveGold(2500)
-	RemoveBackgroundSlow
 	
+	RemoveBackground
+	SetBackgroundSlow(Heart)
+	STAL 60
+	
+	LABEL 0x4
+	CALL StopSkippingEvent
+	PreventSkipping
+	CallMenu(Ch3HeartMenu)
+		BNE 0x6 0xC 0x0
+		AllowSkipping
+		GOTO 0x5
+	LABEL 0x6
+		AllowSkipping
+		Text(Ch3HeartNoText)
+		GOTO 0x4
+	LABEL 0x5
+	RemoveBackground
+	SetBackground(Castle_Hall)
+	Text(Ch3StartManorInside2)
+	RemoveBackgroundSlow
+	SetBackground(BlackBG)
+	GiveGold(2500)
+	RemoveBackground
+	
+	Music(FFTAnxiety)
 		//brother event
 	CHECK_ALIVE Brother
 	BEQ 1 0x0 0xC
@@ -246,7 +284,7 @@ BeginningScene:
 		SetBackgroundSlow(Inn)
 		BROWNBOXTEXT Ch3StartInnBrownBox [8,8]
 		Text(Ch3StartBrotherThief)
-		StopSkipping
+		CALL StopSkippingEvent
 		PreventSkipping
 		CallMenu(Ch3ThiefMenu)
 			BNE 0x3 0xC 0x0
@@ -258,15 +296,23 @@ BeginningScene:
 			GOTO 0x2
 		LABEL 0x3
 			AllowSkipping
+			CHECK_ALIVE Pigeon
+			BNE 11 0x0 0xC
+				Text(Ch3StartBrotherThiefDealNoPigeon)
+			GOTO 0x12
+			LABEL 0x11
 			Text(Ch3StartBrotherThiefDeal)
+			LABEL 0x12
 			SetFlag(ThiefDealFlag)
 			GOTO 0x2
 		LABEL 0x2
 		RemoveBackgroundSlow
 	LABEL 1
 	
+	Music(WildFieldsID)
 	//back to plaza
 	LOMA Ch3
+	TILECHANGE 0x1
 	CAMERA [18,21]
 	LOAD2 0x1 HeroTownUnits
 	ENUN
@@ -303,24 +349,33 @@ BeginningScene:
 	GotoPrepScreen
 	//SVAL 2 0x20
 	//ASMC AutoLevelAllPromoASMC|1
-	AddTrap(GreenSigilTrapID,17,19)
 	
 	ENDA
 
 EndingScene:
-	FADI 6
+	Music(RoadTakenID)
+	FADI 16
+	SetBackground(Town_Day)
+	Text(BabyRecruitment)
+	LOAD1 0x1 BabyRecruitUnits
+	
 	SetBackgroundSlow(0x5)
+	CALL WiseEndEvent
 	Text(Ch3EndDress)
 	RemoveBackground
 	
 	//SetBackground(
 
+	CALL PigeonLeavesEvent
+	
 	MNC2 Ch0
 	NoFade
 	ENDA
 	
 Turn1BabyIntro:
-	CameraMove(Teacher)
+	AddTrap(GreenSigilTrapID,17,19)
+	Music(NorthernDesertID)
+	CAMERA [3,17]
 	LOAD2 0x1 BabyUnits
 	ENUN
 	MOVE 5 Baby [4,17]
@@ -330,16 +385,23 @@ Turn1BabyIntro:
 	
 	CameraCursorLocation(17,19,60)
 	CenterTextbox(Ch3SeizeTutorial)
-	CameraHighlight(Teacher)
+	CAMERA [3,17]
+	Highlight(Teacher)
 	Text(Ch3TeacherErrands)
 	CenterTextbox(Ch3PigeonTutorial)
 	ENDA
 	
 ArenaWave1Intro:
+	CAMERA [9,0]
+	Highlight(Skull)
 	Text(Ch3Wave1Intro)
+	STAL 30
 	Text(Ch3Wave1Intro2)
+	STAL 30
+	Text(Ch3Wave1Intro3)
 	NoFade
 	ENDA
+	
 
 ArenaTurnEvent:
 	CHECK_ALIVE Combatant
@@ -354,6 +416,7 @@ ArenaTurnEvent:
 		COUNTER_CHECK 1
 		BNE 0x2 0x8 0xC
 			//CenterTextbox(DebugPauseText)
+			GiveGold(500)
 			CAMERA [18,5]
 			Text(Ch3Wave2Intro)
 			LOAD2 0x1 EnemyUnits2
@@ -364,6 +427,7 @@ ArenaTurnEvent:
 		COUNTER_CHECK 1
 		BNE 0x3 0x8 0xC
 			//CenterTextbox(DebugPauseText)
+			GiveGold(500)
 			CAMERA [18,5]
 			Text(Ch3Wave3Intro)
 			LOAD2 0x1 EnemyUnits3
@@ -374,6 +438,7 @@ ArenaTurnEvent:
 		COUNTER_CHECK 1
 		BNE 0x4 0x8 0xC
 			//CenterTextbox(DebugPauseText)
+			GiveGold(500)
 			CAMERA [18,5]
 			Text(Ch3Wave4Intro)
 			LOAD2 0x1 EnemyUnits4
@@ -402,7 +467,12 @@ ArenaTurnEvent:
 	ENDA
 	
 Ch3PillowWiseTalk:
+	Text(Ch3PillowWiseTalkText)
+	FADI 16
 	DISA Wise
+	FADU 16
+	STAL 30
+	Text(Ch3WiseRetreats)
 	NoFade
 	ENDA
 	
@@ -411,7 +481,7 @@ Ch3Village1Event:
 	SetBackground(HouseBG)
 	Text(Ch3Village1Text)
 	RemoveBackground
-	MOVE 65535 Baby [4,21]
+	MOVE 65535 Baby [7,16]
 	ENUN
 	
 	FADU 16
@@ -420,25 +490,37 @@ Ch3Village1Event:
 	STAL 30
 	Highlight(Baby)
 	Text(Ch3BabyText1)
-	UNCM(YoungTeacher,AlreadyMoved)
+	UNCM(Teacher,AlreadyMoved)
+	
+	CAMERA [11,15]
+	STAL 30
+	TILEREVERT 0x1
+	CameraCursorLocation(11,15,60)
+	Text(Ch3BabyTeacherIntro)
 	NoFade
 	ENDA
 	
 Ch3Village2Event:
 	FADI 16
-	SetBackground(HouseBG)
-	Text(Ch1Village1Text)
-	RemoveBackground
 	MOVE 65535 Baby [11,16]
 	ENUN
+	SET_ACTIVE 0
+	REMU Teacher
+	SetBackground(HouseBG)
+	Text(Ch3TalkingToBabysTeacher)
+	RemoveBackground
 	
 	FADU 16
-	GiveItem(TorchStaff,0xFFFF)
-	SET_ACTIVE 0
+	MOVE 5 Baby [11,21]; ENUN
+	DISA Baby
 	STAL 30
-	Highlight(Baby)
-	//Text(Ch1Village1Text)
-	UNCM(YoungTeacher,AlreadyMoved)
+	
+	SetBackground(HouseBG)
+	Text(Ch3TalkingToBabysTeacher2)
+	RemoveBackground
+	REVEAL Teacher
+	FADU 16
+	UNCM(Teacher,AlreadyMoved)
 	NoFade
 	ENDA
 	
@@ -451,13 +533,14 @@ Ch3WomanTalkEvent:
 	DISA Cart*/
 	NoFade
 	ENDA
+
 	
 WiseEndEvent:
 	FlagIsSet(Ch3WiseTalkFlag, 0x0)
 		PreventSkippingAllowB
 		SetBackgroundSlow(0x5)
 		Text(Ch3WiseEndIntro)
-		StopSkipping
+		CALL StopSkippingEvent
 		PreventSkipping
 		CallMenu(Ch3WiseMenu)
 			BNE 0x3 0xC 0x0
@@ -487,11 +570,16 @@ PigeonLeavesEvent:
 			SVAL 1 1000
 			BLT 0x2 0xC 0x1 //Check money, if don't have money go to 0x2
 			//otherwise pay pigeon, then skip to end
+			Text(Ch3EndPaidPigeon)
 			GOTO 0x1
 	LABEL 0x2
 		REMU Pigeon
+		Text(Ch3EndDidntPayPigeon)
+		LOAD1 0x1 SnotUnits
+		GOTO 0x1
 		//pigeon leaves
 	LABEL 0x0
+		Text(Ch3EndPigeonDead)
 		LOAD1 0x1 SnotUnits
 		//get snot
 	LABEL 0x1
@@ -509,6 +597,24 @@ BleedoutChapterTurnEvent:
 HeroGenderFlagTurnEvent:
 	UnsetFlag(HeroGenderswapFlag)
 	NoFade
+	ENDA
+
+Ch3SeizeEvent:
+	FlagNotSet(Ch3Village2Flag, 0x0)
+		Text(Ch3SeizeNo)
+		GOTO 0x1
+	LABEL 0x0
+	CALL EndingScene
+	LABEL 0x1
+	NoFade
+	ENDA
+
+StopSkippingEvent:
+	CHECK_EVBIT 2
+	BEQ 0 0x0 0xC
+	//ASMC 0x08591F40|1
+	FADU 16
+	LABEL 0x0
 	ENDA
 	
 ALIGN 4

@@ -11,6 +11,10 @@ Make money[X]
 Fight in the arena[N]
 and run errands.[X]
 
+## Ch3BaseHunterName
+Hunter's Here
+[X]
+
 ## Ch3BaseHunter
 
 [r][LoadTeacher]
@@ -123,7 +127,7 @@ the baron a visit.[A]
 
 [fl]
 Ah.[4] You can go without me,[N]
-then.[4] You know, in case...[A]
+then.[4] You know, in case[tmm]...[tmm][A]
 
 [r]
 In case the baron isn't fond[N]
@@ -145,7 +149,7 @@ The fun part's hanging out with Pillow,[N]
 for me.[4] The rest is just work.[A]
 
 [fl]
-Awww...[A]
+Awww[tmm]...[tmm][A]
 
 [fr][ts][ce]
 Yeah, yeah.[4][oe] See you in a while, then.[A]
@@ -199,7 +203,7 @@ Please do.[A]
 
 ## Ch3StartEllipsis
 [mr][LoadTeacher]
-...[A][X]
+[tmm]...[tmm][A][X]
 
 ## Ch3StartFlashback
 [mr][LoadYoungTeacher]
@@ -212,7 +216,7 @@ fancy funeral?[A]
 
 [ml]
 Well, not that I think it's a[N]
-realistic request, per se...[A]
+realistic request, per se[tmm]...[tmm][A]
 
 [mr]
 If you're trying to convince me of[N]
@@ -249,7 +253,7 @@ And none of the living can tell the[N]
 difference?[AN]
 Why, I'd be jealous of my other self.[AN]
 [ce]Especially if he had large muscles,[N]
-and could hold his liquor well...[A]
+and could hold his liquor well[tmm]...[tmm][A]
 
 [ml][ts]
 Ah, not to worry, my prince.[AN]
@@ -258,21 +262,139 @@ them straight immediately.[A]
 
 [mr][oe]
 Ha![4][4] On second thought, some[N]
-embellishment may be good...[A]
+embellishment may be good[tmm]...[tmm][A]
 [X]
 
 ## Ch3StartManorOutside2
 [fr][LoadTeacher]
 [r][LoadHeroM]
-[ml][LoadBaron]
-Placeholder.[A]
+[ml][LoadBaron][ts]
+Now, then, Hero.[N][4][4]
+You look eager for another job.[A]
+
+[r]
+Hm?[4] Why, of course, milord.[A]
+
+[ml]
+Brilliant.[4] Let's discuss inside, then.[N]
+Come.[A]
 [X]
 
 ## Ch3StartManorInside
 [r][LoadTeacher]
 [fr][LoadHeroM]
 [ml][LoadBaron]
-Placeholder.[A]
+So.[4] Are either of you abreast[N]
+of the recent news?[A]
+
+[r]
+Of what sort, sir?[A]
+
+[ml]
+I'm hosting a ball in this very[N]
+manor, quite soon.[AN]
+And the prince himself is slated[N]
+to make an appearance.[AN]
+Exciting, is it not?[A]
+
+[fr]
+To be sure![A]
+
+[r]
+What's the occasion, if I may ask?[A]
+
+[ml]
+He plans to make a speech, addressing[N]
+the future of the Highlands' military.[AN]
+War declaration, perhaps.[4] Difficult to say.[A]
+
+[r]
+Interesting.[A]
+
+[ml][ce]
+I'll be blunt -- this city is a bit of a[N]
+backwater, or so say the capital nobles.[AN][oe]
+Many are afraid for their heads so close[N]
+to the border.[AN]
+Thus, I'll need extra sword arms for[N]
+security, and a personal bodyguard.[A]
+
+[fr][ts]
+You've chosen the right company for[N]
+the job, then, sir.[AN]
+Teacher here has a wealth of experience[N]
+doing that very work.[A]
+
+[r][ts]
+Hey, now...[A]
+
+[ml][ts]
+Is that so?[4] Splendid.[4] The ball is[N]
+a few days off --[A] you'll have[N]
+that time to prepare.[A]
+
+[r][ts]
+I see.[4] So I'll be guarding both you[N]
+and your noble lady, then, sir?[AN]
+
+[ml][ce]
+[tmm]...[tmm][oe][AN]
+Why is it that everywhere I go,[N]
+that's all I'm ever asked about?[A][css]
+
+[fr][mfr]
+Oh, he meant no offense, milord![A]
+
+[ml]
+I know.[4] Don't worry.[4] It's me[N]
+who's speaking out of turn.[AN]
+The answer is no, you'll be guarding[N]
+only me.[4] There is no noble lady.[A]
+
+[r]
+Understood, sir.[4][N]
+Nothing wrong with that.[A]
+
+[ml][ce]
+Ha.[4] So they say, and yet...[A][oe]
+
+[fr]
+[tmm]...[tmm][A]
+[X]
+
+## Ch3HeartYesChoice
+Make an odd proposition.[X]
+
+## Ch3HeartYesDesc
+Thump, thump, thump...[X]
+
+## Ch3HeartNoChoice
+Keep quiet.[X]
+
+## Ch3HeartNoDesc
+Thump, thump, thump...[X]
+
+## Ch3HeartNoText
+Why?[4] Who are you?[N]
+What purpose do you serve?[A]
+[X]
+
+## Ch3StartManorInside2
+[r][LoadTeacher]
+[fr][LoadForceHeroM]
+[ml][LoadBaron]
+
+[fr]
+Sir? I may just have a[N]
+solution for you.[A]
+
+[ml]
+A...[4][4] solution?[A]
+
+[fr]
+What if I were to be[N]
+your bodyguard...[A][css][clear][LoadForceHeroF]
+...like this?[A]
 [X]
 
 ## Ch3StartTown
@@ -280,7 +402,56 @@ Placeholder.[A]
 [fr][LoadHeroM]
 [l][LoadDragon]
 [fl][LoadPillow]
-Placeholder.[A]
+
+[fr][ts]
+...And that's why we[N]
+need to buy a dress.[A]
+
+[r][ts]
+It was a feat of quick[N]
+thinking, I'll admit.[A]
+
+[fl]
+I'm glad, but...[AN]
+Aren't nice dresses[N]
+rather expensive?[A]
+
+[fr][ts]
+Way ahead of you.[AN]
+I made sure we'll be reimbursed[N]
+after the ball.[AN]
+...Honestly, though, I would've[N]
+paid out of pocket if I had to.[AN]
+
+[l]
+Pfft.[A]
+
+[fr]
+What? You'd turn down a chance to[N]
+dance with a baron at a royal ball?[AN]
+
+[l]
+Well, yeah.[4] But I'm glad[N]
+you're so excited about it.[A]
+
+[fr]
+Aww, thanks![AN][ts]
+Problem is, I've never picked[N]
+out a dress before...[A]
+
+[l]
+I can handle that.[A]
+
+[r]
+Hm?[4] You can?[A]
+
+[l]
+Yeah.[4] Don't worry about it.[N]
+Let's talk money, instead.[A]
+
+[fl]
+Even if we get reimbursed afterward,[N]
+we're still low on funds...[A]
 [X]
 
 ## Ch3StartInnBrownBox
@@ -327,7 +498,7 @@ How's that sound, eh?[N]
 Gotta be way more than 1,000.[A]
 
 [ml]
-...[A]
+[tmm]...[tmm][A]
 [X]
 
 ## Ch3ThiefNoDealChoice
@@ -354,12 +525,28 @@ That's what I like to hear![N]
 You ain't gonna regret this.[A][ClearFace]
 
 [ml]
-[tmm](I probably will...[A] ...Whatever.[4][N]
+[tmm](I probably will[tmm]...[tmm][A] ...Whatever.[4][N]
 Could use some excitement.)[A][ClearFace][4][4][4]
 
 [ml]
 [LoadPigeon]
 (Huh?[4] Was that Brother?)[A]
+[X]
+
+## Ch3StartBrotherThiefDealNoPigeon
+[ml][LoadBrother]
+[mr][LoadAssassin]
+
+[ml]
+Fine.[4] Deal.[A]
+
+[mr]
+That's what I like to hear![N]
+You ain't gonna regret this.[A][ClearFace]
+
+[ml]
+[tmm](I probably will[tmm]...[tmm][A] ...Whatever.[4][N]
+Could use some excitement.)[A][ClearFace][4][4][4]
 [X]
 
 ## Ch3StartBrotherThiefNoDeal
@@ -389,8 +576,52 @@ I'm done with all this.[A][ClearFace]
 ## Ch3StartBunny
 [r][LoadHeroM]
 [fr][LoadDragon]
-[ml][LoadBunny]
-Placeholder.[A]
+[ml][LoadBunny][ts]
+Hello there. [4]Couldn't help[N]
+but overhear.[A]
+
+[fr]
+Yeah?[4] What'd you hear?[A]
+
+[ml][ts]
+Oh, everything.[4] I got pretty[N]
+good ears, missy.[AN]
+Name's Bunny![4] Mercs, are ya?[4] You[N]
+kids looking to make some extra cash?[A]
+
+[r]
+We could be convinced.[N]
+What'd you have in mind?[A]
+
+[ml]
+Team up with me in the arena, then.[AN]
+We'll run the gauntlet and make a[N]
+real killing.[A]
+
+[fr][ts]
+...You sure?[4] No offense, but[N]
+you look pretty scrawny.[A]
+
+[ml]
+Ha! Maybe I don't look it now, but I[N]
+live for battle.[AN]
+I've been skewering cowards on this lance[N]
+since before you were born, missy.[A]
+
+[fr]
+...Huh?[4] How--[A]
+
+[r][ts]
+Sounds good to me![4] We'll take[N]
+you up on that, Bunny.[AN]
+Why don't you lead the way?[A]
+
+[ml]
+Gladly.[4]
+You won't regret it![A][css][clear][4][4]
+
+[fr][ts]
+Something's wrong with that kid.[A]
 [X]
 
 ## Ch3StartGuards
@@ -462,7 +693,7 @@ True.[A]
 Well, there you go.[A][oe]
 
 [ml][ts]
-I suppose there I do go.[A]
+I suppose there I do go.[AN]
 And there, I'm going to go,[N]
 if you don't mind, miss.[A]
 
@@ -523,7 +754,10 @@ eighth your age.[A]
 ## Ch3Wave1Intro
 
 [mr][LoadSkull]
-Placeholder![A]
+Good people of the arena![AN]
+Challenging the gauntlet today[N]
+will be...[4][4][4] Hero's...[4] Company...?[AN]
+Wait, isn't that...[A]
 [X]
 
 ## Ch3Wave1Intro2
@@ -537,6 +771,17 @@ Wait...[4] Isn't that...?[A]
 Guess he's got a day job.[A]
 [X]
 
+## Ch3Wave1Intro3
+
+[mr][LoadSkull]
+Ahem![4][4] Hero's Company![AN]
+They have chosen to face four[N]
+notorious warbands,[A] in a grueling[N]
+marathon of combat![AN]
+Is it bravery or foolishness that[N]
+drives them?![4][4] We shall see![AN]
+Let the games begin![A]
+[X]
 
 ## Ch3Wave1Win
 
@@ -547,7 +792,9 @@ Hero's Company wins![A]
 ## Ch3Wave2Intro
 
 [mr][LoadSkull]
-Placeholder![A]
+But that was just the vanguard![AN]
+How will they fare against the[N]
+deadly weapons of our next wave?[A]
 [X]
 
 ## Ch3Wave2Win
@@ -559,7 +806,10 @@ Hero's Company wins![A]
 ## Ch3Wave3Intro
 
 [mr][LoadSkull]
-Placeholder![A]
+Hero's Company has prevailed --[4][4][N]
+but two more waves remain![AN]
+Will they survive the thunder and[N]
+wings striking from the heavens?![A]
 [X]
 
 ## Ch3Wave3Win
@@ -571,37 +821,51 @@ Hero's Company wins![A]
 ## Ch3Wave4Intro
 
 [mr][LoadSkull]
-Placeholder![A]
+So, their grit has taken them this[N]
+far...[4][4] but the gauntlet champion awaits![AN]
+The low mage who reduces his foes to[N]
+a slurry of brains and eyeballs...[AN]
+Wise darkens the arena once again![A]
 [X]
 
 ## Ch3Wave4Win
 
 [mr][LoadSkull]
 Hero's Company wins![A]
+People of the arena,[N]
+your new champions![A]
+[X]
+
+## Ch3WiseRetreats
+
+[mr][LoadSkull]
+What's this?[4] Wise has[N]
+conceded![4] He forfeits![A]
 [X]
 
 ## Ch3Wave4Intro2
 
 [mr][LoadWise]
 ...Steady.[AN]
-[ce]Steady...[A]
+[ce]Steady[tmm]...[tmm][A]
 
 [ml][LoadPurpleFighter]
-How're you holding up, Wise?[A]
+Pull it together, low mage.[N]
+Don't screw this up.[A]
 
 [mr]
-[oe]...[A]
+[oe][tmm]...[tmm][A]
 [X]
 
 ## Ch3Wave4Intro22
 [mr][LoadWise]
 [ml][LoadPurpleFighter]
 [mr]
-...It's been worse.[4][N]
-Don't worry about me, kid.[A]
+Who do you think you're talking to, kid?[N]
+I know what I'm doing.[A]
 
 [ml]
-Alright.[4] You got it, chief.[A]
+Whatever you say[tmm]...[tmm][A]
 [X]
 
 ## Ch3Wave4Intro3
@@ -613,17 +877,17 @@ Low mage.[4] Looking a little[N]
 tougher than the rest.[A]
 
 [ml][MoveMidLeft]
-Ah![4] Oh, no...[A]
+Ah![4] Oh, no[tmm]...[tmm][A]
 
 [r]
 What's wrong, Pillow?[A]
 
 [ml]
 I know him.[4] That's Wise.[AN]
-And his magic's unstable...[A]
+And his magic's unstable[tmm]...[tmm][A]
 
 [r]
-You mean...[A]
+You mean[tmm]...[tmm][A]
 
 [ml]
 He's untreated.[4] I think.[N]
@@ -636,7 +900,7 @@ Is the audience in danger, you think?[A]
 [ml]
 I don't think so, but he is.[AN]
 If we don't stop the fight,[N]
-he could end up...[A]
+he could end up[tmm]...[tmm][A]
 
 [fr]
 Alright.[4] I'm on it.[A]
@@ -664,7 +928,7 @@ you just need to get out of here![A]
 [mr]
 [ts]Heh.[4] You really are a good kid,[N]
 huh?[A] I'd like to trust you, but[N]
-I'm afraid I need that money...[A]
+I'm afraid I need that money[tmm]...[tmm][A]
 
 [ml]
 [ts]I'm just trying to help you, Wise![AN]
@@ -677,7 +941,7 @@ My daemons never make offers like that.[N]
 Heh, heh.[A]
 
 [ml]
-Wise...[A]
+Wise[tmm]...[tmm][A]
 
 [mr]
 Alright.[4] I forfeit.[4] We'll speak later.[A]
@@ -703,10 +967,10 @@ I do, but I don't know you.[N]
 
 [mr][LoadCivWomanOld]
 [MoveMidRight]
-Urgh...[4][4] Blasted thing...[A]
+Urgh...[4][4] Blasted thing[tmm]...[tmm][A][css]
 
 [ml][LoadTeacher]
-Hey, there.[4] Perhaps you could[N]
+Hello there.[4] Perhaps you could[N]
 use a hand with that.[A]
 
 [mr]
@@ -750,19 +1014,19 @@ Heh.[4] I wish you luck with that.[A]
 
 [mr][LoadCivWomanOld]
 [MoveMidRight]
-Urgh...[4][4] Blasted thing...[A]
+Urgh...[4][4] Blasted thing[tmm]...[tmm][A][css]
 
 [ml][LoadTeacher]
 Hey, there.[4] Perhaps you could[N]
-use a hand with that?[A]
+use a hand with that?[AN]
 Loading a cart that size is hardly[N]
 a job for one.[A]
 
 [mr]
 Oh, thank you.[4] Yes, that'd[N]
-be quite a help.[A][ts]
+be quite a help.[AN][ts]
 Heh.[4][4] You're not even the[N]
-first to offer, today.[A]
+first to offer, today.[AN]
 A kind young man came by, just[N]
 a short while ago.[A]
 
@@ -859,22 +1123,45 @@ Best of luck to you.[A]
 
 [ml][LoadTeacher]
 [mr][LoadCivManOld]
-Daemons?[A] Whazzat?[4] Daemons,[4][N]
-did you say?[A]
+Well, well.[4][4] New in town, sonny?[A]
 
 [ml]
-I haven't said anything, actually.[A]
+[tmm]([oq]Sonny"?)[N]
+You could say that.[4] Why?[A]
 
 [mr]
-Well, now![4] I'll have you know that[N]
-if anyone does, they're crazy.[AN]
-Daemons aren't real, plain and[N]
-simple.[AN]
-It's just what the low mages call[N]
-their demented delusions,[AN]
-and the local superstition.[A]
+Well, now![4] You should know[tmm]...[tmm][A]
 
 [ml]
+[X]
+
+## Ch3Village2TextNarration
+[oq]'Sonny'?" I thought to myself again,[N]
+not really listening.[N]
+I was tempted to let it slide.[AN]
+However, men my age numbered few in[N]
+the Highlands, and that was an[N]
+indefensibly annoying way to greet[N]
+a fellow elder.[N]
+I was well within my rights to retaliate.[A]
+[X]
+
+## Ch3Village2Text2
+
+[ml][LoadTeacher]
+[mr][LoadCivManOld]
+[ml]
+It's nice to meet you.[N]
+How old are you, may I ask, sir?[A]
+
+[mr]
+Hm![4] Eighty-one, and not a day over.[A]
+
+[ml]
+Oh, dear.[4] Sorry to hear that.[A]
+
+[mr]
+It's not important
 [X]
 
 ## Ch3BabyText1
@@ -947,17 +1234,61 @@ Indeed.[4][4] Do you know him?[A]
 [ml]
 Yes, I know him very well.[X]
 
-## Ch3EndWise
-[X]
-
 ## Ch3EndDress
 [l][LoadHeroF]
 [fl][LoadDragon]
 [r][LoadTeacher]
 [fr][LoadPillow]
 
-[fl]
-Placeholder.[A]
+[r]
+So, is that everything?[N]
+The dress is taken care of?[A]
+
+[l][ts]
+You bet.[4] All thanks to Dragon.[N]
+She really knows her stuff.[A]
+
+[fl][ce][ts]
+Like I said, don't worry about it.[AN]
+
+[fr][ts]
+Heehee.[A]
+
+[fl][ts][oe]
+You've never shopped for women's clothes[N]
+much, have you?[4] I could kinda tell.[A]
+
+[l][ce]
+Nope.[4] I can LOOK like a girl, but it's[N]
+not like I know what to do in a dress shop.[A][oe]
+
+[fr][ce]
+Well, plenty of women have the same problem.[N][4][4][4]
+[ts]...Such as myself.[4][ce] Hahaha...[A][oe]
+
+[l][ts]
+It'd be nice to get our clothes washed and[N]
+go to the baths, now that you mention it.[AN]
+Wanna come along, Teacher?[A]
+
+[r][ts]
+Don't mind me.[N]
+I can take care of that on my own time.[A]
+
+[l]
+Really?[4] I thought old people loved[N]
+public baths.[AN]
+There's usually tons of 'em there.[A]
+
+[r][ce]
+It's not that.[4] I just don't want my[N]
+physique to destroy your self-confidence.[A]
+
+[fl][ts]
+Ha.[A]
+
+[fr][tmm]
+(Is that what men do in the baths...?)[tmm][A]
 [X]
 
 ## Ch3EndPaidPigeon
@@ -967,7 +1298,17 @@ Placeholder.[A]
 [fr][LoadPillow]
 
 [fl]
-Placeholder.[A]
+So, how're we doing on money?[A]
+
+[l][ts]
+Just fine![4] Looks like we've got enough[N]
+to keep our mercenaries on board.[A]
+
+[fr]
+Yay![A]
+
+[r][ce]
+Thanks to my expert budgeting.[A]
 [X]
 
 ## Ch3EndDidntPayPigeon
@@ -977,17 +1318,190 @@ Placeholder.[A]
 [fr][LoadPillow]
 
 [fl]
-Placeholder.[A]
+So, how're we doing on money?[4]
+Did the mercs get paid?[A]
+
+[l][ce]
+About that[tmm]...[tmm][A][oe]
+
+[r]
+There was a bit of a...[4] clerical error.[A]
+
+[fl]
+Uh-huh.[A]
+
+[l][ce]
+Brother's still here, but...[AN]
+It looks like Pigeon flew the coop.[N]
+Teacher and I found an angry note from her.[A]
+
+[fr]
+Oh, no[tmm]...[tmm][A]
+
+[fl]
+Nice going, genius.[N]
+Got any good excuses?[A]
+
+[l]
+'Course not.[N] I'm taking full responsibility.[4][4][N]
+[ts][oe]In fact, I already found a competent replacement.[AN]
+That's your cue![4] Come on out![A][css]
+
+[ffr][ts]
+[fl][clear]
+[r][clear]
+[r][LoadDragon][4][4][4][4][4]
+[fl][LoadSnot]
+[l][ts]
+Meet our newest member, everyone.[N]
+They call him Snot.[A]
+
+[r][ts]
+Snot.[A]
+
+[l][ts]
+Snot.[A]
+
+[fr][ts]
+He seems awfully quiet[tmm]...[tmm][AN]
+Nice to meet you, um...[4][4] Snot.[A]
+
+[fl]
+[tmm]...[tmm][A]
+
+[r]
+[tmm]...[tmm][A]
+
+[l]
+[tmm]...[tmm][A]
+
+[fr]
+He's very good at...[4][4] not blinking...[A]
+
+[l][ts]
+Right?[A]
+
+[r][ts][ce]
+Yeah.[A]
+[X]
+
+## Ch3EndPigeonDead
+[l][LoadHeroF]
+[fl][LoadDragon]
+[r][LoadTeacher]
+[fr][LoadPillow]
+
+[fl]
+So, we're guarding a whole manor...[AN]
+Can't help but notice we've got a pretty[N]
+light crew.[A]
+
+[r]
+Well, the baron has his own men, and I[N]
+suspect the nobles will bring bodyguards.[AN]
+Still, we could use a few more hands.[A]
+
+[l]
+[ce][ts]Lucky for us, I think of everything.[AN]
+[oe]Ready to meet our newest member?[A]
+
+[fr]
+Oh...?[A]
+
+[l]
+That's your cue![4][4] Come on out![A]
+
+[ffr][ts]
+[fl][clear]
+[r][clear]
+[r][LoadDragon][4][4][4][4][4]
+[fl][LoadSnot]
+[l][ts]
+Meet our newest member, everyone.[N]
+They call him Snot.[A]
+
+[r][ts]
+Snot.[A]
+
+[l][ts]
+Snot.[A]
+
+[fr][ts]
+He seems awfully quiet[tmm]...[tmm][AN]
+Nice to meet you, um...[4][4] Snot.[A]
+
+[fl]
+[tmm]...[tmm][A]
+
+[r]
+[tmm]...[tmm][A]
+
+[l]
+[tmm]...[tmm][A]
+
+[fr]
+He's very good at...[4][4] not blinking...[A]
+
+[l][ts]
+Right?[A]
+
+[r][ts][ce]
+Yeah.[A]
 [X]
 
 ## Ch3WiseEndIntro
 [l][LoadHeroF]
 [fl][LoadDragon]
-[r][LoadWise]
+
+[fl]
+Think someone'll come after us for[N]
+match fixing?[A]
+
+[l][ts]
+After we just trashed everyone in the[N]
+arena?[4] I'm not worried.[A]
+
+[r][ts][LoadWise]
 [fr][LoadPillow]
+[r]
+These your friends, Pillow?[A]
+
+[fr][ts]
+Mm-hmm.[4] Hero's Company is fairly new,[N]
+but we're...[4] um...[4] pretty close.[A]
+
+[r]
+Heh.[4] Well, until you're no longer[N]
+useful, that is[tmm]...[tmm][A]
+
+[fr][ts]
+Wise[tmm]...[tmm][A]
+
+[fl]
+What's your problem?[4] Pillow just[N]
+stuck her neck out for you, old man.[A]
+
+[r]
+Just some humor, girl.[4] Settle down.[A]
+
+[fl]
+Yeah, well, it wasn't funny.[N]
+Show her some respect.[A]
 
 [l]
-Placeholder.[A]
+Hey, let's all take it easy.[4] You need[N]
+those winnings, right, Wise?[AN]
+How much do daemon pellets run you these[N]
+days?[A]
+
+[r]
+Thousand gold for a few months' supply,[N]
+give or take.[A] But let me be clear --[N]
+I'm not so soft as to ask for handouts.[A]
+
+[l]
+Really?[4] Hm[tmm]...[tmm][A]
+
 [X]
 
 ## Ch3WiseYesChoice
@@ -999,7 +1513,7 @@ Help the man in front of you.
 [X]
 
 ## Ch3WiseNoChoice
-Keep the winnings.
+Keep the final round winnings. (1000G)
 [X]
 
 ## Ch3WiseNoDesc
@@ -1013,8 +1527,42 @@ towards a greater cause...
 [r][LoadWise]
 [fr][LoadPillow]
 
+[l][ts]
+Well, too bad.[4] Doesn't matter[N]
+to me if you want it or not.[AN]
+Here.[A][css][ml]
+
+[r]
+Heh.[4] If you insist[tmm]...[tmm][A]
+
+[fr]
+You're making me angry, Wise.[A]
+
+[r]
+Oh?[4] Well, pardon me, then.[N]
+I'll make myself scarce.[A][css][clear][....][....]
+
+[fr][mmr]
+[fl]
+What a pissant.[4][N]
+Didn't even thank us.[A]
+
+[fr]
+[tmm]...[tmm][A]
+
+[fl]
+You okay, Pillow?[A]
+
+[fr]
+...He's first generation.[4] They're just...[4][N]
+like that, sometimes.[A]
+
 [l]
-Placeholder.[A]
+Well, no one said helping the needy was fun.[4][4][N][ce]
+'Specially when they don't know what's good for 'em.[A][oe]
+
+[fr]
+They're not stupid.[4] It's just...[4][4] complicated.[A]
 [X]
 
 ## Ch3WiseNoText
@@ -1024,7 +1572,44 @@ Placeholder.[A]
 [fr][LoadPillow]
 
 [l]
-Placeholder.[A]
+You're sure about that?[A]
+
+[r]
+'Course I am.[4] Never begged a day in[N]
+my life, and don't need to start now.[A]
+
+[fr][mfr]
+Just shut up and take the money, Wise.[N]
+Don't be stupid.[A]
+
+[r]
+These days, my pride's worth more than[N]
+this rickety old life.[AN]
+Thanks for thinkin' of me, though, kids.[N]
+I'll make myself scarce.[A][css][clear][....][....]
+
+[fr][mmr]
+[fl]
+What the hell was wrong with him?[A]
+
+[l]
+Some people just don't wanna be helped.[A]
+
+[fr]
+[tmm]...[tmm][A]
+
+[fl]
+You okay, Pillow?[A]
+
+[fr]
+...He's first generation.[4] They're not stupid.[4][N]
+It's just...[4][4] complicated.[A]
+
+[fl]
+What do you mean?[A]
+
+[fr][ce]
+I'll tell you some other time.[A]
 [X]
 
 ## Ch3SeizeTutorial
@@ -1051,9 +1636,262 @@ to pay Brother and Pigeon.[AN]
 Gold by the end of the chapter,[N]
 Pigeon will leave your party.[ToggleRed][N]
 This may twist the thread of[N]
-fate in an unexpected way...[A]
+fate in an unexpected way[tmm]...[tmm][A]
 [X]
 
+## Ch3PillowWiseBQ
+[mr][LoadPillow]
+Wise![4] It's me![4] Pillow![A]
+[clear]
+
+[ml][LoadWise]
+Is it, now?[AN]
+What is it, Pillow?[A]
+[clear]
+
+[mr][LoadPillow]
+You need to stop fighting![AN]
+We'll give you the money,[N]
+I promise--[A]
+[clear]
+
+[ml][LoadWise][ts]
+You will?[4] Heh.[4] That's[N]
+pleasant to imagine.[AN]
+But you'll find I haven't[N]
+gotten so soft quite yet.[A]
+[clear][ts]
+
+[mr][LoadPillow]
+[tmm]...[AN][tmm]
+Fine.[4] I'll beat some[N]
+sense into you.[A]
+[clear]
+[X]
+
+## Ch3DragonWiseBQ
+[mr][LoadDragon]
+Hey.[4] You know Pillow, right?[A]
+[clear]
+
+[ml][LoadWise]
+Maybe.[4] I don't know you.[A]
+[clear]
+
+[mr][LoadDragon]
+Doesn't matter.[4] Pillow says[N]
+you should stop fighting.[AN]
+If you don't, I'll stop you[N]
+myself.[4] Simple as that.[A]
+[clear]
+
+[ml][LoadWise]
+Hmm...[4] You make a poor[N]
+conwoman, miss.[AN]
+Can't say I'm convinced.[A]
+[clear]
+
+[mr][LoadDragon]
+That's okay.[4] Here's what[N]
+I'm really good at.[A]
+[clear]
+[X]
+
+## Ch3BunnyWiseBQ
+[mr][LoadBunny][ts]
+Wise![4] We meet again, Champion.[A]
+[clear][ts]
+
+[ml][LoadWise]
+You again?[4] Persistent[N]
+little scamp...[AN]
+Come on, then.[4] I'd like[N]
+to make this quick.[A]
+[clear]
+
+[mr][LoadBunny]
+Why's that? Don't you low mages[N]
+live for the thrill of battle?[A]
+[clear]
+
+[ml][LoadWise]
+Hmph.[4][4][N]
+We're no fools.[A]
+[clear]
+
+[mr][LoadBunny][ts]
+What a waste![A]
+[clear]
+[X]
+
+## Ch3WiseBQ
+[ml][LoadWise]
+Come on, then.[4] I don't[N]
+have time for games.[A]
+[X]
+
+## Ch3BabyTeacherIntro
+[mr][LoadCivManOld]
+Baby![4] Where's that child[N]
+run off to now?[A]
+[X]
+
+## Ch3TalkingToBabysTeacher
+[ml][LoadTeacher]
+[mr][LoadCivManOld]
+
+[mr]
+You! Have you seen a short girl[N]
+with a big hat, sonny?[A]
+
+[ml]
+[oq]Sonny"?[N]
+How old are you, may I ask, sir?[A]
+
+[mr]
+Eighty-one, and not a day over.[A]
+
+[ml]
+Oh, dear.[4] Sorry to hear that.[A]
+
+[ml][mvl]
+[fl][LoadBaby]
+
+[fl]
+Looking for me?[A]
+
+[mr]
+Yes! Why are you running all over town,[N]
+chatting up every local simpleton?[AN]
+Your parents brought you here to study,[N]
+and that's what you shall do.[A]
+
+[fl][ce]
+Oh, brother.[AN][oe]
+I AM studying![A]
+
+[mr]
+Forget about daemons, Baby! They're pure[N]
+superstition and delusion, nothing more.[AN]
+Unless you want to wrangle low mages for[N]
+a living, you needn't bother with them.[A]
+
+[l]
+[oq]Wrangle"?[4][N]
+That's a nasty way to put it.[A]
+
+[fl]
+Well, Professor, if you're so sure,[AN]
+then how come different people report[N]
+seeing similar daemons?[A]
+
+[mr]
+Who cares?![A]
+
+[fl]
+I do![4][ce][ts] And that's why I've had it with you![N]
+I'm taking an extended vacation.[A][css][clear]
+
+[mr][mmr]
+Come back here![4] Your parents[N]
+will hear about this![A]
+[X]
+
+
+## Ch3TalkingToBabysTeacher2
+
+[ml][LoadTeacher]
+[mr][LoadCivManOld]
+
+[ml]
+You're training her to fight[N]
+low mages?[A]
+
+[mr]
+That's none of your business.[A]
+
+[ml]
+Hm...[A]
+[X]
+
+## BabyRecruitment
+[ml][LoadBaby][mmr]
+[ml][LoadTeacher]
+Hey![A]
+
+[mr]
+Oh, it's you.[A]
+
+[ml]
+That was quite an argument[N]
+with your professor back there.[A]
+
+[mr]
+Indeed.[4] He's a useless old fart,[N]
+really.[AN]
+So unreasonable.[4] When I see my parents[N]
+next, the things I'll tell them...[A]
+
+[ml]
+Where are your parents, may I ask?[A]
+
+[mr]
+Can't tell you.[A]
+
+[ml]
+You don't know?[A]
+
+[mr]
+I do, but I can't tell you.[A]
+
+[ml]
+Will you see them soon, then?[A]
+
+[mr]
+...Perhaps![A]
+
+[ml]
+You don't sound certain.[A]
+
+[mr]
+Are you worried about me?[A]
+
+[ml]
+Somewhat.[A]
+
+[mr]
+And?[4] I can afford room and board[N]
+on my own, if I wish.[A]
+
+[ml]
+I'm with a mercenary company, and[N]
+we've a low mage in our employ, too.[AN]
+I'm sure she'd be glad to talk to you[N]
+about daemons.[A]
+
+[mr][mmr][ts]
+Oh![4] Ohhhh, that's very interesting![N]
+Why didn't you say so?[AN]
+Where is she?[4] Can you show me to her?[A]
+
+[ml]
+Yes, yes--[A]
+
+[mr]
+Well, come on, then![N]
+We haven't got all day![A]
+
+[ml][ce]
+Settle down, please![A]
+[X]
+
+## Ch3SeizeNo
+[ml][LoadTeacher][tmm]
+(Hm. I'd like to visit the locals[N]
+before I'm done with these errands.)[AN]
+(Those red-roofed houses look quite[N]
+nice, don't they?)[A]
+[X]
 
 
 

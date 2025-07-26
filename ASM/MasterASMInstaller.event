@@ -25,7 +25,7 @@
 #include "AnvilDrop/Installer.event"
 #include "ButterflyItem/Installer.event"
 #include "EVENTSCRIPT/EVENTSCRIPT_Installer.event"
-//#include "ToggleDeploymentSwapping/ToggleDeploymentSwappingInstaller.event"
+#include "ToggleDeploymentSwapping/ToggleDeploymentSwappingInstaller.event"
 #include "AutoLevelASMC/Installer.event"
 #include "GroupAI/GroupAI.event"
 #include "WideEyed/Installer.event"

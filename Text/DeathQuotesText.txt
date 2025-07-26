@@ -41,3 +41,19 @@ How sporting indeed...![A][X]
 
 [mr][LoadPigeon]
 Placeholder.[A][X]
+
+## BunnyDQ
+
+[mr][LoadBunny]
+Placeholder.[A][X]
+
+## Ch3WiseDQ
+
+[mr][LoadWise]
+Heh.[4] Pathetic.[4]
+So pathetic...[A][X]
+
+## BabyDQ
+
+[mr][LoadBaby]
+Placeholder.[A][X]

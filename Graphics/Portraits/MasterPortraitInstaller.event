@@ -208,3 +208,19 @@ WiseMugData: // LL
 #incbin "dmp/Wise_palette.dmp"
 #incbin "dmp/Wise_minimug.dmp"
 setMugEntry(WiseMug, WiseMugData, 2, 6, 2, 4)
+
+ALIGN 16
+ForceHeroMMugData: // LL
+#incbin "dmp/Hero_mug.dmp"
+#incbin "dmp/Hero_frames.dmp"
+#incbin "dmp/Hero_palette.dmp"
+#incbin "dmp/Hero_minimug.dmp"
+setMugEntry(ForceHeroMMug, ForceHeroMMugData, 3, 5, 3, 3)
+
+ALIGN 16
+ForceHeroFMugData: // LL
+#incbin "dmp/FHero_mug.dmp"
+#incbin "dmp/FHero_frames.dmp"
+#incbin "dmp/FHero_palette.dmp"
+#incbin "dmp/FHero_minimug.dmp"
+setMugEntry(ForceHeroFMug, ForceHeroFMugData, 3, 5, 3, 3)

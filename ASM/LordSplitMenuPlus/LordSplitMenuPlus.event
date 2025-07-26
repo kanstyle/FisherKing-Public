@@ -80,6 +80,16 @@ MenuOption(Ch3WiseYesChoice, Ch3WiseYesDesc, 0)
 MenuOption(Ch3WiseNoChoice, Ch3WiseNoDesc, 0)
 MenuTerminator
 
+ALIGN 4
+Ch3HeartMenu:
+MenuDefinition(4, 8, 21, 0, 1, Ch3HeartMenuOptions)
+
+ALIGN 4
+Ch3HeartMenuOptions:
+MenuOption(Ch3HeartYesChoice, Ch3HeartYesDesc, 0)
+MenuOption(Ch3HeartNoChoice, Ch3HeartNoDesc, 0)
+MenuTerminator
+
 
 
 

@@ -90,7 +90,35 @@ int GenderswapAction(struct Proc* proc) {
 	CallEvent(&GenderswapEvent, 1); 
 
 	return (ME_DISABLE | ME_END | ME_PLAY_BEEP | ME_CLEAR_GFX); // parent proc yields 
-} 
+}
+
+void ForceHeroMale(struct Proc* proc) {
+	if (gActiveUnit->pClassData->number == UpstartF_Link) {		
+		int swordRank = gActiveUnit->ranks[0];
+		int tomeRank = gActiveUnit->ranks[5];
+		
+		gActiveUnit->ranks[3] = swordRank; //sword turns into bow
+		gActiveUnit->ranks[4] = tomeRank; //tome turns into staff
+		gActiveUnit->ranks[0] = 0; //clear sword rank
+		gActiveUnit->ranks[5] = 0; //clear tome rank
+		
+		gActiveUnit->pClassData = GetClassData(UpstartM_Link);
+	}
+}
+
+void ForceHeroFemale(struct Proc* proc) {
+	if (gActiveUnit->pClassData->number == UpstartM_Link) {		
+		int bowRank = gActiveUnit->ranks[3];
+		int staffRank = gActiveUnit->ranks[4];
+		
+		gActiveUnit->ranks[0] = bowRank; //bow turns into sword
+		gActiveUnit->ranks[5] = staffRank; //staff turns into tome
+		gActiveUnit->ranks[3] = 0; //clear bow rank
+		gActiveUnit->ranks[4] = 0; //clear staff rank
+		
+		gActiveUnit->pClassData = GetClassData(UpstartF_Link);
+	}
+}
 
 u8 GenderswapMovBuff(u8 stat, struct Unit* unit) {
 	if (CheckFlag(GenderswapFlag_Link) == 1) {

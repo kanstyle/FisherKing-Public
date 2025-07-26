@@ -52,8 +52,8 @@ ALIGN 4
 ALIGN 4
 
 ForcedDeploymentList: //Vanilla list at 0x9ED64C
-ForcedDeployment(Teacher,LockedPosition,AllModes,AllChapters)
 ForcedDeployment(HeroChar,LockedPosition,AllModes,AllChapters)
+ForcedDeployment(Teacher,LockedPosition,AllModes,AllChapters)
 EndForcedDeploymentList
 
 DeploymentGroupChapterList:

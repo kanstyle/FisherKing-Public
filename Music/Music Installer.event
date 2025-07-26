@@ -49,6 +49,8 @@ SongTable(UpperSteamCaveID,UpperSteamCave,MapMusicGroup) //nikki
 SongTable(WaterfallUTID,WaterfallUT,MapMusicGroup) //
 #include "MusicEvents/Etrian Odyssey 2 - Forbidden Forest {Alusq}.event"
 SongTable(ForbiddenForestID,eotwodungeonsixtest,MapMusicGroup) //alusq
+#include "MusicEvents/Pokemon MD Explorers - Northern Desert {RandomWizard}.event"
+SongTable(NorthernDesertID,song09,MapMusicGroup) //RW
 
 #include "MusicEvents/lufiadoom.event"
 SongTable(Lufia_Doom,lufiadoom,MapMusicGroup)

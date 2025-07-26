@@ -97,11 +97,17 @@ push	{r4-r7,r14}
 	//Adjacency check start
 	ldr     r1,=#AttackerBattleStruct
 	cmp     r5,r1
-	bne     AdjacencyCheckStart//if attacker is not the unit we're checking, we center on defender
+	bne     SetAttacker//if attacker is not the unit we're checking, we center on defender
 	ldr     r0,=#DefenderBattleStruct
 	mov     r5,r0
 	mov     r1,r5
 	b       AdjacencyCheckStart
+
+  SetAttacker:
+  ldr     r0,=#AttackerBattleStruct
+  mov     r5,r0
+	mov     r1,r5
+
 	AdjacencyCheckStart:
 	//r4 has crit, r5 has unit struct
 	//First we check if unit is enemy, only enemies can be flanked, and only by players

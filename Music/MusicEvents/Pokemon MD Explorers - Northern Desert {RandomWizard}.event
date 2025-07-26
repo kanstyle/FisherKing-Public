@@ -24,7 +24,7 @@ Label_0_014C757A:
  BYTE   TEMPO   160*song09_tbs/2
  BYTE   VOICE   39
  BYTE   PAN   c_v+0
- BYTE   VOL   21*song09_mvl/mxv
+ BYTE   VOL   52*song09_mvl/mxv
  BYTE   BEND   c_v+0
  BYTE   N48  En1  v127
  BYTE   W24
@@ -548,7 +548,7 @@ song09_002:
 Label_1_014C77BA:
  BYTE   VOICE   10
  BYTE   PAN   c_v+6
- BYTE   VOL   8*song09_mvl/mxv
+ BYTE   VOL   26*song09_mvl/mxv
  BYTE   BEND   c_v+0
  BYTE   N24  Bn3  v127
  BYTE   W24
@@ -934,7 +934,7 @@ song09_003:
 Label_2_014C791A:
  BYTE   VOICE   40
  BYTE   PAN   c_v+16
- BYTE   VOL   8*song09_mvl/mxv
+ BYTE   VOL   26*song09_mvl/mxv
  BYTE   BEND   c_v+0
  BYTE   W24
 Label_2_014C7923:
@@ -1581,7 +1581,7 @@ song09_004:
 Label_3_014C7CDE:
  BYTE   VOICE   24
  BYTE   PAN   c_v-24
- BYTE   VOL   15*song09_mvl/mxv
+ BYTE   VOL   40*song09_mvl/mxv
  BYTE   BEND   c_v+0
  BYTE   N12  En2  v127
  BYTE   W12
@@ -2562,7 +2562,7 @@ song09_005:
 Label_4_014C82EA:
  BYTE   VOICE   24
  BYTE   PAN   c_v+26
- BYTE   VOL   5*song09_mvl/mxv
+ BYTE   VOL   20*song09_mvl/mxv
  BYTE   BEND   c_v+0
  BYTE   W03
  BYTE   N12  En2  v127
@@ -3714,7 +3714,7 @@ song09_006:
 Label_5_014C89A2:
  BYTE   VOICE   75
  BYTE   PAN   c_v+0
- BYTE   VOL   21*song09_mvl/mxv
+ BYTE   VOL   52*song09_mvl/mxv
  BYTE   BEND   c_v+0
  BYTE   W24
  BYTE   W24
@@ -4828,7 +4828,7 @@ song09_007:
 Label_6_015896CE:
  BYTE   VOICE   75
  BYTE   PAN   c_v-64
- BYTE   VOL   8*song09_mvl/mxv
+ BYTE   VOL   26*song09_mvl/mxv
  BYTE   BEND   c_v+0
  BYTE   W24
  BYTE   W24
@@ -5510,7 +5510,7 @@ song09_008:
 Label_7_01589A12:
  BYTE   VOICE   75
  BYTE   PAN   c_v+63
- BYTE   VOL   5*song09_mvl/mxv
+ BYTE   VOL   20*song09_mvl/mxv
  BYTE   BEND   c_v+0
  BYTE   W24
  BYTE   W24
@@ -6101,7 +6101,7 @@ song09_009:
 Label_8_01589D06:
  BYTE   VOICE   51
  BYTE   PAN   c_v-14
- BYTE   VOL   12*song09_mvl/mxv
+ BYTE   VOL   34*song09_mvl/mxv
  BYTE   BEND   c_v+0
  BYTE   W24
  BYTE   W24
@@ -7667,7 +7667,7 @@ song09_010:
 Label_9_0158A322:
  BYTE   VOICE   68
  BYTE   PAN   c_v+16
- BYTE   VOL   16*song09_mvl/mxv
+ BYTE   VOL   42*song09_mvl/mxv
  BYTE   BEND   c_v+0
  BYTE   W24
  BYTE   W24
@@ -8540,7 +8540,7 @@ song09_011:
 Label_10_0158A66E:
  BYTE   VOICE   10
  BYTE   PAN   c_v-64
- BYTE   VOL   5*song09_mvl/mxv
+ BYTE   VOL   20*song09_mvl/mxv
  BYTE   BEND   c_v+0
  BYTE   W24
  BYTE   W24
@@ -9405,7 +9405,7 @@ song09_012:
 Label_11_0158A9B2:
  BYTE   VOICE   127
  BYTE   PAN   c_v+0
- BYTE   VOL   8*song09_mvl/mxv
+ BYTE   VOL   26*song09_mvl/mxv
  BYTE   Cs0
  BYTE   PAN   c_v+0
  BYTE   BEND   c_v+0

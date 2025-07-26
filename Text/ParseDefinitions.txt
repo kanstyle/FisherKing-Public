@@ -110,6 +110,8 @@
 [LoadAssassin] = [LoadFace][0x19][0x1]
 [LoadSnot] = [LoadFace][0x1A][0x1]
 [LoadWise] = [LoadFace][0x1B][0x1]
+[LoadForceHeroM] = [LoadFace][0x1C][0x1]
+[LoadForceHeroF] = [LoadFace][0x1D][0x1]
 
 [LoadCivManBald] = [LoadFace][0x58][0x1]
 [LoadCivManOld] = [LoadFace][0x59][0x1]

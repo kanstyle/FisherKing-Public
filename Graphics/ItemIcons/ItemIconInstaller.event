@@ -131,6 +131,9 @@ ORG ItemIconEntry(Swordreaver)
 ORG ItemIconEntry(SlimAxe)
 #incbin "Axes/SlimAxe.dmp"		// Ereshkigal
 
+ORG ItemIconEntry(Hammer)
+#incbin "Axes/Hammer.dmp"		// Ereshkigal
+
 // bows
 ORG ItemIconEntry(IronBow)
 #incbin "Bows/FirFlatbow.dmp"		// Ereshkigal

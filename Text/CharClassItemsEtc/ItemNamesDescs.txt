@@ -213,3 +213,8 @@ Skewer[X]
 ## SkewerDesc
 
 +1 Attack per tile moved.[X]
+
+## RestoreDesc
+
+Revives allies and cures[N]
+status ailments.[X]

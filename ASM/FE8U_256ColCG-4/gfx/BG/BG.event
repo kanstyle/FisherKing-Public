@@ -89,6 +89,7 @@ POIN DarkHouseBG; WORD 0x0; POIN DarkHouseBGPal
 POIN SongbirdHugBG; WORD 0x1; POIN SongbirdHugBGPal
 POIN LowlandForestBG; WORD 0x1; POIN LowlandForestBGPal
 POIN FE9TentBG; WORD 0x1; POIN FE9TentBGPal
+POIN HeartBG; WORD 0x1; POIN HeartBGPal
 
 ALIGN 4; ButterflyInverted224BG:
 #incbin "224ButterflyInverted.dmp"
@@ -169,3 +170,8 @@ ALIGN 4; FE9TentBG:
 #incbin "224Tent.dmp"
 ALIGN 4; FE9TentBGPal:
 #incbin "224TentPal.dmp"
+
+ALIGN 4; HeartBG:
+#incbin "224Heart.dmp"
+ALIGN 4; HeartBGPal:
+#incbin "224HeartPal.dmp"

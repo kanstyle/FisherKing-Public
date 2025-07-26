@@ -1,3 +1,8 @@
 ## Ch4Title
-
 Ch. 4: Who Dreamed It?[X]
+
+## Ch4ObjectiveLong
+Placeholder.[X]
+
+## Ch4Objective
+Placeholder[X]

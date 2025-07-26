@@ -17,6 +17,7 @@ DeathQuote(Pigeon,0xFF,0x0,0x0,PigeonDeathQuoteEvent)
 // Enemy Units
 
 DeathQuote(Skull,0xFF,DefeatBossFlag,Ch1SkullDQ)
+DeathQuote(Wise,0xFF,DefeatBossFlag,Ch3WiseDQ)
 
 DeathQuote(0xFFFF,0,0,0) // terminator
 
@@ -74,6 +75,22 @@ ALIGN 4
 PigeonDeathQuoteEvent:
 Text(PigeonDQ)
 SVAL 0x7 Pigeon
+ENUF BleedoutFlag
+NoFade
+ENDA
+
+ALIGN 4
+BunnyDeathQuoteEvent:
+Text(BunnyDQ)
+SVAL 0x7 Bunny
+ENUF BleedoutFlag
+NoFade
+ENDA
+
+ALIGN 4
+BabyDeathQuoteEvent:
+Text(BabyDQ)
+SVAL 0x7 Baby
 ENUF BleedoutFlag
 NoFade
 ENDA

@@ -10,4 +10,10 @@ SpecifiedBattleConvo(Teacher,Skull,Ch1,Ch1SkullTeacherBQFlag,Ch1SkullTeacherBQ)
 SpecifiedBattleConvo(HeroChar,Skull,Ch1,Ch1SkullHeroBQFlag,Ch1SkullHeroBQ)
 UnspecifiedBattleConvo(Skull,Ch1,Ch1SkullBQFLag,Ch1SkullBQ)
 
+//Ch3
+SpecifiedBattleConvo(Pillow,Wise,Ch3,Ch3PillowWiseBQFlag,Ch3PillowWiseBQ)
+SpecifiedBattleConvo(Dragon,Wise,Ch3,Ch3DragonWiseBQFlag,Ch3DragonWiseBQ)
+SpecifiedBattleConvo(Bunny,Wise,Ch3,Ch3BunnyWiseBQFlag,Ch3BunnyWiseBQ)
+UnspecifiedBattleConvo(Wise,Ch3,Ch3WiseBQFlag,Ch3WiseBQ)
+
 BYTE 0xFF 0xFF 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 // Terminator

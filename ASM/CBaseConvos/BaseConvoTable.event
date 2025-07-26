@@ -38,6 +38,13 @@
 			bg(0x18)
 			text(Ch2BaseDragonTeacher)
 			eventID(0x24)
+	Chapter(Ch3)
+		Entry
+			name(Ch3BaseHunterName)
+			music(Town_Day)
+			bg(0x18)
+			text(Ch3BaseHunter)
+			eventID(0x25)
 	POP
 	}
 #endif // BASE_CONVO_TABLE

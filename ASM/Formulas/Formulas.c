@@ -55,6 +55,11 @@ int GetUnitAid(struct Unit* unit) { //universal 20 aid
 	if (gSubjectUnit->pCharacterData->number == 0x20) { //princeling
         return 0;
     }
+	if (gSubjectUnit->pCharacterData->number == 0x2) { //teacher on ch. 3
+		if (proc->chapterIndex == 0x3) {
+			return 0;
+		}
+    }
 	
 	return 20;
 }

@@ -110,6 +110,7 @@
 #define UpperSteamCaveID 0x290
 #define WaterfallUTID 0x291
 #define ForbiddenForestID 0x292
+#define NorthernDesertID 0x293
 
 // Vanilla
 #define TiesOfFriendship 0x7

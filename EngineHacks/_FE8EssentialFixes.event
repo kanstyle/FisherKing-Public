@@ -47,10 +47,10 @@ SHORT $7891 $78D2 $0608
   SHORT $22d0
   
 //Allow Visit from any tile (this is broken atm, also allows visits to destroyed villages)
-//  PUSH
-//  ORG $23072
-//  SHORT $e00d
-//  POP
+	PUSH
+	ORG 0x023070
+	BYTE 0x25 0x28 0x21 0xD0 0x0C 0xE0
+	POP
 
 //Make attacks at 2-15 range not use long-range anims by default (by Sme)
 //use the Uncounterable flag for long-range anims instead
