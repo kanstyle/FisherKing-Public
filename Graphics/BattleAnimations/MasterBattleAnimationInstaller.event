@@ -19,6 +19,20 @@
 
 ALIGN 4
 {
+#include "Animations/CavAxeF/Axe Installer.event"
+}
+{
+#include "Animations/CavHaxeF/Handaxe Installer.event"
+}
+ALIGN 4
+AxeBoneAnim:
+AxeAnim(0xDE)
+HandAxeAnim(0xDF)
+UnarmedAnim(0xDE)
+WORD 0x0 // Seperator
+
+ALIGN 4
+{
 #include "Animations/AxeBone/Axe Installer.event"
 }
 {

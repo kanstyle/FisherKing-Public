@@ -166,6 +166,15 @@ ALIGN 4
 CarriageMoving:
 #incbin "Dmp/Carriage-walk.dmp"
 
+ALIGN 4
+AxeCavFStanding:
+#incbin "Dmp/AxeCavF-stand.dmp"
+
+ALIGN 4
+AxeCavFMoving:
+#incbin "Dmp/AxeCavF-walk.dmp"
+
+
 /*ALIGN 4
 SwordCavStanding:
 #incbin "Dmp/Cavalier (M) Sword {SALVAGED}-stand.dmp" 

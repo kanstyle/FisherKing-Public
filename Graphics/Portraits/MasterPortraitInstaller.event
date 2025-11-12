@@ -224,3 +224,11 @@ ForceHeroFMugData: // LL
 #incbin "dmp/FHero_palette.dmp"
 #incbin "dmp/FHero_minimug.dmp"
 setMugEntry(ForceHeroFMug, ForceHeroFMugData, 3, 5, 3, 3)
+
+ALIGN 16
+SwanMugData: // LL
+#incbin "dmp/Swan_mug.dmp"
+#incbin "dmp/Swan_frames.dmp"
+#incbin "dmp/Swan_palette.dmp"
+#incbin "dmp/Swan_minimug.dmp"
+setMugEntry(SwanMug, SwanMugData, 3, 5, 3, 3)

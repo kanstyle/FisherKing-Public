@@ -5,6 +5,9 @@
 //My Skills
 
 //WideEyed
+#define MyOwnBloodID 209
+
+//WideEyed
 #define WideEyedID 214
 
 //Sweep
@@ -137,7 +140,7 @@
 
 //Tantivy: +10 Hit/Avoid if there are no allies within 3 tiles.
 //Author Unknown (Initial Commit)
-#define TantivyID 209
+#define TantivyID 255
 
 //Up With Arch: Adjacent ally units gain might equal to half this unit's might. (Only if name starts with "Arch")
 //Author Unknown (Initial Commit)

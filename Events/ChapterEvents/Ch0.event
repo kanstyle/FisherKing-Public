@@ -200,6 +200,7 @@ BeginningScene:
 	RemoveBackgroundSlow
 	
 	MusicChange(PMD_MtThunderID)
+	CAMERA [2,13]
 	FADU 4
 	BROWNBOXTEXT Ch0LowlandBrownBox [8,8]
 	CameraCursorLocation(2,13,60)

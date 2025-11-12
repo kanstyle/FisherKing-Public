@@ -177,10 +177,10 @@ You don't need to worry about me, either.[AN]
 about me, though... heehee.[A]
 
 [r][ts]
-You're a second-generation Low Mage,[N]
+You're a second-generation low mage,[N]
 aren't you?[AN]
 You're the one I'm least worried about.[AN][tmm]
-(Low Mages might be more dangerous with[N]
+(Low mages might be more dangerous with[N]
 fewer limbs, even...)[A][tmm]
 
 [fl]
@@ -227,8 +227,8 @@ The moment I saw the deserters, I knew[N]
 they couldn't stand up to us.[N]
 Anyone could see their weapons clutched[N]
 loosely in tired hands.[AN]
-A painful sight, but a pain I was[N]
-well-trained to ignore.[A][X]
+A painful sight, but a pain I could[N]
+readily ignore.[A][X]
 
 ## Ch1HeroTeacher
 
@@ -263,7 +263,7 @@ of here, will you?[A][X]
 
 ## Ch1Village1Javelin
 
-Take the javelin.[X]
+Take the heal staff.[X]
 
 
 ## Ch1Village1HandAxe
@@ -272,7 +272,7 @@ Take the hand axe.[X]
 
 ## Ch1Village1JavelinDesc
 
-Throwing spear.[X]
+Healing staff.[X]
 
 
 ## Ch1Village1HandAxeDesc
@@ -903,7 +903,7 @@ It keeps the demons inside.[A]
 [ml][CloseEyes]
 No.[4] You needn't apologize.[4][N][OpenEyes]
 I didn't meant to stare.[AN]
-I owe you Low Mages a large debt.[4] That's all.[A]
+I owe you low mages a large debt.[4] That's all.[A]
 
 [mr]
 Er...[4] Well, you don't owe me anything.[4][N]

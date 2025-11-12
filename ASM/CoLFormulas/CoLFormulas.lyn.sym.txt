@@ -1,0 +1,8 @@
+SkillIcons=$B600F8
+ASMC_Draw=$B41200
+MagCharTable=$B2A740
+MagClassTable=$B2A940
+NewComputeBattleUnitCritRate=$BA01E9
+NewComputeBattleUnitDodgeRate=$BA0219
+ComputeBattleUnitCritRate=$BA0221
+ComputeBattleUnitDodgeRate=$BA0261

@@ -1,0 +1,21 @@
+#include "MyOwnBlood.lyn.event" 
+
+ALIGN 4 
+MyOwnBloodID_Link: 
+WORD MyOwnBloodID
+
+ALIGN 4 
+NoSkillQuotesFlag_Link: 
+WORD NoSkillQuotesFlag
+
+ALIGN 4
+FirstQuoteEvent:
+Text(MyOwnBloodWhosNext)
+NoFade
+ENDA
+
+ALIGN 4
+SecondQuoteEvent:
+Text(MyOwnBloodStayDown)
+NoFade
+ENDA

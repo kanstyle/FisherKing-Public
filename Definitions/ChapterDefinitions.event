@@ -7,11 +7,14 @@
 #define Ch4 0x4
 #define MidnightCh 0x2C
 #define BaronManorEntranceCh 0x2D
+#define BaronManorHallwayCh 0x2E
 #ifdef USE_TEST_MAP
 	#define BossRush 0x0
 #else
 	#define BossRush 0x3B
 #endif
+
+#define CutsceneMapEvents 0xC5
 
 //CHAPTER MAP/MAPCHANGES/EVENTS IDs
 #define BossRushMapID 0x4
@@ -40,6 +43,8 @@
 #define Ch4MapID 0x1E
 #define Ch4MapChangesID 0x1F
 #define Ch4EventsID 0x20
+
+#define BaronManorHallwayMapID 0x21
 
 //TILESET IDs (START FROM 0x88 when replacing stuff)
 #define VanillaFieldsObjectID 0x1

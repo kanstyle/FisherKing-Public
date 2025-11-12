@@ -105,6 +105,11 @@ EndEventUnits:
 	UNIT Dragon Headsman 0x40 Level(3,Ally,False)     [12,1] 0b 0x0 0x0 0x0 [SteelAxe, SlimAxe, Bomb, Vulnerary] [0x0,0x0,0x0,0x0]
 	UNIT Pillow LowVoice 0x40 Level(3,Ally,False)     [11,2] 0b 0x0 0x0 0x0 [Loneliness, Pain] [0x0,0x0,0x0,0x0]
 	UNIT Skull Fighter 0x40 Level(3,Enemy,True)     [12,2] 0b 0x0 0x0 0x0 [SteelAxe] AttackIn2RangeAI
+	UNIT
+	
+NPCTestUnit:
+	UNIT Hunter Mercenary 0x40 Level(10,NPC,False)     [14,1] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	UNIT
 
 Traps1:
 	ENDTRAP
@@ -142,6 +147,7 @@ BeginningScene:
 	RemoveBackgroundSlow
 	
 	LOAD1 0x1 EnemyUnits
+	//LOAD1 0x1 NPCTestUnit
 	ENUN
 	Music(FFTAnxiety)
 	FADU 6
@@ -166,11 +172,18 @@ BeginningScene:
 	Highlight(HeroChar)
 	Text(Ch1HeroTeacher)
 	
+	/*StartBattle
+	MissedAttack(0,7)
+	EndAttack
+	FIGHT Hunter Skull IronSword SteelAxe
+	ENUN*/
+	
 	NoFade
 	ENDA
 
 EndingScene:
 	FADI 5
+	Music(FFTAnxiety)
 	DoAllThree
 	LOAD2 0x1 EndEventUnits
 	ENUN
@@ -257,7 +270,7 @@ Ch1Village1Event:
 		GiveItem(HandAxe,0xFFFF)
 		GOTO 0x1
 	LABEL 0x0
-	GiveItem(Javelin,0xFFFF)
+	GiveItem(Heal,0xFFFF)
 	LABEL 0x1
 	NoFade
 	ENDA

@@ -1,3 +1,8 @@
+## SD_MyOwnBlood
+M-My Own Blood...!: Once per turn, act[N]
+again if you lost half your max HP or[N]
+more while attacking.[X]
+
 ## SD_WideEyed
 Wide-Eyed: +50 Crit. After combat,[N]
 35-Luck% chance of brain hemorrhage[N]

@@ -185,7 +185,7 @@ Some said that the deep valleys were[n]
 passages to the land of the dead.[AN]
 We knew only that the Lowlands were[n]
 an ancient place, inhabited by things[n]
-seen only in dreams. Fearsome things.[AN]
+we could only glimpse in dreams.[AN]
 And humans were not welcome there.[A][X]
 
 
@@ -308,7 +308,7 @@ displayed crit will [ToggleRed]never[ToggleRed] be critical.[A][X]
 
 Furthermore, each ally adjacent to[N]
 the target ([OpenQuote]flanking") will grant[N]
-+20 Crit.[N]
+[ToggleRed]+20 Crit.[ToggleRed][N]
 Try attacking with the Princeling's[N]
 40-crit Rapier.[A][X]
 
@@ -331,7 +331,7 @@ alone, then.[A][X]
 ## Ch0TutorialStage2ScrollText
 
 Weapon triangle advantage grants[N]
-+20 Hit and +2 Attack, and +15 Crit.[N]
++20 Hit and +2 Attack, and [ToggleRed]+15 Crit.[ToggleRed][N]
 With 40 Crit, the Rapier can critically hit[N]
 axe-users without any flanking allies.[A][X]
 

@@ -58,9 +58,9 @@ Tutorial:
 Units1:
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [16,13] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [17,12] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [19,12] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [18,13] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [17,14] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [18,12] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [17,13] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [16,14] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [16,12] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT
 	
@@ -95,6 +95,50 @@ EnemyUnits:
 	UNIT Pigeon SkyRat 0x40 Level(4,Enemy,False)     [12,3] 0b 0x0 0x0 0x0 [SteelLance, IronLance, Vulnerary] [0x0,0x0,0x0,0x0]
 	
 	//t2 ep
+	UNIT Beast SwordBone 0x40 Level(4,Enemy,True)     [7,10] 0b 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+	
+	UNIT Lowlander AxeCav 0x40 Level(4,Enemy,True)     [18,4] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
+	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [19,3] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
+	
+	//t3 pp
+	UNIT Beast AxeBone 0x40 Level(4,Enemy,True)     [6,6] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+	
+	UNIT Lowlander Knight 0x40 Level(4,Enemy,True)     [4,13] 0b 0x0 0x0 0x0 [IronLance] StationaryBossAI
+	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [0,14] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [0,7] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
+
+	//t3 ep
+	UNIT Lowlander Mercenary 0x40 Level(4,Enemy,True)     [5,8] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	
+	//t4 pp
+	UNIT Beast Gargoyle 0x40 Level(4,Enemy,True)     [0,5] 0b 0x0 0x0 0x0 [IronLance] ChargeAI
+	UNIT Lowlander AxeCav 0x40 Level(4,Enemy,True)     [7,0] 0b 0x0 0x0 0x0 [IronAxe] AttackIn2RangeAI
+	
+	//t5
+	UNIT Beast Gargoyle 0x40 Level(4,Enemy,True)     [0,2] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [0,14] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [2,4] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
+	UNIT Lowlander Mage 0x40 Level(4,Enemy,True)     [8,1] 0b 0x0 0x0 0x0 [Thunder] AttackInRangeAI
+	
+	UNIT Ch2BeastBoss Mauthedoog 0x40 Level(8,Enemy,True)     [2,2] 0b 0x0 0x0 0x0 [FireFang] AttackInRangeAI
+	UNIT Songbird Bard 0x40 Level(3,Enemy,False)     [3,1] 0b 0x0 0x0 0x0 [0x0] DoNothingAI
+	UNIT
+
+/*EnemyUnits:
+	//t1 pp
+	UNIT Lowlander Fighter 0x40 Level(4,Enemy,True)     [13,11] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+	UNIT Lowlander Mage 0x40 Level(4,Enemy,True)     [13,13] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	UNIT Beast LanceBone 0x40 Level(4,Enemy,True)     [14,12] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	
+	//t1 ep
+	UNIT Lowlander Knight 0x40 Level(4,Enemy,True)     [10,12] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT Lowlander Mage 0x40 Level(4,Enemy,True)     [10,10] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	
+	//t2 pp
+	UNIT Lowlander Fighter 0x40 Level(4,Enemy,True)     [6,12] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
+	UNIT Pigeon SkyRat 0x40 Level(4,Enemy,False)     [12,3] 0b 0x0 0x0 0x0 [SteelLance, IronLance, Vulnerary] [0x0,0x0,0x0,0x0]
+	
+	//t2 ep
 	UNIT Lowlander Fighter 0x40 Level(4,Enemy,True)     [7,10] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
 	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [3,9] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
 
@@ -105,7 +149,7 @@ EnemyUnits:
 	//t3 pp
 	UNIT Beast AxeBone 0x40 Level(4,Enemy,True)     [8,5] 0b 0x0 0x0 0x0 [IronAxe] AttackIn2RangeAI // group AI with the nearby skeleton and mogall
 	UNIT Lowlander Soldier 0x40 Level(4,Enemy,True)     [6,5] 0b 0x0 0x0 0x0 [Javelin] AttackIn2RangeAI
-	UNIT Lowlander Shaman 0x40 Level(4,Enemy,True)     [5,6] 0b 0x0 0x0 0x0 [Pain] AttackInRangeAI 
+	UNIT Lowlander Mage 0x40 Level(4,Enemy,True)     [5,6] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI 
 	
 	UNIT Lowlander Knight 0x40 Level(4,Enemy,True)     [4,13] 0b 0x0 0x0 0x0 [IronLance] StationaryBossAI
 	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [0,14] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
@@ -118,7 +162,7 @@ EnemyUnits:
 	UNIT Lowlander AxeCav 0x40 Level(4,Enemy,True)     [7,0] 0b 0x0 0x0 0x0 [IronAxe] AttackIn2RangeAI
 	
 	//t5
-	UNIT Beast Gargoyle 0x40 Level(4,Enemy,True)     [0,3] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT Beast Gargoyle 0x40 Level(4,Enemy,True)     [0,2] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [0,7] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
 	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [2,4] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
 	UNIT Lowlander Mercenary 0x40 Level(4,Enemy,True)     [5,0] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
@@ -129,7 +173,7 @@ EnemyUnits:
 	
 	UNIT Ch2BeastBoss Mauthedoog 0x40 Level(8,Enemy,True)     [2,2] 0b 0x0 0x0 0x0 [FireFang] AttackInRangeAI
 	UNIT Songbird Bard 0x40 Level(3,Enemy,False)     [3,1] 0b 0x0 0x0 0x0 [0x0] DoNothingAI
-	UNIT
+	UNIT*/
 
 /*EnemyUnits:
 	//t1 pp
@@ -159,7 +203,8 @@ EnemyUnits:
 	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [5,6] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI 
 	
 	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [4,13] 0b 0x0 0x0 0x0 [RottenClaw] StationaryBossAI
-	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [0,14] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+	//UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [0,14] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+	UNIT Beast Gargoyle 0x40 Level(4,Enemy,True)     [0,14] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 
 	//t3 ep
 	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [5,8] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
@@ -169,9 +214,9 @@ EnemyUnits:
 	UNIT Beast Tarvos 0x40 Level(4,Enemy,True)     [7,0] 0b 0x0 0x0 0x0 [IronAxe] AttackIn2RangeAI
 	
 	//t5
-	UNIT Beast Gargoyle 0x40 Level(4,Enemy,True)     [0,3] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+
 	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [0,8] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
-	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [2,4] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
+	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [2,5] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
 	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [5,0] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
 	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [11,2] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
 	UNIT Beast MogallClass 0x40 Level(4,Enemy,True)     [0,0] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
@@ -184,15 +229,15 @@ EnemyUnits:
 
 EnemyUnitsStartEvent:
 	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [15,3] 0b 0x0 0x1 REDA14R8 [RottenClaw] AttackInRangeAI
-	UNIT Beast Bonewalker 0x40 Level(3,Enemy,True)     [14,3] 0b 0x0 0x1 REDA15R9 [RottenClaw] AttackInRangeAI
-	UNIT Beast MogallClass 0x40 Level(3,Enemy,True)     [16,3] 0b 0x0 0x1 REDA17R10 [RottenClaw] AttackInRangeAI
-	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [8,14] 0b 0x0 0x1 REDA11R11 [IronLance] AttackInRangeAI
+	UNIT Lowlander Soldier 0x40 Level(4,Enemy,True)      [14,3] 0b 0x0 0x1 REDA15R9 [RottenClaw] AttackInRangeAI
+	UNIT Lowlander Mage 0x40 Level(4,Enemy,True)     [16,3] 0b 0x0 0x1 REDA17R10 [RottenClaw] AttackInRangeAI
+	UNIT Lowlander Fighter 0x40 Level(4,Enemy,True)     [8,14] 0b 0x0 0x1 REDA11R11 [IronLance] AttackInRangeAI
 	UNIT Beast Bonewalker 0x40 Level(3,Enemy,True)     [7,14] 0b 0x0 0x1 REDA12R10 [IronLance] AttackInRangeAI
-	UNIT Beast Mauthedoog 0x40 Level(3,Enemy,True)     [7,14] 0b 0x0 0x1 REDA10R13 [IronLance] AttackInRangeAI
+	UNIT Lowlander Soldier 0x40 Level(4,Enemy,True)      [7,14] 0b 0x0 0x1 REDA10R13 [IronLance] AttackInRangeAI
 	UNIT Beast MogallClass 0x40 Level(3,Enemy,True)     [5,4] 0b 0x0 0x1 REDA2R14 [EvilEye] AttackInRangeAI
-	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [6,4] 0b 0x0 0x1 REDA5R8 [RottenClaw] AttackInRangeAI
+	UNIT Lowlander Fighter 0x40 Level(4,Enemy,True)     [6,4] 0b 0x0 0x1 REDA5R8 [RottenClaw] AttackInRangeAI
 	UNIT Beast MogallClass 0x40 Level(3,Enemy,True)     [7,7] 0b 0x0 0x1 REDA8R7 [EvilEye] AttackInRangeAI
-	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [14,2] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
+	UNIT Lowlander Fighter 0x40 Level(4,Enemy,True)     [14,2] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
 	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [15,0] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
 	UNIT
 	
@@ -231,7 +276,7 @@ Traps2:
 BeginningScene:
 	SetFlag(BleedoutFlag)
 	
-	MusicChange(FFTAnxiety)
+	MusicChange(TimeGearID)
 	CAMERA [3,1]
 	LOAD2 0x1 UnitsSongbird
 	ENUN

@@ -23,7 +23,7 @@
 // HunterBowArmorPal
 	setPalette(0x70,HunterBowArmorPal)
 	setCBSP(0x70,Hunter,0x1,BowArmor)
-	
-// YoungTeacherPal
-	setPalette(0x71,TeacherPal)
-	setCBSP(0x71,YoungTeacher,0x1,Paladin)
+
+// SwanAxeCavFPal
+	setPalette(0x71,SwanAxeCavFPal)
+	setCBSP(0x71,Swan,0x1,AxeCavF)

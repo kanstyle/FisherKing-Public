@@ -306,7 +306,7 @@ What's the occasion, if I may ask?[A]
 [ml]
 He plans to make a speech, addressing[N]
 the future of the Highlands' military.[AN]
-War declaration, perhaps.[4] Difficult to say.[A]
+Regarding the ceasefire, perhaps.[A]
 
 [r]
 Interesting.[A]
@@ -315,7 +315,7 @@ Interesting.[A]
 I'll be blunt -- this city is a bit of a[N]
 backwater, or so say the capital nobles.[AN][oe]
 Many are afraid for their heads so close[N]
-to the border.[AN]
+to the Lowland border.[AN]
 Thus, I'll need extra sword arms for[N]
 security, and a personal bodyguard.[A]
 
@@ -323,7 +323,7 @@ security, and a personal bodyguard.[A]
 You've chosen the right company for[N]
 the job, then, sir.[AN]
 Teacher here has a wealth of experience[N]
-doing that very work.[A]
+as a bodyguard.[A]
 
 [r][ts]
 Hey, now...[A]
@@ -352,7 +352,7 @@ The answer is no, you'll be guarding[N]
 only me.[4] There is no noble lady.[A]
 
 [r]
-Understood, sir.[4][N]
+Very well, sir.[4][N]
 Nothing wrong with that.[A]
 
 [ml][ce]
@@ -580,7 +580,7 @@ I'm done with all this.[A][ClearFace]
 Hello there. [4]Couldn't help[N]
 but overhear.[A]
 
-[fr]
+[fr][ts]
 Yeah?[4] What'd you hear?[A]
 
 [ml][ts]
@@ -594,7 +594,7 @@ We could be convinced.[N]
 What'd you have in mind?[A]
 
 [ml]
-Team up with me in the arena, then.[AN]
+Team up with me in the arena.[AN]
 We'll run the gauntlet and make a[N]
 real killing.[A]
 
@@ -617,7 +617,7 @@ you up on that, Bunny.[AN]
 Why don't you lead the way?[A]
 
 [ml]
-Gladly.[4]
+Gladly.[4][N]
 You won't regret it![A][css][clear][4][4]
 
 [fr][ts]
@@ -1558,11 +1558,10 @@ You okay, Pillow?[A]
 like that, sometimes.[A]
 
 [l]
-Well, no one said helping the needy was fun.[4][4][N][ce]
-'Specially when they don't know what's good for 'em.[A][oe]
-
-[fr]
-They're not stupid.[4] It's just...[4][4] complicated.[A]
+Well, no one said helping[N]
+the needy was fun.[4][4][AN][ce]
+If being a hero was easy,[N]
+everyone would do it.[oe]
 [X]
 
 ## Ch3WiseNoText

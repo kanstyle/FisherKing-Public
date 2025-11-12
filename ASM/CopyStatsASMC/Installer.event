@@ -1,0 +1,7 @@
+#include "ExtendedDestruction.lyn.event" 
+
+PUSH
+ORG 0x191B8
+    prGotoMagGetter:
+        jumpToHack(prMagGetter)
+POP

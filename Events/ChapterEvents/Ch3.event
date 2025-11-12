@@ -145,7 +145,7 @@ ManorGuardUnits:
 	UNIT
 	
 HeroTownUnits:
-	UNIT Teacher Veteran 0x40 Level(10,Ally,False)     [12,18] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Teacher Veteran 0x40 Level(10,Ally,False)     [11,20] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Headsman 0x40 Level(10,Ally,False)     [11,18] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT HeroChar UpstartM 0x40 Level(10,Ally,False)     [11,19] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Pillow LowVoice 0x40 Level(3,Ally,False)     [12,19] 0b 0x0 0x0 0x0 [Loneliness, Pain] [0x0,0x0,0x0,0x0]
@@ -249,6 +249,8 @@ BeginningScene:
 	Text(Ch3StartManorOutside2)
 	FADI 6
 	DoAllThree
+	
+	PreventSkippingAllowB
 	SetBackground(Castle_Hall)
 	Text(Ch3StartManorInside)
 	
@@ -297,7 +299,7 @@ BeginningScene:
 		LABEL 0x3
 			AllowSkipping
 			CHECK_ALIVE Pigeon
-			BNE 11 0x0 0xC
+			BNE 0x11 0x0 0xC
 				Text(Ch3StartBrotherThiefDealNoPigeon)
 			GOTO 0x12
 			LABEL 0x11
@@ -368,7 +370,7 @@ EndingScene:
 
 	CALL PigeonLeavesEvent
 	
-	MNC2 Ch0
+	MNC2 Ch4
 	NoFade
 	ENDA
 	
@@ -610,10 +612,11 @@ Ch3SeizeEvent:
 	ENDA
 
 StopSkippingEvent:
-	CHECK_EVBIT 2
+	CHECK_EVBIT 2 //check if skipping
 	BEQ 0 0x0 0xC
 	//ASMC 0x08591F40|1
 	FADU 16
+	StopSkipping
 	LABEL 0x0
 	ENDA
 	

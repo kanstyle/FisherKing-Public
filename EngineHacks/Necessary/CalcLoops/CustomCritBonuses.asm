@@ -159,12 +159,16 @@ push	{r4-r7,r14}
 	mov     r3,#0xC0
 	and     r2,r3
 	cmp     r2,#0x00
-	beq     AdjacencyCheckNotCountAdjacentAttacker
+	beq     AdjacencyCheckNotCountAdjacentAttacker  // Player attacker
+	cmp     r2,#0x40                                 
+	beq     AdjacencyCheckEnd        // NPC attacker - give NO bonuses, exit
 	ldr     r3,=#DefenderBattleStruct
-	cmp     r2,r3
-	beq     AdjacencyCheckEnd//Neither unit is a player unit, don't apply bonuses
-	mov     r2,r3
-	b       CheckDefenderForAdjacency
+	ldrb    r3,[r3,#0x0B]
+	mov     r2,#0xC0
+	and     r3,r2
+	cmp     r3,#0x00
+	bne     AdjacencyCheckEnd        // Defender not player - no bonuses
+	b       AdjacencyCheckNotCountAdjacentAttacker
 	
 	AdjacencyCheckNotCountAdjacentAttacker:
 	//we check if battle is 1 range

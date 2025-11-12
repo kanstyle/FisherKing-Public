@@ -82,3 +82,9 @@ Carriage[X]
 
 ## CarriageClassDesc
 Placeholder.[X]
+
+## AxeCavClassName
+Axe Cavalier[X]
+
+## AxeCavClassDesc
+Placeholder.[X]

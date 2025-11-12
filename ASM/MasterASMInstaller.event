@@ -30,6 +30,8 @@
 #include "GroupAI/GroupAI.event"
 #include "WideEyed/Installer.event"
 #include "MultiSeizeUnits20200302/Installer.event"
+//#include "ModularGoalWindow/MGW.event"
+//#include "ModularGoalWindow/Tables/MGWText/MGWText.event"
 
 #include "FE8-Walking_Sounds_Fix/FE8-Walking_Sounds_EA.event"
 

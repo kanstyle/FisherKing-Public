@@ -29,6 +29,7 @@
 #define WiseMug 0x1B
 #define ForceHeroMMug 0x1C
 #define ForceHeroFMug 0x1D
+#define SwanMug 0x1E
 
 #define AxeBoneCard 0xAD
 #define LanceBoneCard 0xAE
@@ -57,6 +58,7 @@
 #define Eagle 0xB
 #define Baby 0xC
 #define Snot 0xD
+#define Swan 0xE
 #define YoungPrince 0x20
 #define YoungTeacher 0x21
 #define OldPrince 0x22
@@ -107,6 +109,7 @@
 #define SwordPal 0x87
 #define AxePal 0x88
 #define BowPal 0x89
+#define LancePal 0x8A
 
 #define Veteran 0x7
 
@@ -118,6 +121,7 @@
 #define CivWoman2 0x72
 
 #define Carriage 0x8B
+#define AxeCavF 0x8C
 
 // Terrain Move Costs
 #define PromoInfantryMC 0x880b808
@@ -162,6 +166,7 @@
 #define LowTusk BrightLance
 
 #define HuntersBow PoisonBow
+#define Light Lightning
 
 #define Loneliness 0xBD
 #define Pain 0x45

@@ -1,0 +1,6 @@
+SkillIcons=$B600F8
+ASMC_Draw=$B41200
+MagCharTable=$B2A740
+MagClassTable=$B2A940
+ItemExistsOnUnitsOrInConvoyASMC=$B9FEA9
+RemoveOneItemFromUnitsAndConvoyASMC=$B9FF15

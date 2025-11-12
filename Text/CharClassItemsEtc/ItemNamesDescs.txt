@@ -218,3 +218,11 @@ Skewer[X]
 
 Revives allies and cures[N]
 status ailments.[X]
+
+## LightName
+
+Light[X]
+
+## LightDesc
+
+Ignores Res. Reaver effect.[X]

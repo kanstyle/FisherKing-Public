@@ -210,7 +210,8 @@ ORG ItemIconEntry(MysticGale)
 
 ORG ItemIconEntry(OrphicGale)
 #incbin "Tomes/OrphicGale.dmp"		// Leif
-
+*/
+/*
 // Tomes
 ORG ItemIconEntry(ProsaicGlow)
 #incbin "Tomes/ProsaicGlow.dmp"		// Ereshkigal
@@ -241,10 +242,12 @@ ORG ItemIconEntry(AngelicRule)
 
 ORG ItemIconEntry(ProsaicFall)
 #incbin "Tomes/ProsaicFall.dmp"		// Celice
+*/
 
-ORG ItemIconEntry(BeneficFall)
-#incbin "Tomes/BeneficFall.dmp"		// Celice
+ORG ItemIconEntry(Lightning)
+#incbin "Light/BeneficFall.dmp"		// Celice
 
+/*
 ORG ItemIconEntry(AngelicFall)
 #incbin "Tomes/AngelicFall.dmp"		// Celice
 
