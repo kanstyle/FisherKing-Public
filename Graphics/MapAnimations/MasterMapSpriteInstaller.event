@@ -21,6 +21,18 @@ MovingMapSprite(0x1,NormalAP,UpstartMMoving)
 StandingMapSprite(0x1,0,UpstartFStanding)
 MovingMapSprite(0x2,NormalAP,UpstartFMoving)
 
+StandingMapSprite(0x6C,0,LowVoiceStanding)
+MovingMapSprite(0xA,NormalAP,LowVoiceMoving)
+
+StandingMapSprite(0x6D,0,LowVoiceStanding)
+MovingMapSprite(0xA,NormalAP,LowVoiceMoving)
+
+StandingMapSprite(0x6E,0,LowVoiceStanding)
+MovingMapSprite(0xA,NormalAP,LowVoiceMoving)
+
+StandingMapSprite(0x6F,0,LowVoiceStanding)
+MovingMapSprite(0xA,NormalAP,LowVoiceMoving)
+
 StandingMapSprite(0x70,0,LowVoiceStanding)
 MovingMapSprite(0xA,NormalAP,LowVoiceMoving)
 
@@ -37,6 +49,9 @@ StandingMapSprite(0x74,0,BunnyRecruitStanding)
 MovingMapSprite(BunnyRecruit,NormalAP,BunnyRecruitMoving)
 
 StandingMapSprite(0x75,0,BowArmorStanding)
+MovingMapSprite(BowArmor,NormalAP,BowArmorMoving)
+
+StandingMapSprite(0x76,0,BowArmorStanding)
 MovingMapSprite(BowArmor,NormalAP,BowArmorMoving)
 
 StandingMapSprite(0x63,0,NobleStanding)
@@ -60,6 +75,9 @@ MovingMapSprite(AxeCav,NormalAP,AxeCavMoving)
 StandingMapSprite(0x7C,1,SwordCavStanding)
 MovingMapSprite(SwordCav,NormalAP,SwordCavMoving)
 
+StandingMapSprite(0x7D,1,SwordCavStanding)
+MovingMapSprite(SwordCav,NormalAP,SwordCavMoving)
+
 StandingMapSprite(0x7E,1,LanceCavStanding)
 MovingMapSprite(LanceCav,NormalAP,LanceCavMoving)
 
@@ -78,7 +96,7 @@ MovingMapSprite(SwordPal,NormalAP,SwordPalMoving)
 StandingMapSprite(0x83,1,CarriageStanding)
 MovingMapSprite(Carriage,NormalAP,CarriageMoving)
 
-StandingMapSprite(0x84,1,AxeCavFStanding)
+StandingMapSprite(0x6B,1,AxeCavFStanding)
 MovingMapSprite(AxeCavF,NormalAP,AxeCavFMoving)
 
 StandingMapSprite(0x6a,0,ExampleMapSpriteGraphics)

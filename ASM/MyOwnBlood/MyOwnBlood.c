@@ -140,31 +140,37 @@ int getTotalChange(NewBattleHit* round) {
 	return (round->totalChange);
 }
 
-bool CheckActivation(struct Proc* proc) {	
+bool CheckActivation(struct Proc* proc) {	//test 1: refresh if he hits from 2 range with no counter; no refresh if he gets hit at 1 range for less than half a hits for less than half, but refresh if he hits for more than half
 	
 	struct NewBattleHit* it;
+	int threshold = gBattleActor.unit.maxHP / 2;
+	int damageTaken = 0;
 
-    for (it = NewBattleHitArray; !(it->info & BATTLE_HIT_INFO_RETALIATION); ++it) {
+    for (it = NewBattleHitArray; !(it->info & BATTLE_HIT_INFO_END); ++it) {
 		gEventSlots[2] = getTotalChange(it);
 		gEventSlots[3] = abs(getDamage(it));
 		gEventSlots[4] = gBattleActor.unit.maxHP;
 		gEventSlots[5] += 0x1;
+		if (!(it->info & BATTLE_HIT_INFO_RETALIATION)) { //if hit is not a retaliation, next loop
+			gEventSlots[6] = 0x1;
+			continue;
+		}
         if (killsTarget(it)) { //if unit with the skill dies, break
 			gEventSlots[6] = 0x1;
 			break;
 		}
-		if (!roundHits(it)) { //if attack missed, break
+		if (!roundHits(it)) { //if attack missed, next loop
 			gEventSlots[6] = 0x2;
-			break;
+			continue;
 		}
-		if ((gBattleActor.unit.maxHP / 2) > abs(getDamage(it))) { //if hit dealt less damage than half of target's max HP, break
-
+		if (abs(getDamage(it)) > 0) { //if hit dealt damage, add it to the total and go to next loop
 			gEventSlots[6] = 0x3;
-			break;
+			damageTaken = damageTaken += abs(getDamage(it));
+			continue;
 		}
-		return true;
     }
-	return false;
+	if (damageTaken >= threshold) { return true; }
+	else { return false; }
 } 
 
 void DoGaleforce(struct Proc* proc) {
@@ -186,7 +192,7 @@ void DoGaleforce(struct Proc* proc) {
 
 void MyOwnBloodEffect(struct Proc* proc) {
 	if (SkillTester(gActiveUnit, MyOwnBloodID_Link) == 0) {
-		gEventSlots[6] = 0x5;
+		//gEventSlots[6] = 0x5;
 		return;
 	}
 	if (CheckActivation(proc) == true) {

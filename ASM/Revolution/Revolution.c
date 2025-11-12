@@ -140,7 +140,7 @@ int getTotalChange(NewBattleHit* round) {
 	return (round->totalChange);
 }
 
-bool CheckOHKO(struct Proc* proc) {	
+bool CheckOHKO(struct Proc* proc) {	//test 1: refresh if he hits from 2 range with no counter; no refresh if he gets hit at 1 range for less than half and hits for less than half, but refresh if he hits for more than half
 	
 	struct NewBattleHit* it;
 
