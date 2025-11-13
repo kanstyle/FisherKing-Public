@@ -193,6 +193,7 @@
 	EventPointerTable(ZoramineImprovedStrongholdObjectID, ZoramineImprovedStrongholdObject)
 	EventPointerTable(ZoramineImprovedStrongholdPaletteID, ZoramineImprovedStrongholdPalette)
 	EventPointerTable(ZoramineImprovedStrongholdConfigID, ZoramineImprovedStrongholdConfig)
+	EventPointerTable(ZoramineImprovedStrongholdAnimationsID, ZoramineImprovedStrongholdAnimations)
 
     EventPointerTable(SnowyBernObjectID, SnowyBernObject)
     EventPointerTable(SnowyBernObjectCloudyID, SnowyBernObjectCloudy)

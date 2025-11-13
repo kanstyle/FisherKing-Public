@@ -85,6 +85,7 @@ BeginningScene:
 	ENDA
 
 EndingScene:
+	CALL EndEventRoutine
 	MNC2 Ch0
 	NoFade
 	ENDA

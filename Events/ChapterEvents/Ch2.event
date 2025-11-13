@@ -433,6 +433,7 @@ EndingScene:
 	CGText(Storybook9Text)
 	RemoveBackground
 	
+	CALL EndEventRoutine
 	MNC2 Ch3
 	NoFade
 	ENDA

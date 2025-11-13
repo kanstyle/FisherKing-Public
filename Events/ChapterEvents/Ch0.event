@@ -429,6 +429,7 @@ EndingScene:
 	DISA 0x82
 	DISA 0x84
 	
+	CALL EndEventRoutine
 	MNC2 Ch1
 	
 	NoFade

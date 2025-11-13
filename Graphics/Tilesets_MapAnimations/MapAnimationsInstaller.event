@@ -221,3 +221,73 @@ tilesetAnimation(0x1C,0x1000,FlasubanFrontierTileAnim6)
 tilesetAnimation(0x1C,0x1000,FlasubanFrontierTileAnim7)
 WORD 0 0
 
+EventPointerTable(ZoramineImprovedStrongholdAnimationsID, ZoramineImprovedStrongholdAnimations)
+
+ALIGN 4
+ZoramineImprovedStrongholdTileAnim0:
+#incbin "TilesetAnimations/ZoramineImprovedStronghold/ZoramineImprovedStronghold.mapanime1_000.dmp"
+ALIGN 4
+ZoramineImprovedStrongholdTileAnim1:
+#incbin "TilesetAnimations/ZoramineImprovedStronghold/ZoramineImprovedStronghold.mapanime1_001.dmp"
+ALIGN 4
+ZoramineImprovedStrongholdTileAnim2:
+#incbin "TilesetAnimations/ZoramineImprovedStronghold/ZoramineImprovedStronghold.mapanime1_002.dmp"
+ALIGN 4
+ZoramineImprovedStrongholdTileAnim3:
+#incbin "TilesetAnimations/ZoramineImprovedStronghold/ZoramineImprovedStronghold.mapanime1_003.dmp"
+ALIGN 4
+ZoramineImprovedStrongholdTileAnim4:
+#incbin "TilesetAnimations/ZoramineImprovedStronghold/ZoramineImprovedStronghold.mapanime1_004.dmp"
+ALIGN 4
+ZoramineImprovedStrongholdTileAnim5:
+#incbin "TilesetAnimations/ZoramineImprovedStronghold/ZoramineImprovedStronghold.mapanime1_005.dmp"
+ALIGN 4
+ZoramineImprovedStrongholdTileAnim6:
+#incbin "TilesetAnimations/ZoramineImprovedStronghold/ZoramineImprovedStronghold.mapanime1_006.dmp"
+ALIGN 4
+ZoramineImprovedStrongholdTileAnim7:
+#incbin "TilesetAnimations/ZoramineImprovedStronghold/ZoramineImprovedStronghold.mapanime1_007.dmp"
+ALIGN 4
+ZoramineImprovedStrongholdTileAnim8:
+#incbin "TilesetAnimations/ZoramineImprovedStronghold/ZoramineImprovedStronghold.mapanime1_008.dmp"
+ALIGN 4
+ZoramineImprovedStrongholdTileAnim9:
+#incbin "TilesetAnimations/ZoramineImprovedStronghold/ZoramineImprovedStronghold.mapanime1_009.dmp"
+ALIGN 4
+ZoramineImprovedStrongholdTileAnim10:
+#incbin "TilesetAnimations/ZoramineImprovedStronghold/ZoramineImprovedStronghold.mapanime1_010.dmp"
+ALIGN 4
+ZoramineImprovedStrongholdTileAnim11:
+#incbin "TilesetAnimations/ZoramineImprovedStronghold/ZoramineImprovedStronghold.mapanime1_011.dmp"
+ALIGN 4
+ZoramineImprovedStrongholdTileAnim12:
+#incbin "TilesetAnimations/ZoramineImprovedStronghold/ZoramineImprovedStronghold.mapanime1_012.dmp"
+ALIGN 4
+ZoramineImprovedStrongholdTileAnim13:
+#incbin "TilesetAnimations/ZoramineImprovedStronghold/ZoramineImprovedStronghold.mapanime1_013.dmp"
+ALIGN 4
+ZoramineImprovedStrongholdTileAnim14:
+#incbin "TilesetAnimations/ZoramineImprovedStronghold/ZoramineImprovedStronghold.mapanime1_014.dmp"
+ALIGN 4
+ZoramineImprovedStrongholdTileAnim15:
+#incbin "TilesetAnimations/ZoramineImprovedStronghold/ZoramineImprovedStronghold.mapanime1_015.dmp"
+
+ALIGN 4
+ZoramineImprovedStrongholdAnimations:
+tilesetAnimation(0x1C,0x1000,ZoramineImprovedStrongholdTileAnim0)
+tilesetAnimation(0x1C,0x1000,ZoramineImprovedStrongholdTileAnim1)
+tilesetAnimation(0x1C,0x1000,ZoramineImprovedStrongholdTileAnim2)
+tilesetAnimation(0x1C,0x1000,ZoramineImprovedStrongholdTileAnim3)
+tilesetAnimation(0x1C,0x1000,ZoramineImprovedStrongholdTileAnim4)
+tilesetAnimation(0x1C,0x1000,ZoramineImprovedStrongholdTileAnim5)
+tilesetAnimation(0x1C,0x1000,ZoramineImprovedStrongholdTileAnim6)
+tilesetAnimation(0x1C,0x1000,ZoramineImprovedStrongholdTileAnim7)
+tilesetAnimation(0x1C,0x1000,ZoramineImprovedStrongholdTileAnim8)
+tilesetAnimation(0x1C,0x1000,ZoramineImprovedStrongholdTileAnim9)
+tilesetAnimation(0x1C,0x1000,ZoramineImprovedStrongholdTileAnim10)
+tilesetAnimation(0x1C,0x1000,ZoramineImprovedStrongholdTileAnim11)
+tilesetAnimation(0x1C,0x1000,ZoramineImprovedStrongholdTileAnim12)
+tilesetAnimation(0x1C,0x1000,ZoramineImprovedStrongholdTileAnim13)
+tilesetAnimation(0x1C,0x1000,ZoramineImprovedStrongholdTileAnim14)
+tilesetAnimation(0x1C,0x1000,ZoramineImprovedStrongholdTileAnim15)
+WORD 0 0

@@ -240,6 +240,7 @@ EndingScene:
 	RemoveBackground
 	*/
 	
+	CALL EndEventRoutine
 	MNC2 Ch2
 	NoFade
 	ENDA

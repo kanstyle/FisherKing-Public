@@ -370,6 +370,7 @@ EndingScene:
 
 	CALL PigeonLeavesEvent
 	
+	CALL EndEventRoutine
 	MNC2 Ch4
 	NoFade
 	ENDA
