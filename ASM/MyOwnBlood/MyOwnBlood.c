@@ -174,11 +174,12 @@ bool CheckActivation(struct Proc* proc) {	//test 1: refresh if he hits from 2 ra
 } 
 
 void DoGaleforce(struct Proc* proc) {
+	int QuoteRN = NextRN_100();
 	if (!(gActiveUnit->state & 0x400)) { //check galeforce bit
-	
-		if (NextRN_100() < 10 && CheckFlag(NoSkillQuotesFlag_Link) == 0) {
+		
+		if (QuoteRN < 50 && CheckFlag(NoSkillQuotesFlag_Link) == 0) {
 			CallEvent(&FirstQuoteEvent, 1); 
-		} else if (NextRN_100() < 10 && CheckFlag(NoSkillQuotesFlag_Link) == 0) {
+		} else if (QuoteRN > 50 && CheckFlag(NoSkillQuotesFlag_Link) == 0) {
 			CallEvent(&SecondQuoteEvent, 1); 
 		}
 		

@@ -59,3 +59,4 @@ adding yourself!
 - RobertFPY: Monoweapon paladin map sprites, cav class cards
 - Leif: Bow paladin map sprites, class card
 - MeatOfJustice: Axe pal class card
+- DrGreen3339: "4" portrait

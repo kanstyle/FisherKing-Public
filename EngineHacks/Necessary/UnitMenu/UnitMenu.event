@@ -102,6 +102,9 @@ UnitMenuTable:
   #ifdef COMBAT_ARTS
 	MenuCommand(UM_CombatArts, UM_CombatArtsDesc, NormalText, CombatArtsUsability, CombatArtsEffect, $22c31, $22c99)
   #else // COMBAT_ARTS
+	//ZeroIn
+	MenuCommand(UM_ZeroIn, UM_ZeroInDesc, NormalText, ZeroInUsability, ZeroInEffect, $22c31, $22c99)
+  
 	//Lunge
 	MenuCommand(UM_Lunge, UM_LungeDesc, NormalText, LungeUsability, LungeEffect, $22c31, $22c99)
 

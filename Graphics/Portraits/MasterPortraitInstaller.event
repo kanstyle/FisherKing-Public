@@ -232,3 +232,19 @@ SwanMugData: // LL
 #incbin "dmp/Swan_palette.dmp"
 #incbin "dmp/Swan_minimug.dmp"
 setMugEntry(SwanMug, SwanMugData, 3, 5, 3, 3)
+
+ALIGN 16
+NoblemanMugData: // LL
+#incbin "dmp/Nobleman_mug.dmp"
+#incbin "dmp/Nobleman_frames.dmp"
+#incbin "dmp/Nobleman_palette.dmp"
+#incbin "dmp/Nobleman_minimug.dmp"
+setMugEntry(NoblemanMug, NoblemanMugData, 2, 5, 3, 3)
+
+ALIGN 16
+NoblewomanMugData: // LL
+#incbin "dmp/Noblewoman_mug.dmp"
+#incbin "dmp/Noblewoman_frames.dmp"
+#incbin "dmp/Noblewoman_palette.dmp"
+#incbin "dmp/Noblewoman_minimug.dmp"
+setMugEntry(NoblewomanMug, NoblewomanMugData, 4, 6, 3, 4)

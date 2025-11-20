@@ -2,6 +2,19 @@
 
 ALIGN 4 
 ButterflyItemEvent:
-GiveExp(Teacher,100)
+//GiveExp(Teacher,100)
+
+SVAL 1 Teacher
+SVAL 2 0x1
+CALL AddAutoLevelASMC|1
+
+/*
+GetUnitStatus(Teacher, Level)
+SVAL 1 0x1 //put 1 in slot 1
+SADD 2 0xC 1 //add 1 to slot C and put the result in slot 2
+SVAL 1 Teacher //put Teacher's ID in slot 1
+CALL AutoLevelASMC|1
+*/
+
 NoFade
 ENDA

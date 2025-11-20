@@ -1,3 +1,14 @@
+## UM_ZeroIn
+ Zero In[X]
+ 
+## UM_ZeroInDesc
+Gain WTA against enemy
+weapon type for rest of map.[X]
+ 
+## UM_SweepDesc
+Negates defenses. Can't crit,[N]
+double, or be countered.[X]
+
 ## UM_Sweep
  Sweep[X]
  

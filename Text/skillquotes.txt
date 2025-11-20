@@ -30,5 +30,34 @@ You can't even slow me down.[A][X]
 
 ## GenderswapFTM
 
-[mr][LoadHeroM]
-Alright, back to the classic.[A][X]
+[mr][LoadHeroM][ts]
+Can't beat the classic.[A][X]
+
+## GenderswapFTM
+
+[mr][LoadHeroM][ts]
+Can't beat the classic.[A][X]
+
+## MyOwnBlood1
+
+[mr][LoadSwan]
+[mr]Oh dear.[4][4] Oh dear.[4][4] I regret[N]
+that.[4][ce][mr] I regret everything![A][X]
+
+## MyOwnBlood2
+
+[mr][LoadSwan]
+[mr]Why do I do this to myself?![4] Why?[4][4][N]
+[ce][mr]What f-force compels me?![AN]
+I-I'd rather not introspect on this...[A][X]
+
+## ZeroInSword
+
+[mr][LoadBaby][ts]
+[mr]This is gonna be sword-of a
+problem for you![4] Heeheehee.[A][X]
+
+## ZeroInBadItem
+
+[mr][LoadBaby]
+[mr][tmm](I need 'em to be using a real weapon.)[tmm][A][X]

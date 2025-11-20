@@ -4,7 +4,10 @@
 
 //My Skills
 
-//WideEyed
+//ZeroIn
+#define ZeroInID 7
+
+//MyOwnBlood
 #define MyOwnBloodID 209
 
 //WideEyed
@@ -304,7 +307,7 @@
 
 //Slayer: Deal effective damage to monster units.
 //By Tequila
-#define SlayerID 7
+#define SlayerID 255
 
 //Skybreaker: Deal effective damage to flying units.
 //By Sme

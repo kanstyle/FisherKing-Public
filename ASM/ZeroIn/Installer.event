@@ -1,0 +1,75 @@
+#include "ZeroIn.lyn.event" 
+
+ALIGN 4 
+ZeroInID_Link: 
+WORD ZeroInID
+
+ALIGN 4 
+NoSkillQuotesFlag_Link: 
+WORD NoSkillQuotesFlag
+
+ALIGN 4
+SwordQuoteEvent:
+Text(ZeroInSword)
+NoFade
+ENDA
+
+ALIGN 4
+AxeQuoteEvent:
+Text(ZeroInSword)
+NoFade
+ENDA
+
+ALIGN 4
+LanceQuoteEvent:
+Text(ZeroInSword)
+NoFade
+ENDA
+
+ALIGN 4
+BowQuoteEvent:
+Text(ZeroInSword)
+NoFade
+ENDA
+
+ALIGN 4
+TomeQuoteEvent:
+Text(ZeroInSword)
+NoFade
+ENDA
+
+ALIGN 4
+DarkQuoteEvent:
+Text(ZeroInSword)
+NoFade
+ENDA
+
+ALIGN 4
+SpecialQuoteEvent:
+Text(ZeroInSword)
+NoFade
+ENDA
+
+ALIGN 4
+MonsterQuoteEvent:
+Text(ZeroInSword)
+NoFade
+ENDA
+
+ALIGN 4
+BadItemQuoteEvent:
+Text(ZeroInBadItem)
+NoFade
+ENDA
+
+ALIGN 4
+ZeroInAttackType_Link:
+BYTE 15 // ZeroIn attack type; change if conflict
+
+ALIGN 4
+UnitActionMenu_Attack:
+WORD 0x8022B30|1
+
+ALIGN 4
+AttackTypeByte_Link:
+WORD 0x203F101

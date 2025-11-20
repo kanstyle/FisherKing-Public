@@ -30,6 +30,8 @@
 #define ForceHeroMMug 0x1C
 #define ForceHeroFMug 0x1D
 #define SwanMug 0x1E
+#define NoblemanMug 0x1F
+#define NoblewomanMug 0x20
 
 #define AxeBoneCard 0xAD
 #define LanceBoneCard 0xAE

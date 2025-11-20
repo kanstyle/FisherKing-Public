@@ -1,3 +1,8 @@
+## SD_ZeroIn ^
+Zero In: Combat Art -- Once per map, after[N]
+attacking, gain WTA against that enemy's[N]
+weapon type for the rest of the map.[X]
+
 ## SD_MyOwnBlood
 M-My Own Blood...!: Once per turn, act[N]
 again if you lost half your max HP or[N]

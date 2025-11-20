@@ -10,12 +10,12 @@ WORD NoSkillQuotesFlag
 
 ALIGN 4
 FirstQuoteEvent:
-//Text(MyOwnBloodWhosNext)
+Text(MyOwnBlood1)
 NoFade
 ENDA
 
 ALIGN 4
 SecondQuoteEvent:
-//Text(MyOwnBloodStayDown)
+Text(MyOwnBlood2)
 NoFade
 ENDA
