@@ -4,6 +4,9 @@
 
 //My Skills
 
+//Juggernaut
+#define JuggernautID 86
+
 //ZeroIn
 #define ZeroInID 7
 
@@ -295,7 +298,7 @@
 
 //Full Metal Body: This unit is immune to all the Seal skills.
 //By Leonarth
-#define FullMetalBodyID 86
+#define FullMetalBodyID 255
 #define FullmetalBodyID FullMetalBodyID //Alias
 
 

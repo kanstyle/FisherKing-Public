@@ -88,3 +88,9 @@ Axe Cavalier[X]
 
 ## AxeCavClassDesc
 Placeholder.[X]
+
+## JabberwockyClassName
+Jabberwocky[X]
+
+## JabberwockyClassDesc
+Placeholder.[X]

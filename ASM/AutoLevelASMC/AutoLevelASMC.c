@@ -43,6 +43,10 @@ void AddAutoLevelASMC(ProcPtr proc) { //target unit in slot1, target level in sl
 		unit = GetUnitFromCharId(unitID);
 		targetLevel = unit->level + levelsToGain;
 	}
+	if (targetLevel > 20) {
+		targetLevel = 20;
+	}
+	unit->level = targetLevel;
 	
     struct BattleUnit tmpBattleUnit;
     short levelsLeft;
@@ -59,7 +63,6 @@ void AddAutoLevelASMC(ProcPtr proc) { //target unit in slot1, target level in sl
             CheckBattleUnitLevelUp(&tmpBattleUnit);
 
             UpdateUnitFromBattle(unit, &tmpBattleUnit);
-			unit->level++;
         }
     }
 }

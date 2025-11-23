@@ -1,3 +1,7 @@
+## SD_Juggernaut
+Juggernaut: Halves damage taken,[N]
+except from critical hits.[X]
+
 ## SD_ZeroIn ^
 Zero In: Combat Art -- Once per map, after[N]
 attacking, gain WTA against that enemy's[N]

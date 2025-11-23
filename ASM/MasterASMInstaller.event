@@ -32,6 +32,7 @@
 #include "MultiSeizeUnits20200302/Installer.event"
 #include "MyOwnBlood/Installer.event"
 #include "ZeroIn/Installer.event"
+#include "Juggernaut/Installer.event"
 //#include "ModularGoalWindow/MGW.event"
 //#include "ModularGoalWindow/Tables/MGWText/MGWText.event"
 

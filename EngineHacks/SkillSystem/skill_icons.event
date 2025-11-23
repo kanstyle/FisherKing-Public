@@ -8,6 +8,9 @@ SkillIcons:
 /*ORG SkillIcon(ItFindsYouID)
 #incbin "SkillIcons/ItFindsYou.dmp"*/
 
+ORG SkillIcon(JuggernautID)
+#incbin "SkillIcons/Juggernaut.dmp"
+
 ORG SkillIcon(ZeroInID)
 #incbin "SkillIcons/ZeroIn.dmp"
 

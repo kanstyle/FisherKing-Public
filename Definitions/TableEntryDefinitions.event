@@ -71,6 +71,7 @@
 #define Wise 0x27
 
 #define Ch2BeastBoss 0xAB
+#define JabberwockyBoss 0xAD
 
 #define Jerry 0x83
 #define Sigil 0x3B
@@ -124,6 +125,7 @@
 
 #define Carriage 0x8B
 #define AxeCavF 0x8C
+#define Jabberwocky 0x8D
 
 // Terrain Move Costs
 #define PromoInfantryMC 0x880b808

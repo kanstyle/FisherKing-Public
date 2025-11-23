@@ -6,7 +6,12 @@ ButterflyItemEvent:
 
 SVAL 1 Teacher
 SVAL 2 0x1
-CALL AddAutoLevelASMC|1
+ASMC AddAutoLevelASMC|1
+
+GetUnitStatus(Teacher,Level)
+SVAL 1 0x1
+SADD 0xC 0x1 0xC
+SVAL 4 0x03; SVAL 1 Teacher; SVAL 3 Level; SADD 5 0xC 0; ASMC SetUnitStatus //Increase level by 1
 
 /*
 GetUnitStatus(Teacher, Level)

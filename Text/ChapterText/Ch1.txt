@@ -538,21 +538,18 @@ The rest of you, anyway.[A]
 [clear]
 
 [ml][LoadSkull][ts]
-Ha! Don't lie. You want us to[N]
-fight in your new war that bad?[AN][ts]
-You look like you've served.[N]
-You should know what's coming.[A]
+Ha![4] Don't lie.[4] You're[N]
+getting paid, same as us.[A]
 [clear]
 
 [mr][LoadTeacher]
-A new war?[4] What are you[N]
-talking about?[A]
+Oh, I am; but you?[4][4] Whose[N]
+money is that, then?[A]
 [clear]
 
 [ml][LoadSkull]
-Fine, then.[4] If you're gonna play[N]
-dumb,[A] I guess you didn't wanna[N]
-talk after all.[A][clear]
+If I told you, idiot, I[N]
+wouldn't be getting any![A]
 [X]
 
 ## Ch1SkullHeroBQ
@@ -578,7 +575,16 @@ You'll never find 'em.[A]
 [clear]
 
 [mr][LoadHeroM][ts]
-Whatever.[4] Your funeral.[A]
+C'mon, do you really care[N]
+THAT much about this guy[AN]
+How much is he paying?[A]
+[clear]
+
+[ml][LoadSkull][ts]
+You don't know much about[N]
+this big ol' world, do ya?[AN]
+Lemme teach you a thing[N]
+or two.[A]
 [clear]
 [X]
 
@@ -610,7 +616,41 @@ You work for the baron, right?[4][N]
 And the crown right behind 'im.[A]
 
 [ml]
-And if we do?[A]
+We do, but that's not your concern.[AN]
+Who is Songbird?[4][4] Someone who can afford[N]
+a force like yours?[A]
+
+[mr]
+Heh.[4] No.[4] Some of us are here for[N]
+money.[4][4] But that ain't the whole picture.[A]
+
+[ml]
+Any hints?[4][4] What if I solved your[N]
+riddles three?[A][css]
+[mvl]
+
+[fl][LoadDragon]
+Don't screw around, old man.[N]
+Pillow's stressed out as it is.[A][css]
+[clear]
+[fl][LoadPillow]
+Oh, no, I actually liked your joke...[A][css]
+[clear]
+
+[l][ce]Ugh.[4][4][4][oe] Let's try this, then.[4][4] What does[N]
+Songbird have to do with this benefactor?[A]
+
+[ml]
+...That's a shame, but there's nothing to[N]
+be done about it now.[AN]
+Once again:[4] tell us where this Songbird is,[4][N]
+and we'll not harm them or you.[AN]
+
+[mr]
+I've a better idea.[A]
+[X]
+
+## Ch1EndEventText1Scratch
 
 [mr]
 Not from around here, huh?[AN]
