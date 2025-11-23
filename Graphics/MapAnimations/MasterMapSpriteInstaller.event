@@ -21,6 +21,9 @@ MovingMapSprite(0x1,NormalAP,UpstartMMoving)
 StandingMapSprite(0x1,0,UpstartFStanding)
 MovingMapSprite(0x2,NormalAP,UpstartFMoving)
 
+StandingMapSprite(0x6B,1,AxeCavFStanding)
+MovingMapSprite(AxeCavF,NormalAP,AxeCavFMoving)
+
 StandingMapSprite(0x6C,0,LowVoiceStanding)
 MovingMapSprite(0xA,NormalAP,LowVoiceMoving)
 
@@ -96,8 +99,8 @@ MovingMapSprite(SwordPal,NormalAP,SwordPalMoving)
 StandingMapSprite(0x83,1,CarriageStanding)
 MovingMapSprite(Carriage,NormalAP,CarriageMoving)
 
-StandingMapSprite(0x6B,1,AxeCavFStanding)
-MovingMapSprite(AxeCavF,NormalAP,AxeCavFMoving)
+StandingMapSprite(0x84,1,JabberwockyStanding)
+MovingMapSprite(Jabberwocky,NormalAP,JabberwockyMoving)
 
 StandingMapSprite(0x6a,0,ExampleMapSpriteGraphics)
 

@@ -15,7 +15,7 @@ POIN Proc_Devil	//devil effect
 	POIN CombatArt_SureShot CombatArt_Luna
 #endif // COMBAT_ARTS
 
-POIN JuggernautProcEffect
+POIN Proc_Juggernaut
 POIN Proc_Moonbow 
 
 #ifndef COMBAT_ARTS

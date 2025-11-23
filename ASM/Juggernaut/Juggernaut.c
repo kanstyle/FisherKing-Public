@@ -19,15 +19,16 @@ extern int JuggernautID_Link;
 };
 */
 
-void JuggernautProcEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB, struct BattleHit* curRound, struct BattleStats* stats) {
-	gEventSlots[1] = 1;
+void Proc_Juggernaut(struct BattleUnit* bunitA, struct BattleUnit* bunitB, struct BattleHit* curRound, struct BattleStats* stats) {
 	if (SkillTester(bunitB, JuggernautID_Link) == 0) {
-		gEventSlots[2] = 1;
+		//gEventSlots[2] = 1;
 		return;
+	} else {
+		//gEventSlots[4] = 1;
 	}
 	if (curRound->attributes & BATTLE_HIT_ATTR_CRIT) {
-		gEventSlots[3] = 1;
-		curRound->hpChange *= 2;
+		//gEventSlots[3] = 1;
+		stats->damage *= 2;
 	}
 }
 
@@ -35,5 +36,7 @@ void JuggernautPreBattleEffect(struct BattleUnit* bunitA, struct BattleUnit* bun
 	if (SkillTester(bunitB, JuggernautID_Link) == 0) {
 		return;
 	}
-	bunitA->battleAttack /= 2;
+	int damageDiff = 0;
+	damageDiff = bunitA->battleAttack - bunitB->battleDefense;
+	bunitA->battleAttack -= (damageDiff/2);
 }

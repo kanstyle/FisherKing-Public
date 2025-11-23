@@ -81,6 +81,12 @@ CarriagePortraitPalette:
 #incext Png2Dmp "Cards/Wooden Crate (U) T2 {Laurent Lacroix}.png" --palette-only
 setCardEntry(CarriageCard,CarriagePortrait,CarriagePortraitPalette)
 
+JabberwockyPortrait:
+#incext Png2Dmp "Cards/Jabberwocky.png" --lz77
+JabberwockyPortraitPalette:
+#incext Png2Dmp "Cards/Jabberwocky.png" --palette-only
+setCardEntry(JabberwockyCard,JabberwockyPortrait,JabberwockyPortraitPalette)
+
 /*KnightPortrait:
 #incext Png2Dmp "Cards/axe_knight_der_epicer2.png" --lz77
 KnightPortraitPalette:

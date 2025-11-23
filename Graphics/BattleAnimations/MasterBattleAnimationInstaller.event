@@ -15,7 +15,17 @@
 #define LightAnim(Animation) "BYTE Light 0x01 ; SHORT Animation"
 #define DarkAnim(Animation) "BYTE Dark 0x01 ; SHORT Animation"
 #define UnarmedAnim(Animation) "BYTE Disarmed 0x01 ; SHORT Animation"
+#define MonsterAnim(Animation) "BYTE 0xB 0x01 ; SHORT Animation"
 #define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
+
+ALIGN 4
+{
+#include "Animations/Ramallae/lorm_sp1 Installer.event"
+}
+ALIGN 4
+JabberwockyAnim:
+MonsterAnim(0xE0)
+WORD 0x0 // Seperator
 
 ALIGN 4
 {
@@ -25,7 +35,7 @@ ALIGN 4
 #include "Animations/CavHaxeF/Handaxe Installer.event"
 }
 ALIGN 4
-AxeBoneAnim:
+CavAxeFAnim:
 AxeAnim(0xDE)
 HandAxeAnim(0xDF)
 UnarmedAnim(0xDE)

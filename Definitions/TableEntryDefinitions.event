@@ -45,6 +45,7 @@
 #define BowPalCard 0xB6
 #define CivilianCard 0xB7
 #define CarriageCard 0xB8
+#define JabberwockyCard 0xB9
 
 // Characters
 #define HeroChar 0x1

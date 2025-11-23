@@ -199,3 +199,9 @@ Swan[X]
 
 ## SwanDesc
 Placeholder.[X]
+
+## JabberwockyBossName
+Jabberwocky[X]
+
+## JabberwockyBossDesc
+Placeholder.[X]
