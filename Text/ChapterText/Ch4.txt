@@ -6,3 +6,136 @@ Placeholder.[X]
 
 ## Ch4Objective
 Placeholder[X]
+
+## Ch4GateNarration
+Placeholder.[A][X]
+
+## Ch4WelcomeSoldier
+[mr][LoadPurpleSoldier]
+Welcome to the manor,[N]
+sir and madam.[A][X]
+
+## Ch4WelcomeTeacher
+[ml][LoadTeacher]
+Welcome to the manor,[N]
+sir and madam.[A][X]
+
+## Ch4TeacherBanter
+[mr][LoadTeacher]
+[fl][LoadPillow]
+[l][LoadDragon][ce]
+[mr]
+Having fun, everyone?[A]
+
+[fl][ts]
+It's not so bad.[A][css][4][4][4]
+Is it, Dragon?[A]
+
+[l][ts][tmm]
+...[A]
+
+[mr][ts]
+Heh.[A]
+
+[fl]
+Someone's a little sleepy...[A]
+
+[l][ts]
+...'m not sleepy.[A][css][4][4][4][4][4][4]
+
+[fl][ts][mfl][mfl]
+
+[l][ts][oe][mvl]
+Ah![4][4] Pillow![4][N][ce]
+Always pokin' me in the ass...[A][oe]
+
+[mr]
+[oq]Always"?[4] Hmm.[A]
+
+[l]
+Shut up, old man.[A]
+
+[fl][ce][ts][mfl][oe]
+Hehehee.[A]
+[X]
+
+## Ch4TeacherBanter2
+[mr][LoadTeacher]
+[fl][LoadPillow]
+[l][LoadDragon]
+[fl]
+The prince was supposed[N]
+to be here, wasn't he?[AN]
+I wonder where he is...[A]
+
+[mr]
+Fashionably late, perhaps?[A]
+
+[l]
+Wouldn't count on it.[N]
+He's been missing for eight months.[A]
+
+[fl]
+Wow...[A]
+
+[mr]
+Eight months?[4] Is that right?[4][4][tmm][N]
+(I'm even worse-informed than I thought...)[A][tmm]
+
+[l]
+Yup.[N][4]
+Longest he's ever been gone.[A]
+
+[mr]
+I've heard that he would disappear every[N]
+now and then, since taking the throne.[A]
+
+[fl]
+What do you suppose he's doing...?[A]
+
+[l]
+Hell if I know.[4] No one does.[A]
+
+[mr]
+So, then, in his absence, the one in[N]
+charge would be...?[A]
+[X]
+
+## Ch4GryphonArrives
+[ml][LoadTeacher]
+Welcome to the manor,[N]
+sir and--[AN]
+
+[r][LoadGryphon]
+[fr][LoadEagle][4][4][4]
+[ml]
+Ah...[A]
+
+[r]
+Teacher.[A]
+
+[ml]
+Sir Gryphon and Lady Eagle.[AN]
+[ce]I'm honored to welcome[N]
+you to the royal ball.[A]
+
+[fr]
+Thank you, Teacher.[A][css]
+[ml][oe][4][4][clear][4][4][LoadDragon]
+[tmm]...[A][css]
+
+[r][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4]
+[ce]...[A][css][clear][4][4][4]
+[X]
+
+## Ch4GryphonArrives2
+[ml][LoadDragon]
+[fr][LoadEagle]
+...Dragon.[A][css]
+
+[ml]
+[4][4]Hey.[A][css]
+
+[fr][tmm][4][4][4][4][4][4]
+[ce]...[A][css][clear]
+[X]

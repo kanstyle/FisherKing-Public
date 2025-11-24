@@ -43,7 +43,7 @@ ORG ItemIconEntry(Rapier)
 #incbin "Swords/Rapier-Ereshkigal.dmp"	// Ereshkigal
 
 ORG ItemIconEntry(KillingEdge)
-#incbin "Swords/BleedinEdge.dmp"	// Ereshkigal
+#incbin "Swords/BleedinEdge.dmp"	// Ereshkigal/Doin Thangs
 
 ORG ItemIconEntry(Wyrmslayer)
 #incbin "Swords/Wyrmslayer-Ereshkigal.dmp"		// Ereshkigal

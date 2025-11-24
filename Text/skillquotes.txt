@@ -54,10 +54,47 @@ I-I'd rather not introspect on this...[A][X]
 ## ZeroInSword
 
 [mr][LoadBaby][ts]
-[mr]This is gonna be sword-of a
+[mr]This shall be sword-of a[N]
 problem for you![4] Heeheehee.[A][X]
+
+## ZeroInLance
+
+[mr][LoadBaby][ts]
+[mr]A lance?[4] Not a chance![A][X]
+
+## ZeroInAxe
+
+[mr][LoadBaby][ts]
+[mr]I'm fully axe-ccinated![A][X]
+
+## ZeroInBow
+
+[mr][LoadBaby][ts]
+[mr][ce]Heh.[4][oe] Your weapons are bow-gus![A][X]
+
+## ZeroInTome
+
+[mr][LoadBaby][ts]
+[mr]High magic?[4] Don't even try-magic![A][X]
+
+## ZeroInDark
+
+[mr][LoadBaby][ts]
+[mr]Low magic?[4] You'd better go-magic![A][X]
+
+## ZeroInSpecial
+
+[mr][LoadBaby][ts]
+[mr]You'll be crying for your bomb-my![N][4][4][ts][tmm]
+(...Not sure about that one...)[A][X]
+
+## ZeroInMonster
+
+[mr][LoadBaby][ts]
+[mr]Time for Lowland beasts[N]
+to Lowland cease![A][X]
 
 ## ZeroInBadItem
 
 [mr][LoadBaby]
-[mr][tmm](I need 'em to be using a real weapon.)[tmm][A][X]
+[mr][tmm](I need them to be using a real weapon.)[tmm][A][X]

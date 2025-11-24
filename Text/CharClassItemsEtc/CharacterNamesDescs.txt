@@ -200,8 +200,8 @@ Swan[X]
 ## SwanDesc
 Placeholder.[X]
 
-## JabberwockyBossName
-Jabberwocky[X]
+## JabberwockBossName
+Jabberwock[X]
 
-## JabberwockyBossDesc
+## JabberwockBossDesc
 Placeholder.[X]

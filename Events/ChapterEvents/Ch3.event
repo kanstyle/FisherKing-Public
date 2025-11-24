@@ -261,6 +261,9 @@ BeginningScene:
 	LABEL 0x4
 	CALL StopSkippingEvent
 	PreventSkipping
+	FADI 8
+	CLEAN
+	SetBackground(BlackBG)
 	CallMenu(Ch3HeartMenu)
 		BNE 0x6 0xC 0x0
 		AllowSkipping

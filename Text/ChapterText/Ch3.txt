@@ -1782,7 +1782,7 @@ That's a nasty way to put it.[A]
 [fl]
 Well, Professor, if you're so sure,[AN]
 then how come different people report[N]
-seeing similar daemons?[A]
+seeing similar daemons?[4][4] Hmmmm?[A]
 
 [mr]
 Who cares?![A]

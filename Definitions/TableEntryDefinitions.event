@@ -32,6 +32,7 @@
 #define SwanMug 0x1E
 #define NoblemanMug 0x1F
 #define NoblewomanMug 0x20
+#define GryphonMug 0x21
 
 #define AxeBoneCard 0xAD
 #define LanceBoneCard 0xAE
@@ -45,7 +46,7 @@
 #define BowPalCard 0xB6
 #define CivilianCard 0xB7
 #define CarriageCard 0xB8
-#define JabberwockyCard 0xB9
+#define JabberwockCard 0xB9
 
 // Characters
 #define HeroChar 0x1
@@ -70,9 +71,10 @@
 #define Skull 0x25
 #define Baron 0x26
 #define Wise 0x27
+#define Gryphon 0x28
 
 #define Ch2BeastBoss 0xAB
-#define JabberwockyBoss 0xAD
+#define JabberwockBoss 0xAD
 
 #define Jerry 0x83
 #define Sigil 0x3B
@@ -126,7 +128,7 @@
 
 #define Carriage 0x8B
 #define AxeCavF 0x8C
-#define Jabberwocky 0x8D
+#define Jabberwock 0x8D
 
 // Terrain Move Costs
 #define PromoInfantryMC 0x880b808

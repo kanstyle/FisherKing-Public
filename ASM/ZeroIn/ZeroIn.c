@@ -40,49 +40,49 @@ int ZeroInUsability(const struct MenuItemDef * def, int number) {
 
 int ZeroInEffect(struct MenuProc * menu, struct MenuItemProc * menuItem) {
 	//set attack type to reaping blade, call attack effect
-	gEventSlots[8] = 0x1;
+	*AttackTypeByte_Link = ZeroInAttackType_Link;
 	
 	return UnitActionMenu_Attack(menu, menuItem);
 }
 
 void ZeroInPostBattleEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB) {
+	//gEventSlots[7] = 1;
 	//if zero in is active (this means that we are bunitA)
-	if (gEventSlots[8] == 0x1)
-		//&& bunitA == &gBattleActor) 
-	{
+	if (*AttackTypeByte_Link == ZeroInAttackType_Link
+	) {
 		//if weapon type is staff, item, ring, don't save it 
 		//get enemy weapon type and put it in support 0x5
-		gEventSlots[6] = 0x1;
-		if (bunitB->weaponType == 0x0) {
+		//gEventSlots[8] = ZeroInAttackType_Link;
+		if (gBattleTarget.weaponType == 0x0) {
 			CallEvent(&SwordQuoteEvent, 1); 
 		}
-		else if (bunitB->weaponType == 0x1) {
+		else if (gBattleTarget.weaponType == 0x1) {
 			CallEvent(&LanceQuoteEvent, 1); 
 		}
-		else if (bunitB->weaponType == 0x2) {
+		else if (gBattleTarget.weaponType == 0x2) {
 			CallEvent(&AxeQuoteEvent, 1); 
 		}
-		else if (bunitB->weaponType == 0x3) {
+		else if (gBattleTarget.weaponType == 0x3) {
 			CallEvent(&BowQuoteEvent, 1); 
 		}
-		else if (bunitB->weaponType == 0x5) {
+		else if (gBattleTarget.weaponType == 0x5) {
 			CallEvent(&TomeQuoteEvent, 1); 
 		}
-		else if (bunitB->weaponType == 0x6) {
+		else if (gBattleTarget.weaponType == 0x6) {
 			CallEvent(&SpecialQuoteEvent, 1); 
 		}
-		else if (bunitB->weaponType == 0x7) {
+		else if (gBattleTarget.weaponType == 0x7) {
 			CallEvent(&DarkQuoteEvent, 1); 
 		}
-		else if (bunitB->weaponType == 0xB) {
+		else if (gBattleTarget.weaponType == 0xB) {
 			CallEvent(&MonsterQuoteEvent, 1); 
 		}
 		else {
 			CallEvent(&BadItemQuoteEvent, 1); 
 			return;
 		}
-		bunitA->unit.supports[5] = bunitB->weaponType;
-		gEventSlots[8] = 0;
+		bunitA->unit.supports[5] = gBattleTarget.weaponType;
+		//gEventSlots[8] = 0;
 	}
 }
 

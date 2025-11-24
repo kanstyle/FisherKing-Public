@@ -16,43 +16,43 @@ ENDA
 
 ALIGN 4
 AxeQuoteEvent:
-Text(ZeroInSword)
+Text(ZeroInAxe)
 NoFade
 ENDA
 
 ALIGN 4
 LanceQuoteEvent:
-Text(ZeroInSword)
+Text(ZeroInLance)
 NoFade
 ENDA
 
 ALIGN 4
 BowQuoteEvent:
-Text(ZeroInSword)
+Text(ZeroInBow)
 NoFade
 ENDA
 
 ALIGN 4
 TomeQuoteEvent:
-Text(ZeroInSword)
+Text(ZeroInTome)
 NoFade
 ENDA
 
 ALIGN 4
 DarkQuoteEvent:
-Text(ZeroInSword)
+Text(ZeroInDark)
 NoFade
 ENDA
 
 ALIGN 4
 SpecialQuoteEvent:
-Text(ZeroInSword)
+Text(ZeroInSpecial)
 NoFade
 ENDA
 
 ALIGN 4
 MonsterQuoteEvent:
-Text(ZeroInSword)
+Text(ZeroInMonster)
 NoFade
 ENDA
 

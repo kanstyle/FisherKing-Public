@@ -248,3 +248,11 @@ NoblewomanMugData: // LL
 #incbin "dmp/Noblewoman_palette.dmp"
 #incbin "dmp/Noblewoman_minimug.dmp"
 setMugEntry(NoblewomanMug, NoblewomanMugData, 4, 6, 3, 4)
+
+ALIGN 16
+GryphonMugData: // LL
+#incbin "dmp/Gryphon_mug.dmp"
+#incbin "dmp/Gryphon_frames.dmp"
+#incbin "dmp/Gryphon_palette.dmp"
+#incbin "dmp/Gryphon_minimug.dmp"
+setMugEntry(GryphonMug, GryphonMugData, 2, 5, 3, 3)
