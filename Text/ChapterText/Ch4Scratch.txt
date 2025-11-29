@@ -1,0 +1,128 @@
+## Ch4EagleHallwayTalk
+[ml][LoadHeroM]
+[mr][LoadEagle]
+It...[4][4] IS you, isn't it?[N]
+[ts]You look so different.[A]
+
+[ml]
+You look great, too![AN]
+I was, uh, actually wearing a really[N]
+nice dress just a second ago...[A]
+
+[mr]
+Oh?[4][4] How interesting...[A]
+
+[ml][ts]
+I-I mean, not like this![AN]
+Uh, so, basically, I can turn into[N]
+a girl, now, when I...[A]
+
+[mr][ts]
+Heeheehee.[A]
+[X]
+
+## Ch4EagleHallwayTalkText
+Did she know about that?[N]
+Was I already doing that back[N]
+when we knew each other,[N]
+at the academy?[AN]
+For some reason, I couldn't[N]
+remember.[AN]
+There was something else I[N]
+couldn't remember, too.[4][4][4][4][N]
+Something important...[A][X]
+
+## Ch4EagleHallwayTalk2
+[ml][LoadHeroM]
+[mr][LoadEagle][ts]
+I know, dummy.[4][4] You were so excited[N]
+about that,[A] you kept asking to[N]
+borrow my uniform.[AN]
+And you were so embarrassed when[N]
+you finally put it on.[A]
+
+[ml]
+Yeah![4][4] Remember the prince's[N]
+face when he walked in?[A]
+
+[mr]
+No, but I remember yours.[4][4] [ce]That [oq]longing[N]
+for the gallows" kind of look.[AN][oe]
+My favorite of your many funny faces.[A]
+
+[ml][ce]
+Yeah, well, I'm a professional girl now.[N]
+Gonna be the baron's mistress in no time.[AN]
+[oe]Hey, speaking of, where's the prince?[4][4][N]
+He's coming, right?[4] We could all meet up.[A]
+
+[mr][ts]
+Ah...[4][4] I haven't seen him yet.[A]
+
+[ml]
+He's been gone a really long time, huh?[N][4]
+Are you guys still friends?[A][css][4][4][4][4][4]
+
+[mr][ce]
+...[A]
+
+[ml][tmm]
+(...?)[A][css][4][4][4][4]
+
+[mr][tmm]
+...He's my husband.[AN][oe]
+You...[4][4] remember our[N]
+wedding day, don't you?[A]
+[X]
+
+## Ch4EagleHallwayTalkText2
+That was it.[4][4][N]
+The stormcloud surrounding[N]
+the summit.[A]
+[X]
+
+## Ch4PrinceRoomTalk3
+[fl][LoadEnvoy]
+[l][LoadPrince]
+[mr][LoadHeroM]
+[l]
+It doesn't really matter.[AN]
+Anyway, I was looking for a way[N]
+to save this kingdom.[AN]
+We're a tiny country, playing in[N]
+the jaws of our betters.[AN]
+My father and the low mages were[N]
+all that kept the jaws open.[A]
+
+[mr]
+So what?[4][N]
+That's how it's always been.[A]
+
+[l]
+Once our neighbors find out about[N]
+our broken joke of a prince,[AN]
+that will be the end of the[N]
+Highlands.[A]
+
+[mr]
+Why don't you try being a real[N]
+prince, then, for once?[AN]
+You could do it.[4] You and Eagle[N]
+were always the smart ones.[A]
+
+[l]
+I can't.[4] You wouldn't understand.[AN]
+However...[4][4] deep within[N]
+the Lowlands, there's a way.[AN]
+A treasure that the first king of[N]
+the Highlands once found.[A][css][4][4][4]
+
+[mr]
+...Insane.[4][4] You're insane.[N]
+You can't invade the Lowlands.[AN]
+Everyone will die.[4] Don't you get it?[A]
+
+[l]
+...You'll just have to trust me, then.[N]
+Like you used to, remember?[A]
+[X]

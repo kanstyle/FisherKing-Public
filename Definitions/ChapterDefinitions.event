@@ -8,6 +8,7 @@
 #define MidnightCh 0x2C
 #define BaronManorEntranceCh 0x2D
 #define BaronManorHallwayCh 0x2E
+#define PrinceRoomCh 0x2F
 #ifdef USE_TEST_MAP
 	#define BossRush 0x0
 #else
@@ -45,6 +46,9 @@
 #define Ch4EventsID 0x20
 
 #define BaronManorHallwayMapID 0x21
+
+#define PrinceRoomMapID 0x22
+#define PrinceRoomMapChangesID 0x23
 
 //TILESET IDs (START FROM 0x88 when replacing stuff)
 #define VanillaFieldsObjectID 0x1

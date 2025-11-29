@@ -33,10 +33,11 @@ void Proc_Juggernaut(struct BattleUnit* bunitA, struct BattleUnit* bunitB, struc
 }
 
 void JuggernautPreBattleEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB) {
-	if (SkillTester(bunitB, JuggernautID_Link) == 0) {
+	if (SkillTester(bunitA, JuggernautID_Link) == 0) {
 		return;
 	}
+	int originalAttack = bunitB->battleAttack;
 	int damageDiff = 0;
-	damageDiff = bunitA->battleAttack - bunitB->battleDefense;
-	bunitA->battleAttack -= (damageDiff/2);
+	damageDiff = originalAttack - bunitA->battleDefense;
+	bunitB->battleAttack -= (damageDiff/2);
 }

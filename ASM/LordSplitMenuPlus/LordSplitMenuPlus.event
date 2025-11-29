@@ -90,6 +90,16 @@ MenuOption(Ch3HeartYesChoice, Ch3HeartYesDesc, 0)
 MenuOption(Ch3HeartNoChoice, Ch3HeartNoDesc, 0)
 MenuTerminator
 
+ALIGN 4
+Ch4NPCTalkMenu:
+MenuDefinition(4, 8, 21, 0, 1, Ch4NPCTalkMenuOptions)
+
+ALIGN 4
+Ch4NPCTalkMenuOptions:
+MenuOption(Ch4NPCTalkMove, Ch4NPCTalkMoveDesc, 0)
+MenuOption(Ch4NPCTalkWait, Ch4NPCTalkWaitDesc, 0)
+MenuTerminator
+
 
 
 

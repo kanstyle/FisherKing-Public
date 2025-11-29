@@ -85,6 +85,8 @@
 #define Lowlander 0xAC
 #define Deserter 0x7F
 #define Combatant 0x85
+#define Ch4NPCMan 0xF1
+#define Ch4NPCWoman 0xF2
 #define Cart 0xF3
 #define Civilian 0xF4
 

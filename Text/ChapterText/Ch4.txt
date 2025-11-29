@@ -2,10 +2,11 @@
 Ch. 4: Who Dreamed It?[X]
 
 ## Ch4ObjectiveLong
-Placeholder.[X]
+Help the nobles
+escape southeast.[X]
 
 ## Ch4Objective
-Placeholder[X]
+Escort nobles[X]
 
 ## Ch4GateNarration
 Placeholder.[A][X]
@@ -134,8 +135,680 @@ Thank you, Teacher.[A][css]
 ...Dragon.[A][css]
 
 [ml]
-[4][4]Hey.[A][css]
+[4][4]Hey, Eagle.[A][css]
 
 [fr][tmm][4][4][4][4][4][4]
 [ce]...[A][css][clear]
+[X]
+
+## Ch4HeroBaronBanter
+[ml][LoadHeroDress]
+[mr][LoadBaron]
+[ml][ts]
+So, milord... Is yours truly delivering[N]
+the enchanted evening you so desired?[A]
+
+[mr][ts]
+I'd say you're doing just fine, yes.[N][4]
+So far, no one's stared at me.[AN]
+Well, no more than usual.[A]
+
+[ml][ts]
+I've been trying to gaze into your[N]
+eyes as much as possible.[AN]
+You know, to really sell this[N]
+whole thing.[A]
+
+[mr][ts]
+I appreciate the enthusiasm.[A]
+
+[ml][ts]
+Oh, and how's my dancing?[A]
+
+[mr]
+Awful.[A][css]
+
+[ml][ts][mml]
+Oh, no![A]
+
+[mr][ts]
+I'm kidding.[4] It's actually[N]
+rather good.[AN]
+
+[ml]
+Nice![A]
+
+[mr][ts]
+You said you went to the royal military[N]
+academy.[4] Did they teach you there?[A]
+
+[ml][ts]
+Ha![4] No.[4] Maybe they taught the prince,[N]
+but not me.[4][4] [ce]I'm just a natural, I guess.[A][oe]
+
+[mr][ts]
+Well, you could still learn a thing or[N]
+two, but you fit in well enough.[AN]
+Color me pleasantly surprised.[A]
+
+[ml][ce]
+That's the Hero's Company motto.[A][oe]
+[X]
+
+## Ch4EagleGryphonBanter
+[mr][LoadEagle]
+[ml][LoadGryphon]
+[tmm]...[A]
+
+[mr][tmm]
+What do you think of the manor,[N]
+father?[4] I rather like it.[A]
+
+[ml]
+It's gaudy.[A]
+
+[mr][ts]
+But practical.[4] The perimeter is[N]
+surprisingly sound.[AN]
+Did you notice the walls were made[N]
+with reinforced--[AN][ts]
+Father?[A]
+
+[ml][tmm]
+...[A][tmm]
+
+[mr]
+I don't suppose...[4][4] you're[N]
+thinking about Dragon?[A][css][4][4][4][4]
+
+[ml]
+...What's there to think about?[A][css][4][4][4][4]
+
+[mr]
+I was glad to see her well.[AN]
+As well as one could reasonably[N]
+expect...[A]
+
+[ml][ce]
+She wasn't dead in some ditch.[N][4][4][oe]
+That's all that can be said.[A][css][4][4][4][4][4]
+
+[mr]
+...I'm going to take a walk,[N]
+if you don't mind.[AN]
+I'll be back for the speech,[N]
+when the prince arrives.[A]
+
+[ml]
+As you like.[A]
+[X]
+
+## Ch4HeroBaronBanter2
+[ml][LoadHeroDress]
+[mr][LoadBaron]
+Something wrong?[4] You're not[N]
+gazing into my eyes anymore.[A][css][4][4][4]
+
+[ml]
+Huh?[4][4] Oh, yeah, sorry.[AN]
+Do you mind if I step out for[N]
+a minute, milord?[AN]
+My...[4][4] dress strings are...[N][4][4]
+so tight, you see...[A]
+
+[mr]
+Is that so?[4][4] Well, by all means.[N]
+Don't let me keep you.[A]
+
+[ml][tmm]
+(Not even offering to go with me?[4][4][N]
+That's gotta be why he's not married yet.)[A]
+[X]
+
+## Ch4EagleHallway
+[ml]
+[LoadEagle][tmm][4][4][4]
+(Where could he be?)[AN][ce]
+(It's my fault for getting my[N]
+hopes up, isn't it?)[A]
+[X]
+
+## Ch4HeroHallway
+[ml]
+[LoadHeroM][tmm][mml][ce]
+(Phew![4][4] Oh man, that feels good![N][4][4]
+My boobs were gonna freakin' explode...)[AN]
+[oe]...[AN]
+(Wait...[4][4] is that...?!)[A]
+[X]
+
+## Ch4EagleCG
+There she was.[AN]
+The most wonderful woman[N]
+in the world.[A]
+[X]
+
+## Ch4EagleCG2
+Looking into her eyes, in that[N]
+split second, I felt so silly.[AN]
+Calling myself [oq]Hero", scraping[N]
+together my little misfit band...[AN]
+I'd been playing around in the[N]
+foothills, glancing up at the summit.[AN]
+And there she was.[AN]
+The one I'd dreamed of meeting there.[A]
+[X]
+
+## Ch4EagleCGTalk
+[SetName]Eagle[.][N]
+Ah...[A]
+[X]
+
+## Ch4EagleCGTalk2
+[SetName]Hero[N]
+Eagle![4][4] Hey![4][4] It's me![A]
+[X]
+
+## Ch4EagleCG3
+Yet, even as I called out to her,[N]
+she felt so far away.[A]
+[X]
+
+## Ch4EagleHallwayTalk
+[ml][LoadHeroM]
+[mr][LoadEagle]
+It...[4][4] IS you, isn't it?[N]
+[ts]You look so different.[A]
+
+[ml]
+You look great, too![AN]
+I was, uh, actually wearing a really[N]
+nice dress just a second ago...[A]
+
+[mr]
+Oh?[4][4] How interesting...[A]
+
+[ml][ts]
+I-I mean, not like this![AN]
+Uh, so, basically, I can turn into[N]
+a girl, now, when I...[A]
+
+[mr][ts]
+Heeheehee.[A]
+[X]
+
+## Ch4EagleHallwayTalkText
+Did she know about that?[N]
+Was I already doing that back[N]
+when we knew each other,[N]
+at the academy?[AN]
+For some reason, I couldn't[N]
+remember.[AN]
+There was something else I[N]
+couldn't remember, too.[4][4][4][4][N]
+Something important...[A][X]
+
+## Ch4EagleHallwayTalk2
+[ml][LoadHeroM]
+[mr][LoadEagle][ts]
+I know, dummy.[4][4] I don't suppose[N]
+it's handy for your mercenary work?[A]
+
+[ml]
+[ce]Well, when you've got a great creative[N]
+mind like--[4][4][oe][ts] Wait, how'd you know?[A]
+
+[mr][ts]
+Lucky guess.[4][4] I saw Teacher[N]
+guarding the gate.[AN]
+If anyone could've gotten him[N]
+back to work, it'd be you.[A]
+
+[ml]
+Yeah, how lucky is that?[4][4] The minute[N]
+I heard he was rotting in the boonies,[AN]
+I knew I had to go snatch him up.[N][4][4][4][ts]
+...Oh, and I ran into Dragon, too.[A]
+
+[mr][ce]
+I saw...[A][css][4][4][4][4]
+[oe]How...[4][4] is she?[N]
+I haven't seen her since the expulsion.[A]
+
+[ml]
+Uh...[ce] better than I was expecting.[N][4][4][oe]
+Doesn't talk about it much.[A]
+
+[mr]
+I see...[A]
+
+[ml][ts]
+Oh, what about the prince?[4][4] If he was here,[N]
+we'd have the whole crew back together.[A]
+
+[mr][ts]
+I'm still waiting for him.[A]
+
+[ml]
+He's been gone a really long time, huh?[N][4]
+Are you guys still friends?[A][css][4][4][4][4][4]
+
+[mr][ce][tmm]
+...[A]
+
+[ml]
+(...?)[A][css][4][4][4][4][tmm]
+
+[mr][oe]
+...He's my husband.[AN]
+You...[4][4] remember our[N]
+wedding day, don't you?[A]
+[X]
+
+## Ch4EagleHallwayTalkText2
+That was it.[4][4][N]
+The stormcloud surrounding[N]
+the summit.[A]
+[X]
+
+## Ch4EagleHallwayTalk3
+[ml][LoadHeroM]
+[mr][LoadEagle]
+[ml]
+...Yeah, of course I...[4][4][4][N]
+Huh?[A]
+[X]
+
+## Ch4EagleHallwayTalk4
+[ml][LoadHeroM]
+[mr][LoadEagle]
+[ml][mml]
+That's him![4][4][N]
+Where's he going?[A]
+
+[mr]
+...What?[A]
+
+[ml]
+Just hang on.[N][4]
+I'll go get him.[A]
+[X]
+
+## Ch4EagleHallwayTalk5
+[ml][LoadEagle]
+[ml][mml]
+Wait![4] Don't leave![A]
+[X]
+
+## Ch4PrinceRoomTalk
+[mr][LoadHeroM]
+Hey![N]
+[4][4]...Huh?[AN]
+What the hell're[N]
+you doing up here?[A][4][4]
+
+[ml][LoadPrince][ts]
+Hi, Hero.[4][4] It's been a while.[A]
+
+[mr][ts]
+Hi.[4] Isn't this the baron's room?[AN]
+Everyone's waiting for you downstairs.[A]
+
+[ml]
+Mm-hmm.[4][4] I'm going to go[N]
+see them momentarily.[A]
+
+[mr]
+And...[4][4] who's that?[A]
+
+[ml][mvl]
+[fl][LoadEnvoy]
+Oh, I'm nobody.[4] Just a friend.[4][N]
+Pay me no mind.[A]
+
+[l]
+Say, Hero...[4][4] You're confused, aren't you?[4][N]
+That's okay.[4] Just try to relax.[A]
+[X]
+
+## Ch4PrinceRoomTalkText
+I should've been happy to[N]
+see my old friend.[AN]
+Yet every word he spoke dropped[N]
+a hot coal into my veins.[A]
+[X]
+
+## Ch4PrinceRoomTalk2
+[fl][LoadEnvoy]
+[l][LoadPrince]
+[mr][LoadHeroM]
+What's wrong with you?[N]
+You're acting so weird.[AN]
+Just talk to me like a[N]
+normal person.[AN]
+Where've you been this[N]
+whole time?[A]
+
+[l]
+How do you feel about the Highlands,[N]
+Hero?[4] What is life like, lately?[A]
+
+[mr]
+Well, it'd be a hell of a lot better[N]
+with a prince on the throne.[AN]
+What are you even talking about right[N]
+now?[4][4] You've got a job to do.[A]
+
+[l]
+I've been looking for a way[N]
+to save this kingdom.[AN]
+We're a tiny country, playing in[N]
+the jaws of our betters.[AN]
+My father and the low mages were[N]
+all that kept the jaws open.[A]
+
+[mr]
+And?[4][4] What was so special[N]
+about the Elder Prince?[AN]
+Why can't you just do what he did?[A]
+
+[l]
+You remember the day my father died,[N]
+don't you?[A]
+
+[mr]
+[tmm]...[4][4][4][tmm]What?[A]
+
+[l]
+You should.[A]
+[X]
+
+## Ch4PrinceRoomTalkText2
+I did remember when the Elder[N]
+Prince died.[4][4][4][N]
+I remembered the prince crying[N]
+in his room, while I watched.[AN]
+But why was I just watching?[N]
+That couldn't be right...[A]
+[X]
+
+## Ch4PrinceRoomTalk3
+[fl][LoadEnvoy]
+[l][LoadPrince]
+[mr][LoadHeroM]
+[l]
+He was attuned to the workings[N]
+and whispers of the world.[AN]
+He didn't fear the Lowlands.[4][N]
+He didn't fear anything.[AN]
+Even in the moment of his death.[A]
+
+[mr]
+So what?[4] You can be afraid of stuff.[AN]
+Everyone is.[4] You and Eagle were always[N]
+the smart ones.[4] Figure something out.[A]
+
+[l][ts][ce]
+[oq]Figure something out!"[oe] Oh, I plan to.[AN]
+Within the heart of the Lowlands,[N]
+in the depths of the deep mountains,[AN]
+dwells the Lowland Queen, clad all[N]
+in white.[AN]
+
+[mr][ts]
+The Lowland Queen...?[A]
+
+[l]
+Queen of the land, queen of spirits,[N]
+queen of all that is not man.[AN]
+She holds a treasure that the First[N]
+King of the Highlands once held.[AN]
+With that treasure, the Highlands[N]
+can survive.[A]
+
+[mr]
+...Insane.[4][4] You're insane.[N]
+You can't invade the Lowlands.[AN]
+The [oq]first king" isn't real.[4][N]
+Everyone will die.[4] Don't you get it?[A]
+
+[l]
+...You'll just have to trust me, then.[N]
+Like you used to, remember?[A]
+[X]
+
+## Ch4PrinceRoomTalkText3
+My fingers clenched.[4][4] I could[N]
+kill him.[4][4] I could kill him[N]
+right then, and save everyone.[AN]
+I'd be killed, too.[4] That much[N]
+was obvious.[N][4][4]
+But I called myself [oq]Hero",[N]
+didn't I?[A]
+[X]
+
+## Ch4PrinceRoomTalk4
+[fl][LoadEnvoy]
+[l][LoadPrince]
+[mr][LoadHeroM]
+...Hey.[4][4][css][mvr]
+Come here.[A]
+
+[l][ts]
+Oh?[4] You've got a frightening[N]
+look about you.[A][css][clear][fl][clear]
+
+[fl][LoadPrince][l][LoadEnvoy]
+Sorry, Hero![4] I can't let you[N]
+do something so unsavory.[A]
+
+[r][ts]
+[ce]I don't...[4][oe] I don't have a choice.[N]
+Now get out of my way.[A]
+
+[l]
+The prince will be going downstairs,[N]
+like you wanted.[AN]
+And you're going to stay put.[A]
+
+[r]
+...What?[4][4][4][4][mmr][N]
+Wait![A]
+[X]
+
+## Ch4PrinceRoomTalk5
+[mr][LoadHeroM]
+What the hell?![AN]
+Let me out of here![A]
+[X]
+
+## Ch4PrinceSpeech1
+[mr][LoadPrince]
+Lords and ladies of the Highlands,[N]
+I thank you for attending me.[AN]
+You no doubt have countless questions[N]
+as to my whereabouts and activities,[AN]
+and I intend to satisfy each.[AN]
+I would first extend my thanks to[N]
+Lord Gryphon, my faithful regent,[AN]
+and Lady Eagle, my beloved wife...[A]
+[X]
+
+## Ch4PrinceSpeechTeacher
+
+[ml][LoadTeacher]
+[tmm]...[A]
+[X]
+
+## Ch4PrinceSpeechTeacherNarration
+Five years, it had been.[4][4][N]
+Despite all my misgivings, the prince[N]
+appeared that night as a true lord.[N][4][4]
+Weathered by harsh realities, but with[N]
+hope in his eyes.[AN]
+Bending, but never broken.[4][4][N]
+Each time those eyes swept over the[N]
+crowd, I feared they'd land on me.[N][4][4]
+And yet they never did.[AN]
+Perhaps he had outgrown me, after all.[N][4][4]
+We could go our separate ways.[N][4][4]
+Perhaps the Elder Prince was right.[4][4]
+It was a heartening thought.[A]
+[X]
+
+## Ch4PrinceSpeech2
+[r][LoadPrince]
+...Yet, even as our peace endures,[AN]
+we shall not simply wait for our[N]
+enemies to tire of it.[AN]
+No; I come to you after these eight[N]
+months with a vision.[AN]
+Long has our closest neighbor remained[N]
+both a mystery and a threat.[AN]
+But no longer![A]
+
+[ffl]
+(He doesn't mean... the Lowlands?)[A][css]
+(But that would be...)[A][css]
+
+[r]
+Long have the Lowland beasts sacked[N]
+our villages and killed our children.[AN]
+It is time the Lowland Queen, if she[N]
+truly exists, to answer for her crimes![A]
+
+[ffl]
+(It's true! He truly means to...!)[A][css]
+(But have we the men for it?[4] Surely...)[A][css]
+
+[r]
+I still have preparations to make.[N]
+But when I return to you next,[AN]
+I will do what no Highlander has[N]
+dared to.[4][4] And I will see it through![AN]
+And I will...[4][4][ce] I will...[4][4][A]
+
+[ffl]
+(...?)[A][css]
+[X]
+
+## Ch4PrinceSpeech3
+
+[r][LoadPrince][ce]
+[mvr][tmm](No...[4][4] I must not fear...[4][4][N]
+I must not...[4][4] I must hold them back...!)[AN]
+
+[fr][LoadEnvoy]
+(My prince.[4][4] They're coming.)[A]
+
+[r][oe]
+(...It's no use.[4][4] Damn you, Hero...!)[AN][css][4][4]
+[mvr]All of you, run![4] Get out, now![4][N]
+Send for the knights![4] The enemy is here![A]
+[X]
+
+## Ch4GryphonOrders
+[fl][LoadBaron]
+[l][LoadTeacher]
+Gryphon![A]
+
+[fr][LoadEagle]
+[r][LoadGryphon]
+Do as the prince says![N]
+Baron, mobilize your guards![AN]
+Eagle, with me![A]
+
+[fl]
+The exits are to the south and the east![N]
+Everyone, move![A]
+[X]
+
+## Ch4SouthBlocked
+
+[fl][LoadNobleman]
+[l][LoadNoblewoman]
+Eeek![4] We're cut off![A]
+
+[fr][LoadDragon]
+[r][LoadTeacher]
+Stay calm and stay behind us![AN][tmm]
+(What of the prince?[N]
+And where the hell are you, Hero...?!)[A]
+[X]
+
+## Ch4NPCTalkM
+[mr][LoadActive]
+[ml][LoadNobleman]
+What shall I do?[4]
+I-I don't want to die...[A]
+[X]
+
+## Ch4NPCTalkMMove
+[mr][LoadActive]
+[ml][LoadNobleman]
+Behind you?[4] Right![4] Yes![4][N]
+Let us away![A]
+[X]
+
+## Ch4NPCTalkMWait
+[mr][LoadActive]
+[ml][LoadNobleman]
+U-Understood.[4][4] If you believe[N]
+it's safest...[A]
+[X]
+
+## Ch4NPCTalkF
+[mr][LoadActive]
+[ml][LoadNoblewoman]
+P-please protect us from[N]
+these...[4] these beasts![A]
+[X]
+
+## Ch4NPCTalkFMove
+[mr][LoadActive]
+[ml][LoadNoblewoman]
+Yes, I shall follow behind.[4][N]
+Oh dear, oh dear...[A]
+[X]
+
+## Ch4NPCTalkFWait
+[mr][LoadActive]
+[ml][LoadNoblewoman]
+I'll wait here, then.[4][N]
+Please don't be long...![A]
+[X]
+
+## Ch4NPCTalkMove
+Keep moving.
+[X]
+
+## Ch4NPCTalkMoveDesc
+Move towards the exit.
+[X]
+
+## Ch4NPCTalkWait
+Wait here.
+[X]
+
+## Ch4NPCTalkWaitDesc
+Don't move at all.
+[X]
+
+## Ch4ThiefDialogue1
+[ml][LoadAssassin]
+Holy hell![4] That powder blew out[N]
+the whole damn room![AN]
+Brother must've been tryin' to get[N]
+me out of the picture, that dog![A]
+[X]
+
+## Ch4ThiefDialogue2
+[ml][LoadAssassin]
+What a beauty![4] This must be[N]
+some kinda family heirloom![AN]
+I gotta split before--[A]
+[X]
+
+## Ch4ItemStolen
+Brave Sword was pilfered.
 [X]

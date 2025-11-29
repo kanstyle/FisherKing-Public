@@ -137,7 +137,10 @@
 #define IfHeroFemale(label) "SVAL s1 0x1; CHECK_CLASS HeroChar; SSUB sC sC s1; BEQ (label) 0xc 0x0;"
 #define CursorOn(unit) "CHECK_COORDS (unit); SADD 0xB 0xC 0; SET_CURSOR_SB;"
 #define WarpInCoords(x,y) "SVAL sB ([x,y]); WARP_IN; STAL 0x32; ENDWARP;"
+#define WarpOutCoords(x,y) "SVAL sB ([x,y]); WARP_OUT; DISA ([x,y]); STAL 0x32; ENDWARP;"
+#define WarpOut(Char) "CHECK_COORDS (Char); SADD 0xB 0xC 0; WARP_OUT; DISA (Char); STAL 0x32; ENDWARP;"
 #define IfActiveUnitIs(id, label) "CHECK_ACTIVEID (id); BEQ (label) 0xc 0x0;"
+//#define DisaCoords(x,y) "CHECK_ACTIVEID (id); BEQ (label) 0xc 0x0;"
 
 #define AutoLevel(id, targetLevel) "ENUT 0xEF; SVAL s1 (id); SVAL s2 (targetLevel); ASMC AutoLevelASMC|1; ENUF 0xEF"
 #define AddAutoLevel(id, levelsToAdd) "ENUT 0xEF; SVAL s1 (id); SVAL s2 (levelsToAdd); ASMC AddAutoLevelASMC|1; ENUF 0xEF"

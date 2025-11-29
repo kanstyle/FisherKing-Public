@@ -1,5 +1,7 @@
 EventPointerTable(Ch4EventsID, PointerList)
 
+#define ThiefUnit 0xF0
+
 PointerList:
 	POIN TurnBasedEvents
 	POIN CharacterBasedEvents
@@ -15,11 +17,13 @@ PointerList:
 TurnBasedEvents:
 	TurnEventPlayer(0x0,BleedoutChapterTurnEvent,1,255)
 	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
+	TurnEventPlayer(0x0,Turn1Events,1,1)
 	END_MAIN
 
 ALIGN 32
 CharacterBasedEvents:
-
+	CharacterEventBothWays(0x0,Ch4NPCTalkMEvent,0x0,Ch4NPCMan)
+	CharacterEventBothWays(0x0,Ch4NPCTalkFEvent,0x0,Ch4NPCWoman)
 	END_MAIN
 
 MiscBasedEvents:
@@ -57,11 +61,16 @@ Units1:
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [2,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [4,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [3,5] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [6,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT
 
+NPCUnits:
+	UNIT Ch4NPCMan CivMan 0x40 Level(5,NPC,False)     [4,1] 0b 0x0 0x0 0x0 [0x0] [0x0,0xC,0x4,0x0]
+	UNIT Ch4NPCWoman CivWoman 0x40 Level(5,NPC,False)     [5,1] 0b 0x0 0x0 0x0 [0x0] [0x0,0xC,0x4,0x0]
+	UNIT
+	
 SwanUnits:
-	UNIT Swan AxeCavF 0x40 Level(7,Ally,False)     [3,6] 0b 0x0 0x0 0x0 [KillerAxe, HandAxe, Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT HeroChar UpstartM 0x40 Level(10,Ally,False)     [4,0] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Swan AxeCavF 0x40 Level(7,Ally,False)     [5,0] 0b 0x0 0x0 0x0 [KillerAxe, HandAxe, Vulnerary] [0x0,0x0,0x0,0x0]
 	UNIT
 
 EnemyUnits:
@@ -69,7 +78,6 @@ EnemyUnits:
 	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [6,7] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
 	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [3,7] 0b 0x0 0x0 0x0 [KillingEdge] AttackInRangeAI
 	UNIT Beast MogallClass 0x40 Level(7,Enemy,True)     [12,8] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
-	UNIT JabberwockBoss Jabberwock 0x40 Level(7,Enemy,True)     [4,10] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
 	UNIT
 
 GateGuardUnits:
@@ -97,6 +105,83 @@ GateGuestGryphonUnits:
 	UNIT
 	
 BallroomNPCUnits:
+	UNIT 0xF5 Peer 0x40 Level(10,NPC,False)     [3,7] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT Eagle MageGeneral 0x40 Level(10,NPC,False)     [3,8] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0xF5 CivMan 0x40 Level(10,NPC,False)     [2,3] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0xF6 CivWoman 0x40 Level(10,NPC,False)     [2,4] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0xF5 Peer 0x40 Level(10,NPC,False)     [7,5] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0x80 CivWoman 0x40 Level(10,Ally,False)     [7,6] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0xF5 CivMan 0x40 Level(10,NPC,False)     [5,9] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0xF6 CivWoman 0x40 Level(10,NPC,False)     [6,9] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0xF5 CivMan 0x40 Level(10,NPC,False)     [2,9] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0xF6 CivWoman 0x40 Level(10,NPC,False)     [2,10] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+HallwayEagleUnits:
+	UNIT Eagle MageGeneral 0x40 Level(10,NPC,False)     [0,4] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+HallwayHeroUnits:
+	UNIT 0x80 UpstartM 0x40 Level(10,Ally,False)     [0,4] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+HallwayPrinceUnits:
+	UNIT Prince Noble 0x40 Level(10,NPC,False)     [14,4] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+RoomPrinceUnits:
+	UNIT Prince Noble 0x40 Level(10,NPC,False)     [6,4] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT Songbird Bard 0x40 Level(3,NPC,False)     [8,5] 0b 0x0 0x0 0x0 [0x0] DoNothingAI
+	UNIT
+
+RoomHeroUnits:
+	UNIT 0x80 UpstartM 0x40 Level(10,Ally,False)     [7,9] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+BallroomPrinceUnits:
+	UNIT Prince Noble 0x40 Level(10,NPC,False)     [4,2] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT
+
+BallroomEnvoyUnits:
+	UNIT Songbird Bard 0x40 Level(3,NPC,False)     [5,0] 0b 0x0 0x0 0x0 [0x0] DoNothingAI
+	UNIT
+	
+BallroomAudienceUnits:
+	UNIT 0x80 CivMan 0x40 Level(10,NPC,False)     [2,4] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0x81 CivWoman 0x40 Level(10,NPC,False)     [3,4] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0] 
+	UNIT 0x82 CivMan 0x40 Level(10,NPC,False)     [2,5] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]		
+	UNIT 0x83 CivWoman 0x40 Level(10,NPC,False)     [3,5] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]	
+	UNIT 0x84 Peer 0x40 Level(10,NPC,False)     [2,6] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]		
+	UNIT Eagle MageGeneral 0x40 Level(10,NPC,False)     [3,6] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0x85 CivMan 0x40 Level(10,NPC,False)     [5,4] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]		
+	UNIT 0x86 Peer 0x40 Level(10,NPC,False)     [5,5] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]		
+	UNIT 0x87 CivWoman 0x40 Level(10,NPC,False)     [6,4] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]	
+	UNIT 0x88 CivMan 0x40 Level(10,NPC,False)     [6,5] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]		
+	UNIT Dragon Headsman 0x40 Level(10,Ally,False)     [6,6] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Teacher Veteran 0x40 Level(10,Ally,False)     [5,6] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Pillow LowVoice 0x40 Level(10,Ally,False)     [6,7] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+BallroomMonsterUnits:
+	UNIT Beast LanceBone 0x40 Level(7,Enemy,True)     [3,0] 0b 0x0 0x1 REDA3R2 [IronLance] AttackInRangeAI
+	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [4,0] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
+	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [16,6] 0b 0x0 0x1 REDA8R6 [KillingEdge] AttackInRangeAI
+	UNIT Beast MogallClass 0x40 Level(7,Enemy,True)     [16,8] 0b 0x0 0x1 REDA9R8 [EvilEye] AttackInRangeAI
+	UNIT Lowlander AxeCav 0x40 Level(7,Enemy,True)     [16,7] 0b 0x0 0x1 REDA11R7 [RottenClaw] AttackInRangeAI
+	UNIT
+	
+BallroomMonsterReinforcements:
+	UNIT Beast LanceBone 0x40 Level(7,Enemy,True)     [3,15] 0b 0x0 0x1 REDA3R9 [IronLance] AttackInRangeAI
+	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [4,15] 0b 0x0 0x1 REDA5R9 [RottenClaw] ChargeAI
+	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [5,14] 0b 0x0 0x1 REDA6R9 [KillingEdge] AttackInRangeAI
+	UNIT
+	
+ThiefUnits:
+	UNIT ThiefUnit Thief 0x40 Level(3,NPC,True)     [13,0] 0b 0x0 0x1 REDA13R1 [IronSword] AttackInRangeAI
+	UNIT
+	
+ThiefEnemy:
+	UNIT 0xAE MogallClass 0x40 Level(10,Enemy,True)     [13,0] 0b 0x0 0x1 REDA13R1 [EvilEye] AttackInRangeAI
 	UNIT
 
 Traps1:
@@ -116,8 +201,8 @@ BeginningScene:
 	LOAD2 0x1 GateGuardUnits
 	//BROWNBOXTEXT Ch3BaronManorBrownBox [8,8]
 	ENUN
-	STAL 60
-	CenterTextbox(Ch4GateNarration)
+	//STAL 60
+	//CenterTextbox(Ch4GateNarration)
 	STAL 60
 	LOAD2 0x1 GateGuestUnits
 	MOVE 5 0xF5 [7,1]
@@ -187,11 +272,198 @@ BeginningScene:
 	STAL 90
 	
 	FADI 4
+	STAL 60
+	DoAllThree
+	LOMA Ch4 //ballroom scene
+	CAMERA [0,0]
+	LOAD2 0x1 BallroomNPCUnits
+	FADU 4
+	STAL 90
+	Highlight(0x80)
+	Text(Ch4HeroBaronBanter)
+	
+	STAL 90
+	Highlight(Eagle)
+	Text(Ch4EagleGryphonBanter)
+	STAL 30
+	MOVE 5 Eagle [4,8]
+	ENUN
+	MOVE 5 Eagle [4,0]
+	ENUN
+	DISA Eagle
+	
+	STAL 90
+	Highlight(0x80)
+	Text(Ch4HeroBaronBanter2)
+	STAL 30
+	MOVE 5 0x80 [4,0]
+	ENUN
+	DISA 0x80
+	
+	FADI 5
+	DoAllThree
+	STAL 60
+	LOMA BaronManorHallwayCh
+	ASMC ForceHeroMale|1
+	FADU 5
+	LOAD2 0x1 HallwayEagleUnits
+	MOVE 5 Eagle [7,4]
+	ENUN
+	STAL 30
+	Highlight(Eagle)
+	Text(Ch4EagleHallway)
+	STAL 90
+	
+	LOAD2 0x1 HallwayHeroUnits
+	STAL 30
+	Highlight(0x80)
+	Text(Ch4HeroHallway)
+	STAL 30
+	MOVE 3 0x80 [5,4]
+	ENUN
+	FADI 8
+	SetBackgroundSlow(EagleIntro)
+	//Music cue
+	STAL 120
+	CenterTextbox(Ch4EagleCG)
+	STAL 60
+	CenterTextbox(Ch4EagleCG2)
+	CGText(Ch4EagleCGTalk)
+	CGText(Ch4EagleCGTalk2)
+	CenterTextbox(Ch4EagleCG3)
+	FADI 6
+	CLEAN
+	SetBackground(Castle_Hall)
+	Text(Ch4EagleHallwayTalk)
+	CenterTextbox(Ch4EagleHallwayTalkText)
+	Text(Ch4EagleHallwayTalk2)
+	CenterTextbox(Ch4EagleHallwayTalkText2)
+	Text(Ch4EagleHallwayTalk3)
+	FADI 16
+	CLEAN
+	FADU 16
+	STAL 30
+	LOAD2 0x1 HallwayPrinceUnits
+	STAL 60
+	MOVE 5 Prince [10,0]
+	ENUN
+	DISA Prince
+	STAL 30
+	Highlight(0x80)
+	Text(Ch4EagleHallwayTalk4)
+	MOVE 5 0x80 [9,0]
+	ENUN
+	DISA 0x80
+	MOVE 5 Eagle [9,4]
+	ENUN
+	Text(Ch4EagleHallwayTalk5)
+	FADI 4
+	STAL 60
+	DoAllThree
+	
+	LOMA PrinceRoomCh
+	LOAD2 0x1 RoomPrinceUnits
+	FADU 4
+	STAL 90
+	LOAD2 0x1 RoomHeroUnits
+	MOVE 5 0x80 [7,7]
+	ENUN
+	Highlight(0x80)
+	Text(Ch4PrinceRoomTalk)
+	CenterTextbox(Ch4PrinceRoomTalkText)
+	Text(Ch4PrinceRoomTalk2)
+	CenterTextbox(Ch4PrinceRoomTalkText2)
+	Text(Ch4PrinceRoomTalk3)
+	CenterTextbox(Ch4PrinceRoomTalkText3)
+	MOVE 5 0x80 [6,6]
+	ENUN
+	MOVE 5 Songbird [7,5]
+	ENUN
+	Text(Ch4PrinceRoomTalk4)
+	SFX(DoorEffect)
+	TILECHANGE 0x0
+	
+	STAL 30
+	WarpOut(Prince)
+	WarpOut(Songbird)
+	MOVE 5 0x80 [7,6]
+	ENUN
+	Text(Ch4PrinceRoomTalk5)
+	FADI 5
+	STAL 60
+	
+	DoAllThree
+	DISA 0x80
 	LOMA Ch4
 	
-	LOAD1 0x1 EnemyUnits
+	LOAD2 0x1 BallroomAudienceUnits
+	LOAD2 0x1 BallroomPrinceUnits
+	FADU 5
+	STAL 60
+	Highlight(Prince)
+	Text(Ch4PrinceSpeech1)
+	STAL 30
+	Highlight(Teacher)
+	Text(Ch4PrinceSpeechTeacher)
+	CenterTextbox(Ch4PrinceSpeechTeacherNarration)
+	Highlight(Prince)
+	Text(Ch4PrinceSpeech2)
+	LOAD2 0x1 BallroomEnvoyUnits
+	STAL 30
+	MOVE 5 Songbird [5,2]
+	Text(Ch4PrinceSpeech3)
+	WarpOut(Prince)
+	WarpOut(Songbird)
+	
+	LOAD2 0x1 BallroomMonsterUnits
 	ENUN
-	LOAD1 0x1 SwanUnits
+	STAL 30
+	MoveCoords(2,4,8,1,5)
+	MoveCoords(3,4,8,3,5)
+	MoveCoords(2,5,8,1,7)
+	MoveCoords(3,5,8,3,8)
+
+	MoveCoords(5,4,8,5,5)
+	MoveCoords(5,5,8,4,6)
+	MoveCoords(6,4,8,6,5)
+	MoveCoords(6,5,8,7,6)
+	ENUN
+	Highlight(Teacher)
+	Text(Ch4GryphonOrders)
+
+	MoveCoords(1,5,8,3,11)
+	MoveCoords(1,7,8,3,12)
+	MoveCoords(3,8,8,3,13)
+	MoveCoords(3,5,8,3,14)
+	ENUN
+	DISA 0x80
+	DISA 0x81
+	DISA 0x82
+	DISA 0x83
+
+	MoveCoords(2,6,8,3,11)
+	MOVE 8 Eagle [3,12]
+	MoveCoords(4,6,8,4,11)
+	MoveCoords(5,5,8,5,11)
+	ENUN
+	DISA 0x84
+	DISA Eagle
+	DISA 0x85
+	DISA 0x86
+
+	MoveCoords(6,5,8,5,7)
+	MoveCoords(7,6,8,7,8)
+	ENUN
+	LOAD2 0x1 BallroomMonsterReinforcements
+	ENUN
+	Highlight(0xF5)
+	Text(Ch4SouthBlocked)
+	FADI 8
+	
+	DoAllThree
+	LOAD1 0x2 EnemyUnits
+	ENUN
+	LOAD1 0x2 NPCUnits
 	ENUN
 	GotoPrepScreen
 	ENDA
@@ -201,7 +473,90 @@ EndingScene:
 	MNC2 Ch0
 	NoFade
 	ENDA
-
+	
+Turn1Events:
+	FlagIsSet(ThiefDealFlag, 0x0)
+		CALL ThievesEvent
+	LABEL 0x0
+	NoFade
+	ENDA
+	
+Ch4NPCTalkMEvent:
+	PreventSkipping
+	Text(Ch4NPCTalkM)
+	CallMenu(Ch4NPCTalkMenu)
+		BNE 0x6 0xC 0x0
+		Text(Ch4NPCTalkMMove)
+		SetAI(Ch4NPCMan,0x0,0xC,0x4,0x0) //move to escape point
+		GOTO 0x5
+	LABEL 0x6
+		AllowSkipping
+		Text(Ch4NPCTalkMWait)
+		SetAI(Ch4NPCMan,0x0,0x3,0x4,0x20) //don't move at all
+		GOTO 0x5
+	LABEL 0x5
+	NoFade
+	ENDA
+	
+Ch4NPCTalkFEvent:
+	PreventSkipping
+	Text(Ch4NPCTalkF)
+	CallMenu(Ch4NPCTalkMenu)
+		BNE 0x6 0xC 0x0
+		Text(Ch4NPCTalkFMove)
+		SetAI(Ch4NPCWoman,0x0,0xC,0x4,0x0) //move to escape point
+		GOTO 0x5
+	LABEL 0x6
+		AllowSkipping
+		Text(Ch4NPCTalkFWait)
+		SetAI(Ch4NPCWoman,0x0,0x3,0x4,0x20) //don't move at all
+		GOTO 0x5
+	LABEL 0x5
+	NoFade
+	ENDA
+	
+ThievesEvent:
+	CAMERA [12,0]
+	CameraCursorLocation(12,0,60)
+	STAL 30
+	SoundEffect(0xF4) //bolting static
+	STAL 45
+	FAWI 16
+	SoundEffect(0xF8) //elfire hitting
+	TILECHANGE 0x0
+	TILECHANGE 0x5
+	TILECHANGE 0x6
+	STAL 15
+	FAWU 16
+	SoundEffect(0xAF) //destroyed wall
+	STAL 45
+	
+	LOAD1 0x2 ThiefUnits
+	ENUN
+	CameraCursorLocation(13,1,60)
+	Text(Ch4ThiefDialogue1)
+	MOVE 5 ThiefUnit [13,3]
+	STAL 30
+	SoundEffect(DoorEffect)
+	TILECHANGE 0x3
+	STAL 30
+	//NOTIFY Ch4ItemStolen ItemStolen 0x0
+	GiveItem(BraveSword,ThiefUnit)
+	Text(Ch4ThiefDialogue2)
+	
+	LOAD2 0x1 ThiefEnemy
+	ENUN
+	StartBattle
+	NormalDamage(0x0,30)
+	FIGHT_MAP 0xAE ThiefUnit EvilEye 0x0
+	DISA ThiefUnit
+	
+	MOVE 8 0xAE [13,0]
+	ENUN
+	DISA 0xAE
+	NoFade
+	ENDA
+	
 BleedoutChapterAlwaysEvent:
 	ASMC ReviveAndSetPetrify|1
 	NoFade

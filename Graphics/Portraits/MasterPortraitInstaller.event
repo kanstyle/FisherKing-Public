@@ -79,7 +79,7 @@ PrinceMugData: // LL
 #incbin "dmp/Prince_frames.dmp"
 #incbin "dmp/Prince_palette.dmp"
 #incbin "dmp/Prince_minimug.dmp"
-setMugEntry(PrinceMug, PrinceMugData, 3, 5, 4, 3)
+setMugEntry(PrinceMug, PrinceMugData, 3, 5, 3, 3)
 
 ALIGN 16
 YoungPrinceMugData: // LL

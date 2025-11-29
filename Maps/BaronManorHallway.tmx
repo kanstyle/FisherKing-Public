@@ -5,7 +5,7 @@
  </tileset>
  <layer id="1" name="Tile Layer 1" width="15" height="10">
   <properties>
-   <property name="Anims1" value="0x5"/>
+   <property name="Anims1" value="ZoramineImprovedStrongholdAnimationsID"/>
    <property name="ChapterID" value="BaronManorHallwayCh"/>
    <property name="Main" value=""/>
    <property name="MapChangesID" value="0x0"/>
@@ -47,9 +47,9 @@
    <tile gid="73"/>
    <tile gid="177"/>
    <tile gid="105"/>
-   <tile gid="49"/>
-   <tile gid="50"/>
-   <tile gid="51"/>
+   <tile gid="246"/>
+   <tile gid="248"/>
+   <tile gid="247"/>
    <tile gid="105"/>
    <tile gid="179"/>
    <tile gid="180"/>
