@@ -51,6 +51,10 @@ SongTable(WaterfallUTID,WaterfallUT,MapMusicGroup) //
 SongTable(ForbiddenForestID,eotwodungeonsixtest,MapMusicGroup) //alusq
 #include "MusicEvents/Pokemon MD Explorers - Northern Desert {RandomWizard}.event"
 SongTable(NorthernDesertID,song09,MapMusicGroup) //RW
+#include "MusicEvents/Ogre Battle 64 - Notice of Death {Alusq}.event"
+SongTable(NoticeOfDeathID,noticeodtest,MapMusicGroup)
+#include "MusicEvents/arcassandra by alusq.event"
+SongTable(ArcassandraID,arcassandra,MapMusicGroup)
 
 #include "MusicEvents/lufiadoom.event"
 SongTable(Lufia_Doom,lufiadoom,MapMusicGroup)

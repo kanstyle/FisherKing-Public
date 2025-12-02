@@ -4,6 +4,9 @@
 
 //My Skills
 
+//Bold
+#define BoldID 170
+
 //Juggernaut
 #define JuggernautID 86
 
@@ -669,7 +672,7 @@
 
 //Heavy Strikes: Add weapon weight to critical chance.
 //By Datagne
-#define HeavyStrikesID 170
+#define HeavyStrikesID 255
 
 //Holy Aura: Gain +1 damage, +5% hit, +5% avoid, +5% crit when using light.
 //By Datagne

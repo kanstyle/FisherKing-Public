@@ -46,6 +46,7 @@ int ZeroInEffect(struct MenuProc * menu, struct MenuItemProc * menuItem) {
 }
 
 void ZeroInPostBattleEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB) {
+	int weaponTypeAdj = gBattleTarget.weaponType + 0x1; //increase weapon type values by 1 so that having 0 in support[5] doesn't give you WTA vs swords
 	//gEventSlots[7] = 1;
 	//if zero in is active (this means that we are bunitA)
 	if (*AttackTypeByte_Link == ZeroInAttackType_Link
@@ -53,45 +54,46 @@ void ZeroInPostBattleEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB
 		//if weapon type is staff, item, ring, don't save it 
 		//get enemy weapon type and put it in support 0x5
 		//gEventSlots[8] = ZeroInAttackType_Link;
-		if (gBattleTarget.weaponType == 0x0) {
+		if (weaponTypeAdj == 0x1) {
 			CallEvent(&SwordQuoteEvent, 1); 
 		}
-		else if (gBattleTarget.weaponType == 0x1) {
+		else if (weaponTypeAdj == 0x2) {
 			CallEvent(&LanceQuoteEvent, 1); 
 		}
-		else if (gBattleTarget.weaponType == 0x2) {
+		else if (weaponTypeAdj == 0x3) {
 			CallEvent(&AxeQuoteEvent, 1); 
 		}
-		else if (gBattleTarget.weaponType == 0x3) {
+		else if (weaponTypeAdj == 0x4) {
 			CallEvent(&BowQuoteEvent, 1); 
 		}
-		else if (gBattleTarget.weaponType == 0x5) {
+		else if (weaponTypeAdj == 0x6) {
 			CallEvent(&TomeQuoteEvent, 1); 
 		}
-		else if (gBattleTarget.weaponType == 0x6) {
+		else if (weaponTypeAdj == 0x7) {
 			CallEvent(&SpecialQuoteEvent, 1); 
 		}
-		else if (gBattleTarget.weaponType == 0x7) {
+		else if (weaponTypeAdj == 0x8) {
 			CallEvent(&DarkQuoteEvent, 1); 
 		}
-		else if (gBattleTarget.weaponType == 0xB) {
+		else if (weaponTypeAdj == 0xC) {
 			CallEvent(&MonsterQuoteEvent, 1); 
 		}
 		else {
 			CallEvent(&BadItemQuoteEvent, 1); 
 			return;
 		}
-		bunitA->unit.supports[5] = gBattleTarget.weaponType;
+		bunitA->unit.supports[5] = weaponTypeAdj;
 		//gEventSlots[8] = 0;
 	}
 }
 
 void ZeroInPreBattleEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB) {
+	int weaponTypeAdj = bunitB->weaponType + 0x1; //increase weapon type values by 1 so that having 0 in support[5] doesn't give you WTA vs swords
 	if (SkillTester(bunitA, ZeroInID_Link) == 0) {
 		//gEventSlots[6] = 0x5;
 		return;
 	}
-	if (bunitB->weaponType == bunitA->unit.supports[5]) {
+	if (weaponTypeAdj == bunitA->unit.supports[5]) {
 		bunitA->wTriangleHitBonus = 20;
 		bunitA->wTriangleDmgBonus = 2;
 		bunitB->wTriangleHitBonus = -20;

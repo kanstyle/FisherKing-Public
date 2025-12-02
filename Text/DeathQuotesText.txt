@@ -21,7 +21,7 @@ I'm still coming for him...[A][X]
 ## PillowDQ
 
 [mr][LoadPillow]
-Ah...[4][4] So it's going to...[4][4][N]
+Ah...[4][4] Maybe it'll...[4][4][N]
 end like this...?[A][X]
 
 ## BrotherDQ
@@ -56,4 +56,23 @@ So pathetic...[A][X]
 ## BabyDQ
 
 [mr][LoadBaby]
+Wait...[4][4] No...[4][4][4][N]
+No, no, no![4] I-I'm scared![AN]
+Mom![4] Dad![4] Help me![A][X]
+
+## SwanDQ
+
+[mr][LoadSwan]
 Placeholder.[A][X]
+
+## NoblemanDQ
+
+[mr][LoadNobleman]
+No![4] [ce][mmr]Aaaah![4][N]
+[mmr]AAAAH![A][X]
+
+## NoblewomanDQ
+
+[mr][LoadNobleman]
+[mmr]Help me![4] [ce][mmr]S-someone[4][N]
+help...![A][X]

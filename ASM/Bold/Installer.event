@@ -1,0 +1,5 @@
+#include "Bold.lyn.event" 
+
+ALIGN 4 
+BoldID_Link: 
+WORD BoldID

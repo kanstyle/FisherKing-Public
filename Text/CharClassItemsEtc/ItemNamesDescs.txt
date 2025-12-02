@@ -1,9 +1,9 @@
-## SlimAxeName
+## SlimAxeName ^
 
 Slim Axe[X]
 
 
-## BombName
+## BombName ^
 
 Bomb[X]
 
@@ -13,57 +13,57 @@ Bomb[X]
 Standard bomb. Fixed attack power. Hits Res.[X]
 
 
-## HeavyBombName
+## HeavyBombName ^
 
 Heavy Bomb[X]
 
 
-## HeavyBombDesc
+## HeavyBombDesc ^
 
 Fixed attack power. Hits Res.[X]
 
 
-## LongFuseBombName
+## LongFuseBombName ^
 
 Long-Fuse[X]
 
 
-## LongFuseBombDesc
+## LongFuseBombDesc ^
 
 Fixed attack power. Hits Res.[X]
 
 
-## PowderShellName
+## PowderShellName ^
 
 Powder Shell[X]
 
 
-## PowderShellDesc
+## PowderShellDesc ^
 
 Fixed attack power. Hits Res.[X]
 
 
-## FirebombName
+## FirebombName ^
 
 Firebomb[X]
 
 
-## FirebombDesc
+## FirebombDesc ^
 
 Eff. vs. [horse]. Fixed attack power. Hits Res.[X]
 
 
-## StickyBombName
+## StickyBombName ^
 
 Sticky Bomb[X]
 
 
-## StickyBombDesc
+## StickyBombDesc ^
 
 Eff. vs. [armor]. Fixed attack power. Hits Res.[X]
 
 
-## ClusterBombName
+## ClusterBombName ^
 
 Cluster Bomb[X]
 
@@ -73,97 +73,97 @@ Cluster Bomb[X]
 Brave. Fixed attack power. Hits Res.[X]
 
 
-## PowderKegName
+## PowderKegName ^
 
 Powder Keg[X]
 
 
-## PowderKegDesc
+## PowderKegDesc ^
 
 Fixed attack power. Hits Res.[X]
 
 
-## RedHornetName
+## RedHornetName ^
 
 Red Hornet[X]
 
 
-## RedHornetDesc
+## RedHornetDesc ^
 
 Fixed attack power. Hits Res.[X]
 
 
-## GoldHornetName
+## GoldHornetName ^
 
 Gold Hornet[X]
 
 
-## GoldHornetDesc
+## GoldHornetDesc ^
 
 Fixed attack power. Hits Res.[X]
 
 
-## PainName
+## PainName ^
 
 Pain[X]
 
 
-## DeceptionName
+## DeceptionName ^
 
 Deception[X]
 
 
-## DeceptionDesc
+## DeceptionDesc ^
 
 Ignores Res.[X]
 
 
-## ExploitationName
+## ExploitationName ^
 
 Exploitation[X]
 
 
-## ExploitationDesc
+## ExploitationDesc ^
 
 Drains HP into caster.[X]
 
 
-## DeathName
+## DeathName ^
 
 Death[X]
 
 
-## UnfamiliarityName
+## UnfamiliarityName ^
 
 Unfamiliarity[X]
 
 
-## UnfamiliarityDesc
+## UnfamiliarityDesc ^
 
 [lock] Pillow.[X]
 
 
-## TortureName
+## TortureName ^
 
 Torture[X]
 
 
-## TortureDesc
+## TortureDesc ^
 
 [lock] Pillow.[X]
 
 
-## LonelinessName
+## LonelinessName ^
 
 Loneliness[X]
 
 
-## LonelinessDesc
+## LonelinessDesc ^
 
 [.][lock] Pillow.[X]
 
 
-## HerosFlairName
+## HerosFlairName ^
 
 Hero's Flair[X]
 
@@ -173,56 +173,982 @@ Hero's Flair[X]
 [.][lock] Hero. On kill, heal 50% HP to self[N]
 and allies within 2 tiles.[X]
 
-## HuntersBowName
+## HuntersBowName ^
 
 Hunter's Bow[X]
 
-## MoonshineName
+## MoonshineName ^
 
 "Moonshine"[X]
 
-## MoonshineDesc
+## MoonshineDesc ^
 
 Don't even think about it.[X]
 
-## ButterflyName
+## ButterflyName ^
 
 Butterfly[X]
 
-## ButterflyDesc
+## ButterflyDesc ^
 
 Give this to Teacher.[X]
 
-## ButterflyUseDesc
+## ButterflyUseDesc ^
 
 Someone's precious[N]
 memory.[X]
 
-## CrystalKnifeName
+## CrystalKnifeName ^
 
 Crystal Knife[X]
 
-## CrystalKnifeDesc
+## CrystalKnifeDesc ^
 
 Grants 6x WExp.[X]
 
-## SkewerName
+## SkewerName ^
 
 Skewer[X]
 
-## SkewerDesc
+## SkewerDesc ^
 
 +1 Attack per tile moved.[X]
 
-## RestoreDesc
+## RestoreDesc ^
 
 Revives allies and cures[N]
 status ailments.[X]
 
-## LightName
+## LightName ^
 
 Light[X]
 
-## LightDesc
+## LightDesc ^
 
 Ignores Res. Reaver effect.[X]
+
+## SavageBladeName ^
+
+Savage Blade[X]
+
+## SavageBladeDesc ^
+
+High crit rate.[X]
+
+## SavageGoreName ^
+
+Savage Gore[X]
+
+## SavageGoreDesc ^
+
+High crit rate.[X]
+
+## SavageMaulName ^
+
+Savage Maul[X]
+
+## SavageMaulDesc ^
+
+High crit rate.[X]
+
+## IronSwordName ^
+Iron Sword[X]
+
+## IronSwordDesc
+[X]
+
+## SlimSwordName ^
+Slim Sword[X]
+
+## SlimSwordDesc
+[X]
+
+## SteelSwordName ^
+Steel Sword[X]
+
+## SteelSwordDesc
+[X]
+
+## SilverSwordName ^
+Silver Sword[X]
+
+## SilverSwordDesc
+[X]
+
+## IronBladeName ^
+Iron Blade[X]
+
+## IronBladeDesc
+[X]
+
+## SteelBladeName ^
+Steel Blade[X]
+
+## SteelBladeDesc
+[X]
+
+## SilverBladeName ^
+Silver Blade[X]
+
+## SilverBladeDesc
+[X]
+
+## PoisonSwordName ^
+Poison Sword[X]
+
+## PoisonSwordDesc
+[X]
+
+## RapierName ^
+Rapier[X]
+
+## RapierDesc
+[X]
+
+## BraveSwordName ^
+Brave Sword[X]
+
+## BraveSwordDesc
+[X]
+
+## ShamshirName ^
+Shamshir[X]
+
+## ShamshirDesc
+[X]
+
+## KillingEdgeName ^
+Killing Edge[X]
+
+## KillingEdgeDesc
+[X]
+
+## ArmorslayerName ^
+Armorslayer[X]
+
+## ArmorslayerDesc
+[X]
+
+## WyrmslayerName ^
+Wyrmslayer[X]
+
+## WyrmslayerDesc
+[X]
+
+## LightBrandName ^
+Light Brand[X]
+
+## LightBrandDesc
+[X]
+
+## RuneswordName ^
+Runesword[X]
+
+## RuneswordDesc
+[X]
+
+## LancereaverName ^
+Lancereaver[X]
+
+## LancereaverDesc
+[X]
+
+## ZanbatoName ^
+Zanbato[X]
+
+## ZanbatoDesc
+[X]
+
+## IronLanceName ^
+Iron Lance[X]
+
+## IronLanceDesc
+[X]
+
+## SlimLanceName ^
+Slim Lance[X]
+
+## SlimLanceDesc
+[X]
+
+## SteelLanceName ^
+Steel Lance[X]
+
+## SteelLanceDesc
+[X]
+
+## SilverLanceName ^
+Silver Lance[X]
+
+## SilverLanceDesc
+[X]
+
+## ToxinLanceName ^
+Toxin Lance[X]
+
+## ToxinLanceDesc
+[X]
+
+## BraveLanceName ^
+Brave Lance[X]
+
+## BraveLanceDesc
+[X]
+
+## KillerLanceName ^
+Killer Lance[X]
+
+## KillerLanceDesc
+[X]
+
+## HorseslayerName ^
+Horseslayer[X]
+
+## HorseslayerDesc
+[X]
+
+## JavelinName ^
+Javelin[X]
+
+## JavelinDesc
+[X]
+
+## SpearName ^
+Spear[X]
+
+## SpearDesc
+[X]
+
+## AxereaverName ^
+Axereaver[X]
+
+## AxereaverDesc
+[X]
+
+## IronAxeName ^
+Iron Axe[X]
+
+## IronAxeDesc
+[X]
+
+## SteelAxeName ^
+Steel Axe[X]
+
+## SteelAxeDesc
+[X]
+
+## SilverAxeName ^
+Silver Axe[X]
+
+## SilverAxeDesc
+[X]
+
+## PoisonAxeName ^
+Poison Axe[X]
+
+## PoisonAxeDesc
+[X]
+
+## BraveAxeName ^
+Brave Axe[X]
+
+## BraveAxeDesc
+[X]
+
+## KillerAxeName ^
+Killer Axe[X]
+
+## KillerAxeDesc
+[X]
+
+## HalberdName ^
+Halberd[X]
+
+## HalberdDesc
+[X]
+
+## HammerName ^
+Hammer[X]
+
+## HammerDesc
+[X]
+
+## DevilAxeName ^
+Devil Axe[X]
+
+## DevilAxeDesc
+[X]
+
+## HandAxeName ^
+Hand Axe[X]
+
+## HandAxeDesc
+[X]
+
+## TomahawkName ^
+Tomahawk[X]
+
+## TomahawkDesc
+[X]
+
+## SwordreaverName ^
+Swordreaver[X]
+
+## SwordreaverDesc
+[X]
+
+## SwordslayerName ^
+Swordslayer[X]
+
+## SwordslayerDesc
+[X]
+
+## HatchetName ^
+Hatchet[X]
+
+## HatchetDesc
+[X]
+
+## IronBowName ^
+Iron Bow[X]
+
+## IronBowDesc
+[X]
+
+## SteelBowName ^
+Steel Bow[X]
+
+## SteelBowDesc
+[X]
+
+## SilverBowName ^
+Silver Bow[X]
+
+## SilverBowDesc
+[X]
+
+## KillerBowName ^
+Killer Bow[X]
+
+## KillerBowDesc
+[X]
+
+## BraveBowName ^
+Brave Bow[X]
+
+## BraveBowDesc
+[X]
+
+## ShortBowName ^
+Short Bow[X]
+
+## ShortBowDesc
+[X]
+
+## LongbowName ^
+Longbow[X]
+
+## LongbowDesc
+[X]
+
+## BallistaName ^
+Ballista[X]
+
+## BallistaDesc
+[X]
+
+## IronBallistaName ^
+Iron Ballista[X]
+
+## IronBallistaDesc
+[X]
+
+## KillerBallistaName ^
+Killer Ballista[X]
+
+## KillerBallistaDesc
+[X]
+
+## FireName ^
+Fire[X]
+
+## FireDesc
+[X]
+
+## ThunderName ^
+Thunder[X]
+
+## ThunderDesc
+[X]
+
+## ElfireName ^
+Elfire[X]
+
+## ElfireDesc
+[X]
+
+## BoltingName ^
+Bolting[X]
+
+## BoltingDesc
+[X]
+
+## FimbulvetrName ^
+Fimbulvetr[X]
+
+## FimbulvetrDesc
+[X]
+
+## ExcaliburName ^
+Excalibur[X]
+
+## ExcaliburDesc
+[X]
+
+## ShineName ^
+Shine[X]
+
+## ShineDesc
+[X]
+
+## DivineName ^
+Divine[X]
+
+## DivineDesc
+[X]
+
+## PurgeName ^
+Purge[X]
+
+## PurgeDesc
+[X]
+
+## AuraName ^
+Aura[X]
+
+## AuraDesc
+[X]
+
+## HealName ^
+Heal[X]
+
+## HealDesc
+[X]
+
+## MendName ^
+Mend[X]
+
+## MendDesc
+[X]
+
+## RecoverName ^
+Recover[X]
+
+## RecoverDesc
+[X]
+
+## PhysicName ^
+Physic[X]
+
+## PhysicDesc
+[X]
+
+## FortifyName ^
+Fortify[X]
+
+## FortifyDesc
+[X]
+
+## RestoreName ^
+Restore[X]
+
+## RestoreDesc
+[X]
+
+## SilenceName ^
+Silence[X]
+
+## SilenceDesc
+[X]
+
+## SleepName ^
+Sleep[X]
+
+## SleepDesc
+[X]
+
+## BerserkName ^
+Berserk[X]
+
+## BerserkDesc
+[X]
+
+## WarpName ^
+Warp[X]
+
+## WarpDesc
+[X]
+
+## RescueName ^
+Rescue[X]
+
+## RescueDesc
+[X]
+
+## TorchName ^
+Torch[X]
+
+## TorchDesc
+[X]
+
+## HammerneName ^
+Hammerne[X]
+
+## HammerneDesc
+[X]
+
+## UnlockName ^
+Unlock[X]
+
+## UnlockDesc
+[X]
+
+## BarrierName ^
+Barrier[X]
+
+## BarrierDesc
+[X]
+
+## DragonAxeName ^
+Dragon Axe[X]
+
+## DragonAxeDesc
+[X]
+
+## AngelicRobeName ^
+Angelic Robe[X]
+
+## AngelicRobeDesc
+[X]
+
+## EnergyRingName ^
+Energy Ring[X]
+
+## EnergyRingDesc
+[X]
+
+## SecretBookName ^
+Secret Book[X]
+
+## SecretBookDesc
+[X]
+
+## SpeedwingsName ^
+Speedwings[X]
+
+## SpeedwingsDesc
+[X]
+
+## GoddessIconName ^
+Goddess Icon[X]
+
+## GoddessIconDesc
+[X]
+
+## DragonshieldName ^
+Dragonshield[X]
+
+## DragonshieldDesc
+[X]
+
+## TalismanName ^
+Talisman[X]
+
+## TalismanDesc
+[X]
+
+## SwiftsolesName ^
+Swiftsoles[X]
+
+## SwiftsolesDesc
+[X]
+
+## BodyRingName ^
+Body Ring[X]
+
+## BodyRingDesc
+[X]
+
+## HeroCrestName ^
+Hero Crest[X]
+
+## HeroCrestDesc
+[X]
+
+## KnightCrestName ^
+Knight Crest[X]
+
+## KnightCrestDesc
+[X]
+
+Orion's Bolt
+## ElysianWhipName ^
+Elysian Whip[X]
+
+## ElysianWhipDesc
+[X]
+
+## GuidingRingName ^
+Guiding Ring[X]
+
+## GuidingRingDesc
+[X]
+
+## ChestKeyName ^
+Chest Key[X]
+
+## ChestKeyDesc
+[X]
+
+## DoorKeyName ^
+Door Key[X]
+
+## DoorKeyDesc
+[X]
+
+## LockpickName ^
+Lockpick[X]
+
+## LockpickDesc
+[X]
+
+## VulneraryName ^
+Vulnerary[X]
+
+## VulneraryDesc
+[X]
+
+## ElixirName ^
+Elixir[X]
+
+## ElixirDesc
+[X]
+
+## PureWaterName ^
+Pure Water[X]
+
+## PureWaterDesc
+[X]
+
+## AntitoxinName ^
+Antitoxin[X]
+
+## AntitoxinDesc
+[X]
+
+## TorchName ^
+Torch[X]
+
+## TorchDesc
+[X]
+
+## FilliShieldName ^
+Filli Shield[X]
+
+## FilliShieldDesc
+[X]
+
+## MemberCardName ^
+Member Card[X]
+
+## MemberCardDesc
+[X]
+
+## SilverCardName ^
+Silver Card[X]
+
+## SilverCardDesc
+[X]
+
+## WhiteGemName ^
+White Gem[X]
+
+## WhiteGemDesc
+[X]
+
+## BlueGemName ^
+Blue Gem[X]
+
+## BlueGemDesc
+[X]
+
+## RedGemName ^
+Red Gem[X]
+
+## RedGemDesc
+[X]
+
+## GoldName ^
+Gold[X]
+
+## GoldDesc
+[X]
+
+## ReginleifName ^
+Reginleif[X]
+
+## ReginleifDesc
+[X]
+
+## ShadowkillerName ^
+Shadowkiller[X]
+
+## ShadowkillerDesc
+[X]
+
+## BrightLanceName ^
+Bright Lance[X]
+
+## BrightLanceDesc
+[X]
+
+## FiendcleaverName ^
+Fiendcleaver[X]
+
+## FiendcleaverDesc
+[X]
+
+## BeaconBowName ^
+Beacon Bow[X]
+
+## BeaconBowDesc
+[X]
+
+## SieglindeName ^
+Sieglinde[X]
+
+## SieglindeDesc
+[X]
+
+## BattleAxeName ^
+Battle Axe[X]
+
+## BattleAxeDesc
+[X]
+
+## IvaldiName ^
+Ivaldi[X]
+
+## IvaldiDesc
+[X]
+
+## MasterSealName ^
+Master Seal[X]
+
+## MasterSealDesc
+[X]
+
+Metis's Tome
+## SharpClawName ^
+Sharp Claw[X]
+
+## SharpClawDesc
+[X]
+
+## LatonaName ^
+Latona[X]
+
+## LatonaDesc
+[X]
+
+## DragonspearName ^
+Dragonspear[X]
+
+## DragonspearDesc
+[X]
+
+## VidofnirName ^
+Vidofnir[X]
+
+## VidofnirDesc
+[X]
+
+## NaglfarName ^
+Naglfar[X]
+
+## NaglfarDesc
+[X]
+
+## WretchedAirName ^
+Wretched Air[X]
+
+## WretchedAirDesc
+[X]
+
+## AudhulmaName ^
+Audhulma[X]
+
+## AudhulmaDesc
+[X]
+
+## SiegmundName ^
+Siegmund[X]
+
+## SiegmundDesc
+[X]
+
+## GarmName ^
+Garm[X]
+
+## GarmDesc
+[X]
+
+## NidhoggName ^
+Nidhogg[X]
+
+## NidhoggDesc
+[X]
+
+## HeavyLanceName ^
+Heavy Lance[X]
+
+## HeavyLanceDesc
+[X]
+
+## ShortSpearName ^
+Short Spear[X]
+
+## ShortSpearDesc
+[X]
+
+## OceanSealName ^
+Ocean Seal[X]
+
+## OceanSealDesc
+[X]
+
+## LunarBraceName ^
+Lunar Brace[X]
+
+## LunarBraceDesc
+[X]
+
+## SolarBraceName ^
+Solar Brace[X]
+
+## SolarBraceDesc
+[X]
+
+## WindSwordName ^
+Wind Sword[X]
+
+## WindSwordDesc
+[X]
+
+## VulneraryName ^
+Vulnerary[X]
+
+## VulneraryDesc
+[X]
+
+## DragonstoneName ^
+Dragonstone[X]
+
+## DragonstoneDesc
+[X]
+
+## DemonSurgeName ^
+Demon Surge[X]
+
+## DemonSurgeDesc
+[X]
+
+## ShadowshotName ^
+Shadowshot[X]
+
+## ShadowshotDesc
+[X]
+
+## RottenClawName ^
+Rotten Claw[X]
+
+## RottenClawDesc
+[X]
+
+## FetidClawName ^
+Fetid Claw[X]
+
+## FetidClawDesc
+[X]
+
+## PoisonClawName ^
+Poison Claw[X]
+
+## PoisonClawDesc
+[X]
+
+## LethalTalonName ^
+Lethal Talon[X]
+
+## LethalTalonDesc
+[X]
+
+## FieryFangName ^
+Fiery Fang[X]
+
+## FieryFangDesc
+[X]
+
+## HellfangName ^
+Hellfang[X]
+
+## HellfangDesc
+[X]
+
+## EvilEyeName ^
+Evil Eye[X]
+
+## EvilEyeDesc
+[X]
+
+## CrimsonEyeName ^
+Crimson Eye[X]
+
+## CrimsonEyeDesc
+[X]
+
+## StoneName ^
+Stone[X]
+
+## StoneDesc
+[X]
+
+## AircaliburName ^
+Aircalibur[X]
+
+## AircaliburDesc
+[X]
+
+## JunaFruitName ^
+Juna Fruit[X]
+
+## JunaFruitDesc
+[X]
+
+## BlackGemName ^
+Black Gem[X]
+
+## BlackGemDesc
+[X]
+
+## GoldGemName ^
+Gold Gem[X]
+
+## GoldGemDesc
+[X]
+
+## SkillScrollName ^
+Skill Scroll[X]
+
+## SkillScrollDesc
+[X]

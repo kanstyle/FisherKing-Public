@@ -66,6 +66,9 @@ ORG ItemIconEntry(HerosFlair)
 ORG ItemIconEntry(CrystalKnife)
 #incbin "Swords/GlassDagger.dmp"	// Batima
 
+ORG ItemIconEntry(SavageBlade)
+#incbin "Swords/SavageBlade.dmp"
+
 // lances
 ORG ItemIconEntry(IronLance)
 #incbin "Lances/IronLance.dmp"		// Ereshkigal
@@ -103,6 +106,9 @@ ORG ItemIconEntry(Axereaver)
 ORG ItemIconEntry(Skewer)
 #incbin "Lances/Skewer.dmp"		// Ereshkigal
 
+ORG ItemIconEntry(SavageGore)
+#incbin "Lances/SavageGore.dmp"
+
 // axes
 ORG ItemIconEntry(IronAxe)
 #incbin "Axes/IronAxe.dmp"		// Ereshkigal
@@ -133,6 +139,9 @@ ORG ItemIconEntry(SlimAxe)
 
 ORG ItemIconEntry(Hammer)
 #incbin "Axes/Hammer.dmp"		// Ereshkigal
+
+ORG ItemIconEntry(SavageMaul)
+#incbin "Axes/SavageMaul.dmp"		// Ereshkigal
 
 // bows
 ORG ItemIconEntry(IronBow)

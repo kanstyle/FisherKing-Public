@@ -1,0 +1,1633 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	arcassandra_grp  voicegroup000
+	#define	arcassandra_pri  0
+	#define	arcassandra_rev  0
+	#define	arcassandra_mvl  80
+	#define	arcassandra_key  0
+	#define	arcassandra_tbs  1
+	#define	arcassandra_exg  0
+	#define	arcassandra_cmp  1
+
+	// .rodata
+	//	arcassandra
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+arcassandra_1:
+	BYTE	KEYSH   arcassandra_key+0
+arcassandra_1_B1:
+// 000   ----------------------------------------
+	BYTE	TEMPO   120*arcassandra_tbs/2
+	BYTE		VOICE   75
+	BYTE		VOL     40*arcassandra_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N72     Dn5   v092
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W66
+// 001   ----------------------------------------
+arcassandra_1_001:
+	BYTE		VOL     40*arcassandra_mvl/mxv
+	BYTE		N72     Cn5   v092
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W66
+	BYTE	PEND
+// 002   ----------------------------------------
+arcassandra_1_002:
+	BYTE		VOL     40*arcassandra_mvl/mxv
+	BYTE		N48     As4   v092
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W42
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N12     An4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W06
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N12     Gn4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W06
+	BYTE	PEND
+// 003   ----------------------------------------
+arcassandra_1_003:
+	BYTE		VOL     40*arcassandra_mvl/mxv
+	BYTE		N42     An4   v092
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W42
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N24     Fn4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W18
+	BYTE	PEND
+// 004   ----------------------------------------
+arcassandra_1_004:
+	BYTE		VOL     40*arcassandra_mvl/mxv
+	BYTE		N48     Gn4   v092
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W42
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N24     En4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W18
+	BYTE	PEND
+// 005   ----------------------------------------
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N48     Fn4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W42
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N24     Dn4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W18
+// 006   ----------------------------------------
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N48     Gn4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W42
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N12     Fn4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W06
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N12     Gn4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W06
+// 007   ----------------------------------------
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N42     An4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W42
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N24   
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W18
+// 008   ----------------------------------------
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N72     Dn5 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W66
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_1_001
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_1_002
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_1_003
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_1_004
+// 013   ----------------------------------------
+	BYTE		VOL     40*arcassandra_mvl/mxv
+	BYTE		N48     Fn4   v092
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W42
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N24     Gn4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W18
+// 014   ----------------------------------------
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N24     En4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W18
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N24     Dn4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W18
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N24     Cn4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W18
+// 015   ----------------------------------------
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N66     Dn4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W66
+// 016   ----------------------------------------
+arcassandra_1_016:
+	BYTE		VOL     40*arcassandra_mvl/mxv
+	BYTE		N48     Fn4   v092
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W42
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N12     En4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W06
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N12     Dn4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W06
+	BYTE	PEND
+// 017   ----------------------------------------
+arcassandra_1_017:
+	BYTE		VOL     40*arcassandra_mvl/mxv
+	BYTE		N24     En4   v092
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W18
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N24     Cs4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W18
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N24     An3 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W18
+	BYTE	PEND
+// 018   ----------------------------------------
+arcassandra_1_018:
+	BYTE		VOL     40*arcassandra_mvl/mxv
+	BYTE		N48     Gn4   v092
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W42
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N12     Fn4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W06
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N12     En4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W06
+	BYTE	PEND
+// 019   ----------------------------------------
+arcassandra_1_019:
+	BYTE		VOL     40*arcassandra_mvl/mxv
+	BYTE		N24     Fn4   v092
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W18
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N24     Dn4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W18
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N24     An3 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W18
+	BYTE	PEND
+// 020   ----------------------------------------
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N48     An4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W42
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N12     Gn4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W06
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N12     Fn4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W06
+// 021   ----------------------------------------
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N48     Gn4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W42
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N24     As4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W18
+// 022   ----------------------------------------
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N48     An4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W42
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N24     Fn4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W18
+// 023   ----------------------------------------
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N72     Gn4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W66
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_1_016
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_1_017
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_1_018
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_1_019
+// 028   ----------------------------------------
+	BYTE		VOL     40*arcassandra_mvl/mxv
+	BYTE		N48     An4   v092
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W42
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N12     As4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W06
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N12     Cn5 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W06
+// 029   ----------------------------------------
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N24     Dn5 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W18
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N24     As4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W18
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N24     Gn4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W18
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_1_016
+// 031   ----------------------------------------
+	BYTE		VOL     40*arcassandra_mvl/mxv
+	BYTE		N42     En4   v092
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W42
+	BYTE		        40*arcassandra_mvl/mxv
+	BYTE		N24     An4 
+	BYTE	W03
+	BYTE		VOL     80*arcassandra_mvl/mxv
+	BYTE	W03
+	BYTE		        104*arcassandra_mvl/mxv
+	BYTE	W18
+	BYTE	GoTo
+	 POIN2	arcassandra_1_B1
+arcassandra_1_B2:
+// 032   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+arcassandra_2:
+	BYTE	KEYSH   arcassandra_key+0
+arcassandra_2_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   40
+	BYTE		VOL     52*arcassandra_mvl/mxv
+	BYTE		PAN     c_v+8
+	BYTE		N06     An3   v108
+	BYTE	W12
+	BYTE		        An3   v056
+	BYTE	W12
+	BYTE		        An3   v108
+	BYTE	W12
+	BYTE		        An3   v056
+	BYTE	W12
+	BYTE		        An3   v108
+	BYTE	W12
+	BYTE		        An3   v056
+	BYTE	W12
+// 001   ----------------------------------------
+arcassandra_2_001:
+	BYTE		N06     An3   v108
+	BYTE	W12
+	BYTE		        An3   v056
+	BYTE	W12
+	BYTE		        An3   v108
+	BYTE	W12
+	BYTE		        An3   v056
+	BYTE	W12
+	BYTE		        An3   v108
+	BYTE	W12
+	BYTE		        An3   v056
+	BYTE	W12
+	BYTE	PEND
+// 002   ----------------------------------------
+arcassandra_2_002:
+	BYTE		N06     Fn3   v108
+	BYTE	W12
+	BYTE		        Fn3   v056
+	BYTE	W12
+	BYTE		        Fn3   v108
+	BYTE	W12
+	BYTE		        Fn3   v056
+	BYTE	W12
+	BYTE		        En3   v108
+	BYTE	W12
+	BYTE		        En3   v056
+	BYTE	W12
+	BYTE	PEND
+// 003   ----------------------------------------
+arcassandra_2_003:
+	BYTE		N06     Fn3   v108
+	BYTE	W12
+	BYTE		        Fn3   v056
+	BYTE	W12
+	BYTE		        Fn3   v108
+	BYTE	W12
+	BYTE		        Fn3   v056
+	BYTE	W12
+	BYTE		        Fn3   v108
+	BYTE	W12
+	BYTE		        Fn3   v056
+	BYTE	W12
+	BYTE	PEND
+// 004   ----------------------------------------
+arcassandra_2_004:
+	BYTE		N06     Dn3   v108
+	BYTE	W12
+	BYTE		        Dn3   v056
+	BYTE	W12
+	BYTE		        Dn3   v108
+	BYTE	W12
+	BYTE		        Dn3   v056
+	BYTE	W12
+	BYTE		        Dn3   v108
+	BYTE	W12
+	BYTE		        Dn3   v056
+	BYTE	W12
+	BYTE	PEND
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_2_004
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_2_004
+// 007   ----------------------------------------
+	BYTE		N06     En3   v108
+	BYTE	W12
+	BYTE		        En3   v056
+	BYTE	W12
+	BYTE		        En3   v108
+	BYTE	W12
+	BYTE		        En3   v056
+	BYTE	W12
+	BYTE		        En3   v108
+	BYTE	W12
+	BYTE		        En3   v056
+	BYTE	W12
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_2_001
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_2_001
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_2_002
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_2_003
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_2_004
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_2_004
+// 014   ----------------------------------------
+	BYTE		N06     Cn3   v108
+	BYTE	W12
+	BYTE		        Cn3   v056
+	BYTE	W12
+	BYTE		        Cn3   v108
+	BYTE	W12
+	BYTE		        Cn3   v056
+	BYTE	W12
+	BYTE		        Cn3   v108
+	BYTE	W12
+	BYTE		        Cn3   v056
+	BYTE	W12
+// 015   ----------------------------------------
+	BYTE		N72     Dn3   v108
+	BYTE	W72
+// 016   ----------------------------------------
+	BYTE		N72   
+	BYTE	W72
+// 017   ----------------------------------------
+	BYTE		        Cs3 
+	BYTE	W72
+// 018   ----------------------------------------
+	BYTE		N72   
+	BYTE	W72
+// 019   ----------------------------------------
+	BYTE		        Dn3 
+	BYTE	W72
+// 020   ----------------------------------------
+	BYTE		        Fn3 
+	BYTE	W72
+// 021   ----------------------------------------
+	BYTE		        En3 
+	BYTE	W72
+// 022   ----------------------------------------
+	BYTE		        Fn3 
+	BYTE	W72
+// 023   ----------------------------------------
+	BYTE		        En3 
+	BYTE	W72
+// 024   ----------------------------------------
+	BYTE		        Dn3 
+	BYTE	W72
+// 025   ----------------------------------------
+	BYTE		        Cs3 
+	BYTE	W72
+// 026   ----------------------------------------
+	BYTE		N72   
+	BYTE	W72
+// 027   ----------------------------------------
+	BYTE		        Dn3 
+	BYTE	W72
+// 028   ----------------------------------------
+	BYTE		        Fs3 
+	BYTE	W72
+// 029   ----------------------------------------
+	BYTE		        Dn3 
+	BYTE	W72
+// 030   ----------------------------------------
+	BYTE		N72   
+	BYTE	W72
+// 031   ----------------------------------------
+	BYTE		N66     En3 
+	BYTE	W72
+	BYTE	GoTo
+	 POIN2	arcassandra_2_B1
+arcassandra_2_B2:
+// 032   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.3) ****************//
+
+arcassandra_3:
+	BYTE	KEYSH   arcassandra_key+0
+arcassandra_3_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   41
+	BYTE		VOL     56*arcassandra_mvl/mxv
+	BYTE		PAN     c_v-8
+	BYTE	W72
+// 001   ----------------------------------------
+	BYTE	W72
+// 002   ----------------------------------------
+	BYTE	W72
+// 003   ----------------------------------------
+	BYTE	W72
+// 004   ----------------------------------------
+	BYTE	W72
+// 005   ----------------------------------------
+	BYTE	W72
+// 006   ----------------------------------------
+	BYTE	W72
+// 007   ----------------------------------------
+	BYTE	W72
+// 008   ----------------------------------------
+	BYTE		N11     Dn4   v100
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+// 009   ----------------------------------------
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+// 010   ----------------------------------------
+	BYTE		        As3 
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE		        As3 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+// 011   ----------------------------------------
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+// 012   ----------------------------------------
+	BYTE		        As3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        As3 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+// 013   ----------------------------------------
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+// 014   ----------------------------------------
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+// 015   ----------------------------------------
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		N12     Fn2 
+	BYTE	W12
+// 016   ----------------------------------------
+	BYTE	W72
+// 017   ----------------------------------------
+	BYTE	W72
+// 018   ----------------------------------------
+	BYTE	W72
+// 019   ----------------------------------------
+	BYTE	W72
+// 020   ----------------------------------------
+	BYTE	W72
+// 021   ----------------------------------------
+	BYTE	W72
+// 022   ----------------------------------------
+	BYTE	W72
+// 023   ----------------------------------------
+	BYTE	W72
+// 024   ----------------------------------------
+	BYTE	W72
+// 025   ----------------------------------------
+	BYTE	W72
+// 026   ----------------------------------------
+	BYTE	W72
+// 027   ----------------------------------------
+	BYTE	W72
+// 028   ----------------------------------------
+	BYTE	W72
+// 029   ----------------------------------------
+	BYTE	W72
+// 030   ----------------------------------------
+	BYTE	W72
+// 031   ----------------------------------------
+	BYTE	W72
+	BYTE	GoTo
+	 POIN2	arcassandra_3_B1
+arcassandra_3_B2:
+// 032   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.4) ****************//
+
+arcassandra_4:
+	BYTE	KEYSH   arcassandra_key+0
+arcassandra_4_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   41
+	BYTE		VOL     56*arcassandra_mvl/mxv
+	BYTE		PAN     c_v-40
+	BYTE		MOD     1
+	BYTE		N66     Fn3   v092
+	BYTE	W72
+// 001   ----------------------------------------
+	BYTE		        En3 
+	BYTE	W72
+// 002   ----------------------------------------
+arcassandra_4_002:
+	BYTE		N42     Dn3   v092
+	BYTE	W48
+	BYTE		N20     Cn3 
+	BYTE	W24
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE		N66   
+	BYTE	W72
+// 004   ----------------------------------------
+	BYTE		        As2 
+	BYTE	W72
+// 005   ----------------------------------------
+	BYTE		        An2 
+	BYTE	W72
+// 006   ----------------------------------------
+	BYTE		        As2 
+	BYTE	W72
+// 007   ----------------------------------------
+	BYTE		N20     Dn3 
+	BYTE	W24
+	BYTE		        En3 
+	BYTE	W24
+	BYTE		        Cs3 
+	BYTE	W24
+// 008   ----------------------------------------
+	BYTE		N66     Fn3 
+	BYTE	W72
+// 009   ----------------------------------------
+	BYTE		        En3 
+	BYTE	W72
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_4_002
+// 011   ----------------------------------------
+	BYTE		N66     Cn3   v092
+	BYTE	W72
+// 012   ----------------------------------------
+	BYTE		        As2 
+	BYTE	W72
+// 013   ----------------------------------------
+	BYTE		        An2 
+	BYTE	W72
+// 014   ----------------------------------------
+	BYTE		N66   
+	BYTE	W72
+// 015   ----------------------------------------
+	BYTE		N66   
+	BYTE	W72
+// 016   ----------------------------------------
+	BYTE		TIE   
+	BYTE	W72
+// 017   ----------------------------------------
+	BYTE	W72
+// 018   ----------------------------------------
+	BYTE	W72
+// 019   ----------------------------------------
+	BYTE	W66
+	BYTE		EOT   
+	BYTE	W06
+// 020   ----------------------------------------
+	BYTE		N66     Cn3 
+	BYTE	W72
+// 021   ----------------------------------------
+	BYTE		TIE     An2 
+	BYTE	W72
+// 022   ----------------------------------------
+	BYTE	W66
+	BYTE		EOT   
+	BYTE	W06
+// 023   ----------------------------------------
+	BYTE		N42     Cn3 
+	BYTE	W48
+	BYTE		N20     Cs3 
+	BYTE	W24
+// 024   ----------------------------------------
+	BYTE		TIE     An2 
+	BYTE	W72
+// 025   ----------------------------------------
+	BYTE	W72
+// 026   ----------------------------------------
+	BYTE	W72
+// 027   ----------------------------------------
+	BYTE	W66
+	BYTE		EOT   
+	BYTE	W06
+// 028   ----------------------------------------
+	BYTE		N66     Dn3 
+	BYTE	W72
+// 029   ----------------------------------------
+	BYTE		        As2 
+	BYTE	W72
+// 030   ----------------------------------------
+	BYTE		        Bn2 
+	BYTE	W72
+// 031   ----------------------------------------
+	BYTE		        Cs3 
+	BYTE	W72
+	BYTE	GoTo
+	 POIN2	arcassandra_4_B1
+arcassandra_4_B2:
+// 032   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.5) ****************//
+
+arcassandra_5:
+	BYTE	KEYSH   arcassandra_key+0
+arcassandra_5_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   50
+	BYTE		VOL     56*arcassandra_mvl/mxv
+	BYTE		PAN     c_v+24
+	BYTE		N66     Dn1   v127
+	BYTE	W72
+// 001   ----------------------------------------
+	BYTE		        An1 
+	BYTE	W72
+// 002   ----------------------------------------
+	BYTE		        As1 
+	BYTE	W72
+// 003   ----------------------------------------
+	BYTE		        Fn1 
+	BYTE	W72
+// 004   ----------------------------------------
+	BYTE		        Gn1 
+	BYTE	W72
+// 005   ----------------------------------------
+	BYTE		        Dn1 
+	BYTE	W72
+// 006   ----------------------------------------
+	BYTE		        Gn1 
+	BYTE	W72
+// 007   ----------------------------------------
+	BYTE		        An1 
+	BYTE	W72
+// 008   ----------------------------------------
+	BYTE		        Dn1 
+	BYTE	W72
+// 009   ----------------------------------------
+	BYTE		        An1 
+	BYTE	W72
+// 010   ----------------------------------------
+	BYTE		        As1 
+	BYTE	W72
+// 011   ----------------------------------------
+	BYTE		        Fn1 
+	BYTE	W72
+// 012   ----------------------------------------
+	BYTE		        Gn1 
+	BYTE	W72
+// 013   ----------------------------------------
+	BYTE		        Dn1 
+	BYTE	W72
+// 014   ----------------------------------------
+	BYTE		        An1 
+	BYTE	W72
+// 015   ----------------------------------------
+	BYTE		        Dn1 
+	BYTE	W72
+// 016   ----------------------------------------
+	BYTE		N20     Dn2 
+	BYTE	W24
+	BYTE		        An1 
+	BYTE	W24
+	BYTE		        Fn1 
+	BYTE	W24
+// 017   ----------------------------------------
+arcassandra_5_017:
+	BYTE		N20     An1   v127
+	BYTE	W24
+	BYTE		        En1 
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE	W24
+	BYTE	PEND
+// 018   ----------------------------------------
+arcassandra_5_018:
+	BYTE		N20     An0   v127
+	BYTE	W24
+	BYTE		        Bn0 
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE	W24
+	BYTE	PEND
+// 019   ----------------------------------------
+arcassandra_5_019:
+	BYTE		N11     Dn1   v127
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE	W12
+	BYTE		        Dn1 
+	BYTE	W12
+	BYTE		        En1 
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W12
+	BYTE		        Gn1 
+	BYTE	W12
+	BYTE	PEND
+// 020   ----------------------------------------
+arcassandra_5_020:
+	BYTE		N20     Fn1   v127
+	BYTE	W24
+	BYTE		        Cn1 
+	BYTE	W24
+	BYTE		        An0 
+	BYTE	W24
+	BYTE	PEND
+// 021   ----------------------------------------
+arcassandra_5_021:
+	BYTE		N20     Cn1   v127
+	BYTE	W24
+	BYTE		        Dn1 
+	BYTE	W24
+	BYTE		        En1 
+	BYTE	W24
+	BYTE	PEND
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_5_020
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_5_021
+// 024   ----------------------------------------
+	BYTE		N20     Dn1   v127
+	BYTE	W24
+	BYTE		        An0 
+	BYTE	W24
+	BYTE		        Fn1 
+	BYTE	W24
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_5_017
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_5_018
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_5_019
+// 028   ----------------------------------------
+	BYTE		N20     An1   v127
+	BYTE	W24
+	BYTE		        Fs1 
+	BYTE	W24
+	BYTE		        Dn1 
+	BYTE	W24
+// 029   ----------------------------------------
+	BYTE		        Gn0 
+	BYTE	W24
+	BYTE		        An0 
+	BYTE	W24
+	BYTE		        As0 
+	BYTE	W24
+// 030   ----------------------------------------
+	BYTE		        Bn0 
+	BYTE	W24
+	BYTE		        Dn1 
+	BYTE	W24
+	BYTE		        Gs1 
+	BYTE	W24
+// 031   ----------------------------------------
+	BYTE		        An1 
+	BYTE	W24
+	BYTE		        En1 
+	BYTE	W24
+	BYTE		        An0 
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	arcassandra_5_B1
+arcassandra_5_B2:
+// 032   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 6 (Midi-Chn.6) ****************//
+
+arcassandra_6:
+	BYTE	KEYSH   arcassandra_key+0
+arcassandra_6_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   107
+	BYTE		VOL     70*arcassandra_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N72     Dn4   v092
+	BYTE	W72
+// 001   ----------------------------------------
+	BYTE		        Cn4 
+	BYTE	W72
+// 002   ----------------------------------------
+arcassandra_6_002:
+	BYTE		N48     As3   v092
+	BYTE	W48
+	BYTE		N12     An3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE	PEND
+// 003   ----------------------------------------
+arcassandra_6_003:
+	BYTE		N42     An3   v092
+	BYTE	W48
+	BYTE		N24     Fn3 
+	BYTE	W24
+	BYTE	PEND
+// 004   ----------------------------------------
+arcassandra_6_004:
+	BYTE		N48     Gn3   v092
+	BYTE	W48
+	BYTE		N24     En3 
+	BYTE	W24
+	BYTE	PEND
+// 005   ----------------------------------------
+	BYTE		N48     Fn3 
+	BYTE	W48
+	BYTE		N24     Dn3 
+	BYTE	W24
+// 006   ----------------------------------------
+	BYTE		N48     Gn3 
+	BYTE	W48
+	BYTE		N12     Fn3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+// 007   ----------------------------------------
+	BYTE		N42     An3 
+	BYTE	W48
+	BYTE		N24   
+	BYTE	W24
+// 008   ----------------------------------------
+	BYTE		N72     Dn4 
+	BYTE	W72
+// 009   ----------------------------------------
+	BYTE		        Cn4 
+	BYTE	W72
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_6_002
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_6_003
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_6_004
+// 013   ----------------------------------------
+	BYTE		N48     Fn3   v092
+	BYTE	W48
+	BYTE		N24     Gn3 
+	BYTE	W24
+// 014   ----------------------------------------
+	BYTE		N48     En3 
+	BYTE	W48
+	BYTE		N12     Dn3 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+// 015   ----------------------------------------
+	BYTE		N66     Dn3 
+	BYTE	W72
+// 016   ----------------------------------------
+	BYTE		        Fn3 
+	BYTE	W72
+// 017   ----------------------------------------
+	BYTE		        En3 
+	BYTE	W72
+// 018   ----------------------------------------
+	BYTE		        Gn3 
+	BYTE	W72
+// 019   ----------------------------------------
+	BYTE		        Fn3 
+	BYTE	W72
+// 020   ----------------------------------------
+	BYTE		        An3 
+	BYTE	W72
+// 021   ----------------------------------------
+	BYTE		        Gn3 
+	BYTE	W72
+// 022   ----------------------------------------
+	BYTE		        An3 
+	BYTE	W72
+// 023   ----------------------------------------
+	BYTE		        Gn3 
+	BYTE	W72
+// 024   ----------------------------------------
+	BYTE		        Fn3 
+	BYTE	W72
+// 025   ----------------------------------------
+	BYTE		        En3 
+	BYTE	W72
+// 026   ----------------------------------------
+	BYTE		        Gn3 
+	BYTE	W72
+// 027   ----------------------------------------
+	BYTE		        Fn3 
+	BYTE	W72
+// 028   ----------------------------------------
+	BYTE		        An3 
+	BYTE	W72
+// 029   ----------------------------------------
+	BYTE		        Gn3 
+	BYTE	W72
+// 030   ----------------------------------------
+	BYTE		        Gs3 
+	BYTE	W72
+// 031   ----------------------------------------
+	BYTE		        An3 
+	BYTE	W72
+	BYTE	GoTo
+	 POIN2	arcassandra_6_B1
+arcassandra_6_B2:
+// 032   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 7 (Midi-Chn.7) ****************//
+
+arcassandra_7:
+	BYTE	KEYSH   arcassandra_key+0
+arcassandra_7_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   52
+	BYTE		VOL     74*arcassandra_mvl/mxv
+	BYTE		PAN     c_v-24
+	BYTE		N66     Dn2   v127
+	BYTE	W72
+// 001   ----------------------------------------
+	BYTE		        An2 
+	BYTE	W72
+// 002   ----------------------------------------
+	BYTE		        As2 
+	BYTE	W72
+// 003   ----------------------------------------
+	BYTE		        Fn2 
+	BYTE	W72
+// 004   ----------------------------------------
+	BYTE		        Gn2 
+	BYTE	W72
+// 005   ----------------------------------------
+	BYTE		        Dn2 
+	BYTE	W72
+// 006   ----------------------------------------
+	BYTE		        Gn2 
+	BYTE	W72
+// 007   ----------------------------------------
+	BYTE		        An2 
+	BYTE	W72
+// 008   ----------------------------------------
+	BYTE		        Dn2 
+	BYTE	W72
+// 009   ----------------------------------------
+	BYTE		        An2 
+	BYTE	W72
+// 010   ----------------------------------------
+	BYTE		        As2 
+	BYTE	W72
+// 011   ----------------------------------------
+	BYTE		        Fn2 
+	BYTE	W72
+// 012   ----------------------------------------
+	BYTE		        Gn2 
+	BYTE	W72
+// 013   ----------------------------------------
+	BYTE		        Dn2 
+	BYTE	W72
+// 014   ----------------------------------------
+	BYTE		        An2 
+	BYTE	W72
+// 015   ----------------------------------------
+	BYTE		        Dn2 
+	BYTE	W72
+// 016   ----------------------------------------
+	BYTE		VOICE   6
+	BYTE		N20     Dn2   v064
+	BYTE		N20     Dn3 
+	BYTE	W24
+	BYTE		        An1 
+	BYTE		N20     An2 
+	BYTE	W24
+	BYTE		        Fn1 
+	BYTE		N20     Fn2 
+	BYTE	W24
+// 017   ----------------------------------------
+arcassandra_7_017:
+	BYTE		N20     An1   v064
+	BYTE		N20     An2 
+	BYTE	W24
+	BYTE		        En1 
+	BYTE		N20     En2 
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE		N20     Cs2 
+	BYTE	W24
+	BYTE	PEND
+// 018   ----------------------------------------
+arcassandra_7_018:
+	BYTE		N20     An0   v064
+	BYTE		N20     An1 
+	BYTE	W24
+	BYTE		        Bn0 
+	BYTE		N20     Bn1 
+	BYTE	W24
+	BYTE		        Cs1 
+	BYTE		N20     Cs2 
+	BYTE	W24
+	BYTE	PEND
+// 019   ----------------------------------------
+arcassandra_7_019:
+	BYTE		N11     Dn1   v064
+	BYTE		N11     Dn2 
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE		N11     Cs2 
+	BYTE	W12
+	BYTE		        Dn1 
+	BYTE		N11     Dn2 
+	BYTE	W12
+	BYTE		        En1 
+	BYTE		N11     En2 
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE		N11     Fn2 
+	BYTE	W12
+	BYTE		        Gn1 
+	BYTE		N11     Gn2 
+	BYTE	W12
+	BYTE	PEND
+// 020   ----------------------------------------
+arcassandra_7_020:
+	BYTE		N20     Fn1   v064
+	BYTE		N20     Fn2 
+	BYTE	W24
+	BYTE		        Cn1 
+	BYTE		N20     Cn2 
+	BYTE	W24
+	BYTE		        An0 
+	BYTE		N20     An1 
+	BYTE	W24
+	BYTE	PEND
+// 021   ----------------------------------------
+arcassandra_7_021:
+	BYTE		N20     Cn1   v064
+	BYTE		N20     Cn2 
+	BYTE	W24
+	BYTE		        Dn1 
+	BYTE		N20     Dn2 
+	BYTE	W24
+	BYTE		        En1 
+	BYTE		N20     En2 
+	BYTE	W24
+	BYTE	PEND
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_7_020
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_7_021
+// 024   ----------------------------------------
+	BYTE		N20     Dn1   v064
+	BYTE		N20     Dn2 
+	BYTE	W24
+	BYTE		        An0 
+	BYTE		N20     An1 
+	BYTE	W24
+	BYTE		        Fn1 
+	BYTE		N20     Fn2 
+	BYTE	W24
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_7_017
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_7_018
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	arcassandra_7_019
+// 028   ----------------------------------------
+	BYTE		N20     An1   v064
+	BYTE		N20     An2 
+	BYTE	W24
+	BYTE		        Fs1 
+	BYTE		N20     Fs2 
+	BYTE	W24
+	BYTE		        Dn1 
+	BYTE		N20     Dn2 
+	BYTE	W24
+// 029   ----------------------------------------
+	BYTE		        Gn0 
+	BYTE		N20     Gn1 
+	BYTE	W24
+	BYTE		        An0 
+	BYTE		N20     An1 
+	BYTE	W24
+	BYTE		        As0 
+	BYTE		N20     As1 
+	BYTE	W24
+// 030   ----------------------------------------
+	BYTE		        Bn0 
+	BYTE		N20     Bn1 
+	BYTE	W24
+	BYTE		        Dn1 
+	BYTE		N20     Dn2 
+	BYTE	W24
+	BYTE		        Gs1 
+	BYTE		N20     Gs2 
+	BYTE	W24
+// 031   ----------------------------------------
+	BYTE		        Cs1 
+	BYTE		N20     Cs2 
+	BYTE	W24
+	BYTE		        En1 
+	BYTE		N20     En2 
+	BYTE	W24
+	BYTE		        An1 
+	BYTE		N20     An2 
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	arcassandra_7_B1
+arcassandra_7_B2:
+// 032   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 8 (Midi-Chn.8) ****************//
+
+arcassandra_8:
+	BYTE	KEYSH   arcassandra_key+0
+arcassandra_8_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   41
+	BYTE		VOL     44*arcassandra_mvl/mxv
+	BYTE		PAN     c_v+40
+	BYTE	W72
+// 001   ----------------------------------------
+	BYTE	W72
+// 002   ----------------------------------------
+	BYTE	W72
+// 003   ----------------------------------------
+	BYTE	W72
+// 004   ----------------------------------------
+	BYTE	W72
+// 005   ----------------------------------------
+	BYTE	W72
+// 006   ----------------------------------------
+	BYTE	W72
+// 007   ----------------------------------------
+	BYTE	W72
+// 008   ----------------------------------------
+	BYTE		MOD     4
+	BYTE		BEND    c_v-4
+	BYTE		N11     Dn4   v088
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+// 009   ----------------------------------------
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+// 010   ----------------------------------------
+	BYTE		        As3 
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE		        As3 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+// 011   ----------------------------------------
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+// 012   ----------------------------------------
+	BYTE		        As3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        As3 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+// 013   ----------------------------------------
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+// 014   ----------------------------------------
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+// 015   ----------------------------------------
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		N12     Fn2 
+	BYTE	W12
+// 016   ----------------------------------------
+	BYTE		MOD     1
+	BYTE		BEND    c_v+0
+	BYTE	W72
+// 017   ----------------------------------------
+	BYTE	W72
+// 018   ----------------------------------------
+	BYTE	W72
+// 019   ----------------------------------------
+	BYTE	W72
+// 020   ----------------------------------------
+	BYTE	W72
+// 021   ----------------------------------------
+	BYTE	W72
+// 022   ----------------------------------------
+	BYTE	W72
+// 023   ----------------------------------------
+	BYTE	W72
+// 024   ----------------------------------------
+	BYTE	W72
+// 025   ----------------------------------------
+	BYTE	W72
+// 026   ----------------------------------------
+	BYTE	W72
+// 027   ----------------------------------------
+	BYTE	W72
+// 028   ----------------------------------------
+	BYTE	W72
+// 029   ----------------------------------------
+	BYTE	W72
+// 030   ----------------------------------------
+	BYTE	W72
+// 031   ----------------------------------------
+	BYTE	W72
+	BYTE	GoTo
+	 POIN2	arcassandra_8_B1
+arcassandra_8_B2:
+// 032   ----------------------------------------
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+arcassandra:
+	BYTE	8	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	arcassandra_pri	// Priority
+	BYTE	arcassandra_rev	// Reverb.
+
+	POIN2	arcassandra_grp
+
+	POIN2	arcassandra_1
+	POIN2	arcassandra_2
+	POIN2	arcassandra_3
+	POIN2	arcassandra_4
+	POIN2	arcassandra_5
+	POIN2	arcassandra_6
+	POIN2	arcassandra_7
+	POIN2	arcassandra_8
+
+	

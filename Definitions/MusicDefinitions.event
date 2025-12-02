@@ -80,7 +80,7 @@
 #define FF5_BattleOnTheBigBridgeID 0x277
 
 #define KwameID 0x278
-#define TheQuestForRudrasMines 0x43
+#define TheQuestForRudrasMines 0x43 //Eagle and Hero theme
 
 #define VsJuliusID 0x279
 #define RoarOfDomainID 0x27A
@@ -111,6 +111,8 @@
 #define WaterfallUTID 0x291
 #define ForbiddenForestID 0x292
 #define NorthernDesertID 0x293
+#define NoticeOfDeathID 0x294
+#define ArcassandraID 0x295
 
 // Vanilla
 #define TiesOfFriendship 0x7

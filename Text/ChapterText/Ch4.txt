@@ -1,8 +1,8 @@
 ## Ch4Title
-Ch. 4: Who Dreamed It?[X]
+Ch. 4: The Hero and the Prince[X]
 
 ## Ch4ObjectiveLong
-Help the nobles
+Help the nobles[N]
 escape southeast.[X]
 
 ## Ch4Objective
@@ -739,7 +739,7 @@ And where the hell are you, Hero...?!)[A]
 ## Ch4NPCTalkM
 [mr][LoadActive]
 [ml][LoadNobleman]
-What shall I do?[4]
+What shall I do?[4][N]
 I-I don't want to die...[A]
 [X]
 

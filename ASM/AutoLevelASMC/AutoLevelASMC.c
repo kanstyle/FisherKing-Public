@@ -17,17 +17,30 @@ void AutoLevelASMC(ProcPtr proc) { //target unit in slot1, target level in slot2
 
     levelsLeft = (targetLevel - unit->level);
 
-    if (levelsLeft) {
-        for (unit->level -= levelsLeft; levelsLeft > 0; --levelsLeft) {
+    /*if (levelsLeft) {
+        for (startingLevel -= levelsLeft; levelsLeft > 0; --levelsLeft) {
             InitBattleUnit(&tmpBattleUnit, unit);
 
             tmpBattleUnit.unit.exp += 100;
             CheckBattleUnitLevelUp(&tmpBattleUnit);
 
             UpdateUnitFromBattle(unit, &tmpBattleUnit);
-			unit->level++;
+			//unit->level++;
         }
-    }
+    }*/
+	
+	if (levelsLeft > 0) {
+		while (levelsLeft > 0) {
+			InitBattleUnit(&tmpBattleUnit, unit);
+			tmpBattleUnit.unit.exp = 100;
+			tmpBattleUnit.expGain = 0;
+			CheckBattleUnitLevelUp(&tmpBattleUnit);
+			unit->level++;
+			gEventSlots[8] = unit->level;
+			UpdateUnitFromBattle(unit, &tmpBattleUnit);
+			--levelsLeft;
+		}
+	}
 }
 
 void AddAutoLevelASMC(ProcPtr proc) { //target unit in slot1, target level in slot2

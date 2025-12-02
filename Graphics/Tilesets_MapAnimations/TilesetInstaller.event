@@ -97,6 +97,10 @@
 	#incbin "Dmp/Palette/Stronghold_pal.dmp"
 	
 	ALIGN 4
+	ZoramineImprovedStrongholdNightPalette:
+	#incbin "Dmp/Palette/StrongholdNight_pal.dmp"
+	
+	ALIGN 4
 	ZoramineImprovedStrongholdConfig:
 	#incbin "Dmp/Config/Stronghold Config_comp.dmp"
 
@@ -192,6 +196,7 @@
     
 	EventPointerTable(ZoramineImprovedStrongholdObjectID, ZoramineImprovedStrongholdObject)
 	EventPointerTable(ZoramineImprovedStrongholdPaletteID, ZoramineImprovedStrongholdPalette)
+	EventPointerTable(ZoramineImprovedStrongholdNightPaletteID, ZoramineImprovedStrongholdNightPalette)
 	EventPointerTable(ZoramineImprovedStrongholdConfigID, ZoramineImprovedStrongholdConfig)
 	EventPointerTable(ZoramineImprovedStrongholdAnimationsID, ZoramineImprovedStrongholdAnimations)
 

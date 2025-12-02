@@ -1,3 +1,6 @@
+## SD_Bold
+Bold: Opponent gets +15 Crit.[X]
+
 ## SD_Juggernaut
 Juggernaut: Halves damage taken,[N]
 except from critical hits.[X]

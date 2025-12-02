@@ -202,6 +202,9 @@
 #define Butterfly 0xCD
 #define CrystalKnife 0xCE
 #define Skewer 0xCF
+#define SavageBlade 0xD0
+#define SavageGore 0xD1
+#define SavageMaul 0xD2
 
 //Statuses
 #define SpecialStatusID 5

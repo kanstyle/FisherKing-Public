@@ -18,6 +18,7 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0,BleedoutChapterTurnEvent,1,255)
 	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
 	TurnEventPlayer(0x0,Turn1Events,1,1)
+	TurnEventPlayer(0x0,HeroSwanEvent,2,2)
 	END_MAIN
 
 ALIGN 32
@@ -52,15 +53,14 @@ Tutorial:
 	END_MAIN
 
 Units1:
-	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [6,2] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [5,2] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [6,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [5,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [5,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [4,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [3,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [3,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [2,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [4,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [3,5] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT
 
 NPCUnits:
@@ -69,8 +69,8 @@ NPCUnits:
 	UNIT
 	
 SwanUnits:
-	UNIT HeroChar UpstartM 0x40 Level(10,Ally,False)     [4,0] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Swan AxeCavF 0x40 Level(7,Ally,False)     [5,0] 0b 0x0 0x0 0x0 [KillerAxe, HandAxe, Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT HeroChar UpstartM 0x40 Level(10,Ally,False)     [4,0] 0b 0x0 0x1 REDA4R2 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Swan AxeCavF 0x40 Level(7,Ally,False)     [5,0] 0b 0x0 0x1 REDA5R2 [KillerAxe, HandAxe, Vulnerary] [0x0,0x0,0x0,0x0]
 	UNIT
 
 EnemyUnits:
@@ -165,7 +165,7 @@ BallroomAudienceUnits:
 BallroomMonsterUnits:
 	UNIT Beast LanceBone 0x40 Level(7,Enemy,True)     [3,0] 0b 0x0 0x1 REDA3R2 [IronLance] AttackInRangeAI
 	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [4,0] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
-	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [16,6] 0b 0x0 0x1 REDA8R6 [KillingEdge] AttackInRangeAI
+	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [16,6] 0b 0x0 0x1 REDA6R6 [KillingEdge] AttackInRangeAI
 	UNIT Beast MogallClass 0x40 Level(7,Enemy,True)     [16,8] 0b 0x0 0x1 REDA9R8 [EvilEye] AttackInRangeAI
 	UNIT Lowlander AxeCav 0x40 Level(7,Enemy,True)     [16,7] 0b 0x0 0x1 REDA11R7 [RottenClaw] AttackInRangeAI
 	UNIT
@@ -195,7 +195,7 @@ Traps2:
 BeginningScene:
 	SetFlag(BleedoutFlag)
 	
-	LOMA BaronManorEntranceCh
+	LOMA BaronManorEntranceNightCh
 	MUSC Nighttime
 	FADU 6
 	LOAD2 0x1 GateGuardUnits
@@ -274,6 +274,7 @@ BeginningScene:
 	FADI 4
 	STAL 60
 	DoAllThree
+	MUSC ArcassandraID
 	LOMA Ch4 //ballroom scene
 	CAMERA [0,0]
 	LOAD2 0x1 BallroomNPCUnits
@@ -303,6 +304,7 @@ BeginningScene:
 	FADI 5
 	DoAllThree
 	STAL 60
+	MUSCFAST 0x7FFF
 	LOMA BaronManorHallwayCh
 	ASMC ForceHeroMale|1
 	FADU 5
@@ -322,8 +324,9 @@ BeginningScene:
 	MOVE 3 0x80 [5,4]
 	ENUN
 	FADI 8
+	MUSC TheQuestForRudrasMines
+	
 	SetBackgroundSlow(EagleIntro)
-	//Music cue
 	STAL 120
 	CenterTextbox(Ch4EagleCG)
 	STAL 60
@@ -343,6 +346,7 @@ BeginningScene:
 	CLEAN
 	FADU 16
 	STAL 30
+	MUSCSLOW 0x7FFF
 	LOAD2 0x1 HallwayPrinceUnits
 	STAL 60
 	MOVE 5 Prince [10,0]
@@ -361,6 +365,8 @@ BeginningScene:
 	STAL 60
 	DoAllThree
 	
+	MUSC DKCVoicesOfTheTempleID
+	//music: voices of the temple
 	LOMA PrinceRoomCh
 	LOAD2 0x1 RoomPrinceUnits
 	FADU 4
@@ -394,8 +400,11 @@ BeginningScene:
 	
 	DoAllThree
 	DISA 0x80
+	REMU HeroChar
 	LOMA Ch4
 	
+	//music: notice of death?
+	MUSC NoticeOfDeathID
 	LOAD2 0x1 BallroomAudienceUnits
 	LOAD2 0x1 BallroomPrinceUnits
 	FADU 5
@@ -481,6 +490,16 @@ Turn1Events:
 	NoFade
 	ENDA
 	
+HeroSwanEvent:
+	CAMERA [4,0]
+	STAL 30
+	REVEAL HeroChar
+	LOAD1 0x1 SwanUnits
+	ENUN
+	Highlight(HeroChar)
+	NoFade
+	ENDA
+	
 Ch4NPCTalkMEvent:
 	PreventSkipping
 	Text(Ch4NPCTalkM)
@@ -556,7 +575,7 @@ ThievesEvent:
 	DISA 0xAE
 	NoFade
 	ENDA
-	
+
 BleedoutChapterAlwaysEvent:
 	ASMC ReviveAndSetPetrify|1
 	NoFade

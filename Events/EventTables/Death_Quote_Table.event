@@ -12,12 +12,18 @@ DeathQuote(Pillow,0xFF,0x0,0x0,PillowDeathQuoteEvent)
 DeathQuote(Brother,0xFF,0x0,0x0,BrotherDeathQuoteEvent)
 DeathQuote(Hunter,0xFF,0x0,0x0,HunterDeathQuoteEvent)
 DeathQuote(Pigeon,0xFF,0x0,0x0,PigeonDeathQuoteEvent)
+DeathQuote(Swan,0xFF,0x0,0x0,SwanDeathQuoteEvent)
 
 
 // Enemy Units
 
 DeathQuote(Skull,0xFF,DefeatBossFlag,Ch1SkullDQ)
 DeathQuote(Wise,0xFF,DefeatBossFlag,Ch3WiseDQ)
+
+// NPC Units
+
+DeathQuote(Ch4NPCMan,0xFF,0x0,0x0,NoblemanDeathQuoteEvent)
+DeathQuote(Ch4NPCWoman,0xFF,0x0,0x0,NoblewomanDeathQuoteEvent)
 
 DeathQuote(0xFFFF,0,0,0) // terminator
 
@@ -92,5 +98,27 @@ BabyDeathQuoteEvent:
 Text(BabyDQ)
 SVAL 0x7 Baby
 ENUF BleedoutFlag
+NoFade
+ENDA
+
+ALIGN 4
+SwanDeathQuoteEvent:
+Text(SwanDQ)
+SVAL 0x7 Swan
+ENUF BleedoutFlag
+NoFade
+ENDA
+
+ALIGN 4
+NoblemanDeathQuoteEvent:
+Text(NoblemanDQ)
+GameOver
+NoFade
+ENDA
+
+ALIGN 4
+NoblewomanDeathQuoteEvent:
+Text(NoblewomanDQ)
+GameOver
 NoFade
 ENDA

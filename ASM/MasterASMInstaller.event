@@ -33,6 +33,10 @@
 #include "MyOwnBlood/Installer.event"
 #include "ZeroIn/Installer.event"
 #include "Juggernaut/Installer.event"
+#include "Bold/Installer.event"
+#include "CHAI_Pirate/Installer.event"
+//#include "Helpers.event"
+//#include "Rewrite-main/SRC/ChapterTitlesAsText/Installer.event"
 //#include "ModularGoalWindow/MGW.event"
 //#include "ModularGoalWindow/Tables/MGWText/MGWText.event"
 

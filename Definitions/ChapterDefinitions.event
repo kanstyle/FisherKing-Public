@@ -9,6 +9,7 @@
 #define BaronManorEntranceCh 0x2D
 #define BaronManorHallwayCh 0x2E
 #define PrinceRoomCh 0x2F
+#define BaronManorEntranceNightCh 0x30
 #ifdef USE_TEST_MAP
 	#define BossRush 0x0
 #else
@@ -40,6 +41,7 @@
 #define Ch3EventsID 0x1C
 
 #define BaronManorEntranceMapID 0x1D
+#define BaronManorEntranceNightMapID 0x24
 
 #define Ch4MapID 0x1E
 #define Ch4MapChangesID 0x1F
@@ -49,6 +51,7 @@
 
 #define PrinceRoomMapID 0x22
 #define PrinceRoomMapChangesID 0x23
+//0x24
 
 //TILESET IDs (START FROM 0x88 when replacing stuff)
 #define VanillaFieldsObjectID 0x1
@@ -89,6 +92,7 @@
 
 #define ZoramineImprovedStrongholdObjectID 0x9E
 #define ZoramineImprovedStrongholdPaletteID 0x9F
+#define ZoramineImprovedStrongholdNightPaletteID 0xAF
 #define ZoramineImprovedStrongholdConfigID 0xA0
 #define ZoramineImprovedStrongholdAnimationsID 0xBD
 

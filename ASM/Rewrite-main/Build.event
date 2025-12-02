@@ -1,0 +1,29 @@
+
+#ifndef __MAIN
+  #define __MAIN
+
+  /*
+   * Example buildfile for testing/demonstration.
+   */
+
+  #include "EAstdlib.event"
+  #include "Extensions/Hack Installation.txt"
+  #include "Tools/Tool Helpers.txt"
+
+  #define FreeSpace    $B2A610
+  #define FreeSpaceEnd $C00000
+
+  ORG FreeSpace
+
+    #include "SRC/SkipHuffmanDecompression/Installer.event"
+    #include "SRC/MovingSounds/Installer.event"
+    #include "SRC/AllegiancePalettes/Installer.event"
+    #include "SRC/EXPByAction/Installer.event"
+    #include "SRC/ChapterTitlesAsText/Installer.event"
+
+    #include "SRC/AnimationExpansion/Installer.event"
+
+
+  ASSERT (FreeSpaceEnd - CURRENTOFFSET)
+
+#endif // __MAIN
