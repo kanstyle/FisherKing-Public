@@ -1,3 +1,8 @@
+## SD_PillowsBiggestFan
+Pillow's Fan: Gain +15 Hit/Avo[N]
+and +5 Crit while within 3 tiles[N]
+of Pillow.[X]
+
 ## SD_Bold
 Bold: Opponent gets +15 Crit.[X]
 

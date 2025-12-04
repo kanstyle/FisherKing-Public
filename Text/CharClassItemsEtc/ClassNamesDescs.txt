@@ -94,3 +94,21 @@ Jabberwock[X]
 
 ## JabberwockClassDesc
 Placeholder.[X]
+
+## LowMageClassName
+Low Mage[X]
+
+## LowMageClassDesc
+Placeholder.[X]
+
+## HighMageClassName
+High Mage[X]
+
+## HighMageClassDesc
+Placeholder.[X]
+
+## HighSageClassName
+High Mage[X]
+
+## HighSageClassDesc
+Placeholder.[X]

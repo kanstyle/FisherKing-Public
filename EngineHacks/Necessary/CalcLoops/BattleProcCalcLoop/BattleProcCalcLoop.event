@@ -15,6 +15,7 @@ POIN Proc_Devil	//devil effect
 	POIN CombatArt_SureShot CombatArt_Luna
 #endif // COMBAT_ARTS
 
+//POIN Proc_TurtleShield
 POIN Proc_Juggernaut
 POIN Proc_Moonbow 
 

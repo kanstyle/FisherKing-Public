@@ -1,0 +1,9 @@
+#include "BiggestFan.lyn.event" 
+
+ALIGN 4
+PillowsBiggestFanID_Link:
+WORD PillowsBiggestFanID
+
+ALIGN 4
+BiggestFanRange_Link:
+BYTE 3

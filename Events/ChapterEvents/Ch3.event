@@ -90,16 +90,16 @@ EnemyUnits1:
 	UNIT Combatant LanceCav 0x40 Level(5,Enemy,True)     [18,9] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
 	UNIT Combatant Fighter 0x40 Level(5,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
 	UNIT Combatant Fighter 0x40 Level(5,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
-	UNIT Combatant PegasusKnight 0x40 Level(7,Enemy,True)     [18,7] 0b 0x0 0x0 0x0 [KillerLance] ChargeAI
+	UNIT Combatant PegasusKnight 0x40 Level(7,Enemy,True)     [18,7] 0b 0x0 0x0 0x0 [SavageGore] ChargeAI
 	UNIT
 	
 EnemyUnits2:
 	UNIT Combatant Mercenary 0x40 Level(5,Enemy,True)     [17,6] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
 	UNIT Combatant Mercenary 0x40 Level(5,Enemy,True)     [17,8] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
-	UNIT Combatant Knight 0x40 Level(5,Enemy,True)     [18,5] 0b 0x0 0x0 0x0 [KillerLance] ChargeAI
-	UNIT Combatant Knight 0x40 Level(5,Enemy,True)     [18,9] 0b 0x0 0x0 0x0 [KillerLance] ChargeAI
-	UNIT Combatant AxeCav 0x40 Level(5,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [KillerAxe] ChargeAI
-	UNIT Combatant AxeCav 0x40 Level(5,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [KillerAxe] ChargeAI
+	UNIT Combatant Knight 0x40 Level(5,Enemy,True)     [18,5] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT Combatant Knight 0x40 Level(5,Enemy,True)     [18,9] 0b 0x0 0x0 0x0 [SavageGore] ChargeAI
+	UNIT Combatant AxeCav 0x40 Level(5,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
+	UNIT Combatant AxeCav 0x40 Level(5,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [SavageMaul] ChargeAI
 	UNIT Combatant Shaman 0x40 Level(7,Enemy,True)     [18,7] 0b 0x0 0x0 0x0 [Pain] ChargeAI
 	UNIT
 
@@ -626,6 +626,7 @@ StopSkippingEvent:
 	
 ALIGN 4
 Ch3Armory:
+	SHORT IronBlade
 	SHORT SteelSword
 	SHORT SteelLance
 	SHORT SteelAxe

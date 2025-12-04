@@ -2804,10 +2804,10 @@
    <tile/>
    <tile/>
    <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
-   <tile/>
+   <tile gid="485"/>
+   <tile gid="482"/>
+   <tile gid="482"/>
+   <tile gid="485"/>
    <tile/>
    <tile/>
    <tile/>

@@ -17,8 +17,11 @@ PointerList:
 TurnBasedEvents:
 	TurnEventPlayer(0x0,BleedoutChapterTurnEvent,1,255)
 	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
-	TurnEventPlayer(0x0,Turn1Events,1,1)
-	TurnEventPlayer(0x0,HeroSwanEvent,2,2)
+	TurnEventPlayer(0x0,Turn1Events,1)
+	TurnEventPlayer(0x0,HeroSwanEvent,2)
+	TurnEventPlayer(0x0,BackReinforcementSWEvent,4,4)
+	TurnEventPlayer(0x0,BackReinforcementNWEvent,4,4)
+	TurnEventPlayer(0x0,BackReinforcementNEEvent,10,2)
 	END_MAIN
 
 ALIGN 32
@@ -30,10 +33,16 @@ CharacterBasedEvents:
 MiscBasedEvents:
 	CauseGameOverIfLordDies
 	AFEV BleedoutFlag BleedoutChapterAlwaysEvent 0x0
+	AFEV 0x0 EscapeCheckEvent 0x0
 	END_MAIN
 
 LocationBasedEvents:
-
+	Chest(Speedwings,11,14)
+	Chest(Rapier,12,3)
+	//DurabilityChest(SkillScroll,PillowsBiggestFanID,12,3)
+	Door(10,11)
+	Door(11,11)
+	Door(13,13)
 	END_MAIN
 
 Dunno1:
@@ -69,15 +78,80 @@ NPCUnits:
 	UNIT
 	
 SwanUnits:
-	UNIT HeroChar UpstartM 0x40 Level(10,Ally,False)     [4,0] 0b 0x0 0x1 REDA4R2 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Swan AxeCavF 0x40 Level(7,Ally,False)     [5,0] 0b 0x0 0x1 REDA5R2 [KillerAxe, HandAxe, Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT HeroChar UpstartM 0x40 Level(10,Ally,False)     [4,0] 0b 0x0 0x1 REDA6R4 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Swan AxeCavF 0x40 Level(7,Ally,False)     [5,0] 0b 0x0 0x1 REDA5R5 [KillerAxe, HandAxe, Vulnerary] [0x0,0x0,0x0,0x0]
 	UNIT
 
 EnemyUnits:
+	//t1
 	UNIT Beast LanceBone 0x40 Level(7,Enemy,True)     [5,8] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [6,7] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
-	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [3,7] 0b 0x0 0x0 0x0 [KillingEdge] AttackInRangeAI
-	UNIT Beast MogallClass 0x40 Level(7,Enemy,True)     [12,8] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [3,7] 0b 0x0 0x0 0x0 [SavageBlade] AttackInRangeAI
+	UNIT Beast MogallClass 0x40 Level(7,Enemy,True)     [10,8] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+	
+	//t2
+	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [15,6] 0b 0x0 0x0 0x0 [IronSword] ChargeAI
+	UNIT Lowlander LanceCav 0x40 Level(7,Enemy,True)     [15,8] 0b 0x0 0x0 0x0 [IronLance] ChargeAI
+	UNIT Lowlander Soldier 0x40 Level(7,Enemy,True)     [11,6] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT Lowlander Mage 0x40 Level(7,Enemy,True)     [13,7] 0b 0x0 0x0 0x0 [Thunder] ChargeAI
+	
+	//t3 
+	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [14,7] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
+	
+	//north middle room
+	UNIT Beast SwordBone 0x40 Level(7,Enemy,True)     [17,7] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	UNIT Lowlander Archer 0x40 Level(7,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
+	UNIT Lowlander Mage 0x40 Level(7,Enemy,True)     [21,1] 0b 0x0 0x0 0x0 [Fire] AttackIn2RangeAI
+	UNIT Lowlander Knight 0x40 Level(7,Enemy,True)     [19,0] 0b 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
+	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [20,1] 0b 0x0 0x0 0x0 [RottenClaw] AttackIn2RangeAI
+	//covering north middle room south exit
+	UNIT Lowlander AxeCav 0x40 Level(7,Enemy,True)     [22,4] 0b 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+	
+	//by SE stairs
+	UNIT Lowlander Knight 0x40 Level(7,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [SteelLance] AttackInRangeAI //covers south treasure room top door archer
+	
+	//NE room
+	UNIT Lowlander Soldier 0x40 Level(7,Enemy,True)     [22,3] 0b 0x0 0x0 0x0 [Javelin] BossAI
+	UNIT Lowlander Soldier 0x40 Level(7,Enemy,True)     [23,4] 0b 0x0 0x0 0x0 [Javelin] BossAI
+	UNIT Lowlander Mage 0x40 Level(7,Enemy,True)     [23,3] DropItem 0x0 0x0 0x0 [Thunder, ThousandGold] BossAI
+	
+	//south middle room
+	UNIT Beast MogallClass 0x40 Level(7,Enemy,True)     [18,14] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+	UNIT Beast Bael 0x40 Level(7,Enemy,True)     [20,12] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT Beast Bael 0x40 Level(7,Enemy,True)     [16,12] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	
+	//by south treasure room top door
+	UNIT Lowlander Archer 0x40 Level(7,Enemy,True)     [13,10] 0b 0x0 0x0 0x0 [Longbow] BossAI
+	UNIT Lowlander Myrmidon 0x40 Level(7,Enemy,True)     [11,10] 0b 0x0 0x0 0x0 [LightBrand] BossAI
+	
+	//south treasure room
+	UNIT Lowlander Myrmidon 0x40 Level(7,Enemy,True)     [10,15] 0b 0x0 0x0 0x0 [LightBrand] AttackInRangeAI
+	
+	//by south treasure room bottom door
+	UNIT Lowlander Archer 0x40 Level(7,Enemy,True)     [14,13] 0b 0x0 0x0 0x0 [SilverBow] BossAI
+
+	//SE room
+	UNIT Beast AxeBone 0x40 Level(7,Enemy,True)     [24,9] 0b 0x0 0x0 0x0 [SteelAxe,HandAxe] AttackInRangeAI
+	UNIT Lowlander Myrmidon 0x40 Level(7,Enemy,True)     [25,10] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	UNIT Ch4LowlanderBoss LowMage 0x40 Level(12,Enemy,True)     [24,15] 0b 0x0 0x0 0x0 [Pain,Unfamiliarity] BossAI
+	UNIT Beast BowBone 0x40 Level(7,Enemy,True)     [25,15] 0b 0x0 0x0 0x0 [Longbow] BossAI
+	UNIT Beast BowBone 0x40 Level(7,Enemy,True)     [23,15] 0b 0x0 0x0 0x0 [Longbow] BossAI
+	UNIT Lowlander Knight 0x40 Level(7,Enemy,True)     [23,13] 0b 0x0 0x0 0x0 [ShortSpear] BossAI
+	UNIT Lowlander Knight 0x40 Level(7,Enemy,True)     [23,12] 0b 0x0 0x0 0x0 [ShortSpear] BossAI
+	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [26,11] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
+	UNIT
+	
+BackReinforcementSWUnits:
+	UNIT Lowlander AxeCav 0x40 Level(7,Enemy,True)     [4,15] 0b 0x0 0x0 0x0 [SilverAxe] ChargeAI
+	UNIT
+	
+BackReinforcementNWUnits:
+	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [4,0] 0b 0x0 0x0 0x0 [SilverSword] ChargeAI
+	UNIT
+	
+BackReinforcementNEUnits:
+	UNIT Lowlander LowMage 0x40 Level(15,Enemy,True)     [24,0] 0b 0x0 0x0 0x0 [Exploitation] ChargeAI
+	UNIT Lowlander LowMage 0x40 Level(15,Enemy,True)     [25,0] 0b 0x0 0x0 0x0 [Exploitation] ChargeAI
 	UNIT
 
 GateGuardUnits:
@@ -487,6 +561,55 @@ Turn1Events:
 	FlagIsSet(ThiefDealFlag, 0x0)
 		CALL ThievesEvent
 	LABEL 0x0
+	NoFade
+	ENDA
+	
+BackReinforcementSWEvent:
+	SpawnReinforcements(BackReinforcementSWUnits)
+	NoFade
+	ENDA
+	
+BackReinforcementNWEvent:
+	SpawnReinforcements(BackReinforcementNWUnits)
+	NoFade
+	ENDA
+	
+BackReinforcementNEEvent:
+	SpawnReinforcements(BackReinforcementNEUnits)
+	NoFade
+	ENDA
+	
+/*	
+EscapeCheckEvent: //THIS CODE WORKS BUT NOT FOR GREEN UNITS BECAUSE THEY DON'T ACTUALLY GET THE ESCAPED STATUS
+	GetUnitStatus(Ch4NPCMan,State) //put unit's state bitfield in memory slot C
+	//CenterTextbox(DebugPenis)
+	//SVAL 0xC 0x10000
+	SVAL 1 Escaped //put 0x10000 in memory slot 1
+	SAND 0xC 1 0xC //AND operation on slots 1 and C and put the result in slot C. this checks whether the Escaped bit (0x10000) is on
+	BNE 0x1 0xC 1 //if slot 1 does not equal slot C, jump to LABEL 0x1
+		GetUnitStatus(Ch4NPCWoman,State) //get if unit has escaped status. if both do, end the map
+		//CenterTextbox(DebugPenis)
+		//SVAL 0xC 0x10000
+		SVAL 1 Escaped
+		SAND 0xC 1 0xC
+		BNE 0x1 0xC 1
+			CALL EndingScene
+	LABEL 0x1
+	NoFade
+	ENDA
+	*/
+	
+EscapeCheckEvent:
+	CHECK_EXISTS Ch4NPCMan
+	//CenterTextbox(DebugPenis)
+	SVAL 1 0x1
+	BEQ 0x1 0xC 1 //if C equals 0 then
+		CHECK_EXISTS Ch4NPCWoman
+		//CenterTextbox(DebugPenis)
+		SVAL 1 0x1
+		BEQ 0x1 0xC 1 //if C equals 0 then
+			CALL EndingScene
+	LABEL 0x1
 	NoFade
 	ENDA
 	

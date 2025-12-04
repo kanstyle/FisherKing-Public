@@ -109,6 +109,9 @@ ORG ItemIconEntry(Skewer)
 ORG ItemIconEntry(SavageGore)
 #incbin "Lances/SavageGore.dmp"
 
+ORG ItemIconEntry(ShortSpear)
+#incbin "Lances/ShortSpear.dmp"
+
 // axes
 ORG ItemIconEntry(IronAxe)
 #incbin "Axes/IronAxe.dmp"		// Ereshkigal
@@ -151,7 +154,7 @@ ORG ItemIconEntry(SteelBow)
 #incbin "Bows/SteelBow-2WB.dmp"		// Ereshkigal
 
 ORG ItemIconEntry(SilverBow)
-#incbin "Bows/AshFlatbow.dmp"		// Ereshkigal
+#incbin "Bows/RadiantBow.dmp"		// Ereshkigal
 
 ORG ItemIconEntry(Longbow)
 #incbin "Bows/OakLongbow.dmp"		// Ereshkigal

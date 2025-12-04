@@ -75,6 +75,7 @@
 
 #define Ch2BeastBoss 0xAB
 #define JabberwockBoss 0xAD
+#define Ch4LowlanderBoss 0xAF
 
 #define Jerry 0x83
 #define Sigil 0x3B
@@ -132,6 +133,9 @@
 #define AxeCavF 0x8C
 #define Jabberwock 0x8D
 
+#define LowMage Shaman
+#define HighMage Mage
+
 // Terrain Move Costs
 #define PromoInfantryMC 0x880b808
 #define InfantryMC 0x880b849
@@ -184,6 +188,8 @@
 #define Unfamiliarity 0x48
 #define Torture 0x49
 #define Death 0x4a
+
+#define ThousandGold 0x9f
 
 #define Bomb 0xC1
 #define HeavyBomb 0xC2

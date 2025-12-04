@@ -8,6 +8,9 @@ SkillIcons:
 /*ORG SkillIcon(ItFindsYouID)
 #incbin "SkillIcons/ItFindsYou.dmp"*/
 
+ORG SkillIcon(PillowsBiggestFanID)
+#incbin "SkillIcons/CallPillow.dmp" //should change to the new pillow fan icon
+
 ORG SkillIcon(JuggernautID)
 #incbin "SkillIcons/Juggernaut.dmp"
 
@@ -31,6 +34,9 @@ ORG SkillIcon(JadedID)
 
 ORG SkillIcon(ExtendedDestructionID)
 #incbin "SkillIcons/ExtendedDestruction.dmp"
+
+ORG SkillIcon(CallPillowID)
+#incbin "SkillIcons/CallPillow.dmp"
 
 ORG SkillIcon(RevolutionID)
 #incbin "SkillIcons/Revolution.dmp"

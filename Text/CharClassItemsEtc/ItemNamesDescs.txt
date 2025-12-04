@@ -231,7 +231,7 @@ Ignores Res. Reaver effect.[X]
 
 Savage Blade[X]
 
-## SavageBladeDesc ^
+## SavageBladeDesc
 
 High crit rate.[X]
 
@@ -239,7 +239,7 @@ High crit rate.[X]
 
 Savage Gore[X]
 
-## SavageGoreDesc ^
+## SavageGoreDesc
 
 High crit rate.[X]
 
@@ -247,7 +247,7 @@ High crit rate.[X]
 
 Savage Maul[X]
 
-## SavageMaulDesc ^
+## SavageMaulDesc
 
 High crit rate.[X]
 
@@ -791,7 +791,12 @@ Knight Crest[X]
 ## KnightCrestDesc
 [X]
 
-Orion's Bolt
+## OrionsBoltName ^
+Orion's Bolt[X]
+
+## OrionsBoltDesc
+[X]
+
 ## ElysianWhipName ^
 Elysian Whip[X]
 
@@ -948,7 +953,12 @@ Master Seal[X]
 ## MasterSealDesc
 [X]
 
-Metis's Tome
+## MetisTomeName ^
+Metis's Tome[X]
+
+## MetisTomeDesc
+[X]
+
 ## SharpClawName ^
 Sharp Claw[X]
 
@@ -1151,4 +1161,10 @@ Gold Gem[X]
 Skill Scroll[X]
 
 ## SkillScrollDesc
+[X]
+
+## ThousandGoldName ^
+1,000 Gold[X]
+
+## ThousandGoldDesc
 [X]

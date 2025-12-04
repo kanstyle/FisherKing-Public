@@ -310,7 +310,7 @@ Furthermore, each ally adjacent to[N]
 the target ([OpenQuote]flanking") will grant[N]
 [ToggleRed]+20 Crit.[ToggleRed][N]
 Try attacking with the Princeling's[N]
-40-crit Rapier.[A][X]
+35-crit Rapier.[A][X]
 
 ## Ch0TutorialComeBack
 
@@ -332,7 +332,7 @@ alone, then.[A][X]
 
 Weapon triangle advantage grants[N]
 +20 Hit and +2 Attack, and [ToggleRed]+15 Crit.[ToggleRed][N]
-With 40 Crit, the Rapier can critically hit[N]
+With 35 Crit, the Rapier can critically hit[N]
 axe-users without any flanking allies.[A][X]
 
 ## Ch0TutorialStage3
@@ -601,3 +601,6 @@ The man who had no fear.[A]
 I shouldn't wander off[N]
 by myself.[AN]
 That was careless.[A][X]
+
+## DebugPenis
+Penis.[A][X]

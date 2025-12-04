@@ -4,6 +4,12 @@
 
 //My Skills
 
+//TurtleShield
+#define TurtleShieldID 32
+
+//PillowsBiggestFan
+#define PillowsBiggestFanID 23
+
 //Bold
 #define BoldID 170
 
@@ -918,7 +924,7 @@
 
 //Barricade: Damage taken is halved after first being struck.
 //By Snakey1
-#define BarricadeID 23
+#define BarricadeID 255
 
 //Barricade+: In combat, damage recieved equals half of the damage when struck last.
 //By Snakey1
@@ -930,7 +936,7 @@
 
 //Colossus: Triples Strength. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define ColossusID 32
+#define ColossusID 255
 
 //Corona: Negate enemy resistance. (Skill% activation)
 //By Sme
