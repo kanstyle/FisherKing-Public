@@ -79,74 +79,74 @@ NPCUnits:
 	
 SwanUnits:
 	UNIT HeroChar UpstartM 0x40 Level(10,Ally,False)     [4,0] 0b 0x0 0x1 REDA6R4 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Swan AxeCavF 0x40 Level(7,Ally,False)     [5,0] 0b 0x0 0x1 REDA5R5 [KillerAxe, HandAxe, Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT Swan AxeCavF 0x40 Level(6,Ally,False)     [5,0] 0b 0x0 0x1 REDA5R5 [KillerAxe, HandAxe, Vulnerary] [0x0,0x0,0x0,0x0]
 	UNIT
 
 EnemyUnits:
 	//t1
-	UNIT Beast LanceBone 0x40 Level(7,Enemy,True)     [5,8] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
-	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [6,7] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
-	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [3,7] 0b 0x0 0x0 0x0 [SavageBlade] AttackInRangeAI
-	UNIT Beast MogallClass 0x40 Level(7,Enemy,True)     [10,8] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+	UNIT Beast LanceBone 0x40 Level(6,Enemy,True)     [5,8] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT Beast Revenant 0x40 Level(6,Enemy,True)     [6,7] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
+	UNIT Lowlander Mercenary 0x40 Level(6,Enemy,True)     [3,7] 0b 0x0 0x0 0x0 [SavageBlade] AttackInRangeAI
+	UNIT Beast MogallClass 0x40 Level(6,Enemy,True)     [10,8] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
 	
 	//t2
-	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [15,6] 0b 0x0 0x0 0x0 [IronSword] ChargeAI
-	UNIT Lowlander LanceCav 0x40 Level(7,Enemy,True)     [15,8] 0b 0x0 0x0 0x0 [IronLance] ChargeAI
-	UNIT Lowlander Soldier 0x40 Level(7,Enemy,True)     [11,6] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
-	UNIT Lowlander Mage 0x40 Level(7,Enemy,True)     [13,7] 0b 0x0 0x0 0x0 [Thunder] ChargeAI
+	UNIT Lowlander SwordCav 0x40 Level(6,Enemy,True)     [15,6] 0b 0x0 0x0 0x0 [IronSword] ChargeAI
+	UNIT Lowlander LanceCav 0x40 Level(6,Enemy,True)     [15,8] 0b 0x0 0x0 0x0 [IronLance] ChargeAI
+	UNIT Lowlander Soldier 0x40 Level(6,Enemy,True)     [11,6] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT Lowlander Mage 0x40 Level(6,Enemy,True)     [13,7] 0b 0x0 0x0 0x0 [Thunder] ChargeAI
 	
 	//t3 
-	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [14,7] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
+	UNIT Beast Revenant 0x40 Level(6,Enemy,True)     [14,7] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
 	
 	//north middle room
-	UNIT Beast SwordBone 0x40 Level(7,Enemy,True)     [17,7] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
-	UNIT Lowlander Archer 0x40 Level(7,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
-	UNIT Lowlander Mage 0x40 Level(7,Enemy,True)     [21,1] 0b 0x0 0x0 0x0 [Fire] AttackIn2RangeAI
-	UNIT Lowlander Knight 0x40 Level(7,Enemy,True)     [19,0] 0b 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
-	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [20,1] 0b 0x0 0x0 0x0 [RottenClaw] AttackIn2RangeAI
+	UNIT Beast SwordBone 0x40 Level(6,Enemy,True)     [17,7] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	UNIT Lowlander Archer 0x40 Level(6,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
+	UNIT Lowlander Mage 0x40 Level(6,Enemy,True)     [21,1] 0b 0x0 0x0 0x0 [Fire] AttackIn2RangeAI
+	UNIT Lowlander Knight 0x40 Level(6,Enemy,True)     [19,0] 0b 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
+	UNIT Beast Revenant 0x40 Level(6,Enemy,True)     [20,1] 0b 0x0 0x0 0x0 [RottenClaw] AttackIn2RangeAI
 	//covering north middle room south exit
-	UNIT Lowlander AxeCav 0x40 Level(7,Enemy,True)     [22,4] 0b 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+	UNIT Lowlander AxeCav 0x40 Level(6,Enemy,True)     [22,4] 0b 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
 	
 	//by SE stairs
-	UNIT Lowlander Knight 0x40 Level(7,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [SteelLance] AttackInRangeAI //covers south treasure room top door archer
+	UNIT Lowlander Knight 0x40 Level(6,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [SteelLance] AttackInRangeAI //covers south treasure room top door archer
 	
 	//NE room
-	UNIT Lowlander Soldier 0x40 Level(7,Enemy,True)     [22,3] 0b 0x0 0x0 0x0 [Javelin] BossAI
-	UNIT Lowlander Soldier 0x40 Level(7,Enemy,True)     [23,4] 0b 0x0 0x0 0x0 [Javelin] BossAI
-	UNIT Lowlander Mage 0x40 Level(7,Enemy,True)     [23,3] DropItem 0x0 0x0 0x0 [Thunder, ThousandGold] BossAI
+	UNIT Lowlander Soldier 0x40 Level(6,Enemy,True)     [22,3] 0b 0x0 0x0 0x0 [Javelin] BossAI
+	UNIT Lowlander Soldier 0x40 Level(6,Enemy,True)     [23,4] 0b 0x0 0x0 0x0 [Javelin] BossAI
+	UNIT Lowlander Mage 0x40 Level(6,Enemy,True)     [23,3] DropItem 0x0 0x0 0x0 [Thunder, Speedwings] BossAI
 	
 	//south middle room
-	UNIT Beast MogallClass 0x40 Level(7,Enemy,True)     [18,14] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
-	UNIT Beast Bael 0x40 Level(7,Enemy,True)     [20,12] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
-	UNIT Beast Bael 0x40 Level(7,Enemy,True)     [16,12] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT Beast MogallClass 0x40 Level(6,Enemy,True)     [18,14] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+	UNIT Beast Bael 0x40 Level(6,Enemy,True)     [20,12] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT Beast Bael 0x40 Level(6,Enemy,True)     [16,12] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
 	
 	//by south treasure room top door
-	UNIT Lowlander Archer 0x40 Level(7,Enemy,True)     [13,10] 0b 0x0 0x0 0x0 [Longbow] BossAI
-	UNIT Lowlander Myrmidon 0x40 Level(7,Enemy,True)     [11,10] 0b 0x0 0x0 0x0 [LightBrand] BossAI
+	UNIT Lowlander Archer 0x40 Level(6,Enemy,True)     [13,10] 0b 0x0 0x0 0x0 [Longbow] BossAI
+	UNIT Lowlander Myrmidon 0x40 Level(6,Enemy,True)     [11,10] 0b 0x0 0x0 0x0 [LightBrand] BossAI
 	
 	//south treasure room
-	UNIT Lowlander Myrmidon 0x40 Level(7,Enemy,True)     [10,15] 0b 0x0 0x0 0x0 [LightBrand] AttackInRangeAI
+	UNIT Lowlander Myrmidon 0x40 Level(6,Enemy,True)     [10,15] 0b 0x0 0x0 0x0 [LightBrand] AttackInRangeAI
 	
 	//by south treasure room bottom door
-	UNIT Lowlander Archer 0x40 Level(7,Enemy,True)     [14,13] 0b 0x0 0x0 0x0 [SilverBow] BossAI
+	UNIT Lowlander Archer 0x40 Level(6,Enemy,True)     [14,13] 0b 0x0 0x0 0x0 [SilverBow] BossAI
 
 	//SE room
-	UNIT Beast AxeBone 0x40 Level(7,Enemy,True)     [24,9] 0b 0x0 0x0 0x0 [SteelAxe,HandAxe] AttackInRangeAI
-	UNIT Lowlander Myrmidon 0x40 Level(7,Enemy,True)     [25,10] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	UNIT Beast AxeBone 0x40 Level(6,Enemy,True)     [24,9] 0b 0x0 0x0 0x0 [SteelAxe,HandAxe] AttackInRangeAI
+	UNIT Lowlander Myrmidon 0x40 Level(6,Enemy,True)     [25,10] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
 	UNIT Ch4LowlanderBoss LowMage 0x40 Level(12,Enemy,True)     [24,15] 0b 0x0 0x0 0x0 [Pain,Unfamiliarity] BossAI
-	UNIT Beast BowBone 0x40 Level(7,Enemy,True)     [25,15] 0b 0x0 0x0 0x0 [Longbow] BossAI
-	UNIT Beast BowBone 0x40 Level(7,Enemy,True)     [23,15] 0b 0x0 0x0 0x0 [Longbow] BossAI
-	UNIT Lowlander Knight 0x40 Level(7,Enemy,True)     [23,13] 0b 0x0 0x0 0x0 [ShortSpear] BossAI
-	UNIT Lowlander Knight 0x40 Level(7,Enemy,True)     [23,12] 0b 0x0 0x0 0x0 [ShortSpear] BossAI
-	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [26,11] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
+	UNIT Beast BowBone 0x40 Level(6,Enemy,True)     [25,15] 0b 0x0 0x0 0x0 [Longbow] BossAI
+	UNIT Beast BowBone 0x40 Level(6,Enemy,True)     [26,12] 0b 0x0 0x0 0x0 [Longbow] BossAI
+	UNIT Lowlander Knight 0x40 Level(6,Enemy,True)     [23,13] 0b 0x0 0x0 0x0 [ShortSpear] BossAI
+	UNIT Lowlander Knight 0x40 Level(6,Enemy,True)     [26,13] 0b 0x0 0x0 0x0 [SilverLance] AttackInRangeAI
+	UNIT Beast Revenant 0x40 Level(6,Enemy,True)     [26,11] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
 	UNIT
 	
 BackReinforcementSWUnits:
-	UNIT Lowlander AxeCav 0x40 Level(7,Enemy,True)     [4,15] 0b 0x0 0x0 0x0 [SilverAxe] ChargeAI
+	UNIT Lowlander AxeCav 0x40 Level(6,Enemy,True)     [4,15] 0b 0x0 0x0 0x0 [SilverAxe] ChargeAI
 	UNIT
 	
 BackReinforcementNWUnits:
-	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [4,0] 0b 0x0 0x0 0x0 [SilverSword] ChargeAI
+	UNIT Lowlander SwordCav 0x40 Level(6,Enemy,True)     [4,0] 0b 0x0 0x0 0x0 [SilverSword] ChargeAI
 	UNIT
 	
 BackReinforcementNEUnits:
@@ -237,17 +237,17 @@ BallroomAudienceUnits:
 	UNIT
 	
 BallroomMonsterUnits:
-	UNIT Beast LanceBone 0x40 Level(7,Enemy,True)     [3,0] 0b 0x0 0x1 REDA3R2 [IronLance] AttackInRangeAI
-	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [4,0] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
-	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [16,6] 0b 0x0 0x1 REDA6R6 [KillingEdge] AttackInRangeAI
-	UNIT Beast MogallClass 0x40 Level(7,Enemy,True)     [16,8] 0b 0x0 0x1 REDA9R8 [EvilEye] AttackInRangeAI
-	UNIT Lowlander AxeCav 0x40 Level(7,Enemy,True)     [16,7] 0b 0x0 0x1 REDA11R7 [RottenClaw] AttackInRangeAI
+	UNIT Beast LanceBone 0x40 Level(6,Enemy,True)     [3,0] 0b 0x0 0x1 REDA3R2 [IronLance] AttackInRangeAI
+	UNIT Beast Revenant 0x40 Level(6,Enemy,True)     [4,0] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
+	UNIT Lowlander Mercenary 0x40 Level(6,Enemy,True)     [16,6] 0b 0x0 0x1 REDA6R6 [KillingEdge] AttackInRangeAI
+	UNIT Beast MogallClass 0x40 Level(6,Enemy,True)     [16,8] 0b 0x0 0x1 REDA9R8 [EvilEye] AttackInRangeAI
+	UNIT Lowlander AxeCav 0x40 Level(6,Enemy,True)     [16,7] 0b 0x0 0x1 REDA11R7 [RottenClaw] AttackInRangeAI
 	UNIT
 	
 BallroomMonsterReinforcements:
-	UNIT Beast LanceBone 0x40 Level(7,Enemy,True)     [3,15] 0b 0x0 0x1 REDA3R9 [IronLance] AttackInRangeAI
-	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [4,15] 0b 0x0 0x1 REDA5R9 [RottenClaw] ChargeAI
-	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [5,14] 0b 0x0 0x1 REDA6R9 [KillingEdge] AttackInRangeAI
+	UNIT Beast LanceBone 0x40 Level(6,Enemy,True)     [3,15] 0b 0x0 0x1 REDA3R9 [IronLance] AttackInRangeAI
+	UNIT Beast Revenant 0x40 Level(6,Enemy,True)     [4,15] 0b 0x0 0x1 REDA5R9 [RottenClaw] ChargeAI
+	UNIT Lowlander Mercenary 0x40 Level(6,Enemy,True)     [5,14] 0b 0x0 0x1 REDA6R9 [KillingEdge] AttackInRangeAI
 	UNIT
 	
 ThiefUnits:
@@ -620,6 +620,7 @@ HeroSwanEvent:
 	LOAD1 0x1 SwanUnits
 	ENUN
 	Highlight(HeroChar)
+	Text(Ch4HeroSwanArrival)
 	NoFade
 	ENDA
 	
@@ -665,9 +666,9 @@ ThievesEvent:
 	STAL 45
 	FAWI 16
 	SoundEffect(0xF8) //elfire hitting
-	TILECHANGE 0x0
-	TILECHANGE 0x5
+	TILECHANGE 0x1
 	TILECHANGE 0x6
+	TILECHANGE 0x7
 	STAL 15
 	FAWU 16
 	SoundEffect(0xAF) //destroyed wall
@@ -680,7 +681,7 @@ ThievesEvent:
 	MOVE 5 ThiefUnit [13,3]
 	STAL 30
 	SoundEffect(DoorEffect)
-	TILECHANGE 0x3
+	TILECHANGE 0x4
 	STAL 30
 	//NOTIFY Ch4ItemStolen ItemStolen 0x0
 	GiveItem(BraveSword,ThiefUnit)

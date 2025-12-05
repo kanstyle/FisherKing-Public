@@ -812,3 +812,34 @@ I gotta split before--[A]
 ## Ch4ItemStolen
 Brave Sword was pilfered.
 [X]
+
+## Ch4HeroSwanArrival
+[mr][LoadHeroM]
+Hey, Teacher![4][4] I'm here![A]
+
+[ml][LoadSwan]
+[ml][ts]
+Here we are![4][4][4][ts] ...Oh dear.[N]
+What a mess this is.[AN]
+[ce][mml]Bleh.[4][mml][4][4] It really is the smell that[N]
+gets you.[4] Curse my weak stomach.[A][oe]
+
+[mr][ts]
+Anyway, you really saved my hide.[4][N]
+Swan, right?[A]
+
+[ml]
+Yes, call me Swan.[4] And don't mention it.[AN]
+As neither a man nor as a knight could I[N]
+leave you in such danger.[AN]
+[ce]After all, is it not the duty of all[N]
+creatures to--[A][oe]
+
+[mr]
+Yeah, yeah; let's push on through![A][clear]
+
+[ml][ts]
+Oh, yes, pardon me.[4][4] ...King's rings, there's[N]
+already so much blood on the floor.[AN][ce]
+Mind over matter, mind over matter...[A]
+[X]

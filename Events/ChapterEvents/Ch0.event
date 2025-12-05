@@ -91,6 +91,15 @@ UnitsCh2:
 	UNIT Pigeon SkyRat 0x40 Level(5,Ally,False)     [19,3] 0b 0x0 0x0 0x0 [SteelLance, IronLance, Vulnerary] [0x0,0x0,0x0,0x0]
 	UNIT
 	
+UnitsCh3:
+	UNIT Baby Mage_F 0x40 Level(5,Ally,False)     [18,19] 0b 0x0 0x0 0x0 [Lightning,Fire] DoNothingAI
+	UNIT Bunny BunnyRecruit 0x40 Level(5,Ally,False)     [2,18] 0b 0x0 0x0 0x0 [Axereaver,Javelin,IronLance] DoNothingAI
+	UNIT
+	
+UnitsCh4:
+	UNIT Swan AxeCavF 0x40 Level(7,Ally,False)     [5,0] 0b 0x0 0x0 0x0 [KillerAxe, HandAxe, Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT
+	
 TeacherUnit:
 	UNIT YoungTeacher Veteran 0x40 Level(10,Ally,False)     [2,13] 0b 0x0 0x1 REDA3R14 [IronLance,SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT
@@ -605,6 +614,23 @@ LABEL CSPg1
 		AutoLevel(Pigeon, 5)
 		AutoLevel(Brother, 5)
 		MNC2 Ch3
+		//GOTO EndMenuSkipStartEvent
+		
+	SVAL 7 Ch4
+	CenterTextbox(DebugPauseText)
+	BLT EndMenuSkipStartEvent 8 7
+		// fill this in later with ch. 2 stuff
+		LOAD1 0x1 UnitsCh3
+		SilentGiveItem(HeavySpear,Bunny)
+		SilentGiveItem(Hammer,Dragon)
+		CenterTextbox(DebugPauseText)
+		AutoLevel(HeroChar, 6)
+		AutoLevel(Dragon, 6)
+		AutoLevel(Pillow, 6)
+		AutoLevel(Pigeon, 6)
+		AutoLevel(Brother, 6)
+		AutoLevel(Bunny, 6)
+		MNC2 Ch4
 		//GOTO EndMenuSkipStartEvent
 	
 	LABEL EndMenuSkipStartEvent

@@ -378,8 +378,8 @@ Jerry's life is in my hands![AN][X]
 In this game, when player units reach[N]
 0 HP, they will not die.[AN]
 Instead, they enter a [Red]Dying[Red] state and must[N]
-be healed with a [Red]Restore[Red] staff before 3[N]
-turns are up.[AN]
+be healed with a [Red]Restore[Red] staff on the[N]
+next turn.[AN]
 Otherwise, they will die permanently.[A][X]
 
 ## Ch0OldPrinceAppears

@@ -83,4 +83,6 @@ echo: | ( "%symcombo%" "%target_sym%" "%target_sym%" "%base_dir%\Tools\sym\Vanil
 echo:
 echo Done!
 
+python fe8_stat_calculator.py
+
 pause

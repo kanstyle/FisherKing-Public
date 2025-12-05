@@ -85,7 +85,7 @@ void ReviveAndSetPetrify(ProcPtr proc) {
 		curUnit->curHP = 1;
 		curUnit->state |= (US_HAS_MOVED);
 		curUnit->statusIndex = 0xB;
-		curUnit->statusDuration = 0x3;
+		curUnit->statusDuration = 0x2;
 		curUnit->supportBits |= 0x1; //set support flag
 	}
 }
