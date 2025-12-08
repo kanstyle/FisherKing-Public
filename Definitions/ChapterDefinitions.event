@@ -5,11 +5,16 @@
 #define Ch2 0x2
 #define Ch3 0x3
 #define Ch4 0x4
+#define Ch5 0x5
+#define Ch5d 0x6
+#define Ch6 0x7
+
 #define MidnightCh 0x2C
 #define BaronManorEntranceCh 0x2D
 #define BaronManorHallwayCh 0x2E
 #define PrinceRoomCh 0x2F
 #define BaronManorEntranceNightCh 0x30
+#define BaronManorFoyerCh 0x31
 #ifdef USE_TEST_MAP
 	#define BossRush 0x0
 #else
@@ -51,6 +56,13 @@
 
 #define PrinceRoomMapID 0x22
 #define PrinceRoomMapChangesID 0x23
+
+#define Ch5MapID 0x25
+#define Ch5MapChangesID 0x26
+#define Ch5EventsID 0x27
+
+#define BaronManorFoyerMapID 0x28
+
 //0x24
 
 //TILESET IDs (START FROM 0x88 when replacing stuff)
@@ -129,4 +141,6 @@
 #define ValniObjectID 0xBA
 #define ValniPaletteID 0xBB
 #define ValniConfigID 0xBC
+
 //0xBD taken
+#define FlasubanVillageNightPaletteID 0xBE

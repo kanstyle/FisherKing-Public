@@ -174,13 +174,43 @@ Indeed.[4] Was the fighting fierce?[A]
 Nothing we couldn't handle.[A]
 
 [fl]
-A worthy answer.[4] And you, Songbird.[N]
+A worthy answer.[4] And you, Songbird.[N][4]
 Have you anything to say to me?[AN][ts]
-There must be something, knowing how[N]
-long you agitated in my city.[A]
+There must be something, knowing the[N]
+ugly rumors you spread in my city.[AN]
+War with the Lowlands, was it?[A]
 
 [r]
-I will not resist.[4] You need not harm me.[N][4][4]
+Indeed.[4] It is inevitable.[AN]
+The Highlands and the Lowlands are[N]
+light and shadow.[AN]
+Heat and cold.[4] Conflict between[N]
+them is a law of things.[A]
+
+[fl]
+Why would I have designs on the Lowlands?[4][N]
+Those foul wastes?[4] Why would anyone?[AN]
+I have only my people in mind, and I fail[N]
+to see how it would serve them.[A]
+
+[r]
+There is no basis for my beliefs.[N]
+My message is only the belief itself.[AN]
+I do believe it.[4] But only you can[N]
+decide if you do as well.[A]
+
+[fr][tmm]
+(Not the best argument I've[N]
+ever heard...)[A][tmm]
+
+[fl]
+So you're just a misguided philosopher,[N]
+then.[4] With a thirst for attention.[A]
+
+[r]
+You're free to feel however you
+wish about me.[N][4]
+But you need not harm me.[N][4][4]
 No good will come of doing so.[A]
 
 [fl]

@@ -843,3 +843,256 @@ Oh, yes, pardon me.[4][4] ...King's rings, there's[N]
 already so much blood on the floor.[AN][ce]
 Mind over matter, mind over matter...[A]
 [X]
+
+## Ch4TeacherBossBQ
+[mr][LoadTeacher][tmm]
+...![AN]
+(When I saw the low mage,[N]
+I was struck.)[AN]
+(The one from my nightmares--[AN]
+no, the nightmares of every[N]
+soldier who knew of them.)[AN]
+(A faceless fountain of pain,[AN]
+drawn from a reservoir of sin[N]
+buried deep underground,[AN]
+where no Highlander could[N]
+bear to look.)[AN]
+(Who, or whatever these[N]
+Lowlanders were,[A] they knew[N]
+us far too well.)[A]
+[X]
+
+## Ch4PillowBossBQ
+[mr][LoadPillow][tmm]
+...[AN]
+(No... This thing can't be[N]
+a low mage.)[AN][ce]
+(Someone must have... made[N]
+this... I-it's not real.)[AN][oe]
+(There's always something in[N]
+a low mage's eyes.)[AN]
+(This one's just... just...[4][4][N][ce]
+I hate this... I feel sick...)[A]
+[X]
+
+## Ch4EndTeacherArrives
+[mr][LoadTeacher][tmm]
+(I wonder how red these fountains[N]
+will be when morning comes...)[A][css][4][4]
+(Hm?)[A]
+[X]
+
+## Ch4EndTeacherApproachesGryphon
+[r][LoadTeacher]
+[l][LoadGryphon]
+[fl][LoadEagle]
+[fr][LoadHeroM]
+
+[r]
+Lord Gryphon![A]
+
+[fl]
+There you are![4] That's a relief.[A]
+
+[fr][ts]
+'Course we did.[A]
+
+[r][ts]
+Who were those men just now?[A]
+
+[l]
+My personal detail.[4][4] Low mages and[N]
+a handler.[AN]
+They will sweep the mansion and clear[N]
+whatever creatures infest it.[A]
+
+[r]
+I see.[4] And what of the prince?[4][N]
+Has he been located?[A]
+
+[l]
+The prince is safe.[AN]
+You can relax.[4] His well-being[N]
+is not your concern.[A]
+
+[r]
+He is, milord?[4] Where is he?[4][N]
+
+[fr]
+Hey, Teacher--[A]
+
+[r]
+Forgive me, Lord Gryphon, but I'd[N]
+like to see him.[AN]
+I may have given up my post, but[N]
+not my personal obligations.[A]
+
+[l]
+So you ask after the prince's[N]
+whereabouts, and not your employer's?[A][css][4][4][4]
+
+[r]
+I...[A]
+[X]
+
+## Ch4EndBaronArrives
+[r][LoadTeacher]
+[l][LoadBaron]
+[fl][LoadEagle]
+[fr][LoadHeroM]
+
+[l]
+I've returned.[AN]
+These monstrous scum...[4] I'll see[N]
+them all hacked to pieces.[A]
+
+[fl]
+[ce]I'm truly sorry such a thing happened[N]
+under my watch.[AN][oe]
+I trust your family is safe?[A]
+
+[l][tmm]
+[ce]...[A][css][4][4][4][4][N][tmm]
+[oe]The cooks were found in a bloody heap[N]
+just beyond the ballroom.[AN]
+I could've heard their screams, but I didn't.[A]
+
+[fr]
+Baron...[A]
+
+[l]
+I have no family, Lady Eagle.[N]
+Only my people.[AN]
+For each dead, I'll have a hundred[N]
+of these beasts exterminated.[A]
+
+[fl]
+I'm heartened by your resolve.[A][clear]
+
+[LoadGryphon]
+Your zeal will be appreciated,[N]
+come time to strike back.[A]
+
+[fr]
+...You mean the war?[4][4] You're really[N]
+going to invade the Lowlands?[A]
+
+[l]
+Where else?[AN]
+These are far from the first lives[N]
+taken by that foul mire.[AN]
+I'd be honored to lead the charge.[A]
+
+[fr][mfr]
+But...[4][4] but...[4][4] We don't know anything[N]
+about the Lowlands![AN]
+There could be anything in there![AN]
+I know this is all horrible, but[N]
+you gotta think about this![AN]
+Anyone you send in there is gonna die![A]
+
+[r]
+Hero![4] Watch your mouth![A][css]
+
+[ffr]
+No.[4] He's right.[A][css]
+
+[r][clear]
+[LoadDragon]
+Did you come up with this garbage,[N]
+Gryphon?[A]
+
+[fl]
+[4][4]...Dragon.[A]
+
+[r]
+It sounds like you.[4] You don't care[N]
+how many people die, do you?[AN]
+And I know why.[AN]
+'Cause they're gonna be low mages.[N][4]
+That's why.[4][4] You bastard.[A][css]
+
+[fr][mfr]
+Dragon!![4][4] Are you trying[N]
+to get us executed...?![A][css][4][4][4][4]
+
+[fl][4][4]
+...Who are you?[A]
+
+[r][mvr]
+You--![A]
+
+[fl]
+I simply can't recall.[4][4][N]
+And you're far better off[N]
+that way.[AN]
+Now, sellsword...[N][4][4][4]
+Get out of my sight.[A]
+[X]
+
+## Ch4EndBaronLeaves
+[r][LoadTeacher]
+[l][LoadBaron]
+[fl][LoadGryphon]
+[fr][LoadHeroM]
+
+[l]
+I'll excuse myself as well.[N]
+More soldiers await me outside.[A][css][clear]
+
+[LoadEagle][ce][mvl]
+I as well.[4] I'd like to stay abreast[N]
+of the situation, just in case.[A][clear]
+[X]
+
+## Ch4EndTeacherHeroGryphon
+[r][LoadTeacher]
+[ml][LoadGryphon]
+[fr][LoadHeroM]
+
+[fr][tmm][ce]
+(Phew. I could hear him[N]
+fuming from here...)[A][oe][tmm]
+
+[ml]
+Are you not going with him, Teacher?[A]
+
+[r]
+I've one more thing to ask you, Lord[N]
+Regent.[4] If you'd be so kind.[A]
+
+[ml]
+More questions?[4] After that outburst?[A]
+
+[r]
+I've known you for twenty years, Gryphon.[N]
+You're not so easily offended.[A]
+
+[ml][ts]
+Heh.[AN][ts][4][4]
+Go ahead, then.[4] One question.[A]
+
+[r]
+Who was that, standing beside the[N]
+prince just as the beasts attacked?[AN]
+The one with the odd clothes and[N]
+the butterfly mask.[A]
+
+[fr][mfr]
+That's the one who locked me in[N]
+the room upstairs![A]
+
+[ml]
+An advisor to the crown.[AN]
+They have expertise on matters of[N]
+the Lowlands.[A]
+
+[fr]
+Wait...[4] Do you know about[N]
+someone called [oq]Songbird"?[A]
+
+[ml]
+No, I don't.[AN]
+That was two questions.[N]
+Good evening, you two.[A]
+[X]

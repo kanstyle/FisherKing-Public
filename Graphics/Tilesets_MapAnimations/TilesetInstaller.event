@@ -18,6 +18,10 @@
     ALIGN 4
     FlasubanVillagePalette:
     #incbin "Dmp/Palette/FlasubanVillage_pal.dmp"
+	
+	ALIGN 4
+    FlasubanVillageNightPalette:
+    #incbin "Dmp/Palette/VillageNight_pal.dmp"
 
     ALIGN 4
     FlasubanVillageMapchipConfig:
@@ -173,6 +177,7 @@
     EventPointerTable(FlasubanVillagePaletteID,FlasubanVillagePalette)
     EventPointerTable(FlasubanVillageConfigID,FlasubanVillageMapchipConfig)
     //EventPointerTable(FlasubanVillageOurplePaletteID,FlasubanOurpleVillagePalette)
+    EventPointerTable(FlasubanVillageNightPaletteID,FlasubanVillageNightPalette)
 
 	EventPointerTable(DesertBastionNightSkyObjectID,DesertBastionNightSkyObject)
     EventPointerTable(DesertBastionNightSkyPaletteID,DesertBastionNightSkyPalette)

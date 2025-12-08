@@ -136,6 +136,7 @@ a skill when used.[X]
 #include "ChapterText/Ch3.txt"
 #include "ChapterText/Ch4.txt"
 #include "ChapterText/Ch5.txt"
+#include "ChapterText/Ch5d.txt"
 #include "ChapterText/Ch6.txt"
 
 #include "GameStartMenuText.txt"

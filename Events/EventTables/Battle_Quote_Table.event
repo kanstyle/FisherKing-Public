@@ -16,4 +16,8 @@ SpecifiedBattleConvo(Dragon,Wise,Ch3,Ch3DragonWiseBQFlag,Ch3DragonWiseBQ)
 SpecifiedBattleConvo(Bunny,Wise,Ch3,Ch3BunnyWiseBQFlag,Ch3BunnyWiseBQ)
 UnspecifiedBattleConvo(Wise,Ch3,Ch3WiseBQFlag,Ch3WiseBQ)
 
+//Ch4
+SpecifiedBattleConvo(Teacher,Ch4LowlanderBoss,Ch4,Ch4TeacherBossBQFlag,Ch4TeacherBossBQ)
+SpecifiedBattleConvo(Pillow,Ch4LowlanderBoss,Ch4,Ch4PillowBossBQFlag,Ch4PillowBossBQ)
+
 BYTE 0xFF 0xFF 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 // Terminator

@@ -2,6 +2,9 @@ EventPointerTable(Ch4EventsID, PointerList)
 
 #define ThiefUnit 0xF0
 
+#define Ch4TeacherBossBQFlag 0x20
+#define Ch4PillowBossBQFlag 0x21
+
 PointerList:
 	POIN TurnBasedEvents
 	POIN CharacterBasedEvents
@@ -37,12 +40,12 @@ MiscBasedEvents:
 	END_MAIN
 
 LocationBasedEvents:
-	Chest(Speedwings,11,14)
+	Chest(RedGem,11,16)
 	Chest(Rapier,12,3)
 	//DurabilityChest(SkillScroll,PillowsBiggestFanID,12,3)
-	Door(10,11)
-	Door(11,11)
-	Door(13,13)
+	Door(10,13)
+	Door(11,13)
+	Door(13,15)
 	END_MAIN
 
 Dunno1:
@@ -87,28 +90,32 @@ EnemyUnits:
 	UNIT Beast LanceBone 0x40 Level(6,Enemy,True)     [5,8] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 	UNIT Beast Revenant 0x40 Level(6,Enemy,True)     [6,7] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
 	UNIT Lowlander Mercenary 0x40 Level(6,Enemy,True)     [3,7] 0b 0x0 0x0 0x0 [SavageBlade] AttackInRangeAI
-	UNIT Beast MogallClass 0x40 Level(6,Enemy,True)     [10,8] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+	UNIT Lowlander Archer 0x40 Level(6,Enemy,True)     [4,10] 0b 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
+	UNIT Beast MogallClass 0x40 Level(6,Enemy,True)     [10,9] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
 	
 	//t2
-	UNIT Lowlander SwordCav 0x40 Level(6,Enemy,True)     [15,6] 0b 0x0 0x0 0x0 [IronSword] ChargeAI
-	UNIT Lowlander LanceCav 0x40 Level(6,Enemy,True)     [15,8] 0b 0x0 0x0 0x0 [IronLance] ChargeAI
-	UNIT Lowlander Soldier 0x40 Level(6,Enemy,True)     [11,6] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
-	UNIT Lowlander Mage 0x40 Level(6,Enemy,True)     [13,7] 0b 0x0 0x0 0x0 [Thunder] ChargeAI
+	UNIT Lowlander SwordCav 0x40 Level(6,Enemy,True)     [15,9] 0b 0x0 0x0 0x0 [IronSword] ChargeAI
+	UNIT Lowlander LanceCav 0x40 Level(6,Enemy,True)     [15,10] 0b 0x0 0x0 0x0 [IronLance] ChargeAI
+	UNIT Lowlander Soldier 0x40 Level(6,Enemy,True)     [11,6] 0b 0x0 0x0 0x0 [Ridersbane] AttackInRangeAI
+	UNIT Lowlander Mage 0x40 Level(6,Enemy,True)     [12,6] 0b 0x0 0x0 0x0 [Thunder] ChargeAI
 	
 	//t3 
-	UNIT Beast Revenant 0x40 Level(6,Enemy,True)     [14,7] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
+	UNIT Beast Revenant 0x40 Level(6,Enemy,True)     [14,6] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
+	UNIT Lowlander Mage 0x40 Level(6,Enemy,True)     [15,6] 0b 0x0 0x0 0x0 [Thunder] ChargeAI
 	
 	//north middle room
-	UNIT Beast SwordBone 0x40 Level(6,Enemy,True)     [17,7] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
-	UNIT Lowlander Archer 0x40 Level(6,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
-	UNIT Lowlander Mage 0x40 Level(6,Enemy,True)     [21,1] 0b 0x0 0x0 0x0 [Fire] AttackIn2RangeAI
-	UNIT Lowlander Knight 0x40 Level(6,Enemy,True)     [19,0] 0b 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
-	UNIT Beast Revenant 0x40 Level(6,Enemy,True)     [20,1] 0b 0x0 0x0 0x0 [RottenClaw] AttackIn2RangeAI
+	UNIT Beast SwordBone 0x40 Level(6,Enemy,True)     [17,9] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	UNIT Lowlander Archer 0x40 Level(6,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
+	UNIT Lowlander Mage 0x40 Level(6,Enemy,True)     [21,1] 0b 0x0 0x0 0x0 [Thunder] AttackInRangeAI
+	UNIT Lowlander Knight 0x40 Level(6,Enemy,True)     [19,0] 0b 0x0 0x0 0x0 [SteelLance] AttackIn2RangeAI
+	UNIT Beast Revenant 0x40 Level(6,Enemy,True)     [20,1] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
 	//covering north middle room south exit
 	UNIT Lowlander AxeCav 0x40 Level(6,Enemy,True)     [22,4] 0b 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+	UNIT Lowlander SwordCav 0x40 Level(6,Enemy,True)     [18,3] 0b 0x0 0x0 0x0 [SteelBlade] AttackInRangeAI
+	UNIT Beast Tarvos 0x40 Level(6,Enemy,True)     [19,3] 0b 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
 	
 	//by SE stairs
-	UNIT Lowlander Knight 0x40 Level(6,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [SteelLance] AttackInRangeAI //covers south treasure room top door archer
+	UNIT Lowlander Knight 0x40 Level(6,Enemy,True)     [18,10] 0b 0x0 0x0 0x0 [SteelLance] AttackInRangeAI //covers south treasure room top door archer
 	
 	//NE room
 	UNIT Lowlander Soldier 0x40 Level(6,Enemy,True)     [22,3] 0b 0x0 0x0 0x0 [Javelin] BossAI
@@ -116,33 +123,33 @@ EnemyUnits:
 	UNIT Lowlander Mage 0x40 Level(6,Enemy,True)     [23,3] DropItem 0x0 0x0 0x0 [Thunder, Speedwings] BossAI
 	
 	//south middle room
-	UNIT Beast MogallClass 0x40 Level(6,Enemy,True)     [18,14] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
-	UNIT Beast Bael 0x40 Level(6,Enemy,True)     [20,12] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
-	UNIT Beast Bael 0x40 Level(6,Enemy,True)     [16,12] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT Beast MogallClass 0x40 Level(6,Enemy,True)     [18,16] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+	UNIT Beast Bael 0x40 Level(6,Enemy,True)     [20,14] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT Beast Bael 0x40 Level(6,Enemy,True)     [16,14] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
 	
 	//by south treasure room top door
-	UNIT Lowlander Archer 0x40 Level(6,Enemy,True)     [13,10] 0b 0x0 0x0 0x0 [Longbow] BossAI
-	UNIT Lowlander Myrmidon 0x40 Level(6,Enemy,True)     [11,10] 0b 0x0 0x0 0x0 [LightBrand] BossAI
+	UNIT Beast BowBone 0x40 Level(6,Enemy,True)     [13,12] 0b 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
+	UNIT Lowlander Myrmidon 0x40 Level(6,Enemy,True)     [11,12] 0b 0x0 0x0 0x0 [LightBrand] BossAI
 	
 	//south treasure room
 	UNIT Lowlander Myrmidon 0x40 Level(6,Enemy,True)     [10,15] 0b 0x0 0x0 0x0 [LightBrand] AttackInRangeAI
 	
 	//by south treasure room bottom door
-	UNIT Lowlander Archer 0x40 Level(6,Enemy,True)     [14,13] 0b 0x0 0x0 0x0 [SilverBow] BossAI
+	UNIT Lowlander Archer 0x40 Level(6,Enemy,True)     [14,15] 0b 0x0 0x0 0x0 [SilverBow] BossAI
 
 	//SE room
 	UNIT Beast AxeBone 0x40 Level(6,Enemy,True)     [24,9] 0b 0x0 0x0 0x0 [SteelAxe,HandAxe] AttackInRangeAI
 	UNIT Lowlander Myrmidon 0x40 Level(6,Enemy,True)     [25,10] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
-	UNIT Ch4LowlanderBoss LowMage 0x40 Level(12,Enemy,True)     [24,15] 0b 0x0 0x0 0x0 [Pain,Unfamiliarity] BossAI
-	UNIT Beast BowBone 0x40 Level(6,Enemy,True)     [25,15] 0b 0x0 0x0 0x0 [Longbow] BossAI
-	UNIT Beast BowBone 0x40 Level(6,Enemy,True)     [26,12] 0b 0x0 0x0 0x0 [Longbow] BossAI
-	UNIT Lowlander Knight 0x40 Level(6,Enemy,True)     [23,13] 0b 0x0 0x0 0x0 [ShortSpear] BossAI
-	UNIT Lowlander Knight 0x40 Level(6,Enemy,True)     [26,13] 0b 0x0 0x0 0x0 [SilverLance] AttackInRangeAI
+	UNIT Ch4LowlanderBoss LowMage 0x40 Level(12,Enemy,True)     [24,17] 0b 0x0 0x0 0x0 [Pain,Unfamiliarity] BossAI
+	UNIT Beast BowBone 0x40 Level(6,Enemy,True)     [25,17] 0b 0x0 0x0 0x0 [Longbow] BossAI
+	UNIT Beast BowBone 0x40 Level(6,Enemy,True)     [26,14] 0b 0x0 0x0 0x0 [Longbow] BossAI
 	UNIT Beast Revenant 0x40 Level(6,Enemy,True)     [26,11] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
+	UNIT Lowlander Knight 0x40 Level(6,Enemy,True)     [23,15] 0b 0x0 0x0 0x0 [ShortSpear] BossAI
+	UNIT Lowlander Knight 0x40 Level(6,Enemy,True)     [26,15] 0b 0x0 0x0 0x0 [SilverLance] AttackInRangeAI
 	UNIT
 	
 BackReinforcementSWUnits:
-	UNIT Lowlander AxeCav 0x40 Level(6,Enemy,True)     [4,15] 0b 0x0 0x0 0x0 [SilverAxe] ChargeAI
+	UNIT Lowlander AxeCav 0x40 Level(6,Enemy,True)     [4,15] 0b 0x0 0x1 REDA4R15 [SilverAxe] ChargeAI
 	UNIT
 	
 BackReinforcementNWUnits:
@@ -256,6 +263,34 @@ ThiefUnits:
 	
 ThiefEnemy:
 	UNIT 0xAE MogallClass 0x40 Level(10,Enemy,True)     [13,0] 0b 0x0 0x1 REDA13R1 [EvilEye] AttackInRangeAI
+	UNIT
+	
+FoyerPlayerUnits:
+	UNIT Teacher Veteran 0x40 Level(10,Ally,False)     [7,0] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT HeroChar UpstartM 0x40 Level(10,Ally,False)     [8,0] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Headsman 0x40 Level(10,Ally,False)     [9,0] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Ch4NPCMan CivMan 0x40 Level(10,NPC,False)     [6,0] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Ch4NPCWoman CivWoman 0x40 Level(10,NPC,False)     [5,0] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+FoyerPlayerPillowUnits:
+	UNIT Pillow LowVoice 0x40 Level(10,Ally,False)     [10,0] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+FoyerGryphonUnits:
+	UNIT 0xF5 Peer 0x40 Level(10,NPC,False)     [6,8] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0xF6 MageGeneral 0x40 Level(10,NPC,False)     [8,8] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+FoyerMagesUnits:
+	UNIT 0x80 Sage 0x40 Level(10,NPC,False)     [7,4] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0x81 Druid 0x40 Level(10,NPC,False)     [6,5] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0x82 Druid 0x40 Level(10,NPC,False)     [8,5] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0x83 Druid 0x40 Level(10,NPC,False)     [7,6] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+FoyerBaronUnits:
+	UNIT 0x81 Peer 0x40 Level(10,NPC,False)     [7,0] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
 	UNIT
 
 Traps1:
@@ -553,6 +588,126 @@ BeginningScene:
 
 EndingScene:
 	CALL EndEventRoutine
+	DoAllThree
+	
+	FADI 4
+	//Teacher and crew arrive in foyer to find Gryphon and Eagle
+	/*A group of low mages led by a high sage enter the manor and exit the screen
+	Teacher asks Gryphon for the sitrep and who those mages were -- they're his personal detail who will clear the mansion outside
+	Teacher then asks about the prince, and Gryphon equivocates that the prince disappears all the time and this is normal
+	Teacher is starting to get angry when the baron appears and interrupts
+	
+	Baron discovered the bodies of servants who were trapped and unable to make it outside
+	Eagle asks if his family is safe, and he snaps: he has no family, just his people
+	Affirms his desire to punish the Lowlands for this
+	Dragon and Hero step in -- Hero says that fighting the Lowlands is suicide; no one knows anything about the Lowlands
+	Dragon says that Gryphon and the prince don't care because it's low mages who will die fighting the Lowlands, not them
+	Gryphon: "Did anyone ask your opinion, sellsword?"
+	Dragon storms out with Pillow
+	
+	Baron also leaves to regroup with his soldiers outside
+	Teacher, having calmed down somewhat, asks Gryphon about the prince's mysterious advisor. Asks if there's any connection to Songbird
+	Gryphon gives a vague dismissive answer, since it doesn't concern Teacher
+	*/
+	
+	LOMA BaronManorFoyerCh
+	LOAD2 0x1 FoyerPlayerPillowUnits
+	LOAD2 0x1 FoyerMagesUnits
+	LOAD2 0x1 FoyerGryphonUnits
+	UNCM(Pillow,Hide)
+	FADU 4
+	LOAD2 0x1 FoyerPlayerUnits
+	ENUN
+	
+	MOVE 8 Teacher [7,1]
+	MOVE 8 HeroChar [8,2]
+	MOVE 8 Dragon [9,1]
+	MOVE 8 Ch4NPCMan [6,2]
+	MOVE 8 Ch4NPCWoman [5,2]
+	ENUN
+	
+	STAL 30
+	WARPIN [10,0]
+	UNCR(Pillow,Hide)
+	ENDWARP
+	STAL 45
+	Text(Ch4EndTeacherArrives)
+	MOVE 8 Teacher [5,1]
+	MOVE 8 HeroChar [9,2]
+	MOVE 8 Ch4NPCMan [5,3]
+	ENUN
+	STAL 30
+	
+	MOVE 8 0x80 [7,0]
+	ENUN
+	DISA 0x80
+	MOVE 8 0x81 [8,0]
+	MOVE 8 0x82 [6,0]
+	MOVE 8 0x83 [7,0]
+	ENUN
+	DISA 0x81
+	DISA 0x82
+	DISA 0x83
+	
+	STAL 60
+	MOVE 8 Ch4NPCMan [4,9]
+	MOVE 8 Ch4NPCWoman [4,9]
+	ENUN
+	DISA Ch4NPCMan
+	DISA Ch4NPCWoman
+	STAL 60
+	
+	MOVE 8 Teacher [6,7]
+	MOVE 8 HeroChar [7,7]
+	MOVE 8 Dragon [8,7]
+	ENUN
+	STAL 30
+	WarpOutNoDisa(Pillow)
+	MOVE 65535 Pillow [9,6]
+	WARPIN [9,6]
+	UNCR(Pillow,Hide)
+	ENDWARP
+	STAL 30
+	Highlight(Teacher)
+	SetBackground(Castle_Hall)
+	Text(Ch4EndTeacherApproachesGryphon)
+	FADI 8
+	CLEAN
+	FADU 8
+	STAL 30
+	LOAD2 0x1 FoyerBaronUnits
+	MOVE 8 0x81 [7,6]
+	ENUN
+	STAL 30
+	Highlight(0x81)
+	SetBackground(Castle_Hall)
+	Text(Ch4EndBaronArrives)
+	FADI 8
+	CLEAN
+	FADU 8
+	STAL 30
+	MOVE 8 Dragon [9,9]
+	ENUN
+	UNCM(Dragon,Hide)
+	STAL 60
+	WarpOutNoDisa(Pillow)
+	Highlight(0x81)
+	Text(Ch4EndBaronLeaves)
+	MOVE 8 0x81 [7,9]
+	ENUN
+	DISA 0xF6
+	
+	MOVE 8 0xF6 [6,9]
+	ENUN
+	DISA 0x81
+	STAL 60
+	Highlight(Teacher)
+	SetBackground(Castle_Hall)
+	Text(Ch4EndTeacherHeroGryphon)
+	FADI 4
+	CLEAN
+	DoAllThree
+	
 	MNC2 Ch0
 	NoFade
 	ENDA

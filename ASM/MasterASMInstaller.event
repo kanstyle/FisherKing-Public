@@ -37,6 +37,7 @@
 #include "CHAI_Pirate/Installer.event"
 #include "BombBonusDamage/Installer.event"
 #include "TurtleShield/Installer.event"
+#include "FE8-Convoy_Partition_and_Item_Combining/FE8-Convoy_Stuff_EA.event"
 //#include "BiggestFan/Installer.event"
 //#include "Helpers.event"
 //#include "Rewrite-main/SRC/ChapterTitlesAsText/Installer.event"

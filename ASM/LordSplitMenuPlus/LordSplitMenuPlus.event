@@ -127,7 +127,7 @@ MenuOption(Ch2Title, 0, 0)
 MenuOption(Ch3Title, 0, 0)
 MenuOption(Ch4Title, 0, 0)
 MenuOption(Ch5Title, 0, 0)
-MenuOption(Ch6Title, 0, 0)
+MenuOption(Ch5dTitle, 0, 0)
 MenuOption(GSMNext, 0, 0)
 MenuTerminator
 
