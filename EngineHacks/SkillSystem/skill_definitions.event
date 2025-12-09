@@ -4,6 +4,9 @@
 
 //My Skills
 
+//Shikari
+#define ShikariID 52
+
 //TurtleShield
 #define TurtleShieldID 32
 
@@ -348,7 +351,7 @@
 
 //Blossom: 2x growth rates, but 1/2 exp gain.
 //By Sme
-#define BlossomID 52
+#define BlossomID 255
 
 //Aptitude: +20% to all growth rates.
 //By Sme

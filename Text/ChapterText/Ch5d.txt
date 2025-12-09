@@ -1,3 +1,10 @@
 ## Ch5dTitle
 
 Duel: Jabberwock[X]
+
+## Ch5dObjective
+Slay beast[X]
+
+## Ch5dObjectiveLong
+Defeat the[N]
+Jabberwock.[X]

@@ -474,12 +474,14 @@ GameStartMenuEvent:
 	SetBackground(0x35)
 	FADU 16
 LABEL Start
+	CLEAN
 	CallMenu(GameStartMenu)
 	BEQ 0x0 0xC 0
 	SVAL 8 1
 	BEQ 0x1 0xC 8
 	
 	LABEL 0x1
+	CLEAN
 	CallMenu(GSMChapterSelectPg1)
 	GOTO CSPg1
 	
@@ -495,7 +497,7 @@ LABEL CSPg1
 3: Ch 3
 4: Ch 4
 5: Ch 5
-6: Ch 6
+6: Ch 5d
 7: Next Page
 */
 // Slot 2 has chapter number to check
@@ -598,16 +600,15 @@ LABEL CSPg1
 		MNC2 Ch2
 		//GOTO EndMenuSkipStartEvent
 	
-	//CenterTextbox(DebugPauseText)	
+	//CenterTextbox(DebugPauseText)
 	SVAL 7 Ch3
 	CenterTextbox(DebugPauseText)
 	BLT EndMenuSkipStartEvent 8 7
-		// fill this in later with ch. 2 stuff
 		LOAD1 0x1 UnitsCh2
 		SilentGiveItem(SteelBow,Hunter)
 		//SilentGiveItem(CrystalKnife,HeroChar)
 		SilentGiveItem(Butterfly,Teacher)
-		CenterTextbox(DebugPauseText)
+		//CenterTextbox(DebugPauseText)
 		AutoLevel(HeroChar, 5)
 		AutoLevel(Dragon, 5)
 		AutoLevel(Pillow, 5)
@@ -619,11 +620,10 @@ LABEL CSPg1
 	SVAL 7 Ch4
 	CenterTextbox(DebugPauseText)
 	BLT EndMenuSkipStartEvent 8 7
-		// fill this in later with ch. 2 stuff
 		LOAD1 0x1 UnitsCh3
 		SilentGiveItem(HeavySpear,Bunny)
 		SilentGiveItem(Hammer,Dragon)
-		CenterTextbox(DebugPauseText)
+		//CenterTextbox(DebugPauseText)
 		AutoLevel(HeroChar, 6)
 		AutoLevel(Dragon, 6)
 		AutoLevel(Pillow, 6)

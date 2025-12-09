@@ -1,0 +1,5 @@
+#include "Shikari.lyn.event" 
+
+ALIGN 4 
+ShikariID_Link: 
+WORD ShikariID

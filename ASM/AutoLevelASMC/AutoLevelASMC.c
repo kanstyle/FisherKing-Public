@@ -36,7 +36,7 @@ void AutoLevelASMC(ProcPtr proc) { //target unit in slot1, target level in slot2
 			tmpBattleUnit.expGain = 0;
 			CheckBattleUnitLevelUp(&tmpBattleUnit);
 			unit->level++;
-			gEventSlots[8] = unit->level;
+			//gEventSlots[8] = unit->level;
 			UpdateUnitFromBattle(unit, &tmpBattleUnit);
 			--levelsLeft;
 		}

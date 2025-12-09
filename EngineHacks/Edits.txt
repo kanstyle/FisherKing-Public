@@ -1,6 +1,24 @@
 //Brownie recipe
 //2 tbsp melted butter, 1/4 tsp vanilla, 4 tbsp water, 2 tbsp cocoa powder, 4 tbsp sugar, 4 tbsp flour, microwave for 60-90 seconds.
 
+// One more tile of item name space (by Dragz)
+#define ItemNameWidth 0x08
+
+// Number of tiles for inventory slot item names
+PUSH
+ORG 0xA00778
+BYTE ItemNameWidth
+ORG 0xA00780
+BYTE ItemNameWidth
+ORG 0xA00788
+BYTE ItemNameWidth
+ORG 0xA00790
+BYTE ItemNameWidth
+ORG 0xA00798
+BYTE ItemNameWidth
+POP
+
+
 //Allows MNC2 To jump to any chapter ID.
 PUSH
 ORG 0xBD070

@@ -1,3 +1,8 @@
+## SD_Shikari
+Shikari: Gain Weapon Triangle[N]
+Advantage against physical beast[N]
+weapons (fangs, claws, etc.)[X]
+
 ## SD_PillowsBiggestFan
 Pillow's Fan: Gain +15 Hit/Avo[N]
 and +5 Crit while within 3 tiles[N]

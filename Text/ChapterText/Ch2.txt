@@ -126,7 +126,7 @@ Wow...[4][4] On the battlefield, too...[A]
 And then I stuck him! Like a pig![A]
 
 [mr]
-And then HE squealed.[A]
+And you made him squeal![A]
 
 [ml]
 Yes![4] And that's why they call me...[4] er...[4][4][N]
@@ -227,23 +227,49 @@ uptight, but you're not so bad.[A]
 (How does Pillow put up with her?)[A]
 [X]
 
+## Ch2IntroPigeonGuard
+[mr][LoadPigeon][tmm]
+(Damn it![4] Doesn't Songbird ever[N]
+sleep?!)[AN][ce]
+(It's been almost a whole day, and[N]
+I didn't catch a wink myself!)[AN]
+[mmr][mmr](And if I risk it, and get caught,[AN]
+they'll probably put some kinda[N]
+Lowland curse on me!)[AN][css][4][4][4]
+[mmr](This [mmr]su[mmr]uu[mmr]uu[mmr]cks!)[A]
+[X]
+
 ## Ch2IntroSkullDialogue1
 [ml][LoadSongbird]
 [r][LoadSkull]
 [fr][LoadPigeon]
+
+[fr]
+Took you long enough, old man![A]
+
+[ml]
+Ah...[4] You've returned to us.[4][N]
+And you're injured...[A]
+
 [r]
-Didn't have time to cover my tracks.[N]
+I'll be fine.[4] But I didn't have time[N]
+to cover my tracks.[AN]
 They'll be on us any minute.[AN]
 Pigeon, was it?[4] You could fly us out.[A]
 
 [fr]
 Fat chance![4] This old pegasus can't[N]
-carry three of us.[A]
+carry three of us.[A][css][4][4][4][4][ts]
+Wait, me and Songbird, though...[A]
 
-[r]
-...I'll be the one to stay behind, then.[A]
+[r][ts]
+I'll be the one to stay behind.[A]
 
-[ml]
+[fr][ts]
+Yeah, that'd be good![4][N]
+Let's do that![A]
+
+[ml][ts]
 You already know what I'm going to say,[N]
 don't you?[A]
 
@@ -256,7 +282,7 @@ harm me.[A] And the soldiers won't[N]
 kill me.[4] I have nothing to fear.[A]
 
 [r][MoveRight]
-You don't know that, dammit![A]
+You don't know that, damn you![A]
 [X]
 
 
@@ -304,8 +330,8 @@ This way, fellows![A][X]
 
 Having asked around for a tracker,[N]
 we'd met a mirthful bowman with[N]
-some substantial armor.[N]
-And a notable mustache.[N]
+some substantial armor, and a[N]
+notable mustache.[N]
 Here I am, noting it, anyway.[AN]
 He knew the area, and claimed he[N]
 could track anything, no payment[N]
@@ -315,8 +341,7 @@ Hero reasoned Pillow could crumple[N]
 his armor like tin if necessary.[AN]
 I wondered whether this was the[N]
 casual brutality of mercenary life,[N]
-or if those two were just a bit[N]
-strange.[A]
+or if those two were a special case.[A]
 [X]
 
 ## Ch2IntroDragonConvo
@@ -390,7 +415,7 @@ But the Lowlands aren't populated![4][N]
 How could--[A]
 
 [r]
-Sorry, lad, but there's little[N]
+Sorry, friend, but there's little[N]
 time to discuss![A]
 [X]
 

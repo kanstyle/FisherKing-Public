@@ -63,6 +63,14 @@
 
 #define BaronManorFoyerMapID 0x28
 
+#define Ch5dMapID 0x29
+#define Ch5dMapChangesID 0x2a
+#define Ch5dEventsID 0x2b
+
+#define Ch6MapID 0x2c
+#define Ch6MapChangesID 0x2d
+#define Ch6EventsID 0x2e
+
 //0x24
 
 //TILESET IDs (START FROM 0x88 when replacing stuff)

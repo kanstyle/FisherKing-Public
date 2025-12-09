@@ -1,36 +1,36 @@
 INLINE MagCharTable,Base Magic,Magic Growth
 None,0,0
-Hero,6,40
-Teacher,2,10
-Pillow,10,65
-Dragon,1,10
-Moulder,3,40
-Vanessa,2,25
-Ross,0,5
-Neimi,2,15
-Colm,1,10
-Garcia,0,5
-Innes,1,10
-Lute,5,65
-Natasha,1,60
-Cormag,0,5
-Ephraim,0,15
-Forde,1,10
-Kyle,0,10
-Amelia,2,25
-Artur,5,50
-Gerik,0,10
-Tethys,0,5
-Marisa,1,10
-Saleh,11,30
-Ewan,2,45
-L'Arachel,5,50
-Dozla,0,5
-+AC0-0,0,50
-Rennac,3,35
-Duessel,0,5
-Myrrh,2,85
-Knoll,10,50
+0x01 Hero,6,40
+0x02 Teacher,2,10
+0x03 Pillow,10,65
+0x04 Dragon,1,10
+0x05 Brother,3,40
+0x06 Hunter,2,25
+0x07 Pigeon,0,5
+0x08 Bunny,2,15
+0x09 Songbird,1,10
+0x0A Prince,0,5
+0x0B Eagle,1,10
+0x0C Baby,5,45
+0x0D Snot,1,60
+0x0E Swan,0,5
+0x0F Ephraim,0,15
+0x10 Forde,1,10
+0x11 Kyle,0,10
+0x12 Amelia,2,25
+0x13 Artur,5,50
+0x14 Gerik,0,10
+0x15 Tethys,0,5
+0x16 Marisa,1,10
+0x17 Saleh,11,30
+0x18 Ewan,2,45
+0x19 L'Arachel,5,50
+0x1A Dozla,0,5
+0x1B -,0,50
+0x1C Rennac,3,35
+0x1D Duessel,0,5
+0x1E Myrrh,2,85
+0x1F Knoll,10,50
 Joshua,0,20
 Syrene,4,20
 Tana,2,15

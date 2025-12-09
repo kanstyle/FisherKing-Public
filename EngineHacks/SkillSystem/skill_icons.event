@@ -8,6 +8,9 @@ SkillIcons:
 /*ORG SkillIcon(ItFindsYouID)
 #incbin "SkillIcons/ItFindsYou.dmp"*/
 
+ORG SkillIcon(ShikariID)
+#incbin "SkillIcons/Shikari.dmp"
+
 ORG SkillIcon(PillowsBiggestFanID)
 #incbin "SkillIcons/CallPillow.dmp" //should change to the new pillow fan icon
 

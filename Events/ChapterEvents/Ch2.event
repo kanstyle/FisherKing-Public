@@ -66,7 +66,7 @@ Units1:
 	
 UnitsSongbird:
 	UNIT Songbird Bard 0x40 Level(3,Enemy,False)     [3,1] 0b 0x0 0x0 0x0 [0x0] DoNothingAI
-	UNIT Skull Fighter 0x40 Level(3,Enemy,True)     [4,2] 0b 0x0 0x0 0x0 [SteelAxe] AttackIn2RangeAI
+	UNIT Skull Fighter 0x40 Level(3,Enemy,True)     [6,11] 0b 0x0 0x0 0x0 [SteelAxe] AttackIn2RangeAI
 	UNIT Pigeon SkyRat 0x40 Level(3,Enemy,False)     [5,1] 0b 0x0 0x0 0x0 [SteelLance, Javelin, Vulnerary] [0x0,0x0,0x0,0x0]
 	UNIT
 	
@@ -276,16 +276,21 @@ Traps2:
 BeginningScene:
 	SetFlag(BleedoutFlag)
 	
-	MusicChange(TimeGearID)
 	CAMERA [3,1]
+	MusicChange(FFTAnxiety)
 	LOAD2 0x1 UnitsSongbird
 	ENUN
 	FADU 6
 	BROWNBOXTEXT Ch0LowlandBrownBox [8,8]
+	Highlight(Pigeon)
+	Text(Ch2IntroPigeonGuard)
+	
+	MOVE 8 Skull [4,2]
+	ENUN
 	Highlight(Skull)
 	Text(Ch2IntroSkullDialogue1)
 	SetBackground(SongbirdHug)
-	FadeOutMusic
+	MusicChange(TimeGearID)
 	STAL 30
 	CGText(Ch2IntroSkullHug1)
 	CGText(Ch2IntroSkullHug2)
