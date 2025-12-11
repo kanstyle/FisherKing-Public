@@ -99,6 +99,9 @@ UnitsCh3:
 UnitsCh4:
 	UNIT Swan AxeCavF 0x40 Level(7,Ally,False)     [5,0] 0b 0x0 0x0 0x0 [KillerAxe, HandAxe, Vulnerary] [0x0,0x0,0x0,0x0]
 	UNIT
+
+UnitsCh5:
+	UNIT
 	
 TeacherUnit:
 	UNIT YoungTeacher Veteran 0x40 Level(10,Ally,False)     [2,13] 0b 0x0 0x1 REDA3R14 [IronLance,SteelBlade] [0x0,0x0,0x0,0x0]
@@ -632,6 +635,38 @@ LABEL CSPg1
 		AutoLevel(Bunny, 6)
 		MNC2 Ch4
 		//GOTO EndMenuSkipStartEvent
+		
+	SVAL 7 Ch5
+	CenterTextbox(DebugPauseText)
+	BLT EndMenuSkipStartEvent 8 7
+		LOAD1 0x1 UnitsCh4
+		AutoLevel(HeroChar, 7)
+		AutoLevel(Dragon, 7)
+		AutoLevel(Pillow, 7)
+		AutoLevel(Pigeon, 7)
+		AutoLevel(Brother, 7)
+		AutoLevel(Bunny, 7)
+		AutoLevel(Swan, 7)
+		AutoLevel(Snot, 7)
+		MNC2 Ch5
+		//GOTO EndMenuSkipStartEvent
+		
+	SVAL 7 Ch5d
+	CenterTextbox(DebugPauseText)
+	BLT EndMenuSkipStartEvent 8 7
+		LOAD1 0x1 UnitsCh5
+		AutoLevel(HeroChar, 8)
+		AutoLevel(Dragon, 8)
+		AutoLevel(Pillow, 8)
+		AutoLevel(Pigeon, 8)
+		AutoLevel(Brother, 8)
+		AutoLevel(Bunny, 8)
+		AutoLevel(Swan, 8)
+		AutoLevel(Snot, 8)
+		MNC2 Ch5d
+		//GOTO EndMenuSkipStartEvent
+		
+	
 	
 	LABEL EndMenuSkipStartEvent
 	//CenterTextbox(DebugPauseText)

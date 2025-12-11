@@ -713,6 +713,7 @@ EndingScene:
 	ENDA
 	
 Turn1Events:
+	CenterTextbox(Ch4Tutorial)
 	FlagIsSet(ThiefDealFlag, 0x0)
 		CALL ThievesEvent
 	LABEL 0x0

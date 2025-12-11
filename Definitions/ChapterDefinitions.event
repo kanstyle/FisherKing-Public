@@ -57,19 +57,19 @@
 #define PrinceRoomMapID 0x22
 #define PrinceRoomMapChangesID 0x23
 
-#define Ch5MapID 0x25
-#define Ch5MapChangesID 0x26
-#define Ch5EventsID 0x27
+#define Ch5MapID 0x27
+#define Ch5MapChangesID 0x28
+#define Ch5EventsID 0x29
 
-#define BaronManorFoyerMapID 0x28
+#define BaronManorFoyerMapID 0x2a
 
-#define Ch5dMapID 0x29
-#define Ch5dMapChangesID 0x2a
-#define Ch5dEventsID 0x2b
+#define Ch5dMapID 0x2b
+#define Ch5dMapChangesID 0x2c
+#define Ch5dEventsID 0x2d
 
-#define Ch6MapID 0x2c
-#define Ch6MapChangesID 0x2d
-#define Ch6EventsID 0x2e
+#define Ch6MapID 0x2e
+#define Ch6MapChangesID 0x2f
+#define Ch6EventsID 0x30
 
 //0x24
 

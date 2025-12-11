@@ -51,13 +51,24 @@ Units1:
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [3,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [3,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [2,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [4,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [11,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+EagleUnits:
+	UNIT Ch5Eagle MageGeneral 0x40 Level(1,NPC,False)     [12,5] 0b 0x0 0x0 0x0 [AblatioPhoton,Elfire,Elixir] BossAI
+	UNIT
+
+EagleGuardUnits:
 	UNIT
 
 NPCUnits:
 	UNIT
 
 EnemyUnits:
+	UNIT
+	
+StormUnits:
+	UNIT Storm Myrmidon 0x40 Level(7,Ally,False)     [0,4] 0b 0x0 0x0 0x0 [SteelSword] [0x0,0x0,0x0,0x0]
 	UNIT
 
 Traps1:
@@ -70,8 +81,10 @@ Traps2:
 
 BeginningScene:
 	SetFlag(BleedoutFlag)
-	
+	LOAD2 0x1 EagleUnits
 	GotoPrepScreen
+	CUSA Ch5Eagle
+	CenterTextbox(Ch5Tutorial)
 	ENDA
 
 EndingScene:

@@ -166,13 +166,12 @@ ORG ItemIconEntry(HuntersBow)
 ORG ItemIconEntry(Fire)
 #incbin "Tomes/ClassicFire.dmp"		// Ereshkigal
 
+ORG ItemIconEntry(Elfire)
+#incbin "Tomes/OrphicFire.dmp"		// Ereshkigal
 
 /*
 ORG ItemIconEntry(MysticFire)
 #incbin "Tomes/MysticFire.dmp"		// Ereshkigal
-
-ORG ItemIconEntry(OrphicFire)
-#incbin "Tomes/OrphicFire.dmp"		// Ereshkigal
 
 ORG ItemIconEntry(ClassicGulf)
 #incbin "Tomes/ClassicGulf.dmp"		// Leif
@@ -259,15 +258,15 @@ ORG ItemIconEntry(ProsaicFall)
 ORG ItemIconEntry(Lightning)
 #incbin "Light/BeneficFall.dmp"		// Celice
 
+ORG ItemIconEntry(AblatioPhoton)
+#incbin "Light/BeneficHoly.dmp"		// Zarg
+
 /*
 ORG ItemIconEntry(AngelicFall)
 #incbin "Tomes/AngelicFall.dmp"		// Celice
 
 ORG ItemIconEntry(ProsaicHoly)
 #incbin "Tomes/ProsaicHoly.dmp"		// Zarg
-
-ORG ItemIconEntry(BeneficHoly)
-#incbin "Tomes/BeneficHoly.dmp"		// Zarg
 
 ORG ItemIconEntry(AngelicHoly)
 #incbin "Tomes/AngelicHoly.dmp"		// Zarg

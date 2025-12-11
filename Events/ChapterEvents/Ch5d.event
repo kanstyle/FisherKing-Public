@@ -1,4 +1,4 @@
-EventPointerTable(Ch5EventsID, PointerList)
+EventPointerTable(Ch5dEventsID, PointerList)
 
 PointerList:
 	POIN TurnBasedEvents
@@ -13,6 +13,7 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+	TurnEventPlayer(0x0,TurnHPDrainEvent,1,255)
 	END_MAIN
 
 ALIGN 32
@@ -50,14 +51,17 @@ Units1:
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [4,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [3,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [3,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [2,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [4,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT
 
 NPCUnits:
 	UNIT
 
 EnemyUnits:
+	UNIT JabberwockBoss Jabberwock 0x40 Level(10,Enemy,False)     [7,4] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+CenterRevenantUnits:
+	UNIT Beast Revenant 0x40 Level(10,Enemy,False)     [7,4] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
 	UNIT
 
 Traps1:
@@ -71,6 +75,7 @@ Traps2:
 BeginningScene:
 	SetFlag(BleedoutFlag)
 	
+	LOAD1 0x1 EnemyUnits
 	GotoPrepScreen
 	ENDA
 
@@ -84,6 +89,18 @@ EndingScene:
 	NoFade
 	ENDA
 	
+HPDrainEvent:
+	SVAL 0x1 0xFFFF
+	SVAL 0x6 0x4
+	ASMC ASMC_SelfDamageLikeBomb|1
+	NoFade
+	ENDA
+
+TurnHPDrainEvent:
+	SVAL 0x1 HPDrainEvent
+	ASMC EventForEachNotDyingUnit|1
+	NoFade
+	ENDA
 
 BleedoutChapterAlwaysEvent:
 	ASMC ReviveAndSetPetrify|1

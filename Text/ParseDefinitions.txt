@@ -8,6 +8,7 @@
 [NY] = [No]
 [ToggleInvert] = [ToggleColorInvert]
 [Red] = [ToggleRed]
+[tr] = [ToggleRed]
 [Blink] = [CloseEyes][.][OpenEyes]
 [AA] = [.....][A]
 [.A] = [.....][A]
@@ -116,6 +117,7 @@
 [LoadNobleman] = [LoadFace][0x1F][0x1]
 [LoadNoblewoman] = [LoadFace][0x20][0x1]
 [LoadGryphon] = [LoadFace][0x21][0x1]
+[LoadStorm] = [LoadFace][0x22][0x1]
 
 [LoadCivManBald] = [LoadFace][0x58][0x1]
 [LoadCivManOld] = [LoadFace][0x59][0x1]

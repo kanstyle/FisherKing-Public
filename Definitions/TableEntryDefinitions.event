@@ -33,6 +33,7 @@
 #define NoblemanMug 0x1F
 #define NoblewomanMug 0x20
 #define GryphonMug 0x21
+#define StormMug 0x22
 
 #define AxeBoneCard 0xAD
 #define LanceBoneCard 0xAE
@@ -63,6 +64,7 @@
 #define Baby 0xC
 #define Snot 0xD
 #define Swan 0xE
+#define Storm 0xF
 #define YoungPrince 0x20
 #define YoungTeacher 0x21
 #define OldPrince 0x22
@@ -72,6 +74,7 @@
 #define Baron 0x26
 #define Wise 0x27
 #define Gryphon 0x28
+#define Ch5Eagle 0x29
 
 #define Ch2BeastBoss 0xAB
 #define JabberwockBoss 0xAD
@@ -211,6 +214,8 @@
 #define SavageBlade 0xD0
 #define SavageGore 0xD1
 #define SavageMaul 0xD2
+
+#define AblatioPhoton 0xD3
 
 //Statuses
 #define SpecialStatusID 5

@@ -256,3 +256,11 @@ GryphonMugData: // LL
 #incbin "dmp/Gryphon_palette.dmp"
 #incbin "dmp/Gryphon_minimug.dmp"
 setMugEntry(GryphonMug, GryphonMugData, 2, 5, 3, 3)
+
+ALIGN 16
+StormMugData: // LL
+#incbin "dmp/Storm_mug.dmp"
+#incbin "dmp/Storm_frames.dmp"
+#incbin "dmp/Storm_palette.dmp"
+#incbin "dmp/Storm_minimug.dmp"
+setMugEntry(StormMug, StormMugData, 2, 5, 3, 2)

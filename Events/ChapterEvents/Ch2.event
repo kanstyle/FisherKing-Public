@@ -3,6 +3,8 @@ EventPointerTable(Ch2EventsID, PointerList)
 #define Ch2PigeonTalkFlag 0x7
 #define Ch2VillageFlag 0x8
 #define Ch2TentFlag 0x9
+#define Ch2PigeonBrotherTalkFlag 0x10
+#define Ch2PigeonHeroTalkFlag 0xA
 
 PointerList:
 	POIN TurnBasedEvents
@@ -380,6 +382,7 @@ EndingScene:
 	FadeOutMusic
 	DoAllThree
 	
+	/*
 	LOMA MidnightCh
 	LOAD2 0x1 PrinceUnits
 	FADU 6
@@ -437,6 +440,7 @@ EndingScene:
 	SetBackground(Storybook9)
 	CGText(Storybook9Text)
 	RemoveBackground
+	*/
 	
 	CALL EndEventRoutine
 	MNC2 Ch3
@@ -445,12 +449,14 @@ EndingScene:
 	
 Ch2HeroPigeonTalk:
 	Text(Ch2HeroPigeonTalkText)
+	//SetFlag(PigeonHeroTalkFlag)
 	CUSA(Pigeon)
 	NoFade
 	ENDA
 	
 Ch2BrotherPigeonTalk:
 	Text(Ch2BrotherPigeonTalkText)
+	//SetFlag(PigeonBrotherTalkFlag)
 	CUSA(Pigeon)
 	NoFade
 	ENDA
@@ -491,12 +497,18 @@ Ch2VillageEvent:
 	
 Ch2HeroSongbirdTalkEvent:
 	Text(Ch2HeroSongbirdTalk)
+	STAL 60
+	IfAliveDialog(Pigeon,Ch2PigeonNo,0x0)
+	LABEL 0x0
 	CALL EndingScene
 	NoFade
 	ENDA
 	
 Ch2TeacherSongbirdTalkEvent:
 	Text(Ch2TeacherSongbirdTalk)
+	STAL 60
+	IfAliveDialog(Pigeon,Ch2PigeonNo,0x0)
+	LABEL 0x0
 	CALL EndingScene
 	NoFade
 	ENDA

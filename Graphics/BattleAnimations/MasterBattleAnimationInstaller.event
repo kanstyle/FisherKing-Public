@@ -20,6 +20,24 @@
 
 ALIGN 4
 {
+#include "Animations/MyrmRepal/Myrmidon Installer.event"
+}
+ALIGN 4
+MyrmidonAnim:
+AnimaAnim(0xE2)
+WORD 0x0 // Seperator
+
+ALIGN 4
+{
+#include "Animations/MageGeneral2/MageGeneral Installer.event"
+}
+ALIGN 4
+MageGeneralAnim:
+AnimaAnim(0xE1)
+WORD 0x0 // Seperator
+
+ALIGN 4
+{
 #include "Animations/Ramallae/lorm_sp1 Installer.event"
 }
 ALIGN 4

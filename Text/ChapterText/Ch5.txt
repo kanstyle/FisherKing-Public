@@ -12,6 +12,19 @@ Defend[X]
 Repel enemies from the[N]
 north-central building.[X]
 
+## Ch5Tutorial
+[tr]Prevent enemies from reaching[N]
+the central building. Any enemy[N]
+stepping on the wood floor will[N]
+result in a Game Over.[AN]
+You have control of Eagle for this[N]
+chapter. She cannot move, but will[N]
+support you with powerful siege[N]
+magic.[AN]
+Her death will not result in a[N]
+Game Over.[A]
+[X]
+
 ## Ch5OldPrinceDeath
 
 [fr][LoadPurpleSoldier]

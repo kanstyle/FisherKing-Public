@@ -104,3 +104,35 @@ void PetrifyDeathQuote(ProcPtr proc) {
 		ReviveAndSetPetrify(proc);
 	}
 }
+
+bool GetNotDyingPetrifiedUnit(ProcPtr proc) {
+	int i;
+	
+	for (i = gEventSlots[0x8] + 1; i < FACTION_BLUE + 0x40; i++)
+    {
+        struct Unit * unit = GetUnit(i);
+		
+        if (!UNIT_IS_VALID(unit))
+            continue;
+
+        if (unit->state & US_DEAD)
+            continue;
+
+        if (unit->statusIndex != 0xB) {
+			gEventSlots[0xC] = 1;
+			gActiveUnit = unit;
+			gEventSlots[0x8] = i + 1;
+			return true;
+		}
+	}
+	gEventSlots[0xC] = 0;
+	gActiveUnit = 0;
+	return false;
+}
+
+void EventForEachNotDyingUnit(const u16* events, ProcPtr proc) {
+	while (GetNotDyingPetrifiedUnit(proc) == true) {
+		CallEvent(&events, 1);
+	}
+	gEventSlots[0x8] = 0;
+}

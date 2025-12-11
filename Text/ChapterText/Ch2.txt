@@ -426,6 +426,52 @@ We're goin' to the city.[4][4] We've[N]
 got to tell Storm what happened.[A]
 
 [mr]
+Ugh -- I just can't bear to leave[N]
+Songbird in such a creepy place.[AN]
+[ce]My heart is so heavy![A][oe]
+
+[ml][tmm]
+...[AN][tmm]
+Songbird always says the death is[N]
+nothing to them.[AN]
+They'd just come back someday.[N]
+But I've heard that from a lotta people.[AN]
+It's always different when the time comes.[A]
+
+[mr][tmm]
+...[A][tmm]
+
+[ml]
+Songbird's...[4] different, too.[4][N]
+Almost like a child.[AN]
+[4][4]...They don't deserve to die.[N]
+Simple as that.[A]
+
+[mr][tmm][ce]
+...[A][tmm][oe]
+
+[ml]
+Could you say somethin'?![N][4][4]
+You're making this awkward![A]
+
+[mr][mmr]
+Er...[4][4] uh...[4][4][4] nothin'![4] A-actually,[N]
+I feel the same way![AN]
+In fact, I'm gonna drop you off here![N]
+Gonna go rescue Songbird![4] Yeah![A][css][clear]
+
+[ml]
+What the--[4][4] Hey![4][N]
+Come back here, damn you![A]
+[X]
+
+## Ch2IntroPigeonSkullOld
+[ml][LoadPigeon][mmr]
+[ml][LoadSkull]
+We're goin' to the city.[4][4] We've[N]
+got to tell Storm what happened.[A]
+
+[mr]
 You can tell him.[4] I'm quitting.[N]
 Sorry, but I need money.[A]
 
@@ -457,9 +503,11 @@ I'm gonna go help Songbird![A]
 
 [ml][LoadPigeon][tmm]
 (There they are.)[AN]
-(I said all that,[N]
-but what am I gonna do...?)[AN]
-(Whatever! I'll figure it out!)[A]
+(I just gotta wait for them[N]
+to clear out the monsters,[AN]
+then I swoop in and grab[N]
+Songbird's stuff!)[AN][ts]
+(It's the perfect distraction!)[A]
 [X]
 
 
@@ -469,6 +517,54 @@ but what am I gonna do...?)[AN]
 
 
 ## Ch2BrotherPigeonTalkText
+[mr][LoadPigeon]
+[ml][LoadBrother]
+Huh?[4] What the hell're--[A]
+
+[mr]
+Huh?[4] What the hell're YOU[N]
+doing here?![A]
+
+[ml]
+You first![4] You're gonna get[N]
+shot, stupid![AN]
+What if you lose your pegasus?[N]
+You're too broke for that![A]
+
+[mr]
+Shhhh![4][4] Shhhhhh![4][N]
+Keep it down, dummy![AN]
+Wait, are you working for these[N]
+guys?[4][4] You went legit?[A]
+
+[ml]
+Yeah, pretty much.[4] Why?[4][N]
+You want in?[A]
+
+[mr][ts]
+That's great![4][N]
+I'm so proud a' you![A]
+
+[ml][ts][ce]
+...Yeah, yeah.[4][4][N]
+We'll see if it lasts.[A][oe]
+
+[mr]
+Couldja tell your boss I wanna join[N]
+up, too?[A]
+
+[ml]
+...You're up to something[N]
+stupid, huh?[A][css][4][4][4][4][4][4]
+
+[mr]
+No.[A]
+
+[ml][ce]
+I'll tell 'em I don't know you.[A]
+[X]
+
+## Ch2BrotherPigeonTalkTextOld
 [mr][LoadPigeon]
 [ml][LoadBrother]
 Huh?[4] What the hell're--[A]
@@ -515,6 +611,55 @@ Whoa, whoa![4][4] Let's not get ahead[N]
 of ourselves.[AN]
 You a friend of theirs?[A]
 
+[mr][ts]
+No![4] But look at this.[4] I got[N]
+a pegasus![AN]
+Just leave Songbird to me.[AN]
+For a really fair price, I'll fly[N]
+'em right out of here.[A]
+
+[ml][ts]
+Hmm...[4][4][4] [ts]Okay.[N]
+I trust you.[A]
+
+[mr]
+I dunno if we'll let you fly Songbird[N]
+out of here, but we could use the help.[A]
+
+[ml]
+Oh, er, y-yeah![4] That's okay.[N][4][4]
+[tmm](Damn it! At least I can get a paycheck...)[AN][tmm]
+I'll show you I'm real trustworthy.[A]
+
+[mr]
+Sounds good to me.[4] Either way, though,[N]
+you might wanna be careful.[AN]
+See those skeletons with the bows?[N]
+I heard a lot of those come out at night.[A]
+
+[ml][ts]
+...![A]
+
+[mr][ts]
+So it'd be a shame if you had to[N]
+fly all the way back by yourself.[A]
+
+[ml][ts]
+Y-Yeah, that's, um...[4][4] Yeah, yeah![N]
+Yeah![4] L-let's go![A]
+[X]
+
+## Ch2HeroPigeonTalkTextOld
+[mr][LoadPigeon]
+[ml][LoadHeroM]
+[mr]
+You![4] You're after Songbird, right?[A]
+
+[ml]
+Whoa, whoa![4][4] Let's not get ahead[N]
+of ourselves.[AN]
+You a friend of theirs?[A]
+
 [mr]
 Yeah, I am![A]
 
@@ -543,6 +688,7 @@ I'm sure we can squeeze you in.[A]
 lay a finger on Songbird.)[AN][oe]
 (...[4][4]Sorry, Songbird.)[A]
 [X]
+
 
 ## Ch2NorthHouseIntro
 
@@ -645,6 +791,11 @@ That's fortunate.[AN]
 Apologies, but I must tie[N]
 your hands nonetheless.[AN]
 You'll be riding with me.[A]
+[X]
+
+## Ch2PigeonNo
+[mr][LoadPigeon][tmm]
+[mmr](Dammit![4][4][4][ce] At least I still get paid...)[A]
 [X]
 
 ## Ch2EndNarration

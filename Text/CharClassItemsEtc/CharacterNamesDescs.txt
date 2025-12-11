@@ -200,6 +200,12 @@ Swan[X]
 ## SwanDesc
 Placeholder.[X]
 
+## StormName
+Storm[X]
+
+## StormDesc
+Placeholder.[X]
+
 ## JabberwockBossName
 Jabberwock[X]
 

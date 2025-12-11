@@ -1168,3 +1168,10 @@ Skill Scroll[X]
 
 ## ThousandGoldDesc
 [X]
+
+## AblatioPhotonName ^
+Ablatio Photonica[X]
+
+## AblatioPhotonDesc
+Reaver. Ignores Res.
+[X]

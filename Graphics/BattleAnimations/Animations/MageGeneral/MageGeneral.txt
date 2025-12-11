@@ -1,0 +1,430 @@
+#######################################################
+#EE isacrit wob M[_a][_g][_e]-[_G][_e][_n][_e][_r][_a]l Anima
+#
+#When importing to FEditorAdv delete # and after each line.
+#######################################################
+/// - Mode 1               #Melee Animation
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+3 p- MageGeneral_000.png
+3 p- MageGeneral_001.png
+3 p- MageGeneral_002.png
+3 p- MageGeneral_003.png
+3 p- MageGeneral_004.png
+4 p- MageGeneral_005.png
+4 p- MageGeneral_006.png
+S0135                               #Sound 309 SE:Sage/Lyon magical rune @C85_49
+4 p- MageGeneral_007.png
+4 p- MageGeneral_008.png
+4 p- MageGeneral_009.png
+4 p- MageGeneral_010.png
+4 p- MageGeneral_011.png
+4 p- MageGeneral_012.png
+4 p- MageGeneral_013.png
+4 p- MageGeneral_014.png
+4 p- MageGeneral_015.png
+4 p- MageGeneral_016.png
+S0100                               #Sound 256 SE:Purge charging
+6 p- MageGeneral_017.png
+5 p- MageGeneral_018.png
+4 p- MageGeneral_019.png
+3 p- MageGeneral_020.png
+2 p- MageGeneral_021.png
+3 p- MageGeneral_022.png
+4 p- MageGeneral_023.png
+4 p- MageGeneral_024.png
+3 p- MageGeneral_025.png
+2 p- MageGeneral_026.png
+3 p- MageGeneral_027.png
+4 p- MageGeneral_028.png
+5 p- MageGeneral_029.png
+4 p- MageGeneral_030.png
+2 p- MageGeneral_031.png
+2 p- MageGeneral_032.png
+SB9                               #Sound 185 SE:Gold changing
+2 p- MageGeneral_033.png
+2 p- MageGeneral_034.png
+1 p- MageGeneral_035.png
+1 p- MageGeneral_036.png
+1 p- MageGeneral_037.png
+C05                               #Call spell associated with equipped weapon
+L                                 #LOOPSTART {
+3 p- MageGeneral_038.png
+3 p- MageGeneral_039.png
+3 p- MageGeneral_040.png
+3 p- MageGeneral_041.png
+3 p- MageGeneral_042.png
+C01                               #LOOPEND }  NOP
+3 p- MageGeneral_043.png
+3 p- MageGeneral_044.png
+3 p- MageGeneral_045.png
+3 p- MageGeneral_046.png
+3 p- MageGeneral_002.png
+3 p- MageGeneral_001.png
+3 p- MageGeneral_047.png
+3 p- MageGeneral_000.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+3 p- MageGeneral_000.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 3               #Melee Critical Animation
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- MageGeneral_000.png
+3 p- MageGeneral_001.png
+3 p- MageGeneral_002.png
+3 p- MageGeneral_003.png
+3 p- MageGeneral_004.png
+4 p- MageGeneral_048.png
+5 p- MageGeneral_049.png
+5 p- MageGeneral_050.png
+5 p- MageGeneral_051.png
+4 p- MageGeneral_052.png
+4 p- MageGeneral_053.png
+4 p- MageGeneral_054.png
+4 p- MageGeneral_055.png
+C2F                               #Show sage's critical magic rune drawing animation
+4 p- MageGeneral_052.png
+4 p- MageGeneral_053.png
+4 p- MageGeneral_054.png
+4 p- MageGeneral_055.png
+4 p- MageGeneral_052.png
+4 p- MageGeneral_053.png
+4 p- MageGeneral_054.png
+4 p- MageGeneral_055.png
+4 p- MageGeneral_052.png
+4 p- MageGeneral_053.png
+4 p- MageGeneral_054.png
+4 p- MageGeneral_055.png
+4 p- MageGeneral_052.png
+4 p- MageGeneral_053.png
+4 p- MageGeneral_054.png
+4 p- MageGeneral_055.png
+4 p- MageGeneral_052.png
+4 p- MageGeneral_053.png
+4 p- MageGeneral_054.png
+4 p- MageGeneral_055.png
+2 p- MageGeneral_051.png
+2 p- MageGeneral_050.png
+2 p- MageGeneral_049.png
+3 p- MageGeneral_056.png
+4 p- MageGeneral_005.png
+4 p- MageGeneral_006.png
+S0135                               #Sound 309 SE:Sage/Lyon magical rune @C85_49
+4 p- MageGeneral_007.png
+4 p- MageGeneral_008.png
+4 p- MageGeneral_009.png
+4 p- MageGeneral_010.png
+4 p- MageGeneral_011.png
+4 p- MageGeneral_012.png
+4 p- MageGeneral_013.png
+4 p- MageGeneral_014.png
+4 p- MageGeneral_015.png
+4 p- MageGeneral_016.png
+S0100                               #Sound 256 SE:Purge charging
+6 p- MageGeneral_017.png
+5 p- MageGeneral_018.png
+4 p- MageGeneral_019.png
+3 p- MageGeneral_020.png
+2 p- MageGeneral_021.png
+3 p- MageGeneral_022.png
+4 p- MageGeneral_023.png
+4 p- MageGeneral_024.png
+3 p- MageGeneral_025.png
+2 p- MageGeneral_026.png
+3 p- MageGeneral_027.png
+4 p- MageGeneral_028.png
+5 p- MageGeneral_029.png
+4 p- MageGeneral_030.png
+2 p- MageGeneral_031.png
+2 p- MageGeneral_032.png
+SB9                               #Sound 185 SE:Gold changing
+2 p- MageGeneral_033.png
+2 p- MageGeneral_034.png
+1 p- MageGeneral_035.png
+1 p- MageGeneral_036.png
+1 p- MageGeneral_037.png
+C05                               #Call spell associated with equipped weapon
+L                                 #LOOPSTART {
+3 p- MageGeneral_038.png
+3 p- MageGeneral_039.png
+3 p- MageGeneral_040.png
+3 p- MageGeneral_041.png
+3 p- MageGeneral_042.png
+C01                               #LOOPEND }  NOP
+3 p- MageGeneral_043.png
+3 p- MageGeneral_044.png
+3 p- MageGeneral_045.png
+3 p- MageGeneral_046.png
+3 p- MageGeneral_002.png
+3 p- MageGeneral_001.png
+3 p- MageGeneral_047.png
+3 p- MageGeneral_000.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+3 p- MageGeneral_000.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 5               #Ranged Animation 
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+3 p- MageGeneral_000.png
+3 p- MageGeneral_001.png
+3 p- MageGeneral_002.png
+3 p- MageGeneral_003.png
+3 p- MageGeneral_004.png
+4 p- MageGeneral_005.png
+4 p- MageGeneral_006.png
+S0135                               #Sound 309 SE:Sage/Lyon magical rune @C85_49
+4 p- MageGeneral_007.png
+4 p- MageGeneral_008.png
+4 p- MageGeneral_009.png
+4 p- MageGeneral_010.png
+4 p- MageGeneral_011.png
+4 p- MageGeneral_012.png
+4 p- MageGeneral_013.png
+4 p- MageGeneral_014.png
+4 p- MageGeneral_015.png
+4 p- MageGeneral_016.png
+S0100                               #Sound 256 SE:Purge charging
+6 p- MageGeneral_017.png
+5 p- MageGeneral_018.png
+4 p- MageGeneral_019.png
+3 p- MageGeneral_020.png
+2 p- MageGeneral_021.png
+3 p- MageGeneral_022.png
+4 p- MageGeneral_023.png
+4 p- MageGeneral_024.png
+3 p- MageGeneral_025.png
+2 p- MageGeneral_026.png
+3 p- MageGeneral_027.png
+4 p- MageGeneral_028.png
+5 p- MageGeneral_029.png
+4 p- MageGeneral_030.png
+2 p- MageGeneral_031.png
+2 p- MageGeneral_032.png
+SB9                               #Sound 185 SE:Gold changing
+2 p- MageGeneral_033.png
+2 p- MageGeneral_034.png
+1 p- MageGeneral_035.png
+1 p- MageGeneral_036.png
+1 p- MageGeneral_037.png
+C05                               #Call spell associated with equipped weapon
+L                                 #LOOPSTART {
+3 p- MageGeneral_038.png
+3 p- MageGeneral_039.png
+3 p- MageGeneral_040.png
+3 p- MageGeneral_041.png
+3 p- MageGeneral_042.png
+C01                               #LOOPEND }  NOP
+3 p- MageGeneral_043.png
+3 p- MageGeneral_044.png
+3 p- MageGeneral_045.png
+3 p- MageGeneral_046.png
+3 p- MageGeneral_002.png
+3 p- MageGeneral_001.png
+3 p- MageGeneral_047.png
+3 p- MageGeneral_000.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+3 p- MageGeneral_000.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 6               #Ranged Critical Animation
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- MageGeneral_000.png
+3 p- MageGeneral_001.png
+3 p- MageGeneral_002.png
+3 p- MageGeneral_003.png
+3 p- MageGeneral_004.png
+4 p- MageGeneral_048.png
+5 p- MageGeneral_049.png
+5 p- MageGeneral_050.png
+5 p- MageGeneral_051.png
+4 p- MageGeneral_052.png
+4 p- MageGeneral_053.png
+4 p- MageGeneral_054.png
+4 p- MageGeneral_055.png
+C2F                               #Show sage's critical magic rune drawing animation
+4 p- MageGeneral_052.png
+4 p- MageGeneral_053.png
+4 p- MageGeneral_054.png
+4 p- MageGeneral_055.png
+4 p- MageGeneral_052.png
+4 p- MageGeneral_053.png
+4 p- MageGeneral_054.png
+4 p- MageGeneral_055.png
+4 p- MageGeneral_052.png
+4 p- MageGeneral_053.png
+4 p- MageGeneral_054.png
+4 p- MageGeneral_055.png
+4 p- MageGeneral_052.png
+4 p- MageGeneral_053.png
+4 p- MageGeneral_054.png
+4 p- MageGeneral_055.png
+4 p- MageGeneral_052.png
+4 p- MageGeneral_053.png
+4 p- MageGeneral_054.png
+4 p- MageGeneral_055.png
+2 p- MageGeneral_051.png
+2 p- MageGeneral_050.png
+2 p- MageGeneral_049.png
+3 p- MageGeneral_056.png
+4 p- MageGeneral_005.png
+4 p- MageGeneral_006.png
+S0135                               #Sound 309 SE:Sage/Lyon magical rune @C85_49
+4 p- MageGeneral_007.png
+4 p- MageGeneral_008.png
+4 p- MageGeneral_009.png
+4 p- MageGeneral_010.png
+4 p- MageGeneral_011.png
+4 p- MageGeneral_012.png
+4 p- MageGeneral_013.png
+4 p- MageGeneral_014.png
+4 p- MageGeneral_015.png
+4 p- MageGeneral_016.png
+S0100                               #Sound 256 SE:Purge charging
+6 p- MageGeneral_017.png
+5 p- MageGeneral_018.png
+4 p- MageGeneral_019.png
+3 p- MageGeneral_020.png
+2 p- MageGeneral_021.png
+3 p- MageGeneral_022.png
+4 p- MageGeneral_023.png
+4 p- MageGeneral_024.png
+3 p- MageGeneral_025.png
+2 p- MageGeneral_026.png
+3 p- MageGeneral_027.png
+4 p- MageGeneral_028.png
+5 p- MageGeneral_029.png
+4 p- MageGeneral_030.png
+2 p- MageGeneral_031.png
+2 p- MageGeneral_032.png
+SB9                               #Sound 185 SE:Gold changing
+2 p- MageGeneral_033.png
+2 p- MageGeneral_034.png
+1 p- MageGeneral_035.png
+1 p- MageGeneral_036.png
+1 p- MageGeneral_037.png
+C05                               #Call spell associated with equipped weapon
+L                                 #LOOPSTART {
+3 p- MageGeneral_038.png
+3 p- MageGeneral_039.png
+3 p- MageGeneral_040.png
+3 p- MageGeneral_041.png
+3 p- MageGeneral_042.png
+C01                               #LOOPEND }  NOP
+3 p- MageGeneral_043.png
+3 p- MageGeneral_044.png
+3 p- MageGeneral_045.png
+3 p- MageGeneral_046.png
+3 p- MageGeneral_002.png
+3 p- MageGeneral_001.png
+3 p- MageGeneral_047.png
+3 p- MageGeneral_000.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+3 p- MageGeneral_000.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 7               #Dodge Melee Attack
+C02                               #Start of dodge
+1 p- MageGeneral_000.png
+C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
+4 p- MageGeneral_057.png
+4 p- MageGeneral_058.png
+4 p- MageGeneral_059.png
+C01                               #NOP
+4 p- MageGeneral_060.png
+4 p- MageGeneral_061.png
+1 p- MageGeneral_000.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 8               #Dodge Ranged Attack
+C02                               #Start of dodge
+1 p- MageGeneral_000.png
+C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
+4 p- MageGeneral_057.png
+4 p- MageGeneral_058.png
+4 p- MageGeneral_059.png
+C01                               #NOP
+4 p- MageGeneral_060.png
+4 p- MageGeneral_061.png
+1 p- MageGeneral_000.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 9               #Equiped with Melee Weapon
+1 p- MageGeneral_000.png
+C01                               #NOP
+~~~
+/// - Mode 10               #Standing motions
+1 p- MageGeneral_000.png
+C01                               #NOP
+~~~
+/// - Mode 11               #Equiped with Ranged weapon
+1 p- MageGeneral_000.png
+C01                               #NOP
+~~~
+/// - Mode 12               #Attack Missed Animation
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+3 p- MageGeneral_000.png
+3 p- MageGeneral_001.png
+3 p- MageGeneral_002.png
+3 p- MageGeneral_003.png
+3 p- MageGeneral_004.png
+4 p- MageGeneral_005.png
+4 p- MageGeneral_006.png
+S0135                               #Sound 309 SE:Sage/Lyon magical rune @C85_49
+4 p- MageGeneral_007.png
+4 p- MageGeneral_008.png
+4 p- MageGeneral_009.png
+4 p- MageGeneral_010.png
+4 p- MageGeneral_011.png
+4 p- MageGeneral_012.png
+4 p- MageGeneral_013.png
+4 p- MageGeneral_014.png
+4 p- MageGeneral_015.png
+4 p- MageGeneral_016.png
+S0100                               #Sound 256 SE:Purge charging
+6 p- MageGeneral_017.png
+5 p- MageGeneral_018.png
+4 p- MageGeneral_019.png
+3 p- MageGeneral_020.png
+2 p- MageGeneral_021.png
+3 p- MageGeneral_022.png
+4 p- MageGeneral_023.png
+4 p- MageGeneral_024.png
+3 p- MageGeneral_025.png
+2 p- MageGeneral_026.png
+3 p- MageGeneral_027.png
+4 p- MageGeneral_028.png
+5 p- MageGeneral_029.png
+4 p- MageGeneral_030.png
+2 p- MageGeneral_031.png
+2 p- MageGeneral_032.png
+SB9                               #Sound 185 SE:Gold changing
+2 p- MageGeneral_033.png
+2 p- MageGeneral_034.png
+1 p- MageGeneral_035.png
+1 p- MageGeneral_036.png
+1 p- MageGeneral_037.png
+C05                               #Call spell associated with equipped weapon
+L                                 #LOOPSTART {
+3 p- MageGeneral_038.png
+3 p- MageGeneral_039.png
+3 p- MageGeneral_040.png
+3 p- MageGeneral_041.png
+3 p- MageGeneral_042.png
+C01                               #LOOPEND }  NOP
+3 p- MageGeneral_043.png
+3 p- MageGeneral_044.png
+3 p- MageGeneral_045.png
+3 p- MageGeneral_046.png
+3 p- MageGeneral_002.png
+3 p- MageGeneral_001.png
+3 p- MageGeneral_047.png
+3 p- MageGeneral_000.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+3 p- MageGeneral_000.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - End of animation

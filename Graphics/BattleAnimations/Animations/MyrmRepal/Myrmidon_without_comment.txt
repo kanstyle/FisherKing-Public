@@ -1,0 +1,226 @@
+/// - Mode 1
+C03
+C07
+1 p- Myrmidon_000.png
+2 p- Myrmidon_000.png
+2 p- Myrmidon_001.png
+4 p- Myrmidon_002.png
+2 p- Myrmidon_003.png
+6 p- Myrmidon_004.png
+2 p- Myrmidon_005.png
+2 p- Myrmidon_006.png
+8 p- Myrmidon_007.png
+C22
+1 p- Myrmidon_008.png
+1 p- Myrmidon_009.png
+1 p- Myrmidon_010.png
+1 p- Myrmidon_011.png
+1 p- Myrmidon_012.png
+C04
+2 p- Myrmidon_013.png
+1 p- Myrmidon_014.png
+C1A
+C20
+1 p- Myrmidon_015.png
+C23
+1 p- Myrmidon_016.png
+1 p- Myrmidon_017.png
+1 p- Myrmidon_018.png
+C01
+2 p- Myrmidon_019.png
+1 p- Myrmidon_020.png
+1 p- Myrmidon_021.png
+1 p- Myrmidon_022.png
+1 p- Myrmidon_023.png
+1 p- Myrmidon_024.png
+1 p- Myrmidon_025.png
+1 p- Myrmidon_026.png
+C34
+2 p- Myrmidon_027.png
+C06
+2 p- Myrmidon_028.png
+2 p- Myrmidon_029.png
+2 p- Myrmidon_030.png
+C0D
+~~~
+/// - Mode 3
+C03
+C07
+1 p- Myrmidon_000.png
+2 p- Myrmidon_031.png
+C22
+2 p- Myrmidon_032.png
+1 p- Myrmidon_033.png
+1 p- Myrmidon_034.png
+1 p- Myrmidon_035.png
+1 p- Myrmidon_036.png
+1 p- Myrmidon_037.png
+1 p- Myrmidon_038.png
+1 p- Myrmidon_039.png
+1 p- Myrmidon_040.png
+3 p- Myrmidon_041.png
+8 p- Myrmidon_042.png
+2 p- Myrmidon_043.png
+1 p- Myrmidon_044.png
+1 p- Myrmidon_045.png
+1 p- Myrmidon_044.png
+1 p- Myrmidon_046.png
+1 p- Myrmidon_047.png
+1 p- Myrmidon_046.png
+1 p- Myrmidon_047.png
+1 p- Myrmidon_046.png
+1 p- Myrmidon_047.png
+1 p- Myrmidon_046.png
+1 p- Myrmidon_047.png
+C20
+1 p- Myrmidon_048.png
+1 p- Myrmidon_049.png
+1 p- Myrmidon_050.png
+1 p- Myrmidon_051.png
+C1F
+1 p- Myrmidon_052.png
+15 p- Myrmidon_050.png
+1 p- Myrmidon_053.png
+C24
+1 p- Myrmidon_054.png
+1 p- Myrmidon_055.png
+4 p- Myrmidon_056.png
+3 p- Myrmidon_057.png
+1 p- Myrmidon_011.png
+1 p- Myrmidon_012.png
+C04
+5 p- Myrmidon_013.png
+C09
+3 p- Myrmidon_014.png
+C20
+1 p- Myrmidon_015.png
+1 p- Myrmidon_016.png
+C23
+1 p- Myrmidon_017.png
+1 p- Myrmidon_018.png
+C01
+3 p- Myrmidon_019.png
+2 p- Myrmidon_020.png
+2 p- Myrmidon_021.png
+1 p- Myrmidon_022.png
+1 p- Myrmidon_023.png
+1 p- Myrmidon_024.png
+1 p- Myrmidon_025.png
+1 p- Myrmidon_026.png
+C34
+2 p- Myrmidon_027.png
+C06
+2 p- Myrmidon_028.png
+2 p- Myrmidon_029.png
+2 p- Myrmidon_030.png
+C0D
+~~~
+/// - Mode 5
+C03
+C07
+1 p- Myrmidon_000.png
+C22
+3 p- Myrmidon_058.png
+C05
+1 p- Myrmidon_059.png
+C01
+C23
+3 p- Myrmidon_058.png
+C06
+C0D
+~~~
+/// - Mode 6
+C03
+C07
+1 p- Myrmidon_000.png
+C22
+3 p- Myrmidon_058.png
+3 p- Myrmidon_060.png
+2 p- Myrmidon_059.png
+4 p- Myrmidon_060.png
+3 p- Myrmidon_059.png
+2 p- Myrmidon_060.png
+3 p- Myrmidon_059.png
+4 p- Myrmidon_060.png
+C05
+1 p- Myrmidon_059.png
+C01
+C23
+3 p- Myrmidon_058.png
+C06
+C0D
+~~~
+/// - Mode 7
+C02
+1 p- Myrmidon_000.png
+3 p- Myrmidon_061.png
+1 p- Myrmidon_062.png
+C01
+3 p- Myrmidon_061.png
+C0D
+~~~
+/// - Mode 8
+C02
+1 p- Myrmidon_000.png
+3 p- Myrmidon_061.png
+1 p- Myrmidon_062.png
+C01
+3 p- Myrmidon_061.png
+C0D
+~~~
+/// - Mode 9
+1 p- Myrmidon_000.png
+C01
+~~~
+/// - Mode 10
+1 p- Myrmidon_000.png
+C01
+~~~
+/// - Mode 11
+1 p- Myrmidon_000.png
+C01
+~~~
+/// - Mode 12
+C03
+C07
+1 p- Myrmidon_000.png
+2 p- Myrmidon_000.png
+2 p- Myrmidon_001.png
+4 p- Myrmidon_002.png
+2 p- Myrmidon_003.png
+6 p- Myrmidon_004.png
+2 p- Myrmidon_005.png
+2 p- Myrmidon_006.png
+13 p- Myrmidon_007.png
+C22
+2 p- Myrmidon_008.png
+1 p- Myrmidon_009.png
+1 p- Myrmidon_010.png
+2 p- Myrmidon_057.png
+1 p- Myrmidon_012.png
+C04
+1 p- Myrmidon_013.png
+1 p- Myrmidon_014.png
+2 p- Myrmidon_015.png
+C23
+2 p- Myrmidon_016.png
+2 p- Myrmidon_017.png
+1 p- Myrmidon_018.png
+C01
+2 p- Myrmidon_019.png
+1 p- Myrmidon_020.png
+1 p- Myrmidon_021.png
+1 p- Myrmidon_022.png
+1 p- Myrmidon_023.png
+1 p- Myrmidon_024.png
+1 p- Myrmidon_025.png
+1 p- Myrmidon_026.png
+C34
+2 p- Myrmidon_027.png
+C06
+2 p- Myrmidon_028.png
+2 p- Myrmidon_029.png
+2 p- Myrmidon_030.png
+C0D
+~~~
+/// - End of animation

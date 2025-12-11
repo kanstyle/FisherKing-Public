@@ -8,6 +8,16 @@ escape southeast.[X]
 ## Ch4Objective
 Escort nobles[X]
 
+## Ch4Tutorial
+[tr]Escort the nobles to the[N]
+southeast stairs.[AN]
+They will not enter bleedout.[N]
+If either civilian's HP reaches 0,[N]
+they will die, resulting in a[N]
+Game Over. You can speak with them[N]
+to toggle whether they will move.[A][tr]
+[X]
+
 ## Ch4GateNarration
 Placeholder.[A][X]
 
