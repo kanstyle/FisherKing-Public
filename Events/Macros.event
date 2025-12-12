@@ -143,6 +143,8 @@
 #define IfActiveUnitIs(id, label) "CHECK_ACTIVEID (id); BEQ (label) 0xc 0x0;"
 //#define DisaCoords(x,y) "CHECK_ACTIVEID (id); BEQ (label) 0xc 0x0;"
 
+#define SendToConvoy(item) "SVAL 0x1 item; ASMC SendToConvoy|1"
+
 #define AutoLevel(id, targetLevel) "ENUT 0xEF; SVAL s1 (id); SVAL s2 (targetLevel); ASMC AutoLevelASMC|1; ENUF 0xEF"
 #define AddAutoLevel(id, levelsToAdd) "ENUT 0xEF; SVAL s1 (id); SVAL s2 (levelsToAdd); ASMC AddAutoLevelASMC|1; ENUF 0xEF"
 

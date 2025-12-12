@@ -640,12 +640,16 @@ LABEL CSPg1
 	CenterTextbox(DebugPauseText)
 	BLT EndMenuSkipStartEvent 8 7
 		LOAD1 0x1 UnitsCh4
+		SilentGiveItem(Rapier,Dragon)
+		SendToConvoy(RedGem)
+		SendToConvoy(Speedwings)
 		AutoLevel(HeroChar, 7)
 		AutoLevel(Dragon, 7)
 		AutoLevel(Pillow, 7)
 		AutoLevel(Pigeon, 7)
 		AutoLevel(Brother, 7)
 		AutoLevel(Bunny, 7)
+		AutoLevel(Baby, 7)
 		AutoLevel(Swan, 7)
 		AutoLevel(Snot, 7)
 		MNC2 Ch5
@@ -661,8 +665,10 @@ LABEL CSPg1
 		AutoLevel(Pigeon, 8)
 		AutoLevel(Brother, 8)
 		AutoLevel(Bunny, 8)
+		AutoLevel(Baby, 8)
 		AutoLevel(Swan, 8)
 		AutoLevel(Snot, 8)
+		AutoLevel(Storm, 8)
 		MNC2 Ch5d
 		//GOTO EndMenuSkipStartEvent
 		

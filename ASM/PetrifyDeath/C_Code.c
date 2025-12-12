@@ -105,7 +105,26 @@ void PetrifyDeathQuote(ProcPtr proc) {
 	}
 }
 
-bool GetNotDyingPetrifiedUnit(ProcPtr proc) {
+void IsUnitDying(int id, ProcPtr proc) {
+	struct Unit * unit = GetUnit(id);
+		
+        if (!UNIT_IS_VALID(unit))
+            gEventSlots[0xC] = 0;
+			return;
+
+        if (unit->state & US_DEAD)
+            gEventSlots[0xC] = 0;
+			return;
+
+        if (unit->statusIndex != 0xB) {
+			gEventSlots[0xC] = 1;
+			return;
+		}
+	gEventSlots[0xC] = 0;
+	return;
+}
+
+/*bool GetNotDyingPetrifiedUnit(ProcPtr proc) {
 	int i;
 	
 	for (i = gEventSlots[0x8] + 1; i < FACTION_BLUE + 0x40; i++)
@@ -135,4 +154,28 @@ void EventForEachNotDyingUnit(const u16* events, ProcPtr proc) {
 		CallEvent(&events, 1);
 	}
 	gEventSlots[0x8] = 0;
-}
+}*/
+
+/*void EventForEachNotDyingUnit(const u16* events, ProcPtr proc) {
+	int i;
+	
+	for (i = FACTION_BLUE + 1; i < FACTION_BLUE + 0x40; i++)
+    {
+        struct Unit * unit = GetUnit(i);
+		
+        if (!UNIT_IS_VALID(unit))
+            continue;
+
+        if (unit->state & US_DEAD)
+            continue;
+
+        if (unit->statusIndex != 0xB) {
+			gActiveUnit = unit;
+			CallEvent(&events, 1);
+			continue;
+		}
+	}
+	gActiveUnit = 0;
+	return;
+}*/
+

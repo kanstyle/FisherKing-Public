@@ -206,8 +206,26 @@ Storm[X]
 ## StormDesc
 Placeholder.[X]
 
-## JabberwockBossName
+## JabberwockBossName ^
 Jabberwock[X]
 
 ## JabberwockBossDesc
+Placeholder.[X]
+
+## JabberwockBlockerName
+Mome Rath[X]
+
+## JabberwockBlockerDesc
+Placeholder.[X]
+
+## JabberwockSiegeName ^
+Jubjub Bird[X]
+
+## JabberwockSiegeDesc
+Placeholder.[X]
+
+## JabberwockAttackerName ^
+Bandersnatch[X]
+
+## JabberwockAttackerDesc
 Placeholder.[X]

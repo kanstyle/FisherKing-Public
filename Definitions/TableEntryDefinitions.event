@@ -79,6 +79,9 @@
 #define Ch2BeastBoss 0xAB
 #define JabberwockBoss 0xAD
 #define Ch4LowlanderBoss 0xAF
+#define JabberwockBlocker 0xB0
+#define JabberwockSiege 0xB1
+#define JabberwockAttacker 0xB2
 
 #define Jerry 0x83
 #define Sigil 0x3B
@@ -216,6 +219,8 @@
 #define SavageMaul 0xD2
 
 #define AblatioPhoton 0xD3
+
+#define ManxomeMien 0xD4
 
 //Statuses
 #define SpecialStatusID 5

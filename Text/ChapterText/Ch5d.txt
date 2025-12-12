@@ -2,9 +2,29 @@
 
 Duel: Jabberwock[X]
 
-## Ch5dObjective
-Slay beast[X]
+## Ch5dObjective ^
+Slay Jabberwock[X]
 
 ## Ch5dObjectiveLong
 Defeat the[N]
 Jabberwock.[X]
+
+## Ch5dHPDrainMessage1
+You feel your brain[N]
+compressing...[A]
+[X]
+
+## Ch5dHPDrainMessage2
+The spirits laugh in[N]
+the wind...[A]
+[X]
+
+## Ch5dHPDrainMessage3
+Tiny needles pierce[N]
+your skull...[A]
+[X]
+
+## Ch5dBlockersAttack
+The remaining Mome Raths[N]
+turn rabid![A]
+[X]

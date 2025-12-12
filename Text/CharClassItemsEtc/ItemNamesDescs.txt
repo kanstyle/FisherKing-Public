@@ -1175,3 +1175,12 @@ Ablatio Photonica[X]
 ## AblatioPhotonDesc
 Reaver. Ignores Res.
 [X]
+
+## ManxomeMienName ^
+Manxome Mien[X]
+
+## ManxomeMienDesc
+Every turn, each foe takes 4 damage[N]
+and the Jabberwock heals 10 HP.[N]
+Non-lethal.
+[X]
