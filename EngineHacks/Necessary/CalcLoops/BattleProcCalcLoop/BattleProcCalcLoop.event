@@ -6,7 +6,6 @@ ProcLoopParent:
 #incbin "ProcLoop/proc_loop.dmp"
 POIN ProcLoop_Start	//start
 
-
 POIN Proc_Devil	//devil effect
 
 #ifndef COMBAT_ARTS

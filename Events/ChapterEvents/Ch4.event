@@ -494,6 +494,13 @@ BeginningScene:
 	ENUN
 	MOVE 5 Songbird [7,5]
 	ENUN
+	SetBackground(HeroStare)
+	STAL 90
+	CGText(Ch4HeroStare1)
+	CGText(Ch4HeroStare2)
+	FADI 8
+	CLEAN
+	FADU 8
 	Text(Ch4PrinceRoomTalk4)
 	SFX(DoorEffect)
 	TILECHANGE 0x0

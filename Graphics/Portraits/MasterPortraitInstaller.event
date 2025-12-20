@@ -264,3 +264,19 @@ StormMugData: // LL
 #incbin "dmp/Storm_palette.dmp"
 #incbin "dmp/Storm_minimug.dmp"
 setMugEntry(StormMug, StormMugData, 2, 5, 3, 2)
+
+ALIGN 16
+BaronWoundedMugData: // LL
+#incbin "dmp/BaronWounded_mug.dmp"
+#incbin "dmp/BaronWounded_frames.dmp"
+#incbin "dmp/BaronWounded_palette.dmp"
+#incbin "dmp/BaronWounded_minimug.dmp"
+setMugEntry(BaronWoundedMug, BaronWoundedMugData, 2, 5, 2, 3)
+
+ALIGN 16
+GaleMugData: // LL
+#incbin "dmp/Gale_mug.dmp"
+#incbin "dmp/Gale_frames.dmp"
+#incbin "dmp/Gale_palette.dmp"
+#incbin "dmp/Gale_minimug.dmp"
+setMugEntry(GaleMug, GaleMugData, 2, 5, 2, 3)

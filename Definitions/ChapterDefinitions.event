@@ -5,9 +5,9 @@
 #define Ch2 0x2
 #define Ch3 0x3
 #define Ch4 0x4
-#define Ch5 0x5
-#define Ch5d 0x6
-#define Ch6 0x7
+#define Ch5 0x6
+#define Ch5d 0x7
+#define Ch6 0x8
 
 #define MidnightCh 0x2C
 #define BaronManorEntranceCh 0x2D

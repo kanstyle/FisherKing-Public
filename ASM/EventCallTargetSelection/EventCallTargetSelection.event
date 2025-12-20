@@ -1,0 +1,23 @@
+
+// BeginTargetSelectionASMC -- initialize target selection proc
+// Slot1: Coordinates to center target selection on
+// Slot2: Range
+// Slot3: 0 for any tile, 1 for unoccupied tiles only, 2 for units of any allegiance, 3 for blue+green units,
+//        4 for blue units, 5 for red units, 6 for green units, 7 for red+green units, 8 for red+blue units
+// Slot4: RAM unit ID of unit to use for terrain legality, 0 if any terrain
+// Slot5: Subtitle help text string, 0 if none
+// Returns target coordinates in **SlotB**, as SlotC is used for checking if the proc is still running.
+// Returns 0xFFFFFFFF if canceled, returns 0xFFFFFFFE no valid targets exist.
+
+// Note: Max size of target array for targeting units is 64 targets (0x300 bytes, 0xC per target).
+
+// CheckForTargetSelectProcASMC -- check if target selection proc is still running
+// Returns 0 in SlotC if no running target select proc, returns 1 if proc is running
+// Must pause event here until proc finishes. Example:
+// ASMC BeginTargetSelectionASMC
+// LABEL 0
+// ASMC CheckForTargetSelectProcASMC
+// BNE sC s0 0
+
+#include "C_Code.lyn.event" 
+

@@ -1,3 +1,7 @@
+## SD_StormEye
+Storm Eye: Gain +20 Avoid[N]
+vs. all adjacent foes.[X]
+
 ## SD_Shikari
 Shikari: Gain Weapon Triangle[N]
 Advantage against physical beast[N]

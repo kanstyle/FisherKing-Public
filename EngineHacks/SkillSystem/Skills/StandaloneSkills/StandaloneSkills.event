@@ -25,9 +25,11 @@ jumpToHack(LockTouch)
 ORG $18744
 callHack_r3(Lunge)
 
+
 //Vantage
 ORG $2Af7C
 jumpToHack(Vantage)
+
 
 //Inspiring Tune
 ORG $32364
@@ -97,6 +99,7 @@ Vantage:
 POIN SkillTester
 WORD VantageID
 WORD VantagePlusID
+WORD VantageMinusID
 
 #define VigorDanceBit "(8*9)+5" //8*byte + bit of the debuff table to use
 

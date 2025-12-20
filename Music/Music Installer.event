@@ -55,6 +55,8 @@ SongTable(NorthernDesertID,song09,MapMusicGroup) //RW
 SongTable(NoticeOfDeathID,noticeodtest,MapMusicGroup)
 #include "MusicEvents/arcassandra by alusq.event"
 SongTable(ArcassandraID,arcassandra,MapMusicGroup)
+#include "MusicEvents/Sme - At the Bottom of Night.event"
+SongTable(AtTheBottomOfNightID,song14,MapMusicGroup)
 
 #include "MusicEvents/lufiadoom.event"
 SongTable(Lufia_Doom,lufiadoom,MapMusicGroup)

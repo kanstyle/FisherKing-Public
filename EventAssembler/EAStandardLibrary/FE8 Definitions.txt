@@ -456,7 +456,7 @@
 #define GoldGem 0xBB
 
 //Chapter IDs
-#define Prologue 0x00
+/*#define Prologue 0x00
 #define Ch1 0x01
 #define Ch2 0x02
 #define Ch3 0x03
@@ -543,4 +543,4 @@
 #define Anothershrine 0x4B
 #define Anotherpath 0x4C
 #define Gradoshrine_Present 0x4D
-#define Ch5town_Past 0x4E
+#define Ch5town_Past 0x4E*/

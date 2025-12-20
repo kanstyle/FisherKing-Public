@@ -21,6 +21,7 @@ PointerList:
 TurnBasedEvents:
 	TurnEventPlayer(0x0,BleedoutChapterTurnEvent,1,255)
 	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
+	TurnEventPlayer(0x0,ReinforcementUnits,5)
 	END_MAIN
 
 ALIGN 32
@@ -98,6 +99,7 @@ EnemyUnits:
 	
 	//t2 ep
 	UNIT Beast SwordBone 0x40 Level(4,Enemy,True)     [7,10] 0b 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [6,11] 0b 0x0 0x0 0x0 [RottenClaw] AttackIn2RangeAI
 	
 	UNIT Lowlander AxeCav 0x40 Level(4,Enemy,True)     [18,4] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
 	UNIT Beast Revenant 0x40 Level(4,Enemy,True)     [19,3] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
@@ -124,6 +126,11 @@ EnemyUnits:
 	
 	UNIT Ch2BeastBoss Mauthedoog 0x40 Level(8,Enemy,True)     [2,2] 0b 0x0 0x0 0x0 [FireFang] AttackInRangeAI
 	UNIT Songbird Bard 0x40 Level(3,Enemy,False)     [3,1] 0b 0x0 0x0 0x0 [0x0] DoNothingAI
+	UNIT
+	
+ReinforcementUnits: //t5
+	UNIT Lowlander AxeCav 0x40 Level(4,Enemy,True)     [19,4] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
+	UNIT Beast Tarvos 0x40 Level(4,Enemy,True)     [19,5] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
 	UNIT
 
 /*EnemyUnits:
@@ -232,7 +239,6 @@ EnemyUnits:
 EnemyUnitsStartEvent:
 	UNIT Beast Revenant 0x40 Level(3,Enemy,True)     [15,3] 0b 0x0 0x1 REDA14R8 [RottenClaw] AttackInRangeAI
 	UNIT Lowlander Soldier 0x40 Level(4,Enemy,True)      [14,3] 0b 0x0 0x1 REDA15R9 [RottenClaw] AttackInRangeAI
-	UNIT Lowlander Mage 0x40 Level(4,Enemy,True)     [16,3] 0b 0x0 0x1 REDA17R10 [RottenClaw] AttackInRangeAI
 	UNIT Lowlander Fighter 0x40 Level(4,Enemy,True)     [8,14] 0b 0x0 0x1 REDA11R11 [IronLance] AttackInRangeAI
 	UNIT Beast Bonewalker 0x40 Level(3,Enemy,True)     [7,14] 0b 0x0 0x1 REDA12R10 [IronLance] AttackInRangeAI
 	UNIT Lowlander Soldier 0x40 Level(4,Enemy,True)      [7,14] 0b 0x0 0x1 REDA10R13 [IronLance] AttackInRangeAI
@@ -292,7 +298,7 @@ BeginningScene:
 	Highlight(Skull)
 	Text(Ch2IntroSkullDialogue1)
 	SetBackground(SongbirdHug)
-	MusicChange(TimeGearID)
+	MusicChange(0x777F)
 	STAL 30
 	CGText(Ch2IntroSkullHug1)
 	CGText(Ch2IntroSkullHug2)
@@ -343,6 +349,8 @@ BeginningScene:
 	Text(Ch2IntroEnemiesSpawned)
 	
 	CAMERA [19,0]
+	STAL 30
+	CameraCursorLocation(19,3,60)
 	MusicChange(FFTAnxiety)
 	SetBackground(LowlandForest)
 	Text(Ch2IntroPigeonSkull)

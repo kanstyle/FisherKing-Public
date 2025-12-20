@@ -69,6 +69,15 @@ ORG ItemIconEntry(CrystalKnife)
 ORG ItemIconEntry(SavageBlade)
 #incbin "Swords/SavageBlade.dmp"
 
+ORG ItemIconEntry(PatientKatti)
+#incbin "Swords/PatientKatti.dmp"
+
+ORG ItemIconEntry(DervishKatti)
+#incbin "Swords/DervishKatti.dmp"
+
+ORG ItemIconEntry(SlimSword)
+#incbin "Swords/BraveDirk.dmp"
+
 // lances
 ORG ItemIconEntry(IronLance)
 #incbin "Lances/IronLance.dmp"		// Ereshkigal
@@ -377,6 +386,9 @@ ORG ItemIconEntry(Fortify)
 
 ORG ItemIconEntry(Restore)
 #incbin "Staves/Restoration.dmp"		// Ereshkigal
+
+ORG ItemIconEntry(Breeze)
+#incbin "Staves/Breeze.dmp"		// Ereshkigal
 
 /*
 ORG ItemIconEntry(SilenceWord)

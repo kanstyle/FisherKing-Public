@@ -339,9 +339,7 @@ required.[AN]
 Dragon and I were skeptical, but[N]
 Hero reasoned Pillow could crumple[N]
 his armor like tin if necessary.[AN]
-I wondered whether this was the[N]
-casual brutality of mercenary life,[N]
-or if those two were a special case.[A]
+The casual brutality of mercenary life.[A]
 [X]
 
 ## Ch2IntroDragonConvo
@@ -432,7 +430,7 @@ Songbird in such a creepy place.[AN]
 
 [ml][tmm]
 ...[AN][tmm]
-Songbird always says the death is[N]
+Songbird always says that death is[N]
 nothing to them.[AN]
 They'd just come back someday.[N]
 But I've heard that from a lotta people.[AN]
@@ -855,8 +853,8 @@ fall where they may.[A]
 And yet, at the center of this turmoil...[4][4][N]
 stands the Prince himself.[A]
 
-[r][tmm]
-...[AN]
+[r][tmm][ce]
+(The Prince...)[AN][css][4][4][4]
 Let's talk about something else.[A][X]
 
 ## Ch2EndMidnightLocation

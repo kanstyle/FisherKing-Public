@@ -427,6 +427,7 @@ class StatCalculator:
         result = {
             'UnitID': f"{unit['char_id']}_{unit['class_id']}",
             'Chapter': chapter_name,
+            'Allegiance': allegiance,  # Add allegiance for color coding
             'Lv': stats['Lv'],
             'HP': stats['HP'],
             'Str': stats['Atk'],  # 'Atk' in game tables = 'Str' in output format
@@ -493,7 +494,13 @@ class StatCalculator:
 
 
 def export_to_excel(results: Dict[str, List[Dict]], output_path: str):
-    """Export calculated stats to Excel with one sheet per chapter"""
+    """Export calculated stats to Excel with one sheet per chapter
+    
+    Features:
+    - Units separated by allegiance (Ally, NPC, Enemy)
+    - Color-coded rows (light blue for Ally, light green for NPC, light red for Enemy)
+    - Additional columns: AS+4, Mag OHKO, Phys OHKO, Mag ORKO, Phys ORKO
+    """
     wb = openpyxl.Workbook()
     wb.remove(wb.active)  # Remove default sheet
     
@@ -501,61 +508,116 @@ def export_to_excel(results: Dict[str, List[Dict]], output_path: str):
     header_font = Font(bold=True)
     header_fill = PatternFill(start_color="CCCCCC", end_color="CCCCCC", fill_type="solid")
     
+    # Allegiance colors
+    ally_fill = PatternFill(start_color="ADD8E6", end_color="ADD8E6", fill_type="solid")  # Light blue
+    npc_fill = PatternFill(start_color="90EE90", end_color="90EE90", fill_type="solid")   # Light green
+    enemy_fill = PatternFill(start_color="FFB6C1", end_color="FFB6C1", fill_type="solid") # Light red
+    
     for chapter_name in sorted(results.keys()):
         units = results[chapter_name]
         if not units:
             continue
+        
+        # Separate units by allegiance
+        ally_units = [u for u in units if u.get('Allegiance') == 'Ally']
+        npc_units = [u for u in units if u.get('Allegiance') == 'NPC']
+        enemy_units = [u for u in units if u.get('Allegiance') == 'Enemy']
         
         # Create sheet
         ws = wb.create_sheet(title=chapter_name[:31])  # Excel sheet name limit
         
         # Write header
         headers = ['UnitID', 'Lv', 'HP', 'Str', 'Mag', 'Skl', 'Spd', 'Def', 'Res', 'Luck', 'Con', 
-                   'Weapon', 'Atk', 'Hit', 'Crit', 'AS', 'Avoid']
+                   'Weapon', 'Atk', 'Hit', 'Crit', 'AS', 'Avoid', 'AS+4', 
+                   'Mag OHKO', 'Phys OHKO', 'Bomb OHKO', 'Mag ORKO', 'Phys ORKO']
         
         for col_idx, header in enumerate(headers, 1):
             cell = ws.cell(row=1, column=col_idx, value=header)
             cell.font = header_font
             cell.fill = header_fill
         
-        # Write data
         row_idx = 2
-        for unit in units:
-            if not unit['weapons']:
-                # Unit with no weapons
-                ws.cell(row=row_idx, column=1, value=unit['UnitID'])
-                ws.cell(row=row_idx, column=2, value=unit['Lv'])
-                ws.cell(row=row_idx, column=3, value=unit['HP'])
-                ws.cell(row=row_idx, column=4, value=unit['Str'])
-                ws.cell(row=row_idx, column=5, value=unit['Mag'])
-                ws.cell(row=row_idx, column=6, value=unit['Skl'])
-                ws.cell(row=row_idx, column=7, value=unit['Spd'])
-                ws.cell(row=row_idx, column=8, value=unit['Def'])
-                ws.cell(row=row_idx, column=9, value=unit['Res'])
-                ws.cell(row=row_idx, column=10, value=unit['Luck'])
-                ws.cell(row=row_idx, column=11, value=unit['Con'])
-                row_idx += 1
-            else:
-                # Unit with weapons
-                for weapon in unit['weapons']:
+        
+        # Helper function to write unit rows with color coding
+        def write_unit_section(unit_list, fill_color):
+            nonlocal row_idx
+            for unit in unit_list:
+                # Use actual HP (not HP Cap) for OHKO/ORKO calculations
+                hp = unit['HP']
+                def_stat = unit['Def']
+                res_stat = unit['Res']
+                
+                if not unit['weapons']:
+                    # Unit with no weapons
                     ws.cell(row=row_idx, column=1, value=unit['UnitID'])
                     ws.cell(row=row_idx, column=2, value=unit['Lv'])
-                    ws.cell(row=row_idx, column=3, value=unit['HP'])
+                    ws.cell(row=row_idx, column=3, value=hp)
                     ws.cell(row=row_idx, column=4, value=unit['Str'])
                     ws.cell(row=row_idx, column=5, value=unit['Mag'])
                     ws.cell(row=row_idx, column=6, value=unit['Skl'])
                     ws.cell(row=row_idx, column=7, value=unit['Spd'])
-                    ws.cell(row=row_idx, column=8, value=unit['Def'])
-                    ws.cell(row=row_idx, column=9, value=unit['Res'])
+                    ws.cell(row=row_idx, column=8, value=def_stat)
+                    ws.cell(row=row_idx, column=9, value=res_stat)
                     ws.cell(row=row_idx, column=10, value=unit['Luck'])
                     ws.cell(row=row_idx, column=11, value=unit['Con'])
-                    ws.cell(row=row_idx, column=12, value=weapon['Weapon'])
-                    ws.cell(row=row_idx, column=13, value=weapon['Atk'])
-                    ws.cell(row=row_idx, column=14, value=weapon['Hit'])
-                    ws.cell(row=row_idx, column=15, value=weapon['Crit'])
-                    ws.cell(row=row_idx, column=16, value=weapon['AS'])
-                    ws.cell(row=row_idx, column=17, value=weapon['Avoid'])
+                    # Columns 12-17 are weapon stats (empty for units without weapons)
+                    # Column 18: AS+4 (no weapon, so no AS)
+                    # Columns 19-23: OHKO/ORKO stats
+                    ws.cell(row=row_idx, column=19, value=hp + res_stat)  # Mag OHKO
+                    ws.cell(row=row_idx, column=20, value=hp + def_stat)  # Phys OHKO
+                    ws.cell(row=row_idx, column=21, value=int(hp * 0.75) + res_stat)  # Bomb OHKO
+                    ws.cell(row=row_idx, column=22, value=hp // 2 + res_stat)  # Mag ORKO
+                    ws.cell(row=row_idx, column=23, value=hp // 2 + def_stat)  # Phys ORKO
+                    
+                    # Apply color to entire row
+                    for col in range(1, 24):
+                        ws.cell(row=row_idx, column=col).fill = fill_color
+                    
                     row_idx += 1
+                else:
+                    # Unit with weapons
+                    for weapon in unit['weapons']:
+                        ws.cell(row=row_idx, column=1, value=unit['UnitID'])
+                        ws.cell(row=row_idx, column=2, value=unit['Lv'])
+                        ws.cell(row=row_idx, column=3, value=hp)
+                        ws.cell(row=row_idx, column=4, value=unit['Str'])
+                        ws.cell(row=row_idx, column=5, value=unit['Mag'])
+                        ws.cell(row=row_idx, column=6, value=unit['Skl'])
+                        ws.cell(row=row_idx, column=7, value=unit['Spd'])
+                        ws.cell(row=row_idx, column=8, value=def_stat)
+                        ws.cell(row=row_idx, column=9, value=res_stat)
+                        ws.cell(row=row_idx, column=10, value=unit['Luck'])
+                        ws.cell(row=row_idx, column=11, value=unit['Con'])
+                        ws.cell(row=row_idx, column=12, value=weapon['Weapon'])
+                        ws.cell(row=row_idx, column=13, value=weapon['Atk'])
+                        ws.cell(row=row_idx, column=14, value=weapon['Hit'])
+                        ws.cell(row=row_idx, column=15, value=weapon['Crit'])
+                        ws.cell(row=row_idx, column=16, value=weapon['AS'])
+                        ws.cell(row=row_idx, column=17, value=weapon['Avoid'])
+                        ws.cell(row=row_idx, column=18, value=weapon['AS'] + 4)  # AS+4
+                        ws.cell(row=row_idx, column=19, value=hp + res_stat)  # Mag OHKO
+                        ws.cell(row=row_idx, column=20, value=hp + def_stat)  # Phys OHKO
+                        ws.cell(row=row_idx, column=21, value=int(hp * 0.75) + res_stat)  # Bomb OHKO
+                        ws.cell(row=row_idx, column=22, value=hp // 2 + res_stat)  # Mag ORKO
+                        ws.cell(row=row_idx, column=23, value=hp // 2 + def_stat)  # Phys ORKO
+                        
+                        # Apply color to entire row
+                        for col in range(1, 24):
+                            ws.cell(row=row_idx, column=col).fill = fill_color
+                        
+                        row_idx += 1
+        
+        # Write units by allegiance with spacing
+        if ally_units:
+            write_unit_section(ally_units, ally_fill)
+            row_idx += 1  # Add blank row separator
+        
+        if npc_units:
+            write_unit_section(npc_units, npc_fill)
+            row_idx += 1  # Add blank row separator
+        
+        if enemy_units:
+            write_unit_section(enemy_units, enemy_fill)
         
         # Auto-adjust column widths
         for column in ws.columns:

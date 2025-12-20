@@ -13,10 +13,10 @@
  <layer id="1" name="Tile Layer 1" width="15" height="10">
   <properties>
    <property name="Anims1" value="FlasubanVillageTileAnimationsID"/>
-   <property name="ChapterID" value="Ch5d"/>
+   <property name="ChapterID" value="0x7"/>
    <property name="Main" value=""/>
    <property name="MapChangesID" value="Ch5dMapChangesID"/>
-   <property name="MapID" value="Ch5dMapID"/>
+   <property name="MapID" value="0x2B"/>
    <property name="ObjectType" value="FlasubanVillageObjectID"/>
    <property name="PaletteID" value="FlasubanVillageNightPaletteID"/>
    <property name="TileConfig" value="FlasubanVillageConfigID"/>

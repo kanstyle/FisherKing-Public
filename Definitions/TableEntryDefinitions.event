@@ -34,6 +34,8 @@
 #define NoblewomanMug 0x20
 #define GryphonMug 0x21
 #define StormMug 0x22
+#define BaronWoundedMug 0x23
+#define GaleMug 0x24
 
 #define AxeBoneCard 0xAD
 #define LanceBoneCard 0xAE
@@ -65,6 +67,7 @@
 #define Snot 0xD
 #define Swan 0xE
 #define Storm 0xF
+#define Gale 0x10
 #define YoungPrince 0x20
 #define YoungTeacher 0x21
 #define OldPrince 0x22
@@ -178,6 +181,7 @@
 #define BlankDesc 0x404
 
 // Items
+#define Quickblade 0x2
 #define HerosFlair 0xA
 
 #define LowTalon PoisonSword
@@ -221,6 +225,10 @@
 #define AblatioPhoton 0xD3
 
 #define ManxomeMien 0xD4
+
+#define Breeze 0xD5
+#define PatientKatti 0xD6
+#define DervishKatti 0xD7
 
 //Statuses
 #define SpecialStatusID 5

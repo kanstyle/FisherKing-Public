@@ -1,5 +1,8 @@
 EventPointerTable(Ch5EventsID, PointerList)
 
+#define StormBabyTalkFlag 0x7 
+#define GaleBabyTalkFlag 0x8 
+
 PointerList:
 	POIN TurnBasedEvents
 	POIN CharacterBasedEvents
@@ -13,10 +16,14 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+	TurnEventPlayer(0x0,BleedoutChapterTurnEvent,1,255)
+	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
+	TurnEventPlayer(0x0,StormGaleIntro,1)
 	END_MAIN
 
 ALIGN 32
 CharacterBasedEvents:
+	CharacterEventBothWays(StormBabyTalkFlag,StormBabyTalk,Storm,Baby)
 	END_MAIN
 
 MiscBasedEvents:
@@ -44,14 +51,16 @@ Tutorial:
 	END_MAIN
 
 Units1:
-	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [6,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [5,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [5,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [4,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [3,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [3,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [2,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [15,2] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [15,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [8,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [8,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [11,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [12,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [14,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [9,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [12,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [11,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT
 	
 EagleUnits:
@@ -62,13 +71,118 @@ EagleGuardUnits:
 	UNIT
 
 NPCUnits:
+	UNIT Skull Fighter 0x40 Level(8,NPC,True)     [22,6] 0b 0x0 0x0 0x0 [SteelAxe,Vulnerary] BossAI
 	UNIT
 
 EnemyUnits:
+	
+	//right middle ruined house
+	UNIT Beast Cyclops 0x40 Level(1,Enemy,True)     [17,14] 0b 0x0 0x0 0x0 [SilverAxe,Elixir] BossAI
+	
+	//test
+	UNIT Beast BowBone 0x40 Level(8,Enemy,True)     [16,14] 0b 0x0 0x0 0x0 [SteelBow] BossAI
+	UNIT Beast LanceBone 0x40 Level(8,Enemy,True)     [15,14] 0b 0x0 0x0 0x0 [SteelSword] BossAI
+	UNIT Beast SwordBone 0x40 Level(8,Enemy,True)     [15,14] 0b 0x0 0x0 0x0 [SteelLance] BossAI
+	UNIT Beast SwordBone 0x40 Level(8,Enemy,True)     [15,14] 0b 0x0 0x0 0x0 [SteelSword] BossAI
+	UNIT Beast SwordBone 0x40 Level(8,Enemy,True)     [15,14] 0b 0x0 0x0 0x0 [SteelSword] BossAI
+	UNIT
+	
+GaleUnits:
+	UNIT Gale Troubadour 0x40 Level(7,Ally,False)     [23,8] 0b 0x0 0x1 REDA22R8 [Quickblade,Breeze] [0x0,0x0,0x0,0x0]
 	UNIT
 	
 StormUnits:
-	UNIT Storm Myrmidon 0x40 Level(7,Ally,False)     [0,4] 0b 0x0 0x0 0x0 [SteelSword] [0x0,0x0,0x0,0x0]
+	UNIT Storm Myrmidon 0x40 Level(7,Ally,False)     [22,8] 0b 0x0 0x1 REDA21R8 [PatientKatti,SteelSword] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+DragonPillowUnits:
+	UNIT Dragon Headsman 0x40 Level(7,Ally,False)     [3,5] 0b 0x0 0x0 0x0 [PatientKatti,SteelSword] [0x0,0x0,0x0,0x0]
+	UNIT Pillow LowVoice 0x40 Level(7,Ally,False)     [4,5] 0b 0x0 0x0 0x0 [Quickblade,Breeze] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+BaronWoundedUnits:
+	UNIT 0x80 General 0x40 Level(7,NPC,False)     [7,9] 0b 0x0 0x0 0x0 [PatientKatti,SteelSword] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+BaronWoundedCiviliansUnits:
+	UNIT 0x81 CivWoman 0x40 Level(7,NPC,False)     [6,9] 0b 0x0 0x0 0x0 [PatientKatti,SteelSword] [0x0,0x0,0x0,0x0]
+	UNIT 0x81 CivMan 0x40 Level(7,NPC,False)     [8,9] 0b 0x0 0x0 0x0 [PatientKatti,SteelSword] [0x0,0x0,0x0,0x0]
+	UNIT
+
+LeftJabberwockUnits:
+	UNIT Beast Jabberwock 0x40 Level(10,Enemy,False)     [3,19] 0b 0x0 0x1 REDA3R18 [FetidClaw] ChargeAI
+	UNIT
+	
+MiddleJabberwockUnits:
+	UNIT Beast Jabberwock 0x40 Level(10,Enemy,False)     [13,19] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
+	UNIT
+	
+RightJabberwockUnits:
+	UNIT Beast Jabberwock 0x40 Level(10,Enemy,False)     [20,19] 0b 0x0 0x1 REDA20R16 [FetidClaw] ChargeAI
+	UNIT
+	
+TeacherHeroGryphonUnits:
+	UNIT Teacher Veteran 0x40 Level(7,Ally,False)     [6,0] 0b 0x0 0x0 0x0 [PatientKatti,SteelSword] [0x0,0x0,0x0,0x0]
+	UNIT HeroChar UpstartM 0x40 Level(7,Ally,False)     [7,1] 0b 0x0 0x0 0x0 [Quickblade,Breeze] [0x0,0x0,0x0,0x0]
+	UNIT Eagle MageGeneral 0x40 Level(7,NPC,False)     [7,0] 0b 0x0 0x0 0x0 [Quickblade,Breeze] [0x0,0x0,0x0,0x0]
+	UNIT Gryphon Peer 0x40 Level(7,NPC,False)     [8,0] 0b 0x0 0x0 0x0 [Quickblade,Breeze] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+CivilianUnitsCutscene:
+	//bottom right
+	UNIT 0xF2 CivWoman 0x40 Level(7,NPC,False)     [17,16] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0x81 CivMan 0x40 Level(7,NPC,False)     [18,17] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0x82 CivWoman 0x40 Level(7,NPC,False)     [14,15] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0x83 CivMan 0x40 Level(7,NPC,False)     [15,18] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	
+	//skull house
+	UNIT 0x84 CivBoy 0x40 Level(7,NPC,False)     [22,8] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0x85 CivGirl 0x40 Level(7,NPC,False)     [23,8] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0x86 CivBoy 0x40 Level(7,NPC,False)     [21,8] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT Skull Fighter 0x40 Level(7,NPC,False)     [22,9] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT
+
+CivilianUnits:
+	//main building
+	UNIT 0xF1 CivWoman 0x40 Level(7,NPC,False)     [10,1] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0xF1 CivMan 0x40 Level(7,NPC,False)     [11,1] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0xF1 CivWoman 0x40 Level(7,NPC,False)     [11,0] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0xF1 CivBoy 0x40 Level(7,NPC,False)     [9,0] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0xF1 CivGirl 0x40 Level(7,NPC,False)     [10,0] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT 0xF1 CivMan 0x40 Level(7,NPC,False)     [11,2] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+MonsterUnitsCutscene:
+	UNIT 0x87 MogallClass 0x40 Level(6,Enemy,True)     [11,17] 0b 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+	UNIT 0x87 Bael 0x40 Level(6,Enemy,True)     [12,14] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT Beast Bael 0x40 Level(6,Enemy,True)     [20,16] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT 0x87 Cyclops 0x40 Level(6,Enemy,True)     [17,14] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT 0x87 Revenant 0x40 Level(6,Enemy,True)     [12,11] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT 0x87 Mercenary 0x40 Level(6,Enemy,True)     [8,9] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT 0x87 LowMage 0x40 Level(6,Enemy,True)     [17,8] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT 0x87 Gargoyle 0x40 Level(6,Enemy,True)     [5,15] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT 0x87 Bael 0x40 Level(6,Enemy,True)     [7,18] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT 0x87 MogallClass 0x40 Level(6,Enemy,True)     [1,15] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT 0x87 Gargoyle 0x40 Level(6,Enemy,True)     [5,7] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT 0x87 Bael 0x40 Level(6,Enemy,True)     [1,12] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT 0x87 Revenant 0x40 Level(6,Enemy,True)     [4,10] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT 0x87 Bael 0x40 Level(6,Enemy,True)     [2,3] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT 0x87 Revenant 0x40 Level(6,Enemy,True)     [22,11] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT 0x87 Gargoyle 0x40 Level(6,Enemy,True)     [20,9] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT 0x87 LowMage 0x40 Level(6,Enemy,True)     [18,19] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT
+	
+PlayerSquadUnits:
+	UNIT HeroChar UpstartM 0x40 Level(7,Ally,False)     [18,0] 0b 0x0 0x1 REDA18R3 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Headsman 0x40 Level(7,Ally,False)     [17,0] 0b 0x0 0x1 REDA17R3 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT Eagle MageGeneral 0x40 Level(7,NPC,False)     [19,0] 0b 0x0 0x1 REDA19R3 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT Teacher Veteran 0x40 Level(7,Ally,False)     [17,0] 0b 0x0 0x1 REDA17R2 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT Gryphon Peer 0x40 Level(7,NPC,False)     [18,0] 0b 0x0 0x1 REDA18R1 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT Baron General 0x40 Level(7,NPC,False)     [19,0] 0b 0x0 0x1 REDA19R1 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+PlayerSquadUnitsPillow:
+	UNIT Pillow LowVoice 0x40 Level(7,Ally,False)     [0,0] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
 	UNIT
 
 Traps1:
@@ -81,10 +195,153 @@ Traps2:
 
 BeginningScene:
 	SetFlag(BleedoutFlag)
+	
+	/*MUSC AtTheBottomOfNightID
+	SetBackground(BlackBG)
+	STAL 45
+	CenterTextbox(Ch5TriedToLoveThePrince1)
+	FADI 16
+	CLEAN
+	SetBackgroundSlow(Heart)
+	STAL 60
+	CenterTextbox(Ch5TriedToLoveThePrince2)
+	FADI 3
+	CLEAN*/
+	
+	LOMA 0x30
+	LOAD2 0x1 DragonPillowUnits
+	FADU 4
+	STAL 90
+	Text(Ch5IntroDragonPillow)
+	STAL 60
+	LOAD2 0x1 BaronWoundedUnits
+	MOVE 3 0x80 [7,8]
+	ENUN
+	STAL 30
+	MOVE 4 0x80 [7,6]
+	ENUN
+	Highlight(0x80)
+	Text(Ch5IntroBaronWounded1)
+	STAL 45
+	LOAD2 0x1 BaronWoundedCiviliansUnits
+	ENUN
+	MOVE 3 CivMan [8,8]
+	ENUN
+	STAL 40
+	MOVE 8 Dragon [7,5]
+	ENUN
+	Text(Ch5IntroBaronWounded2)
+	STAL 30
+	LOAD2 0x1 TeacherHeroGryphonUnits
+	MOVE 8 HeroChar [7,4]
+	MOVE 8 Teacher [6,3]
+	MOVE 8 Eagle [7,3]
+	MOVE 8 Gryphon [8,3]
+	ENUN
+	STAL 40
+	Highlight(HeroChar)
+	Text(Ch5IntroBaronWounded3)
+	
+	FADI 8
+	DoAllThree
+	LOMA Ch5
+	LOAD2 0x1 CivilianUnitsCutscene
+	LOAD2 0x1 CivilianUnits
+	LOAD2 0x1 MonsterUnitsCutscene
+	CAMERA [18,16]
+	FADU 8
+	STAL 60
+	MOVE 3 0xF2 [16,16]
+	MOVE 3 0x81 [17,17]
+	ENUN
+	STAL 30
+	Highlight(0xF2)
+	Text(Ch5IntroCivilianRunning)
+	
+	MOVE 8 Beast [17,16]
+	ENUN
+	StartBattle
+	NormalDamage(0x0,30)
+	FIGHT_MAP Beast 0xF2 SharpClaw 0x0
+	DISA 0xF2
+	
+	CAMERA [22,6]
+	MOVE 5 0x84 [22,7]
+	MOVE 5 0x85 [23,7]
+	MOVE 5 0x86 [21,7]
+	MOVE 5 Skull [22,8]
+	ENUN
+	Highlight(Skull)
+	Text(Ch5IntroSkullChildren)
+	MOVE 5 0x84 [22,6]
+	ENUN
+	DISA 0x84
+	MOVE 5 0x85 [22,6]
+	ENUN
+	DISA 0x85
+	MOVE 5 0x86 [22,6]
+	ENUN
+	DISA 0x86
+	MOVE 5 Skull [22,6]
+	ENUN
+	Highlight(Skull)
+	Text(Ch5IntroSkullChildren2)
+	
+	CAMERA [1,8]
+	//show bunny's mother hiding with her mother and wishing bunny would come home
+	CameraCursorLocation(1,8,60)
+	SetBackground(HouseBG)
+	Text(Ch5IntroBunnyMother)
+	FADI 8
+	CLEAN
+	FADU 8
+	
+	CAMERA [18,0]
+	//player squad arrives
+	LOAD2 0x1 PlayerSquadUnits
+	ENUN
+	STAL 30
+	LOAD2 0x1 PlayerSquadUnitsPillow
+	UNCM(Pillow,Hide)
+	MOVE 65535 Pillow [18,2]
+	WARPIN [18,2]
+	UNCR(Pillow,Hide)
+	ENDWARP
+	Highlight(Teacher)
+	Text(Ch5IntroPlayerSquad)
+	
+	FADI 8
+	DoAllThree
 	LOAD2 0x1 EagleUnits
+	LOAD2 0x1 EnemyUnits
 	GotoPrepScreen
 	CUSA Ch5Eagle
 	CenterTextbox(Ch5Tutorial)
+	ENDA
+	
+StormGaleIntro:
+	CAMERA [23,8]
+	STAL 30
+	LOAD1 0x1 GaleUnits
+	STAL 30
+	Highlight(Gale)
+	Text(Ch5StormGaleIntro)
+	STAL 30
+	LOAD1 0x1 StormUnits
+	STAL 30
+	Highlight(Storm)
+	Text(Ch5StormGaleIntro2)
+	NoFade
+	ENDA
+	
+StormBabyTalk:
+	Text(Ch5StormBabyTalk)
+	NoFade
+	ENDA
+	
+GaleBabyTalk:
+	Text(Ch5GaleBabyTalk)
+	NoFade
 	ENDA
 
 EndingScene:

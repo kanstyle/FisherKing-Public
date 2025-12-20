@@ -1,6 +1,7 @@
 @ vantage replace 802af7c
 .equ VantageID, SkillTester+4
 .equ VantagePlusID, VantageID+4
+.equ VantageMinusID, VantagePlusID+4
 .thumb
 push {r4-r7,r14}
 ldr r4, =0x203a4ec @atr
@@ -12,6 +13,14 @@ ldr r0, SkillTester
 mov lr, r0
 mov r0, r5 @defender data
 ldr r1, VantagePlusID
+.short 0xF800
+cmp r0, #0
+bne VantagePlus
+
+ldr r0, SkillTester
+mov lr, r0
+mov r0, r4 @attacker data
+ldr r1, VantageMinusID
 .short 0xF800
 cmp r0, #0
 bne VantagePlus
@@ -61,15 +70,15 @@ VantagePlus:
 eor r4,r5
 eor r5,r4
 eor r4,r5
-mov r1, #0x66 @crit
-mov r0, #0
-strh r0, [r4,r1]
+@mov r1, #0x66 @crit
+@mov r0, #0
+@strh r0, [r4,r1]
 @mov r1, #0x68 @crit avoid
 @mov r0, #0
 @strh r0, [r4,r1]
-mov r1, #0x6A @battle crit
-mov r0, #0
-strh r0, [r4,r1]
+@mov r1, #0x6A @battle crit
+@mov r0, #0
+@strh r0, [r4,r1]
 
 Normal:
 str r4, [r6]

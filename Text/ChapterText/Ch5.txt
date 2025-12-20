@@ -1,6 +1,6 @@
 ## Ch5Title
 
-Ch. 5: My Dearest Friend[X]
+Ch. 5: The Devil[X]
 
 ## Ch5xTitle
 KYLE ZONE[X]
@@ -24,6 +24,342 @@ magic.[AN]
 Her death will not result in a[N]
 Game Over.[A]
 [X]
+
+## Ch5IntroDragonPillow
+[ml][LoadDragon]
+[mr][LoadPillow]
+[ml][ce]
+[tmm]...[tmm][A]
+
+[mr]
+[tmm]...[tmm][A]
+
+[ml][ts]
+...Heh.[4] You really are patient,[N][oe]
+huh, Pillow?[A]
+
+[mr]
+Heehee.[4] Maybe I am.[A]
+
+[ml][ts][ce]
+Figured you'd be peppering me[N]
+with questions right about now.[A]
+
+[mr][ts]
+Well, I want to...[4][4] but only[N]
+if you want to tell me.[A][css]
+
+[ml][ts][4][4][4][4][4]
+...I wish some things weren't so[N]
+hard to do.[A]
+
+[mr]
+What do you mean?[A]
+
+[ml]
+Should be easy to talk about stuff.[N]
+You just move your mouth.[AN]
+Should be easy to kill people.[N]
+You just move your arms.[AN]
+...It's so damn annoying.[A]
+
+[mr][ts]
+Come here.[A][css]
+
+[ml][mvl][ts]
+[mr][mvr][ts][4][4][4]There you go...[ce][css]
+
+[l][ts][4][4][4][4][4][oe]
+...Hey, Pillow.[AN]
+You think I'm weak if I can't[N]
+just move my mouth?[AN]
+Be honest.[A]
+
+[r]
+Do you think I'm weak if I[N]
+need daemon pellets?[A][css][4][4][4]
+
+[l]
+...That's different.[A]
+
+[r]
+No, it's not.[A][css]
+
+[l][4][4][4][4][4][4][4][4][4][oe]
+...Wait.[4] Someone's coming.[A]
+[X]
+
+## Ch5IntroBaronWounded1
+[ml][LoadBaronW][mml]
+With me, I said![N]
+Keep up![A]
+[X]
+
+## Ch5IntroBaronWounded2
+[ml][LoadBaronW]
+[mr][LoadDragon]
+Baron?[4] What the hell[N]
+happened to you?[A]
+
+[ml]
+<cough, cough>
+[mml][4][mml][AN]
+Call your troops, mercenary![N]
+We've no time, damn it![A]
+[X]
+
+## Ch5IntroBaronWounded3
+[l][LoadBaronW]
+[fl][LoadDragon]
+[r][LoadTeacher]
+[fr][LoadHeroM]
+Milord![A]
+
+[l]
+Monsters...[4] in the streets.[N]
+They're pouring into the city.[A]
+
+[fr]
+What?![A]
+
+[l][mvl]
+Don't talk![4] Just move, damn you![A]
+[X]
+
+## Ch5IntroCivilianRunning
+[ml][LoadCivManYoung]
+[mr][LoadCivWomanTeen][mmr]
+Run![4] We need to run![A]
+
+[ml]
+I'm--[4][4][mml] Watch out![A]
+[X]
+
+## Ch5IntroSkullChildren
+[mr][LoadSkull]
+[mml]
+Back, you fiends![4][4] Back![A]
+
+[r][LoadCivBoy]
+[fr][LoadCivGirl]
+Wh-what's happening...?[N]
+I...[4][ce][mfr] I want mommy![AN]
+Where's mommy...?![A]
+
+[ml]
+Into the house, son![4] Now![4][N]
+I'll be right there![A]
+
+[r]
+Right![4] C'mon![A][css][clear]
+[fr][clear]
+[X]
+
+## Ch5IntroSkullChildren2
+[ml][LoadSkull]
+Songbird...[AN]
+Songbird, come back to us![N][4][4]
+Please![A]
+[X]
+
+## Ch5IntroBunnyMother
+[ml][LoadCivWoman]
+[mr][LoadCivWomanOld]
+
+[ml]
+Mother![4] Are you okay?[4][N]
+Oh, no![A]
+
+[mr]
+I'll be fine, dear.[4][N]
+A scratch, that's all...[A]
+
+[ml][tmm]
+(Bunny, where are you?)[AN][ce]
+(I don't care if you're not my daughter.[4][N]
+I...[4][4] I want to see you before I die...)[A]
+[X]
+
+## Ch5IntroPlayerSquad
+[fl][LoadTeacher]
+[l][LoadHeroM]
+[fl]
+By the King...[A]
+
+[l]
+Damn it![4][N]
+We need to move![A]
+
+[r][LoadBaronW]
+Hero![4] You'll be under my[N]
+direct command.[4] First--[A]
+
+[fr][LoadGryphon]
+Don't be a fool.[4] You'll be of no[N]
+use to your people in this state.[A]
+
+[r][ce]
+Rrrgh...[A]
+
+[fr]
+Mage-General Eagle.[A][css]
+
+[l][clear][LoadEagle]
+Sir.[A]
+
+[fr]
+You're in command.[4] Your orders are[N]
+to minimize civilian casualties.[A]
+
+[l]
+Yes, sir.[A]
+
+[fr]
+I'll call reinforcements from the capital.[N]
+They'll arrive in about one hour.[AN]
+You've some high-grade daemon pellets[N]
+with you, do you not?[A]
+
+[l][ce]
+I do...[A][oe]
+
+[fr]
+Good.[A]
+
+[fl]
+(High-grade? You mean...)[AN]
+You're bringing that...[4][4] thing[N]
+here, Gryphon?[A]
+
+[fr][ts]
+Why not?[4] What else is it for?[A]
+[X]
+
+## Ch5StormGaleIntro
+[r][LoadStorm]
+[fr][LoadGale]
+[r]
+Okay, Gale![N]
+Let me off here![A]
+
+[fr]
+What? Are you walking[N]
+the rest of the way?[A]
+[X]
+
+## Ch5StormGaleIntro2
+[r][LoadStorm]
+[fr][LoadGale]
+[ml][LoadSkull]
+Storm?[4] Gale?[4] Is that you?[A]
+
+[fr]
+Yes, but who are you?[A]
+
+[r]
+This is Skull.[N]
+You remember him, right?[A]
+
+[fr][ce]
+...The wetlanders blend together a bit.[A][oe]
+
+[r]
+He's a friend.[4] A comrade of ours.[N][4]
+We must lend him a hand.[A]
+
+[fr]
+I would love to, but which is it?[AN]
+Are we looking for Baby, or are we[N]
+stopping here?[A]
+
+[r]
+We-- er...[4][4] Surely there's a way[N]
+to accomplish both...[A]
+
+[ml]
+Go find your kid, Storm![4][4] I'm not[N]
+gonna let these fiends get to mine.[A]
+
+[r]
+Alright.[4] Stand strong, my friend![N]
+We'll be back for you.[A]
+
+[fr][ce]
+Time permitting.[A]
+[X]
+
+## Ch5StormBabyTalk
+
+[mr][LoadStorm]
+[ml][LoadBaby]
+Father![A]
+
+[mr]
+Baby![4][4] It's you![4] Oh, come here![A][css]
+[mvr]
+[ml][mvl]
+[r][ce]
+Oh, Daddy's so glad you're safe...[A]
+
+[l][ce][ts]
+Of course I'm safe![4] I'm even employed.[A]
+
+[r][oe][ts]
+You're...[4] employed?[A]
+
+[l][oe][ts]
+Mm-hmm.[4] I'm a mercenary now.[N]
+Aren't you proud of me?[A]
+
+[r][ts]
+Hold on;[4] when did this happen?[N]
+Does your mother know about this?[AN]
+You didn't write us, did you?[A]
+
+[l]
+I didn't have time![4][4] It was only[N]
+a few days ago.[AN][ts]
+C'mon, tell me you're proud of me![A]
+
+[r][ts]
+Of course I'm proud of you![AN]
+[ce]Just...[4][4] this is such a big step...[N][4][4]
+[oe]You finished your apprenticeship, then?[AN]
+Did the professor give you a writ, or[N]
+some other kind of docu--[AN]
+
+[l][mvl]
+FATHER![4] We need to fight![4] You're going[N]
+to embarrass me in front of my coworkers![A][css]
+
+[r][mmr]
+[l][mml]
+[r]
+Okay, okay![4] Stay behind me, then.[4][4][N]
+We'll--[A]
+
+[ml]
+I CAN'T![4] I have to follow[N]
+orders from my real boss![A]
+
+[mr]
+Okay, you're right.[4] But--[A]
+
+[ml][ce]
+FATHER![A]
+[X]
+
+## Ch5GaleBabyTalk
+[X]
+
+## Ch5TriedToLoveThePrince1
+I loved the Elder Prince.[AN][4][4][4]
+I tried to love his son.[A][X]
+
+## Ch5TriedToLoveThePrince2
+But when he needed me,[N]
+I could not.[AN][4][4][4]
+And so I left him.[A][X]
 
 ## Ch5OldPrinceDeath
 
@@ -99,8 +435,9 @@ I couldn't listen to others talk
 about you. They hadn't known you
 as I had known you.
 
-But I wonder if I even knew you myself.
+But, even then, I wonder if I even knew you myself.
 How could you die like that? With a smile on your face?
 How did you find such satisfaction in your life?
 How could you love this world so much?
+This cold, bloody world?
 [X]

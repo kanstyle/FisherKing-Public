@@ -597,7 +597,40 @@ But I called myself [oq]Hero",[N]
 didn't I?[A]
 [X]
 
+## Ch4HeroStare1
+[SetName]Hero[N]
+...Hey.[AN]
+Come here.[A]
+[X]
+
+## Ch4HeroStare2
+[SetName]Prince[N]
+Oh? You've got a frightening[N]
+look about you.[A]
+[X]
+
 ## Ch4PrinceRoomTalk4
+[mr][LoadHeroM]
+[fl][LoadPrince]
+[l][LoadEnvoy]
+Sorry, Hero![4] I can't let you[N]
+do something so unsavory.[A]
+
+[r][ts]
+[ce]I don't...[4][oe] I don't have a choice.[N]
+Now get out of my way.[A]
+
+[l]
+The prince will be going downstairs,[N]
+like you wanted.[AN]
+And you're going to stay put.[A]
+
+[r]
+...What?[4][4][4][4][mmr][N]
+Wait![A]
+[X]
+
+## Ch4PrinceRoomTalk4Old
 [fl][LoadEnvoy]
 [l][LoadPrince]
 [mr][LoadHeroM]
@@ -622,7 +655,7 @@ like you wanted.[AN]
 And you're going to stay put.[A]
 
 [r]
-...What?[4][4][4][4][mmr][N]
+...What?[4][4][4][4][mmr][N][css]
 Wait![A]
 [X]
 
@@ -652,18 +685,22 @@ and Lady Eagle, my beloved wife...[A]
 
 ## Ch4PrinceSpeechTeacherNarration
 Five years, it had been.[4][4][N]
-Despite all my misgivings, the prince[N]
-appeared that night as a true lord.[N][4][4]
-Weathered by harsh realities, but with[N]
-hope in his eyes.[AN]
+Despite all my misgivings,[N]
+the prince appeared that night[N]
+as a true lord.[AN]
+Weathered by harsh realities,[N]
+but with hope in his eyes.[AN]
 Bending, but never broken.[4][4][N]
-Each time those eyes swept over the[N]
-crowd, I feared they'd land on me.[N][4][4]
+Each time those eyes swept[N]
+over the crowd, I feared[N]
+they'd land on me.[AN]
 And yet they never did.[AN]
-Perhaps he had outgrown me, after all.[N][4][4]
-We could go our separate ways.[N][4][4]
-Perhaps the Elder Prince was right.[4][4]
-It was a heartening thought.[A]
+Perhaps he had outgrown me,[N]
+after all.[4][4] We could go our[N]
+separate ways.[AN]
+Perhaps the Elder Prince[N]
+was right.[4][4] It was a heartening[N]
+thought.[A]
 [X]
 
 ## Ch4PrinceSpeech2
@@ -720,6 +757,7 @@ Send for the knights![4] The enemy is here![A]
 ## Ch4GryphonOrders
 [fl][LoadBaron]
 [l][LoadTeacher]
+Where's the prince gone?![N]
 Gryphon![A]
 
 [fr][LoadEagle]

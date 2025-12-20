@@ -229,3 +229,9 @@ Bandersnatch[X]
 
 ## JabberwockAttackerDesc
 Placeholder.[X]
+
+## GaleName
+Gale[X]
+
+## GaleDesc
+Placeholder.[X]

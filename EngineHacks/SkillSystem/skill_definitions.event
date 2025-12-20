@@ -4,6 +4,12 @@
 
 //My Skills
 
+//VantageMinus
+#define VantageMinusID 147
+
+//StormEye
+#define StormEyeID 130
+
 //Shikari
 #define ShikariID 52
 
@@ -408,7 +414,7 @@
 
 //Indoor March: At start of turn, if unit is on indoor terrain, unit gains +2 Mov.
 //By Sme
-#define IndoorMarchID 147
+#define IndoorMarchID 255
 
 //Nature Rush: At start of turn, if unit is on natural terrain, unit gains +2 Mov.
 //By Sme
@@ -419,7 +425,7 @@
 
 //Quantum Visage: Face changes every time it's looked at.
 //By Leonarth
-#define RandomMugID 130
+#define RandomMugID 255
 
 
 //Identity Problems: This unit can't decide on a name or face.

@@ -10,7 +10,7 @@ Bomb[X]
 
 ## BombDesc ^
 
-Standard bomb. Fixed attack power. Hits Res.[X]
+Fixed Mt plus 25% of target's max HP. Hits Res.[X]
 
 
 ## HeavyBombName ^
@@ -20,7 +20,7 @@ Heavy Bomb[X]
 
 ## HeavyBombDesc ^
 
-Fixed attack power. Hits Res.[X]
+Fixed Mt plus 25% of target's max HP. Hits Res.[X]
 
 
 ## LongFuseBombName ^
@@ -30,7 +30,7 @@ Long-Fuse[X]
 
 ## LongFuseBombDesc ^
 
-Fixed attack power. Hits Res.[X]
+Fixed Mt plus 25% of target's max HP. Hits Res.[X]
 
 
 ## PowderShellName ^
@@ -40,7 +40,7 @@ Powder Shell[X]
 
 ## PowderShellDesc ^
 
-Fixed attack power. Hits Res.[X]
+Fixed Mt plus 25% of target's max HP. Hits Res.[X]
 
 
 ## FirebombName ^
@@ -50,7 +50,7 @@ Firebomb[X]
 
 ## FirebombDesc ^
 
-Eff. vs. [horse]. Fixed attack power. Hits Res.[X]
+Eff. vs. [horse].[X]
 
 
 ## StickyBombName ^
@@ -60,7 +60,7 @@ Sticky Bomb[X]
 
 ## StickyBombDesc ^
 
-Eff. vs. [armor]. Fixed attack power. Hits Res.[X]
+Eff. vs. [armor].[X]
 
 
 ## ClusterBombName ^
@@ -70,7 +70,7 @@ Cluster Bomb[X]
 
 ## ClusterBombDesc ^
 
-Brave. Fixed attack power. Hits Res.[X]
+Strikes twice per attack.[X]
 
 
 ## PowderKegName ^
@@ -80,7 +80,7 @@ Powder Keg[X]
 
 ## PowderKegDesc ^
 
-Fixed attack power. Hits Res.[X]
+Fixed Mt plus 25% of target's max HP. Hits Res.[X]
 
 
 ## RedHornetName ^
@@ -90,7 +90,7 @@ Red Hornet[X]
 
 ## RedHornetDesc ^
 
-Fixed attack power. Hits Res.[X]
+Fixed Mt plus 25% of target's max HP. Hits Res.[X]
 
 
 ## GoldHornetName ^
@@ -100,7 +100,7 @@ Gold Hornet[X]
 
 ## GoldHornetDesc ^
 
-Fixed attack power. Hits Res.[X]
+Fixed Mt plus 25% of target's max HP. Hits Res.[X]
 
 
 ## PainName ^
@@ -1184,3 +1184,33 @@ Every turn, each foe takes 4 damage[N]
 and the Jabberwock heals 10 HP.[N]
 Non-lethal.
 [X]
+
+## PatientKattiName ^
+Patient Katti[X]
+
+## PatientKattiDesc
+Always attacks after foe.[X]
+
+## BreezeName ^
+Breeze[X]
+
+## BreezeDesc ^
+[.][lock] Gale. Heals 10 + Mag HP to all adjacent[N]
+allies and refreshes user. Repairs when Gale[N]
+kills a foe.[X]
+
+## BreezeUseDesc
+Heals adjacent allies[N]
+and refreshes user.[X]
+
+## DervishKattiName ^
+Dervish Katti[X]
+
+## DervishKattiDesc ^
+Doubles number of strikes.[X]
+
+## QuickbladeName ^
+Quickblade[X]
+
+## QuickbladeDesc ^
+Doubles number of strikes.[X]

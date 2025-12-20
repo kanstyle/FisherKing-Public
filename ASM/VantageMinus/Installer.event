@@ -1,0 +1,5 @@
+#include "VantageMinus.lyn.event" 
+
+ALIGN 4 
+VantageMinusID_Link: 
+WORD VantageMinusID

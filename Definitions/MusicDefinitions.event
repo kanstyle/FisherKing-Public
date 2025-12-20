@@ -113,6 +113,7 @@
 #define NorthernDesertID 0x293
 #define NoticeOfDeathID 0x294
 #define ArcassandraID 0x295
+#define AtTheBottomOfNightID 0x296
 
 // Vanilla
 #define TiesOfFriendship 0x7
