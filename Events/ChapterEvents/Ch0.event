@@ -583,6 +583,8 @@ LABEL CSPg1
 	//SSUB 8 8 7 //increase target chapter number by 0x1, so you can do less-than
 	//actually don't need to do this
 	
+	SetFlag(0xEF)
+	
 	//CenterTextbox(DebugPauseText)
 	SVAL 7 Ch1
 	BLT EndMenuSkipStartEvent 8 7
@@ -640,9 +642,9 @@ LABEL CSPg1
 	CenterTextbox(DebugPauseText)
 	BLT EndMenuSkipStartEvent 8 7
 		LOAD1 0x1 UnitsCh4
-		SilentGiveItem(Rapier,Dragon)
-		SendToConvoy(RedGem)
-		SendToConvoy(Speedwings)
+		//SilentGiveItem(Rapier,Dragon)
+		//SendToConvoy(RedGem)
+		//SendToConvoy(Speedwings) //for some reason SendToConvoy causes units to learn a bunch of weird skills
 		AutoLevel(HeroChar, 7)
 		AutoLevel(Dragon, 7)
 		AutoLevel(Pillow, 7)
@@ -672,7 +674,7 @@ LABEL CSPg1
 		MNC2 Ch5d
 		//GOTO EndMenuSkipStartEvent
 		
-	
+	UnsetFlag(0xEF)
 	
 	LABEL EndMenuSkipStartEvent
 	//CenterTextbox(DebugPauseText)

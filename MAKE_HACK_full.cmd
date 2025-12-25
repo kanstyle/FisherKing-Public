@@ -84,5 +84,6 @@ echo:
 echo Done!
 
 python fe8_stat_calculator.py
+python event_item_parser.py
 
 pause

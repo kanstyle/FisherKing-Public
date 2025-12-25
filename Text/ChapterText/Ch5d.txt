@@ -28,3 +28,14 @@ your skull...[A]
 The remaining Mome Raths[N]
 turn rabid![A]
 [X]
+
+## Ch5dEndScratch
+
+T: Well, I can't stop you from throwing your lives away. But I plan to keep mine.
+H: Yeah? What're you gonna do with it, huh? Gonna go back to your little house, and hope you die before things get bad?
+T: Sure. It sounds pleasant, compared to ending up on a pike.
+H: Yeah, well... what do you think the Elder Prince would say?
+T: Don't drag him into this. You know nothing of him.
+H: You think he'd want you sitting by while the world burns? Huh?
+T: What he wanted was for me to live my life as I see fit. And I plan to.
+[X]

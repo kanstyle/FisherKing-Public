@@ -350,6 +350,41 @@ FATHER![A]
 [X]
 
 ## Ch5GaleBabyTalk
+[mr][LoadGale]
+[ml][LoadBaby]
+Placeholder.[A]
+[X]
+
+## Ch5GaleHeroTalk
+[mr][LoadGale]
+[ml][LoadHeroM]
+Placeholder.[A]
+[X]
+
+## Ch5StormHeroTalk
+[mr][LoadStorm]
+[ml][LoadHeroM]
+Placeholder.[A]
+[X]
+
+## Ch5StormSkullTalk
+[mr][LoadStorm]
+[ml][LoadSkull]
+Placeholder.[A]
+[X]
+
+## Ch5BunnyMotherVisit
+[ml][LoadBunny]
+[r][LoadCivWoman]
+[fr][LoadCivWomanOld]
+Placeholder.[A]
+[X]
+
+## Ch5BunnyMotherGenericVisit
+[ml][LoadActive]
+[r][LoadCivWomanOld]
+[fr][LoadCivWoman]
+Placeholder.[A]
 [X]
 
 ## Ch5TriedToLoveThePrince1
