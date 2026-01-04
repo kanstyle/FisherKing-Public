@@ -138,3 +138,5 @@ Low M.[X]
 # 0x051B
 Special[X]
 
+## PlaceholderText
+Placeholder.[A][X]

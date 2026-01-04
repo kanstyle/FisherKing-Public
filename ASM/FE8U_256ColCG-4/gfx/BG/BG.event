@@ -92,6 +92,7 @@ POIN FE9TentBG; WORD 0x1; POIN FE9TentBGPal
 POIN HeartBG; WORD 0x1; POIN HeartBGPal
 POIN EagleIntroBG; WORD 0x1; POIN EagleIntroBGPal
 POIN HeroStareBG; WORD 0x1; POIN HeroStareBGPal
+POIN DaybreakBG; WORD 0x1; POIN DaybreakBGPal
 
 ALIGN 4; ButterflyInverted224BG:
 #incbin "224ButterflyInverted.dmp"
@@ -187,3 +188,8 @@ ALIGN 4; HeroStareBG:
 #incbin "224HeroStare.dmp"
 ALIGN 4; HeroStareBGPal:
 #incbin "224HeroStarePal.dmp"
+
+ALIGN 4; DaybreakBG:
+#incbin "224Daybreak.dmp"
+ALIGN 4; DaybreakBGPal:
+#incbin "224DaybreakPal.dmp"

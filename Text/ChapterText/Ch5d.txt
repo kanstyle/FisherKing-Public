@@ -39,3 +39,15 @@ T: Don't drag him into this. You know nothing of him.
 H: You think he'd want you sitting by while the world burns? Huh?
 T: What he wanted was for me to live my life as I see fit. And I plan to.
 [X]
+
+## Ch5dDeathSceneScratch
+As I looked out over the expanse,[N]
+the rest of my life unfurled.[N]
+It stretched before me like the[N]
+vast, empty sky.[A]
+[X]
+
+## Ch5dDeathSceneScratch2
+[SetName]Teacher[.][N]
+...What am I to do...?[N]
+I can't... I can't bear this.[A][X]

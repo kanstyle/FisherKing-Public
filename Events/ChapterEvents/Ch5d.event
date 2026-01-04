@@ -142,7 +142,7 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
-	SetFlag(BleedoutFlag)
+	CALL StartEventRoutine
 	
 	LOAD1 0x1 EnemyUnits
 	CALL SpawnCenterBlockersEvent
@@ -150,11 +150,14 @@ BeginningScene:
 	ENDA
 
 EndingScene:
-	CALL EndEventRoutine
 	DoAllThree
 	
-	FADI 4
+	FADI 8
+	SetBackgroundSlow(Daybreak)
+	STAL 90
+	CenterTextbox(Ch5dDeathSceneScratch)
 
+	CALL EndEventRoutine
 	MNC2 Ch5d
 	NoFade
 	ENDA
@@ -264,20 +267,5 @@ MoveRightEvent:
 	LOAD2 0x1 RightBlockerUnits3
 	STAL 30
 	LOAD2 0x1 RightBlockerUnits4
-	NoFade
-	ENDA
-
-BleedoutChapterAlwaysEvent:
-	ASMC ReviveAndSetPetrify|1
-	NoFade
-	ENDA
-
-BleedoutChapterTurnEvent:
-	CALL BleedoutTurnEvent
-	NoFade
-	ENDA
-
-HeroGenderFlagTurnEvent:
-	UnsetFlag(HeroGenderswapFlag)
 	NoFade
 	ENDA

@@ -25,6 +25,7 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0,BackReinforcementSWEvent,4,4)
 	TurnEventPlayer(0x0,BackReinforcementNWEvent,4,4)
 	TurnEventPlayer(0x0,BackReinforcementNEEvent,10,2)
+	TurnEventPlayer(0x0,Turn1Routine,1)
 	END_MAIN
 
 ALIGN 32
@@ -302,7 +303,7 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
-	SetFlag(BleedoutFlag)
+	CALL StartEventRoutine
 	
 	LOMA BaronManorEntranceNightCh
 	MUSC Nighttime
@@ -860,20 +861,5 @@ ThievesEvent:
 	MOVE 8 0xAE [13,0]
 	ENUN
 	DISA 0xAE
-	NoFade
-	ENDA
-
-BleedoutChapterAlwaysEvent:
-	ASMC ReviveAndSetPetrify|1
-	NoFade
-	ENDA
-
-BleedoutChapterTurnEvent:
-	CALL BleedoutTurnEvent
-	NoFade
-	ENDA
-
-HeroGenderFlagTurnEvent:
-	UnsetFlag(HeroGenderswapFlag)
 	NoFade
 	ENDA

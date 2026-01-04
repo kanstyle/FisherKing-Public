@@ -182,6 +182,7 @@ WaitTeacher:
 	ENDA
 
 BeginningScene:
+	CALL StartEventRoutine
 	FadeOutMusic
 	
 	CALL GameStartMenuEvent
@@ -444,16 +445,6 @@ EndingScene:
 	CALL EndEventRoutine
 	MNC2 Ch1
 	
-	NoFade
-	ENDA
-
-BleedoutChapterAlwaysEvent:
-	ASMC ReviveAndSetPetrify|1
-	NoFade
-	ENDA
-
-BleedoutChapterTurnEvent:
-	CALL BleedoutTurnEvent
 	NoFade
 	ENDA
 	

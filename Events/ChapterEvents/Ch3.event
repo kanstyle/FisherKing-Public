@@ -28,6 +28,7 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0,ArenaTurnEvent,1,255)
 	TurnEventPlayer(0x0,Turn1BabyIntro,1,1)
 	TurnEventPlayer(0x0,ArenaWave1Intro,1,1) 
+	TurnEventPlayer(0x0,Turn1Routine,1)
 	END_MAIN
 
 ALIGN 32
@@ -201,6 +202,7 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
+	CALL StartEventRoutine
 	Music(ThraciaPreparationsID)
 	ASMC ForceHeroMale|1
 	SetFlag(BleedoutFlag)
@@ -589,21 +591,6 @@ PigeonLeavesEvent:
 		LOAD1 0x1 SnotUnits
 		//get snot
 	LABEL 0x1
-		
-BleedoutChapterAlwaysEvent:
-	ASMC ReviveAndSetPetrify|1
-	NoFade
-	ENDA
-
-BleedoutChapterTurnEvent:
-	CALL BleedoutTurnEvent
-	NoFade
-	ENDA
-
-HeroGenderFlagTurnEvent:
-	UnsetFlag(HeroGenderswapFlag)
-	NoFade
-	ENDA
 
 Ch3SeizeEvent:
 	FlagNotSet(Ch3Village2Flag, 0x0)

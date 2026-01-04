@@ -22,6 +22,7 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0,BleedoutChapterTurnEvent,1,255)
 	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
 	TurnEventPlayer(0x0,ReinforcementUnits,5)
+	TurnEventPlayer(0x0,Turn1Routine,1)
 	END_MAIN
 
 ALIGN 32
@@ -282,7 +283,7 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
-	SetFlag(BleedoutFlag)
+	CALL StartEventRoutine
 	
 	CAMERA [3,1]
 	MusicChange(FFTAnxiety)
@@ -518,20 +519,5 @@ Ch2TeacherSongbirdTalkEvent:
 	IfAliveDialog(Pigeon,Ch2PigeonNo,0x0)
 	LABEL 0x0
 	CALL EndingScene
-	NoFade
-	ENDA
-
-BleedoutChapterAlwaysEvent:
-	ASMC ReviveAndSetPetrify|1
-	NoFade
-	ENDA
-
-BleedoutChapterTurnEvent:
-	CALL BleedoutTurnEvent
-	NoFade
-	ENDA
-
-HeroGenderFlagTurnEvent:
-	UnsetFlag(HeroGenderswapFlag)
 	NoFade
 	ENDA

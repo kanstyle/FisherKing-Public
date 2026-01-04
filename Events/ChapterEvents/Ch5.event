@@ -22,6 +22,8 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0,BleedoutChapterTurnEvent,1,255)
 	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
 	TurnEventPlayer(0x0,StormGaleIntro,1)
+	TurnEventPlayer(0x0,Turn1Routine,1)
+	TurnEventPlayer(0x0,Turn1Event,1)
 	END_MAIN
 
 ALIGN 32
@@ -110,14 +112,23 @@ EnemyUnits:
 	//upper left, by armory
 	UNIT Beast LanceBone 0x40 Level(7,Enemy,True)     [4,1] 0b 0x0 0x0 0x0 [HeavySpear] AttackInRangeAI
 	UNIT Lowlander LowMage 0x40 Level(7,Enemy,True)     [3,3] 0b 0x0 0x0 0x0 [Pain] AttackInRangeAI
-	UNIT Beast Bael 0x40 Level(7,Enemy,True)     [0,4] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT Lowlander LowMage 0x40 Level(7,Enemy,True)     [3,3] 0b 0x0 0x0 0x0 [Pain] AttackInRangeAI
+	UNIT Beast Bael 0x40 Level(7,Enemy,True)     [0,0] 0b 0x0 0x0 0x0 [SharpClaw] ChargeAI
 	UNIT Lowlander HighMage 0x40 Level(7,Enemy,True)     [6,2] 0b 0x0 0x0 0x0 [Elfire] AttackInRangeAI
+	
+	//upper left, by bunny house
+	UNIT Beast AxeBone 0x40 Level(7,Enemy,True)     [1,9] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI //guarding house
+	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [4,9] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
+	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [4,10] 0b 0x0 0x0 0x0 [Lancereaver] ChargeAI
+	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [3,10] 0b 0x0 0x0 0x0 [SavageBlade] ChargeAI
 	
 	//right middle ruined house
 	UNIT Beast Cyclops 0x40 Level(1,Enemy,True)     [17,14] 0b 0x0 0x0 0x0 [SilverAxe,Elixir] BossAI
 	UNIT
 	
-
+	//left sub-river
+	UNIT Beast Gargoyle 0x40 Level(7,Enemy,True)     [3,14] 0b 0x0 0x0 0x0 [SteelLance] AttackInRangeAI //covers bunny house
+	UNIT
 	
 GaleUnits:
 	UNIT Gale Troubadour 0x40 Level(7,Ally,False)     [23,9] 0b 0x0 0x1 REDA22R9 [Quickblade,Breeze] [0x0,0x0,0x0,0x0]
@@ -226,7 +237,7 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
-	SetFlag(BleedoutFlag)
+	CALL StartEventRoutine
 	
 	/*MUSC AtTheBottomOfNightID
 	SetBackground(BlackBG)
@@ -349,7 +360,6 @@ BeginningScene:
 	LOAD2 0x1 NPCUnits
 	SetFlag(StormSkullTalkFlag)
 	GotoPrepScreen
-	CUSA Ch5Eagle
 	CenterTextbox(Ch5Tutorial)
 	ENDA
 	
@@ -401,6 +411,11 @@ SkullTalk:
 	FADU 8
 	NoFade
 	ENDA
+	
+Turn1Event:
+	CUSA Ch5Eagle
+	NoFade
+	ENDA
 
 StormSkullTalk:
 	Text(Ch5StormSkullTalk)
@@ -435,21 +450,5 @@ EndingScene:
 	FADI 4
 
 	MNC2 Ch5d
-	NoFade
-	ENDA
-	
-
-BleedoutChapterAlwaysEvent:
-	ASMC ReviveAndSetPetrify|1
-	NoFade
-	ENDA
-
-BleedoutChapterTurnEvent:
-	CALL BleedoutTurnEvent
-	NoFade
-	ENDA
-
-HeroGenderFlagTurnEvent:
-	UnsetFlag(HeroGenderswapFlag)
 	NoFade
 	ENDA

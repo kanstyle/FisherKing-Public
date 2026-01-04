@@ -34,7 +34,7 @@ int ExtendedDestruction_Usability(struct MenuProc* menu) {
 int ExtendedDestructionAction(struct Proc* proc) {	
 	
 	gActiveUnit->statusIndex = SpecialStatusID_Link;
-	gActiveUnit->statusDuration = 9;
+	gActiveUnit->statusDuration = 8;
 	gActionData.unitActionType = UNIT_ACTION_WAIT;
 	
 	CallEvent(&ExtendedDestructionEvent, 1); 

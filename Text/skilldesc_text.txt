@@ -50,9 +50,9 @@ combat. Instead, he can be strengthened[N]
 with certain items or story events.[X]
 
 ## SD_ExtendedDestruction
-Extended Destruction!!!: Activate to gain[N]
-+2 Move and +5 Attack for 9 turns.[N]
-Lose buff if healed.[X]
+Extended Destruction!!!: Start with[N]
++2 Move and +5 Attack for 8 turns.[N]
+Lose buff if healed. Can reactivate.[X]
 
 ## SD_ItFindsYou
 It Finds You: If you have over 70[N]

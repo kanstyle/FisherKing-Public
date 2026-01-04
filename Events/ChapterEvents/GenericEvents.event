@@ -1,6 +1,33 @@
 StartEventRoutine:
-ENDA
+	SetFlag(BleedoutFlag)
+	NoFade
+	ENDA
+
+Turn1Routine:
+// Set Extended Destruction
+	CHECK_DEPLOYED Bunny
+	BEQ 0x0 0xC 0x0
+		SetUnitStatus(Bunny,BadStatus,0x95) //special status for 9 turns, which ticks down to 8 when player phase starts
+	LABEL 0x0
+	NoFade
+	ENDA
 
 EndEventRoutine:
-DISA Sigil
-ENDA
+	DISA Sigil
+	NoFade
+	ENDA
+
+BleedoutChapterAlwaysEvent:
+	ASMC ReviveAndSetPetrify|1
+	NoFade
+	ENDA
+
+BleedoutChapterTurnEvent:
+	CALL BleedoutTurnEvent
+	NoFade
+	ENDA
+
+HeroGenderFlagTurnEvent:
+	UnsetFlag(HeroGenderswapFlag)
+	NoFade
+	ENDA

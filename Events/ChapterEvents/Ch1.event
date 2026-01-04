@@ -23,6 +23,7 @@ PointerList:
 TurnBasedEvents:
 	TurnEventPlayer(0x0,BleedoutChapterTurnEvent,1,255)
 	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
+	TurnEventPlayer(0x0,Turn1Routine,1)
 	END_MAIN
 
 ALIGN 32
@@ -120,7 +121,7 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
-	SetFlag(BleedoutFlag)
+	CALL StartEventRoutine
 	
 	SetBackground(BlackBG)
 	CenterTextbox(Ch1OpeningNarration)
@@ -242,21 +243,6 @@ EndingScene:
 	
 	CALL EndEventRoutine
 	MNC2 Ch2
-	NoFade
-	ENDA
-
-BleedoutChapterAlwaysEvent:
-	ASMC ReviveAndSetPetrify|1
-	NoFade
-	ENDA
-
-BleedoutChapterTurnEvent:
-	CALL BleedoutTurnEvent
-	NoFade
-	ENDA
-	
-HeroGenderFlagTurnEvent:
-	UnsetFlag(HeroGenderswapFlag)
 	NoFade
 	ENDA
 	
