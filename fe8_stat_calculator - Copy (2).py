@@ -201,8 +201,56 @@ class StatCalculator:
         self.resolver = resolver
         self.tables = table_loader
     
-    def calculate_unit_stats(self, unit: Dict, chapter_name: str) -> Dict:
-        """Calculate all stats for a unit"""
+    @staticmethod
+    def parse_difficulty_bonus(difficulty_hex: str) -> dict:
+        """
+        Parse difficulty bonus from hex format: 0x[Normal][Hard][Easy]
+        
+        Format interpretation:
+        - Position 0 (Normal): Autolevels to SUBTRACT (e.g., 2 = -2 autolevels)
+        - Position 1 (Hard): Autolevels to ADD (e.g., 3 = +3 autolevels)
+        - Position 2 (Easy): Autolevels to SUBTRACT (e.g., 4 = -4 autolevels)
+        
+        Each digit can be 0-F (0-15).
+        
+        Example: 0x234 = Normal: -2, Hard: +3, Easy: -4
+        Example: 0x050 = Normal: 0, Hard: +5, Easy: 0
+        """
+        if not difficulty_hex or not difficulty_hex.startswith('0x'):
+            return {'Normal': 0, 'Hard': 0, 'Easy': 0}
+        
+        try:
+            # Remove 0x prefix and ensure we have 3 digits
+            hex_str = difficulty_hex[2:].strip().upper()
+            if len(hex_str) < 3:
+                hex_str = hex_str.zfill(3)
+            
+            # Parse each digit
+            normal_hex = hex_str[0]
+            hard_hex = hex_str[1]
+            easy_hex = hex_str[2]
+            
+            # Normal and Easy are subtractions, Hard is addition
+            normal_val = -int(normal_hex, 16)  # Negative (subtract)
+            hard_val = int(hard_hex, 16)       # Positive (add)
+            easy_val = -int(easy_hex, 16)      # Negative (subtract)
+            
+            return {
+                'Normal': normal_val,
+                'Hard': hard_val,
+                'Easy': easy_val
+            }
+        except (ValueError, IndexError):
+            return {'Normal': 0, 'Hard': 0, 'Easy': 0}
+    
+    def calculate_unit_stats(self, unit: Dict, chapter_name: str, difficulty_bonus: int = 0) -> Dict:
+        """Calculate all stats for a unit
+        
+        Args:
+            unit: Unit data dictionary
+            chapter_name: Name of the chapter
+            difficulty_bonus: Level adjustment from difficulty mode (added to chapLevel for calculations)
+        """
         # For character lookup, try the string name first, then resolved hex ID
         char_name = unit['char_id']
         char_id_hex = self.resolver.resolve(unit['char_id'])
@@ -318,6 +366,9 @@ class StatCalculator:
         allegiance = unit['allegiance']
         autolevel = unit['autolevel']
         
+        # Apply difficulty bonus to level for calculations (but keep original level for output)
+        adjusted_level = level + difficulty_bonus
+        
         stats = {}
         
         if allegiance in ['Enemy', 'NPC']:
@@ -325,7 +376,7 @@ class StatCalculator:
             for stat in ['HP', 'Atk', 'Skl', 'Spd', 'Def', 'Res', 'Luck']:
                 base = class_bases[stat] + char_bases[stat]
                 if autolevel:
-                    growth_bonus = class_growths[stat] * level // 100
+                    growth_bonus = class_growths[stat] * adjusted_level // 100
                     if is_promoted:
                         growth_bonus += class_growths[stat] * 10 // 100
                     base += growth_bonus
@@ -334,7 +385,7 @@ class StatCalculator:
             # Magic
             mag_base = class_mag + char_mag
             if autolevel:
-                mag_growth_bonus = class_mag_growth * level // 100
+                mag_growth_bonus = class_mag_growth * adjusted_level // 100
                 if is_promoted:
                     mag_growth_bonus += class_mag_growth * 10 // 100
                 mag_base += mag_growth_bonus
@@ -357,14 +408,14 @@ class StatCalculator:
             for stat in ['HP', 'Atk', 'Skl', 'Spd', 'Def', 'Res', 'Luck']:
                 base = class_bases[stat] + char_bases[stat]
                 if autolevel:
-                    growth_bonus = char_growths[stat] * level // 100
+                    growth_bonus = char_growths[stat] * adjusted_level // 100
                     base += growth_bonus
                 stats[stat] = base
             
             # Magic
             mag_base = class_mag + char_mag
             if autolevel:
-                mag_growth_bonus = char_mag_growth * level // 100
+                mag_growth_bonus = char_mag_growth * adjusted_level // 100
                 mag_base += mag_growth_bonus
             stats['Mag'] = mag_base
         
@@ -376,6 +427,7 @@ class StatCalculator:
         result = {
             'UnitID': f"{unit['char_id']}_{unit['class_id']}",
             'Chapter': chapter_name,
+            'Allegiance': allegiance,  # Add allegiance for color coding
             'Lv': stats['Lv'],
             'HP': stats['HP'],
             'Str': stats['Atk'],  # 'Atk' in game tables = 'Str' in output format
@@ -442,7 +494,13 @@ class StatCalculator:
 
 
 def export_to_excel(results: Dict[str, List[Dict]], output_path: str):
-    """Export calculated stats to Excel with one sheet per chapter"""
+    """Export calculated stats to Excel with one sheet per chapter
+    
+    Features:
+    - Units separated by allegiance (Ally, NPC, Enemy)
+    - Color-coded rows (light blue for Ally, light green for NPC, light red for Enemy)
+    - Additional columns: AS+4, Mag OHKO, Phys OHKO, Mag ORKO, Phys ORKO
+    """
     wb = openpyxl.Workbook()
     wb.remove(wb.active)  # Remove default sheet
     
@@ -450,61 +508,116 @@ def export_to_excel(results: Dict[str, List[Dict]], output_path: str):
     header_font = Font(bold=True)
     header_fill = PatternFill(start_color="CCCCCC", end_color="CCCCCC", fill_type="solid")
     
+    # Allegiance colors
+    ally_fill = PatternFill(start_color="ADD8E6", end_color="ADD8E6", fill_type="solid")  # Light blue
+    npc_fill = PatternFill(start_color="90EE90", end_color="90EE90", fill_type="solid")   # Light green
+    enemy_fill = PatternFill(start_color="FFB6C1", end_color="FFB6C1", fill_type="solid") # Light red
+    
     for chapter_name in sorted(results.keys()):
         units = results[chapter_name]
         if not units:
             continue
+        
+        # Separate units by allegiance
+        ally_units = [u for u in units if u.get('Allegiance') == 'Ally']
+        npc_units = [u for u in units if u.get('Allegiance') == 'NPC']
+        enemy_units = [u for u in units if u.get('Allegiance') == 'Enemy']
         
         # Create sheet
         ws = wb.create_sheet(title=chapter_name[:31])  # Excel sheet name limit
         
         # Write header
         headers = ['UnitID', 'Lv', 'HP', 'Str', 'Mag', 'Skl', 'Spd', 'Def', 'Res', 'Luck', 'Con', 
-                   'Weapon', 'Atk', 'Hit', 'Crit', 'AS', 'Avoid']
+                   'Weapon', 'Atk', 'Hit', 'Crit', 'AS', 'Avoid', 'AS+4', 
+                   'Mag OHKO', 'Phys OHKO', 'Bomb OHKO', 'Mag ORKO', 'Phys ORKO']
         
         for col_idx, header in enumerate(headers, 1):
             cell = ws.cell(row=1, column=col_idx, value=header)
             cell.font = header_font
             cell.fill = header_fill
         
-        # Write data
         row_idx = 2
-        for unit in units:
-            if not unit['weapons']:
-                # Unit with no weapons
-                ws.cell(row=row_idx, column=1, value=unit['UnitID'])
-                ws.cell(row=row_idx, column=2, value=unit['Lv'])
-                ws.cell(row=row_idx, column=3, value=unit['HP'])
-                ws.cell(row=row_idx, column=4, value=unit['Str'])
-                ws.cell(row=row_idx, column=5, value=unit['Mag'])
-                ws.cell(row=row_idx, column=6, value=unit['Skl'])
-                ws.cell(row=row_idx, column=7, value=unit['Spd'])
-                ws.cell(row=row_idx, column=8, value=unit['Def'])
-                ws.cell(row=row_idx, column=9, value=unit['Res'])
-                ws.cell(row=row_idx, column=10, value=unit['Luck'])
-                ws.cell(row=row_idx, column=11, value=unit['Con'])
-                row_idx += 1
-            else:
-                # Unit with weapons
-                for weapon in unit['weapons']:
+        
+        # Helper function to write unit rows with color coding
+        def write_unit_section(unit_list, fill_color):
+            nonlocal row_idx
+            for unit in unit_list:
+                # Use actual HP (not HP Cap) for OHKO/ORKO calculations
+                hp = unit['HP']
+                def_stat = unit['Def']
+                res_stat = unit['Res']
+                
+                if not unit['weapons']:
+                    # Unit with no weapons
                     ws.cell(row=row_idx, column=1, value=unit['UnitID'])
                     ws.cell(row=row_idx, column=2, value=unit['Lv'])
-                    ws.cell(row=row_idx, column=3, value=unit['HP'])
+                    ws.cell(row=row_idx, column=3, value=hp)
                     ws.cell(row=row_idx, column=4, value=unit['Str'])
                     ws.cell(row=row_idx, column=5, value=unit['Mag'])
                     ws.cell(row=row_idx, column=6, value=unit['Skl'])
                     ws.cell(row=row_idx, column=7, value=unit['Spd'])
-                    ws.cell(row=row_idx, column=8, value=unit['Def'])
-                    ws.cell(row=row_idx, column=9, value=unit['Res'])
+                    ws.cell(row=row_idx, column=8, value=def_stat)
+                    ws.cell(row=row_idx, column=9, value=res_stat)
                     ws.cell(row=row_idx, column=10, value=unit['Luck'])
                     ws.cell(row=row_idx, column=11, value=unit['Con'])
-                    ws.cell(row=row_idx, column=12, value=weapon['Weapon'])
-                    ws.cell(row=row_idx, column=13, value=weapon['Atk'])
-                    ws.cell(row=row_idx, column=14, value=weapon['Hit'])
-                    ws.cell(row=row_idx, column=15, value=weapon['Crit'])
-                    ws.cell(row=row_idx, column=16, value=weapon['AS'])
-                    ws.cell(row=row_idx, column=17, value=weapon['Avoid'])
+                    # Columns 12-17 are weapon stats (empty for units without weapons)
+                    # Column 18: AS+4 (no weapon, so no AS)
+                    # Columns 19-23: OHKO/ORKO stats
+                    ws.cell(row=row_idx, column=19, value=hp + res_stat)  # Mag OHKO
+                    ws.cell(row=row_idx, column=20, value=hp + def_stat)  # Phys OHKO
+                    ws.cell(row=row_idx, column=21, value=int(hp * 0.75) + res_stat)  # Bomb OHKO
+                    ws.cell(row=row_idx, column=22, value=hp // 2 + res_stat)  # Mag ORKO
+                    ws.cell(row=row_idx, column=23, value=hp // 2 + def_stat)  # Phys ORKO
+                    
+                    # Apply color to entire row
+                    for col in range(1, 24):
+                        ws.cell(row=row_idx, column=col).fill = fill_color
+                    
                     row_idx += 1
+                else:
+                    # Unit with weapons
+                    for weapon in unit['weapons']:
+                        ws.cell(row=row_idx, column=1, value=unit['UnitID'])
+                        ws.cell(row=row_idx, column=2, value=unit['Lv'])
+                        ws.cell(row=row_idx, column=3, value=hp)
+                        ws.cell(row=row_idx, column=4, value=unit['Str'])
+                        ws.cell(row=row_idx, column=5, value=unit['Mag'])
+                        ws.cell(row=row_idx, column=6, value=unit['Skl'])
+                        ws.cell(row=row_idx, column=7, value=unit['Spd'])
+                        ws.cell(row=row_idx, column=8, value=def_stat)
+                        ws.cell(row=row_idx, column=9, value=res_stat)
+                        ws.cell(row=row_idx, column=10, value=unit['Luck'])
+                        ws.cell(row=row_idx, column=11, value=unit['Con'])
+                        ws.cell(row=row_idx, column=12, value=weapon['Weapon'])
+                        ws.cell(row=row_idx, column=13, value=weapon['Atk'])
+                        ws.cell(row=row_idx, column=14, value=weapon['Hit'])
+                        ws.cell(row=row_idx, column=15, value=weapon['Crit'])
+                        ws.cell(row=row_idx, column=16, value=weapon['AS'])
+                        ws.cell(row=row_idx, column=17, value=weapon['Avoid'])
+                        ws.cell(row=row_idx, column=18, value=weapon['AS'] + 4)  # AS+4
+                        ws.cell(row=row_idx, column=19, value=hp + res_stat)  # Mag OHKO
+                        ws.cell(row=row_idx, column=20, value=hp + def_stat)  # Phys OHKO
+                        ws.cell(row=row_idx, column=21, value=int(hp * 0.75) + res_stat)  # Bomb OHKO
+                        ws.cell(row=row_idx, column=22, value=hp // 2 + res_stat)  # Mag ORKO
+                        ws.cell(row=row_idx, column=23, value=hp // 2 + def_stat)  # Phys ORKO
+                        
+                        # Apply color to entire row
+                        for col in range(1, 24):
+                            ws.cell(row=row_idx, column=col).fill = fill_color
+                        
+                        row_idx += 1
+        
+        # Write units by allegiance with spacing
+        if ally_units:
+            write_unit_section(ally_units, ally_fill)
+            row_idx += 1  # Add blank row separator
+        
+        if npc_units:
+            write_unit_section(npc_units, npc_fill)
+            row_idx += 1  # Add blank row separator
+        
+        if enemy_units:
+            write_unit_section(enemy_units, enemy_fill)
         
         # Auto-adjust column widths
         for column in ws.columns:
@@ -521,6 +634,81 @@ def export_to_excel(results: Dict[str, List[Dict]], output_path: str):
     
     wb.save(output_path)
 
+class Ch0Parser:
+    """Parses Ch0.event to extract unit group definitions"""
+    
+    @staticmethod
+    def parse_ch0_unit_groups(filepath: str) -> Dict[str, List[str]]:
+        """
+        Parse Ch0.event and extract unit groups (Ch1Units, Ch2Units, etc.)
+        
+        Returns:
+            Dictionary mapping group names to lists of character IDs
+            Example: {'Ch1Units': ['Hero', 'Teacher'], 'Ch2Units': ['Pillow']}
+        """
+        unit_groups = {}
+        current_group = None
+        
+        with open(filepath, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                
+                # Check for group label (e.g., "Ch1Units:")
+                # Pattern: word starting with Ch followed by digit(s), ending with Units:
+                group_match = re.match(r'^(Units+Ch\d):', line)
+                if group_match:
+                    current_group = group_match.group(1)
+                    unit_groups[current_group] = []
+                    continue
+                
+                # If we're in a group, look for UNIT declarations
+                if current_group:
+                    unit = UnitParser.parse_unit(line)
+                    if unit:
+                        char_id = unit['char_id']
+                        # Add to current group if not already present
+                        if char_id not in unit_groups[current_group]:
+                            unit_groups[current_group].append(char_id)
+        
+        return unit_groups
+    
+    @staticmethod
+    def build_party_composition(unit_groups: Dict[str, List[str]]) -> Dict[str, List[str]]:
+        """
+        Build cumulative party composition for each chapter.
+        
+        Args:
+            unit_groups: Dictionary of group names to character IDs
+            
+        Returns:
+            Dictionary mapping chapter names to cumulative character lists
+            Example: {'Ch1': ['Hero', 'Teacher'], 'Ch2': ['Hero', 'Teacher', 'Pillow']}
+        """
+        party_composition = {}
+        
+        # Extract chapter numbers from group names and sort
+        chapter_nums = []
+        for group_name in unit_groups.keys():
+            match = re.match(r'Ch(\d+)Units', group_name)
+            if match:
+                chapter_nums.append(int(match.group(1)))
+        
+        chapter_nums = sorted(set(chapter_nums))
+        
+        # Build cumulative lists
+        cumulative_units = []
+        for chap_num in chapter_nums:
+            group_name = f'Ch{chap_num}Units'
+            if group_name in unit_groups:
+                # Add units from this chapter's group
+                for char_id in unit_groups[group_name]:
+                    if char_id not in cumulative_units:
+                        cumulative_units.append(char_id)
+            
+            # Store cumulative list for this chapter
+            party_composition[f'Ch{chap_num}'] = cumulative_units.copy()
+        
+        return party_composition
 
 def main():
     """Main function"""
@@ -540,30 +728,38 @@ def main():
     chapter_events_dir = os.path.join(base_path, 'Events', 'ChapterEvents')
     char_class_dir = os.path.join(base_path, 'Tables', 'NightmareModules', 'CharactersClasses')
     items_dir = os.path.join(base_path, 'Tables', 'NightmareModules', 'Items')
+    chapter_data_dir = os.path.join(base_path, 'Tables', 'NightmareModules', 'ChapterData')
     
     char_table_path = os.path.join(char_class_dir, 'CharacterTable.csv')
     class_table_path = os.path.join(char_class_dir, 'ClassTable.csv')
     mag_char_path = os.path.join(char_class_dir, 'MagCharEditor.csv')
     mag_class_path = os.path.join(char_class_dir, 'MagClassEditor.csv')
     item_table_path = os.path.join(items_dir, 'ItemTable.csv')
+    chapter_data_path = os.path.join(chapter_data_dir, 'ChapterData.csv')
     
     # Check if files exist, if not try flat structure fallback
     if not os.path.exists(table_defs_path):
         print("Standard structure not found, trying flat structure...")
         table_defs_path = os.path.join(base_path, 'TableEntryDefinitions.event')
-        fe8_defs_path = os.path.join(base_path, 'FE8_Definitions.txt')
+        fe8_defs_path = os.path.join(base_path, 'FE8 Definitions.txt')
         chapter_events_dir = base_path  # Look in base path
         char_table_path = os.path.join(base_path, 'CharacterTable.csv')
         class_table_path = os.path.join(base_path, 'ClassTable.csv')
         mag_char_path = os.path.join(base_path, 'MagCharEditor.csv')
         mag_class_path = os.path.join(base_path, 'MagClassEditor.csv')
         item_table_path = os.path.join(base_path, 'ItemTable.csv')
+        chapter_data_path = os.path.join(base_path, 'ChapterData.csv')
     
     # Check if files exist
     required_files = [
         table_defs_path, fe8_defs_path, char_table_path, class_table_path,
         mag_char_path, mag_class_path, item_table_path
     ]
+    
+    # ChapterData is optional
+    has_chapter_data = os.path.exists(chapter_data_path)
+    if not has_chapter_data:
+        print("Warning: ChapterData.csv not found - difficulty modes will not be available")
     
     missing_files = [f for f in required_files if not os.path.exists(f)]
     if missing_files:
@@ -577,10 +773,12 @@ def main():
         print("  \\Events\\ChapterEvents\\")
         print("  \\Tables\\NightmareModules\\CharactersClasses\\")
         print("  \\Tables\\NightmareModules\\Items\\")
+        print("  \\Tables\\NightmareModules\\ChapterData\\ (optional)")
         print("\nOr flat structure:")
         print("  \\TableEntryDefinitions.event")
-        print("  \\FE8_Definitions.txt")
+        print("  \\FE8 Definitions.txt")
         print("  \\CharacterTable.csv, ClassTable.csv, etc.")
+        print("  \\ChapterData.csv (optional)")
         return
     
     # Initialize components
@@ -597,7 +795,61 @@ def main():
     table_loader.load_csv(mag_class_path, 'mag_class')
     table_loader.load_csv(item_table_path, 'item')
     
+    # Load chapter data if available
+    chapter_data_map = {}
+    if has_chapter_data:
+        table_loader.load_csv(chapter_data_path, 'chapter_data')
+        # Build a map of EventsID -> chapter data
+        for row in table_loader.tables['chapter_data']:
+            events_id = row.get('EventsID', '').strip()
+            if events_id:
+                chapter_data_map[events_id] = row
+    
     calculator = StatCalculator(resolver, table_loader)
+    
+    # Parse Ch0.event for unit groups
+    ch0_path = os.path.join(chapter_events_dir, 'Ch0.event')
+    party_composition = {}
+    
+    # Parse Ch0.event for unit groups
+    ch0_path = os.path.join(chapter_events_dir, 'Ch0.event')
+    party_composition = {}
+    
+    if os.path.exists(ch0_path):
+        print("Parsing Ch0.event for unit groups...")
+        unit_groups = Ch0Parser.parse_ch0_unit_groups(ch0_path)
+        
+        # Debug output
+        print(f"  Found {len(unit_groups)} unit groups")
+        if not unit_groups:
+            print("  WARNING: No unit groups found in Ch0.event!")
+            print("  Expected format: 'Ch1Units:', 'Ch2Units:', etc.")
+        
+        party_composition = Ch0Parser.build_party_composition(unit_groups)
+        
+        print("\nUnit Groups found:")
+        for group_name in sorted(unit_groups.keys(), key=lambda x: int(re.search(r'\d+', x).group()) if re.search(r'\d+', x) else 0):
+            chars = unit_groups[group_name]
+            print(f"  {group_name}: {', '.join(chars)}")
+        
+        print("\nParty Composition by Chapter:")
+        for chap_name in sorted(party_composition.keys(), key=lambda x: int(re.search(r'\d+', x).group()) if re.search(r'\d+', x) else 0):
+            chars = party_composition[chap_name]
+            print(f"  {chap_name}: {', '.join(chars)}")
+        print()
+    else:
+        print(f"Warning: Ch0.event not found at {ch0_path}")
+        print("Party composition tracking will be disabled.\n")
+    
+    # Determine which difficulty modes to process
+    include_easy = False  # Default: off
+    # Check for command line argument
+    if len(sys.argv) > 2 and sys.argv[2].lower() in ['--easy', '-e', 'easy']:
+        include_easy = True
+    
+    difficulty_modes = ['Normal', 'Hard']
+    if include_easy:
+        difficulty_modes.append('Easy')
     
     # Parse units from all chapter event files
     print("Parsing chapter events...")
@@ -610,6 +862,10 @@ def main():
         for filename in sorted(event_files):
             chapter_file = os.path.join(chapter_events_dir, filename)
             chapter_name = filename[:-6]  # Remove .event extension
+            
+            # Skip Ch0
+            if chapter_name == 'Ch0':
+                continue
             
             units = UnitParser.find_units_in_file(chapter_file)
             
@@ -624,12 +880,31 @@ def main():
             
             if units:
                 print(f"  {chapter_name}: {len(units)} unique units")
-                results[chapter_name] = []
                 
-                for unit in units:
-                    stats = calculator.calculate_unit_stats(unit, chapter_name)
-                    if stats:
-                        results[chapter_name].append(stats)
+                # Show party composition for this chapter
+                if chapter_name in party_composition:
+                    party_units = party_composition[chapter_name]
+                    print(f"    Party at {chapter_name}: {', '.join(party_units)}")
+                else:
+                    print(f"    Party at {chapter_name}: (no party data)")
+                
+                # Get chapter data for difficulty bonuses
+                events_id = f"{chapter_name}EventsID"
+                chapter_data = chapter_data_map.get(events_id, {})
+                difficulty_hex = chapter_data.get('DifficultyBonus', '0x0')
+                difficulty_bonuses = calculator.parse_difficulty_bonus(difficulty_hex)
+                
+                # Calculate stats for each difficulty mode
+                for difficulty in difficulty_modes:
+                    sheet_name = f"{chapter_name} {difficulty}"
+                    difficulty_bonus = difficulty_bonuses.get(difficulty, 0)
+                    
+                    results[sheet_name] = []
+                    
+                    for unit in units:
+                        stats = calculator.calculate_unit_stats(unit, chapter_name, difficulty_bonus)
+                        if stats:
+                            results[sheet_name].append(stats)
     
     if not results:
         print("ERROR: No chapter event files found or no units parsed!")

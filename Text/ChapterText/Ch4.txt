@@ -784,6 +784,41 @@ Stay calm and stay behind us![AN][tmm]
 And where the hell are you, Hero...?!)[A]
 [X]
 
+## Ch4HeroTeacher
+[ml][LoadHeroM]
+[mr][LoadTeacher]
+[ml]
+Teacher![4][4] You gotta--[A]
+
+[mr]
+Hero![4] Where the hell have you been?[A]
+
+[ml]
+Look, I ran into the prince and that[N]
+butterfly mask creep upstairs![AN]
+They locked me in a room![A]
+
+[mr]
+What?[A]
+
+[ml]
+The prince is crazy![4] He wants to invade[N]
+the Lowlands![4] We've gotta--[4][4][ce] ugh![AN]
+My head won't stop ringing...![A]
+
+[mr]
+You chose a fine time to lose your[N]
+marbles![4] How much wine did you drink?[A]
+
+[ml][mml][oe]
+I didn't lose a damn thing![N][4]
+I'm your boss, got it?[4] My word is your--[A]
+
+[mr][ce]
+We don't have time for this.[N][4][4][oe]
+Pull yourself together and fight![A]
+[X]
+
 ## Ch4NPCTalkM
 [mr][LoadActive]
 [ml][LoadNobleman]

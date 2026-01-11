@@ -22,6 +22,7 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
 	TurnEventPlayer(0x0,Turn1Events,1)
 	TurnEventPlayer(0x0,HeroSwanEvent,2)
+	TurnEventPlayer(0x0,HeroTeacherEvent,3)
 	TurnEventPlayer(0x0,BackReinforcementSWEvent,4,4)
 	TurnEventPlayer(0x0,BackReinforcementNWEvent,4,4)
 	TurnEventPlayer(0x0,BackReinforcementNEEvent,10,2)
@@ -785,6 +786,12 @@ HeroSwanEvent:
 	ENUN
 	Highlight(HeroChar)
 	Text(Ch4HeroSwanArrival)
+	NoFade
+	ENDA
+	
+HeroTeacherEvent:
+	CameraCursor(HeroChar)
+	Text(Ch4HeroTeacher)
 	NoFade
 	ENDA
 	

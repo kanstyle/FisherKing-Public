@@ -81,12 +81,12 @@ EagleGuardUnits:
 
 NPCUnits:
 	UNIT Skull Fighter 0x40 Level(8,NPC,True)     [22,6] 0b 0x0 0x0 0x0 [SteelAxe,Vulnerary] BossAI
-	UNIT SoldierChar Knight 0x40 Level(7,NPC,True)     [16,2] 0b 0x0 0x0 0x0 [SteelLance] BossAI
-	UNIT SoldierChar Knight 0x40 Level(7,NPC,True)     [16,3] 0b 0x0 0x0 0x0 [SteelLance] BossAI
-	UNIT SoldierChar Knight 0x40 Level(7,NPC,True)     [13,5] 0b 0x0 0x0 0x0 [SteelLance] BossAI
-	UNIT SoldierChar Knight 0x40 Level(7,NPC,True)     [14,5] 0b 0x0 0x0 0x0 [SteelLance] BossAI
-	UNIT SoldierChar Knight 0x40 Level(7,NPC,True)     [7,3] 0b 0x0 0x0 0x0 [SteelLance] BossAI
-	UNIT SoldierChar Knight 0x40 Level(7,NPC,True)     [7,4] 0b 0x0 0x0 0x0 [SteelLance] BossAI
+	UNIT SoldierChar Knight 0x40 Level(10,NPC,True)     [16,2] 0b 0x0 0x0 0x0 [SteelLance] BossAI
+	UNIT SoldierChar Knight 0x40 Level(10,NPC,True)     [16,3] 0b 0x0 0x0 0x0 [SteelLance] BossAI
+	UNIT SoldierChar Knight 0x40 Level(10,NPC,True)     [13,5] 0b 0x0 0x0 0x0 [SteelLance] BossAI
+	UNIT SoldierChar Knight 0x40 Level(10,NPC,True)     [14,5] 0b 0x0 0x0 0x0 [SteelLance] BossAI
+	UNIT SoldierChar Knight 0x40 Level(10,NPC,True)     [7,3] 0b 0x0 0x0 0x0 [SteelLance] BossAI
+	UNIT SoldierChar Knight 0x40 Level(10,NPC,True)     [7,4] 0b 0x0 0x0 0x0 [SteelLance] BossAI
 	UNIT
 
 EnemyUnits:
@@ -124,10 +124,15 @@ EnemyUnits:
 	
 	//right middle ruined house
 	UNIT Beast Cyclops 0x40 Level(1,Enemy,True)     [17,14] 0b 0x0 0x0 0x0 [SilverAxe,Elixir] BossAI
-	UNIT
 	
 	//left sub-river
 	UNIT Beast Gargoyle 0x40 Level(7,Enemy,True)     [3,14] 0b 0x0 0x0 0x0 [SteelLance] AttackInRangeAI //covers bunny house
+	UNIT Lowlander AxeCav 0x40 Level(7,Enemy,True)     [4,16] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
+	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [3,16] 0b 0x0 0x0 0x0 [SteelSword] ChargeAI
+	
+	//center sub-river
+	UNIT Beast SwordBone 0x40 Level(7,Enemy,True)     [13,19] 0b 0x0 0x0 0x0 [Armorslayer] ChargeAI
+	UNIT Lowlander Fighter 0x40 Level(7,Enemy,True)     [14,18] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
 	UNIT
 	
 GaleUnits:

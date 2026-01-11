@@ -153,49 +153,6 @@ class UnitParser:
 						current_units.append(unit)
 		
 		return groups
-	
-	@staticmethod
-	def parse_autolevel_commands(filepath: str) -> Dict[str, Dict[str, int]]:
-		"""Parse AutoLevel commands from Ch0.event
-		
-		Returns:
-			{chapter_suffix: {char_id: target_level}}
-			e.g., {'4': {'HeroChar': 6, 'Dragon': 6}, '5': {'HeroChar': 7, ...}}
-		"""
-		autolevel_map = {}
-		current_chapter = None
-		in_chapter_section = False
-		
-		with open(filepath, 'r', encoding='utf-8') as f:
-			for line in f:
-				line_stripped = line.strip()
-				
-				# Check for start of chapter section: SVAL 7 Ch<suffix>
-				match = re.match(r'SVAL\s+7\s+Ch(.+)', line_stripped)
-				if match:
-					current_chapter = match.group(1)
-					in_chapter_section = True
-					autolevel_map[current_chapter] = {}
-					continue
-				
-				# Check for end of chapter section: MNC2 Ch<suffix>
-				if in_chapter_section:
-					match = re.match(r'MNC2\s+Ch(.+)', line_stripped)
-					if match and match.group(1) == current_chapter:
-						in_chapter_section = False
-						current_chapter = None
-						continue
-				
-				# If we're in a chapter section, look for AutoLevel commands
-				if in_chapter_section and current_chapter:
-					# Match AutoLevel(CharID, Level)
-					match = re.match(r'AutoLevel\((\w+),\s*(\d+)\)', line_stripped)
-					if match:
-						char_id = match.group(1)
-						target_level = int(match.group(2))
-						autolevel_map[current_chapter][char_id] = target_level
-		
-		return autolevel_map
 
 
 def build_cumulative_rosters(groups_ordered: List[Tuple[str, List[Dict]]]) -> Dict[str, List[Dict]]:
@@ -366,17 +323,13 @@ class StatCalculator:
 		except (ValueError, IndexError):
 			return {'Normal': 0, 'Hard': 0, 'Easy': 0}
 	
-	def calculate_unit_stats(self, unit: Dict, chapter_name: str, difficulty_bonus: int = 0, 
-	                         autolevel_map: Dict[str, Dict[str, int]] = None, 
-	                         chapter_suffix: str = None) -> Dict:
+	def calculate_unit_stats(self, unit: Dict, chapter_name: str, difficulty_bonus: int = 0) -> Dict:
 		"""Calculate all stats for a unit
 		
 		Args:
 			unit: Unit data dictionary
 			chapter_name: Name of the chapter
 			difficulty_bonus: Level adjustment from difficulty mode (added to chapLevel for calculations)
-			autolevel_map: Dictionary of AutoLevel commands from Ch0.event
-			chapter_suffix: Chapter suffix (e.g., "4", "5a") for looking up AutoLevel commands
 		"""
 		# For character lookup, try the string name first, then resolved hex ID
 		char_name = unit['char_id']
@@ -532,38 +485,17 @@ class StatCalculator:
 			
 			char_mag_growth = self.tables.get_stat_value(mag_char_data, 'Magic Growth') if mag_char_data else 0
 			
-			# Check if this character has an AutoLevel command for this chapter
-			should_autolevel = False
-			levels_to_gain = 0
-			
-			if autolevel_map and chapter_suffix:
-				chapter_autolevels = autolevel_map.get(chapter_suffix, {})
-				target_level = None
-				
-				# Check both char_name and char_id_hex
-				if char_name in chapter_autolevels:
-					target_level = chapter_autolevels[char_name]
-				# Also check the ID column value
-				elif char_data.get('ID', '') in chapter_autolevels:
-					target_level = chapter_autolevels[char_data.get('ID', '')]
-				
-				if target_level is not None:
-					# Calculate levels to gain: from base level to target level
-					levels_to_gain = target_level - level
-					if levels_to_gain > 0:
-						should_autolevel = True
-			
 			for stat in ['HP', 'Atk', 'Skl', 'Spd', 'Def', 'Res', 'Luck']:
 				base = class_bases[stat] + char_bases[stat]
-				if should_autolevel:
-					growth_bonus = char_growths[stat] * levels_to_gain // 100
+				if autolevel:
+					growth_bonus = char_growths[stat] * adjusted_level // 100
 					base += growth_bonus
 				stats[stat] = base
 			
 			# Magic
 			mag_base = class_mag + char_mag
-			if should_autolevel:
-				mag_growth_bonus = char_mag_growth * levels_to_gain // 100
+			if autolevel:
+				mag_growth_bonus = char_mag_growth * adjusted_level // 100
 				mag_base += mag_growth_bonus
 			stats['Mag'] = mag_base
 		
@@ -884,17 +816,12 @@ def main():
 	print("Parsing Ch0.event for ally unit groups...")
 	ch0_path = os.path.join(chapter_events_dir, 'Ch0.event')
 	ally_rosters = {}
-	autolevel_map = {}
 	if os.path.exists(ch0_path):
 		groups_ordered = UnitParser.parse_ch0_unit_groups(ch0_path)
 		ally_rosters = build_cumulative_rosters(groups_ordered)
-		autolevel_map = UnitParser.parse_autolevel_commands(ch0_path)
 		print(f"  Found {len(groups_ordered)} unit groups in Ch0.event")
 		for suffix, _ in groups_ordered:
 			print(f"    - UnitsCh{suffix}")
-		# Print AutoLevel commands found
-		if autolevel_map:
-			print(f"  Found AutoLevel commands for {len(autolevel_map)} chapters")
 	else:
 		print("Warning: Ch0.event not found - no ally units will be processed")
 	
@@ -964,8 +891,7 @@ def main():
 					results[sheet_name] = []
 					
 					for unit in units:
-						stats = calculator.calculate_unit_stats(unit, chapter_name, difficulty_bonus, 
-						                                        autolevel_map, chapter_suffix)
+						stats = calculator.calculate_unit_stats(unit, chapter_name, difficulty_bonus)
 						if stats:
 							results[sheet_name].append(stats)
 	
