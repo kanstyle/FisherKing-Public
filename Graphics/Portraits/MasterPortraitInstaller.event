@@ -280,3 +280,11 @@ GaleMugData: // LL
 #incbin "dmp/Gale_palette.dmp"
 #incbin "dmp/Gale_minimug.dmp"
 setMugEntry(GaleMug, GaleMugData, 2, 5, 2, 3)
+
+ALIGN 16
+DevilMugData: // LL
+#incbin "dmp/Devil_mug.dmp"
+#incbin "dmp/Devil_frames.dmp"
+#incbin "dmp/Devil_palette.dmp"
+#incbin "dmp/Devil_minimug.dmp"
+setMugEntry(DevilMug, DevilMugData, 2, 6, 2, 4)

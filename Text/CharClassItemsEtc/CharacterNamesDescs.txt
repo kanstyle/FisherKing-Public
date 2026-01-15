@@ -235,3 +235,9 @@ Gale[X]
 
 ## GaleDesc
 Placeholder.[X]
+
+## DevilName
+The Devil[X]
+
+## DevilDesc
+Placeholder.[X]

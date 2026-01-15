@@ -6,6 +6,10 @@ EventPointerTable(Ch5EventsID, PointerList)
 #define GaleHeroTalkFlag 0x10
 #define StormSkullTalkFlag 0x11
 
+#define JBLeft 0x90
+#define JBCenter 0x91
+#define JBRight 0x92
+
 PointerList:
 	POIN TurnBasedEvents
 	POIN CharacterBasedEvents
@@ -229,9 +233,35 @@ PlayerSquadUnits:
 	UNIT Baron General 0x40 Level(7,NPC,False)     [19,0] 0b 0x0 0x1 REDA19R1 [0x0] [0x0,0x0,0x0,0x0]
 	UNIT
 	
+DevilUnits:
+	UNIT Devil Monolith 0x40 Level(7,NPC,False)     [0,0] 0b 0x0 0x0 0x0 [0x0] [Shadowshot]
+	UNIT
+	
 PlayerSquadUnitsPillow:
 	UNIT Pillow LowVoice 0x40 Level(7,Ally,False)     [0,0] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
 	UNIT
+	
+JabberwockLeftUnits:
+	UNIT JBLeft Jabberwock 0x40 Level(7,Enemy,False)     [0,0] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT
+
+JabberwockCenterUnits:
+	UNIT JBCenter Jabberwock 0x40 Level(7,Enemy,False)     [0,0] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+JabberwockRightUnits:
+	UNIT JBRight Jabberwock 0x40 Level(7,Enemy,False)     [0,0] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+PlayerSquadUnitsEnd:
+	UNIT HeroChar UpstartM 0x40 Level(7,Ally,False)     [10,4] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Headsman 0x40 Level(7,Ally,False)     [14,4] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT Eagle MageGeneral 0x40 Level(7,Ally,False)     [12,5] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT Teacher Veteran 0x40 Level(7,Ally,False)     [11,3] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT Pillow LowVoice 0x40 Level(7,Ally,False)     [13,3] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+
 
 Traps1:
 	ENDTRAP
@@ -449,11 +479,111 @@ GaleHeroTalk:
 	ENDA
 
 EndingScene:
-	CALL EndEventRoutine
+	CAMERA [3,18] // find some way to make these go more towards the center of the screen
+	STAL 60
+	LOAD2 0x1 JabberwockLeftUnits
+	UNCM(JBLeft,Hide)
+	MOVE 65535 JBLeft [3,18]
+	WARPIN [3,18]
+	UNCR(JBLeft,Hide)
+	ENDWARP
+	STAL 60
+	
+	CAMERA [12,17]
+	STAL 60
+	LOAD2 0x1 JabberwockCenterUnits
+	UNCM(JBCenter,Hide)
+	MOVE 65535 JBCenter [12,17]
+	WARPIN [12,17]
+	UNCR(JBCenter,Hide)
+	ENDWARP
+	STAL 60
+	
+	CAMERA [20,18]
+	STAL 60
+	LOAD2 0x1 JabberwockRightUnits
+	UNCM(JBRight,Hide)
+	MOVE 65535 JBRight [20,18]
+	WARPIN [20,18]
+	UNCR(JBRight,Hide)
+	ENDWARP
+	STAL 60
+	//text: eagle/teacher/hero reacting to the jabberwocks appearing. they're really big
+	//jabberwocks spawn more monsters
+	//text: oh shit
+	
+	FADI 8
+	CAMERA2 [7,0] //camera on central building
 	DoAllThree
+	LOAD2 0x1 CivilianUnits
+	LOAD2 0x1 PlayerSquadUnitsEnd
+	FADU 8
+	CenterTextbox(DebugPauseText)
+	//text: civilians are scared
+	
+	//jabberwocks warp to building entrances
+	LOAD2 0x1 JabberwockLeftUnits
+	LOAD2 0x1 JabberwockCenterUnits
+	LOAD2 0x1 JabberwockRightUnits
+	UNCM(JBLeft,Hide)
+	MOVE 65535 JBLeft [6,3]
+	WARPIN [6,3]
+	UNCR(JBLeft,Hide)
+	ENDWARP
+	STAL 30
+	
+	UNCM(JBCenter,Hide)
+	MOVE 65535 JBCenter [13,8]
+	WARPIN [13,8]
+	UNCR(JBCenter,Hide)
+	ENDWARP
+	STAL 30
+	
+	UNCM(JBRight,Hide)
+	MOVE 65535 JBRight [17,3]
+	WARPIN [17,3]
+	UNCR(JBRight,Hide)
+	STAL 30
+	CenterTextbox(DebugPauseText)
+	
+	//the jabberwocks spawn more monsters
+	//text: eagle tells everyone to calm down. the devil's coming
+	//devil warps in
+	/* eagle: "Hello, Devil. Your medication..."
+	"There was no need for the titan to move. The daemon pellets vanished from Eagle's palm, spirited away inside the steel fortress."
+	devil: "Targets...? I count three... no, five... no, ten..."
+	eagle: "Three of them. Left, right, center. The big ones."
+	devil: "Okay."
+	//event battle where devil crits and obliterates one of the mome raths
+	devil: "Target elimin... No, I missed...? ...I need pellets..."
+	eagle: "I already gave you your pellets. Don't worry; they'll kick in momentarily." 
+	devil: "Okay..."
+	
+	dragon: "What the hell is this, Eagle?! There's a person in there, isn't there?"
+	eagle: "The most powerful low mage we've trained thus far."
+	dragon: "...How much did it take, huh? What'd you do to 'em?"
+	eagle: (close eyes) "I don't know the details."
+	dragon: "You--!"
+	eagle: "I knew you wouldn't like it. If it helps, I try not to deploy the Devil except when necessary. It's good to save lives, isn't it?"
+	dragon: "Don't give me that bullshit! It shouldn't exist! Low mages shouldn't exist!"
+	pillow: "..." (sad expression)
+	//warp sound effect plays, momentary screen shake
+	//civilians panicking
+	//text: hero points out that there's another jabberwock behind the building
+	
+	CAMERA [12,4]
+	STAL 60
+	LOAD2 0x1 DevilUnits
+	UNCM(Devil,Hide)
+	MOVE 65535 Devil [12,4]
+	WARPIN [12,4]
+	UNCR(Devil,Hide)
+	ENDWARP
+	STAL 60
 	
 	FADI 4
-
+	DoAllThree
+	CALL EndEventRoutine
 	MNC2 Ch5d
 	NoFade
 	ENDA

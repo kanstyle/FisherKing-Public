@@ -108,7 +108,13 @@ High Mage[X]
 Placeholder.[X]
 
 ## HighSageClassName
-High Mage[X]
+High Sage[X]
 
 ## HighSageClassDesc
+Placeholder.[X]
+
+## MonolithClassName
+Monolith[X]
+
+## MonolithClassDesc
 Placeholder.[X]

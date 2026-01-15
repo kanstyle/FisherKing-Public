@@ -182,6 +182,14 @@ ALIGN 4
 JabberwockyMoving:
 #incbin "Dmp/Jabberwocky-walk.dmp"
 
+ALIGN 4
+DevilStanding:
+#incbin "Dmp/Baron-stand.dmp"
+
+ALIGN 4
+DevilMoving:
+#incbin "Dmp/Baron-walk.dmp"
+
 
 /*ALIGN 4
 SwordCavStanding:

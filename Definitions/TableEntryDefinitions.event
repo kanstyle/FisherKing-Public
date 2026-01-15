@@ -36,6 +36,7 @@
 #define StormMug 0x22
 #define BaronWoundedMug 0x23
 #define GaleMug 0x24
+#define DevilMug 0x25
 
 #define AxeBoneCard 0xAD
 #define LanceBoneCard 0xAE
@@ -78,6 +79,8 @@
 #define Wise 0x27
 #define Gryphon 0x28
 #define Ch5Eagle 0x29
+
+#define Devil 0x40
 
 #define Ch2BeastBoss 0xAB
 #define JabberwockBoss 0xAD
@@ -141,6 +144,8 @@
 #define Carriage 0x8B
 #define AxeCavF 0x8C
 #define Jabberwock 0x8D
+
+#define Monolith 0x8E
 
 #define LowMage Shaman
 #define HighMage Mage

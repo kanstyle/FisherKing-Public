@@ -102,6 +102,9 @@ MovingMapSprite(Carriage,NormalAP,CarriageMoving)
 StandingMapSprite(0x84,2,JabberwockyStanding)
 MovingMapSprite(Jabberwock,NormalAP,JabberwockyMoving)
 
+StandingMapSprite(0x85,2,DevilStanding)
+MovingMapSprite(Monolith,NormalAP,DevilMoving)
+
 StandingMapSprite(0x6a,0,ExampleMapSpriteGraphics)
 
 

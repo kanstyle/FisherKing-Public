@@ -20,6 +20,15 @@
 
 ALIGN 4
 {
+#include "Animations/DevilMagic/Magic Installer.event"
+}
+ALIGN 4
+DevilAnim:
+DarkAnim(0xE3)
+WORD 0x0 // Seperator
+
+ALIGN 4
+{
 #include "Animations/MyrmRepal/Myrmidon Installer.event"
 }
 ALIGN 4

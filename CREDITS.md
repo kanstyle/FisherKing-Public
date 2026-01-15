@@ -60,3 +60,5 @@ adding yourself!
 - Leif: Bow paladin map sprites, class card
 - MeatOfJustice: Axe pal class card
 - DrGreen3339: "4" portrait
+- Leo Link: Baron animation
+- Warpath: Baron map sprite
