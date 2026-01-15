@@ -513,7 +513,7 @@ EndingScene:
 	//text: oh shit
 	
 	FADI 8
-	CAMERA2 [7,0] //camera on central building
+	CAMERA [7,0] //camera on central building
 	DoAllThree
 	LOAD2 0x1 CivilianUnits
 	LOAD2 0x1 PlayerSquadUnitsEnd

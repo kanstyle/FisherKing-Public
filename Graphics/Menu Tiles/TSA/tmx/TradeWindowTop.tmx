@@ -6,11 +6,12 @@
  <tileset firstgid="129" name="BobMenuTiles" tilewidth="8" tileheight="8" tilecount="128" columns="16">
   <image source="../../Image/Png/MenuTiles.png" width="128" height="64"/>
  </tileset>
+ <tileset firstgid="257" source="../MenuTiles.tsx"/>
  <layer id="1" name="Tile Layer 1" width="10" height="3">
   <data encoding="csv">
 130,131,131,131,131,131,131,131,131,134,
-136,142,142,142,142,142,142,142,142,139,
-136,142,142,142,142,142,142,142,142,139
+269,142,142,142,142,142,142,142,142,272,
+269,142,142,142,142,142,142,142,142,272
 </data>
  </layer>
 </map>
