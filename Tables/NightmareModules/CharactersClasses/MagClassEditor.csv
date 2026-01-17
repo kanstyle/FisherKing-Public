@@ -128,20 +128,20 @@ Elder Bael,0,0,30,0
 Journeyman (2),0,0,20,0
 Pupil (2),2,55,20,1
 Sky-Rat,2,40,20,0
-None,0,0,20,0
-None,0,0,20,0
-None,0,0,20,0
-None,0,0,20,0
-None,0,0,20,0
-None,0,0,20,0
-None,0,0,20,0
-None,0,0,20,0
-None,0,0,20,0
-None,0,0,20,0
-None,0,0,20,0
-None,0,0,20,0
-None,0,0,20,0
-None,0,0,20,0
+Mage-General,0,0,30,0
+Bonewalker (Lance),0,0,20,0
+Bonewalker (Axe),0,0,20,0
+SwordCav,0,0,20,0
+AxeCav,0,0,20,0
+BowCav,0,0,20,0
+SwordPal,0,0,30,0
+AxePal,0,0,30,0
+BowPal,0,0,30,0
+LancePal,0,0,30,0
+Carriage,0,0,20,0
+AxeCavF,0,0,20,0
+JabberwockyClass,0,0,30,0
+Troubadour,0,0,20,0
 None,0,0,20,0
 None,0,0,20,0
 None,0,0,20,0

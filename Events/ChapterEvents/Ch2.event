@@ -368,7 +368,6 @@ BeginningScene:
 	LOAD1 0x1 EnemyUnits
 	ENUN
 	GotoPrepScreen
-	//GiveItem(Teacher,Butterfly)
 	ENDA
 
 EndingScene:

@@ -387,6 +387,46 @@ Placeholder.[A]
 Placeholder.[A]
 [X]
 
+## Ch5SkullJoin
+Ask him to join you.
+[X]
+
+## Ch5SkullJoinDesc
+We've buried the hatchet, right?
+[X]
+
+## Ch5SkullWait
+Leave him.
+[X]
+
+## Ch5SkullWaitDesc
+On second thought...
+[X]
+
+## Ch5SkullConvo
+[ml][LoadHeroM]
+[mr][LoadSkull]
+
+[ml]
+Placeholder![A]
+[X]
+
+## Ch5SkullJoinConvo
+[ml][LoadHeroM]
+[mr][LoadSkull]
+
+[mr]
+Join text![A]
+[X]
+
+## Ch5SkullWaitConvo
+[ml][LoadHeroM]
+[mr][LoadSkull]
+
+[mr]
+Wait text![A]
+[X]
+
 ## Ch5TriedToLoveThePrince1
 I loved the Elder Prince.[AN][4][4][4]
 I tried to love his son.[A][X]

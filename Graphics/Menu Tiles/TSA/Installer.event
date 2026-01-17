@@ -1,6 +1,6 @@
 PUSH
-ORG 0xA1742C
-#incbin "dmp/TerrainWindow.tmx.dmp"
+/*ORG 0xA1742C
+#incbin "dmp/TerrainWindow.tmx.dmp"*/
 
 ORG 0xA17744
 #incbin "dmp/ObjectiveWindow.tmx.dmp"
@@ -11,11 +11,11 @@ ORG 0xA176BC
 ORG 0xA173EC
 #incbin "dmp/TradeWindowTop.tmx.dmp"
 
-ORG 0x5A09A8
+/*ORG 0x5A09A8
 #incbin "dmp/BattleForecastEnemy.tmx.dmp"
 
 ORG 0x5A0AEC
-#incbin "dmp/BattleForecastTallEnemy.tmx.dmp"
+#incbin "dmp/BattleForecastTallEnemy.tmx.dmp"*/
 
 ORG 0xA1C8B4
 #incbin "dmp/UnitMenu.tmx.dmp"
@@ -65,10 +65,10 @@ POIN PrepMenuItemsTSA
 ORG 0x99C4C
 POIN PrepMenuItemsSecondUnitTSA
 
-ORG 0x9C804
+/*ORG 0x9C804
 POIN PrepMenuItemUseTSA
 ORG 0x9C65C // this loads extra ui tiles over the normal ones for some reason (again?!)
-SHORT 0x46C0 0x46C0 // nop nop
+SHORT 0x46C0 0x46C0 // nop nop*/
 
 ORG 0xA14D8
 POIN SupportMenuTSA
@@ -171,7 +171,7 @@ PrepMenuTallTSA:
 #define PREEXT_NewPrepTSA PrepMenuTallTSA
 */
 
-ALIGN 4
+/*ALIGN 4
 PrepMenuItemUseTSA:
 #incbin "dmp/PrepMenuItemUse.tmx.dmp"
-//#define New_TSA PrepMenuItemUseTSA
+//#define New_TSA PrepMenuItemUseTSA*/

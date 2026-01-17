@@ -100,6 +100,16 @@ MenuOption(Ch4NPCTalkMove, Ch4NPCTalkMoveDesc, 0)
 MenuOption(Ch4NPCTalkWait, Ch4NPCTalkWaitDesc, 0)
 MenuTerminator
 
+ALIGN 4
+Ch5SkullMenu:
+MenuDefinition(4, 8, 21, 0, 1, Ch5SkullMenuOptions)
+
+ALIGN 4
+Ch5SkullMenuOptions:
+MenuOption(Ch5SkullJoin, Ch5SkullJoinDesc, 0)
+MenuOption(Ch5SkullWait, Ch5SkullWaitDesc, 0)
+MenuTerminator
+
 
 
 

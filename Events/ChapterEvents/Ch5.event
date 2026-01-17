@@ -5,6 +5,7 @@ EventPointerTable(Ch5EventsID, PointerList)
 #define StormHeroTalkFlag 0x9 
 #define GaleHeroTalkFlag 0x10
 #define StormSkullTalkFlag 0x11
+#define HeroSkullTalkFlag 0x12
 
 #define JBLeft 0x90
 #define JBCenter 0x91
@@ -37,6 +38,7 @@ CharacterBasedEvents:
 	CharacterEventBothWays(StormHeroTalkFlag,StormHeroTalk,Storm,HeroChar)
 	CharacterEventBothWays(GaleHeroTalkFlag,GaleHeroTalk,Gale,HeroChar)
 	CharacterEventBothWays(StormSkullTalkFlag,StormSkullTalk,Storm,Skull)
+	CharacterEventBothWays(HeroSkullTalkFlag,SkullTalk,HeroChar,Skull)
 	END_MAIN
 
 MiscBasedEvents:
@@ -418,11 +420,11 @@ BunnyMotherVisit:
 	CHECK_ACTIVE
 	SVAL 0x1 Bunny
 	BNE 0x0 0xC 0x1
-	Text(Ch5BunnyMotherVisit)
-	//choice: shikari scroll or some weapon. "Do you want my weapon, or my wisdom?"
+		Text(Ch5BunnyMotherVisit)
+		//choice: shikari scroll or some weapon. "Do you want my weapon, or my wisdom?"
 	GOTO 0x0
-	Text(Ch5BunnyMotherGenericVisit)
-	//choice: shikari scroll or some weapon. "Do you want my weapon, or my wisdom?"
+		Text(Ch5BunnyMotherGenericVisit)
+		//choice: shikari scroll or some weapon. "Do you want my weapon, or my wisdom?"
 	LABEL 0x0
 	FADI 8
 	CLEAN
@@ -432,15 +434,15 @@ BunnyMotherVisit:
 	
 SkullTalk:
 	SetBackground(HouseBG)
-	CHECK_ACTIVE
-	SVAL 0x1 Bunny
-	BNE 0x0 0xC 0x1
-	Text(Ch5BunnyMotherVisit)
-	//choice: shikari scroll or some weapon. "Do you want my weapon, or my wisdom?"
-	GOTO 0x0
-	Text(Ch5BunnyMotherGenericVisit)
-	//choice: shikari scroll or some weapon. "Do you want my weapon, or my wisdom?"
+	Text(Ch5SkullConvo)
+	CallMenu(Ch5SkullMenu)
+	BNE 0x0 0xC 0x0
+		Text(Ch5SkullJoinConvo)
+	GOTO 0x1
 	LABEL 0x0
+		Text(Ch5SkullWaitConvo)
+		GiveItem(Butterfly,0xFFFF)
+	LABEL 0x1
 	FADI 8
 	CLEAN
 	FADU 8
