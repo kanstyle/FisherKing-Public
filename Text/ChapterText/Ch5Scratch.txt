@@ -1,0 +1,89 @@
+## Ch5TriedToLoveThePrince1
+I loved the Elder Prince.[AN][4][4][4]
+I tried to love his son.[A][X]
+
+## Ch5TriedToLoveThePrince2
+But when he needed me,[N]
+I could not.[AN][4][4][4]
+And so I left him.[A][X]
+
+## Ch5OldPrinceDeath
+
+[fr][LoadPurpleSoldier]
+[r][LoadYoungTeacher]
+[l][LoadOldPrince]
+[fl][LoadPurpleFighter]
+
+[fr]
+The Elder Prince has fallen!
+Fetch the healers!
+
+[fl]
+He's still breathing! Sire,
+we must move you to--
+
+[ml]
+It's all right.
+Calm yourselves.
+
+[fl]
+But, sire--
+
+[mr][MoveMidRight]
+Silence!
+Leave us, you fools!
+[X]
+
+## Ch5OldPrinceDeath2
+
+[r][LoadYoungTeacher]
+[l][LoadOldPrince]
+
+Ah, Teacher... My loyal friend.
+I'm glad you're here to...
+see me off.
+
+[r]
+My prince... What are your final
+orders?
+
+[l]
+Oh, why bother? You know what to
+do, Teacher. We've prepared for this
+for a long time, haven't we?
+
+[r]
+No, no...
+I...
+
+[l]
+What is it?
+
+[r]
+I need you to tell me... what
+I should do.
+
+[l]
+Teacher...
+
+[r]
+Please.
+
+[l]
+Just watch. That's all.
+Watch as my spirit... takes flight.
+
+
+## Ch5TeacherCries
+
+I could not attend your funeral.
+I couldn't listen to others talk
+about you. They hadn't known you
+as I had known you.
+
+But, even then, I wonder if I even knew you myself.
+How could you die like that? With a smile on your face?
+How did you find such satisfaction in your life?
+How could you love this world so much?
+This cold, bloody world?
+[X]

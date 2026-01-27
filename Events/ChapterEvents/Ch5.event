@@ -6,10 +6,19 @@ EventPointerTable(Ch5EventsID, PointerList)
 #define GaleHeroTalkFlag 0x10
 #define StormSkullTalkFlag 0x11
 #define HeroSkullTalkFlag 0x12
+#define BunnyVillageFlag 0x13
 
 #define JBLeft 0x90
 #define JBCenter 0x91
 #define JBRight 0x92
+
+#define JBLeft1 0x93
+#define JBLeft2 0x94
+#define JBCenter1 0x95
+#define JBCenter2 0x96
+#define JBRight1 0x97
+#define JBRight2 0x98
+
 
 PointerList:
 	POIN TurnBasedEvents
@@ -47,6 +56,7 @@ MiscBasedEvents:
 	END_MAIN
 
 LocationBasedEvents:
+	Village(BunnyVillageFlag,BunnyMotherVisit,1,8)
 	END_MAIN
 
 Dunno1:
@@ -244,15 +254,67 @@ PlayerSquadUnitsPillow:
 	UNIT
 	
 JabberwockLeftUnits:
-	UNIT JBLeft Jabberwock 0x40 Level(7,Enemy,False)     [0,0] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT JBLeft Jabberwock 0x40 Level(10,Enemy,False) [3,18] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
+	UNIT
+
+JabberwockLeftUnits1:
+	UNIT JBLeft1 Revenant 0x40 Level(10,Enemy,False) [2,17] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
+	UNIT
+
+JabberwockLeftUnits2:
+	UNIT JBLeft2 Revenant 0x40 Level(10,Enemy,False) [4,19] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
 	UNIT
 
 JabberwockCenterUnits:
-	UNIT JBCenter Jabberwock 0x40 Level(7,Enemy,False)     [0,0] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT JBCenter Jabberwock 0x40 Level(10,Enemy,False) [12,16] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
+	UNIT
+
+JabberwockCenterUnits1:
+	UNIT JBCenter1 Revenant 0x40 Level(10,Enemy,False) [11,15] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
+	UNIT
+
+JabberwockCenterUnits2:
+	UNIT JBCenter2 Revenant 0x40 Level(10,Enemy,False) [13,15] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
+	UNIT
+
+JabberwockRightUnits:
+	UNIT JBRight Jabberwock 0x40 Level(10,Enemy,False) [19,17] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
+	UNIT
+
+JabberwockRightUnits1:
+	UNIT JBRight1 Revenant 0x40 Level(10,Enemy,False) [18,18] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
+	UNIT
+
+JabberwockRightUnits2:
+	UNIT JBRight2 Revenant 0x40 Level(10,Enemy,False) [20,16] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
 	UNIT
 	
-JabberwockRightUnits:
-	UNIT JBRight Jabberwock 0x40 Level(7,Enemy,False)     [0,0] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+JabberwockLeftUnits02:
+	UNIT JBLeft Jabberwock 0x40 Level(10,Enemy,False) [6,3] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
+	UNIT
+JabberwockLeftUnits12:
+	UNIT JBLeft1 Revenant 0x40 Level(10,Enemy,False) [5,2] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
+	UNIT
+JabberwockLeftUnits22:
+	UNIT JBLeft2 Revenant 0x40 Level(10,Enemy,False) [5,4] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
+	UNIT
+JabberwockCenterUnits02:
+	UNIT JBCenter Jabberwock 0x40 Level(10,Enemy,False) [13,8] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
+	UNIT
+JabberwockCenterUnits12:
+	UNIT JBCenter1 Revenant 0x40 Level(10,Enemy,False) [12,9] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
+	UNIT
+JabberwockCenterUnits22:
+	UNIT JBCenter2 Revenant 0x40 Level(10,Enemy,False) [14,9] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
+	UNIT
+JabberwockRightUnits02:
+	UNIT JBRight Jabberwock 0x40 Level(10,Enemy,False) [17,3] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
+	UNIT
+JabberwockRightUnits12:
+	UNIT JBRight1 Revenant 0x40 Level(10,Enemy,False) [18,2] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
+	UNIT
+JabberwockRightUnits22:
+	UNIT JBRight2 Revenant 0x40 Level(10,Enemy,False) [18,4] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
 	UNIT
 	
 PlayerSquadUnitsEnd:
@@ -292,6 +354,18 @@ BeginningScene:
 	LOAD2 0x1 DragonPillowUnits
 	FADU 4
 	STAL 90
+	
+	/*SVAL r1 MapDark //vesly draw patch testing
+	SVAL 0xB (0x0 | (0x0<<16))
+	ASMC Draw_ASMC|1
+	Placeholder
+	Draw(MapDark,1,2)
+	Placeholder
+	Draw(MapDark,1,3)
+	Placeholder
+	Draw(MapDark,1,4)
+	Placeholder*/
+	
 	Text(Ch5IntroDragonPillow)
 	STAL 60
 	LOAD2 0x1 BaronWoundedUnits
@@ -324,7 +398,7 @@ BeginningScene:
 	
 	FADI 8
 	DoAllThree
-	LOMA Ch5
+	LOMA 0x6
 	LOAD2 0x1 CivilianUnitsCutscene
 	LOAD2 0x1 CivilianUnits
 	LOAD2 0x1 MonsterUnitsCutscene
@@ -421,19 +495,30 @@ BunnyMotherVisit:
 	SVAL 0x1 Bunny
 	BNE 0x0 0xC 0x1
 		Text(Ch5BunnyMotherVisit)
-		//choice: shikari scroll or some weapon. "Do you want my weapon, or my wisdom?"
-	GOTO 0x0
-		Text(Ch5BunnyMotherGenericVisit)
-		//choice: shikari scroll or some weapon. "Do you want my weapon, or my wisdom?"
+		GiveItemWithDurability(SkillScroll,52,0xFFFF)
+		GiveItem(Razorbeak,0xFFFF)
+		//get both items
+		RemoveBackground
+		FADU 16
+	GOTO 0x2
 	LABEL 0x0
-	FADI 8
-	CLEAN
-	FADU 8
+		Text(Ch5BunnyMotherGenericVisit)
+		CallMenu(Ch5BunnyMenu)
+		BNE 0x1 0xC 0x0
+			RemoveBackground
+			FADU 16
+			GiveItemWithDurability(SkillScroll,52,0xFFFF)
+			GOTO 0x2
+		LABEL 0x1
+			RemoveBackground
+			FADU 16
+			GiveItem(Razorbeak,0xFFFF)
+			GOTO 0x2
+	LABEL 0x2
 	NoFade
 	ENDA
 	
 SkullTalk:
-	SetBackground(HouseBG)
 	Text(Ch5SkullConvo)
 	CallMenu(Ch5SkullMenu)
 	BNE 0x0 0xC 0x0
@@ -443,9 +528,6 @@ SkullTalk:
 		Text(Ch5SkullWaitConvo)
 		GiveItem(Butterfly,0xFFFF)
 	LABEL 0x1
-	FADI 8
-	CLEAN
-	FADU 8
 	NoFade
 	ENDA
 	
@@ -480,16 +562,56 @@ GaleHeroTalk:
 	NoFade
 	ENDA
 
+#define WarpAndDraw(unitGroup1,unitGroup2,unitGroup3,warpX,warpY,draw1X,draw1Y,draw2X,draw2Y) "\
+	LOAD2 0x1 unitGroup1; \
+	WARPIN [warpX,warpY]; \
+	ENDWARP; \
+	STAL 40; \
+		LOAD2 0x1 unitGroup2; \
+		Draw(MapDark,draw1X,draw1Y); \
+		STAL 20; \
+		LOAD2 0x1 unitGroup3; \
+		Draw(MapDark,draw2X,draw2Y); \
+	STAL 30"
+
 EndingScene:
-	CAMERA [3,18] // find some way to make these go more towards the center of the screen
-	STAL 60
+	CAM1 [3,18]
+	WarpAndDraw(JabberwockLeftUnits, JabberwockLeftUnits1, JabberwockLeftUnits2,\
+	3, 18,\
+	2, 17,\
+	4, 19)
+	
+	CAM1 [12,16]
+	WarpAndDraw(JabberwockCenterUnits, JabberwockCenterUnits1, JabberwockCenterUnits2,\
+	12, 16,\
+	11, 15,\
+	13, 15)
+
+	CAM1 [19,17]
+	WarpAndDraw(JabberwockRightUnits, JabberwockRightUnits1, JabberwockRightUnits2,\
+	19, 17,\
+	18, 18,\
+	20, 16)
+	
+	/*
 	LOAD2 0x1 JabberwockLeftUnits
-	UNCM(JBLeft,Hide)
+	STAL 60
 	MOVE 65535 JBLeft [3,18]
 	WARPIN [3,18]
-	UNCR(JBLeft,Hide)
 	ENDWARP
 	STAL 60
+		LOAD2 0x1 JabberwockLeftUnits1
+		MOVE 65535 JBLeft1 [2,17]
+		WARPIN [2,17]
+		ENDWARP
+		STAL 30
+		
+		LOAD2 0x1 JabberwockLeftUnits2
+		MOVE 65535 JBLeft2 [4,19]
+		WARPIN [4,19]
+		ENDWARP
+		STAL 30
+	
 	
 	CAMERA [12,17]
 	STAL 60
@@ -500,6 +622,22 @@ EndingScene:
 	UNCR(JBCenter,Hide)
 	ENDWARP
 	STAL 60
+		LOAD2 0x1 JabberwockCenterUnits1
+		UNCM(JBCenter1,Hide)
+		MOVE 65535 JBCenter1 [11,17]
+		WARPIN [11,17]
+		UNCR(JBCenter1,Hide)
+		ENDWARP
+		STAL 30
+		
+		LOAD2 0x1 JabberwockCenterUnits2
+		UNCM(JBCenter2,Hide)
+		MOVE 65535 JBCenter2 [13,17]
+		WARPIN [13,17]
+		UNCR(JBCenter2,Hide)
+		ENDWARP
+		STAL 30
+		Placeholder
 	
 	CAMERA [20,18]
 	STAL 60
@@ -510,6 +648,23 @@ EndingScene:
 	UNCR(JBRight,Hide)
 	ENDWARP
 	STAL 60
+		LOAD2 0x1 JabberwockRightUnits1
+		UNCM(JBRight1,Hide)
+		MOVE 65535 JBRight1 [21,17]
+		WARPIN [21,17]
+		UNCR(JBRight1,Hide)
+		ENDWARP
+		STAL 30
+		
+		LOAD2 0x1 JabberwockRightUnits2
+		UNCM(JBRight2,Hide)
+		MOVE 65535 JBRight2 [19,19]
+		WARPIN [19,19]
+		UNCR(JBRight2,Hide)
+		ENDWARP
+		STAL 60
+	*/
+	
 	//text: eagle/teacher/hero reacting to the jabberwocks appearing. they're really big
 	//jabberwocks spawn more monsters
 	//text: oh shit
@@ -522,31 +677,29 @@ EndingScene:
 	FADU 8
 	CenterTextbox(DebugPauseText)
 	//text: civilians are scared
+	Text(Ch5CiviliansScared)
 	
 	//jabberwocks warp to building entrances
-	LOAD2 0x1 JabberwockLeftUnits
-	LOAD2 0x1 JabberwockCenterUnits
-	LOAD2 0x1 JabberwockRightUnits
-	UNCM(JBLeft,Hide)
-	MOVE 65535 JBLeft [6,3]
-	WARPIN [6,3]
-	UNCR(JBLeft,Hide)
-	ENDWARP
-	STAL 30
 	
-	UNCM(JBCenter,Hide)
-	MOVE 65535 JBCenter [13,8]
-	WARPIN [13,8]
-	UNCR(JBCenter,Hide)
-	ENDWARP
-	STAL 30
+	WarpAndDraw(JabberwockLeftUnits02, JabberwockLeftUnits12, JabberwockLeftUnits22,\
+	6, 3,\
+	5, 2,\
+	5, 4)
 	
-	UNCM(JBRight,Hide)
-	MOVE 65535 JBRight [17,3]
-	WARPIN [17,3]
-	UNCR(JBRight,Hide)
+	WarpAndDraw(JabberwockCenterUnits02, JabberwockCenterUnits12, JabberwockCenterUnits22,\
+	13, 8,\
+	12, 9,\
+	14, 9)
+
+	WarpAndDraw(JabberwockRightUnits02, JabberwockRightUnits12, JabberwockRightUnits22,\
+	17, 3,\
+	18, 2,\
+	18, 4)
+	
+	CAMERA_CENTERED [12,4]
 	STAL 30
-	CenterTextbox(DebugPauseText)
+	Highlight(Ch5Eagle)
+	Text(Ch5DevilsComing)
 	
 	//the jabberwocks spawn more monsters
 	//text: eagle tells everyone to calm down. the devil's coming
@@ -572,6 +725,7 @@ EndingScene:
 	//warp sound effect plays, momentary screen shake
 	//civilians panicking
 	//text: hero points out that there's another jabberwock behind the building
+	*/
 	
 	CAMERA [12,4]
 	STAL 60
@@ -582,6 +736,29 @@ EndingScene:
 	UNCR(Devil,Hide)
 	ENDWARP
 	STAL 60
+	Highlight(Devil)
+	Text(Ch5DevilIntro)
+	CenterTextbox(Ch5DevilDescription)
+	Text(Ch5DevilTargeting)
+	STAL 30
+	
+	//mome rath event battle
+	StartBattle
+	CriticalHit(0x0,90)
+	FIGHT_MAP Devil JBLeft1 Shadowshot 0x0
+	DISA JBLeft1
+	
+	STAL 30
+	Text(Ch5DevilMissed)
+	Highlight(Dragon)
+	Text(Ch5DragonEagleArgue)
+	STAL 60
+	WARPIN [0,0] //play warp in sound
+	STAL 30
+	HighlightTile(11,0)
+	Text(Ch5JabberwockBack)
+	Highlight(Dragon)
+	Text(Ch5DragonEagleArgue2)
 	
 	FADI 4
 	DoAllThree

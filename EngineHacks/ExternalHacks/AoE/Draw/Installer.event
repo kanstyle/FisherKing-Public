@@ -6,11 +6,11 @@
 	#define BATTLE_MAPANIMATION_NUMBERS_FLAG 0xEE
 #endif 
 
-PUSH // Only vanilla address that we take over. 
+/*PUSH // Only vanilla address that we take over. //commenting this out to disable animations during battle
 ORG $81274 // Poin to the vanilla proc	//{U}
 //ORG $835B4 // Poin to the vanilla proc	//{J}
 POIN gProc_MapAnimRound_Animation
-POP 
+POP*/
 
 
 #include "Internals.event"

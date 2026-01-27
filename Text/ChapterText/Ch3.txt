@@ -18,7 +18,7 @@ Hunter's Here
 ## Ch3BaseHunter
 
 [r][LoadTeacher]
-[fr][LoadHeroF]
+[fr][LoadForceHeroF]
 [ml][LoadHunter]
 Top of the morning, fellows![N]
 What's our next move, then, eh?[A]

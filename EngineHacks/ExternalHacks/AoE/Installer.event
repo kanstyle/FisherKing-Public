@@ -189,7 +189,7 @@ WepDebuffEntry(4, 5, 0,0,6,7,0,0)
 
 ALIGN 4 
 AoE_Table:
-// Entry 0
+/*// Entry 0
 BYTE 0 0 0 0
 BYTE 0 0 0 0 // Usable by anyone carrying a sword they can wield 
 BYTE 0 FriendlyFireBool|DepleteItemBool
@@ -415,7 +415,7 @@ BYTE 0 0 // DebuffID, EventIndex
 BYTE 0xFF 0 // Weapon Type and WEXP to use this. 
 BYTE 2 // Amount of weapon uses to deplete. 
 BYTE UseWepMt|UseWepEffectiveness|UseWepRange // Config2 
-
+*/
 
 
 AoE_TableTerminator

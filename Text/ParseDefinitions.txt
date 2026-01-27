@@ -121,6 +121,7 @@
 [LoadBaronWounded] = [LoadFace][0x23][0x1]
 [LoadBaronW] = [LoadFace][0x23][0x1]
 [LoadGale] = [LoadFace][0x24][0x1]
+[LoadDevil] = [LoadFace][0x25][0x1]
 
 [LoadCivManBald] = [LoadFace][0x58][0x1]
 [LoadCivManOld] = [LoadFace][0x59][0x1]

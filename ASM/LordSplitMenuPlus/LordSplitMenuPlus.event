@@ -110,6 +110,15 @@ MenuOption(Ch5SkullJoin, Ch5SkullJoinDesc, 0)
 MenuOption(Ch5SkullWait, Ch5SkullWaitDesc, 0)
 MenuTerminator
 
+ALIGN 4
+Ch5BunnyMenu:
+MenuDefinition(4, 8, 21, 0, 1, Ch5BunnyMenuOptions)
+
+ALIGN 4
+Ch5BunnyMenuOptions:
+MenuOption(Ch5Shikari, Ch5ShikariDesc, 0)
+MenuOption(Ch5Razorbeak, Ch5RazorbeakDesc, 0)
+MenuTerminator
 
 
 

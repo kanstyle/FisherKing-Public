@@ -45,6 +45,13 @@
 			bg(0x18)
 			text(Ch3BaseHunter)
 			eventID(0x25)
+	Chapter(Ch5)
+		Entry
+			name(Ch5BaseBunnyPillowName)
+			music(TheQuestForRudrasMines)
+			bg(Woodland_Night)
+			text(Ch5BaseBunnyPillow)
+			eventID(0x25)
 	POP
 	}
 #endif // BASE_CONVO_TABLE

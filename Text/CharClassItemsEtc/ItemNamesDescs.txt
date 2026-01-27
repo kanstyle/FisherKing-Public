@@ -140,7 +140,7 @@ Unfamiliarity[X]
 
 ## UnfamiliarityDesc ^
 
-[lock] Pillow.[X]
+Long-range.[X]
 
 
 ## TortureName ^
@@ -150,7 +150,7 @@ Torture[X]
 
 ## TortureDesc ^
 
-[lock] Pillow.[X]
+[X]
 
 
 ## LonelinessName ^
@@ -160,7 +160,7 @@ Loneliness[X]
 
 ## LonelinessDesc ^
 
-[.][lock] Pillow.[X]
+[.][lock] Pillow. Long-range.[X]
 
 
 ## HerosFlairName ^
@@ -1206,11 +1206,17 @@ and refreshes user.[X]
 ## DervishKattiName ^
 Dervish Katti[X]
 
-## DervishKattiDesc ^
+## DervishKattiDesc
 Doubles number of strikes.[X]
 
 ## QuickbladeName ^
 Quickblade[X]
 
-## QuickbladeDesc ^
+## QuickbladeDesc
 Doubles number of strikes.[X]
+
+## RazorbeakName ^
+Razorbeak[X]
+
+## RazorbeakDesc
+Uncounterable. Pierces defense.[X]

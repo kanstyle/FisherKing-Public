@@ -234,6 +234,7 @@
 #define Breeze 0xD5
 #define PatientKatti 0xD6
 #define DervishKatti 0xD7
+#define Razorbeak 0xD8
 
 //Statuses
 #define SpecialStatusID 5

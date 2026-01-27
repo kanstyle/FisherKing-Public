@@ -287,4 +287,4 @@ DevilMugData: // LL
 #incbin "dmp/Devil_frames.dmp"
 #incbin "dmp/Devil_palette.dmp"
 #incbin "dmp/Devil_minimug.dmp"
-setMugEntry(DevilMug, DevilMugData, 2, 6, 2, 4)
+setMugEntry(DevilMug, DevilMugData, 2, 6, 2, 3)

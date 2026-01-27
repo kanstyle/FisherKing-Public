@@ -25,6 +25,63 @@ Her death will not result in a[N]
 Game Over.[A]
 [X]
 
+## Ch5BaseBunnyPillowName
+All in your head?[X]
+
+## Ch5BaseBunnyPillow
+[mr][LoadBunny]
+[ml][LoadPillow]
+
+[mr][ts]
+Damn, you low mages are scary![A]
+
+[ml]
+Aha...[4][4] Is...[4] that a compliment?[A]
+
+[mr]
+Of course![4] Where does that power of yours come[N]
+from?[4] If only we'd had it in my day...[A]
+
+[ml][ts]
+It's... er... hard to explain...[AN]
+It's one's own fears manifest,[N]
+basically.[A]
+
+[mr][ts]
+Ahhhh![4] So you're afraid of[N]
+those big, inky hands?[A]
+
+[ml]
+Ehehe...[4][4] sort of...[4][4][4][N]
+Other people are more afraid than me.[AN]
+[ts]I was born with it, but it's not a...[N][4][4]
+[ce]natural power.[A][oe]
+
+[mr]
+Hmm...[4][4] Do you low mages ever[N]
+hear the dead talking to you?
+
+[ml]
+Oh...?[4][4] Yes, sometimes,[N]
+but how did you...?[A]
+
+[mr][ts]
+I knew it. I'm just like you.[N]
+The girl who gave me this body...[AN]
+She heard those voices ever since she[N]
+was young. That's how I got to know her.[A]
+
+[ml][ts]
+Ah...[A]
+
+[mr][ts]
+It IS only natural, isn't it?[4][4] Every home[N]
+here is built on bloody land.[AN]
+Children play on these hills with[N]
+all the whispering ghosts.[AN]
+Why wouldn't they listen?[A]
+[X]
+
 ## Ch5IntroDragonPillow
 [ml][LoadDragon]
 [mr][LoadPillow]
@@ -374,17 +431,151 @@ Placeholder.[A]
 [X]
 
 ## Ch5BunnyMotherVisit
+[ml][LoadCivWoman]
+[mr][LoadCivWomanOld]
+
+[ml]
+I wonder if she'll really come...[N]
+[ce]Oh, Bunny...[A]
+
+[mr]
+Now, now...[AN]
+Whether she does or not, it[N]
+won't be your fault.[AN]
+We'll make it through this.[AN]
+And when we do, perhaps you[N]
+need to get away from this city.[A]
+
+[ml]
+...[AN][oe]
+She still comes to sleep at[N]
+home sometimes, you know.[AN]
+And I still cook her meals...[A]
+
+[mr]
+Of course you do.[A]
+
+[ml]
+I'm sure she's out there on[N]
+a night like tonight.[AN]
+All she cares for is battle.[A][4][4][4]
+
+[ffl][LoadBunny]
+Hey![4] Anyone in here?[A]
+
+[ml][mml][tmm]
+...![A][tmm][clear]
+
+[mr][clear]
+
 [ml][LoadBunny]
 [r][LoadCivWoman]
 [fr][LoadCivWomanOld]
-Placeholder.[A]
+
+[ml][ts]
+Oh, it's you.[4] Ha![N]
+What are you doing here?[A]
+
+[r][ts]
+Bunny![4] You came![N]
+This is your...[4] er...[A]
+
+[fr]
+Greetings, old soul.[N]
+I'm the girl's grandmother.[A]
+
+[ml][ts]
+Yeah?[4][4] Nice to meet you.[N]
+I guess you know all about me, then?[A]
+
+[fr][ts]
+Indeed.[A]
+
+[r][mvr]
+Bunny, I--[A]
+
+[ml]
+Yeah, yeah.[4][4] You don't need to tell me.[AN]
+In fact, I've got some good news for you.[N]
+I'm joining up with a mercenary squad![AN]
+So after tonight, I'll be out of your hair.[N]
+No more mooching off you like a child.[A][4][4]
+
+[r]
+...I see.[4] Yes, that's probably best.[N]
+It's high time we went our separate ways.[A]
+
+[ml][ts]
+Right, then.[4] I'll come visit[N]
+you in a year, how about?[AN]
+Doesn't take much to keep me kicking,[AN]
+so I'll throw in a chunk of my salary[N]
+for all those meals you cooked.[AN]
+How about that?[A]
+
+[r][tmm][ts]
+...[A][tmm]
+
+[ml]
+What?[4] King's rings, woman, isn't[N]
+that enough?[4] Am I--[A][css]
+
+[mvl]
+[ml]
+[mfl]
+[fl]
+Urk...![A]
+
+[l]
+Come here, you dolt!
+
+[fl]
+Wh-what's this all of a sudden?![A]
+
+[l]
+You better not forget about that,[N]
+you hear me?[AN]
+And you'd better visit the year[N]
+after, too![A]
+
+[fl]
+Well, if you don't crush my ribs,[N]
+I'll think about it![A][css]
+
+[fr][mmr]
+[mr]
+Pardon the interruption...[A]
+
+[fl][mfl]
+Save me![A]
+
+[mr]
+You'd better take these with you.[AN]
+My beast-hunting days are over,[N]
+but you've got a new lease on them.[A]
 [X]
 
 ## Ch5BunnyMotherGenericVisit
 [ml][LoadActive]
 [r][LoadCivWomanOld]
 [fr][LoadCivWoman]
-Placeholder.[A]
+[r]
+Someone's come![N]
+We're saved![A]
+
+[fr]
+Tell me, have you seen[N]
+Bunny out there?[AN]
+She's got a lance, and[N]
+fluffy white hair?[AN][ce]
+Oh, who am I kidding...[N]
+Forgive my whinging.[A]
+
+[r]
+I'm willing to part with a tool from[N]
+my beast-hunting days,[A] if you can[N]
+keep this old house standing.[AN]
+Which would you like?[A]
 [X]
 
 ## Ch5SkullJoin
@@ -392,7 +583,7 @@ Ask him to join you.
 [X]
 
 ## Ch5SkullJoinDesc
-We've buried the hatchet, right?
+He's not THAT mad at me, right?
 [X]
 
 ## Ch5SkullWait
@@ -400,7 +591,7 @@ Leave him.
 [X]
 
 ## Ch5SkullWaitDesc
-On second thought...
+Actually, he does seem pretty mad.
 [X]
 
 ## Ch5SkullConvo
@@ -408,111 +599,293 @@ On second thought...
 [mr][LoadSkull]
 
 [ml]
-Placeholder![A]
+Hey, it's--![A]
+
+[mr][mmr]
+It's you![A]
+
+[ml]
+Whoa, relax![4][N]We're on the same side.[A]
+
+[mr][mmr]
+Like hell![4] This whole damn thing[N]
+is your fault, you stupid punk![A]
+
+[ml]
+What did I do?![A]
+
+[mr]
+Songbird could've stopped this whole[N]
+mess![4] And where the hell is Songbird?![A]
+
+[ml]
+Uh...[A]
+
+[mr]
+Where are they?![4][4] Huh?![A]
+
+[ml]
+Look, okay![4][ce] I screwed up![4][N]
+I take full responsibility.[A]
+
+[mr]
+You'd damn well--[A]
+
+[ml][oe][mml]
+But![4][4] BUT![4][4][4] We really are on the[N]
+same side here.[AN]
+This whole thing is really the prince's fault![A]
+
+[mr]
+Don't you try to--[A]
+
+[ml]
+Lemme finish; lemme finish![N]
+My point is...[A]
 [X]
 
 ## Ch5SkullJoinConvo
 [ml][LoadHeroM]
 [mr][LoadSkull]
 
+[ml]
+...I'll need your help.[4] Even if it's[N]
+not my place to ask.[A]
+
 [mr]
-Join text![A]
+My [oq]help"?[4] What help?[A]
+
+[ml]
+There's people holed up in that building[N]
+on the hill.[AN]
+I want to take the fight to the prince[N]
+as much as anyone, but before that,[AN]
+we need to save this city.[N] 
+Are you with me?[A]
+
+[mr]
+...[A]
+
+[ml][ce][mml]
+...Ahem.[oe][A]
+
+[mr]
+[mmr]Am I with you?[4][4][4][4] [mmr]AM I WITH YOU?![4][4][4][N]
+Use your eyes, you moron![4][4] This is my HOUSE![AN]
+I've got CHILDREN in there![AN]
+Damned if I'll move one inch from this[N]
+spot and let those monsters at them![A]
+
+[ml]
+Er--[A]
+
+[mr]
+You think you can lead a revolution?![AN]
+Who the hell would follow YOU with your[N]
+head this far up your ass?![AN]
+Now get out of my face![A]
 [X]
 
 ## Ch5SkullWaitConvo
 [ml][LoadHeroM]
 [mr][LoadSkull]
 
-[mr]
-Wait text![A]
-[X]
+[ml][ts]
+I'm gonna do something about it![N]
+Just watch me.[A]
 
-## Ch5TriedToLoveThePrince1
-I loved the Elder Prince.[AN][4][4][4]
-I tried to love his son.[A][X]
-
-## Ch5TriedToLoveThePrince2
-But when he needed me,[N]
-I could not.[AN][4][4][4]
-And so I left him.[A][X]
-
-## Ch5OldPrinceDeath
-
-[fr][LoadPurpleSoldier]
-[r][LoadYoungTeacher]
-[l][LoadOldPrince]
-[fl][LoadPurpleFighter]
-
-[fr]
-The Elder Prince has fallen!
-Fetch the healers!
-
-[fl]
-He's still breathing! Sire,
-we must move you to--
+[mr][ts]
+Yeah?[4][4] And what's that?[A]
 
 [ml]
-It's all right.
-Calm yourselves.
+Well, first, this city needs saving.[AN]
+I'm not gonna get very far if I can't[N]
+clean up my own messes.[A]
 
-[fl]
-But, sire--
-
-[mr][MoveMidRight]
-Silence!
-Leave us, you fools!
+[mr]
+Damn right you won't.[N]
+Get out there and do some work.[A]
 [X]
 
-## Ch5OldPrinceDeath2
+## Ch5CiviliansScared
+[OpenFarFarLeft][LoadBaby]
+Wh-what are these big, slimy things?![N][4]
+They're making more monsters![A]
+[X]
 
-[r][LoadYoungTeacher]
-[l][LoadOldPrince]
+## Ch5DevilsComing
+[fl][LoadHeroM]
+[l][LoadTeacher]
+[r][LoadEagle]
+[fr][LoadDragon]
 
-Ah, Teacher... My loyal friend.
-I'm glad you're here to...
-see me off.
-
-[r]
-My prince... What are your final
-orders?
-
-[l]
-Oh, why bother? You know what to
-do, Teacher. We've prepared for this
-for a long time, haven't we?
-
-[r]
-No, no...
-I...
+[fl]
+This is getting worse and worse.[N]
+We gotta hold these entrances![A]
 
 [l]
-What is it?
+Lady Eagle![4] The reinforcements![N]
+Are they near?[A]
 
 [r]
-I need you to tell me... what
-I should do.
+They're just in time.[A]
+[X]
 
-[l]
-Teacher...
+## Ch5DevilIntro
+[fl][LoadTeacher]
+[l][LoadDevil]
+[r][LoadEagle]
+[fr][LoadDragon]
 
 [r]
-Please.
+Hello, Devil.[N][4][4]
+[mvr]Here.[4][4] Your medication.[A]
+[X]
+
+## Ch5DevilDescription
+There was no need for the titan to move.[4][4][N]
+The daemon pellets vanished from Eagle's[N]
+palm, spirited away inside the steel[N]
+fortress.[A]
+[X]
+
+## Ch5DevilTargeting
+[fl][LoadTeacher]
+[l][LoadDevil]
+[r][LoadEagle]
+[fr][LoadDragon]
 
 [l]
-Just watch. That's all.
-Watch as my spirit... takes flight.
+Targets...?[4][4] I count three...[4][4][4][N]
+no, five...[4][4] no, ten...[A]
 
+[r]
+Three of them.[4] Left, right,[N]
+ahead of you.[4] The big ones.[A]
 
-## Ch5TeacherCries
+[l]
+Okay.[A]
+[X]
 
-I could not attend your funeral.
-I couldn't listen to others talk
-about you. They hadn't known you
-as I had known you.
+## Ch5DevilMissed
+[fl][LoadTeacher]
+[l][LoadDevil]
+[r][LoadEagle]
+[fr][LoadDragon]
 
-But, even then, I wonder if I even knew you myself.
-How could you die like that? With a smile on your face?
-How did you find such satisfaction in your life?
-How could you love this world so much?
-This cold, bloody world?
+[fl][tmm]
+(King's rings...)[A][tmm]
+
+[l]
+Target elimin...[4][4] No, I missed...?[4][4][4][N]
+...I need pellets...[A]
+
+[r][ce]
+I already gave you your pellets.[oe][4][4][4][N]
+Don't worry; they'll kick in momentarily.[A]
+[X]
+
+## Ch5DragonEagleArgue
+[fl][LoadTeacher]
+[l][LoadEagle]
+[r][LoadPillow]
+[fr][LoadDragon]
+
+[fr]
+What the hell is this, Eagle?[N][4][4]
+There's a person in there, isn't there?[A]
+
+[l]
+The most powerful low mage[N]
+we've trained thus far.[A]
+
+[fr]
+...How much did it take, huh?[4][4][N]
+What'd you do to 'em?[A]
+
+[l][ce]
+I don't know the details.[A][oe]
+
+[fr][mfr]
+You--![A]
+
+[l][ce]
+I knew you wouldn't like it.[AN][oe]
+If it helps, I try not to deploy the[N]
+Devil except when necessary.[AN]
+It's good to save lives, isn't it?[A]
+
+[fr]
+Don't give me that bullshit![N][4][4]
+It shouldn't exist![AN]
+Low mages shouldn't exist![A]
+
+[r][tmm]
+...[A]
+[X]
+
+## Ch5JabberwockBack
+[OpenFarFarLeft][LoadBaby]
+Behind us![4][4] It's coming!![A]
+
+[mr][LoadHeroM]
+Heads up![4] There's another[N]
+one of things in the back![A]
+[X]
+
+## Ch5DragonEagleArgue2
+[fl][LoadHeroM]
+[l][LoadEagle]
+[r][LoadTeacher]
+[fr][LoadDragon]
+
+[fl]
+Eagle, you're in charge, but--[A]
+
+[fr]
+We'll take the one in the back.[A]
+
+[l]
+Then the Devil and I will handle[N]
+these three.[A]
+
+[fr][tmm]
+...[A][4][tmm]
+
+[r][clear]
+[fl][clear]
+[4][4]
+[l]
+...Dragon.[A]
+
+[fr]
+What?[A]
+
+[l]
+I just...[4][4] Even if Father doesn't[N]
+love you, know that...[4][4] I still do.[A]
+Don't let our petty disagreements--[A]
+
+[fr][ce]
+[oq]Petty"?[4] Hmph.[4][4][N]
+Yeah, sure.[A][clear]
+
+[l][ce]
+Dragon...[A]
+[X]
+
+## Ch5Shikari ^
+A skill scroll granting WTA vs. beasts.
+[X]
+
+## Ch5ShikariDesc
+A permanent boon for the deserving.
+[X]
+
+## Ch5Razorbeak ^
+An uncounterable, Def-piercing lance.
+[X]
+
+## Ch5RazorbeakDesc
+A premium weapon for opportune times.
 [X]
