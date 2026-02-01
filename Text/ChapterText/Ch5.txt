@@ -25,6 +25,12 @@ Her death will not result in a[N]
 Game Over.[A]
 [X]
 
+## Ch5GameOver
+[ffr][LoadBaby]
+No![4] They're inside![N]
+We're finished!![A]
+[X]
+
 ## Ch5BaseBunnyPillowName
 All in your head?[X]
 
@@ -414,8 +420,13 @@ Placeholder.[A]
 
 ## Ch5GaleHeroTalk
 [mr][LoadGale]
-[ml][LoadHeroM]
-Placeholder.[A]
+[mr]
+Hail![4] You there.[N]
+With the blue hair.[A]
+
+[ml][LoadHeroM][ts]
+Hail![4] Hero, of Hero's[N]
+Company, at your service![A]
 [X]
 
 ## Ch5StormHeroTalk
@@ -888,4 +899,25 @@ An uncounterable, Def-piercing lance.
 
 ## Ch5RazorbeakDesc
 A premium weapon for opportune times.
+[X]
+
+## Ch5Left
+The left side worries me.
+[X]
+
+## Ch5LeftDesc
+[X]
+
+## Ch5Middle
+The middle worries me.
+[X]
+
+## Ch5MiddleDesc
+[X]
+
+## Ch5Right
+The right side worries me.
+[X]
+
+## Ch5RightDesc
 [X]

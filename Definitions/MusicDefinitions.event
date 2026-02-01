@@ -114,6 +114,18 @@
 #define NoticeOfDeathID 0x294
 #define ArcassandraID 0x295
 #define AtTheBottomOfNightID 0x296
+#define BondsOfSeaAndFlameID 0x297 //credit ultrax
+#define AvehTheAncientDanceID 0x298 //credit ultrax
+#define TheOneWhoIsTornApartID 0x299 //credit ultrax
+#define OmenID 0x29A //credit ultrax
+#define CrossingSwordsID 0x29B //credit ultrax
+#define SteelGiantID 0x29C //credit ultrax
+#define YouWillKnowOurNamesID 0x29D //credit ultrax //fsr this is playing cursed earth, probably because its "song_xx" name overlaps with other songs
+#define KnightOfFireID 0x29E //credit ultrax //fsr this is playing wild fields, probably because its "song_xx" name overlaps with other songs
+#define ThemeXID 0x29F //credit ultrax
+#define ReposeOfSoulsID 0x2A0 //from 4k, need credit
+#define CircleOfTheMoonID 0x2A1 //from 4k, need credit
+#define TheSinkingOldSanctuaryID 0x2A2 //from 4k, need credit //this sounds like ass, i suspect it was a direct import
 
 // Vanilla
 #define TiesOfFriendship 0x7

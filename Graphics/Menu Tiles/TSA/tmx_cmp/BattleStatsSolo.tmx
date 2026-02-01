@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="12" height="5" tilewidth="8" tileheight="8" infinite="0" nextlayerid="2" nextobjectid="1">
- <tileset firstgid="1" name="BobAnimsOffTiles" tilewidth="8" tileheight="8" tilecount="32" columns="8">
-  <image source="../../Image/Png/BobAnimsOffTiles.png" width="64" height="32"/>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="12" height="5" tilewidth="8" tileheight="8" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" name="MenuTiles" tilewidth="8" tileheight="8" tilecount="128" columns="16">
+  <image source="../../Image/Png/MenuTiles.png" width="128" height="64"/>
  </tileset>
+ <tileset firstgid="161" source="../MenuTiles.tsx"/>
  <layer id="1" name="Tile Layer 1" width="12" height="5">
   <data encoding="csv">
-1073741844,13,13,13,13,13,13,13,13,13,18,1,
-19,7,7,7,7,7,7,7,7,7,17,23,
-16,1073741830,1073741830,1073741830,1073741830,1073741830,1073741830,1073741830,1073741830,1073741830,1073741830,2147483670,
-19,2,2,2,2,2,2,2,2,2,2,2147483670,
-20,1073741827,1073741827,1073741827,1073741827,1073741827,1073741827,1073741827,1073741827,1073741827,1073741827,2147483669
+162,163,163,163,163,163,163,163,163,163,18,166,
+167,169,169,169,169,169,169,169,169,169,169,171,
+167,169,169,169,169,169,169,169,169,169,169,171,
+167,169,169,169,169,169,169,169,169,169,169,171,
+187,188,188,188,188,188,188,188,188,188,188,192
 </data>
  </layer>
 </map>

@@ -13,6 +13,10 @@ DeathQuote(Brother,0xFF,0x0,0x0,BrotherDeathQuoteEvent)
 DeathQuote(Hunter,0xFF,0x0,0x0,HunterDeathQuoteEvent)
 DeathQuote(Pigeon,0xFF,0x0,0x0,PigeonDeathQuoteEvent)
 DeathQuote(Swan,0xFF,0x0,0x0,SwanDeathQuoteEvent)
+DeathQuote(Baby,0xFF,0x0,0x0,BabyDeathQuoteEvent)
+DeathQuote(Storm,0xFF,0x0,0x0,StormDeathQuoteEvent)
+DeathQuote(Gale,0xFF,0x0,0x0,GaleDeathQuoteEvent)
+DeathQuote(Bunny,0xFF,0x0,0x0,BunnyDeathQuoteEvent)
 
 
 // Enemy Units
@@ -120,5 +124,29 @@ ALIGN 4
 NoblewomanDeathQuoteEvent:
 Text(NoblewomanDQ)
 GameOver
+NoFade
+ENDA
+
+ALIGN 4
+BabyDeathQuoteEvent:
+Text(BabyDQ)
+SVAL 0x7 Baby
+ENUF BleedoutFlag
+NoFade
+ENDA
+
+ALIGN 4
+StormDeathQuoteEvent:
+Text(StormDQ)
+SVAL 0x7 Storm
+ENUF BleedoutFlag
+NoFade
+ENDA
+
+ALIGN 4
+GaleDeathQuoteEvent:
+Text(GaleDQ)
+SVAL 0x7 Gale
+ENUF BleedoutFlag
 NoFade
 ENDA

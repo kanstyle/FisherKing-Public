@@ -38,6 +38,7 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0,StormGaleIntro,1)
 	TurnEventPlayer(0x0,Turn1Routine,1)
 	TurnEventPlayer(0x0,Turn1Event,1)
+	TurnEventPlayer(0x0,LargeReinforcementEvent,3)
 	END_MAIN
 
 ALIGN 32
@@ -53,6 +54,7 @@ CharacterBasedEvents:
 MiscBasedEvents:
 	CauseGameOverIfLordDies
 	AFEV BleedoutFlag BleedoutChapterAlwaysEvent 0x0
+	AREA 0x0 DefendGameOver [8,0] [15,5]
 	END_MAIN
 
 LocationBasedEvents:
@@ -149,6 +151,33 @@ EnemyUnits:
 	//center sub-river
 	UNIT Beast SwordBone 0x40 Level(7,Enemy,True)     [13,19] 0b 0x0 0x0 0x0 [Armorslayer] ChargeAI
 	UNIT Lowlander Fighter 0x40 Level(7,Enemy,True)     [14,18] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
+	UNIT
+	
+SWReinforcementLargeUnits:
+	UNIT Beast SwordBone 0x40 Level(7,Enemy,True)     [3,16] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
+	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [4,17] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
+	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [3,15] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
+	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [5,19] 0b 0x0 0x0 0x0 [SavageBlade] ChargeAI
+	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [2,19] 0b 0x0 0x0 0x0 [SavageBlade] ChargeAI
+	UNIT Beast Tarvos 0x40 Level(7,Enemy,True)     [4,19] 0b 0x0 0x0 0x0 [SavageMaul] ChargeAI
+	UNIT
+	
+CenterReinforcementLargeUnits:
+	UNIT Beast SwordBone 0x40 Level(7,Enemy,True)     [13,16] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
+	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [14,17] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
+	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [13,15] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
+	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [15,19] 0b 0x0 0x0 0x0 [SavageBlade] ChargeAI
+	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [12,19] 0b 0x0 0x0 0x0 [SavageBlade] ChargeAI
+	UNIT Beast Tarvos 0x40 Level(7,Enemy,True)     [15,18] 0b 0x0 0x0 0x0 [SavageMaul] ChargeAI
+	UNIT
+	
+SEReinforcementLargeUnits:
+	UNIT Beast SwordBone 0x40 Level(7,Enemy,True)     [20,15] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
+	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [19,17] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
+	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [19,15] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
+	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [21,17] 0b 0x0 0x0 0x0 [SavageBlade] ChargeAI
+	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [20,17] 0b 0x0 0x0 0x0 [SavageBlade] ChargeAI
+	UNIT Beast Tarvos 0x40 Level(7,Enemy,True)     [20,18] 0b 0x0 0x0 0x0 [SavageMaul] ChargeAI
 	UNIT
 	
 GaleUnits:
@@ -324,8 +353,6 @@ PlayerSquadUnitsEnd:
 	UNIT Teacher Veteran 0x40 Level(7,Ally,False)     [11,3] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
 	UNIT Pillow LowVoice 0x40 Level(7,Ally,False)     [13,3] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
 	UNIT
-	
-
 
 Traps1:
 	ENDTRAP
@@ -334,6 +361,16 @@ Traps1:
 Traps2:
 	ENDTRAP
 	ALIGN 4
+	
+DefendGameOver:
+	SVAL 1 0x2
+	CHECK_ALLEGIANCE 0xFFFF
+	BNE 0x0 0xC 1 
+		Text(Ch5GameOver)
+		GameOver
+	LABEL 0x0
+	NoFade
+	ENDA
 
 BeginningScene:
 	CALL StartEventRoutine
@@ -354,6 +391,27 @@ BeginningScene:
 	LOAD2 0x1 DragonPillowUnits
 	FADU 4
 	STAL 90
+	
+	Music(BondsOfSeaAndFlameID)
+	Placeholder
+	Music(AvehTheAncientDanceID)
+	Placeholder
+	Music(TheOneWhoIsTornApartID)
+	Placeholder
+	Music(OmenID)
+	Placeholder
+	Music(CrossingSwordsID)
+	Placeholder
+	Music(SteelGiantID)
+	Placeholder
+	Music(YouWillKnowOurNamesID)
+	Placeholder
+	Music(KnightOfFireID)
+	Placeholder
+	Music(ThemeXID)
+	Placeholder
+	Music(ReposeOfSoulsID)
+	Placeholder
 	
 	/*SVAL r1 MapDark //vesly draw patch testing
 	SVAL 0xB (0x0 | (0x0<<16))
@@ -505,7 +563,7 @@ BunnyMotherVisit:
 		Text(Ch5BunnyMotherGenericVisit)
 		CallMenu(Ch5BunnyMenu)
 		BNE 0x1 0xC 0x0
-			RemoveBackground
+			RemoveBackground 
 			FADU 16
 			GiveItemWithDurability(SkillScroll,52,0xFFFF)
 			GOTO 0x2
@@ -533,6 +591,43 @@ SkullTalk:
 	
 Turn1Event:
 	CUSA Ch5Eagle
+	NoFade
+	ENDA
+	
+LargeReinforcementEvent:
+	//Text(LargeReinforcementEventText)
+	CLEAN
+	CallMenu(Ch5LargeReinforcementMenu) //menu where you pick a side to spawn reinforcements on
+	BNE 0x0 0xC 0x0
+		LoadReinforcements(SWReinforcementLargeUnits)
+		GOTO 0x3
+		LABEL 0x0
+	SVAL 0x8 0x1
+	BNE 0x1 0xC 0x8
+		LoadReinforcements(CenterReinforcementLargeUnits)
+		GOTO 0x3
+		LABEL 0x1
+	SVAL 0x8 0x2
+	BNE 0x2 0xC 0x8
+		LoadReinforcements(SEReinforcementLargeUnits)
+		GOTO 0x3
+		LABEL 0x2
+	LABEL 0x3
+	NoFade
+	ENDA
+	
+LargeReinforcementSWEvent:
+	SpawnReinforcements(SWReinforcementLargeUnits)
+	NoFade
+	ENDA
+	
+LargeReinforcementCenterEvent:
+	SpawnReinforcements(SWReinforcementLargeUnits)
+	NoFade
+	ENDA
+	
+LargeReinforcementSEEvent:
+	SpawnReinforcements(SWReinforcementLargeUnits)
 	NoFade
 	ENDA
 

@@ -57,6 +57,30 @@ SongTable(NoticeOfDeathID,noticeodtest,MapMusicGroup)
 SongTable(ArcassandraID,arcassandra,MapMusicGroup)
 #include "MusicEvents/Sme - At the Bottom of Night.event"
 SongTable(AtTheBottomOfNightID,song14,MapMusicGroup)
+#include "MusicEvents/BondsOfSeaAndFlame (ultrax secondhack).event"
+SongTable(BondsOfSeaAndFlameID,song37,MapMusicGroup)
+#include "MusicEvents/AvehTheAncientDance (ultrax secondhack).event"
+SongTable(AvehTheAncientDanceID,song33,MapMusicGroup)
+#include "MusicEvents/TheOneWhoIsTornApart (ultrax secondhack).event"
+SongTable(TheOneWhoIsTornApartID,song2F,MapMusicGroup)
+#include "MusicEvents/Omen (ultrax secondhack).event"
+SongTable(OmenID,song2C,MapMusicGroup)
+#include "MusicEvents/CrossingSwords (ultrax secondhack).event"
+SongTable(CrossingSwordsID,song29,MapMusicGroup)
+#include "MusicEvents/SteelGiant (ultrax secondhack).event"
+SongTable(SteelGiantID,song25,MapMusicGroup)
+#include "MusicEvents/YouWillKnowOurNames (ultrax secondhack).event"
+SongTable(YouWillKnowOurNamesID,song1C,MapMusicGroup)
+#include "MusicEvents/KnightOfFire (ultrax secondhack).event"
+SongTable(KnightOfFireID,song1D,MapMusicGroup)
+#include "MusicEvents/ThemeX (ultrax secondhack).event"
+SongTable(ThemeXID,song02,MapMusicGroup)
+#include "MusicEvents/ReposeOfSouls (4k).event"
+SongTable(ReposeOfSoulsID,song42,MapMusicGroup)
+#include "MusicEvents/CircleOfTheMoon (4k).event"
+SongTable(CircleOfTheMoonID,song2C,MapMusicGroup)
+#include "MusicEvents/TheSinkingOldSanctuary (4k).event"
+SongTable(TheSinkingOldSanctuaryID,song0E,MapMusicGroup)
 
 #include "MusicEvents/lufiadoom.event"
 SongTable(Lufia_Doom,lufiadoom,MapMusicGroup)

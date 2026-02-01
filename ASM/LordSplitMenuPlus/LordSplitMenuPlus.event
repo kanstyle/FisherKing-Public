@@ -120,6 +120,17 @@ MenuOption(Ch5Shikari, Ch5ShikariDesc, 0)
 MenuOption(Ch5Razorbeak, Ch5RazorbeakDesc, 0)
 MenuTerminator
 
+ALIGN 4
+Ch5LargeReinforcementMenu:
+MenuDefinition(4, 6, 21, 0, 1, Ch5LargeReinforcementMenuOptions)
+
+ALIGN 4
+Ch5LargeReinforcementMenuOptions:
+MenuOption(Ch5Left, Ch5LeftDesc, 0)
+MenuOption(Ch5Middle, Ch5MiddleDesc, 0)
+MenuOption(Ch5Right, Ch5RightDesc, 0)
+MenuTerminator
+
 
 
 //Game Start Menu
