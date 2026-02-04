@@ -17,8 +17,14 @@ PUSH
 ORG $2008C
 POIN PrepsBG
 
+ORG $08B12DB4
+#incext Png2Dmp --lz77 "PrepsBG.png" 
+
 ORG $20088
 POIN PrepsBGPal
+
+ORG $08B1754C
+#incext Png2Dmp --palette-only "PrepsBG.png" 
 
 //Status bg
 ORG $88638
@@ -52,10 +58,10 @@ StatusBGTSA:
 PUSH
 
 //MMB status graphics
-ORG $0008C450
-POIN StatusNames
+ORG $8A16DEC
+#incext Png2Dmp "StatusNames.png"  // Remove --lz77, install data directly
 
-ORG $000898C0
+ORG $898C0
 POIN StatusNamesPal
 
 POP

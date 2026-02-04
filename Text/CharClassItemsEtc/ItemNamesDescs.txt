@@ -1220,3 +1220,9 @@ Razorbeak[X]
 
 ## RazorbeakDesc
 Uncounterable. Pierces defense.[X]
+
+## SwordbreakerName ^
+Swordbreaker[X]
+
+## SwordbreakerDesc
+Doubles weapon triangle.[X]

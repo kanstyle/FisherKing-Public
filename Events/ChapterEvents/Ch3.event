@@ -178,7 +178,7 @@ TeacherTownUnits:
 	UNIT
 
 BunnyUnits:
-	UNIT Bunny BunnyRecruit 0x40 Level(5,NPC,False)     [2,18] 0b 0x0 0x0 0x0 [Axereaver,Javelin,IronLance] DoNothingAI	
+	UNIT Bunny BunnyRecruit 0x40 Level(5,NPC,False)     [2,18] 0b 0x0 0x0 0x0 [Axereaver,Javelin,Swordbreaker] DoNothingAI	
 	UNIT
 	
 BabyUnits:
@@ -279,9 +279,12 @@ BeginningScene:
 	SetBackground(Castle_Hall)
 	Text(Ch3StartManorInside2)
 	RemoveBackgroundSlow
-	SetBackground(BlackBG)
-	GiveGold(2500)
-	RemoveBackground
+	FlagNotSet(BaronGoldFlag, 0x22)
+		SetBackground(BlackBG)
+		GiveGold(2500)
+		RemoveBackground
+		SetFlag(BaronGoldFlag)
+	LABEL 0x22
 	
 	Music(FFTAnxiety)
 		//brother event
@@ -292,27 +295,33 @@ BeginningScene:
 		BROWNBOXTEXT Ch3StartInnBrownBox [8,8]
 		Text(Ch3StartBrotherThief)
 		CALL StopSkippingEvent
-		PreventSkipping
-		CallMenu(Ch3ThiefMenu)
-			BNE 0x3 0xC 0x0
-			AllowSkipping
-			Text(Ch3StartBrotherThiefNoDeal)
-			RemoveBackground
-			SetBackground(BlackBG)
-			GiveGold(1000)
-			GOTO 0x2
-		LABEL 0x3
-			AllowSkipping
-			CHECK_ALIVE Pigeon
-			BNE 0x11 0x0 0xC
-				Text(Ch3StartBrotherThiefDealNoPigeon)
-			GOTO 0x12
-			LABEL 0x11
-			Text(Ch3StartBrotherThiefDeal)
-			LABEL 0x12
-			SetFlag(ThiefDealFlag)
-			GOTO 0x2
-		LABEL 0x2
+		FlagNotSet(ThiefDealFlag, 0x3) //if choice was already made, go to selected outcome immediately, and skip gold if already gotten
+		FlagNotSet(ThiefSoldFlag, 0x23) //if choice was already made, go to selected outcome immediately, and skip gold if already gotten
+			PreventSkipping
+			CallMenu(Ch3ThiefMenu)
+				BNE 0x3 0xC 0x0
+				LABEL 0x23
+				AllowSkipping
+				Text(Ch3StartBrotherThiefNoDeal)
+				RemoveBackground
+				SetBackground(BlackBG)
+				FlagNotSet(ThiefSoldFlag, 0x21)
+					GiveGold(1000)
+					SetFlag(ThiefSoldFlag)
+				LABEL 0x21
+				GOTO 0x2
+			LABEL 0x3
+				AllowSkipping
+				CHECK_ALIVE Pigeon
+				BNE 0x11 0x0 0xC
+					Text(Ch3StartBrotherThiefDealNoPigeon)
+				GOTO 0x12
+				LABEL 0x11
+				Text(Ch3StartBrotherThiefDeal)
+				LABEL 0x12
+				SetFlag(ThiefDealFlag)
+				GOTO 0x2
+			LABEL 0x2
 		RemoveBackgroundSlow
 	LABEL 1
 	
@@ -365,6 +374,7 @@ EndingScene:
 	SetBackground(Town_Day)
 	Text(BabyRecruitment)
 	LOAD1 0x1 BabyRecruitUnits
+	RemoveBackground
 	
 	SetBackgroundSlow(0x5)
 	CALL WiseEndEvent
@@ -372,8 +382,10 @@ EndingScene:
 	RemoveBackground
 	
 	//SetBackground(
-
+	
+	SetBackgroundSlow(Town_Day)
 	CALL PigeonLeavesEvent
+	RemoveBackground
 	
 	CALL EndEventRoutine
 	MNC2 Ch4
@@ -591,6 +603,8 @@ PigeonLeavesEvent:
 		LOAD1 0x1 SnotUnits
 		//get snot
 	LABEL 0x1
+	NoFade
+	ENDA
 
 Ch3SeizeEvent:
 	FlagNotSet(Ch3Village2Flag, 0x0)
@@ -617,7 +631,6 @@ Ch3Armory:
 	SHORT SteelSword
 	SHORT SteelLance
 	SHORT SteelAxe
-	SHORT SlimSword
 	SHORT SlimLance
 	SHORT SlimAxe
 	SHORT Javelin

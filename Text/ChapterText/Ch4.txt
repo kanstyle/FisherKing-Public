@@ -1,5 +1,5 @@
 ## Ch4Title
-Ch. 4: The Hero and the Prince[X]
+Ch. 4: Hero and Prince, pt. I[X]
 
 ## Ch4ObjectiveLong
 Help the nobles[N]
@@ -126,7 +126,7 @@ Ah...[A]
 Teacher.[A]
 
 [ml]
-Sir Gryphon and Lady Eagle.[AN]
+Sir Gryphon and Princess Eagle.[AN]
 [ce]I'm honored to welcome[N]
 you to the royal ball.[A]
 
@@ -616,7 +616,7 @@ look about you.[A]
 Sorry, Hero![4] I can't let you[N]
 do something so unsavory.[A]
 
-[r][ts]
+[mr][ts]
 [ce]I don't...[4][oe] I don't have a choice.[N]
 Now get out of my way.[A]
 
@@ -625,8 +625,9 @@ The prince will be going downstairs,[N]
 like you wanted.[AN]
 And you're going to stay put.[A]
 
+[mr]
+...What?[4][4][4][4][A][css][mvr]
 [r]
-...What?[4][4][4][4][mmr][N]
 Wait![A]
 [X]
 
@@ -674,7 +675,7 @@ as to my whereabouts and activities,[AN]
 and I intend to satisfy each.[AN]
 I would first extend my thanks to[N]
 Lord Gryphon, my faithful regent,[AN]
-and Lady Eagle, my beloved wife...[A]
+and Princess Eagle, my beloved wife...[A]
 [X]
 
 ## Ch4PrinceSpeechTeacher
@@ -1044,7 +1045,7 @@ I could've heard their screams, but I didn't.[A]
 Baron...[A]
 
 [l]
-I have no family, Lady Eagle.[N]
+I have no family, Princess Eagle.[N]
 Only my people.[AN]
 For each dead, I'll have a hundred[N]
 of these beasts exterminated.[A]

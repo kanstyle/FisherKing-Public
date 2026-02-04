@@ -29,6 +29,39 @@ The remaining Mome Raths[N]
 turn rabid![A]
 [X]
 
+## Ch5EndReport
+Initial deaths: 253.[AN]
+Injured: 526.[AN]
+As of one week after the attack:[4][4][N]
+64 more have died from injuries.[AN]
+Total deaths: 317.[AN]
+Remaining population: 4,580.[A]
+[X]
+
+## Ch5EndReport2
+Regarding the war effort:[N]
+Everyone in the city knows someone[N]
+who was killed in the assault.[AN]
+The baron's address, four days after,[N]
+drew significant applause as he[N]
+invoked the Prince's invasion plans.[A]
+[X]
+
+## Ch5EndReport3
+The low mage settlement outside of[N]
+the city walls has seen 17 incidents[N]
+of vandalism.[AN]
+Nightly gatherings in the city plaza[N]
+have risen from ~50 to ~200.[AN]
+There has not yet been violence, but[N]
+additional patrols will be deployed[N]
+to maintain order.[AN]
+Full report to follow.[N]
+[N]
+Signed,[N]
+Princess Eagle, of the House of Wings[A]
+[X]
+
 ## Ch5dEndScratch
 
 T: Well, I can't stop you from throwing your lives away. But I plan to keep mine.

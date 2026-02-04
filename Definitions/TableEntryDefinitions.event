@@ -37,6 +37,7 @@
 #define BaronWoundedMug 0x23
 #define GaleMug 0x24
 #define DevilMug 0x25
+#define PillowSadMug 0x26
 
 #define AxeBoneCard 0xAD
 #define LanceBoneCard 0xAE
@@ -188,6 +189,8 @@
 // Items
 #define Quickblade 0x2
 #define HerosFlair 0xA
+
+#define Swordbreaker 0x15
 
 #define LowTalon PoisonSword
 #define LowClaw ToxinLance

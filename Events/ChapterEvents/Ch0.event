@@ -93,7 +93,7 @@ UnitsCh2:
 	
 UnitsCh3:
 	UNIT Baby Mage_F 0x40 Level(5,Ally,False)     [18,19] 0b 0x0 0x0 0x0 [Lightning,Fire] DoNothingAI
-	UNIT Bunny BunnyRecruit 0x40 Level(5,Ally,False)     [2,18] 0b 0x0 0x0 0x0 [Axereaver,Javelin,IronLance] DoNothingAI
+	UNIT Bunny BunnyRecruit 0x40 Level(5,Ally,False)     [2,18] 0b 0x0 0x0 0x0 [Axereaver,Javelin,Swordbreaker] DoNothingAI
 	UNIT
 	
 UnitsCh4:

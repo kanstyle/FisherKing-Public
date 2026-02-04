@@ -27,6 +27,9 @@ Height:[X]
 #0xd4f AgeText
 Age:[X]
 
+#0x577
+Base[X]
+
 ## HouseText
 //first text ID in the free block
 [MidRight][LoadFace][CurrentPortrait]Nothing to see here.[A][X]

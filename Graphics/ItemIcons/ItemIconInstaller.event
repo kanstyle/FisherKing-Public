@@ -124,6 +124,9 @@ ORG ItemIconEntry(ShortSpear)
 ORG ItemIconEntry(Razorbeak)
 #incbin "Lances/SlimGlaive.dmp"
 
+ORG ItemIconEntry(Swordbreaker)
+#incbin "Lances/Swordbreaker.dmp"
+
 // axes
 ORG ItemIconEntry(IronAxe)
 #incbin "Axes/IronAxe.dmp"		// Ereshkigal

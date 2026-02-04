@@ -288,3 +288,11 @@ DevilMugData: // LL
 #incbin "dmp/Devil_palette.dmp"
 #incbin "dmp/Devil_minimug.dmp"
 setMugEntry(DevilMug, DevilMugData, 2, 6, 2, 3)
+
+ALIGN 16
+PillowSadMugData: // LL
+#incbin "dmp/PillowSad_mug.dmp"
+#incbin "dmp/PillowSad_frames.dmp"
+#incbin "dmp/PillowSad_palette.dmp"
+#incbin "dmp/PillowSad_minimug.dmp"
+setMugEntryExtend(PillowSadMug, PillowSadMugData, 3, 5, 4, 3, 10, 4, 0, 0)

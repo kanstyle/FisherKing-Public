@@ -5,6 +5,10 @@ CallPillowID_Link:
 WORD CallPillowID
 
 ALIGN 4 
+PillowID_Link: 
+WORD Pillow
+
+ALIGN 4 
 NoSkillQuotesFlag_Link: 
 WORD NoSkillQuotesFlag
 

@@ -23,6 +23,7 @@ DeathQuote(Bunny,0xFF,0x0,0x0,BunnyDeathQuoteEvent)
 
 DeathQuote(Skull,0xFF,DefeatBossFlag,Ch1SkullDQ)
 DeathQuote(Wise,0xFF,DefeatBossFlag,Ch3WiseDQ)
+DeathQuote(JabberwockBoss,0xFF,DefeatBossFlag,0x0)
 
 // NPC Units
 

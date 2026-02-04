@@ -5,9 +5,11 @@ StartEventRoutine:
 
 Turn1Routine:
 // Set Extended Destruction
-	CHECK_DEPLOYED Bunny
+	CHECK_EXISTS Bunny
 	BEQ 0x0 0xC 0x0
-		SetUnitStatus(Bunny,BadStatus,0x95) //special status for 9 turns, which ticks down to 8 when player phase starts
+		CHECK_DEPLOYED Bunny
+		BEQ 0x0 0xC 0x0
+			SetUnitStatus(Bunny,BadStatus,0x95) //special status for 9 turns, which ticks down to 8 when player phase starts
 	LABEL 0x0
 	NoFade
 	ENDA

@@ -3,6 +3,7 @@
  // skill sys 
 extern int SkillTester(struct Unit* unit, int id); 
 extern int CallPillowID_Link;
+extern int PillowID_Link;
 extern u16* CallPillowEvent; 
 extern int NoSkillQuotesFlag_Link;
 extern u16* ZoopQuoteEvent;
@@ -23,14 +24,18 @@ enum MenuEffect {
 };
  
 int CallPillow_Usability(struct MenuProc* menu) {
-	struct Unit* unit = GetUnit(0x3);
+	struct Unit* unit = GetUnitFromCharId(PillowID_Link);
+	gEventSlots[6] = PillowID_Link;
+	gEventSlots[7] = unit->xPos;
+	gEventSlots[8] = unit->yPos;
 	
 	if (!CanUnitCrossTerrain(unit, gBmMapTerrain[gActiveUnit->yPos][gActiveUnit->xPos])) { //can't call pillow if she can't stand (sit) there
 		//gEventSlots[6] = 1;
         return 3;
 	}
 	
-	if (unit->state & (US_RESCUED | US_NOT_DEPLOYED | US_DEAD | 0x00010000 | US_HIDDEN | US_UNSELECTABLE)) {
+	//if (unit->state & (US_RESCUED | US_NOT_DEPLOYED | US_DEAD | 0x00010000 | US_HIDDEN | US_UNSELECTABLE)) {
+	if (unit->state & (US_RESCUED | US_NOT_DEPLOYED | US_DEAD | 0x00010000 | US_HIDDEN)) {
 		return 3;
 	}
 	
@@ -48,11 +53,11 @@ int CallPillowAction(struct Proc* proc) {
 	gEventSlots[0xB] = gEventSlots[7] << 16;
 	gEventSlots[0xB] += gEventSlots[8];
 	
-	gEventSlots[7] = GetUnit(0x3)->xPos;
-	gEventSlots[8] = GetUnit(0x3)->yPos;
+	gEventSlots[7] = GetUnitFromCharId(PillowID_Link)->xPos;
+	gEventSlots[8] = GetUnitFromCharId(PillowID_Link)->yPos;
 	
-	gEventSlots[0x3] = gEventSlots[7] << 16;
-	gEventSlots[0x3] += gEventSlots[8];
+	gEventSlots[PillowID_Link] = gEventSlots[7] << 16;
+	gEventSlots[PillowID_Link] += gEventSlots[8];
 	
 	gEventSlots[7] = 0;
 	gEventSlots[8] = 0;

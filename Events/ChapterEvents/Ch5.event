@@ -39,6 +39,8 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0,Turn1Routine,1)
 	TurnEventPlayer(0x0,Turn1Event,1)
 	TurnEventPlayer(0x0,LargeReinforcementEvent,3)
+	TurnEventPlayer(0x0,LargeReinforcementEvent2,3)
+	TurnEventPlayer(0x0,EndingScene,9)
 	END_MAIN
 
 ALIGN 32
@@ -275,7 +277,7 @@ PlayerSquadUnits:
 	UNIT
 	
 DevilUnits:
-	UNIT Devil Monolith 0x40 Level(7,NPC,False)     [0,0] 0b 0x0 0x0 0x0 [0x0] [Shadowshot]
+	UNIT Devil Monolith 0x40 Level(7,NPC,False)     [0,0] 0b 0x0 0x0 0x0 [0x0] [Death]
 	UNIT
 	
 PlayerSquadUnitsPillow:
@@ -322,7 +324,7 @@ JabberwockLeftUnits02:
 	UNIT JBLeft Jabberwock 0x40 Level(10,Enemy,False) [6,3] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
 	UNIT
 JabberwockLeftUnits12:
-	UNIT JBLeft1 Revenant 0x40 Level(10,Enemy,False) [5,2] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
+	UNIT JabberwockBlocker Revenant 0x40 Level(10,Enemy,False) [5,2] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
 	UNIT
 JabberwockLeftUnits22:
 	UNIT JBLeft2 Revenant 0x40 Level(10,Enemy,False) [5,4] 0b 0x0 0x0 0x0 [FetidClaw] ChargeAI
@@ -616,18 +618,28 @@ LargeReinforcementEvent:
 	NoFade
 	ENDA
 	
-LargeReinforcementSWEvent:
-	SpawnReinforcements(SWReinforcementLargeUnits)
-	NoFade
-	ENDA
-	
-LargeReinforcementCenterEvent:
-	SpawnReinforcements(SWReinforcementLargeUnits)
-	NoFade
-	ENDA
-	
-LargeReinforcementSEEvent:
-	SpawnReinforcements(SWReinforcementLargeUnits)
+LargeReinforcementEvent2:
+	//Text(LargeReinforcementEventText2)
+	CLEAN
+	CallMenu(Ch5LargeReinforcementMenu) //menu where you pick a side to spawn reinforcements on
+	BNE 0x0 0xC 0x0
+		LoadReinforcements(SEReinforcementLargeUnits)
+		LoadReinforcements(CenterReinforcementLargeUnits)
+		GOTO 0x3
+		LABEL 0x0
+	SVAL 0x8 0x1
+	BNE 0x1 0xC 0x8
+		LoadReinforcements(SEReinforcementLargeUnits)
+		LoadReinforcements(SWReinforcementLargeUnits)
+		GOTO 0x3
+		LABEL 0x1
+	SVAL 0x8 0x2
+	BNE 0x2 0xC 0x8
+		LoadReinforcements(CenterReinforcementLargeUnits)
+		LoadReinforcements(SWReinforcementLargeUnits)
+		GOTO 0x3
+		LABEL 0x2
+	LABEL 0x3
 	NoFade
 	ENDA
 
@@ -658,107 +670,35 @@ GaleHeroTalk:
 	ENDA
 
 #define WarpAndDraw(unitGroup1,unitGroup2,unitGroup3,warpX,warpY,draw1X,draw1Y,draw2X,draw2Y) "\
+	CAM1 [draw1X,draw1Y]; \
 	LOAD2 0x1 unitGroup1; \
 	WARPIN [warpX,warpY]; \
 	ENDWARP; \
 	STAL 40; \
 		LOAD2 0x1 unitGroup2; \
+		SFX(0x312); \
 		Draw(MapDark,draw1X,draw1Y); \
 		STAL 20; \
 		LOAD2 0x1 unitGroup3; \
+		SFX(0x312); \
 		Draw(MapDark,draw2X,draw2Y); \
 	STAL 30"
 
 EndingScene:
-	CAM1 [3,18]
 	WarpAndDraw(JabberwockLeftUnits, JabberwockLeftUnits1, JabberwockLeftUnits2,\
 	3, 18,\
 	2, 17,\
 	4, 19)
 	
-	CAM1 [12,16]
 	WarpAndDraw(JabberwockCenterUnits, JabberwockCenterUnits1, JabberwockCenterUnits2,\
 	12, 16,\
 	11, 15,\
 	13, 15)
 
-	CAM1 [19,17]
 	WarpAndDraw(JabberwockRightUnits, JabberwockRightUnits1, JabberwockRightUnits2,\
 	19, 17,\
 	18, 18,\
 	20, 16)
-	
-	/*
-	LOAD2 0x1 JabberwockLeftUnits
-	STAL 60
-	MOVE 65535 JBLeft [3,18]
-	WARPIN [3,18]
-	ENDWARP
-	STAL 60
-		LOAD2 0x1 JabberwockLeftUnits1
-		MOVE 65535 JBLeft1 [2,17]
-		WARPIN [2,17]
-		ENDWARP
-		STAL 30
-		
-		LOAD2 0x1 JabberwockLeftUnits2
-		MOVE 65535 JBLeft2 [4,19]
-		WARPIN [4,19]
-		ENDWARP
-		STAL 30
-	
-	
-	CAMERA [12,17]
-	STAL 60
-	LOAD2 0x1 JabberwockCenterUnits
-	UNCM(JBCenter,Hide)
-	MOVE 65535 JBCenter [12,17]
-	WARPIN [12,17]
-	UNCR(JBCenter,Hide)
-	ENDWARP
-	STAL 60
-		LOAD2 0x1 JabberwockCenterUnits1
-		UNCM(JBCenter1,Hide)
-		MOVE 65535 JBCenter1 [11,17]
-		WARPIN [11,17]
-		UNCR(JBCenter1,Hide)
-		ENDWARP
-		STAL 30
-		
-		LOAD2 0x1 JabberwockCenterUnits2
-		UNCM(JBCenter2,Hide)
-		MOVE 65535 JBCenter2 [13,17]
-		WARPIN [13,17]
-		UNCR(JBCenter2,Hide)
-		ENDWARP
-		STAL 30
-		Placeholder
-	
-	CAMERA [20,18]
-	STAL 60
-	LOAD2 0x1 JabberwockRightUnits
-	UNCM(JBRight,Hide)
-	MOVE 65535 JBRight [20,18]
-	WARPIN [20,18]
-	UNCR(JBRight,Hide)
-	ENDWARP
-	STAL 60
-		LOAD2 0x1 JabberwockRightUnits1
-		UNCM(JBRight1,Hide)
-		MOVE 65535 JBRight1 [21,17]
-		WARPIN [21,17]
-		UNCR(JBRight1,Hide)
-		ENDWARP
-		STAL 30
-		
-		LOAD2 0x1 JabberwockRightUnits2
-		UNCM(JBRight2,Hide)
-		MOVE 65535 JBRight2 [19,19]
-		WARPIN [19,19]
-		UNCR(JBRight2,Hide)
-		ENDWARP
-		STAL 60
-	*/
 	
 	//text: eagle/teacher/hero reacting to the jabberwocks appearing. they're really big
 	//jabberwocks spawn more monsters
@@ -796,32 +736,6 @@ EndingScene:
 	Highlight(Ch5Eagle)
 	Text(Ch5DevilsComing)
 	
-	//the jabberwocks spawn more monsters
-	//text: eagle tells everyone to calm down. the devil's coming
-	//devil warps in
-	/* eagle: "Hello, Devil. Your medication..."
-	"There was no need for the titan to move. The daemon pellets vanished from Eagle's palm, spirited away inside the steel fortress."
-	devil: "Targets...? I count three... no, five... no, ten..."
-	eagle: "Three of them. Left, right, center. The big ones."
-	devil: "Okay."
-	//event battle where devil crits and obliterates one of the mome raths
-	devil: "Target elimin... No, I missed...? ...I need pellets..."
-	eagle: "I already gave you your pellets. Don't worry; they'll kick in momentarily." 
-	devil: "Okay..."
-	
-	dragon: "What the hell is this, Eagle?! There's a person in there, isn't there?"
-	eagle: "The most powerful low mage we've trained thus far."
-	dragon: "...How much did it take, huh? What'd you do to 'em?"
-	eagle: (close eyes) "I don't know the details."
-	dragon: "You--!"
-	eagle: "I knew you wouldn't like it. If it helps, I try not to deploy the Devil except when necessary. It's good to save lives, isn't it?"
-	dragon: "Don't give me that bullshit! It shouldn't exist! Low mages shouldn't exist!"
-	pillow: "..." (sad expression)
-	//warp sound effect plays, momentary screen shake
-	//civilians panicking
-	//text: hero points out that there's another jabberwock behind the building
-	*/
-	
 	CAMERA [12,4]
 	STAL 60
 	LOAD2 0x1 DevilUnits
@@ -840,8 +754,8 @@ EndingScene:
 	//mome rath event battle
 	StartBattle
 	CriticalHit(0x0,90)
-	FIGHT_MAP Devil JBLeft1 Shadowshot 0x0
-	DISA JBLeft1
+	FIGHT Devil JabberwockBlocker Shadowshot 0x0
+	DISA JabberwockBlocker
 	
 	STAL 30
 	Text(Ch5DevilMissed)

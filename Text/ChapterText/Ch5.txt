@@ -735,7 +735,7 @@ This is getting worse and worse.[N]
 We gotta hold these entrances![A]
 
 [l]
-Lady Eagle![4] The reinforcements![N]
+Princess Eagle![4] The reinforcements![N]
 Are they near?[A]
 
 [r]
@@ -824,14 +824,14 @@ You--![A]
 I knew you wouldn't like it.[AN][oe]
 If it helps, I try not to deploy the[N]
 Devil except when necessary.[AN]
-It's good to save lives, isn't it?[A]
+When lives are on the line.[A]
 
 [fr]
 Don't give me that bullshit![N][4][4]
 It shouldn't exist![AN]
-Low mages shouldn't exist![A]
+Low mages shouldn't exist![A][css][4][4][4]
 
-[r][tmm]
+[r][LoadPillowSad][tmm]
 ...[A]
 [X]
 
@@ -874,7 +874,7 @@ What?[A]
 
 [l]
 I just...[4][4] Even if Father doesn't[N]
-love you, know that...[4][4] I still do.[A]
+love you, know that...[4][4] I still do.[AN]
 Don't let our petty disagreements--[A]
 
 [fr][ce]

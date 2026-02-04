@@ -248,7 +248,7 @@ BallroomAudienceUnits:
 BallroomMonsterUnits:
 	UNIT Beast LanceBone 0x40 Level(6,Enemy,True)     [3,0] 0b 0x0 0x1 REDA3R2 [IronLance] AttackInRangeAI
 	UNIT Beast Revenant 0x40 Level(6,Enemy,True)     [4,0] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
-	UNIT Lowlander Mercenary 0x40 Level(6,Enemy,True)     [16,6] 0b 0x0 0x1 REDA6R6 [KillingEdge] AttackInRangeAI
+	UNIT Lowlander Mercenary 0x40 Level(6,Enemy,True)     [16,6] 0b 0x0 0x1 REDA7R6 [KillingEdge] AttackInRangeAI
 	UNIT Beast MogallClass 0x40 Level(6,Enemy,True)     [16,8] 0b 0x0 0x1 REDA9R8 [EvilEye] AttackInRangeAI
 	UNIT Lowlander AxeCav 0x40 Level(6,Enemy,True)     [16,7] 0b 0x0 0x1 REDA11R7 [RottenClaw] AttackInRangeAI
 	UNIT
@@ -435,7 +435,7 @@ BeginningScene:
 	MOVE 3 0x80 [5,4]
 	ENUN
 	FADI 8
-	MUSC TheQuestForRudrasMines
+	MUSC OmenID
 	
 	SetBackgroundSlow(EagleIntro)
 	STAL 120
@@ -541,6 +541,7 @@ BeginningScene:
 	Text(Ch4PrinceSpeech3)
 	WarpOut(Prince)
 	WarpOut(Songbird)
+	MUSC SteelGiantID
 	
 	LOAD2 0x1 BallroomMonsterUnits
 	ENUN
@@ -625,6 +626,7 @@ EndingScene:
 	LOAD2 0x1 FoyerGryphonUnits
 	UNCM(Pillow,Hide)
 	FADU 4
+	MUSCSLOW(NoticeOfDeathID)
 	LOAD2 0x1 FoyerPlayerUnits
 	ENUN
 	
