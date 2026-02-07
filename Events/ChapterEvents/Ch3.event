@@ -85,52 +85,52 @@ SnotUnits:
 	UNIT Snot Thief 0x40 Level(1,Ally,False)     [17,7] 0b 0x0 0x0 0x0 [IronSword] [0x0,0x0,0x0,0x0]
 
 EnemyUnits1:
-	UNIT Combatant SwordCav 0x40 Level(5,Enemy,True)     [17,6] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
-	UNIT Combatant SwordCav 0x40 Level(5,Enemy,True)     [17,8] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
-	UNIT Combatant LanceCav 0x40 Level(5,Enemy,True)     [18,5] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
-	UNIT Combatant LanceCav 0x40 Level(5,Enemy,True)     [18,9] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
-	UNIT Combatant Fighter 0x40 Level(5,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
-	UNIT Combatant Fighter 0x40 Level(5,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
-	UNIT Combatant PegasusKnight 0x40 Level(7,Enemy,True)     [18,7] 0b 0x0 0x0 0x0 [SavageGore] ChargeAI
+	UNIT Combatant SwordCav 0x40 Level(5,Enemy,True)     [17,6] 0b 0x0 0x1 REDA17R6 [SteelBlade] ChargeAI
+	UNIT Combatant SwordCav 0x40 Level(5,Enemy,True)     [17,8] 0b 0x0 0x1 REDA17R8 [SteelBlade] ChargeAI
+	UNIT Combatant LanceCav 0x40 Level(5,Enemy,True)     [18,5] 0b 0x0 0x1 REDA18R5 [SteelLance] ChargeAI
+	UNIT Combatant LanceCav 0x40 Level(5,Enemy,True)     [18,9] 0b 0x0 0x1 REDA18R9 [SteelLance] ChargeAI
+	UNIT Combatant Fighter 0x40 Level(5,Enemy,True)     [18,8] 0b 0x0 0x1 REDA18R8 [SteelAxe] ChargeAI
+	UNIT Combatant Fighter 0x40 Level(5,Enemy,True)     [18,6] 0b 0x0 0x1 REDA18R6 [SteelAxe] ChargeAI
+	UNIT Combatant PegasusKnight 0x40 Level(7,Enemy,True)     [18,7] 0b 0x0 0x1 REDA18R7 [SavageGore] ChargeAI
 	UNIT
 	
 EnemyUnits2:
-	UNIT Combatant Mercenary 0x40 Level(5,Enemy,True)     [17,6] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
-	UNIT Combatant Mercenary 0x40 Level(5,Enemy,True)     [17,8] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
-	UNIT Combatant Knight 0x40 Level(5,Enemy,True)     [18,5] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
-	UNIT Combatant Knight 0x40 Level(5,Enemy,True)     [18,9] 0b 0x0 0x0 0x0 [SavageGore] ChargeAI
-	UNIT Combatant AxeCav 0x40 Level(5,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
-	UNIT Combatant AxeCav 0x40 Level(5,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [SavageMaul] ChargeAI
-	UNIT Combatant Shaman 0x40 Level(7,Enemy,True)     [18,7] 0b 0x0 0x0 0x0 [Pain] ChargeAI
+	UNIT Combatant Mercenary 0x40 Level(5,Enemy,True)     [17,6] 0b 0x0 0x1 REDA17R6 [SteelBlade] ChargeAI
+	UNIT Combatant Mercenary 0x40 Level(5,Enemy,True)     [17,8] 0b 0x0 0x1 REDA17R8 [SteelBlade] ChargeAI
+	UNIT Combatant Knight 0x40 Level(5,Enemy,True)     [18,5] 0b 0x0 0x1 REDA18R5 [SteelLance] ChargeAI
+	UNIT Combatant Knight 0x40 Level(5,Enemy,True)     [18,9] 0b 0x0 0x1 REDA18R9 [SavageGore] ChargeAI
+	UNIT Combatant AxeCav 0x40 Level(5,Enemy,True)     [18,8] 0b 0x0 0x1 REDA18R8 [SteelAxe] ChargeAI
+	UNIT Combatant AxeCav 0x40 Level(5,Enemy,True)     [18,6] 0b 0x0 0x1 REDA18R6 [SavageMaul] ChargeAI
+	UNIT Combatant Shaman 0x40 Level(7,Enemy,True)     [18,7] 0b 0x0 0x1 REDA18R7 [Pain] ChargeAI
 	UNIT
 
 EnemyUnits3:
-	UNIT Combatant Myrmidon 0x40 Level(5,Enemy,True)     [17,6] 0b 0x0 0x0 0x0 [SlimSword] ChargeAI
-	UNIT Combatant Myrmidon 0x40 Level(5,Enemy,True)     [17,8] 0b 0x0 0x0 0x0 [SlimSword] ChargeAI
-	UNIT Combatant Mage 0x40 Level(5,Enemy,True)     [18,5] 0b 0x0 0x0 0x0 [Thunder] ChargeAI
-	UNIT Combatant Mage 0x40 Level(5,Enemy,True)     [18,9] 0b 0x0 0x0 0x0 [Thunder] ChargeAI
-	UNIT Combatant PegasusKnight 0x40 Level(5,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [HeavySpear] ChargeAI
-	UNIT Combatant PegasusKnight 0x40 Level(5,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
-	UNIT Combatant Shaman 0x40 Level(7,Enemy,True)     [18,7] 0b 0x0 0x0 0x0 [Pain] ChargeAI
+	UNIT Combatant Archer 0x40 Level(5,Enemy,True)     [1,6] 0b 0x0 0x1 REDA1R6 [IronBow] ChargeAI
+	UNIT Combatant Archer 0x40 Level(5,Enemy,True)     [1,8] 0b 0x0 0x1 REDA1R8 [IronBow] ChargeAI
+	UNIT Combatant Mage 0x40 Level(5,Enemy,True)     [0,5] 0b 0x0 0x1 REDA0R5 [Thunder] ChargeAI
+	UNIT Combatant Mage 0x40 Level(5,Enemy,True)     [0,9] 0b 0x0 0x1 REDA0R9 [Thunder] ChargeAI
+	UNIT Combatant PegasusKnight 0x40 Level(5,Enemy,True)     [2,8] 0b 0x0 0x1 REDA2R8 [HeavySpear] AttackInRangeAI
+	UNIT Combatant PegasusKnight 0x40 Level(5,Enemy,True)     [2,6] 0b 0x0 0x1 REDA2R6 [SteelLance] AttackInRangeAI
+	UNIT Combatant Shaman 0x40 Level(7,Enemy,True)     [0,7] 0b 0x0 0x1 REDA0R7 [Pain] ChargeAI
 	UNIT
 	
 EnemyUnits4:
-	UNIT Combatant SwordCav 0x40 Level(5,Enemy,True)     [17,6] 0b 0x0 0x0 0x0 [LightBrand] ChargeAI
-	UNIT Combatant SwordCav 0x40 Level(5,Enemy,True)     [17,8] 0b 0x0 0x0 0x0 [LightBrand] ChargeAI
-	UNIT Combatant WyvernRider 0x40 Level(5,Enemy,True)     [18,5] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
-	UNIT Combatant WyvernRider 0x40 Level(5,Enemy,True)     [18,9] 0b 0x0 0x0 0x0 [Axereaver] ChargeAI
-	UNIT Combatant Archer 0x40 Level(5,Enemy,True)     [18,8] 0b 0x0 0x0 0x0 [SteelBow] ChargeAI
-	UNIT Combatant Archer 0x40 Level(5,Enemy,True)     [18,6] 0b 0x0 0x0 0x0 [SteelBow] ChargeAI
-	UNIT Wise Shaman 0x40 Level(8,Enemy,True)     [18,7] 0b 0x0 0x0 0x0 [Exploitation] ChargeAI
+	UNIT Combatant Myrmidon 0x40 Level(5,Enemy,True)     [1,6] 0b 0x0 0x1 REDA1R6 [LightBrand] ChargeAI
+	UNIT Combatant Myrmidon 0x40 Level(5,Enemy,True)     [1,8] 0b 0x0 0x1 REDA1R8 [LightBrand] ChargeAI
+	UNIT Combatant WyvernRider 0x40 Level(5,Enemy,True)     [0,5] 0b 0x0 0x1 REDA0R5 [SteelLance] ChargeAI
+	UNIT Combatant WyvernRider 0x40 Level(5,Enemy,True)     [0,9] 0b 0x0 0x1 REDA0R9 [Axereaver] ChargeAI
+	UNIT Combatant Archer 0x40 Level(5,Enemy,True)     [0,8] 0b 0x0 0x1 REDA0R8 [SteelBow] ChargeAI
+	UNIT Combatant Archer 0x40 Level(5,Enemy,True)     [0,6] 0b 0x0 0x1 REDA0R6 [SteelBow] ChargeAI
+	UNIT Wise Shaman 0x40 Level(8,Enemy,True)     [0,7] 0b 0x0 0x1 REDA0R7 [Exploitation] ChargeAI
 	UNIT
 	
 WiseHallucinationUnits:
 	UNIT Beast MogallClass 0x40 Level(5,Enemy,True)     [9,10] 0b 0x0 0x0 0x0 [LightBrand] ChargeAI
-	UNIT Beast MogallClass 0x40 Level(5,Enemy,True)     [15,11] 0b 0x0 0x0 0x0 [LightBrand] ChargeAI
-	UNIT Beast MogallClass 0x40 Level(5,Enemy,True)     [17,4] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
-	UNIT Beast MogallClass 0x40 Level(5,Enemy,True)     [12,7] 0b 0x0 0x0 0x0 [Axereaver] ChargeAI
-	UNIT Beast MogallClass 0x40 Level(5,Enemy,True)     [10,5] 0b 0x0 0x0 0x0 [SteelBow] ChargeAI
-	UNIT Beast MogallClass 0x40 Level(5,Enemy,True)     [11,8] 0b 0x0 0x0 0x0 [SteelBow] ChargeAI
+	UNIT Beast MogallClass 0x40 Level(5,Enemy,True)     [3,11] 0b 0x0 0x0 0x0 [LightBrand] ChargeAI
+	UNIT Beast MogallClass 0x40 Level(5,Enemy,True)     [1,4] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT Beast MogallClass 0x40 Level(5,Enemy,True)     [6,7] 0b 0x0 0x0 0x0 [Axereaver] ChargeAI
+	UNIT Beast MogallClass 0x40 Level(5,Enemy,True)     [8,5] 0b 0x0 0x0 0x0 [SteelBow] ChargeAI
+	UNIT Beast MogallClass 0x40 Level(5,Enemy,True)     [7,8] 0b 0x0 0x0 0x0 [SteelBow] ChargeAI
 	UNIT
 
 TeacherHeroSongbirdUnits:
@@ -376,7 +376,6 @@ EndingScene:
 	LOAD1 0x1 BabyRecruitUnits
 	RemoveBackground
 	
-	SetBackgroundSlow(0x5)
 	CALL WiseEndEvent
 	Text(Ch3EndDress)
 	RemoveBackground
@@ -448,7 +447,7 @@ ArenaTurnEvent:
 		BNE 0x3 0x8 0xC
 			//CenterTextbox(DebugPauseText)
 			GiveGold(500)
-			CAMERA [18,5]
+			CAMERA [0,5]
 			Text(Ch3Wave3Intro)
 			LOAD2 0x1 EnemyUnits3
 		LABEL 0x3
@@ -459,7 +458,7 @@ ArenaTurnEvent:
 		BNE 0x4 0x8 0xC
 			//CenterTextbox(DebugPauseText)
 			GiveGold(500)
-			CAMERA [18,5]
+			CAMERA [0,5]
 			Text(Ch3Wave4Intro)
 			LOAD2 0x1 EnemyUnits4
 			Highlight(Wise)
@@ -477,7 +476,7 @@ ArenaTurnEvent:
 			DISA Beast
 			FADU 16
 			Text(Ch3Wave4Intro22)
-			Highlight(Pillow)
+			CameraCursor(Pillow)
 			Text(Ch3Wave4Intro3)
 		LABEL 0x4
 		//CenterTextbox(DebugPauseText)

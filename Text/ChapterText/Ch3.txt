@@ -1859,9 +1859,9 @@ So unreasonable.[4] When I see my parents[N]
 next, the things I'll tell them...[A]
 
 [ml]
-Where are your parents, may I ask?[A]
+Where are your parents, may I ask?[A][css]
 
-[mr]
+[mr][clear][LoadBaby]
 Can't tell you.[A]
 
 [ml]
@@ -1900,14 +1900,14 @@ Oh![4] Ohhhh, that's very interesting![N]
 Why didn't you say so?[AN]
 Where is she?[4] Can you show me to her?[A]
 
-[ml]
-Yes, yes--[A]
+[ml][ts]
+Yes, yes--[A][css]
 
-[mr]
+[mr][ts]
 Well, come on, then![N]
 We haven't got all day![A]
 
-[ml][ce]
+[ml][ce][ts]
 Settle down, please![A]
 [X]
 

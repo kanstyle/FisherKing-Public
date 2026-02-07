@@ -170,6 +170,12 @@ EndingScene:
 	CenterTextbox(Ch5dDeathSceneScratch)
 	*/
 	
+	RemoveBackground
+	SetBackgroundSlow(Inn)
+	Music(PubID)
+	Text(Ch5dTavernMeeting)
+	RemoveBackground
+	
 	CALL EndEventRoutine
 	MNC2 Ch0
 	NoFade

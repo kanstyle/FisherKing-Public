@@ -14,6 +14,9 @@ Learned  [X]
 
 #include "statscreen_text.txt"
 
+#0x577
+Base[X]
+
 #0xd4c LikesText
 //first text ID in the free block
 Likes:[X]
@@ -24,11 +27,10 @@ Likes:[X]
 #0xd4e HeightText
 Height:[X]
 
+
 #0xd4f AgeText
 Age:[X]
 
-#0x577
-Base[X]
 
 ## HouseText
 //first text ID in the free block

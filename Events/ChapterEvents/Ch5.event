@@ -40,6 +40,7 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0,Turn1Event,1)
 	TurnEventPlayer(0x0,LargeReinforcementEvent,3)
 	TurnEventPlayer(0x0,LargeReinforcementEvent2,3)
+	TurnEventPlayer(0x0,NEStairsReinforcementEvent,3)
 	TurnEventPlayer(0x0,EndingScene,9)
 	END_MAIN
 
@@ -60,7 +61,11 @@ MiscBasedEvents:
 	END_MAIN
 
 LocationBasedEvents:
-	Village(BunnyVillageFlag,BunnyMotherVisit,1,8)
+	Village(BunnyVillageFlag,BunnyMotherVisit,2,8)
+	Door(21,2)
+	Door(12,11)
+	Door(13,11)
+	Chest(Restore,10,12)
 	END_MAIN
 
 Dunno1:
@@ -84,12 +89,12 @@ Units1:
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [15,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [8,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [8,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [11,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [10,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [12,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [14,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [9,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [12,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [11,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [9,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT
 	
 EagleUnits:
@@ -110,11 +115,14 @@ NPCUnits:
 	UNIT
 
 EnemyUnits:
-	//upper right, by shop
-	UNIT Beast Tarvos 0x40 Level(7,Enemy,True)     [23,0] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
+	//upper right
+	UNIT Beast Tarvos 0x40 Level(7,Enemy,True)     [23,3] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
 	UNIT Beast AxeBone 0x40 Level(7,Enemy,True)     [18,4] 0b 0x0 0x0 0x0 [Hammer] AttackInRangeAI
 	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [19,3] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
 	UNIT Lowlander Fighter 0x40 Level(7,Enemy,True)     [18,1] 0b 0x0 0x0 0x0 [Hammer] AttackInRangeAI
+	
+	//inside locked building
+	UNIT Lowlander Myrmidon 0x40 Level(7,Enemy,True)     [22,0] DropItem 0x0 0x0 0x0 [SilverSword] AttackInRangeAI
 	
 	//upper right, by skull's house
 	UNIT Lowlander Fighter 0x40 Level(7,Enemy,True)     [19,7] 0b 0x0 0x0 0x0 [SavageMaul] AttackInRangeAI
@@ -127,7 +135,10 @@ EnemyUnits:
 	
 	//middle, above river
 	UNIT Beast SwordBone 0x40 Level(7,Enemy,True)     [13,9] 0b 0x0 0x0 0x0 [Armorslayer] AttackInRangeAI
-	UNIT Lowlander LowMage 0x40 Level(7,Enemy,True)     [14,11] 0b 0x0 0x0 0x0 [Pain] AttackInRangeAI
+	UNIT Lowlander LowMage 0x40 Level(7,Enemy,True)     [15,11] 0b 0x0 0x0 0x0 [Pain] AttackInRangeAI
+	
+	//middle, below river
+	UNIT Lowlander Fighter 0x40 Level(7,Enemy,True)     [12,14] 0b 0x0 0x0 0x0 [SavageMaul] AttackInRangeAI
 	
 	//upper left, by armory
 	UNIT Beast LanceBone 0x40 Level(7,Enemy,True)     [4,1] 0b 0x0 0x0 0x0 [HeavySpear] AttackInRangeAI
@@ -137,22 +148,30 @@ EnemyUnits:
 	UNIT Lowlander HighMage 0x40 Level(7,Enemy,True)     [6,2] 0b 0x0 0x0 0x0 [Elfire] AttackInRangeAI
 	
 	//upper left, by bunny house
-	UNIT Beast AxeBone 0x40 Level(7,Enemy,True)     [1,9] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI //guarding house
+	UNIT Beast AxeBone 0x40 Level(7,Enemy,True)     [2,9] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI //guarding house
 	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [4,9] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
-	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [4,10] 0b 0x0 0x0 0x0 [Lancereaver] ChargeAI
-	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [3,10] 0b 0x0 0x0 0x0 [SavageBlade] ChargeAI
+	//UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [4,10] 0b 0x0 0x0 0x0 [Lancereaver] ChargeAI
+	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [5,10] 0b 0x0 0x0 0x0 [SavageBlade] ChargeAI
 	
 	//right middle ruined house
 	UNIT Beast Cyclops 0x40 Level(1,Enemy,True)     [17,14] 0b 0x0 0x0 0x0 [SilverAxe,Elixir] BossAI
 	
 	//left sub-river
 	UNIT Beast Gargoyle 0x40 Level(7,Enemy,True)     [3,14] 0b 0x0 0x0 0x0 [SteelLance] AttackInRangeAI //covers bunny house
-	UNIT Lowlander AxeCav 0x40 Level(7,Enemy,True)     [4,16] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
+	//UNIT Lowlander AxeCav 0x40 Level(7,Enemy,True)     [4,16] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
 	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [3,16] 0b 0x0 0x0 0x0 [SteelSword] ChargeAI
 	
 	//center sub-river
 	UNIT Beast SwordBone 0x40 Level(7,Enemy,True)     [13,19] 0b 0x0 0x0 0x0 [Armorslayer] ChargeAI
 	UNIT Lowlander Fighter 0x40 Level(7,Enemy,True)     [14,18] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
+	UNIT
+	
+NEStairsReinforcementUnits:
+	UNIT Beast Tarvos 0x40 Level(10,Enemy,True)     [22,0] 0b 0x0 0x0 0x0 [SilverAxe] ChargeAI
+	UNIT
+	
+NEStairsReinforcementUnits:
+	UNIT Beast Bael 0x40 Level(7,Enemy,True)     [0,9] 0b 0x0 0x0 0x0 [SharpClaw] ChargeAI
 	UNIT
 	
 SWReinforcementLargeUnits:
@@ -252,7 +271,7 @@ MonsterUnitsCutscene:
 	UNIT 0x87 Bael 0x40 Level(6,Enemy,True)     [12,14] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
 	UNIT Beast Bael 0x40 Level(6,Enemy,True)     [20,16] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
 	UNIT 0x87 Cyclops 0x40 Level(6,Enemy,True)     [17,14] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
-	UNIT 0x87 Revenant 0x40 Level(6,Enemy,True)     [12,11] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT 0x87 Revenant 0x40 Level(6,Enemy,True)     [12,10] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
 	UNIT 0x87 Mercenary 0x40 Level(6,Enemy,True)     [8,9] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
 	UNIT 0x87 LowMage 0x40 Level(6,Enemy,True)     [17,8] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
 	UNIT 0x87 Gargoyle 0x40 Level(6,Enemy,True)     [5,15] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
@@ -261,19 +280,19 @@ MonsterUnitsCutscene:
 	UNIT 0x87 Gargoyle 0x40 Level(6,Enemy,True)     [5,7] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
 	UNIT 0x87 Bael 0x40 Level(6,Enemy,True)     [1,12] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
 	UNIT 0x87 Revenant 0x40 Level(6,Enemy,True)     [4,10] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
-	UNIT 0x87 Bael 0x40 Level(6,Enemy,True)     [2,3] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
+	UNIT 0x87 Bael 0x40 Level(6,Enemy,True)     [18,3] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
 	UNIT 0x87 Revenant 0x40 Level(6,Enemy,True)     [22,11] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
 	UNIT 0x87 Gargoyle 0x40 Level(6,Enemy,True)     [20,9] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
 	UNIT 0x87 LowMage 0x40 Level(6,Enemy,True)     [18,19] 0b 0x0 0x0 0x0 [SharpClaw] AttackInRangeAI
 	UNIT
 	
 PlayerSquadUnits:
-	UNIT HeroChar UpstartM 0x40 Level(7,Ally,False)     [18,0] 0b 0x0 0x1 REDA18R3 [0x0] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Headsman 0x40 Level(7,Ally,False)     [17,0] 0b 0x0 0x1 REDA17R3 [0x0] [0x0,0x0,0x0,0x0]
-	UNIT Eagle MageGeneral 0x40 Level(7,NPC,False)     [19,0] 0b 0x0 0x1 REDA19R3 [0x0] [0x0,0x0,0x0,0x0]
-	UNIT Teacher Veteran 0x40 Level(7,Ally,False)     [17,0] 0b 0x0 0x1 REDA17R2 [0x0] [0x0,0x0,0x0,0x0]
-	UNIT Gryphon Peer 0x40 Level(7,NPC,False)     [18,0] 0b 0x0 0x1 REDA18R1 [0x0] [0x0,0x0,0x0,0x0]
-	UNIT Baron General 0x40 Level(7,NPC,False)     [19,0] 0b 0x0 0x1 REDA19R1 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT HeroChar UpstartM 0x40 Level(7,Ally,False)     [5,0] 0b 0x0 0x1 REDA5R3 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Headsman 0x40 Level(7,Ally,False)     [4,0] 0b 0x0 0x1 REDA4R3 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT Eagle MageGeneral 0x40 Level(7,NPC,False)     [6,0] 0b 0x0 0x1 REDA6R3 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT Teacher Veteran 0x40 Level(7,Ally,False)     [4,0] 0b 0x0 0x1 REDA4R2 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT Gryphon Peer 0x40 Level(7,NPC,False)     [5,0] 0b 0x0 0x1 REDA5R1 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT Baron General 0x40 Level(7,NPC,False)     [6,0] 0b 0x0 0x1 REDA6R1 [0x0] [0x0,0x0,0x0,0x0]
 	UNIT
 	
 DevilUnits:
@@ -281,7 +300,7 @@ DevilUnits:
 	UNIT
 	
 PlayerSquadUnitsPillow:
-	UNIT Pillow LowVoice 0x40 Level(7,Ally,False)     [0,0] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT Pillow LowVoice 0x40 Level(7,Ally,False)     [18,0] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
 	UNIT
 	
 JabberwockLeftUnits:
@@ -510,15 +529,15 @@ BeginningScene:
 	CLEAN
 	FADU 8
 	
-	CAMERA [18,0]
+	CAMERA [0,0]
 	//player squad arrives
 	LOAD2 0x1 PlayerSquadUnits
 	ENUN
 	STAL 30
 	LOAD2 0x1 PlayerSquadUnitsPillow
 	UNCM(Pillow,Hide)
-	MOVE 65535 Pillow [18,2]
-	WARPIN [18,2]
+	MOVE 65535 Pillow [5,2]
+	WARPIN [5,2]
 	UNCR(Pillow,Hide)
 	ENDWARP
 	Highlight(Teacher)
@@ -683,6 +702,11 @@ GaleHeroTalk:
 		SFX(0x312); \
 		Draw(MapDark,draw2X,draw2Y); \
 	STAL 30"
+	
+NEStairsReinforcementEvent:
+	LoadReinforcements(NEStairsReinforcementUnits)
+	NoFade
+	ENDA
 
 EndingScene:
 	WarpAndDraw(JabberwockLeftUnits, JabberwockLeftUnits1, JabberwockLeftUnits2,\

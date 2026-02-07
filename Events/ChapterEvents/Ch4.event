@@ -23,9 +23,9 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0,Turn1Events,1)
 	TurnEventPlayer(0x0,HeroSwanEvent,2)
 	TurnEventPlayer(0x0,HeroTeacherEvent,3)
-	TurnEventPlayer(0x0,BackReinforcementSWEvent,4,4)
-	TurnEventPlayer(0x0,BackReinforcementNWEvent,4,4)
-	TurnEventPlayer(0x0,BackReinforcementNEEvent,10,2)
+	TurnEventPlayer(0x0,BackReinforcementSWEvent,5,4)
+	TurnEventPlayer(0x0,BackReinforcementNWEvent,5,4)
+	TurnEventPlayer(0x0,BackReinforcementNEEvent,12,2)
 	TurnEventPlayer(0x0,Turn1Routine,1)
 	END_MAIN
 
