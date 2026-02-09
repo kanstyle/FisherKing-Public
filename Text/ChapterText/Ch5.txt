@@ -45,8 +45,8 @@ Damn, you low mages are scary![A]
 Aha...[4][4] Is...[4] that a compliment?[A]
 
 [mr]
-Of course![4] Where does that power of yours come[N]
-from?[4] If only we'd had it in my day...[A]
+Of course![4] Where does that power of yours[N]
+come from?[4] If only we'd had it in my day...[A]
 
 [ml][ts]
 It's... er... hard to explain...[AN]
@@ -65,7 +65,7 @@ Other people are more afraid than me.[AN]
 
 [mr]
 Hmm...[4][4] Do you low mages ever[N]
-hear the dead talking to you?
+hear the dead talking to you?[A]
 
 [ml]
 Oh...?[4][4] Yes, sometimes,[N]

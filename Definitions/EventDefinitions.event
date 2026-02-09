@@ -34,7 +34,7 @@
 #define Bit9         0x200     // hidden by fog?
 #define HasMovedAI   0x400
 #define InBallista   0x800
-#define DropItem     0x1000
+#define DropItemState     0x1000
 #define GrowthBoost  0x2000
 #define SoloAnim1    0x4000
 #define SoloAnim2    0x8000
