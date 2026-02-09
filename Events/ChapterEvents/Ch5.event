@@ -413,7 +413,7 @@ BeginningScene:
 	FADU 4
 	STAL 90
 	
-	Music(BondsOfSeaAndFlameID)
+	/*Music(BondsOfSeaAndFlameID)
 	Placeholder
 	Music(AvehTheAncientDanceID)
 	Placeholder
@@ -432,7 +432,7 @@ BeginningScene:
 	Music(ThemeXID)
 	Placeholder
 	Music(ReposeOfSoulsID)
-	Placeholder
+	Placeholder*/
 	
 	/*SVAL r1 MapDark //vesly draw patch testing
 	SVAL 0xB (0x0 | (0x0<<16))

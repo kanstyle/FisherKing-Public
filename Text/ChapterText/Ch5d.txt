@@ -62,6 +62,84 @@ Signed,[N]
 Princess Eagle, of the House of Wings[A]
 [X]
 
+## Ch5dMessenger
+[l][LoadHeroM]
+[mmr][mr][tmm](It was this street, right?)[tmm][A][css]
+
+[fl][LoadPurpleSoldier]
+[mml][ml]
+Hey![4][4] You there![A][css]
+
+[mr][clear][LoadHeroM]
+Huh?[4] Yeah?[A]
+
+[ml]
+You're [oq]Hero", aren't you?[N][4][4]
+The mercenary.[A]
+
+[mr]
+Who's asking?[A]
+
+[ml]
+I've got a message for you.[N]
+It's from Princess Eagle.[A][css]
+
+[mr][mmr]
+Huh?![4][4] Really??[N][4][4]
+What's it about?[A]
+
+[ml]
+You think I'd open mail from the[N]
+Princess?[4][4] I like my head where it is.[AN]
+Here, take it.[4][4] I've got[N]
+places to be.[A][css][clear]
+
+[mr][tmm]
+([oq]Do not open. For Hero's eyes only.")[N]
+(Oh, man...[4] This is crazy!)[A]
+[X]
+
+## Ch5dEagleMessage
+Dear Hero,[N]
+I wish we could have met again[N]
+under better circumstances.[N]
+Alas, I've been terribly busy[N]
+these past weeks.[AN]
+If you are remaining nearby, I[N]
+would like to see you again soon.[A]
+[X]
+
+## Ch5dMessenger2
+[mr][LoadHeroM]
+[mmr](Whoa![4][4][4] [mmr]Whoa whoa whoa whoa!)[A]
+[X]
+
+## Ch5dEagleMessage2
+As you know, nuance is not my[N]
+forte, so I will be blunt.[N]
+I am agonizingly bored, and[N]
+confined to my office in this[N]
+city as I oversee the rebuilding.[A]
+I would like you to write to me,[N]
+if you wouldn't mind. I don't[N]
+much care about the subject.[AN]
+Address your correspondence to me[N]
+at the Baron's manor, and it will[N]
+reach me.[A]
+[X]
+
+## Ch5dMessenger3
+[mr][LoadHeroM]
+[mmr](Whoa whoa whoa whoa[N]
+whoa whoa whoa!)[A]
+[X]
+
+## Ch5dEagleMessage2
+And don't worry.[4] The prince[N]
+won't be angry with you.[4][N]
+I can guarantee that.[A]
+[X]
+
 ## Ch5dTavernMeeting
 [fl][LoadPillow]
 [r][LoadTeacher]
@@ -74,7 +152,9 @@ has to be a joke.[A]
 
 [fl][ts]
 It's not![4] I swear,[N]
-it's a real word![A]
+it's a real word![AN]
+And you're gonna cough up[N]
+a lot of points for it.[A]
 
 [fr]
 If Pillow says so, it is.[N]
