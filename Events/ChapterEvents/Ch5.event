@@ -52,6 +52,7 @@ CharacterBasedEvents:
 	CharacterEventBothWays(GaleHeroTalkFlag,GaleHeroTalk,Gale,HeroChar)
 	CharacterEventBothWays(StormSkullTalkFlag,StormSkullTalk,Storm,Skull)
 	CharacterEventBothWays(HeroSkullTalkFlag,SkullTalk,HeroChar,Skull)
+	//CharacterEventBothWays(HeroSkullTalkFlag,LargeReinforcementEvent,HeroChar,Skull)
 	END_MAIN
 
 MiscBasedEvents:
@@ -621,8 +622,8 @@ Turn1Event:
 	ENDA
 	
 LargeReinforcementEvent:
+	STAL 30
 	//Text(LargeReinforcementEventText)
-	CLEAN
 	CallMenu(Ch5LargeReinforcementMenu) //menu where you pick a side to spawn reinforcements on
 	BNE 0x0 0xC 0x0
 		LoadReinforcements(SWReinforcementLargeUnits)

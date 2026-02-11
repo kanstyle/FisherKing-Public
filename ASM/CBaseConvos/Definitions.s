@@ -1,21 +1,21 @@
+.include "fe8.s" 
 
-.include "FE-CLib-master/reference/FE8U-20190316.s"
+.macro SET_FUNC name, value
+	.global \name
+	.type   \name, function
+	.set    \name, \value
+.endm
 
-SET_DATA AtMenu, (0x08A1829C)
+.macro SET_DATA name, value
+	.global \name
+	.type   \name, object
+	.set    \name, \value
+.endm
 
-SET_DATA TextHandleStruct, (0x02013590)
+@ division & other libgcc functions
+SET_FUNC __aeabi_idiv,    __divsi3
+SET_FUNC __aeabi_idivmod, __modsi3
 
-SET_DATA SomeBgMap, (0x02023136)
+SET_DATA classTablePoin, 0x8017AB8
+SET_DATA NewBattleHitArray, 0x203AAC0 
 
-SET_DATA WriteTextTo, (0x0203EFC0)
-
-SET_DATA SALLYCURSOR, (0x0859DBBC)
-
-SET_DATA gMemorySlot, (0x030004B8)
-
-
-SET_FUNC SetBeigeBackground, (0x08086CE8+1)
-
-SET_FUNC ReturnToPrepScreenTheme, (0x080A1930+1)
-
-SET_FUNC LoadNewUIGraphics, (0x0804EB68+1)

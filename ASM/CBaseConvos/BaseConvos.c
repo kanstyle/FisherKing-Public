@@ -1,6 +1,6 @@
 
 #include <stddef.h>
-#include "../FE-CLib-master/include/gbafe.h"
+#include "gbafe.h"
 
 typedef struct BaseConvoEntry BaseConvoEntry;
 typedef struct BaseConvoProc BaseConvoProc;
@@ -315,6 +315,9 @@ int CheckToEnd(BaseConvoProc* proc)
 
 void BaseConvoProcDestructor(BaseConvoProc* proc)
 {
+	//proc ran correctly
+	gMemorySlot[0x8] = 0x99;
+	
 	*(char*)(0x0203EFC0) = 0;
 	// Also apparently we need to set 0x42 in this proc body to 1 to make the prep screen theme return correctly. Weird.
 	proc->prepThemeThing = 1;

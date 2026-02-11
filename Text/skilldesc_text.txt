@@ -40,9 +40,9 @@ gain bonus Attack equal to 50% of[N]
 weapon Mt.[X]
 
 ## SD_SteadySteady
-Steady, Steady...: When moving less than[N]
-full movement, gain +15 Crit, +50 Hit,[N]
-and +25% weapon Mt.[X]
+Steady, Steady...: When moving full move -2[N]
+or less, gain +15 Crit, +50 Hit, and +25%[N]
+weapon Mt.[X]
 
 ## SD_Jaded
 Jaded: Teacher does not gain EXP from[N]
