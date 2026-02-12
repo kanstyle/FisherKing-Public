@@ -201,6 +201,148 @@ Hey.[4] Sorry I'm late.[A]
 [r][ce]
 Help me, Hero.[N]
 These women are insane.[A]
+
+[l]
+Not to kill the mood, but we got[N]
+something big to talk about.[AN]
+We're gonna need a private room.[A]
+[X]
+
+## Ch5dTavernMeeting2
+[fl][LoadPillow]
+[r][LoadTeacher]
+[fr][LoadDragon]
+[l][LoadHeroM]
+
+[fl]
+So...[4] what's going on?[AN]
+Something illegal...?[A]
+
+[l]
+You all remember what Skull[N]
+told us about Songbird, right?[AN]
+That Songbird could stop those[N]
+Lowland beasts in their tracks?[A]
+
+[fr]
+Yeah?[A]
+
+[l]
+If we hadn't put Songbird in jail,[AN]
+this whole attack never would've[N]
+happened.[A]
+
+[fl]
+...Oh.[A]
+
+[fr][ce][tmm]...[A][tmm][oe]
+
+[r]
+...And?[AN]
+Suppose it was our fault, then.[N]
+What's your point?[A][css]
+
+[l][ce][4][4][4][4][oe]
+We need to free Songbird.[A]
+
+[r]
+What?![A]
+
+[l]
+Or else this'll happen[N]
+all over again![A]
+
+[r]
+What are we supposed to do?[AN]
+The baron would never allow it.[N]
+Not in this fervor.[AN]
+Would you have us break Songbird[N]
+out of jail?[A]
+
+[l]
+If we have to, yeah.[A]
+
+[r]
+This is ridiculous.[4][4] What then, after[N]
+we make ourselves into fugitives?[A]
+
+[l]
+Then we take the fight to the prince.[A]
+
+[r][ce]
+Hero...[A][oe]
+
+[fr]
+I'm with him.[A]
+
+[r]
+Dragon![A]
+
+[fr]
+If Gryphon and the prince invade the[N]
+Lowlands, a lot more people'll die.[AN]
+But they're gonna do it anyway, 'cause[N]
+it won't be them on the front lines.[A]
+
+[r]
+And our little homegrown rebellion[N]
+won't kill those same people?[AN]
+Is that it?[A][css]
+
+[fl][LoadPillowSad]
+...It's already started.[AN][LoadPillow]
+There was a mob outside the[N]
+low mage settlement last night.[A]
+
+[r]
+But the baron's soldiers broke[N]
+it up, did they not?[AN]
+Low mages are the backbone of[N]
+our military.[AN]
+The crown wouldn't let them be[N]
+killed by our own citizenry.[A]
+
+[fl]
+Of course they would.[N][4][4][4][ce]
+...Just not all of them.[A][oe]
+
+[r]
+Well, I can't stop you all from[N]
+throwing your lives away.[AN]
+But I plan to keep mine.[A]
+
+[l]
+Yeah?[4][4] What're you gonna do with[N]
+it, huh?[AN]
+Gonna go back to your little house,[N]
+and hope you die before things get bad?[A]
+
+[r]
+What would the Elder Prince say?[A]
+
+[l]
+Don't you dare, boy.[4][N]
+You know nothing of him.[AN]
+He certainly wouldn't have told[N]
+me to raise my sword against his son.[A]
+
+[r]
+Didn't he tell you to do whatever you[N]
+want with your life?[A]
+
+[l][mvl]
+How do you know what he told me?[A]
+
+[r][tmm]
+...[A][tmm]
+
+[l]
+He told me to live my life as I[N]
+see fit.[4] And I plan to.[AN]
+Goodbye.[A][css][clear]
+
+[r][mvr]
+Teacher![A]
 [X]
 
 ## Ch5dEndScratch
