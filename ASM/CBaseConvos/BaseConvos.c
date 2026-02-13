@@ -169,8 +169,8 @@ void BuildBaseConvoMenuGeometry(BaseConvoProc* proc)
 	{
 		proc->menuData.geometry.y = 0;
 	}
-	proc->menuData.geometry.w = 18; // I honestly have no idea why these are swapped now. They didn't use to be this way I swear.
-	proc->menuData.geometry.h = 0;
+	proc->menuData.geometry.w = 0; // I honestly have no idea why these are swapped now. They didn't use to be this way I swear.
+	proc->menuData.geometry.h = 18;
 	proc->menuData.style = 1;
 	proc->menuData.commandList = &BaseConvoMenuCommands;
 	proc->menuData.onInit = NULL;
@@ -190,6 +190,7 @@ void MenuBPress(MenuProc* menu, MenuCommandProc* entry)
 {
 	BaseConvoProc* baseProc = (BaseConvoProc*)ProcFind(&BaseConvoProcMenu);
 	StartFadeInBlackMedium();
+	EndMenu(menu);
 	ProcGoto((Proc*)baseProc,1);
 	baseProc->wasBPressed = 1;
 }

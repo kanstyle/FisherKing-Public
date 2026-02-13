@@ -3,6 +3,7 @@
 	#ifndef BASE_CONVOS
 		#define BASE_CONVOS
 		
+		#include "CLibCompat.event" //contains all the addresses corresponding to outdated function names in BaseConvos.c
 		// Compiled C code.
 		#include "BaseConvos.lyn.event"
 		

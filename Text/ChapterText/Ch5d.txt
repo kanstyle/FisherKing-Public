@@ -255,12 +255,13 @@ all over again![A]
 [r]
 What are we supposed to do?[AN]
 The baron would never allow it.[N]
-Not in this fervor.[AN]
+Not with the whole city clamoring[N]
+for Lowlander blood.[AN]
 Would you have us break Songbird[N]
 out of jail?[A]
 
 [l]
-If we have to, yeah.[A]
+If we have to, so be it.[A]
 
 [r]
 This is ridiculous.[4][4] What then, after[N]
@@ -303,8 +304,10 @@ The crown wouldn't let them be[N]
 killed by our own citizenry.[A]
 
 [fl]
-Of course they would.[N][4][4][4][ce]
-...Just not all of them.[A][oe]
+Of course they would.[N][4][4][4]
+...Just not all of them.[AN][ce]
+Maybe just a few, at first,[N]
+to calm things down...[A][oe]
 
 [r]
 Well, I can't stop you all from[N]
@@ -318,52 +321,188 @@ Gonna go back to your little house,[N]
 and hope you die before things get bad?[A]
 
 [r]
-What would the Elder Prince say?[A]
+Better than my head on a pike, yes.[A]
 
 [l]
-Don't you dare, boy.[4][N]
-You know nothing of him.[AN]
-He certainly wouldn't have told[N]
-me to raise my sword against his son.[A]
+What would the Elder Prince say?[A]
 
 [r]
+Don't you dare, boy.[4][N]
+You know nothing of him.[AN]
+He certainly wouldn't have ordered me[N]
+to raise a sword against his own son.[A]
+
+[l]
 Didn't he tell you to do whatever you[N]
 want with your life?[A]
 
-[l][mvl]
-How do you know what he told me?[A]
+[r][mvr]
+How do you know what he said?[A]
 
-[r][tmm]
+[l][tmm]
 ...[A][tmm]
 
-[l]
-He told me to live my life as I[N]
-see fit.[4] And I plan to.[AN]
+[r]
+He told me to live out my days[N]
+as I see fit.[4] And I plan to.[AN]
 Goodbye.[A][css][clear]
 
 [r][mvr]
 Teacher![A]
 [X]
 
-## Ch5dEndScratch
+## Ch5dTeacherFlashback
+[fr][LoadTeacher]
+[mvr][tmm]
 
-T: Well, I can't stop you from throwing your lives away. But I plan to keep mine.
-H: Yeah? What're you gonna do with it, huh? Gonna go back to your little house, and hope you die before things get bad?
-T: Sure. It sounds pleasant, compared to ending up on a pike.
-H: Yeah, well... what do you think the Elder Prince would say?
-T: Don't drag him into this. You know nothing of him.
-H: You think he'd want you sitting by while the world burns? Huh?
-T: What he wanted was for me to live my life as I see fit. And I plan to.
+[r]
+...[A]
+(What would the Elder Prince[N]
+have wanted?)[A]
 [X]
 
-## Ch5dDeathSceneScratch
+## Ch5dFlashbackPrince
+[l][LoadPrince]
+[l]
+What...?[4][4] What...[4] is this?[A]
+[X]
+
+## Ch5dFlashbackPrinceNarration
+As the sun chased away the morning[N]
+fog, on that day, we saw nothing.[AN]
+Nothing but the shining mountainsides,[N]
+the dew on the grass shimmering with[N]
+the golden light that slowly filled[N]
+the yawning canyons and valleys.[AN]
+Our weapons, clutched so fearfully,[N]
+hung loose, awkward in our grasp.[N]
+Underneath our grit and pride, we[N]
+Highlanders are the mice of this world.[AN]
+We are not used to receiving gifts[N]
+from it.[A]
+[X]
+
+## Ch5dTeacherEP
+[l][LoadYoungTeacher]
+[fl][LoadOldPrince]
+[l]
+I...[4][4] don't believe it.[N]
+There's not a beast in sight.[A]
+
+[fl]
+Ha...[4] Haha...[4][4] It's wonderful.[N]
+I couldn't have...[4][4][4][ce] dreamed of this.[A][css][clear]
+
+[l][mvl]
+My prince![A]
+[X]
+
+## Ch5dFlashbackTeacherNarration
+And so he fell.[A]
+[X]
+
+## Ch5dTeacherEP2
+[l][LoadOldPrince][ce]
+[r][LoadYoungTeacher]
+[fl][LoadPurpleSoldier]
+[fr][LoadPurpleSoldier]
+[fl]
+Your Majesty![A]
+
+[fr][mfr]
+His Majesty's fallen![A]
+
+[r]
+Milord, please open your eyes...[A][css]
+
+[l][oe]
+Yes, yes...[4] I'm...[4] still here.[A]
+
+[fr][mfr]
+Shall I fetch a healer?[A]
+
+[fl]
+I'll send for the younger prince[N]
+at once![A]
+
+[fr]
+First we must--[A]
+
+[r][ce][mvr]
+Leave us, you fools!![A][css][4][4][4][oe]
+
+[4][4][fr][clear][fl][clear]
+[X]
+
+## Ch5dFlashbackCG1
+[oq]My friend...[4][4] oh, my friend...[N][4][4]
+...[N][4][4]
+I can't...[4][4] find the words."[AN]
+[oq]Heh heh...[4][4] Surely you rehearsed this."[AN]
+[oq]One can't prepare themselves for[N]
+these moments."[A]
+[oq]Ha!"[4][4] He slumped against my chest.[AN]
+[oq]...There's nothing to prepare for, fool.[N][4]
+Just...[4][4] look away from my withered[N]
+old face, and watch the day break."[AN]
+[X]
+
+## Ch5dFlashbackCG2
 As I looked out over the expanse,[N]
-the rest of my life unfurled.[N]
-It stretched before me like the[N]
-vast, empty sky.[A]
+the rest of my life unfurled before[N]
+me.[4][4][4] It stretched out like the vast,[N]
+empty sky.[A]
 [X]
 
-## Ch5dDeathSceneScratch2
-[SetName]Teacher[.][N]
-...What am I to do...?[N]
-I can't... I can't bear this.[A][X]
+## Ch5dFlashbackCG3
+[oq]...What am I to do...?" I asked.[AN]
+[oq]Feeling more honest now?"[AN]
+[oq]I need you to tell me.[4][N]
+I can't...[4] I can't bear this.[4][N]
+I can hardly speak..."[AN]
+[oq]Ha...[4][4] hahaha...[4][4] You'd ask me,[4][N]
+a dying man,[4] how to live...?"[AN]
+[oq]Heh...[4][4] you stupid bastard.[N][4][4]
+You're supposed to understand[N]
+these things," I chuckled.[AN]
+[oq]Haha..."[4][4] His eyes drifted shut.[AN]
+[oq]Milord?[4][4] Milord![4][4] Don't close your[N]
+eyes.[4][4] Don't--"[AN]
+[oq]You...[4][4] smiled.[4][4] Ha...[4][4] ha..."[N]
+[oq]Milord! Milord...![A]
+[X]
+
+## Ch5dFlashbackPrinceTeacher
+[r][LoadYoungTeacher]
+[l][LoadOldPrinceEyesClosed][4][4][4]
+
+[r][ce]
+...[A]
+
+[fl][LoadPrince]
+Father![A]
+
+[r]
+...My prince.[A][css][4][4][4][4]
+
+[fl]
+...He's...[A]
+
+[r][ce]
+I'm sorry.[A][css]
+
+[fl][ce][4][4][4][mfl][4][4][mfl]
+F-Father...[A]
+[X]
+
+## Ch5dFlashbackTeacherNarration2
+I could not attend your funeral.
+I couldn't listen to others talk
+about you. They hadn't known you
+as I had known you.
+
+But, even then, I wonder if I even knew you myself.
+How could you die like that? With a smile on your face?
+How did you find such satisfaction in your life?
+How could you love this world so much?
+This cold, bloody world?[X]

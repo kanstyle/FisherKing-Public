@@ -1,0 +1,36 @@
+// Functions
+#define ProcFind 0x8002E9D
+#define StartFadeInBlackMedium 0x8013D69
+#define ProcGoto 0x8002F25
+#define GetStringTextWidthAscii 0x8004569
+#define CheckEventId 0x8083DA9
+#define LoadBgConfig 0x8001B59
+#define GetBgMapBuffer 0x8001C4D
+#define FillBgMap 0x8001221
+#define Text_InitFont 0x8003C95
+#define SetColorEffectsParameters 0x8001EA1
+#define Text_InitClear 0x8003D5D
+#define Text_Clear 0x8003DC9
+#define Text_GetStringTextCenteredPos 0x8003F91
+#define Text_InsertString 0x8004481
+#define Text_Display 0x8003E71
+#define Text_SetFont 0x8003D39
+#define Font_LoadForUI 0x80043A9
+#define StartMenuChild 0x804EBC9
+#define EndBG3Slider 0x8086DBD
+#define SetEventId 0x8083D81
+#define StartMapEventEngine 0x800D0B1
+#define IsFadeActive 0x8013C89
+#define SetBeigeBackground 0x08086CE9
+#define ReturnToPrepScreenTheme 0x080A1931
+#define LoadNewUIGraphics 0x0804EB69
+
+// Data/Variables
+#define gChapterData 0x202BCF0
+#define gLCDIOBuffer 0x3003080
+#define AtMenu 0x08A1829C
+#define TextHandleStruct 0x02013590
+#define SomeBgMap 0x02023136
+#define WriteTextTo 0x0203EFC0
+#define SALLYCURSOR 0x0859DBBC
+#define gMemorySlot 0x030004B8

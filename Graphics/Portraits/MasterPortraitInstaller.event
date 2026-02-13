@@ -296,3 +296,11 @@ PillowSadMugData: // LL
 #incbin "dmp/PillowSad_palette.dmp"
 #incbin "dmp/PillowSad_minimug.dmp"
 setMugEntryExtend(PillowSadMug, PillowSadMugData, 3, 5, 4, 3, 10, 4, 0, 0)
+
+ALIGN 16
+OldPrinceEyesClosedMugData: // LL
+#incbin "dmp/OldPrinceEyesClosed_mug.dmp"
+#incbin "dmp/OldPrinceEyesClosed_frames.dmp"
+#incbin "dmp/OldPrinceEyesClosed_palette.dmp"
+#incbin "dmp/OldPrinceEyesClosed_minimug.dmp"
+setMugEntry(OldPrinceEyesClosedMug, OldPrinceEyesClosedMugData, 2, 5, 3, 3)
