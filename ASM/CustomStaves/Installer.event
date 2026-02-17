@@ -1,1 +1,20 @@
+#define GetTargetListSize 0x804FD29
+#define StartTargetSelection 0x804FA3D
+#define StartBottomHelpText 0x8035709
+
 #include "CustomStaves.lyn.event" 
+
+ALIGN 4
+BreezeID_Link:
+WORD Breeze
+
+ALIGN 4
+BreezeStaffSelectInfo:
+WORD 0                              //onInit (nothing)
+POIN 0x4E884|1                      //onEnd - ClearBG0BG1
+WORD 0                              //onInitTarget
+POIN BreezeStaffTargetChange|1      //onSwitchIn
+WORD 0                              //onSwitchOut
+POIN 0x29550|1                      //onAPress - GenericStaffSelection_OnSelect
+POIN 0x2282C|1                      //onBPress - GenericSelection_BackToUM_CamWait
+WORD 0                              //onRPress

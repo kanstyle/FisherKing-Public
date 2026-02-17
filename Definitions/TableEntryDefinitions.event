@@ -245,3 +245,4 @@
 
 //Item Effects
 #define ButterflyItemEffectID 0x39
+#define BreezeStaffEffectID 0x3a

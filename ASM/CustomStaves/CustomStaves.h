@@ -48,3 +48,10 @@ enum {
 };
 */
 extern NewBattleHit NewBattleHitArray[];
+
+extern int BreezeStaffBitOffset_Link;
+extern void UnsetBit(u32* address, u8 bitOffset);
+extern void SetBit(u32* address, u8 bitOffset);
+extern bool CheckBit(u32* address, u8 bitOffset);
+extern u32* GetUnitDebuffEntry(struct Unit* unit);
+extern struct TargetSelectionDefinition CONST_DATA BreezeStaffSelectInfo;

@@ -6,7 +6,7 @@ ALIGN 4
 pMovModifiers: // Movement
 	POIN prAddUnitBaseMov prAddUnitMovBonus prGetItemMovBonus 
 	POIN prDebuffMov SpeedBoost
-	POIN prItemPassiveMov prRallyMov prSkillCelerity prSkillPoise prArmorMarchCheck SupportSixGaleforceMove ExtendedDestructionMovBuff GenderswapMovBuff
+	POIN prItemPassiveMov prRallyMov prSkillCelerity prSkillPoise prArmorMarchCheck SupportSixGaleforceMove ExtendedDestructionMovBuff GenderswapMovBuff BreezeMovBuff
 	#ifdef STAIRS_ASM
 	POIN StairsMoveDebuff
 	#endif

@@ -62,7 +62,7 @@ Tutorial:
 
 Units1:
 
-	UNIT Teacher Veteran 0x40 Level(10,Ally,False)     [14,9] 0b 0x0 0x1 REDA10R9 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Teacher Veteran 0x40 Level(10,Ally,False)     [14,9] 0b 0x0 0x1 REDA10R9 [IronLance, SteelBlade, IronAxe] [0x0,0x0,0x0,0x0]
 	UNIT HeroChar UpstartM 0x40 Level(3,Ally,False)     [14,9] 0b 0x0 0x1 REDA9R9 [IronBow, Fire, HerosFlair, Restore] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Headsman 0x40 Level(3,Ally,False)     [14,8] 0b 0x0 0x1 REDA9R8 [SteelAxe, SlimAxe, Bomb, Vulnerary] [0x0,0x0,0x0,0x0]
 	UNIT

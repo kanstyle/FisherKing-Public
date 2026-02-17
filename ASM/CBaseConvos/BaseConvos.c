@@ -74,7 +74,7 @@ void FillBaseMenuUsability(BaseConvoProc* proc);
 void SetScrollingBackground(BaseConvoProc* proc);
 void DisplayBottomText(BaseConvoProc* proc);
 void BuildBaseConvoMenuGeometry(BaseConvoProc* proc);
-void MenuBPress(MenuProc* menu, MenuCommandProc* entry);
+int MenuBPress(MenuProc* menu, MenuCommandProc* entry);
 void BuildBaseConvoMenuText(BaseConvoProc* proc);
 void CallBaseSupportMenu(BaseConvoProc* proc);
 int EnsureSelection(BaseConvoProc* proc);
@@ -186,13 +186,14 @@ void BuildBaseConvoMenuGeometry(BaseConvoProc* proc)
 }
 
 // B press handler for the menu.
-void MenuBPress(MenuProc* menu, MenuCommandProc* entry)
+int MenuBPress(MenuProc* menu, MenuCommandProc* entry)
 {
 	BaseConvoProc* baseProc = (BaseConvoProc*)ProcFind(&BaseConvoProcMenu);
 	StartFadeInBlackMedium();
-	EndMenu(menu);
 	ProcGoto((Proc*)baseProc,1);
 	baseProc->wasBPressed = 1;
+	
+	return MENU_ACT_END | MENU_ACT_SND6B | MENU_ACT_SKIPCURSOR;
 }
 
 /* Intended behavior: If there is a text ID to show, use that.
