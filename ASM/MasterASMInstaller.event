@@ -1,3 +1,4 @@
+#include "CustomItems/_CustomItemSetup.event" //credit to Teraspark
 #include "GiveExp/Installer.event" //credit to 7743
 #include "Hack-mug_exceed_(Pikmin)/EA.event" //credit to pikmin1211
 #include "MMB/Installers/MMBInstallerCatball_1.event" //credit to zane

@@ -176,33 +176,36 @@ void MakeTargetListForBreeze(struct Unit* unit) {
     int x = unit->xPos;
     int y = unit->yPos;
 	gSubjectUnit = unit;
-	gEventSlots[7] = gSubjectUnit->pCharacterData->number;
+	gEventSlots[9] = 31;
 	
 	InitTargets(x, y);
+	gEventSlots[9] = 32;
 
     Item_TURange(unit, TryAddUnitToBreezeTargetList, BreezeID_Link); //IER
+	gEventSlots[9] = 33;
     return;
 }
 
 bool BreezeUsability(struct Unit* unit) {
-	MakeTargetListForBreeze(unit);
-	gEventSlots[8] = 99;
-	return GetTargetListSize() != 0;
+	//MakeTargetListForBreeze(unit);
+	gEventSlots[9] = 99;
+	//return GetTargetListSize() != 0;
+	return 1;
 }
 
 void BreezeStaffTargeting(struct Unit* unit) {
-	gEventSlots[6] = 1;
+	gEventSlots[9] = 1;
 
 	MakeTargetListForBreeze(unit);
-	gEventSlots[6] = 2;
+	gEventSlots[9] = 2;
 	
 	BmMapFill(gBmMapRange, -1);
-	gEventSlots[6] = 3;
+	gEventSlots[9] = 3;
 	
 	StartBottomHelpText(
 		StartTargetSelection(&BreezeStaffSelectInfo),
 		GetStringFromIndex(0x874)); //"Select a character to restore HP to"
-	gEventSlots[6] = 5;
+	gEventSlots[9] = 5;
 }
 
 bool BreezeRepairCheck(struct Proc* proc) {
@@ -338,7 +341,7 @@ u8 BreezeStaffTargetChange(struct Proc* proc, struct TargetEntry* target) {
 }
 
 int BreezeStaffInitSelect(struct Proc* proc) {
-	gEventSlots[6] = 4;
+	gEventSlots[9] = 4;
     StartUnitHpInfoWindow(proc);
 	return 1;
 }
