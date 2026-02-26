@@ -1,0 +1,6 @@
+
+
+ALIGN 4
+SilentGiveGoldFunc:
+#incbin "SilentGiveGold.dmp"
+

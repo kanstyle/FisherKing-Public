@@ -633,9 +633,9 @@ LABEL CSPg1
 	CenterTextbox(DebugPauseText)
 	BLT EndMenuSkipStartEvent 8 7
 		LOAD1 0x1 UnitsCh4
-		//SilentGiveItem(Rapier,Dragon)
-		//SendToConvoy(RedGem)
-		//SendToConvoy(Speedwings) //for some reason SendToConvoy causes units to learn a bunch of weird skills
+		SilentGiveItem(Rapier,HeroChar)
+		SilentGiveGold(2500)
+		SilentGiveItem(Speedwings,HeroChar) //for some reason SendToConvoy causes units to learn a bunch of weird skills
 		AutoLevel(HeroChar, 7)
 		AutoLevel(Dragon, 7)
 		AutoLevel(Pillow, 7)

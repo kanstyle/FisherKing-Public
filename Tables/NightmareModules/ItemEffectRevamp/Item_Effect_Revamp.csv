@@ -57,7 +57,7 @@ Juna Fruit,0x8028bf8,0x802a0f4,0x802905c,0x802ff70,0x0
 Latona,0x8028b98,0x802a100,0x8029014,0x802ff48,0x0
 Multi-Skill Scroll,MultiScrollUsability|IsPointer,MultiScrollPrepUsability|IsPointer,0x802905c,MultiScrollEffect|IsPointer,0x0
 ButterflyItemEffectID,ButterflyUsabilityFunctionWrapper|IsPointer,0x802a100,0x802905c,ExecButterflyWrapper|IsPointer,0x0
-BreezeStaffEffectID,BreezeUsability|IsPointer,0x802a100,BreezeStaffTargeting|IsPointer,0x802fe6c,0x0
+BreezeStaffEffectID,BreezeUsabilityWrapper|IsPointer,0x802a100,BreezeStaffTargetingWrapper|IsPointer,BreezeStaffEffectWrapper|IsPointer,0x0
 0x3b,0x8028c04,0x802a100,0x802905c,0x802ff76,0x0
 0x3c,0x8028c04,0x802a100,0x802905c,0x802ff76,0x0
 0x3d,0x8028c04,0x802a100,0x802905c,0x802ff76,0x0

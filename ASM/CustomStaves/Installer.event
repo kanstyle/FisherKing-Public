@@ -2,7 +2,8 @@
 #define StartTargetSelection 0x804FA3D
 #define StartBottomHelpText 0x8035709
 
-#include "CustomStaves.lyn.event" 
+#include "CustomStaves.lyn.event"
+#include "CustomStaffWrappers.lyn.event"
 
 ALIGN 4
 BreezeID_Link:

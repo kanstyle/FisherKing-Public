@@ -1,1 +1,13 @@
-#include "NoTradeUnit.lyn.event" 
+#include "NoTradeUnit.lyn.event"
+
+ALIGN 4
+NoTradeUnitsTable:
+BYTE Ch5Eagle
+BYTE Sigil
+BYTE 0
+
+ALIGN 4
+NoTradeClassTable:
+BYTE GhostFighter //phantom
+BYTE SigilClass
+BYTE 0

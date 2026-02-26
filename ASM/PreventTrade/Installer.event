@@ -59,8 +59,9 @@ trade_fix_WM:
 
 ALIGN 4
 PreventTradingList:
-BYTE 0x9	//Rapier
-BYTE 0x6c	//Vulnerary
+//BYTE 0x9	//Rapier
+//BYTE 0x6c	//Vulnerary
+BYTE AblatioPhoton
 BYTE 0
 
 ALIGN 4 

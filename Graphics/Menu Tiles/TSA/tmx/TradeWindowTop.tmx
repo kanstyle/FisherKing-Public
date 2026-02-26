@@ -3,10 +3,6 @@
  <tileset firstgid="1" name="BobMenuTiles" tilewidth="8" tileheight="8" tilecount="128" columns="16">
   <image source="../../Image/Png/BobMenuTiles.png" width="128" height="64"/>
  </tileset>
- <tileset firstgid="129" name="BobMenuTiles" tilewidth="8" tileheight="8" tilecount="128" columns="16">
-  <image source="../../Image/Png/MenuTiles.png" width="128" height="64"/>
- </tileset>
- <tileset firstgid="257" source="../MenuTiles.tsx"/>
  <layer id="1" name="Tile Layer 1" width="10" height="3">
   <data encoding="csv">
 130,131,131,131,131,131,131,131,131,134,

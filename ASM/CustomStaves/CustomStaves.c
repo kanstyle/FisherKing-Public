@@ -187,10 +187,8 @@ void MakeTargetListForBreeze(struct Unit* unit) {
 }
 
 bool BreezeUsability(struct Unit* unit) {
-	//MakeTargetListForBreeze(unit);
-	gEventSlots[9] = 99;
-	//return GetTargetListSize() != 0;
-	return 1;
+	MakeTargetListForBreeze(unit);
+	return GetTargetListSize() != 0;
 }
 
 void BreezeStaffTargeting(struct Unit* unit) {
@@ -344,4 +342,26 @@ int BreezeStaffInitSelect(struct Proc* proc) {
 	gEventSlots[9] = 4;
     StartUnitHpInfoWindow(proc);
 	return 1;
+}
+
+void ExecBreezeStaff(struct Proc* proc) {
+	//set attacker & the item to apply the effect of
+	BattleInitItemEffect(GetUnit(gActionData.subjectIndex),gActionData.itemSlotIndex);
+	//set defender
+	BattleInitItemEffectTarget(GetUnit(gActionData.targetIndex));
+	
+	//execstandardheal
+	/*amount = GetUnitItemHealAmount(
+        GetUnit(gActionData.subjectIndex),
+        GetUnit(gActionData.subjectIndex)->items[gActionData.itemSlotIndex]
+    );*/
+	int amount = 10; //test, this does increment hp but doesnt play the healing health bar animation
+    AddUnitHp(GetUnit(gActionData.targetIndex), amount);
+	
+	gBattleHitIterator->hpChange = gBattleTarget.unit.curHP - GetUnitCurrentHp(GetUnit(gActionData.targetIndex));
+	gBattleTarget.unit.curHP = GetUnitCurrentHp(GetUnit(gActionData.targetIndex));
+	
+	//perform the item effect & do battle anims
+	BattleApplyItemEffect(proc);
+	BeginBattleAnimations();
 }

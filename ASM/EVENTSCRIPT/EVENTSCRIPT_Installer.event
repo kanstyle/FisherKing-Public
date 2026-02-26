@@ -12,3 +12,5 @@
 
 #include "EVENTSCRIPT_GetSupport_20220520/GetSupport.event"
 
+#include "EVENTSCRIPT_SilentGiveGold/SilentGiveGold.event"
+

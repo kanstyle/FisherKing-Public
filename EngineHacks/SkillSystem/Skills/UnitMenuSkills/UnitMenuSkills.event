@@ -19,11 +19,19 @@ WORD DanceID
 WORD ALSO_USE_VANILLA_DANCE_CHECK
 
 ALIGN 4
-NewSupplyUsability:
-#incbin "Supply/NewSupplyUsability.dmp"
-POIN SkillTester
+#include "Supply/NewSupplyUsability.lyn.event"
+ALIGN 4
+SupplyID_Link:
 WORD SupplyID
+ALIGN 4
+AlsoUseVanillaCheck_Link:
 WORD ALSO_USE_VANILLA_SUPPLY_CHECK
+ALIGN 4
+unitInTradeTable_Link:
+POIN unitInTradeTable
+ALIGN 4
+classInTradeTable_Link:
+POIN classInTradeTable
 
 ALIGN 4
 NewSummonUsability:

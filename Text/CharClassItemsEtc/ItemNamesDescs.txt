@@ -10,7 +10,7 @@ Bomb[X]
 
 ## BombDesc ^
 
-Fixed Mt plus 25% of target's max HP. Hits Res.[X]
+Fixed Mt plus 25% of target's max HP. Hits Res. Cannot crit.[X]
 
 
 ## HeavyBombName ^
@@ -20,7 +20,7 @@ Heavy Bomb[X]
 
 ## HeavyBombDesc ^
 
-Fixed Mt plus 25% of target's max HP. Hits Res.[X]
+Fixed Mt plus 25% of target's max HP. Hits Res. Cannot crit.[X]
 
 
 ## LongFuseBombName ^
@@ -30,7 +30,7 @@ Long-Fuse[X]
 
 ## LongFuseBombDesc ^
 
-Fixed Mt plus 25% of target's max HP. Hits Res.[X]
+Fixed Mt plus 25% of target's max HP. Hits Res. Cannot crit.[X]
 
 
 ## PowderShellName ^
@@ -40,7 +40,7 @@ Powder Shell[X]
 
 ## PowderShellDesc ^
 
-Fixed Mt plus 25% of target's max HP. Hits Res.[X]
+Fixed Mt plus 25% of target's max HP. Hits Res. Cannot crit.[X]
 
 
 ## FirebombName ^
@@ -50,7 +50,7 @@ Firebomb[X]
 
 ## FirebombDesc ^
 
-Eff. vs. [horse].[X]
+Eff. vs. [horse]. Cannot crit.[X]
 
 
 ## StickyBombName ^
@@ -60,7 +60,7 @@ Sticky Bomb[X]
 
 ## StickyBombDesc ^
 
-Eff. vs. [armor].[X]
+Eff. vs. [armor]. Cannot crit.[X]
 
 
 ## ClusterBombName ^
@@ -70,7 +70,7 @@ Cluster Bomb[X]
 
 ## ClusterBombDesc ^
 
-Strikes twice per attack.[X]
+Strikes twice per attack. Cannot crit.[X]
 
 
 ## PowderKegName ^
@@ -80,7 +80,7 @@ Powder Keg[X]
 
 ## PowderKegDesc ^
 
-Fixed Mt plus 25% of target's max HP. Hits Res.[X]
+Fixed Mt plus 25% of target's max HP. Hits Res. Cannot crit.[X]
 
 
 ## RedHornetName ^

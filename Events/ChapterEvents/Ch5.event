@@ -571,6 +571,7 @@ StormGaleIntro:
 	STAL 30
 	Highlight(Storm)
 	Text(Ch5StormGaleIntro2)
+	SetUnitStatus(Ch5Eagle,MovBonus,0xFA)
 	NoFade
 	ENDA
 	
