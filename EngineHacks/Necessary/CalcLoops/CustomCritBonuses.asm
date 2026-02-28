@@ -66,6 +66,10 @@ push	{r4-r7,r14}
 	mov     r1,r5
 	mov     r2,#0x66
 	strh    r0,[r1,r2]
+	//cant crit if crit chance is 255
+	mov     r1,#0xFF 
+	cmp     r0,r1
+	beq     CantCritical
 	ldr     r1,#ValueToCritical
 	cmp     r0,r1
 	bge     CanCritical

@@ -3,6 +3,7 @@
 
 extern u8 ConvoySize_Link;
 extern int BreezeID_Link;
+extern s8 prMagGetter(struct Unit* unit);
 
 bool isFirstRound(NewBattleHit* round) {
 	return (round->info & BATTLE_HIT_INFO_BEGIN);
@@ -326,7 +327,7 @@ void ClearBreeze() { //i put this in TurnLoop
 
 int BreezeMovBuff(u8 stat, struct Unit* unit) {
 	if (CheckBit(GetUnitDebuffEntry(GetUnit(unit->index)), BreezeStaffBitOffset_Link)) {
-		stat += 3;
+		stat += 5;
 	}
 	return stat;
 }
@@ -355,7 +356,8 @@ void ExecBreezeStaff(struct Proc* proc) {
         GetUnit(gActionData.subjectIndex),
         GetUnit(gActionData.subjectIndex)->items[gActionData.itemSlotIndex]
     );*/
-	int amount = 10; //test, this does increment hp but doesnt play the healing health bar animation
+	//int mag = prMagGetter(GetUnit(gActionData.subjectIndex));
+	int amount = 30;
     AddUnitHp(GetUnit(gActionData.targetIndex), amount);
 	
 	gBattleHitIterator->hpChange = gBattleTarget.unit.curHP - GetUnitCurrentHp(GetUnit(gActionData.targetIndex));

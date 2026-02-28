@@ -68,6 +68,7 @@ POIN CriticalCheck
 #ifdef CANNOT_CRIT
 	POIN NegateCritWeapons //This goes last, so that crit will always be set to 0 if set and never modified from there
 #endif // CANNOT_CRIT
+POIN CantCritEffect //This goes after because CANNOT_CRIT doesn't actually work with CoL Crit
 POIN 0
 
 #define AuraSkillEntry(skillID) "PUSH; ORG AuraSkillTable + skillID; BYTE 0x1; POP"

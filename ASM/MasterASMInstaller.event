@@ -46,6 +46,7 @@
 #include "PerChapterItems-Retina/Installer.event"
 #include "EventCallTargetSelection/EventCallTargetSelection.event"
 #include "FastBattleAnimation/Installer.event"
+#include "CantCrit/Installer.event"
 //#include "VantageMinus/Installer.event"
 //#include "BiggestFan/Installer.event"
 //#include "Helpers.event"

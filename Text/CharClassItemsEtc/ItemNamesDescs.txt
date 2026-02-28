@@ -10,7 +10,8 @@ Bomb[X]
 
 ## BombDesc ^
 
-Fixed Mt plus 25% of target's max HP. Hits Res. Cannot crit.[X]
+Bomb damage is fixed Mt plus 25% of[N]
+target's max HP. Hits Res. Cannot crit.[X]
 
 
 ## HeavyBombName ^
@@ -20,7 +21,7 @@ Heavy Bomb[X]
 
 ## HeavyBombDesc ^
 
-Fixed Mt plus 25% of target's max HP. Hits Res. Cannot crit.[X]
+Fixed Mt plus 25% of target's max HP.[N]Hits Res. Cannot crit.[X]
 
 
 ## LongFuseBombName ^
@@ -30,7 +31,7 @@ Long-Fuse[X]
 
 ## LongFuseBombDesc ^
 
-Fixed Mt plus 25% of target's max HP. Hits Res. Cannot crit.[X]
+Fixed Mt plus 25% of target's max HP.[N]Hits Res. Cannot crit.[X]
 
 
 ## PowderShellName ^
@@ -40,7 +41,7 @@ Powder Shell[X]
 
 ## PowderShellDesc ^
 
-Fixed Mt plus 25% of target's max HP. Hits Res. Cannot crit.[X]
+Fixed Mt plus 25% of target's max HP.[N]Hits Res. Cannot crit.[X]
 
 
 ## FirebombName ^
@@ -50,7 +51,7 @@ Firebomb[X]
 
 ## FirebombDesc ^
 
-Eff. vs. [horse]. Cannot crit.[X]
+Eff. vs. [horse].[X]
 
 
 ## StickyBombName ^
@@ -60,7 +61,7 @@ Sticky Bomb[X]
 
 ## StickyBombDesc ^
 
-Eff. vs. [armor]. Cannot crit.[X]
+Eff. vs. [armor].[X]
 
 
 ## ClusterBombName ^
@@ -70,7 +71,7 @@ Cluster Bomb[X]
 
 ## ClusterBombDesc ^
 
-Strikes twice per attack. Cannot crit.[X]
+Strikes twice per attack.[X]
 
 
 ## PowderKegName ^
@@ -80,7 +81,7 @@ Powder Keg[X]
 
 ## PowderKegDesc ^
 
-Fixed Mt plus 25% of target's max HP. Hits Res. Cannot crit.[X]
+Fixed Mt plus 25% of target's max HP.[N]Hits Res. Cannot crit.[X]
 
 
 ## RedHornetName ^
@@ -90,7 +91,7 @@ Red Hornet[X]
 
 ## RedHornetDesc ^
 
-Fixed Mt plus 25% of target's max HP. Hits Res.[X]
+Fixed Mt plus 25% of target's max HP.[N]Hits Res. Cannot crit.[X]
 
 
 ## GoldHornetName ^
@@ -100,7 +101,7 @@ Gold Hornet[X]
 
 ## GoldHornetDesc ^
 
-Fixed Mt plus 25% of target's max HP. Hits Res.[X]
+Fixed Mt plus 25% of target's max HP.[N]Hits Res. Cannot crit.[X]
 
 
 ## PainName ^
@@ -1195,9 +1196,9 @@ Always attacks after foe.[X]
 Breeze[X]
 
 ## BreezeDesc ^
-[.][lock] Gale. Heals 10 + Mag HP to all adjacent[N]
-allies and refreshes user. Repairs when Gale[N]
-kills a foe.[X]
+[.][lock] Gale. Heals 30 HP to an adjacent[N]
+ally and grants Mov +5 until next turn.[N]
+Repairs when Gale kills a foe.[X]
 
 ## BreezeUseDesc
 Heals adjacent allies[N]
@@ -1212,8 +1213,8 @@ Doubles number of strikes.[X]
 ## QuickbladeName ^
 Quickblade[X]
 
-## QuickbladeDesc
-Doubles number of strikes.[X]
+## QuickbladeDesc ^
+Doubles number of strikes. Uses Str/2.[X]
 
 ## RazorbeakName ^
 Razorbeak[X]

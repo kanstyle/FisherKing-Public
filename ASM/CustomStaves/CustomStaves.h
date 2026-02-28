@@ -55,3 +55,4 @@ extern void SetBit(u32* address, u8 bitOffset);
 extern bool CheckBit(u32* address, u8 bitOffset);
 extern u32* GetUnitDebuffEntry(struct Unit* unit);
 extern struct TargetSelectionDefinition CONST_DATA BreezeStaffSelectInfo;
+extern s8 prMagGetter(struct Unit* unit);
