@@ -22,6 +22,7 @@ DeathQuote(Bunny,0xFF,0x0,0x0,BunnyDeathQuoteEvent)
 // Enemy Units
 
 DeathQuote(Skull,0xFF,DefeatBossFlag,Ch1SkullDQ)
+DeathQuote(Songbird,Ch2,0x0,0x0,Ch2SongbirdDeathQuoteEvent)
 DeathQuote(Wise,0xFF,DefeatBossFlag,Ch3WiseDQ)
 DeathQuote(JabberwockBoss,0xFF,DefeatBossFlag,0x0)
 
@@ -34,6 +35,13 @@ DeathQuote(0xFFFF,0,0,0) // terminator
 
 
 // Death Quote Events
+ALIGN 4
+Ch2SongbirdDeathQuoteEvent:
+Text(SongbirdDQ)
+GameOver
+NoFade
+ENDA
+
 ALIGN 4
 TeacherDeathQuoteEvent:
 Text(TeacherDQ)

@@ -652,6 +652,10 @@ LABEL CSPg1
 	CenterTextbox(DebugPauseText)
 	BLT EndMenuSkipStartEvent 8 7
 		LOAD1 0x1 UnitsCh5
+		SilentGiveItem(Razorbeak,Bunny)
+		GiveItemWithDurability(SkillScroll,52,Bunny)
+		SilentGiveItem(SilverSword,Teacher)
+		SilentGiveItem(MasterSeal,Pigeon)
 		AutoLevel(HeroChar, 8)
 		AutoLevel(Dragon, 8)
 		AutoLevel(Pillow, 8)

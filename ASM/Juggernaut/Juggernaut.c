@@ -39,5 +39,5 @@ void JuggernautPreBattleEffect(struct BattleUnit* bunitA, struct BattleUnit* bun
 	int originalAttack = bunitB->battleAttack;
 	int damageDiff = 0;
 	damageDiff = originalAttack - bunitA->battleDefense;
-	bunitB->battleAttack -= (damageDiff/2);
+	bunitB->battleAttack -= (damageDiff/4*3);
 }

@@ -724,6 +724,10 @@ EndingScene:
 	ENDA
 	
 Turn1Events:
+	AddTrap(GreenSigilTrapID,23,17)
+	AddTrap(GreenSigilTrapID,24,17)
+	AddTrap(GreenSigilTrapID,25,17)
+	
 	CenterTextbox(Ch4Tutorial)
 	FlagIsSet(ThiefDealFlag, 0x0)
 		CALL ThievesEvent

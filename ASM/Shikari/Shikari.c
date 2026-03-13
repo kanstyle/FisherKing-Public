@@ -14,7 +14,7 @@ void ShikariEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB) {
 		//gEventSlots[6] = 0x4;
 	}
 	if (enemyWep == 0xB) { //monster weapon
-		//gEventSlots[6] = enemyWep;
+		gEventSlots[6] = enemyWep;
 		bunitB->wTriangleHitBonus = 20;
 		bunitB->wTriangleDmgBonus = 2;
 		bunitA->wTriangleHitBonus = -20;

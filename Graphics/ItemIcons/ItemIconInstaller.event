@@ -318,6 +318,9 @@ ORG ItemIconEntry(Torture)
 ORG ItemIconEntry(Death)
 #incbin "Dark/death.dmp"
 
+ORG ItemIconEntry(Shadowshot)
+#incbin "Dark/Shadowshot.dmp"
+
 /*
 ORG ItemIconEntry(MaleficFlux)
 #incbin "Dark/MaleficFlux.dmp"		// Ereshkigal

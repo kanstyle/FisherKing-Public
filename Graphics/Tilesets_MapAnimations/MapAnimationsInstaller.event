@@ -1,7 +1,7 @@
 //EventPointerTable(0x54, FlasubanVillageTileAnimations)
 #define tilesetAnimation(speed, size, pointer)    "BYTE speed 0; SHORT size; POIN pointer"
 
-EventPointerTable(FlasubanVillageTileAnimationsID, FlasubanVillageTileAnimations)
+/*EventPointerTable(FlasubanVillageTileAnimationsID, FlasubanVillageTileAnimations)
 
 ALIGN 4
 FlasubanVillageTileAnimations0:
@@ -39,6 +39,7 @@ tilesetAnimation(0x1C,0x1000,FlasubanVillageTileAnimations5)
 tilesetAnimation(0x1C,0x1000,FlasubanVillageTileAnimations6)
 tilesetAnimation(0x1C,0x1000,FlasubanVillageTileAnimations7)
 WORD 0 0
+*/
 
 EventPointerTable(FF5CaveTileAnimationsID, FF5CaveTileAnimations)
 
@@ -222,6 +223,78 @@ tilesetAnimation(0x1C,0x1000,FlasubanFrontierTileAnim7)
 WORD 0 0
 
 EventPointerTable(ZoramineImprovedStrongholdAnimationsID, ZoramineImprovedStrongholdAnimations)
+
+/*EventPointerTable(FieldsTileAnimationsID, FieldsTileAnimations)
+
+ALIGN 4
+FieldsTileAnim0:
+#incbin "TilesetAnimations/Fields/fields_000.dmp"
+ALIGN 4
+FieldsTileAnim1:
+#incbin "TilesetAnimations/Fields/fields_001.dmp"
+ALIGN 4
+FieldsTileAnim2:
+#incbin "TilesetAnimations/Fields/fields_002.dmp"
+ALIGN 4
+FieldsTileAnim3:
+#incbin "TilesetAnimations/Fields/fields_003.dmp"
+ALIGN 4
+FieldsTileAnim4:
+#incbin "TilesetAnimations/Fields/fields_004.dmp"
+ALIGN 4
+FieldsTileAnim5:
+#incbin "TilesetAnimations/Fields/fields_005.dmp"
+ALIGN 4
+FieldsTileAnim6:
+#incbin "TilesetAnimations/Fields/fields_006.dmp"
+ALIGN 4
+FieldsTileAnim7:
+#incbin "TilesetAnimations/Fields/fields_007.dmp"
+ALIGN 4
+FieldsTileAnim8:
+#incbin "TilesetAnimations/Fields/fields_008.dmp"
+ALIGN 4
+FieldsTileAnim9:
+#incbin "TilesetAnimations/Fields/fields_009.dmp"
+ALIGN 4
+FieldsTileAnim10:
+#incbin "TilesetAnimations/Fields/fields_010.dmp"
+ALIGN 4
+FieldsTileAnim11:
+#incbin "TilesetAnimations/Fields/fields_011.dmp"
+ALIGN 4
+FieldsTileAnim12:
+#incbin "TilesetAnimations/Fields/fields_012.dmp"
+ALIGN 4
+FieldsTileAnim13:
+#incbin "TilesetAnimations/Fields/fields_013.dmp"
+ALIGN 4
+FieldsTileAnim14:
+#incbin "TilesetAnimations/Fields/fields_014.dmp"
+ALIGN 4
+FieldsTileAnim15:
+#incbin "TilesetAnimations/Fields/fields_015.dmp"
+
+ALIGN 4
+FieldsTileAnimations:
+tilesetAnimation(0x1C,0x1000,FieldsTileAnim0)
+tilesetAnimation(0x1C,0x1000,FieldsTileAnim1)
+tilesetAnimation(0x1C,0x1000,FieldsTileAnim2)
+tilesetAnimation(0x1C,0x1000,FieldsTileAnim3)
+tilesetAnimation(0x1C,0x1000,FieldsTileAnim4)
+tilesetAnimation(0x1C,0x1000,FieldsTileAnim5)
+tilesetAnimation(0x1C,0x1000,FieldsTileAnim6)
+tilesetAnimation(0x1C,0x1000,FieldsTileAnim7)
+tilesetAnimation(0x1C,0x1000,FieldsTileAnim8)
+tilesetAnimation(0x1C,0x1000,FieldsTileAnim9)
+tilesetAnimation(0x1C,0x1000,FieldsTileAnim10)
+tilesetAnimation(0x1C,0x1000,FieldsTileAnim11)
+tilesetAnimation(0x1C,0x1000,FieldsTileAnim12)
+tilesetAnimation(0x1C,0x1000,FieldsTileAnim13)
+tilesetAnimation(0x1C,0x1000,FieldsTileAnim14)
+tilesetAnimation(0x1C,0x1000,FieldsTileAnim15)
+WORD 0 0
+*/
 
 ALIGN 4
 ZoramineImprovedStrongholdTileAnim0:

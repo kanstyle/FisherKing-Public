@@ -15,11 +15,28 @@ PointerList:
 TurnBasedEvents:
 	TurnEventPlayer(0x0,BleedoutChapterTurnEvent,1,255)
 	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
-	TurnEventPlayer(0x0,TurnHPDrainEvent,1,255)
-	TurnEventEnemy(0x0,TurnHealEvent,1,255)
+	InfiniteTurnEventPlayer(0x0,TurnHPDrainEvent,2)
+	InfiniteTurnEventPlayer(0x0,TurnHealEvent,2)
+	InfiniteTurnEventPlayer(0x0,SpawnCenterSiegeEvent,19)
+	InfiniteTurnEventPlayer(0x0,SpawnCenterAttackersEvent,19)
 	TurnEventPlayer(0x0,SpawnCenterSiegeEvent,2)
 	TurnEventPlayer(0x0,MoveLeftEvent,3)
+	TurnEventPlayer(0x0,SpawnCenterAttackersEvent,4)
 	TurnEventPlayer(0x0,MoveRightEvent,5)
+	TurnEventPlayer(0x0,SpawnCenterAttackersEvent,6)
+	TurnEventPlayer(0x0,MoveCenterEvent,7)
+	TurnEventPlayer(0x0,SpawnCenterSiegeEvent,8)
+	TurnEventPlayer(0x0,MoveLeftEvent,9)
+	TurnEventPlayer(0x0,SpawnCenterAttackersEvent,10)
+	TurnEventPlayer(0x0,MoveRightEvent,11)
+	TurnEventPlayer(0x0,SpawnCenterAttackersEvent,12)
+	TurnEventPlayer(0x0,MoveCenterEvent,13)
+	TurnEventPlayer(0x0,SpawnCenterSiegeEvent,14)
+	TurnEventPlayer(0x0,MoveLeftEvent,15)
+	TurnEventPlayer(0x0,SpawnCenterAttackersEvent,16)
+	TurnEventPlayer(0x0,MoveRightEvent,17)
+	TurnEventPlayer(0x0,SpawnCenterAttackersEvent,18)
+	TurnEventPlayer(0x0,MoveCenterEvent,19)
 	END_MAIN
 
 ALIGN 32
@@ -91,9 +108,16 @@ CenterSiegeUnits2:
 	UNIT JabberwockSiege MogallClass 0x40 Level(8,Enemy,True)     [12,3] 0b 0x0 0x0 0x0 [Shadowshot] BossAI
 	UNIT
 	
-CenterAttackerUnits:
-	UNIT JabberwockAttacker Mauthedoog 0x40 Level(8,Enemy,True)     [0,7] 0b 0x0 0x0 0x0 [FireFang] ChargeAI
+CenterSiegeUnits3:
+	UNIT JabberwockSiege MogallClass 0x40 Level(8,Enemy,True)     [7,2] 0b 0x0 0x0 0x0 [Shadowshot] BossAI
+	UNIT
+	
+CenterAttackerUnits1:
 	UNIT JabberwockAttacker Mauthedoog 0x40 Level(8,Enemy,True)     [14,7] 0b 0x0 0x0 0x0 [FireFang] ChargeAI
+	UNIT
+	
+CenterAttackerUnits2:
+	UNIT JabberwockAttacker Mauthedoog 0x40 Level(8,Enemy,True)     [0,7] 0b 0x0 0x0 0x0 [FireFang] ChargeAI
 	UNIT
 	
 LeftBlockerUnits1:
@@ -183,7 +207,7 @@ EndingScene:
 
 TurnHealEvent:
 	SVAL 0x1 JabberwockBoss
-	SVAL 0x6 0x10
+	SVAL 0x6 0xA // 10 hp
 	ASMC ASMC_HealLikeVulnerary|1
 	NoFade
 	ENDA
@@ -228,8 +252,11 @@ TurnHPDrainEvent:
 	ENDA
 
 BlockersAttackEvent:
-	CenterTextbox(Ch5dBlockersAttack)
-	SetAI(JabberwockBlocker,0x0,0x0,0x4,0x0)
+	CHECK_EXISTS JabberwockBlocker
+	BEQ 0x0 0xC 0x0
+		CenterTextbox(Ch5dBlockersAttack)
+		SetAI(JabberwockBlocker,0x0,0x0,0x4,0x0)
+	LABEL 0x0
 	ENDA
 	NoFade
 
@@ -251,6 +278,13 @@ SpawnCenterBlockersEvent:
 SpawnCenterSiegeEvent:
 	JabberwockSpawn(CenterSiegeUnits1,2,3)
 	JabberwockSpawn(CenterSiegeUnits2,12,3)
+	JabberwockSpawn(CenterSiegeUnits3,7,2)
+	NoFade
+	ENDA
+	
+SpawnCenterAttackersEvent:
+	JabberwockSpawn(CenterAttackerUnits1,14,7)
+	JabberwockSpawn(CenterAttackerUnits2,0,7)
 	NoFade
 	ENDA
 	
@@ -273,7 +307,7 @@ MoveLeftEvent:
 MoveRightEvent:
 	WarpOutNoDisa(JabberwockBoss)
 	CALL BlockersAttackEvent
-	MOVE 65535 JabberwockBoss [10,2]
+	MOVE 65535 JabberwockBoss [4,2]
 	WARPIN [4,2]
 	UNCR(JabberwockBoss,Hide)
 	ENDWARP
@@ -283,5 +317,21 @@ MoveRightEvent:
 	JabberwockSpawn(RightBlockerUnits2,3,2)
 	JabberwockSpawn(RightBlockerUnits3,4,1)
 	JabberwockSpawn(RightBlockerUnits4,5,2)
+	NoFade
+	ENDA
+	
+MoveCenterEvent:
+	WarpOutNoDisa(JabberwockBoss)
+	CALL BlockersAttackEvent
+	MOVE 65535 JabberwockBoss [7,4]
+	WARPIN [7,4]
+	UNCR(JabberwockBoss,Hide)
+	ENDWARP
+	STAL 30
+	
+	JabberwockSpawn(CenterBlockerUnits1,7,5)
+	JabberwockSpawn(CenterBlockerUnits2,6,4)
+	JabberwockSpawn(CenterBlockerUnits3,7,3)
+	JabberwockSpawn(CenterBlockerUnits4,8,4)
 	NoFade
 	ENDA
