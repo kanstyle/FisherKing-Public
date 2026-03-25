@@ -126,7 +126,7 @@ EnemyUnits:
 	UNIT Lowlander Mage 0x40 Level(4,Enemy,True)     [8,1] 0b 0x0 0x0 0x0 [Thunder] AttackInRangeAI
 	
 	UNIT Ch2BeastBoss Mauthedoog 0x40 Level(8,Enemy,True)     [2,2] 0b 0x0 0x0 0x0 [FireFang] AttackInRangeAI
-	UNIT Songbird Bard 0x40 Level(3,Enemy,False)     [3,1] 0b 0x0 0x0 0x0 [0x0] DoNothingAI
+	UNIT Songbird Bard 0x40 Level(3,Enemy,False)     [3,1] 0b 0x0 0x0 0x0 [Talisman] DoNothingAI
 	UNIT
 	
 ReinforcementUnits: //t5

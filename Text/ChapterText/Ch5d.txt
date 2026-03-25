@@ -496,13 +496,13 @@ F-Father...[A]
 [X]
 
 ## Ch5dFlashbackTeacherNarration2
-I could not attend your funeral.
-I couldn't listen to others talk
-about you. They hadn't known you
-as I had known you.
+I could not attend your funeral.[N][4][4]
+I couldn't listen to others talk[N]
+about you.[4][4] They hadn't known you[N]
+as I had known you.[A]
 
 But, even then, I wonder if I even knew you myself.
 How could you die like that? With a smile on your face?
 How did you find such satisfaction in your life?
 How could you love this world so much?
-This cold, bloody world?[X]
+This cold, bloody world?[X] 

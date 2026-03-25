@@ -88,6 +88,96 @@ all the whispering ghosts.[AN]
 Why wouldn't they listen?[A]
 [X]
 
+## Ch5BaseChessFlashback
+[r][LoadYoungPrince]
+[fr][LoadOldPrince]
+[ml][LoadYoungTeacher]
+
+[r]
+Checkmate![A]
+
+[ml]
+Argh![4][4][N]
+Curse this game...[A]
+
+[fr]
+Hahaha![AN]
+I've seen you less incensed[N]
+over battlefield losses.[A]
+
+[ml]
+This is a different thing entirely![AN]
+I can't compete with a young man's[N]
+agile mind in these abstract games.[AN]
+And to think I'm a year closer to[N]
+the grave today...[A]
+
+[fr]
+Happy birthday, by the way.[A]
+
+[ml]
+...Milord.[A]
+
+[fr]
+Hahahaha![A]
+
+[r]
+Perhaps you just need more practice?[A]
+
+[fr]
+Face it, O great Silver General.[N][4][4]
+You're still a beginner.[A]
+
+[ml]
+Aren't we practicing right now?[N][4][4]
+And I'm not getting a lick better.[A]
+
+[r]
+Well, I suppose you'll just have[N]
+to acknowledge my superiority, then.[A]
+
+[ml]
+Hold on, now.[A]
+
+[fr]
+Say, my son.[4][4] Why don't you run[N]
+along to the library?[AN]
+Was Eagle not to meet with you today?[A]
+
+[r]
+Oh, th-that's right![4] I almost forgot![N][4][4]
+...Wait, wasn't that later this afternoon?[A]
+
+[fr]
+I don't recall.[N][4][4]
+Perhaps you should go and see?[A]
+
+[r]
+Oh dear, I really should...[4][4][N]
+Excuse me, Teacher![A]
+[css][clear]
+
+[fr][mmr]
+Mention that girl's name, and off he goes. Delightful, isn't it?
+[ml]She's just as bad. I had to seat those two on either end of the lecture hall to make them pay attention.
+[mr]Ha! Well, that aside... I've a present for you.
+[ml]Oh, really?
+[mr]Come now, don't give me that look! This year, I'm serious.
+[ml]I sure hope so... Where is it, then? May I see it?
+[mr]Not so fast. I want to make sure you'll like it. Tell me, Teacher -- do you want to get better at chess?
+[ml]Of course I do. Imagine if the academy cadets saw me losing to their classmate! They'd never listen to a word I said.
+[mr]Wonderful. Happy birthday, then, my friend.
+[ml]Thank you, milord.
+...What is this?
+[mr]Did you ever notice I had a scribe present whenever we played?
+[ml]Of course I did, but...
+[mr]I had him record our games, move by move, in that book. With that, you can learn even when I'm not with you.
+[ml]I see... Interesting.
+[mr]You don't sound too enthusiastic. It was quite clever of me, no? Come now, don't hold your praise back!
+[ml]Yes, quite clever. I'll treasure it.
+[mr]Don't treasure it, use it! Expand that mind of yours! Seize new intellectual horizons!
+[ml]Yes, yes! Settle down!
+
 ## Ch5IntroDragonPillow
 [ml][LoadDragon]
 [mr][LoadPillow]

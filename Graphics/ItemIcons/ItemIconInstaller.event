@@ -471,6 +471,21 @@ ORG ItemIconEntry(Torch)
 ORG ItemIconEntry(Elixir)
 #incbin "ItemsPrfs/{2WB} (Vanilla + Blitz) Elixir.dmp"
 
+ORG ItemIconEntry(EnergyRing)
+#incbin "ItemsPrfs/{2WB} (Vanilla + Blitz) Energy Ring.dmp"
+
+ORG ItemIconEntry(Speedwings)
+#incbin "ItemsPrfs/{2WB} (Vanilla + Blitz) Speedwing.dmp"
+
+ORG ItemIconEntry(Dragonshield)
+#incbin "ItemsPrfs/{2WB} (Vanilla + Blitz) Dracoshield.dmp"
+
+ORG ItemIconEntry(Boots)
+#incbin "ItemsPrfs/{2WB} (Vanilla + Blitz) Boots.dmp"
+
+ORG ItemIconEntry(Talisman)
+#incbin "ItemsPrfs/{2WB} (Vanilla + Blitz) Talisman.dmp"
+
 // monster weapons
 ORG ItemIconEntry(RottenClaw)
 #incbin "ItemsPrfs/{2WB} (Vanilla + Blitz) Rotten Claw.dmp"

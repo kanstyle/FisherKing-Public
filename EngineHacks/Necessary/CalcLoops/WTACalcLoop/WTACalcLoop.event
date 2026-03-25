@@ -18,6 +18,7 @@ POIN TriangleAdept
 POIN Poise
 POIN Nonconforming
 POIN ShikariEffect
+POIN ZeroInPreBattleEffect
 #ifdef REAVER_SPLIT
 	POIN DoubleWeaponTriangle
 #endif // REAVER_SPLIT
