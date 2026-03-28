@@ -352,9 +352,7 @@ Teacher![A]
 [X]
 
 ## Ch5dTeacherFlashback
-[fr][LoadTeacher]
-[mvr][tmm]
-
+[mr][LoadTeacher]
 [r]
 ...[A]
 (What would the Elder Prince[N]
@@ -362,8 +360,8 @@ have wanted?)[A]
 [X]
 
 ## Ch5dFlashbackPrince
-[l][LoadPrince]
-[l]
+[r][LoadYoungPrince]
+[r]
 What...?[4][4] What...[4] is this?[A]
 [X]
 
@@ -402,7 +400,7 @@ And so he fell.[A]
 [X]
 
 ## Ch5dTeacherEP2
-[l][LoadOldPrince][ce]
+[l][LoadOldPrinceEyesClosed]
 [r][LoadYoungTeacher]
 [fl][LoadPurpleSoldier]
 [fr][LoadPurpleSoldier]
@@ -415,8 +413,8 @@ His Majesty's fallen![A]
 [r]
 Milord, please open your eyes...[A][css]
 
-[l][oe]
-Yes, yes...[4] I'm...[4] still here.[A]
+[l]
+Yes, yes...[4][LoadOldPrince] I'm...[4] still here.[A]
 
 [fr][mfr]
 Shall I fetch a healer?[A]
@@ -434,17 +432,21 @@ Leave us, you fools!![A][css][4][4][4][oe]
 [4][4][fr][clear][fl][clear]
 [X]
 
+## Ch5dFlashbackTeacherNarration2
+And so I held him.[A]
+[X]
+
 ## Ch5dFlashbackCG1
 [oq]My friend...[4][4] oh, my friend...[N][4][4]
 ...[N][4][4]
 I can't...[4][4] find the words."[AN]
 [oq]Heh heh...[4][4] Surely you rehearsed this."[AN]
 [oq]One can't prepare themselves for[N]
-these moments."[A]
+these moments."[AN]
 [oq]Ha!"[4][4] He slumped against my chest.[AN]
 [oq]...There's nothing to prepare for, fool.[N][4]
 Just...[4][4] look away from my withered[N]
-old face, and watch the day break."[AN]
+old face, and watch the day break."[A]
 [X]
 
 ## Ch5dFlashbackCG2
@@ -468,8 +470,8 @@ these things," I chuckled.[AN]
 [oq]Haha..."[4][4] His eyes drifted shut.[AN]
 [oq]Milord?[4][4] Milord![4][4] Don't close your[N]
 eyes.[4][4] Don't--"[AN]
-[oq]You...[4][4] smiled.[4][4] Ha...[4][4] ha..."[N]
-[oq]Milord! Milord...![A]
+[oq]You...[4][4] laughed.[4][4] That's...[4][4] good..."[N]
+[oq]Milord! Milord...!"[A]
 [X]
 
 ## Ch5dFlashbackPrinceTeacher
@@ -478,8 +480,9 @@ eyes.[4][4] Don't--"[AN]
 
 [r][ce]
 ...[A]
+[oe][css]
 
-[fl][LoadPrince]
+[fl][LoadYoungPrince]
 Father![A]
 
 [r]
@@ -495,14 +498,117 @@ I'm sorry.[A][css]
 F-Father...[A]
 [X]
 
-## Ch5dFlashbackTeacherNarration2
-I could not attend your funeral.[N][4][4]
+## Ch5dFlashbackTeacherNarrationChess
+I could not attend your funeral.[AN]
 I couldn't listen to others talk[N]
-about you.[4][4] They hadn't known you[N]
-as I had known you.[A]
+about you.[A][X]
 
+## Ch5dFlashbackTeacherNarrationChess2
+They hadn't known you[N]
+as I had known you.[A][X]
+
+## Ch5dTeacherEnvoy
+[ml][LoadTeacher]
+[mr][LoadEnvoy]
+[mr]
+Hello there.[4] Pardon my[N]
+interruption.[AN]
+You're the one they call[N]
+"Teacher", aren't you?[A]
+[ml]
+And you're...[4][4] the prince's attendant.[4][4][N]
+I don't believe we've met.[A]
+
+[mr]
+It's a pleasure, then.[A]
+
+[ml]
+Did you have something to tell me?[A]
+
+[mr]
+The Elder Prince is alive.[A][css]
+
+[ml][mvl]
+What?![A]
+
+[mr]
+In a sense.[A]
+
+[l]
+Explain yourself.[4][4] Now.[AN]
+For your sake, this had better[N]
+not be a joke.[A]
+
+[mr]
+His spirit resides in the Lowlands,[N]
+as all spirits do.[AN] You could meet[N]
+him there, if your heart is true.[A]
+
+[ml]
+[tmm]...[A][tmm]
+
+[X]
+
+## Ch5dTeacherEnvoy2
+This couldn't be.[4][4] And yet,[N]
+it could.[4][4][4][4][N]
+I felt it.[4][4] I simply did.[A]
+[X]
+
+## Ch5dTeacherEnvoy3
+[ml][LoadTeacher]
+[mr][LoadEnvoy]
+[ml]
+Is this why the prince plans to invade?[A]
+
+[mr]
+Hahaha! No.[N]
+The prince aims to steal the Lowland
+Queen's wisdom.[AN]
+He would die and be reborn as master of all[N]
+spirits and beasts,[AN] becoming one with the[N]
+land itself.[AN]
+No longer a prince, nor a human --[4][4] a true king.[A]
+
+[ml]
+But... why?[4][4] Why do such a thing?[A]
+
+[mr]
+Haha! Isn't it obvious?[N]
+Because he can't rule otherwise.[A]
+
+[ml]
+That's...[A]
+
+[mr]
+Alas, I'll have to leave you there.[N]
+I'm sure we'll cross paths again.[A]
+
+[X]
+
+## Ch5dTeacherEnd1
+[ml][LoadTeacher]
+[ml][tmm]
+(So I had failed him, after all.[N]
+I knew that much.)[A]
+[X]
+
+## Ch5dTeacherEnd2
+It was then, for the first time[N]
+in five years, that my path was[N]
+finally clear.[AN]
+I would find the prince and[N]
+journey with him into the deep[N]
+mountains, to meet his father's[N]
+spirit.[AN]
+And until then, I would not let[N]
+him die.[AN]
+Not by Hero's hand, nor his own.[A]
+[X]
+
+## Ch5dFlashbackNarrationScratch
 But, even then, I wonder if I even knew you myself.
 How could you die like that? With a smile on your face?
 How did you find such satisfaction in your life?
 How could you love this world so much?
-This cold, bloody world?[X] 
+This cold, bloody world?[X]

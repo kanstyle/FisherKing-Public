@@ -163,20 +163,52 @@ Mention that girl's name, and off he goes. Delightful, isn't it?
 [mr]Ha! Well, that aside... I've a present for you.
 [ml]Oh, really?
 [mr]Come now, don't give me that look! This year, I'm serious.
-[ml]I sure hope so... Where is it, then? May I see it?
-[mr]Not so fast. I want to make sure you'll like it. Tell me, Teacher -- do you want to get better at chess?
+[ml]
+I sure hope so... Where is it, then? May I see it?
+
+[mr]
+Not so fast.[4][4] I want to make sure you'll like it.[AN]
+Tell me, Teacher -- [4][4] do you want to get better[N]
+at chess?[A]
+
 [ml]Of course I do. Imagine if the academy cadets saw me losing to their classmate! They'd never listen to a word I said.
-[mr]Wonderful. Happy birthday, then, my friend.
-[ml]Thank you, milord.
-...What is this?
-[mr]Did you ever notice I had a scribe present whenever we played?
-[ml]Of course I did, but...
-[mr]I had him record our games, move by move, in that book. With that, you can learn even when I'm not with you.
-[ml]I see... Interesting.
-[mr]You don't sound too enthusiastic. It was quite clever of me, no? Come now, don't hold your praise back!
-[ml]Yes, quite clever. I'll treasure it.
-[mr]Don't treasure it, use it! Expand that mind of yours! Seize new intellectual horizons!
-[ml]Yes, yes! Settle down!
+
+[mr]Wonderful.[4][4] Happy birthday,[N]
+then, my friend.[A]
+
+[ml]Thank you, milord.[N]
+...What is this?[A]
+
+[mr]
+Did you ever notice I had a scribe[N]
+present whenever we played?[A]
+
+[ml]
+Of course I did, but...[A]
+
+[mr]
+I had him record our games, move by move,[N]
+in that book.[AN]
+With that, you can learn even when I'm[N]
+not with you.[A]
+
+[ml]I see...[4][4][4] Interesting.[A]
+
+[mr]
+You don't sound too enthusiastic.[4][4][N]
+It was quite clever of me, no?[A]
+Come now, don't hold your praise back![A]
+
+[ml]
+Yes, quite clever. I'll treasure it.
+
+[mr]
+Don't treasure it, use it![N]
+Expand that mind of yours![A]
+
+[ml]
+Yes, yes![4][4] Settle down![A]
+[X]
 
 ## Ch5IntroDragonPillow
 [ml][LoadDragon]

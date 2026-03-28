@@ -15,6 +15,7 @@
 #define PrinceRoomCh 0x2F
 #define BaronManorEntranceNightCh 0x30
 #define BaronManorFoyerCh 0x31
+#define CityStreetCh 0x32
 #ifdef USE_TEST_MAP
 	#define BossRush 0x0
 #else
@@ -70,6 +71,8 @@
 #define Ch6MapID 0x2e
 #define Ch6MapChangesID 0x2f
 #define Ch6EventsID 0x30
+
+#define CityStreetMapID 0x32
 
 //0x24
 

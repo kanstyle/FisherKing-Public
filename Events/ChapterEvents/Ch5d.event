@@ -151,6 +151,27 @@ RightBlockerUnits3:
 RightBlockerUnits4:
 	UNIT JabberwockBlocker Revenant 0x40 Level(8,Enemy,True)     [5,2] 0b 0x0 0x0 0x0 [RottenClaw] BossAI
 	UNIT
+
+StreetCitizens:
+	UNIT 0x80 CivMan 0x40 Level(8,NPC,True)     [11,2] 0b 0x0 0x0 0x0 [0x0] BossAI
+	UNIT 0x80 CivMan 0x40 Level(8,NPC,True)     [5,3] 0b 0x0 0x0 0x0 [0x0] BossAI
+	UNIT 0x80 CivWoman 0x40 Level(8,NPC,True)     [5,4] 0b 0x0 0x0 0x0 [0x0] BossAI
+	UNIT 0x80 CivGirl 0x40 Level(8,NPC,True)     [6,4] 0b 0x0 0x0 0x0 [0x0] BossAI
+	UNIT 0x80 CivMan 0x40 Level(8,NPC,True)     [3,2] 0b 0x0 0x0 0x0 [0x0] BossAI
+	UNIT 0x80 CivBoy 0x40 Level(8,NPC,True)     [2,2] 0b 0x0 0x0 0x0 [0x0] BossAI
+	UNIT 0x80 CivGirl 0x40 Level(8,NPC,True)     [1,2] 0b 0x0 0x0 0x0 [0x0] BossAI
+	UNIT 0x80 CivMan 0x40 Level(8,NPC,True)     [3,7] 0b 0x0 0x0 0x0 [0x0] BossAI
+	UNIT 0x80 CivMan 0x40 Level(8,NPC,True)     [2,6] 0b 0x0 0x0 0x0 [0x0] BossAI
+	UNIT 0x80 CivWoman 0x40 Level(8,NPC,True)     [5,8] 0b 0x0 0x0 0x0 [0x0] BossAI
+	UNIT
+	
+StreetTeacher:
+	UNIT 0x81 Veteran 0x40 Level(8,NPC,True)     [7,0] 0b 0x0 0x0 0x0 [0x0] BossAI
+	UNIT
+	
+StreetEnvoy:
+	UNIT 0x82 Bard 0x40 Level(8,NPC,True)     [8,6] 0b 0x0 0x0 0x0 [0x0] BossAI
+	UNIT
 	
 /* Jabberwock Boss
 	Player gets 6 units. Assume 2 for killing minions, 2 for attacking, and 2 for healing/attacking.
@@ -198,7 +219,97 @@ EndingScene:
 	SetBackgroundSlow(Inn)
 	Music(PubID)
 	Text(Ch5dTavernMeeting)
+	
+	FADI 8
+	CLEAN
+	LOMA CityStreetMapID
+	LOAD1 0x1 StreetCitizens
+	LOAD1 0x1 StreetTeacher
+	FADU 4
+	
+	MOVE 5 0x81 [7,6]
+	ENUN
+	STAL 30
+	Highlight(0x81)
+	Text(Ch5dTeacherFlashback)
+	FAWI 4
+	DoAllThree
+	
+	LOMA Ch0
+	CAM1 [0,0]
+	STAL 60
+	REMOVEPORTRAITS
+	BACG WhiteBG
+	FAWU 16
+	Text(Ch0FogBreaks)
+	STAL 90
+	Text(Ch0Surprise)
+	STAL 90
+	FAWI 16
+	CLEAN
+	REMOVEPORTRAITS
+	BACG DaybreakEmpty
+	FAWU 2
+	STAL 90
+	CenterTextbox(Ch5dFlashbackPrinceNarration)
+	Text(Ch5dTeacherEP)
+	FADI 8
+	CLEAN
+	SetBackground(BlackBG)
+	CenterTextbox(Ch5dFlashbackTeacherNarration)
+	STAL 60
+	FADI 8
+	CLEAN
+	SetBackground(DaybreakEmpty)
+	Text(Ch5dTeacherEP2)
 	RemoveBackground
+	SetBackground(Daybreak)
+	STAL 90
+	CenterTextbox(Ch5dFlashbackCG1)
+	STAL 90
+	CenterTextbox(Ch5dFlashbackCG2)
+	STAL 90
+	CenterTextbox(Ch5dFlashbackCG3)
+	STAL 90
+	FADI 8
+	CLEAN
+	SetBackground(DaybreakEmpty)
+	Text(Ch5dFlashbackPrinceTeacher)
+	FADI 4
+	CLEAN
+	STAL 120
+
+	SetBackgroundSlow(Chess)
+	STAL 90
+	SVAL 0xB 0x00600100
+	TUTORIALTEXTBOXSTART; TEXTSHOW Ch5dFlashbackTeacherNarrationChess; TEXTEND; REMA
+	FADI 16
+	SetBackground(Chess2)
+	STAL 90
+	SVAL 0xB 0x01000100
+	TUTORIALTEXTBOXSTART; TEXTSHOW Ch5dFlashbackTeacherNarrationChess2; TEXTEND; REMA
+	FAWI 8
+	CLEAN
+	
+	LOMA CityStreetMapID
+	LOAD1 0x1 StreetCitizens
+	LOAD1 0x1 StreetTeacher
+	LOAD2 0x1 StreetEnvoy
+	MOVE 65535 0x81 [7,6]
+	ENUN
+	FAWU 4
+	STAL 120
+	Highlight(0x82)
+	SetBackground(Town_Day)
+	Text(Ch5dTeacherEnvoy)
+	CenterTextbox(Ch5dTeacherEnvoy2)
+	Text(Ch5dTeacherEnvoy3)
+	FADI 8
+	CLEAN
+	DISA 0x82
+	FADU 8
+	Text(Ch5dTeacherEnd1)
+	CenterTextbox(Ch5dTeacherEnd2)
 	
 	CALL EndEventRoutine
 	MNC2 Ch0

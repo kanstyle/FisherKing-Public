@@ -240,6 +240,8 @@
 #define DervishKatti 0xD7
 #define Razorbeak 0xD8
 
+#define Unknown 0xD9
+
 //Statuses
 #define SpecialStatusID 5
 

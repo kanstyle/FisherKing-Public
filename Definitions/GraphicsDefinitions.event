@@ -44,3 +44,6 @@
 #define EagleIntro 0x49
 #define HeroStare 0x4a
 #define Daybreak 0x4b
+#define Chess 0x4c
+#define Chess2 0x4d
+#define DaybreakEmpty 0x4e

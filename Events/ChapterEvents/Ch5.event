@@ -120,7 +120,7 @@ EnemyUnits:
 	UNIT Beast Tarvos 0x40 Level(7,Enemy,True)     [24,3] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
 	UNIT Beast AxeBone 0x40 Level(7,Enemy,True)     [18,4] 0b 0x0 0x0 0x0 [Hammer] AttackInRangeAI
 	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [19,3] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
-	UNIT Lowlander Fighter 0x40 Level(7,Enemy,True)     [18,1] 0b 0x0 0x0 0x0 [Hammer] AttackInRangeAI
+	//UNIT Lowlander Fighter 0x40 Level(7,Enemy,True)     [18,1] 0b 0x0 0x0 0x0 [Hammer] AttackInRangeAI
 	
 	//inside locked building
 	UNIT Lowlander Myrmidon 0x0 Level(7,Enemy,True)     [22,0] DropItem 0x0 0x0 0x0 [SilverSword] AttackInRangeAI
@@ -141,7 +141,7 @@ EnemyUnits:
 	//middle, above river
 	UNIT Beast SwordBone 0x40 Level(7,Enemy,True)     [13,9] 0b 0x0 0x0 0x0 [Armorslayer] AttackInRangeAI
 	UNIT Lowlander LowMage 0x40 Level(7,Enemy,True)     [15,11] 0b 0x0 0x0 0x0 [Pain] AttackInRangeAI
-	UNIT Beast LanceBone 0x40 Level(7,Enemy,True)     [10,10] 0b 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
+	//UNIT Beast LanceBone 0x40 Level(7,Enemy,True)     [10,10] 0b 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
 	
 	//middle, below river
 	UNIT Lowlander Fighter 0x40 Level(7,Enemy,True)     [12,14] 0b 0x0 0x0 0x0 [SavageMaul] AttackInRangeAI
@@ -785,7 +785,7 @@ EndingScene:
 	//mome rath event battle
 	StartBattle
 	CriticalHit(0x0,90)
-	FIGHT Devil JabberwockBlocker Shadowshot 0x0
+	FIGHT Devil JabberwockBlocker Unknown 0x0
 	DISA JabberwockBlocker
 	
 	STAL 30

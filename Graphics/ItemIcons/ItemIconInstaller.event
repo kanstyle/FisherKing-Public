@@ -321,6 +321,9 @@ ORG ItemIconEntry(Death)
 ORG ItemIconEntry(Shadowshot)
 #incbin "Dark/Shadowshot.dmp"
 
+ORG ItemIconEntry(Unknown)
+#incbin "Dark/Unknown.dmp"
+
 /*
 ORG ItemIconEntry(MaleficFlux)
 #incbin "Dark/MaleficFlux.dmp"		// Ereshkigal
