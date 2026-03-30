@@ -507,6 +507,38 @@ about you.[A][X]
 They hadn't known you[N]
 as I had known you.[A][X]
 
+## Ch5dFlashbackTeacherNarrationAfter
+I spent the days after wandering.[N]
+I couldn't stay inside the palace[N]
+long -- it was a cold, empty building.[AN]
+I avoided the servants and turned[N]
+away messengers. I could hardly[N]
+focus on my meals.[AN]
+Of course I'd grieved countless times[N]
+before. I'd had no choice but to make[N]
+a routine of it[A] -- I would do what[N]
+was expected of me, and then, in private,[N]
+I would do whatever I needed to[N]
+continue on.[AN]
+But, this time, the work was never-ending.[N]
+I could cry and cry like a lost child,[N]
+but there was no use in it.[A] The man who[N]
+finished all suffering with meaning,[N]
+finished all loss with gain, finished all[N]
+foolishness with wisdom, was gone.[A]
+[X]
+
+## Ch5dFlashbackTeacherNarrationAfter2
+The prince I dreaded most of all.[AN]
+I couldn't help him. His father was gone.[N]
+I was not fit to raise a child.[N]
+I wanted nothing more than to be alone,[N]
+and I had no warmth to spare for him.[AN]
+My pride as a knight had died with my[N]
+lord, so I cast it all away.[AN]
+And I left.[A]
+[X]
+
 ## Ch5dTeacherEnvoy
 [ml][LoadTeacher]
 [mr][LoadEnvoy]
@@ -514,7 +546,7 @@ as I had known you.[A][X]
 Hello there.[4] Pardon my[N]
 interruption.[AN]
 You're the one they call[N]
-"Teacher", aren't you?[A]
+[oq]Teacher", aren't you?[A]
 [ml]
 And you're...[4][4] the prince's attendant.[4][4][N]
 I don't believe we've met.[A]
@@ -541,10 +573,10 @@ not be a joke.[A]
 
 [mr]
 His spirit resides in the Lowlands,[N]
-as all spirits do.[AN] You could meet[N]
+as all spirits do.[A] You could meet[N]
 him there, if your heart is true.[A]
 
-[ml]
+[l]
 [tmm]...[A][tmm]
 
 [X]
@@ -562,20 +594,22 @@ I felt it.[4][4] I simply did.[A]
 Is this why the prince plans to invade?[A]
 
 [mr]
-Hahaha! No.[N]
-The prince aims to steal the Lowland
-Queen's wisdom.[AN]
-He would die and be reborn as master of all[N]
-spirits and beasts,[AN] becoming one with the[N]
-land itself.[AN]
-No longer a prince, nor a human --[4][4] a true king.[A]
+Hahaha![4][4] No.[AN]
+The prince aims to eat the Lowland[N]
+Queen's heart and steal her wisdom.[AN]
+He would die and be reborn as master[N]
+of all spirits and beasts,[A] becoming[N]
+one with the land itself.[AN]
+No longer a prince, nor a human --[4][4][N]
+a true king.[A]
 
 [ml]
 But... why?[4][4] Why do such a thing?[A]
 
 [mr]
-Haha! Isn't it obvious?[N]
-Because he can't rule otherwise.[A]
+Haha![4][4] Isn't it obvious?[N][4][4]
+Because he can't rule otherwise.[AN]
+He's weak.[A]
 
 [ml]
 That's...[A]
@@ -605,10 +639,3 @@ And until then, I would not let[N]
 him die.[AN]
 Not by Hero's hand, nor his own.[A]
 [X]
-
-## Ch5dFlashbackNarrationScratch
-But, even then, I wonder if I even knew you myself.
-How could you die like that? With a smile on your face?
-How did you find such satisfaction in your life?
-How could you love this world so much?
-This cold, bloody world?[X]

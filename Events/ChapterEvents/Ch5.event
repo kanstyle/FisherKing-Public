@@ -7,6 +7,7 @@ EventPointerTable(Ch5EventsID, PointerList)
 #define StormSkullTalkFlag 0x11
 #define HeroSkullTalkFlag 0x12
 #define BunnyVillageFlag 0x13
+#define SkullVillageFlag 0x14
 
 #define JBLeft 0x90
 #define JBCenter 0x91
@@ -50,9 +51,9 @@ CharacterBasedEvents:
 	CharacterEventBothWays(GaleBabyTalkFlag,GaleBabyTalk,Gale,Baby)
 	CharacterEventBothWays(StormHeroTalkFlag,StormHeroTalk,Storm,HeroChar)
 	CharacterEventBothWays(GaleHeroTalkFlag,GaleHeroTalk,Gale,HeroChar)
-	CharacterEventBothWays(StormSkullTalkFlag,StormSkullTalk,Storm,Skull)
-	CharacterEventBothWays(HeroSkullTalkFlag,SkullTalk,HeroChar,Skull)
-	//CharacterEventBothWays(HeroSkullTalkFlag,LargeReinforcementEvent,HeroChar,Skull)
+	CharacterEventBothWays(StormSkullTalkFlag,StormSkullTalk,Storm,Ch5Skull)
+	CharacterEventBothWays(HeroSkullTalkFlag,SkullTalk,HeroChar,Ch5Skull)
+	//CharacterEventBothWays(HeroSkullTalkFlag,LargeReinforcementEvent,HeroChar,Ch5Skull)
 	END_MAIN
 
 MiscBasedEvents:
@@ -63,6 +64,7 @@ MiscBasedEvents:
 
 LocationBasedEvents:
 	Village(BunnyVillageFlag,BunnyMotherVisit,2,8)
+	Village(SkullVillageFlag,SkullVisit,2,8)
 	Door(21,2)
 	Door(12,11)
 	Door(13,11)
@@ -99,14 +101,14 @@ Units1:
 	UNIT
 	
 EagleUnits:
-	UNIT Ch5Eagle MageGeneral 0x40 Level(1,NPC,False)     [12,5] 0b 0x0 0x0 0x0 [AblatioPhoton,Elfire,Elixir] BossAI
+	UNIT Ch5Eagle MageGeneral 0x40 Level(1,NPC,False)     [12,5] 0b 0x0 0x0 0x0 [AblatioPhoton,Elfire,Angel,Elixir] BossAI
 	UNIT
 
 EagleGuardUnits:
 	UNIT
 
 NPCUnits:
-	UNIT Skull Fighter 0x40 Level(8,NPC,True)     [22,6] 0b 0x0 0x0 0x0 [SteelAxe,Vulnerary] BossAI
+	UNIT Ch5Skull Fighter 0x40 Level(8,NPC,True)     [22,6] 0b 0x0 0x0 0x0 [SteelAxe,Vulnerary] BossAI
 	UNIT SoldierChar Knight 0x40 Level(10,NPC,True)     [16,2] 0b 0x0 0x0 0x0 [SteelLance] BossAI
 	UNIT SoldierChar Knight 0x40 Level(10,NPC,True)     [16,3] 0b 0x0 0x0 0x0 [SteelLance] BossAI
 	UNIT SoldierChar Knight 0x40 Level(10,NPC,True)     [13,5] 0b 0x0 0x0 0x0 [SteelLance] BossAI
@@ -259,7 +261,7 @@ CivilianUnitsCutscene:
 	UNIT 0x84 CivBoy 0x40 Level(7,NPC,False)     [22,8] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
 	UNIT 0x85 CivGirl 0x40 Level(7,NPC,False)     [23,8] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
 	UNIT 0x86 CivBoy 0x40 Level(7,NPC,False)     [21,8] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
-	UNIT Skull Fighter 0x40 Level(7,NPC,False)     [22,9] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
+	UNIT Ch5Skull Fighter 0x40 Level(7,NPC,False)     [22,9] 0b 0x0 0x0 0x0 [0x0] [0x0,0x0,0x0,0x0]
 	UNIT
 
 CivilianUnits:
@@ -508,9 +510,9 @@ BeginningScene:
 	MOVE 5 0x84 [22,7]
 	MOVE 5 0x85 [23,7]
 	MOVE 5 0x86 [21,7]
-	MOVE 5 Skull [22,8]
+	MOVE 5 Ch5Skull [22,8]
 	ENUN
-	Highlight(Skull)
+	Highlight(Ch5Skull)
 	Text(Ch5IntroSkullChildren)
 	MOVE 5 0x84 [22,6]
 	ENUN
@@ -521,9 +523,9 @@ BeginningScene:
 	MOVE 5 0x86 [22,6]
 	ENUN
 	DISA 0x86
-	MOVE 5 Skull [22,6]
+	MOVE 5 Ch5Skull [22,6]
 	ENUN
-	Highlight(Skull)
+	Highlight(Ch5Skull)
 	Text(Ch5IntroSkullChildren2)
 	
 	CAMERA [1,8]
@@ -602,6 +604,10 @@ BunnyMotherVisit:
 			GOTO 0x2
 	LABEL 0x2
 	NoFade
+	ENDA
+	
+SkullVisit:
+	
 	ENDA
 	
 SkullTalk:

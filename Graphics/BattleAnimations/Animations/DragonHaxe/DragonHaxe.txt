@@ -1,0 +1,228 @@
+#######################################################
+#CA Headswoman Axe
+#
+#When importing to FEditorAdv delete # and after each line.
+#######################################################
+/// - Mode 1               #Melee Animation
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- DragonHaxe_000.png
+2 p- DragonHaxe_001.png
+C1B                               #Play quick "heavy step" SFE
+2 p- DragonHaxe_002.png
+C41                               #Play Axe rising SFE
+2 p- DragonHaxe_003.png
+2 p- DragonHaxe_004.png
+2 p- DragonHaxe_005.png
+6 p- DragonHaxe_006.png
+C37                               #Play sword clicking SFE
+18 p- DragonHaxe_007.png
+5 p- DragonHaxe_008.png
+5 p- DragonHaxe_009.png
+5 p- DragonHaxe_010.png
+14 p- DragonHaxe_011.png
+C42                               #Play Axe falling SFE; long axe swinging SFE
+2 p- DragonHaxe_012.png
+C21                               #Play hit SFE (sounds like Knight Lord with sword's hit)
+C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit
+C1A                               #Normal hit
+4 p- DragonHaxe_013.png
+6 p- DragonHaxe_014.png
+5 p- DragonHaxe_015.png
+4 p- DragonHaxe_016.png
+3 p- DragonHaxe_017.png
+1 p- DragonHaxe_018.png
+C01                               #NOP
+2 p- DragonHaxe_019.png
+C42                               #Play Axe falling SFE; long axe swinging SFE
+2 p- DragonHaxe_020.png
+2 p- DragonHaxe_021.png
+3 p- DragonHaxe_022.png
+3 p- DragonHaxe_023.png
+3 p- DragonHaxe_024.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+3 p- DragonHaxe_025.png
+3 p- DragonHaxe_026.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 3               #Melee Critical Animation
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- DragonHaxe_000.png
+3 p- DragonHaxe_027.png
+2 p- DragonHaxe_028.png
+C42                               #Play Axe falling SFE; long axe swinging SFE
+2 p- DragonHaxe_029.png
+2 p- DragonHaxe_030.png
+C38                               #Play heavy spear spinning SFE
+2 p- DragonHaxe_031.png
+2 p- DragonHaxe_032.png
+2 p- DragonHaxe_033.png
+2 p- DragonHaxe_034.png
+C37                               #Play sword clicking SFE
+5 p- DragonHaxe_035.png
+22 p- DragonHaxe_036.png
+C25                               #Play wing flap SFE
+4 p- DragonHaxe_037.png
+C15                               #Slight vibration of screen
+2 p- DragonHaxe_038.png
+2 p- DragonHaxe_039.png
+2 p- DragonHaxe_040.png
+2 p- DragonHaxe_041.png
+4 p- DragonHaxe_042.png
+6 p- DragonHaxe_043.png
+2 p- DragonHaxe_044.png
+2 p- DragonHaxe_045.png
+2 p- DragonHaxe_046.png
+3 p- DragonHaxe_047.png
+C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit
+C21                               #Play hit SFE (sounds like Knight Lord with sword's hit)
+C0C                               #Critical hit
+3 p- DragonHaxe_048.png
+2 p- DragonHaxe_049.png
+2 p- DragonHaxe_050.png
+2 p- DragonHaxe_051.png
+1 p- DragonHaxe_052.png
+C01                               #NOP
+C42                               #Play Axe falling SFE; long axe swinging SFE
+4 p- DragonHaxe_053.png
+4 p- DragonHaxe_054.png
+2 p- DragonHaxe_055.png
+C25                               #Play wing flap SFE
+5 p- DragonHaxe_056.png
+5 p- DragonHaxe_057.png
+5 p- DragonHaxe_058.png
+5 p- DragonHaxe_059.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+4 p- DragonHaxe_060.png
+4 p- DragonHaxe_000.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 5               #Ranged Animation 
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- DragonHaxe_000.png
+2 p- DragonHaxe_027.png
+2 p- DragonHaxe_061.png
+C41                               #Play Axe rising SFE
+2 p- DragonHaxe_062.png
+2 p- DragonHaxe_063.png
+5 p- DragonHaxe_064.png
+C05                               #Call spell associated with equipped weapon
+1 p- DragonHaxe_065.png
+C01                               #NOP
+2 p- DragonHaxe_064.png
+2 p- DragonHaxe_063.png
+C41                               #Play Axe rising SFE
+2 p- DragonHaxe_061.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+2 p- DragonHaxe_027.png
+2 p- DragonHaxe_000.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 6               #Ranged Critical Animation
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- DragonHaxe_000.png
+2 p- DragonHaxe_027.png
+2 p- DragonHaxe_061.png
+C41                               #Play Axe rising SFE
+2 p- DragonHaxe_062.png
+2 p- DragonHaxe_063.png
+28 p- DragonHaxe_064.png
+2 p- DragonHaxe_065.png
+2 p- DragonHaxe_066.png
+2 p- DragonHaxe_065.png
+2 p- DragonHaxe_066.png
+2 p- DragonHaxe_065.png
+2 p- DragonHaxe_066.png
+C05                               #Call spell associated with equipped weapon
+1 p- DragonHaxe_064.png
+C01                               #NOP
+2 p- DragonHaxe_063.png
+C41                               #Play Axe rising SFE
+2 p- DragonHaxe_061.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+2 p- DragonHaxe_027.png
+2 p- DragonHaxe_000.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 7               #Dodge Melee Attack
+C02                               #Start of dodge
+1 p- DragonHaxe_000.png
+C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
+2 p- DragonHaxe_067.png
+2 p- DragonHaxe_068.png
+25 p- DragonHaxe_069.png
+C01                               #NOP
+2 p- DragonHaxe_068.png
+2 p- DragonHaxe_067.png
+3 p- DragonHaxe_000.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 8               #Dodge Ranged Attack
+C02                               #Start of dodge
+1 p- DragonHaxe_000.png
+C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
+2 p- DragonHaxe_067.png
+2 p- DragonHaxe_068.png
+25 p- DragonHaxe_069.png
+C01                               #NOP
+2 p- DragonHaxe_068.png
+2 p- DragonHaxe_067.png
+3 p- DragonHaxe_000.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 9               #Equiped with Melee Weapon
+1 p- DragonHaxe_000.png
+C01                               #NOP
+~~~
+/// - Mode 10               #Standing motions
+1 p- DragonHaxe_000.png
+C01                               #NOP
+~~~
+/// - Mode 11               #Equiped with Ranged weapon
+1 p- DragonHaxe_000.png
+C01                               #NOP
+~~~
+/// - Mode 12               #Attack Missed Animation
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- DragonHaxe_000.png
+2 p- DragonHaxe_001.png
+C1B                               #Play quick "heavy step" SFE
+2 p- DragonHaxe_002.png
+C41                               #Play Axe rising SFE
+2 p- DragonHaxe_003.png
+2 p- DragonHaxe_004.png
+2 p- DragonHaxe_005.png
+6 p- DragonHaxe_006.png
+C37                               #Play sword clicking SFE
+18 p- DragonHaxe_007.png
+5 p- DragonHaxe_008.png
+5 p- DragonHaxe_009.png
+5 p- DragonHaxe_010.png
+14 p- DragonHaxe_011.png
+C42                               #Play Axe falling SFE; long axe swinging SFE
+2 p- DragonHaxe_012.png
+C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit
+4 p- DragonHaxe_013.png
+6 p- DragonHaxe_014.png
+5 p- DragonHaxe_015.png
+4 p- DragonHaxe_016.png
+3 p- DragonHaxe_017.png
+1 p- DragonHaxe_018.png
+C01                               #NOP
+2 p- DragonHaxe_019.png
+C42                               #Play Axe falling SFE; long axe swinging SFE
+2 p- DragonHaxe_020.png
+2 p- DragonHaxe_021.png
+3 p- DragonHaxe_022.png
+3 p- DragonHaxe_023.png
+3 p- DragonHaxe_024.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+3 p- DragonHaxe_025.png
+3 p- DragonHaxe_026.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - End of animation

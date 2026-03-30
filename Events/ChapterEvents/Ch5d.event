@@ -290,6 +290,18 @@ EndingScene:
 	TUTORIALTEXTBOXSTART; TEXTSHOW Ch5dFlashbackTeacherNarrationChess2; TEXTEND; REMA
 	FAWI 8
 	CLEAN
+	SetBackground(Castle_Hall)
+	STAL 60
+	CenterTextbox(Ch5dFlashbackTeacherNarrationAfter)
+	FAWI 8
+	CLEAN
+	SetBackground(Castle_Room)
+	STAL 60
+	CenterTextbox(Ch5dFlashbackTeacherNarrationAfter2)
+	
+	FAWI 4
+	STAL 60
+	CLEAN
 	
 	LOMA CityStreetMapID
 	LOAD1 0x1 StreetCitizens
@@ -308,6 +320,8 @@ EndingScene:
 	CLEAN
 	DISA 0x82
 	FADU 8
+	STAL 60
+	Highlight(0x81)
 	Text(Ch5dTeacherEnd1)
 	CenterTextbox(Ch5dTeacherEnd2)
 	
@@ -320,6 +334,7 @@ TurnHealEvent:
 	SVAL 0x1 JabberwockBoss
 	SVAL 0x6 0xA // 10 hp
 	ASMC ASMC_HealLikeVulnerary|1
+	SET_ACTIVE 0x0
 	NoFade
 	ENDA
 
@@ -349,10 +364,11 @@ TurnHPDrainEvent:
 	//CenterTextbox(DebugPauseText)
 	
 	ASMC Slot8NextActiveUnit|1 //takes unit ID from slot 8 (then iterates slot 8 by 1). checks if unit ID is valid, alive, not petrified. if so, makes active unit, returns 1 in slot C. if not, returns 0 in slot C. if slot 8 has iterated past all player units, sets slot 8 to 0xFF and returns 0 in slot C.
+	// this is causing a huge delay after all units have been processed
 	
 	//CenterTextbox(DebugPauseText)
-	SVAL 0x2 0xFF
-	BEQ 0x0 0x8 0x2 //if slot 8 is 255, end loop
+	SVAL 0x2 0x1F
+	BEQ 0x0 0x8 0x2 //if slot 8 is 20, end loop
 		BEQ 0x1 0xC 0x0 //if slot C is 0, go to label 1 and loop again. otherwise, this is a valid unit and event should process them
 			SVAL 0x1 0xFFFF
 			SVAL 0x6 0x4 //REMEMBER TO UPDATE Slot8NextActiveUnit IF YOU CHANGE THIS!!!

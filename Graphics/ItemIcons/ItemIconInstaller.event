@@ -402,6 +402,9 @@ ORG ItemIconEntry(Restore)
 ORG ItemIconEntry(Breeze)
 #incbin "Staves/Breeze.dmp"		// Ereshkigal
 
+ORG ItemIconEntry(Angel)
+#incbin "Staves/Reformation.dmp"		// Ereshkigal
+
 /*
 ORG ItemIconEntry(SilenceWord)
 #incbin "Staves/SilenceWord.dmp"		// Ereshkigal

@@ -1233,3 +1233,9 @@ Doubles weapon triangle.[X]
 
 ## UnknownDesc
 A fear the Devil cannot articulate.[X]
+
+## AngelName ^
+Angel[X]
+
+## AngelDesc
+Revives and heals ailments from afar.[X]

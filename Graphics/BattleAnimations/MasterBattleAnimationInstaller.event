@@ -43,6 +43,7 @@ ALIGN 4
 ALIGN 4
 MageGeneralAnim:
 AnimaAnim(0xE1)
+StaffAnim(0xE1)
 WORD 0x0 // Seperator
 
 ALIGN 4
@@ -186,10 +187,10 @@ WORD 0x0 // Seperator
 
 ALIGN 4
 {
-#include "Animations/CleoAxe/cleo axe Installer.event"
+#include "Animations/DragonAxe/DragonAxe Installer.event"
 }
 {
-#include "Animations/CleoHAxe/cleo hand axe Installer.event"
+#include "Animations/DragonHaxe/DragonHaxe Installer.event"
 }
 ALIGN 4
 HeadswomanAnim:

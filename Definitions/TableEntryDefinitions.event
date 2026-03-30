@@ -81,6 +81,7 @@
 #define Wise 0x27
 #define Gryphon 0x28
 #define Ch5Eagle 0x29
+#define Ch5Skull 0x2A
 
 #define Devil 0x40
 
@@ -241,6 +242,8 @@
 #define Razorbeak 0xD8
 
 #define Unknown 0xD9
+
+#define Angel 0xDA
 
 //Statuses
 #define SpecialStatusID 5

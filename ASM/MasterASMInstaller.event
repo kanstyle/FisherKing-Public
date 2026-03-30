@@ -47,6 +47,7 @@
 #include "EventCallTargetSelection/EventCallTargetSelection.event"
 #include "FastBattleAnimation/Installer.event"
 #include "CantCrit/Installer.event"
+#include "NoRescueStationaryUnits/Installer.event"
 //#include "VantageMinus/Installer.event"
 //#include "BiggestFan/Installer.event"
 //#include "Helpers.event"

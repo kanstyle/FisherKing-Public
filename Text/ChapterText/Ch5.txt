@@ -1043,3 +1043,37 @@ The right side worries me.
 
 ## Ch5RightDesc
 [X]
+
+## Ch5SkullDeadVisit
+[ml][LoadActive]
+[r][LoadCivBoy]
+
+[ml]
+...![A][css]
+[mml]
+G-Go away![4][4][N]
+Don't come any closer![AN]
+I mean it![A]
+
+[fr][LoadCivGirl]
+Hey![4][4] Have you seen our daddy?[N][4][4]
+I don't see him--[A][css]
+
+[ml][mml]
+Shut up![4][4] I told[N]
+you he'll be back soon![A]
+
+[fr]
+B-but...[A]
+
+[ml]
+I-I...[4][4] I'm in charge now![N][4][4]
+You have to do what I say![A]
+
+[fr][mfr]
+Aaah...[4][4][4] [ce][mfr]Waaaahhh...![mfr][4][4][mfr][A]
+
+[ml]
+Hey, you![4][4] I told you to leave![N][4][4]
+[ce]This is...[4][4][4] [oe][mml]This is MY house![A]
+[X]
