@@ -126,6 +126,25 @@
 #define ReposeOfSoulsID 0x2A0 //from 4k, need credit
 #define CircleOfTheMoonID 0x2A1 //from 4k, need credit
 #define TheSinkingOldSanctuaryID 0x2A2 //from 4k, need credit //this sounds like ass, i suspect it was a direct import
+#define AsFierceAsFireID 0x2A3
+#define BlueInGreenID 0x2A4
+#define CherryTreesAndWingsID 0x2A5
+#define DarkBattleID 0x2A6
+#define EchoingLibraryID 0x2A7
+#define EditModeID 0x2A8
+#define EverScarletForestID 0x2A9
+#define FaithIsMyPillarID 0x2AA
+#define FinalCastleID 0x2AB
+#define FrozenGroundsID 0x2AC
+#define HeavyArmoredCorpsID 0x2AD
+#define LivingOnTheEdgeID 0x2AE
+#define InspectingTheResoundingWeaponsID 0x2AF
+#define NameEntryID 0x2B0
+#define NoOneIsAloneID 0x2B1
+#define PremonitionID 0x2B2
+#define Resident_Evil_2__Main_HallcuedID 0x2B3
+#define ScatterAboutID 0x2B4
+#define WiseWordsID 0x2B5
 
 // Vanilla
 #define TiesOfFriendship 0x7

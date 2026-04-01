@@ -593,6 +593,10 @@ LABEL CSPg1
 		//CenterTextbox(DebugPauseText)
 		SilentGiveItem(LongFuseBomb,Brother)
 		//CenterTextbox(DebugPauseText)
+		AutoLevel(HeroChar, 4)
+		AutoLevel(Dragon, 4)
+		AutoLevel(Pillow, 4)
+		AutoLevel(Brother, 4)
 		MNC2 Ch2
 		//GOTO EndMenuSkipStartEvent
 	

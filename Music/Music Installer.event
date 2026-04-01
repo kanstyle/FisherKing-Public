@@ -81,6 +81,44 @@ SongTable(ReposeOfSoulsID,song42,MapMusicGroup)
 SongTable(CircleOfTheMoonID,song2C,MapMusicGroup)
 #include "MusicEvents/TheSinkingOldSanctuary (4k).event"
 SongTable(TheSinkingOldSanctuaryID,song0E,MapMusicGroup)
+#include "MusicEvents/AsFierceAsFire.event"
+SongTable(AsFierceAsFireID,AsFierceAsFire,MapMusicGroup)
+#include "MusicEvents/BlueInGreen.event"
+SongTable(BlueInGreenID,BlueInGreen,MapMusicGroup)
+#include "MusicEvents/CherryTreesAndWings.event"
+SongTable(CherryTreesAndWingsID,CherryTreesAndWings,MapMusicGroup)
+#include "MusicEvents/DarkBattle.event"
+SongTable(DarkBattleID,DarkBattle,MapMusicGroup)
+#include "MusicEvents/EchoingLibrary.event"
+SongTable(EchoingLibraryID,EchoingLibrary,MapMusicGroup)
+#include "MusicEvents/EditMode.event"
+SongTable(EditModeID,EditMode,MapMusicGroup)
+#include "MusicEvents/EverScarletForest.event"
+SongTable(EverScarletForestID,EverScarletForest,MapMusicGroup)
+#include "MusicEvents/FaithIsMyPillar.event"
+SongTable(FaithIsMyPillarID,FaithIsMyPillar,MapMusicGroup)
+#include "MusicEvents/FinalCastle.event"
+SongTable(FinalCastleID,FinalCastle,MapMusicGroup)
+#include "MusicEvents/FrozenGrounds.event"
+SongTable(FrozenGroundsID,FrozenGrounds,MapMusicGroup)
+#include "MusicEvents/HeavyArmoredCorps.event"
+SongTable(HeavyArmoredCorpsID,HeavyArmoredCorps,MapMusicGroup)
+#include "MusicEvents/LivingOnTheEdge.event"
+SongTable(LivingOnTheEdgeID,LivingOnTheEdge,MapMusicGroup)
+#include "MusicEvents/InspectingTheResoundingWeapons.event"
+SongTable(InspectingTheResoundingWeaponsID,InspectingTheResoundingWeapons,MapMusicGroup)
+#include "MusicEvents/NameEntry.event"
+SongTable(NameEntryID,NameEntry,MapMusicGroup)
+#include "MusicEvents/NoOneIsAlone.event"
+SongTable(NoOneIsAloneID,NoOneIsAlone,MapMusicGroup)
+#include "MusicEvents/Premonition.event"
+SongTable(PremonitionID,Premonition,MapMusicGroup)
+#include "MusicEvents/Resident_Evil_2_-_Main_Hall cued.event"
+SongTable(Resident_Evil_2__Main_HallcuedID,Resident_Evil_2___Main_Hall_cued,MapMusicGroup)
+#include "MusicEvents/ScatterAbout.event"
+SongTable(ScatterAboutID,ScatterAbout,MapMusicGroup)
+#include "MusicEvents/WiseWords.event"
+SongTable(WiseWordsID,WiseWords,MapMusicGroup)
 
 #include "MusicEvents/lufiadoom.event"
 SongTable(Lufia_Doom,lufiadoom,MapMusicGroup)

@@ -1077,3 +1077,10 @@ Aaah...[4][4][4] [ce][mfr]Waaaahhh...![mfr][4][4][mfr][A]
 Hey, you![4][4] I told you to leave![N][4][4]
 [ce]This is...[4][4][4] [oe][mml]This is MY house![A]
 [X]
+
+## Ch5SkullDQ
+[mr][LoadSkull]
+No...[4][4][4] [ce]I'm...[4][4][4] not gonna...[4][4][4][AN]
+Someone, help![N][4][4]
+Someone help my kids![A]
+[X]

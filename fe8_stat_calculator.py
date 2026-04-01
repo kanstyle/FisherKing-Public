@@ -7,6 +7,7 @@ Parses event files and calculates unit stats based on character, class, and equi
 import os
 import re
 import csv
+import math
 from pathlib import Path
 from typing import Dict, List, Tuple, Optional
 import openpyxl
@@ -621,24 +622,154 @@ class StatCalculator:
 		# Calculate derived stats
 		is_magic = 'MagicDamage' in item_ability or 'IsMagic' in item_ability
 		atk = mt + (unit_result['Mag'] if is_magic else unit_result['Str'])
-		
+
 		weapon_hit = 2 * unit_result['Skl'] + unit_result['Luck'] + hit
 		weapon_crit = crit
-		
+
 		# AS = Spd - max(0, Wt - Con)
 		wt_penalty = max(0, wt - unit_result['Con'])
 		attack_speed = unit_result['Spd'] - wt_penalty
-		
+
 		avoid = 2 * unit_result['Spd'] + unit_result['Luck']
-		
+
+		wexp = self.tables.get_stat_value(item_data, 'Weapon EXP')
+		item_type = item_data.get('Type', '').strip()
+		is_bomb = (item_type == 'Special')
+
 		return {
 			'Weapon': item_id,
 			'Atk': atk,
 			'Hit': weapon_hit,
 			'Crit': weapon_crit,
 			'AS': attack_speed,
-			'Avoid': avoid
+			'Avoid': avoid,
+			'WExp': wexp,
+			'IsMagic': is_magic,
+			'IsBomb': is_bomb,
 		}
+
+
+def simulate_chapter_wexp(ally_units: List[Dict], enemy_units: List[Dict]) -> Dict[str, Dict[str, int]]:
+	"""
+	Simulate turn-by-turn combat and calculate weapon EXP gained by each ally.
+
+	Each turn every ally is assigned the enemy they can kill in the fewest total attacks.
+	When multiple allies want the same enemy, each gets a distinct target (greedy first-come
+	assignment in roster order).  If no weapon can damage an enemy the ally is skipped.
+
+	Doubling rule: ally attacks twice per engagement when ally_weapon_AS >= enemy_AS + 4.
+	Bomb rule: if any non-bomb weapon can kill in one engagement, bombs are excluded from
+	           weapon selection for that matchup.
+
+	Returns:
+		{ally_unit_id: {weapon_item_id: total_wexp_gained}}
+	"""
+	if not ally_units or not enemy_units:
+		return {}
+
+	# Build enemy instance pool expanded by Count
+	enemy_pool = []
+	for enemy in enemy_units:
+		count = enemy.get('Count', 1)
+		enemy_as = enemy['weapons'][0]['AS'] if enemy.get('weapons') else enemy.get('Spd', 0)
+		for _ in range(count):
+			enemy_pool.append({
+				'hp':  enemy['HP'],
+				'def': enemy['Def'],
+				'res': enemy['Res'],
+				'as':  enemy_as,
+			})
+
+	# WEXP accumulator: {ally_unit_id: {weapon_item_id: total}}
+	wexp_tracker: Dict[str, Dict[str, int]] = {ally['UnitID']: {} for ally in ally_units}
+
+	def best_weapon_vs(ally: Dict, enemy_inst: Dict):
+		"""
+		Choose the best weapon for ally to use against enemy_inst.
+
+		Returns (weapon_dict, attacks_per_engagement, total_attacks_to_kill)
+		or None if no weapon can deal damage.
+		"""
+		candidates = []
+		for weapon in ally.get('weapons', []):
+			if not weapon.get('WExp', 0):
+				continue  # non-weapon item
+			dmg = max(0, weapon['Atk'] - (enemy_inst['res'] if weapon.get('IsMagic') else enemy_inst['def']))
+			if dmg <= 0:
+				continue
+			ape = 2 if weapon['AS'] >= enemy_inst['as'] + 4 else 1  # attacks per engagement
+			total_atk = math.ceil(enemy_inst['hp'] / dmg)            # total hits to kill
+			eng_to_kill = math.ceil(total_atk / ape)                 # engagements to kill
+			candidates.append({
+				'weapon':      weapon,
+				'ape':         ape,
+				'eng_to_kill': eng_to_kill,
+				'is_bomb':     weapon.get('IsBomb', False),
+			})
+
+		if not candidates:
+			return None
+
+		# Bomb rule: if any non-bomb can kill in 1 engagement, exclude all bombs
+		if any(not c['is_bomb'] and c['eng_to_kill'] == 1 for c in candidates):
+			candidates = [c for c in candidates if not c['is_bomb']]
+
+		# Pick minimum engagements; prefer non-bomb on ties
+		candidates.sort(key=lambda c: (c['eng_to_kill'], c['is_bomb']))
+		best = candidates[0]
+		return best['weapon'], best['ape'], best['eng_to_kill']
+
+	# Safety cap: no chapter should ever need more turns than 10× total enemies
+	max_turns = sum(e.get('Count', 1) for e in enemy_units) * 10
+	turn = 0
+
+	while enemy_pool and turn < max_turns:
+		turn += 1
+		assigned: set = set()
+
+		for ally in ally_units:
+			if not enemy_pool:
+				break
+
+			# Find unassigned enemy with the fewest engagements to kill
+			best_idx = -1
+			best_eng  = float('inf')
+			best_wpn  = None
+			best_ape  = 1
+
+			for idx, enemy_inst in enumerate(enemy_pool):
+				if idx in assigned:
+					continue
+				result = best_weapon_vs(ally, enemy_inst)
+				if result is None:
+					continue
+				weapon, ape, eng = result
+				if eng < best_eng:
+					best_eng = eng
+					best_idx = idx
+					best_wpn  = weapon
+					best_ape  = ape
+
+			if best_idx < 0:
+				continue  # ally cannot damage any remaining enemy
+
+			assigned.add(best_idx)
+			enemy_inst = enemy_pool[best_idx]
+
+			# Resolve actual damage and HP change
+			dmg = max(0, best_wpn['Atk'] - (enemy_inst['res'] if best_wpn.get('IsMagic') else enemy_inst['def']))
+			enemy_inst['hp'] -= dmg * best_ape
+
+			# Accumulate WEXP
+			gained = best_wpn['WExp'] * best_ape
+			wpn_id  = best_wpn['Weapon']
+			ally_id = ally['UnitID']
+			wexp_tracker[ally_id][wpn_id] = wexp_tracker[ally_id].get(wpn_id, 0) + gained
+
+		# Remove enemies that have been killed
+		enemy_pool = [e for e in enemy_pool if e['hp'] > 0]
+
+	return wexp_tracker
 
 
 def export_to_excel(results: Dict[str, List[Dict]], output_path: str):
@@ -675,8 +806,12 @@ def export_to_excel(results: Dict[str, List[Dict]], output_path: str):
 		ws = wb.create_sheet(title=chapter_name[:31])  # Excel sheet name limit
 		
 		# Write header
-		headers = ['UnitID', 'Lv', 'HP', 'Str', 'Mag', 'Skl', 'Spd', 'Def', 'Res', 'Luck', 'Con', 
-				   'Weapon', 'Atk', 'Hit', 'Crit', 'AS', 'Avoid', 'AS+4', 
+		# Col:  1       2    3     4      5      6      7      8      9      10      11     12
+		#       UnitID  Lv   HP    Str    Mag    Skl    Spd    Def    Res    Luck    Con    Count
+		# Col:  13      14   15    16     17     18     19     20     21          22          23          24         25
+		#       Weapon  Atk  Hit   Crit   AS     Avoid  AS+4   WEXP   Mag OHKO    Phys OHKO   Bomb OHKO   Mag ORKO   Phys ORKO
+		headers = ['UnitID', 'Lv', 'HP', 'Str', 'Mag', 'Skl', 'Spd', 'Def', 'Res', 'Luck', 'Con', 'Count',
+				   'Weapon', 'Atk', 'Hit', 'Crit', 'AS', 'Avoid', 'AS+4', 'WEXP',
 				   'Mag OHKO', 'Phys OHKO', 'Bomb OHKO', 'Mag ORKO', 'Phys ORKO']
 		
 		for col_idx, header in enumerate(headers, 1):
@@ -697,62 +832,65 @@ def export_to_excel(results: Dict[str, List[Dict]], output_path: str):
 				
 				if not unit['weapons']:
 					# Unit with no weapons
-					ws.cell(row=row_idx, column=1, value=unit['UnitID'])
-					ws.cell(row=row_idx, column=2, value=unit['Lv'])
-					ws.cell(row=row_idx, column=3, value=hp)
-					ws.cell(row=row_idx, column=4, value=unit['Str'])
-					ws.cell(row=row_idx, column=5, value=unit['Mag'])
-					ws.cell(row=row_idx, column=6, value=unit['Skl'])
-					ws.cell(row=row_idx, column=7, value=unit['Spd'])
-					ws.cell(row=row_idx, column=8, value=def_stat)
-					ws.cell(row=row_idx, column=9, value=res_stat)
+					ws.cell(row=row_idx, column=1,  value=unit['UnitID'])
+					ws.cell(row=row_idx, column=2,  value=unit['Lv'])
+					ws.cell(row=row_idx, column=3,  value=hp)
+					ws.cell(row=row_idx, column=4,  value=unit['Str'])
+					ws.cell(row=row_idx, column=5,  value=unit['Mag'])
+					ws.cell(row=row_idx, column=6,  value=unit['Skl'])
+					ws.cell(row=row_idx, column=7,  value=unit['Spd'])
+					ws.cell(row=row_idx, column=8,  value=def_stat)
+					ws.cell(row=row_idx, column=9,  value=res_stat)
 					ws.cell(row=row_idx, column=10, value=unit['Luck'])
 					ws.cell(row=row_idx, column=11, value=unit['Con'])
-					# Columns 12-17 are weapon stats (empty for units without weapons)
-					# Column 18: AS+4 (no weapon, so no AS)
-					# Columns 19-23: OHKO/ORKO stats
-					ws.cell(row=row_idx, column=19, value=hp + res_stat)  # Mag OHKO
-					ws.cell(row=row_idx, column=20, value=hp + def_stat)  # Phys OHKO
-					ws.cell(row=row_idx, column=21, value=int(hp * 0.75) + res_stat)  # Bomb OHKO
-					ws.cell(row=row_idx, column=22, value=hp // 2 + res_stat)  # Mag ORKO
-					ws.cell(row=row_idx, column=23, value=hp // 2 + def_stat)  # Phys ORKO
-					
+					ws.cell(row=row_idx, column=12, value=unit.get('Count'))  # Count (enemies only)
+					# Cols 13-20 are weapon stats / WEXP (empty for weaponless units)
+					# Cols 21-25: OHKO/ORKO stats
+					ws.cell(row=row_idx, column=21, value=hp + res_stat)           # Mag OHKO
+					ws.cell(row=row_idx, column=22, value=hp + def_stat)           # Phys OHKO
+					ws.cell(row=row_idx, column=23, value=int(hp * 0.75) + res_stat)  # Bomb OHKO
+					ws.cell(row=row_idx, column=24, value=hp // 2 + res_stat)      # Mag ORKO
+					ws.cell(row=row_idx, column=25, value=hp // 2 + def_stat)      # Phys ORKO
+
 					# Apply color to entire row
-					for col in range(1, 24):
+					for col in range(1, 26):
 						ws.cell(row=row_idx, column=col).fill = fill_color
-					
+
 					row_idx += 1
 				else:
 					# Unit with weapons
+					wexp_map = unit.get('wexp_by_weapon', {})  # {weapon_id: total_wexp} for allies
 					for weapon in unit['weapons']:
-						ws.cell(row=row_idx, column=1, value=unit['UnitID'])
-						ws.cell(row=row_idx, column=2, value=unit['Lv'])
-						ws.cell(row=row_idx, column=3, value=hp)
-						ws.cell(row=row_idx, column=4, value=unit['Str'])
-						ws.cell(row=row_idx, column=5, value=unit['Mag'])
-						ws.cell(row=row_idx, column=6, value=unit['Skl'])
-						ws.cell(row=row_idx, column=7, value=unit['Spd'])
-						ws.cell(row=row_idx, column=8, value=def_stat)
-						ws.cell(row=row_idx, column=9, value=res_stat)
+						ws.cell(row=row_idx, column=1,  value=unit['UnitID'])
+						ws.cell(row=row_idx, column=2,  value=unit['Lv'])
+						ws.cell(row=row_idx, column=3,  value=hp)
+						ws.cell(row=row_idx, column=4,  value=unit['Str'])
+						ws.cell(row=row_idx, column=5,  value=unit['Mag'])
+						ws.cell(row=row_idx, column=6,  value=unit['Skl'])
+						ws.cell(row=row_idx, column=7,  value=unit['Spd'])
+						ws.cell(row=row_idx, column=8,  value=def_stat)
+						ws.cell(row=row_idx, column=9,  value=res_stat)
 						ws.cell(row=row_idx, column=10, value=unit['Luck'])
 						ws.cell(row=row_idx, column=11, value=unit['Con'])
-						ws.cell(row=row_idx, column=12, value=weapon['Weapon'])
-						ws.cell(row=row_idx, column=13, value=weapon['Atk'])
-						ws.cell(row=row_idx, column=14, value=weapon['Hit'])
-						ws.cell(row=row_idx, column=15, value=weapon['Crit'])
-						ws.cell(row=row_idx, column=16, value=weapon['AS'])
-						ws.cell(row=row_idx, column=17, value=weapon['Avoid'])
-						ws.cell(row=row_idx, column=18, value=weapon['AS'] + 4)  # AS+4
-						ws.cell(row=row_idx, column=19, value=hp + res_stat)  # Mag OHKO
-						ws.cell(row=row_idx, column=20, value=hp + def_stat)  # Phys OHKO
-						ws.cell(row=row_idx, column=21, value=int(hp * 0.75) + res_stat)  # Bomb OHKO
-						ws.cell(row=row_idx, column=22, value=hp // 2 + res_stat)  # Mag ORKO
-						ws.cell(row=row_idx, column=23, value=hp // 2 + def_stat)  # Phys ORKO
-						
+						ws.cell(row=row_idx, column=12, value=unit.get('Count'))  # Count (enemies only)
+						ws.cell(row=row_idx, column=13, value=weapon['Weapon'])
+						ws.cell(row=row_idx, column=14, value=weapon['Atk'])
+						ws.cell(row=row_idx, column=15, value=weapon['Hit'])
+						ws.cell(row=row_idx, column=16, value=weapon['Crit'])
+						ws.cell(row=row_idx, column=17, value=weapon['AS'])
+						ws.cell(row=row_idx, column=18, value=weapon['Avoid'])
+						ws.cell(row=row_idx, column=19, value=weapon['AS'] + 4)   # AS+4
+						ws.cell(row=row_idx, column=20, value=wexp_map.get(weapon['Weapon']))  # WEXP (allies only)
+						ws.cell(row=row_idx, column=21, value=hp + res_stat)           # Mag OHKO
+						ws.cell(row=row_idx, column=22, value=hp + def_stat)           # Phys OHKO
+						ws.cell(row=row_idx, column=23, value=int(hp * 0.75) + res_stat)  # Bomb OHKO
+						ws.cell(row=row_idx, column=24, value=hp // 2 + res_stat)      # Mag ORKO
+						ws.cell(row=row_idx, column=25, value=hp // 2 + def_stat)      # Phys ORKO
+
 						# Apply color to entire row
-						for col in range(1, 24):
+						for col in range(1, 26):
 							ws.cell(row=row_idx, column=col).fill = fill_color
-						
+
 						row_idx += 1
 		
 		# Write units by allegiance with spacing
@@ -932,7 +1070,13 @@ def main():
 			# Get enemy/NPC units from chapter file
 			all_units = UnitParser.find_units_in_file(chapter_file)
 			enemy_npc_units = [u for u in all_units if u['allegiance'] in ['Enemy', 'NPC']]
-			
+
+			# Count enemy instances before deduplication
+			enemy_counts = {}
+			for unit in enemy_npc_units:
+				key = f"{unit['char_id']}_{unit['class_id']}"
+				enemy_counts[key] = enemy_counts.get(key, 0) + 1
+
 			# Combine
 			units = ally_units + enemy_npc_units
 			
@@ -962,13 +1106,24 @@ def main():
 					difficulty_bonus = difficulty_bonuses.get(difficulty, 0)
 					
 					results[sheet_name] = []
-					
+
 					for unit in units:
-						stats = calculator.calculate_unit_stats(unit, chapter_name, difficulty_bonus, 
+						stats = calculator.calculate_unit_stats(unit, chapter_name, difficulty_bonus,
 						                                        autolevel_map, chapter_suffix)
 						if stats:
+							if stats['Allegiance'] in ['Enemy', 'NPC']:
+								unit_key = f"{unit['char_id']}_{unit['class_id']}"
+								stats['Count'] = enemy_counts.get(unit_key, 1)
 							results[sheet_name].append(stats)
-	
+
+					# Run WEXP simulation for this sheet
+					ally_stats = [u for u in results[sheet_name] if u.get('Allegiance') == 'Ally']
+					enemy_stats = [u for u in results[sheet_name] if u.get('Allegiance') in ['Enemy', 'NPC']]
+					wexp_results = simulate_chapter_wexp(ally_stats, enemy_stats)
+					for unit in results[sheet_name]:
+						if unit.get('Allegiance') == 'Ally':
+							unit['wexp_by_weapon'] = wexp_results.get(unit['UnitID'], {})
+
 	if not results:
 		print("ERROR: No chapter event files found or no units parsed!")
 		return
