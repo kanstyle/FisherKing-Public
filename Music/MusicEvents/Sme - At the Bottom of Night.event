@@ -11,7 +11,7 @@
 	#define	song14_cmp  1
 
 	// .rodata
-	//	song14
+	//	AtTheBottomOfNight
 	ALIGN 4
 
 
@@ -51,7 +51,7 @@ Label_0_01014396:
  BYTE   W36
  BYTE   N11  As2
  BYTE   W12
- BYTE   PEND 
+ BYTE   PEND
 // 003   ----------------------------------------
  BYTE   N92  Fn3
  BYTE   W96
@@ -278,7 +278,7 @@ Label_1_01014494:
  BYTE   W12
  BYTE   N80  As3
  BYTE   W12
- BYTE   PEND 
+ BYTE   PEND
  BYTE   PATT
   POIN2 Label_1_01014494
 // 011   ----------------------------------------
@@ -1108,7 +1108,7 @@ Label_6_010147E0:
  BYTE   W36
  BYTE   N56  Dn3
  BYTE   W12
- BYTE   PEND 
+ BYTE   PEND
  BYTE   PATT
   POIN2 Label_6_010147E0
 // 011   ----------------------------------------
@@ -1273,14 +1273,14 @@ Label_7_01014827:
 //******************************************************//
 	ALIGN 4
 
-song14:
+AtTheBottomOfNight:
 	BYTE	8	// NumTrks
 	BYTE	0	// NumBlks
 	BYTE	song14_pri	// Priority
 	BYTE	song14_rev	// Reverb.
-    
+
 	POIN2	song14_grp
-    
+
 	POIN2	song14_001
 	POIN2	song14_002
 	POIN2	song14_003
@@ -1289,5 +1289,3 @@ song14:
 	POIN2	song14_006
 	POIN2	song14_007
 	POIN2	song14_008
-
-	

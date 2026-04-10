@@ -571,10 +571,20 @@ class StatCalculator:
 		# Con is always base only
 		stats['Con'] = class_bases['Con'] + char_bases['Con']
 		stats['Lv'] = level
-		
+
+		# Determine weapon type access from character + class rank columns
+		weapon_rank_cols = ['Sword', 'Lance', 'Axe', 'Bow', 'Staff', 'Anima', 'Light', 'Dark']
+		weapon_types = set()
+		for col in weapon_rank_cols:
+			char_rank  = char_data.get(col,  'NoRank').strip() if char_data  else 'NoRank'
+			class_rank = class_data.get(col, 'NoRank').strip() if class_data else 'NoRank'
+			if char_rank != 'NoRank' or class_rank != 'NoRank':
+				weapon_types.add(col)
+
 		# Prepare result
 		result = {
 			'UnitID': f"{unit['char_id']}_{unit['class_id']}",
+			'CharID': unit['char_id'],
 			'Chapter': chapter_name,
 			'Allegiance': allegiance,  # Add allegiance for color coding
 			'Lv': stats['Lv'],
@@ -587,6 +597,8 @@ class StatCalculator:
 			'Res': stats['Res'],
 			'Luck': stats['Luck'],
 			'Con': stats['Con'],
+			'HasStaff': 'Staff' in weapon_types,
+			'WeaponTypeCount': len(weapon_types),
 			'weapons': []
 		}
 		
@@ -719,8 +731,21 @@ def simulate_chapter_wexp(ally_units: List[Dict], enemy_units: List[Dict]) -> Di
 		best = candidates[0]
 		return best['weapon'], best['ape'], best['eng_to_kill']
 
-	# Safety cap: no chapter should ever need more turns than 10× total enemies
-	max_turns = sum(e.get('Count', 1) for e in enemy_units) * 10
+	# Build staff-turn schedule: {ally_unit_id: period}
+	# Period = how many global turns between each staff action for this ally.
+	# HeroChar is special-cased to period 3 (1/3 of turns are staff turns).
+	# All other staff users use period = WeaponTypeCount.
+	staff_periods: Dict[str, int] = {}
+	for ally in ally_units:
+		if ally.get('HasStaff'):
+			if ally.get('CharID') == 'HeroChar':
+				staff_periods[ally['UnitID']] = 3
+			else:
+				staff_periods[ally['UnitID']] = max(ally.get('WeaponTypeCount', 1), 1)
+
+	# Safety cap: generous enough to handle staff turns reducing combat throughput
+	total_enemies = sum(e.get('Count', 1) for e in enemy_units)
+	max_turns = max(total_enemies * 20, 500)
 	turn = 0
 
 	while enemy_pool and turn < max_turns:
@@ -730,6 +755,12 @@ def simulate_chapter_wexp(ally_units: List[Dict], enemy_units: List[Dict]) -> Di
 		for ally in ally_units:
 			if not enemy_pool:
 				break
+
+			# Staff turn check: if this ally heals this turn, skip combat and gain 2 staff WExp
+			ally_id = ally['UnitID']
+			if ally_id in staff_periods and turn % staff_periods[ally_id] == 0:
+				wexp_tracker[ally_id]['Staff'] = wexp_tracker[ally_id].get('Staff', 0) + 2
+				continue
 
 			# Find unassigned enemy with the fewest engagements to kill
 			best_idx = -1
@@ -829,7 +860,8 @@ def export_to_excel(results: Dict[str, List[Dict]], output_path: str):
 				hp = unit['HP']
 				def_stat = unit['Def']
 				res_stat = unit['Res']
-				
+				wexp_map = unit.get('wexp_by_weapon', {})  # {weapon_id: wexp} for allies; {} for enemies
+
 				if not unit['weapons']:
 					# Unit with no weapons
 					ws.cell(row=row_idx, column=1,  value=unit['UnitID'])
@@ -859,7 +891,6 @@ def export_to_excel(results: Dict[str, List[Dict]], output_path: str):
 					row_idx += 1
 				else:
 					# Unit with weapons
-					wexp_map = unit.get('wexp_by_weapon', {})  # {weapon_id: total_wexp} for allies
 					for weapon in unit['weapons']:
 						ws.cell(row=row_idx, column=1,  value=unit['UnitID'])
 						ws.cell(row=row_idx, column=2,  value=unit['Lv'])
@@ -892,7 +923,34 @@ def export_to_excel(results: Dict[str, List[Dict]], output_path: str):
 							ws.cell(row=row_idx, column=col).fill = fill_color
 
 						row_idx += 1
-		
+
+				# Staff WEXP row: written once per unit if they accumulated staff exp
+				staff_wexp = wexp_map.get('Staff')
+				if staff_wexp:
+					ws.cell(row=row_idx, column=1,  value=unit['UnitID'])
+					ws.cell(row=row_idx, column=2,  value=unit['Lv'])
+					ws.cell(row=row_idx, column=3,  value=hp)
+					ws.cell(row=row_idx, column=4,  value=unit['Str'])
+					ws.cell(row=row_idx, column=5,  value=unit['Mag'])
+					ws.cell(row=row_idx, column=6,  value=unit['Skl'])
+					ws.cell(row=row_idx, column=7,  value=unit['Spd'])
+					ws.cell(row=row_idx, column=8,  value=def_stat)
+					ws.cell(row=row_idx, column=9,  value=res_stat)
+					ws.cell(row=row_idx, column=10, value=unit['Luck'])
+					ws.cell(row=row_idx, column=11, value=unit['Con'])
+					# Col 12 (Count): blank for allies
+					ws.cell(row=row_idx, column=13, value='Staff')
+					# Cols 14-19 (weapon combat stats): blank
+					ws.cell(row=row_idx, column=20, value=staff_wexp)
+					ws.cell(row=row_idx, column=21, value=hp + res_stat)            # Mag OHKO
+					ws.cell(row=row_idx, column=22, value=hp + def_stat)            # Phys OHKO
+					ws.cell(row=row_idx, column=23, value=int(hp * 0.75) + res_stat)  # Bomb OHKO
+					ws.cell(row=row_idx, column=24, value=hp // 2 + res_stat)       # Mag ORKO
+					ws.cell(row=row_idx, column=25, value=hp // 2 + def_stat)       # Phys ORKO
+					for col in range(1, 26):
+						ws.cell(row=row_idx, column=col).fill = fill_color
+					row_idx += 1
+
 		# Write units by allegiance with spacing
 		if ally_units:
 			write_unit_section(ally_units, ally_fill)

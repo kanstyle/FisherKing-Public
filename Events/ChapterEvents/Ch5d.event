@@ -216,11 +216,20 @@ EndingScene:
 	*/
 	
 	RemoveBackground
-	SetBackgroundSlow(Inn)
-	Music(PubID)
+	SetBackgroundSlow(Salehs_House)
+	Music(WildFieldsID)
 	Text(Ch5dTavernMeeting)
+	FADI 8
+	CLEAN
+	MUSCMID DarkBattleID
+	STAL 60
+	SetBackground(Inn)
+	Text(Ch5dTavernMeeting2)
+	TEXTEND
+	REMA
 	
 	FADI 8
+	MUSCSLOW 0x4C //birds chirping
 	CLEAN
 	LOMA CityStreetMapID
 	LOAD1 0x1 StreetCitizens
@@ -235,6 +244,7 @@ EndingScene:
 	FAWI 4
 	DoAllThree
 	
+	MUSCSLOW 0x777F
 	LOMA Ch0
 	CAM1 [0,0]
 	STAL 60
@@ -249,6 +259,7 @@ EndingScene:
 	CLEAN
 	REMOVEPORTRAITS
 	BACG DaybreakEmpty
+	MUSCSLOW ForbiddenForestID
 	FAWU 2
 	STAL 90
 	CenterTextbox(Ch5dFlashbackPrinceNarration)
@@ -277,8 +288,10 @@ EndingScene:
 	Text(Ch5dFlashbackPrinceTeacher)
 	FADI 4
 	CLEAN
+	MUSCSLOW 0x777F
 	STAL 120
 
+	MUSCSLOW AtTheBottomOfNightID
 	SetBackgroundSlow(Chess)
 	STAL 90
 	SVAL 0xB 0x00600100
@@ -302,6 +315,8 @@ EndingScene:
 	FAWI 4
 	STAL 60
 	CLEAN
+	FadeOutMusic
+	MUSCSLOW 0x777F
 	
 	LOMA CityStreetMapID
 	LOAD1 0x1 StreetCitizens
@@ -309,11 +324,16 @@ EndingScene:
 	LOAD2 0x1 StreetEnvoy
 	MOVE 65535 0x81 [7,6]
 	ENUN
+	MUSCSLOW 0x4C //birds chirping
 	FAWU 4
 	STAL 120
 	Highlight(0x82)
 	SetBackground(Town_Day)
-	Text(Ch5dTeacherEnvoy)
+	TextPartialStart(Ch5dTeacherEnvoy)
+	TextMusicChange(0x777F)
+	TextMusicChange(CherryTreesAndWingsID)
+	TEXTEND
+	REMA
 	CenterTextbox(Ch5dTeacherEnvoy2)
 	Text(Ch5dTeacherEnvoy3)
 	FADI 8

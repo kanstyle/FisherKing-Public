@@ -15,6 +15,7 @@
 #define SpellMirror_index 0x36
 #define Malkhut_index 0x38
 #define Bolganone_index 0x4B
+#define BombRanged_index 0x4C
 
 #include "CSA System FE8/Master Spell Animation Installer.event"
 
@@ -35,6 +36,7 @@
 #include "Event/Malkhut.event"
 #include "Event/AraiGale.event"
 #include "Event/Bolganone.event"
+#include "Event/BombRanged/BombRanged.event"
 
 
 

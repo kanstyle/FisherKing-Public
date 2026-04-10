@@ -96,6 +96,7 @@ POIN DaybreakBG; WORD 0x1; POIN DaybreakBGPal
 POIN ChessBG; WORD 0x1; POIN ChessBGPal
 POIN Chess2BG; WORD 0x1; POIN Chess2BGPal
 POIN DaybreakEmptyBG; WORD 0x1; POIN DaybreakEmptyBGPal
+POIN StockBlackBG; WORD 0x1; POIN StockBlackBGPal
 
 ALIGN 4; ButterflyInverted224BG:
 #incbin "224ButterflyInverted.dmp"
@@ -211,3 +212,8 @@ ALIGN 4; DaybreakEmptyBG:
 #incbin "224DaybreakEmpty.dmp"
 ALIGN 4; DaybreakEmptyBGPal:
 #incbin "224DaybreakEmptyPal.dmp"
+
+ALIGN 4; StockBlackBG:
+#incbin "224Black.dmp"
+ALIGN 4; StockBlackBGPal:
+#incbin "224BlackPal.dmp"

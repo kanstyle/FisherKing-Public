@@ -56,7 +56,7 @@ SongTable(NoticeOfDeathID,noticeodtest,MapMusicGroup)
 #include "MusicEvents/arcassandra by alusq.event"
 SongTable(ArcassandraID,arcassandra,MapMusicGroup)
 #include "MusicEvents/Sme - At the Bottom of Night.event"
-SongTable(AtTheBottomOfNightID,song14,MapMusicGroup)
+SongTable(AtTheBottomOfNightID,AtTheBottomOfNight,MapMusicGroup)
 #include "MusicEvents/BondsOfSeaAndFlame (ultrax secondhack).event"
 SongTable(BondsOfSeaAndFlameID,song37,MapMusicGroup)
 #include "MusicEvents/AvehTheAncientDance (ultrax secondhack).event"
@@ -113,13 +113,15 @@ SongTable(NameEntryID,NameEntry,MapMusicGroup)
 SongTable(NoOneIsAloneID,NoOneIsAlone,MapMusicGroup)
 #include "MusicEvents/Premonition.event"
 SongTable(PremonitionID,Premonition,MapMusicGroup)
+#include "MusicEvents/FF10 - Enemy Attack {A Reliable Chair}.event"
+SongTable(EnemyAttackID,song2d,MapMusicGroup)
+
 #include "MusicEvents/Resident_Evil_2_-_Main_Hall cued.event"
 SongTable(Resident_Evil_2__Main_HallcuedID,Resident_Evil_2___Main_Hall_cued,MapMusicGroup)
 #include "MusicEvents/ScatterAbout.event"
 SongTable(ScatterAboutID,ScatterAbout,MapMusicGroup)
 #include "MusicEvents/WiseWords.event"
 SongTable(WiseWordsID,WiseWords,MapMusicGroup)
-
 #include "MusicEvents/lufiadoom.event"
 SongTable(Lufia_Doom,lufiadoom,MapMusicGroup)
 #include "MusicEvents/Battle For The Fields.event"

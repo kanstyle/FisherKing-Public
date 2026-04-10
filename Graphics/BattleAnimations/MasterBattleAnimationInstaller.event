@@ -12,11 +12,32 @@
 #define BowAnim(Animation) "BYTE Bows 0x01 ; SHORT Animation"
 #define StaffAnim(Animation) "BYTE Staves 0x01 ; SHORT Animation"
 #define AnimaAnim(Animation) "BYTE Anima 0x01 ; SHORT Animation"
-#define LightAnim(Animation) "BYTE Light 0x01 ; SHORT Animation"
+#define LightAnim(Animation) "BYTE 0x6 0x01 ; SHORT Animation"
 #define DarkAnim(Animation) "BYTE Dark 0x01 ; SHORT Animation"
 #define UnarmedAnim(Animation) "BYTE Disarmed 0x01 ; SHORT Animation"
 #define MonsterAnim(Animation) "BYTE 0xB 0x01 ; SHORT Animation"
 #define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
+
+ALIGN 4
+{
+#include "Animations/CavStaffRepal/Staff Installer.event"
+}
+{
+#include "Animations/CavSwordRepal/Sword Installer.event"
+}
+ALIGN 4
+CavSwordRepalAnim:
+SwordAnim(0xE4)
+StaffAnim(0xE5)
+UnarmedAnim(0xE4)
+WORD 0x0 // Seperator
+
+ALIGN 4
+PriestAnim:
+StaffAnim(0x7F)
+LightAnim(0x7F)
+UnarmedAnim(0x7E)
+WORD 0x0 // Seperator
 
 ALIGN 4
 {
@@ -25,15 +46,17 @@ ALIGN 4
 ALIGN 4
 DevilAnim:
 DarkAnim(0xE3)
+UnarmedAnim(0xE3)
 WORD 0x0 // Seperator
 
 ALIGN 4
 {
-#include "Animations/MyrmRepal/Myrmidon Installer.event"
+#include "Animations/MyrmRepal/Sword Installer.event"
 }
 ALIGN 4
-MyrmidonAnim:
-AnimaAnim(0xE2)
+StormMyrmidonAnim:
+SwordAnim(0xE2)
+UnarmedAnim(0xE2)
 WORD 0x0 // Seperator
 
 ALIGN 4
@@ -44,6 +67,7 @@ ALIGN 4
 MageGeneralAnim:
 AnimaAnim(0xE1)
 StaffAnim(0xE1)
+UnarmedAnim(0xE1)
 WORD 0x0 // Seperator
 
 ALIGN 4
@@ -53,6 +77,7 @@ ALIGN 4
 ALIGN 4
 JabberwockyAnim:
 MonsterAnim(0xE0)
+UnarmedAnim(0xE0)
 WORD 0x0 // Seperator
 
 ALIGN 4
@@ -85,8 +110,8 @@ WORD 0x0 // Seperator
 
 ALIGN 4
 VeteranAnim:
-SpearAnim(0x3A)
-SwordAnim(0x3B)
+SpearAnim(0x3B)
+SwordAnim(0x3A)
 HandAxeAnim(0xDB)
 AxeAnim(0xDA)
 UnarmedAnim(0x3C)
@@ -190,12 +215,13 @@ ALIGN 4
 #include "Animations/DragonAxe/DragonAxe Installer.event"
 }
 {
-#include "Animations/DragonHaxe/DragonHaxe Installer.event"
+#include "Animations/DragonHaxe/Haxe Installer.event"
 }
 ALIGN 4
 HeadswomanAnim:
 AxeAnim(0xCA)
 HandAxeAnim(0xCB)
+LightAnim(0xE6)
 UnarmedAnim(0xCA)
 WORD 0x0 // Seperator
 

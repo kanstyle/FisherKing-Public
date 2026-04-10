@@ -64,7 +64,7 @@ MiscBasedEvents:
 
 LocationBasedEvents:
 	Village(BunnyVillageFlag,BunnyMotherVisit,2,8)
-	Village(SkullVillageFlag,SkullVisit,2,8)
+	Village(SkullVillageFlag,SkullVisit,22,6)
 	Door(21,2)
 	Door(12,11)
 	Door(13,11)
@@ -403,58 +403,16 @@ DefendGameOver:
 
 BeginningScene:
 	CALL StartEventRoutine
-	
-	/*MUSC AtTheBottomOfNightID
-	SetBackground(BlackBG)
-	STAL 45
-	CenterTextbox(Ch5TriedToLoveThePrince1)
-	FADI 16
-	CLEAN
-	SetBackgroundSlow(Heart)
-	STAL 60
-	CenterTextbox(Ch5TriedToLoveThePrince2)
-	FADI 3
-	CLEAN*/
-	
+
 	LOMA 0x30
 	LOAD2 0x1 DragonPillowUnits
+	MUSC Nighttime
 	FADU 4
 	STAL 90
-	
-	/*Music(BondsOfSeaAndFlameID)
-	Placeholder
-	Music(AvehTheAncientDanceID)
-	Placeholder
-	Music(TheOneWhoIsTornApartID)
-	Placeholder
-	Music(OmenID)
-	Placeholder
-	Music(CrossingSwordsID)
-	Placeholder
-	Music(SteelGiantID)
-	Placeholder
-	Music(YouWillKnowOurNamesID)
-	Placeholder
-	Music(KnightOfFireID)
-	Placeholder
-	Music(ThemeXID)
-	Placeholder
-	Music(ReposeOfSoulsID)
-	Placeholder*/
-	
-	/*SVAL r1 MapDark //vesly draw patch testing
-	SVAL 0xB (0x0 | (0x0<<16))
-	ASMC Draw_ASMC|1
-	Placeholder
-	Draw(MapDark,1,2)
-	Placeholder
-	Draw(MapDark,1,3)
-	Placeholder
-	Draw(MapDark,1,4)
-	Placeholder*/
-	
+
 	Text(Ch5IntroDragonPillow)
 	STAL 60
+	MUSCSLOW EnemyAttackID
 	LOAD2 0x1 BaronWoundedUnits
 	MOVE 3 0x80 [7,8]
 	ENUN
@@ -528,7 +486,7 @@ BeginningScene:
 	Highlight(Ch5Skull)
 	Text(Ch5IntroSkullChildren2)
 	
-	CAMERA [1,8]
+	CAMERA [2,8]
 	//show bunny's mother hiding with her mother and wishing bunny would come home
 	CameraCursorLocation(1,8,60)
 	SetBackground(HouseBG)
@@ -558,10 +516,11 @@ BeginningScene:
 	LOAD2 0x1 NPCUnits
 	SetFlag(StormSkullTalkFlag)
 	GotoPrepScreen
-	CenterTextbox(Ch5Tutorial)
 	ENDA
 	
 StormGaleIntro:
+	CenterTextbox(Ch5Tutorial)
+	MUSC EnemyAttackID
 	CAMERA [23,8]
 	STAL 30
 	LOAD1 0x1 GaleUnits
@@ -607,7 +566,8 @@ BunnyMotherVisit:
 	ENDA
 	
 SkullVisit:
-	
+	SetBackground(HouseBG)
+	Text(Ch5SkullDeadVisit)
 	ENDA
 	
 SkullTalk:
@@ -629,6 +589,7 @@ Turn1Event:
 	ENDA
 	
 LargeReinforcementEvent:
+	MUSC EnemyAttackID
 	STAL 30
 	//Text(LargeReinforcementEventText)
 	CallMenu(Ch5LargeReinforcementMenu) //menu where you pick a side to spawn reinforcements on
@@ -808,6 +769,7 @@ EndingScene:
 	
 	FADI 4
 	DoAllThree
+	DISA Ch5Eagle
 	CALL EndEventRoutine
 	MNC2 Ch5d
 	NoFade

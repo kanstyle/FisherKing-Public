@@ -48,6 +48,7 @@
 #include "FastBattleAnimation/Installer.event"
 #include "CantCrit/Installer.event"
 #include "NoRescueStationaryUnits/Installer.event"
+#include "Individual animation_ea_2/Installer.event" //credit to 7743
 //#include "VantageMinus/Installer.event"
 //#include "BiggestFan/Installer.event"
 //#include "Helpers.event"

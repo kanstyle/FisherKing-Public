@@ -145,6 +145,7 @@
 #define Resident_Evil_2__Main_HallcuedID 0x2B3
 #define ScatterAboutID 0x2B4
 #define WiseWordsID 0x2B5
+#define EnemyAttackID 0x2B6
 
 // Vanilla
 #define TiesOfFriendship 0x7

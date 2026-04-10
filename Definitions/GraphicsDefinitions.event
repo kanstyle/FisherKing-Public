@@ -21,7 +21,7 @@
 #define SigilCard 0x77
 
 //Backgrounds
-#define BlackBG 0x35
+//#define BlackBG 0x35 //not using this anymore; got overwritten by CSA system
 #define ButterflyInverted 0x38
 #define FogMountains 0x39
 #define WhiteBG 0x3A
@@ -47,3 +47,4 @@
 #define Chess 0x4c
 #define Chess2 0x4d
 #define DaybreakEmpty 0x4e
+#define BlackBG 0x4f

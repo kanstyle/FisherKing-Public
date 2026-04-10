@@ -9,6 +9,8 @@
 #include "Tilesets_MapAnimations/MapAnimationsInstaller.event"
 #include "Statscreen/StatscreenInstaller.event"
 #include "Menu Tiles/Installer.event"
+#include "Spell Animations/SpellAnimationInstaller.event"
+#include "BattleMenus/TSAs/Installer.event"
 //#include "Map Sprite Palettes/MapSpritePaletteInstaller.event"
 
 PUSH

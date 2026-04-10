@@ -62,3 +62,7 @@ adding yourself!
 - DrGreen3339: "4" portrait
 - Leo Link: Baron animation
 - Warpath: Baron map sprite
+
+# Music
+
+- Sme: At the Bottom of Night

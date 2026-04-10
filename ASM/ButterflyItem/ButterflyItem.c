@@ -52,6 +52,10 @@ void ButterflyItemEffect(ProcPtr proc) {
 	}
 	
 	CallEvent(&ButterflyItemEvent, 1);
+	gActiveUnit->state &= ~0x40; //unset has_moved
+	gActiveUnit->state &= ~0x2; //unset unselectable
+	gActiveUnit->state |= 0x400; //set galeforce bit
+	PlaySoundEffect(0x127);
 	
 	BattleApplyItemEffect(proc);
     //BeginBattleAnimations();

@@ -43,41 +43,38 @@ void AutoLevelASMC(ProcPtr proc) { //target unit in slot1, target level in slot2
 	}
 }
 
-void AddAutoLevelASMC(ProcPtr proc) { //target unit in slot1, target level in slot2
+void AddAutoLevelASMC(ProcPtr proc) { //target unit in slot1, levels to gain in slot2
 	struct Unit* unit;
-	int targetLevel = 0;
 	int levelsToGain = gEventSlots[2];
 	u16 unitID = gEventSlots[1];
 
 	if (unitID == 0xFFFF) {
-		unitID = gActiveUnit;
-		targetLevel = gActiveUnit->level + levelsToGain;
+		unit = gActiveUnit;
 	} else {
 		unit = GetUnitFromCharId(unitID);
-		targetLevel = unit->level + levelsToGain;
 	}
+
+	int targetLevel = unit->level + levelsToGain;
 	if (targetLevel > 20) {
 		targetLevel = 20;
 	}
-	unit->level = targetLevel;
-	
-    struct BattleUnit tmpBattleUnit;
-    short levelsLeft;
 
+	short levelsLeft = targetLevel - unit->level;
+
+    struct BattleUnit tmpBattleUnit;
     tmpBattleUnit.expGain = 0;
 
-    levelsLeft = (targetLevel - unit->level);
-
-    if (levelsLeft) {
-        for (unit->level -= levelsLeft; levelsLeft > 0; --levelsLeft) {
-            InitBattleUnit(&tmpBattleUnit, unit);
-
-            tmpBattleUnit.unit.exp += 100;
-            CheckBattleUnitLevelUp(&tmpBattleUnit);
-
-            UpdateUnitFromBattle(unit, &tmpBattleUnit);
-        }
-    }
+	if (levelsLeft > 0) {
+		while (levelsLeft > 0) {
+			InitBattleUnit(&tmpBattleUnit, unit);
+			tmpBattleUnit.unit.exp = 100;
+			tmpBattleUnit.expGain = 0;
+			CheckBattleUnitLevelUp(&tmpBattleUnit);
+			UpdateUnitFromBattle(unit, &tmpBattleUnit);
+			unit->level++;
+			--levelsLeft;
+		}
+	}
 }
 
 void AutoLevelAllUnpromoASMC(ProcPtr proc) { //target level in slot2

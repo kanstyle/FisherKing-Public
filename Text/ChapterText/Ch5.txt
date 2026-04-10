@@ -252,7 +252,7 @@ You just move your arms.[AN]
 Come here.[A][css]
 
 [ml][mvl][ts]
-[mr][mvr][ts][4][4][4]There you go...[ce][css]
+[mr][mvr][ts][4][4][4]There you go...[ce][A][css]
 
 [l][ts][4][4][4][4][4][oe]
 ...Hey, Pillow.[AN]
@@ -476,7 +476,7 @@ Time permitting.[A]
 ## Ch5StormBabyTalk
 
 [mr][LoadStorm]
-[ml][LoadBaby]
+[ml][LoadBaby][ts]
 Father![A]
 
 [mr]
@@ -486,14 +486,14 @@ Baby![4][4] It's you![4] Oh, come here![A][css]
 [r][ce]
 Oh, Daddy's so glad you're safe...[A]
 
-[l][ce][ts]
+[l][ce]
 Of course I'm safe![4] I'm even employed.[A]
 
 [r][oe][ts]
 You're...[4] employed?[A]
 
 [l][oe][ts]
-Mm-hmm.[4] I'm a mercenary now.[N]
+Mm-hmm.[4] I'm a full mercenary now.[N]
 Aren't you proud of me?[A]
 
 [r][ts]
@@ -502,9 +502,9 @@ Does your mother know about this?[AN]
 You didn't write us, did you?[A]
 
 [l]
-I didn't have time![4][4] It was only[N]
+I hadn't the time![4][4] It was only[N]
 a few days ago.[AN][ts]
-C'mon, tell me you're proud of me![A]
+Come on now, tell me you're proud of me![A]
 
 [r][ts]
 Of course I'm proud of you![AN]
@@ -515,7 +515,7 @@ some other kind of docu--[AN]
 
 [l][mvl]
 FATHER![4] We need to fight![4] You're going[N]
-to embarrass me in front of my coworkers![A][css]
+to embarrass me in front of my colleagues![A][css]
 
 [r][mmr]
 [l][mml]
@@ -537,7 +537,70 @@ FATHER![A]
 ## Ch5GaleBabyTalk
 [mr][LoadGale]
 [ml][LoadBaby]
-Placeholder.[A]
+[mr][ts]
+There you are![A]
+
+[ml][mml]
+Mom![A][css]
+
+[mvl]
+[mr][mvr]
+[l][ce]
+[r][ce]
+[4][4][4][4][4]
+[r][oe][mmr]
+[l][oe][mml]
+
+[mr]
+I knew you'd be safe.[N][4][4][4][ce][ts]
+Your father, on the other hand...[A][oe]
+
+[ml][ts]
+Did you notice I found a job?[N][4][4]
+Heeheehee![A]
+
+[mr]
+I did![4] And these are your comrades?[A]
+
+[ml]
+Mm-hmm.[A] I can't say I know[N]
+everyone's names yet, but...[A]
+
+[mr][ts]
+[tmm]...[tmm][A]
+
+[ml]
+What?[A]
+
+[mr]
+Er...[4][4] Hm.[A]
+
+[ml]
+What is it, Mom?[A]
+
+[mr]
+...Come here.[A][css]
+[ml][mvl]
+[mr][mvr]
+
+[r][4][4][4][4][4]
+They don't have you eating...[N]
+wheat gruel or anything, right?[AN]
+You're sleeping in a bed?[A]
+
+[l][mvl]
+Mom![4][4] You can't SAY that![A]
+
+[r]
+I'm sorry![4][4][N]
+It's, just, the food here is--[A]
+
+[l][ce][mml]
+I can't be around you if you talk like[N]
+this![4][4] Or else it'll make ME look bad![A]
+
+[r]
+Okay, okay![4][4] I'll stop![A]
 [X]
 
 ## Ch5GaleHeroTalk
@@ -1045,12 +1108,12 @@ The right side worries me.
 [X]
 
 ## Ch5SkullDeadVisit
-[ml][LoadActive]
-[r][LoadCivBoy]
+[r][LoadActive]
+[ml][LoadCivBoy]
 
-[ml]
+[r]
 ...![A][css]
-[mml]
+[mvr]
 G-Go away![4][4][N]
 Don't come any closer![AN]
 I mean it![A]
@@ -1059,23 +1122,23 @@ I mean it![A]
 Hey![4][4] Have you seen our daddy?[N][4][4]
 I don't see him--[A][css]
 
-[ml][mml]
+[r][mvr]
 Shut up![4][4] I told[N]
 you he'll be back soon![A]
 
 [fr]
 B-but...[A]
 
-[ml]
+[r]
 I-I...[4][4] I'm in charge now![N][4][4]
 You have to do what I say![A]
 
 [fr][mfr]
 Aaah...[4][4][4] [ce][mfr]Waaaahhh...![mfr][4][4][mfr][A]
 
-[ml]
+[r]
 Hey, you![4][4] I told you to leave![N][4][4]
-[ce]This is...[4][4][4] [oe][mml]This is MY house![A]
+[ce]This is...[4][4][4] [oe][mvr]This is MY house![A]
 [X]
 
 ## Ch5SkullDQ

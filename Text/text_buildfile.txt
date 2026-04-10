@@ -147,3 +147,5 @@ a skill when used.[X]
 #include "GameStartMenuText.txt"
 
 #include "skillquotes.txt"
+
+#include "misc_text.txt"
