@@ -2,31 +2,40 @@
 Upstart[X]
 
 ## UpstartMDesc
-Placeholder.[X]
+Hero's male form. Nobody knows how the[N]
+gender-changing magic works, nor its[N]
+origins (not even Hero).[X]
 
 ## UpstartFName
 Upstart[X]
 
 ## UpstartFDesc
-Placeholder.[X]
+Hero's female form. Nobody knows how the[N]
+gender-changing magic works, nor its[N]
+origins (not even Hero).[X]
 
 ## LowVoiceName
 Low-Voice[X]
 
 ## LowVoiceDesc
-Placeholder.[X]
+Born legless, Pillow gets around via[N]
+teleportation. Dragon helps her bathe[N]
+and makes her exercise.[X]
 
 ## HeadsmanName
 Headswoman[X]
 
 ## HeadsmanDesc
-Placeholder.[X]
+Placeholder.[N]
+[X]
 
 ## PriestName
 Priest[X]
 
 ## PriestDesc
-Placeholder.[X]
+Lacking a centralized faith, the[N]
+Highlands clergy welcomes those in[N]
+need, regardless of background.[X]
 
 ## BowArmorName
 Bow Armor[X]
@@ -38,7 +47,8 @@ Placeholder.[X]
 Sky-Rat[X]
 
 ## SkyRatDesc
-Placeholder.[X]
+A derisive term for thieves[N]
+who ride stolen pegasi.[X]
 
 ## BunnyRecruitName
 Recruit[X]
@@ -117,4 +127,46 @@ Placeholder.[X]
 Monolith[X]
 
 ## MonolithClassDesc
+Placeholder.[X]
+
+## LanceCavClassName ^
+Lance Cavalier[X]
+
+## LanceCavClassDesc
+Placeholder.[X]
+
+## SwordCavClassName ^
+Sword Cavalier[X]
+
+## SwordCavClassDesc
+Placeholder.[X]
+
+## BowCavClassName ^
+Bow Cavalier[X]
+
+## BowCavClassDesc
+Placeholder.[X]
+
+## LancePalClassName ^
+Lance Paladin[X]
+
+## LancePalClassDesc
+Placeholder.[X]
+
+## SwordPalClassName ^
+Sword Paladin[X]
+
+## SwordPalClassDesc
+Placeholder.[X]
+
+## BowPalClassName ^
+Bow Paladin[X]
+
+## BowPalClassDesc
+Placeholder.[X]
+
+## AxePalClassName ^
+Axe Paladin[X]
+
+## AxePalClassDesc
 Placeholder.[X]

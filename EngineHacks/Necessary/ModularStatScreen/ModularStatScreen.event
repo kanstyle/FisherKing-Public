@@ -7,6 +7,20 @@
 // Skill System Stat Screen by circleseverywhere with additions by Tequila, and probably more people too
 
 #ifdef _FE8_
+	
+	#define StatBarMaxLength 0x28 //40
+	PUSH
+		ORG $87132
+		BYTE StatBarMaxLength
+		ORG $87142
+		BYTE StatBarMaxLength
+		ORG $870FE
+		BYTE StatBarMaxLength
+		ORG $87102
+		BYTE StatBarMaxLength
+		ORG $87154
+		BYTE StatBarMaxLength
+	POP
 
   #ifndef USE_STRMAG_SPLIT
 	//normal positions

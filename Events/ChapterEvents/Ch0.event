@@ -182,6 +182,7 @@ WaitTeacher:
 	ENDA
 
 BeginningScene:
+	SetFlag(0xB0) //turn on casual mode
 	CALL StartEventRoutine
 	FadeOutMusic
 	
@@ -208,7 +209,7 @@ BeginningScene:
 	Text(Ch0OldPrinceBirthday)
 	RemoveBackgroundSlow
 	MusicChange(PMDSteamCaveID)
-	SetBackground(0x35)
+	SetBackground(BlackBG)
 	CenterTextbox(Ch0LowlandLore)
 	RemoveBackgroundSlow
 	
@@ -305,6 +306,7 @@ TutorialEvent:
 	FlagIsSet(Stage2SoldierBattled,TurnOffCompletionFlagAndEndLabel)
 	FlagNotSet(Stage3BeganFlag,Stage3StartLabel)
 		SET_ACTIVE 0
+		SetUnitFullHP(YoungPrince)
 		UNCR(YoungPrince,0x2)
 		UNCR(YoungTeacher,0x2)
 		STAL 45
@@ -464,11 +466,11 @@ EndMenu := 0x9002
 
 GameStartMenuEvent:
 	PreventSkipping
-	CLEAN
-	SetBackground(0x35)
 	FADU 16
+GOTO 0x1001 //skip over initial CLEAN so graphical glitch doesn't appear when the menu loads
 LABEL Start
 	CLEAN
+LABEL 0x1001
 	CallMenu(GameStartMenu)
 	BEQ 0x0 0xC 0
 	SVAL 8 1

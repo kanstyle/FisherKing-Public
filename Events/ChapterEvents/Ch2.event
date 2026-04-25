@@ -96,7 +96,7 @@ EnemyUnits:
 	
 	//t2 pp
 	UNIT Lowlander Fighter 0x40 Level(4,Enemy,True)     [6,12] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
-	UNIT Pigeon SkyRat 0x40 Level(4,Enemy,False)     [12,3] 0b 0x0 0x0 0x0 [SteelLance, IronLance, Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT Pigeon SkyRat 0x40 Level(4,Enemy,False)     [12,2] 0b 0x0 0x0 0x0 [SteelLance, IronLance, Vulnerary] [0x0,0x0,0x0,0x0]
 	
 	//t2 ep
 	UNIT Beast SwordBone 0x40 Level(4,Enemy,True)     [7,10] 0b 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
@@ -130,8 +130,8 @@ EnemyUnits:
 	UNIT
 	
 ReinforcementUnits: //t5
-	UNIT Lowlander AxeCav 0x40 Level(4,Enemy,True)     [19,4] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
-	UNIT Beast Tarvos 0x40 Level(4,Enemy,True)     [19,5] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
+	UNIT Lowlander AxeCav 0x40 Level(4,Enemy,True)     [19,3] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
+	UNIT Beast Tarvos 0x40 Level(4,Enemy,True)     [19,4] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
 	UNIT
 
 /*EnemyUnits:
@@ -479,20 +479,20 @@ Ch2TentEvent:
 
 Ch2VillageEvent:
 	FADI 16
-	SetBackground(TentBG)
+	SetBackground(DarkHouseBG)
 	CenterTextbox(Ch2NorthHouseIntro)
 	RemoveBackgroundFast
 	SetBackground(BlackBG)
 	CallMenu(Ch2VillageMenu)
 		BNE 0x1 0xC 0x0
-		SetBackground(TentBG)
+		SetBackground(DarkHouseBG)
 		CenterTextbox(Ch2NorthHouseGroupText)
 		RemoveBackground
 		FADU 16
 		GiveItem(CrystalKnife,0xFFFF)
 		GOTO 0x2
 	LABEL 0x1
-		SetBackground(TentBG)
+		SetBackground(DarkHouseBG)
 		CenterTextbox(Ch2NorthHouseSingleText)
 		RemoveBackground
 		FADU 16

@@ -81,7 +81,7 @@ void ReviveAndSetPetrify(ProcPtr proc) {
 		u8 unitID = gEventSlots[7];
 		struct Unit* curUnit = GetUnitFromCharId(unitID);
 		
-		curUnit->state &= ~(US_HIDDEN|US_DEAD);
+		curUnit->state &= ~(US_HIDDEN|US_DEAD|US_NOT_DEPLOYED);
 		curUnit->curHP = 1;
 		curUnit->state |= (US_HAS_MOVED);
 		curUnit->statusIndex = 0xB;

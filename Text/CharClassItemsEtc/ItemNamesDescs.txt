@@ -105,8 +105,10 @@ Fixed Mt plus 25% of target's max HP.[N]Hits Res. Cannot crit.[X]
 
 
 ## PainName ^
-
 Pain[X]
+
+## PainDesc
+Low magic overpowers high magic.[X]
 
 
 ## DeceptionName ^
@@ -190,11 +192,12 @@ Don't even think about it.[X]
 
 Butterfly[X]
 
-## ButterflyDesc ^
+## ButterflyDesc
 
-Give this to Teacher.[X]
+Allows Teacher to gain a level[N]
+and refreshes his turn.[X]
 
-## ButterflyUseDesc ^
+## ButterflyUseDesc
 
 Someone's precious[N]
 memory.[X]
@@ -203,7 +206,7 @@ memory.[X]
 
 Crystal Knife[X]
 
-## CrystalKnifeDesc ^
+## CrystalKnifeDesc
 
 Grants 6x WExp.[X]
 
@@ -215,10 +218,9 @@ Skewer[X]
 
 +1 Attack per tile moved.[X]
 
-## RestoreDesc ^
+## RestoreDesc
 
-Revives allies and cures[N]
-status ailments.[X]
+Revives and cures ailments.[X]
 
 ## LightName ^
 
@@ -1171,7 +1173,7 @@ Skill Scroll[X]
 [X]
 
 ## AblatioPhotonName ^
-Ablatio Photonica[X]
+Ablatio Photon[X]
 
 ## AblatioPhotonDesc
 Reaver. Ignores Res.
@@ -1239,3 +1241,9 @@ Angel[X]
 
 ## AngelDesc
 Revives and heals ailments from afar.[X]
+
+## KeyName ^
+Key[X]
+
+## KeyDesc
+Opens doors and chests.[X]

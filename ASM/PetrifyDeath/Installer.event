@@ -19,14 +19,18 @@ BleedoutTurnEvent:
 LABEL 0x1
 ASMC GetDyingPetrifiedUnit|1 //check if any units are eligible to die of bleedout
 BEQ 0x0 0xC 0x0 //if no one is eligible, go to end
-	CALL KillEvent
-	GOTO 0x1 //if someone is dying, loop again
+	CALL KillEvent //if someone is dying, kill them and then loop again
+	GOTO 0x1 
 LABEL 0x0
 NoFade
 ENDA
 
 ALIGN 4
 KillEvent:
+SVAL 0x1 0xFFFF
+SVAL 0x2 0x1
+ASMC AutoLevelDownASMC|1
+
 SVAL 0x1 0xFFFF
 SVAL 0x6 0x255
 ASMC ASMC_SelfDamageLikeBomb|1

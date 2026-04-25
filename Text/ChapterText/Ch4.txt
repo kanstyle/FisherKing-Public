@@ -812,7 +812,7 @@ You chose a fine time to lose your[N]
 marbles![4] How much wine did you drink?[A]
 
 [ml][mml][oe]
-I didn't lose a damn thing![N][4]
+Just listen to me![N][4]
 I'm your boss, got it?[4] My word is your--[A]
 
 [mr][ce]

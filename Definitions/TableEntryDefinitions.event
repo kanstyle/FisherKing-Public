@@ -149,6 +149,7 @@
 #define Jabberwock 0x8D
 
 #define Monolith 0x8E
+#define Ch5MageGeneral 0x8F
 
 #define LowMage Shaman
 #define HighMage Mage
@@ -209,6 +210,7 @@
 #define Torture 0x49
 #define Death 0x4a
 
+#define Key 0x6b 
 #define ThousandGold 0x9f
 
 #define Bomb 0xC1

@@ -51,7 +51,7 @@ with certain items or story events.[X]
 
 ## SD_ExtendedDestruction
 Extended Destruction!!!: Start with[N]
-+2 Move and +5 Atk/Spd for 8 turns.[N]
++2 Move and +5 Atk/Spd/Lck for 8 turns.[N]
 Lose buff if healed. Can reactivate.[X]
 
 ## SD_ItFindsYou

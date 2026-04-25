@@ -36,7 +36,7 @@
 #define Storybook8 0x42
 #define Storybook9 0x43
 
-#define DarkHouse 0x44
+#define DarkHouseBG 0x44
 #define SongbirdHug 0x45
 #define LowlandForest 0x46
 #define TentBG 0x47
@@ -48,3 +48,4 @@
 #define Chess2 0x4d
 #define DaybreakEmpty 0x4e
 #define BlackBG 0x4f
+#define LowMageVillageBG 0x50

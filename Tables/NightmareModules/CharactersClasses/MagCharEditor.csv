@@ -2,7 +2,7 @@ INLINE MagCharTable,Base Magic,Magic Growth
 None,0,0
 0x01 Hero,6,40
 0x02 Teacher,2,10
-0x03 Pillow,10,65
+0x03 Pillow,13,65
 0x04 Dragon,1,10
 0x05 Brother,3,40
 0x06 Hunter,2,25

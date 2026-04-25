@@ -202,21 +202,19 @@ creatures hide in it.[A]
 [mr]
 Yes, they say these hills crawl with[n]
 all manner of fearsome things.[AN]
-Fear, fear...[AN]
 Never fear, my friend.[....] My promising[n]
 successor will repel whatever comes.[A]
 
 [ml]
-Indeed.[.....] He defeated my brother on[n]
-the chessboard when he was eight.[AN]
-Your son is just as brilliant, but...[AN]
+Oh, I have faith.[4][4] You know I do.[N][4][4][4]
+[ce]That said...[A]
 
 [mr]
 But what?[an]
 
 [ml]
-...They're young, sire.[....] Very young.[....][n]
-Is your son prepared, do you think?[AN]
+[oe]...He's young, sire.[....] Very young.[....][n]
+Is he prepared, do you think?[AN]
 
 [mr]
 And so was I.[....] So were you.[AN]
@@ -224,7 +222,7 @@ We live in a harsh land, full of children[n]
 raised by children.[AN]
 
 [ml]
-A morbid truth.[AN]
+Morbidly true.[AN]
 ...We're still young inside, too, aren't we?[AN]
 
 [mr]
@@ -380,7 +378,9 @@ In this game, when player units reach[N]
 Instead, they enter a [Red]Dying[Red] state and must[N]
 be healed with a [Red]Restore[Red] staff on the[N]
 next turn.[AN]
-Otherwise, they will die permanently.[A][X]
+If not healed, they will be removed from the[N]
+map and [Red]lose 1 level's worth of stats[Red].[N]
+[Red]There is no permadeath.[Red][A][X]
 
 ## Ch0OldPrinceAppears
 

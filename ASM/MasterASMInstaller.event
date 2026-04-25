@@ -49,6 +49,8 @@
 #include "CantCrit/Installer.event"
 #include "NoRescueStationaryUnits/Installer.event"
 #include "Individual animation_ea_2/Installer.event" //credit to 7743
+#include "AircaliburEckesachsBindingBladeFix.event" //credit to ditto
+//#include "SupportReworkRework/SupportRework.event"
 //#include "VantageMinus/Installer.event"
 //#include "BiggestFan/Installer.event"
 //#include "Helpers.event"
@@ -65,3 +67,14 @@
 //#include "BaseConversations/BaseConvos.event" //credit to snek
 
 #include "FE8U_256ColCG-4/CGCol.event" //credit to Huichelaar
+
+PUSH //"a/an" fix by 7743
+ORG $1619C
+BYTE 0x04 0xE1
+POP
+
+/*// Lockpicks usable by any class
+PUSH
+ORG CanUseLockpicks-1
+SHORT $2008 $4770
+POP*/

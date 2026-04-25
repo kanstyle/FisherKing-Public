@@ -32,6 +32,7 @@
   #define RMenu(up,down,left,right,xcoord,ycoord,TID,Getter) "POIN up down left right; BYTE xcoord ycoord; SHORT TID; POIN 0 Getter|1"
   #define RMenu(up,down,left,right,xcoord,ycoord,SlotID,Looper,Getter) "POIN up down left right; BYTE xcoord ycoord; SHORT SlotID; POIN Looper|1 Getter|1"
   #define RMenu_Cond(up,down,left,right,xcoord,ycoord,TID,Conditional) "POIN up down left right; BYTE xcoord ycoord; SHORT TID; POIN Conditional|1 0"
+  #define CapRMenu(up,down,left,right,xcoord,ycoord,SlotID) "POIN up down left right; BYTE xcoord ycoord; SHORT SlotID; POIN StatCapLooper|1 StatCapGetter|1"
 
   #define NameDescGetter 0x88bd5
   #define ClassDescGetter 0x88c01

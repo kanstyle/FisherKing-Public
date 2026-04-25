@@ -23,9 +23,7 @@ void TryAddUnitToRescueTargetList(struct Unit* unit) {
         return;
     }
 	
-	gEventSlots[7] = unit->movBonus;
 	if (unit->movBonus == 0xFFFFFFFA) { //if unit has "--" move from being stationary
-		gEventSlots[8] = 1;
 		return;
 	}
 

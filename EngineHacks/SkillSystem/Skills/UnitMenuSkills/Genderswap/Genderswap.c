@@ -93,30 +93,32 @@ int GenderswapAction(struct Proc* proc) {
 }
 
 void ForceHeroMale(struct Proc* proc) {
-	if (gActiveUnit->pClassData->number == UpstartF_Link) {		
-		int swordRank = gActiveUnit->ranks[0];
-		int tomeRank = gActiveUnit->ranks[5];
+	struct Unit* unit = GetUnitFromCharId(0x1); // hero unitID
+	if (unit->pClassData->number == UpstartF_Link) {		
+		int swordRank = unit->ranks[0];
+		int tomeRank = unit->ranks[5];
 		
-		gActiveUnit->ranks[3] = swordRank; //sword turns into bow
-		gActiveUnit->ranks[4] = tomeRank; //tome turns into staff
-		gActiveUnit->ranks[0] = 0; //clear sword rank
-		gActiveUnit->ranks[5] = 0; //clear tome rank
+		unit->ranks[3] = swordRank; //sword turns into bow
+		unit->ranks[4] = tomeRank; //tome turns into staff
+		unit->ranks[0] = 0; //clear sword rank
+		unit->ranks[5] = 0; //clear tome rank
 		
-		gActiveUnit->pClassData = GetClassData(UpstartM_Link);
+		unit->pClassData = GetClassData(UpstartM_Link);
 	}
 }
 
 void ForceHeroFemale(struct Proc* proc) {
-	if (gActiveUnit->pClassData->number == UpstartM_Link) {		
-		int bowRank = gActiveUnit->ranks[3];
-		int staffRank = gActiveUnit->ranks[4];
+	struct Unit* unit = GetUnitFromCharId(0x1); // hero unitID
+	if (unit->pClassData->number == UpstartM_Link) {		
+		int bowRank = unit->ranks[3];
+		int staffRank = unit->ranks[4];
 		
-		gActiveUnit->ranks[0] = bowRank; //bow turns into sword
-		gActiveUnit->ranks[5] = staffRank; //staff turns into tome
-		gActiveUnit->ranks[3] = 0; //clear bow rank
-		gActiveUnit->ranks[4] = 0; //clear staff rank
+		unit->ranks[0] = bowRank; //bow turns into sword
+		unit->ranks[5] = staffRank; //staff turns into tome
+		unit->ranks[3] = 0; //clear bow rank
+		unit->ranks[4] = 0; //clear staff rank
 		
-		gActiveUnit->pClassData = GetClassData(UpstartF_Link);
+		unit->pClassData = GetClassData(UpstartF_Link);
 	}
 }
 

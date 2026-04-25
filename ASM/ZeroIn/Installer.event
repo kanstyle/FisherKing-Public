@@ -64,7 +64,7 @@ ENDA
 
 ALIGN 4
 ZeroInAttackType_Link:
-BYTE 15 // ZeroIn attack type; change if conflict
+BYTE 16 // ZeroIn attack type; must be > 15 (max real combat art ID) so doubling restriction doesn't fire
 
 ALIGN 4
 UnitActionMenu_Attack:

@@ -3,16 +3,17 @@
  <tileset firstgid="1" name="MenuTiles" tilewidth="8" tileheight="8" tilecount="128" columns="16">
   <image source="../../Image/Png/MenuTiles.png" width="128" height="64"/>
  </tileset>
-<layer id="1" name="Tile Layer 1" width="8" height="8">
+ <tileset firstgid="129" source="../../Image/Png/MenuTiles.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="8" height="8">
   <data encoding="csv">
-130,131,131,131,131,131,131,134,
-140,142,142,142,142,142,142,144,
-140,142,142,142,142,142,142,144,
-140,142,142,142,142,142,142,144,
-140,142,142,142,142,142,142,144,
-140,142,142,142,142,142,142,144,
-140,142,142,142,142,142,142,144,
-155,156,156,156,156,156,156,160
+2,50,51,52,3,3,3,6,
+7,9,9,9,9,9,9,11,
+7,9,9,9,9,9,9,11,
+7,9,9,9,9,9,9,11,
+7,9,9,9,9,9,9,11,
+7,9,9,9,9,9,9,11,
+7,9,9,9,9,9,9,11,
+27,28,28,28,28,28,28,32
 </data>
  </layer>
 </map>

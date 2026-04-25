@@ -11,6 +11,7 @@
 #include "Menu Tiles/Installer.event"
 #include "Spell Animations/SpellAnimationInstaller.event"
 #include "BattleMenus/TSAs/Installer.event"
+#include "TitleMenu/TitleMenu.event"
 //#include "Map Sprite Palettes/MapSpritePaletteInstaller.event"
 
 PUSH

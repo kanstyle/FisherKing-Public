@@ -32,6 +32,8 @@ ldr r0,=#0x0203F101
 ldrb r0,[r0]
 cmp r0,#0
 beq RetNoChange
+cmp r0,#16     @ real combat art IDs are 0-15; >=16 means a non-art skill (e.g. ZeroIn), allow doubling
+bge RetNoChange
 
 mov r0,#0
 b GoBack

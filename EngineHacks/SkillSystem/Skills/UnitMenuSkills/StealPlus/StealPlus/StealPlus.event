@@ -14,6 +14,11 @@ SHORT 0x0861 0x46C0 0x46C0 //lsr r1,r4,#1; nop; nop
 ORG $2435E
 SHORT 0x004C 0x341E 0x1824 0x8824 0x46C0 //lsl r4,r1,#1; add r4,#0x1E; add r4,r0; ldrh r4,[r4]; nop
 
+//Remove Speed requirement from stealing (NOP the BLT in AddAsTarget_IfCanStealFrom)
+//Vanilla code at $25BBC: CMP r1,r0 (active_unit->spd vs target->spd); BLT return_false
+ORG $25BBE
+SHORT 0x46C0 //NOP (was: blt RetFalse - the speed check gate)
+
 //Usability check
 ORG $25BCC
 SHORT 0x1C28 0x1C31 //mov r0,r5; mov r1,r6

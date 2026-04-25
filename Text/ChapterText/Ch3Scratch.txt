@@ -1,0 +1,63 @@
+## Ch3StartEllipsis
+[mr][LoadTeacher]
+[tmm]...[tmm][A][X]
+
+## Ch3StartFlashback
+[mr][LoadYoungTeacher]
+[ml][LoadOldPrince]
+[mr]
+You're [oq]but one of the people",[N]
+you say?[AN]
+And that's why you don't want a[N]
+fancy funeral?[A]
+
+[ml]
+Well, not that I think it's a[N]
+realistic request, per se[tmm]...[tmm][A]
+
+[mr]
+If you're trying to convince me of[N]
+your humility, it won't work.[AN]
+I've seen when you win at cards.[A]
+
+[ml][ts]
+Ha![4] No, no![4] Even I'm not[N]
+so delusional.[AN]
+No, this is a selfish request,[N]
+through and through.[A]
+
+[mr][ts]
+And how's that?[A]
+
+[ml]
+Well![4] It's said that in death,[N]
+the spirit splits in two.[AN]
+One half goes to the land of the dead,[N]
+to rest deep beneath the earth.[AN]
+And the other is given to the daemons,[AN]
+who puppeteer it through the hearts and[N]
+minds of those who knew you.[AN]
+Thus, by their play, shaping your legacy.[A]
+
+[mr]
+The work of daemons, hmm?[A]
+
+[ml]
+And I thought -- wouldn't it be lonely?[AN]
+Your true self, watching from afar, while[N]
+the daemons parade your skin about?[AN]
+And none of the living can tell the[N]
+difference?[AN]
+Why, I'd be jealous of my other self.[AN]
+[ce]Especially if he had large muscles,[N]
+and could hold his liquor well[tmm]...[tmm][A]
+
+[ml][ts]
+Ah, not to worry, my prince.[AN]
+If such rumors spread, I'd set[N]
+them straight immediately.[A]
+
+[mr][oe]
+Ha![4][4] On second thought, some[N]
+embellishment may be good[tmm]...[tmm][A]
+[X]

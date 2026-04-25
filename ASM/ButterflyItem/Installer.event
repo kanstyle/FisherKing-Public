@@ -14,7 +14,6 @@ SVAL 1 0x1
 SADD 0xC 0x1 0xC
 SVAL 4 0x03; SVAL 1 Teacher; SVAL 3 Level; SADD 5 0xC 0; ASMC SetUnitStatus //Increase level by 1
 
-
 /*
 GetUnitStatus(Teacher, Level)
 SVAL 1 0x1 //put 1 in slot 1
@@ -23,5 +22,11 @@ SVAL 1 Teacher //put Teacher's ID in slot 1
 CALL AutoLevelASMC|1
 */
 
+NoFade
+ENDA
+
+ALIGN 4
+ButterflyTestEvent:
+TUTORIALTEXTBOXSTART; TEXTSHOW DebugPauseText; TEXTEND; REMA
 NoFade
 ENDA

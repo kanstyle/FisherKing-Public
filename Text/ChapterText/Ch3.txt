@@ -230,73 +230,9 @@ Shall we take them away, milord?[A]
 Please do.[A]
 [X]
 
-## Ch3StartEllipsis
-[mr][LoadTeacher]
-[tmm]...[tmm][A][X]
-
-## Ch3StartFlashback
-[mr][LoadYoungTeacher]
-[ml][LoadOldPrince]
-[mr]
-You're [oq]but one of the people",[N]
-you say?[AN]
-And that's why you don't want a[N]
-fancy funeral?[A]
-
-[ml]
-Well, not that I think it's a[N]
-realistic request, per se[tmm]...[tmm][A]
-
-[mr]
-If you're trying to convince me of[N]
-your humility, it won't work.[AN]
-I've seen when you win at cards.[A]
-
-[ml][ts]
-Ha![4] No, no![4] Even I'm not[N]
-so delusional.[AN]
-No, this is a selfish request,[N]
-through and through.[A]
-
-[mr][ts]
-And how's that?[A]
-
-[ml]
-Well![4] It's said that in death,[N]
-the spirit splits in two.[AN]
-One half goes to the land of the dead,[N]
-to rest deep beneath the earth.[AN]
-And the other is given to the daemons,[AN]
-who puppeteer it through the hearts and[N]
-minds of those who knew you.[AN]
-Thus, by their play, shaping your legacy.[A]
-
-[mr]
-The work of daemons, hmm?[A]
-
-[ml]
-And I thought -- wouldn't it be lonely?[AN]
-Your true self, watching from afar, while[N]
-the daemons parade your skin about?[AN]
-And none of the living can tell the[N]
-difference?[AN]
-Why, I'd be jealous of my other self.[AN]
-[ce]Especially if he had large muscles,[N]
-and could hold his liquor well[tmm]...[tmm][A]
-
-[ml][ts]
-Ah, not to worry, my prince.[AN]
-If such rumors spread, I'd set[N]
-them straight immediately.[A]
-
-[mr][oe]
-Ha![4][4] On second thought, some[N]
-embellishment may be good[tmm]...[tmm][A]
-[X]
-
 ## Ch3StartManorOutside2
 [fr][LoadTeacher]
-[r][LoadHeroM]
+[r][LoadForceHeroM]
 [ml][LoadBaron][ts]
 Now, then, Hero.[N][4][4]
 You look eager for another job.[A]
@@ -311,7 +247,7 @@ Come.[A]
 
 ## Ch3StartManorInside
 [r][LoadTeacher]
-[fr][LoadHeroM]
+[fr][LoadForceHeroM]
 [ml][LoadBaron]
 So.[4] Are either of you abreast[N]
 of the recent news?[A]
@@ -872,6 +808,14 @@ What's this?[4] Wise has[N]
 conceded![4] He forfeits![A]
 [X]
 
+## Ch3WiseDefeated
+
+[mr][LoadSkull]
+And down they go![4][4] Wise is beaten![AN]
+Ladies and gentlemen, your new champions[N]
+of the arena![A]
+[X]
+
 ## Ch3Wave4Intro2
 
 [mr][LoadWise]
@@ -1295,7 +1239,7 @@ not like I know what to do in a dress shop.[A][oe]
 Well, plenty of women have the same problem.[N][4][4][4]
 [ts]...Such as myself.[4][ce] Hahaha...[A][oe]
 
-[l][ts]
+[l]
 It'd be nice to get our clothes washed and[N]
 go to the baths, now that you mention it.[AN]
 Wanna come along, Teacher?[A]
@@ -1316,7 +1260,7 @@ physique to destroy your self-confidence.[A]
 [fl][ts]
 Ha.[A]
 
-[fr][tmm]
+[fr][tmm][ts]
 (Is that what men do in the baths...?)[tmm][A]
 [X]
 
@@ -1542,7 +1486,7 @@ Help the man in front of you.
 [X]
 
 ## Ch3WiseNoChoice
-Keep the final round winnings. (1000G)
+Keep them. (1000G)
 [X]
 
 ## Ch3WiseNoDesc
@@ -1576,13 +1520,13 @@ I'll make myself scarce.[A][css][clear][....][....]
 What a pissant.[4][N]
 Didn't even thank us.[A]
 
-[fr]
+[r]
 [tmm]...[tmm][A]
 
 [fl]
 You okay, Pillow?[A]
 
-[fr]
+[r]
 ...He's first generation.[4] They're just...[4][N]
 like that, sometimes.[A]
 
@@ -1621,20 +1565,20 @@ What the hell was wrong with him?[A]
 [l]
 Some people just don't wanna be helped.[A]
 
-[fr]
+[r]
 [tmm]...[tmm][A]
 
 [fl]
 You okay, Pillow?[A]
 
-[fr]
+[r]
 ...He's first generation.[4] They're not stupid.[4][N]
 It's just...[4][4] complicated.[A]
 
 [fl]
 What do you mean?[A]
 
-[fr][ce]
+[r][ce]
 I'll tell you some other time.[A]
 [X]
 
@@ -1736,8 +1680,9 @@ to make this quick.[A]
 [clear]
 
 [mr][LoadBunny]
-Why's that? Don't you low mages[N]
-live for the thrill of battle?[A]
+Why's that?[AN]
+Don't you low mages live[N]
+for the thrill of battle?[A]
 [clear]
 
 [ml][LoadWise]

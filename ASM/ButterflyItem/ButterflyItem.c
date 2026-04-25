@@ -3,6 +3,7 @@
  
  // skill sys 
 extern u16* ButterflyItemEvent;
+extern u16* ButterflyTestEvent;
 
 void ExecButterflyWrapper() {
     asm("     mov r0,r6; \
@@ -52,10 +53,8 @@ void ButterflyItemEffect(ProcPtr proc) {
 	}
 	
 	CallEvent(&ButterflyItemEvent, 1);
-	gActiveUnit->state &= ~0x40; //unset has_moved
 	gActiveUnit->state &= ~0x2; //unset unselectable
-	gActiveUnit->state |= 0x400; //set galeforce bit
-	PlaySoundEffect(0x127);
+	gActiveUnit->supports[5] = 0x1; //set butterfly galeforce flag
 	
 	BattleApplyItemEffect(proc);
     //BeginBattleAnimations();
@@ -68,4 +67,19 @@ s8 ButterflyItemUsability(struct Unit* unit)
 		return TRUE;
 	}
     return FALSE;
+}
+
+void ButterflyGaleforce(struct Proc* proc) {
+	//gEventSlots[8] = 0x222;
+	//CallEvent(&ButterflyTestEvent, 1);
+	if ((gActiveUnit->supports[5] == 0x1) && (gActiveUnit->state & 0x2) && (gActiveUnit->pCharacterData->number == 0x02)) { //if is teacher, support 6 is 1, and finished cantoing
+		//gEventSlots[8] = 0x333;
+		//CallEvent(&ButterflyTestEvent, 1);
+		gActiveUnit->state &= ~0x40; //unset has_moved
+		gActiveUnit->state &= ~0x2; //unset unselectable
+		gActiveUnit->supports[5] = 0; //unset butterfly galeforce flag
+		//CallEvent(&ButterflyTestEvent, 1);
+		PlaySoundEffect(0x127);
+	}
+	return;
 }

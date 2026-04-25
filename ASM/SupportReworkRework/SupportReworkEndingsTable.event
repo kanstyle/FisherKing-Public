@@ -1,0 +1,40 @@
+
+#ifndef SUPPORT_REWORK_ENDINGS_TABLE
+	#define SUPPORT_REWORK_ENDINGS_TABLE
+	
+    // Use me for the "type" field.
+	#define ENDING_SOLO 1
+    #define ENDING_PAIRED 2
+	
+    /* The parameters are...
+         type: Whether the ending is solo or paired.
+         pidA: The character ID of the solo ending or one of the characters in a paired ending.
+         pidB: The character ID of the other character in a paired ending.
+         minLevel: Minimum support-rework-rework-defined support level for the conversation to be viewable for paired endings.
+         textID: Text ID to show for this ending.
+         flag: Optional event ID that needs to be enabled for the conversation to be veiwable (default = 0 meaning behavior disabled).
+         usability: Optional usability function (accepts pointer to the entry) that overrides the support level check (default = NULL meaning no extra usability).
+    */
+	
+	// I'm used internally by the macros.
+	#define SRREnding(type,charID1,charID2,minLevel,textID,flag,usability) "BYTE type charID1 charID2 minLevel ; WORD textID flag ; POIN usability"
+	
+	// Use me for a solo ending.
+    #define SoloEnding(charID,textID,flag,usability) "SRREnding(ENDING_SOLO,charID,0,0,textID,flag,usability)"
+    #define SoloEnding(charID,textID,flag) "SRREnding(ENDING_SOLO,charID,0,0,textID,flag,0)"
+	#define SoloEnding(charID,textID) "SRREnding(ENDING_SOLO,charID,0,0,textID,0,0)"
+	// Use me for a paired ending.
+	#define PairedEnding(charID1,charID2,minLevel,textID,flag,usability) "SRREnding(ENDING_PAIRED,charID1,charID2,minLevel,textID,flag,usability)"
+	#define PairedEnding(charID1,charID2,minLevel,textID,flag) "SRREnding(ENDING_PAIRED,charID1,charID2,minLevel,textID,0,0)"
+	#define PairedEnding(charID1,charID2,textID,flag) "SRREnding(ENDING_PAIRED,charID1,charID2,ASupport,textID,flag,0)"
+	#define PairedEnding(charID1,charID2,textID) "SRREnding(ENDING_PAIRED,charID1,charID2,ASupport,textID,0,0)"
+	
+
+	// I'm checked first-to-last for a valid character ending. No character is viewed twice.
+	// An easy way to set me up is to put paired endings first for priority then all solo endings last.
+	// The "flag" and "usability" entries let you do fancy things!
+	ALIGN 4
+	gCharacterEndings:
+	WORD 0 0 0 0 // Terminator.
+
+#endif // SUPPORT_REWORK_ENDINGS_TABLE

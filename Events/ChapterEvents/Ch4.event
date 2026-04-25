@@ -248,7 +248,7 @@ BallroomAudienceUnits:
 BallroomMonsterUnits:
 	UNIT Beast LanceBone 0x40 Level(6,Enemy,True)     [3,0] 0b 0x0 0x1 REDA3R2 [IronLance] AttackInRangeAI
 	UNIT Beast Revenant 0x40 Level(6,Enemy,True)     [4,0] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
-	UNIT Lowlander Mercenary 0x40 Level(6,Enemy,True)     [16,6] 0b 0x0 0x1 REDA7R6 [KillingEdge] AttackInRangeAI
+	UNIT Lowlander Mercenary 0x40 Level(6,Enemy,True)     [16,6] 0b 0x0 0x1 REDA7R7 [KillingEdge] AttackInRangeAI
 	UNIT Beast MogallClass 0x40 Level(6,Enemy,True)     [16,8] 0b 0x0 0x1 REDA9R8 [EvilEye] AttackInRangeAI
 	UNIT Lowlander AxeCav 0x40 Level(6,Enemy,True)     [16,7] 0b 0x0 0x1 REDA11R7 [RottenClaw] AttackInRangeAI
 	UNIT
@@ -305,6 +305,7 @@ Traps2:
 
 BeginningScene:
 	CALL StartEventRoutine
+	ASMC ForceHeroMale|1
 	
 	LOMA BaronManorEntranceNightCh
 	MUSC Nighttime

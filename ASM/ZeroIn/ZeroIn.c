@@ -90,10 +90,8 @@ void ZeroInPostBattleEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB
 void ZeroInPreBattleEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB) {
 	int weaponTypeAdj; //increase weapon type values by 1 so that having 0 in support[5] doesn't give you WTA vs swords
 	if (SkillTester(bunitA, ZeroInID_Link) != 0) {
-		gEventSlots[8] = 91;
 		weaponTypeAdj = bunitB->weaponType + 0x1;
 		if (weaponTypeAdj == bunitA->unit.supports[5]) {
-			gEventSlots[8] = 92;
 			bunitA->wTriangleHitBonus = 20;
 			bunitA->wTriangleDmgBonus = 2;
 			bunitB->wTriangleHitBonus = -20;
@@ -102,9 +100,7 @@ void ZeroInPreBattleEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB)
 	}
 	if (SkillTester(bunitB, ZeroInID_Link) != 0) {
 		weaponTypeAdj = bunitA->weaponType + 0x1;
-		gEventSlots[8] = 93;
 		if (weaponTypeAdj == bunitB->unit.supports[5]) {
-			gEventSlots[8] = 94;
 			bunitB->wTriangleHitBonus = 20;
 			bunitB->wTriangleDmgBonus = 2;
 			bunitA->wTriangleHitBonus = -20;

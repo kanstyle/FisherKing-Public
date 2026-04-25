@@ -16,6 +16,16 @@ ORG $7eb8c
 POIN LevelUpScreenTSA
 ORG 0x7EB94
 POIN LevelUpScreenPal
+
+ORG $9AD9F8 //shop gold box
+#incbin "FisherKingPrepsExtra3.png.dmp"
+ORG $5B6BB4
+#incbin "FisherKingPrepsExtra3.png.pal.dmp"
+
+ORG $A1D7DC //preps item screen gray box where the options pop up
+#incext Png2Dmp --lz77 "PrepsItemsBox.png"
+ORG $5B6C14
+#incext Png2Dmp --palette-only "PrepsItemsBox.png"
 POP
 
 /*

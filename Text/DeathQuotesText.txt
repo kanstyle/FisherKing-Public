@@ -50,7 +50,7 @@ Placeholder.[A][X]
 ## Ch3WiseDQ
 
 [mr][LoadWise]
-Heh.[4] Pathetic.[4]
+Heh.[4] Pathetic.[4][N]
 So pathetic...[A][X]
 
 ## BabyDQ

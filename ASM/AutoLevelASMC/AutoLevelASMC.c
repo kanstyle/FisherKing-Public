@@ -114,3 +114,35 @@ void AutoLevelAllPromoASMC(ProcPtr proc) { //target level in slot2
         unitID++;
     }    
 }
+
+void AutoLevelDownASMC(ProcPtr proc) { //target unit in slot1, levels to reduce in slot2
+	struct Unit* unit;
+	int levelsToLose = gEventSlots[2];
+	u16 unitID = gEventSlots[1];
+
+	if (unitID == 0xFFFF) {
+		unit = gActiveUnit;
+	} else {
+		unit = GetUnitFromCharId(unitID);
+	}
+
+	int targetLevel = unit->level - levelsToLose;
+	if (targetLevel < 1) {
+		targetLevel = 1;
+	}
+
+	short levelsLeft = abs(targetLevel - unit->level);
+
+	s8* unitMag = (s8*)((u8*)unit + 0x3A); // mag lives at unit+0x3A (StrMag split, not in vanilla struct)
+
+	while (levelsLeft > 0) {
+		if (Roll1RN(gGet_Str_Growth(unit)) && unit->pow > 0) unit->pow--;
+		if (gMagGrowth && Roll1RN(gMagGrowth(unit)) && *unitMag > 0) (*unitMag)--;
+		if (Roll1RN(gGet_Skl_Growth(unit)) && unit->skl > 0) unit->skl--;
+		if (Roll1RN(gGet_Spd_Growth(unit)) && unit->spd > 0) unit->spd--;
+		if (Roll1RN(gGet_Def_Growth(unit)) && unit->def > 0) unit->def--;
+		if (Roll1RN(gGet_Res_Growth(unit)) && unit->res > 0) unit->res--;
+		if (Roll1RN(gGet_Luk_Growth(unit)) && unit->lck > 0) unit->lck--;
+		--levelsLeft;
+	}
+}

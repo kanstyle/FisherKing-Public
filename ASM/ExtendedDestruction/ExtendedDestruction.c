@@ -60,6 +60,15 @@ u8 ExtendedDestructionSpdBuff(u8 stat, struct Unit* unit) {
 	return stat;
 }
 
+u8 ExtendedDestructionLuckBuff(u8 stat, struct Unit* unit) {
+	if (unit->statusIndex & SpecialStatusID_Link) {
+		if (SkillTester(unit, ExtendedDestructionID_Link) != 0) {
+			stat += 5;
+		}
+	}
+	return stat;
+}
+
 void ExtendedDestructionAtkBuff(struct BattleUnit* bunitA, struct BattleUnit* bunitB) {
 	if (bunitA->unit.statusIndex & SpecialStatusID_Link) {
 		if (SkillTester(bunitA, ExtendedDestructionID_Link) != 0) {

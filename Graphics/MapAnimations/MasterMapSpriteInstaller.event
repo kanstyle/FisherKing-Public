@@ -68,6 +68,7 @@ MovingMapSprite(LanceBone,NormalAP,LanceBoneMoving)
 
 StandingMapSprite(0x79,0,MageGeneralStanding)
 MovingMapSprite(MageGeneral,NormalAP,MageGeneralMoving)
+MovingMapSprite(Ch5MageGeneral,NormalAP,MageGeneralMoving)
 
 StandingMapSprite(0x7A,0,AxeBoneStanding)
 MovingMapSprite(AxeBone,NormalAP,AxeBoneMoving)

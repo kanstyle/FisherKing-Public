@@ -39,9 +39,18 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0,StormGaleIntro,1)
 	TurnEventPlayer(0x0,Turn1Routine,1)
 	TurnEventPlayer(0x0,Turn1Event,1)
+	TurnEventPlayer(0x0,Turn2Reinforcements,2)
 	TurnEventPlayer(0x0,LargeReinforcementEvent,3)
+	TurnEventPlayer(0x0,Turn2Reinforcements,5)
+	TurnEventPlayer(0x0,SETarvosReinforcements,4)
+	TurnEventPlayer(0x0,SETarvosReinforcements,5)
+	TurnEventPlayer(0x0,WReinforcements,4)
+	TurnEventPlayer(0x0,WReinforcements,5)
 	TurnEventPlayer(0x0,LargeReinforcementEvent2,6)
 	TurnEventPlayer(0x0,NEStairsReinforcementEvent,7)
+	TurnEventPlayer(0x0,Turn2Reinforcements,7)
+	TurnEventPlayer(0x0,WReinforcements,7)
+	TurnEventPlayer(0x0,SETarvosReinforcements,7)
 	TurnEventPlayer(0x0,EndingScene,9)
 	END_MAIN
 
@@ -69,6 +78,8 @@ LocationBasedEvents:
 	Door(12,11)
 	Door(13,11)
 	Chest(Restore,10,12)
+	Armory(Ch3Armory,2,1)
+	Vendor(Ch3Vendor,18,1)
 	END_MAIN
 
 Dunno1:
@@ -101,7 +112,7 @@ Units1:
 	UNIT
 	
 EagleUnits:
-	UNIT Ch5Eagle MageGeneral 0x40 Level(1,NPC,False)     [12,5] 0b 0x0 0x0 0x0 [AblatioPhoton,Elfire,Angel,Elixir] BossAI
+	UNIT Ch5Eagle Ch5MageGeneral 0x40 Level(1,NPC,False)     [12,5] 0b 0x0 0x0 0x0 [AblatioPhoton,Elfire,Angel,Rescue] [0x0,0x0,0x0,0x0]
 	UNIT
 
 EagleGuardUnits:
@@ -120,7 +131,7 @@ NPCUnits:
 EnemyUnits:
 	//upper right
 	UNIT Beast Tarvos 0x40 Level(7,Enemy,True)     [24,3] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
-	UNIT Beast AxeBone 0x40 Level(7,Enemy,True)     [18,4] 0b 0x0 0x0 0x0 [Hammer] AttackInRangeAI
+	UNIT Lowlander Fighter 0x40 Level(7,Enemy,True)     [18,4] 0b 0x0 0x0 0x0 [Hammer] AttackInRangeAI
 	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [19,3] 0b 0x0 0x0 0x0 [RottenClaw] AttackInRangeAI
 	//UNIT Lowlander Fighter 0x40 Level(7,Enemy,True)     [18,1] 0b 0x0 0x0 0x0 [Hammer] AttackInRangeAI
 	
@@ -132,25 +143,24 @@ EnemyUnits:
 	UNIT Lowlander HighMage 0x40 Level(7,Enemy,True)     [19,6] 0b 0x0 0x0 0x0 [Thunder] AttackInRangeAI
 	
 	//bottom right
-	UNIT Lowlander Soldier 0x40 Level(7,Enemy,True)     [20,14] 0b 0x0 0x0 0x0 [SavageGore] AttackInRangeAI
-	UNIT Lowlander Archer 0x40 Level(7,Enemy,True)     [20,15] 0b 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
+	UNIT Lowlander Soldier 0x40 Level(7,Enemy,True)     [19,14] 0b 0x0 0x0 0x0 [SavageGore] AttackInRangeAI
+	UNIT Lowlander Archer 0x40 Level(7,Enemy,True)     [20,17] 0b 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
 	UNIT Lowlander HighMage 0x40 Level(7,Enemy,True)     [23,14] 0b 0x0 0x0 0x0 [Thunder] AttackInRangeAI
 	
 	UNIT Lowlander HighMage 0x40 Level(7,Enemy,True)     [20,13] 0b 0x0 0x0 0x0 [Thunder] ChargeAI
-	UNIT Lowlander Archer 0x40 Level(7,Enemy,True)     [21,13] 0b 0x0 0x0 0x0 [SteelBow] ChargeAI
+	//UNIT Lowlander Archer 0x40 Level(7,Enemy,True)     [21,13] 0b 0x0 0x0 0x0 [SteelBow] ChargeAI
 	UNIT Beast SwordBone 0x40 Level(7,Enemy,True)     [21,14] 0b 0x0 0x0 0x0 [SteelSword] ChargeAI
 	
 	//middle, above river
-	UNIT Beast SwordBone 0x40 Level(7,Enemy,True)     [13,9] 0b 0x0 0x0 0x0 [Armorslayer] AttackInRangeAI
-	UNIT Lowlander LowMage 0x40 Level(7,Enemy,True)     [15,11] 0b 0x0 0x0 0x0 [Pain] AttackInRangeAI
+	UNIT Beast SwordBone 0x40 Level(7,Enemy,True)     [13,9] DropItem 0x0 0x0 0x0 [Armorslayer,Key] AttackInRangeAI
+	UNIT Lowlander LowMage 0x40 Level(7,Enemy,True)     [16,11] 0b 0x0 0x0 0x0 [Pain] AttackInRangeAI
 	//UNIT Beast LanceBone 0x40 Level(7,Enemy,True)     [10,10] 0b 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
 	
 	//middle, below river
-	UNIT Lowlander Fighter 0x40 Level(7,Enemy,True)     [12,14] 0b 0x0 0x0 0x0 [SavageMaul] AttackInRangeAI
+	UNIT Lowlander Fighter 0x40 Level(7,Enemy,True)     [12,14] 0xb 0x0 0x0 0x0 [SavageMaul] AttackInRangeAI
 	
 	//upper left, by armory
-	UNIT Beast LanceBone 0x40 Level(7,Enemy,True)     [4,1] 0b 0x0 0x0 0x0 [HeavySpear] AttackInRangeAI
-	UNIT Lowlander LowMage 0x40 Level(7,Enemy,True)     [3,3] 0b 0x0 0x0 0x0 [Pain] AttackInRangeAI
+	UNIT Lowlander Knight 0x40 Level(7,Enemy,True)     [4,2] 0b 0x0 0x0 0x0 [HeavySpear] AttackInRangeAI
 	UNIT Lowlander LowMage 0x40 Level(7,Enemy,True)     [3,3] 0b 0x0 0x0 0x0 [Pain] AttackInRangeAI
 	UNIT Beast Bael 0x40 Level(7,Enemy,True)     [0,0] 0b 0x0 0x0 0x0 [SharpClaw] ChargeAI
 	UNIT Lowlander HighMage 0x40 Level(7,Enemy,True)     [6,2] 0b 0x0 0x0 0x0 [Elfire] AttackInRangeAI
@@ -158,7 +168,7 @@ EnemyUnits:
 	//upper left, by bunny house
 	UNIT Beast AxeBone 0x40 Level(7,Enemy,True)     [2,9] 0b 0x0 0x0 0x0 [IronAxe] AttackInRangeAI //guarding house
 	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [4,9] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
-	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [4,10] 0b 0x0 0x0 0x0 [Lancereaver] ChargeAI
+	//UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [4,10] 0b 0x0 0x0 0x0 [Lancereaver] ChargeAI
 	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [5,10] 0b 0x0 0x0 0x0 [SavageBlade] ChargeAI
 	
 	//right middle ruined house
@@ -166,11 +176,11 @@ EnemyUnits:
 	
 	//left sub-river
 	UNIT Beast Gargoyle 0x40 Level(7,Enemy,True)     [3,14] 0b 0x0 0x0 0x0 [SteelLance] AttackInRangeAI //covers bunny house
-	UNIT Lowlander AxeCav 0x40 Level(7,Enemy,True)     [4,16] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
+	//UNIT Lowlander AxeCav 0x40 Level(7,Enemy,True)     [4,16] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
 	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [3,16] 0b 0x0 0x0 0x0 [SteelSword] ChargeAI
 	
 	//center sub-river
-	UNIT Beast SwordBone 0x40 Level(7,Enemy,True)     [13,19] 0b 0x0 0x0 0x0 [Armorslayer] ChargeAI
+	UNIT Beast SwordBone 0x40 Level(7,Enemy,True)     [13,19] 0b 0x0 0x0 0x0 [SteelSword] ChargeAI
 	UNIT Lowlander Fighter 0x40 Level(7,Enemy,True)     [14,18] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
 	UNIT
 	
@@ -183,30 +193,53 @@ BunnyHouseReinforcementUnits:
 	UNIT
 	
 SWReinforcementLargeUnits:
-	UNIT Beast SwordBone 0x40 Level(7,Enemy,True)     [3,16] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
-	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [4,17] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
-	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [3,15] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
-	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [5,19] 0b 0x0 0x0 0x0 [SavageBlade] ChargeAI
-	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [2,19] 0b 0x0 0x0 0x0 [SavageBlade] ChargeAI
-	UNIT Beast Tarvos 0x40 Level(7,Enemy,True)     [4,19] 0b 0x0 0x0 0x0 [SavageMaul] ChargeAI
+	UNIT Beast SwordBone 0x40 Level(7,Enemy,True)     [3,19] 0b 0x0 0x1 REDA3R16 [SteelBlade] ChargeAI
+	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [4,19] 0b 0x0 0x1 REDA4R17 [SteelBlade] ChargeAI
+	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [3,19] 0b 0x0 0x1 REDA3R15 [RottenClaw] ChargeAI
+	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [5,19] 0b 0x0 0x1 REDA5R19 [SavageBlade] ChargeAI
+	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [2,19] 0b 0x0 0x1 REDA2R19 [SavageBlade] ChargeAI
+	//UNIT Beast Tarvos 0x40 Level(7,Enemy,True)     [4,19] 0b 0x0 0x1 REDA4R19 [SavageMaul] ChargeAI
 	UNIT
 	
 CenterReinforcementLargeUnits:
-	UNIT Beast SwordBone 0x40 Level(7,Enemy,True)     [13,16] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
-	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [14,17] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
-	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [13,15] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
-	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [15,19] 0b 0x0 0x0 0x0 [SavageBlade] ChargeAI
-	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [12,19] 0b 0x0 0x0 0x0 [SavageBlade] ChargeAI
-	UNIT Beast Tarvos 0x40 Level(7,Enemy,True)     [15,18] 0b 0x0 0x0 0x0 [SavageMaul] ChargeAI
+	UNIT Beast Gargoyle 0x40 Level(7,Enemy,True)     [9,19] 0b 0x0 0x1 REDA9R17 [SteelLance] ChargeAI
+	UNIT Lowlander FalcoKnight 0x40 Level(1,Enemy,True)     [11,19] 0b 0x0 0x1 REDA11R17 [LightBrand] ChargeAI
+	UNIT Lowlander WyvernRider 0x40 Level(7,Enemy,True)     [13,19] 0b 0x0 0x1 REDA13R17 [SteelLance] ChargeAI
+	UNIT Lowlander PegasusKnight 0x40 Level(7,Enemy,True)     [9,19] 0b 0x0 0x0 0x0 [IronLance] ChargeAI
+	UNIT Lowlander PegasusKnight 0x40 Level(7,Enemy,True)     [12,19] 0b 0x0 0x0 0x0 [IronLance] ChargeAI
+	//UNIT Beast Tarvos 0x40 Level(7,Enemy,True)     [15,18] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
 	UNIT
 	
 SEReinforcementLargeUnits:
-	UNIT Beast SwordBone 0x40 Level(7,Enemy,True)     [20,15] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
-	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [19,17] 0b 0x0 0x0 0x0 [SteelBlade] ChargeAI
-	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [19,15] 0b 0x0 0x0 0x0 [RottenClaw] ChargeAI
-	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [21,17] 0b 0x0 0x0 0x0 [SavageBlade] ChargeAI
-	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [20,17] 0b 0x0 0x0 0x0 [SavageBlade] ChargeAI
-	UNIT Beast Tarvos 0x40 Level(7,Enemy,True)     [20,18] 0b 0x0 0x0 0x0 [SavageMaul] ChargeAI
+	UNIT Beast SwordBone 0x40 Level(7,Enemy,True)     [20,19] 0b 0x0 0x1 REDA20R15 [SteelBlade] ChargeAI
+	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [19,19] 0b 0x0 0x1 REDA19R17 [SteelBlade] ChargeAI
+	UNIT Beast Revenant 0x40 Level(7,Enemy,True)     [19,19] 0b 0x0 0x1 REDA19R15 [RottenClaw] ChargeAI
+	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [21,19] 0b 0x0 0x1 REDA21R17 [SavageBlade] ChargeAI
+	UNIT Lowlander SwordCav 0x40 Level(7,Enemy,True)     [20,19] 0b 0x0 0x1 REDA20R17 [SavageBlade] ChargeAI
+	//UNIT Beast Tarvos 0x40 Level(7,Enemy,True)     [20,19] 0b 0x0 0x1 REDA20R18 [SavageMaul] ChargeAI
+	UNIT
+	
+SWReinforcementUnits:
+	UNIT Beast Bael 0x40 Level(7,Enemy,True)     [3,19] 0b 0x0 0x0 0x0 [SharpClaw] ChargeAI
+//	UNIT Lowlander Soldier 0x40 Level(7,Enemy,True)     [4,19] 0b 0x0 0x1 REDA4R18 [SteelLance] ChargeAI
+	UNIT
+
+CenterReinforcementUnits:
+	UNIT Lowlander PegasusKnight 0x40 Level(7,Enemy,True)     [12,19] 0b 0x0 0x1 REDA12R18 [SteelLance] ChargeAI
+//	UNIT Beast Gargoyle 0x40 Level(7,Enemy,True)     [12,19] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT
+	
+SEReinforcementUnits:
+	UNIT Beast Bael 0x40 Level(7,Enemy,True)     [20,19] 0b 0x0 0x1 REDA20R18 [SharpClaw] ChargeAI
+	UNIT Lowlander Fighter 0x40 Level(7,Enemy,True)     [19,19] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
+	UNIT
+	
+WReinforcementUnits:
+	UNIT Beast Bael 0x40 Level(7,Enemy,True)     [0,12] 0b 0x0 0x0 0x0 [SharpClaw] ChargeAI
+	UNIT
+	
+SETarvosReinforcementUnits:
+	UNIT Beast Tarvos 0x40 Level(7,Enemy,True)     [24,19] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
 	UNIT
 	
 GaleUnits:
@@ -488,7 +521,7 @@ BeginningScene:
 	
 	CAMERA [2,8]
 	//show bunny's mother hiding with her mother and wishing bunny would come home
-	CameraCursorLocation(1,8,60)
+	CameraCursorLocation(2,8,60)
 	SetBackground(HouseBG)
 	Text(Ch5IntroBunnyMother)
 	FADI 8
@@ -519,8 +552,8 @@ BeginningScene:
 	ENDA
 	
 StormGaleIntro:
-	CenterTextbox(Ch5Tutorial)
 	MUSC EnemyAttackID
+	CenterTextbox(Ch5Tutorial)
 	CAMERA [23,8]
 	STAL 30
 	LOAD1 0x1 GaleUnits
@@ -532,7 +565,7 @@ StormGaleIntro:
 	STAL 30
 	Highlight(Storm)
 	Text(Ch5StormGaleIntro2)
-	SetUnitStatus(Ch5Eagle,MovBonus,0xFA)
+	//SetUnitStatus(Ch5Eagle,MovBonus,0xFA)
 	NoFade
 	ENDA
 	
@@ -588,26 +621,52 @@ Turn1Event:
 	NoFade
 	ENDA
 	
+Turn2Reinforcements:
+	LoadReinforcements(SWReinforcementUnits)
+	LoadReinforcements(CenterReinforcementUnits)
+	LoadReinforcements(SEReinforcementUnits)
+	NoFade
+	ENDA
+	
+WReinforcements:
+	LoadReinforcements(WReinforcementUnits)
+	NoFade
+	ENDA
+	
+SETarvosReinforcements:
+	LoadReinforcements(SETarvosReinforcementUnits)
+	NoFade
+	ENDA
+	
 LargeReinforcementEvent:
 	MUSC EnemyAttackID
 	STAL 30
-	//Text(LargeReinforcementEventText)
+	CameraCursor(HeroChar)
+	Text(Ch5LargeReinforcementText1)
 	CallMenu(Ch5LargeReinforcementMenu) //menu where you pick a side to spawn reinforcements on
 	BNE 0x0 0xC 0x0
+		LoadReinforcements(SEReinforcementUnits)
+		LoadReinforcements(CenterReinforcementUnits)
 		LoadReinforcements(SWReinforcementLargeUnits)
 		GOTO 0x3
 		LABEL 0x0
 	SVAL 0x8 0x1
 	BNE 0x1 0xC 0x8
+		LoadReinforcements(SWReinforcementUnits)
+		LoadReinforcements(SEReinforcementUnits)
 		LoadReinforcements(CenterReinforcementLargeUnits)
 		GOTO 0x3
 		LABEL 0x1
 	SVAL 0x8 0x2
 	BNE 0x2 0xC 0x8
+		LoadReinforcements(SWReinforcementUnits)
+		LoadReinforcements(CenterReinforcementUnits)
 		LoadReinforcements(SEReinforcementLargeUnits)
 		GOTO 0x3
 		LABEL 0x2
 	LABEL 0x3
+	STAL 60
+	Text(Ch5LargeReinforcementText2)
 	NoFade
 	ENDA
 	
@@ -774,3 +833,31 @@ EndingScene:
 	MNC2 Ch5d
 	NoFade
 	ENDA
+	
+ALIGN 4
+Ch3Armory:
+	SHORT IronBlade
+	SHORT SteelSword
+	SHORT SteelLance
+	SHORT SteelAxe
+	SHORT SlimLance
+	SHORT SlimAxe
+	SHORT Javelin
+	SHORT HandAxe
+	SHORT Hammer
+	SHORT 0
+	SHORT 0
+	
+ALIGN 4
+Ch3Vendor:
+	SHORT Fire
+	SHORT Thunder
+	SHORT Pain
+	SHORT Heal
+	SHORT Mend
+	SHORT Restore
+	SHORT Torch
+	SHORT HeavyBomb
+	SHORT RedHornet
+	SHORT 0
+	SHORT 0

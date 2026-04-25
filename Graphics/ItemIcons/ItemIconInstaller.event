@@ -405,6 +405,12 @@ ORG ItemIconEntry(Breeze)
 ORG ItemIconEntry(Angel)
 #incbin "Staves/Reformation.dmp"		// Ereshkigal
 
+ORG ItemIconEntry(Warp)
+#incbin "Staves/Ingression.dmp"		// Ereshkigal
+
+ORG ItemIconEntry(Rescue)
+#incbin "Staves/Egression.dmp"		// Ereshkigal
+
 /*
 ORG ItemIconEntry(SilenceWord)
 #incbin "Staves/SilenceWord.dmp"		// Ereshkigal
@@ -417,9 +423,6 @@ ORG ItemIconEntry(IncenseSoul)
 
 ORG ItemIconEntry(Ingression)
 #incbin "Staves/Ingression.dmp"		// Ereshkigal
-
-ORG ItemIconEntry(Egression)
-#incbin "Staves/Egression.dmp"		// Ereshkigal
 
 ORG ItemIconEntry(Reformation)
 #incbin "Staves/Reformation.dmp"		// Ereshkigal
@@ -491,6 +494,9 @@ ORG ItemIconEntry(Boots)
 
 ORG ItemIconEntry(Talisman)
 #incbin "ItemsPrfs/{2WB} (Vanilla + Blitz) Talisman.dmp"
+
+ORG ItemIconEntry(Key)
+#incbin "ItemsPrfs/Key.dmp"
 
 // monster weapons
 ORG ItemIconEntry(RottenClaw)

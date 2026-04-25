@@ -39,7 +39,7 @@ CharacterBasedEvents:
 
 MiscBasedEvents:
 	CauseGameOverIfLordDies
-	DefeatBoss
+	//DefeatBoss
 	AFEV BleedoutFlag BleedoutChapterAlwaysEvent 0x0
 	END_MAIN
 
@@ -479,6 +479,17 @@ ArenaTurnEvent:
 			CameraCursor(Pillow)
 			Text(Ch3Wave4Intro3)
 		LABEL 0x4
+		
+		SVAL 8 0x04
+		//CenterTextbox(DebugPauseText)
+		COUNTER_CHECK 1
+		BNE 0x5 0x8 0xC
+			FlagIsSet(DefeatBossFlag,0x5)
+			//CenterTextbox(DebugPauseText)
+			GiveGold(500)
+			CAMERA [0,5]
+			Text(Ch3WiseDefeated)
+		LABEL 0x5
 		//CenterTextbox(DebugPauseText)
 	LABEL 0x0
 	//CenterTextbox(DebugPauseText)
@@ -492,6 +503,7 @@ Ch3PillowWiseTalk:
 	FADU 16
 	STAL 30
 	Text(Ch3WiseRetreats)
+	SetFlag(DefeatBossFlag)
 	NoFade
 	ENDA
 	
@@ -606,6 +618,7 @@ PigeonLeavesEvent:
 	ENDA
 
 Ch3SeizeEvent:
+	SET_ACTIVE 0
 	FlagNotSet(Ch3Village2Flag, 0x0)
 		Text(Ch3SeizeNo)
 		GOTO 0x1

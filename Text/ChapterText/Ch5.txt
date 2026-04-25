@@ -18,9 +18,9 @@ the central building. Any enemy[N]
 stepping on the wood floor will[N]
 result in a Game Over.[AN]
 You have control of Eagle for this[N]
-chapter. She cannot move, but will[N]
-support you with powerful siege[N]
-magic.[AN]
+chapter. She cannot leave the building,[N]
+but will support you with powerful[N]
+long-range magic and staves.[AN]
 Her death will not result in a[N]
 Game Over.[A]
 [X]
@@ -472,6 +472,7 @@ We'll be back for you.[A]
 [fr][ce]
 Time permitting.[A]
 [X]
+
 
 ## Ch5StormBabyTalk
 
@@ -1086,6 +1087,19 @@ An uncounterable, Def-piercing lance.
 A premium weapon for opportune times.
 [X]
 
+## Ch5LargeReinforcementText1
+[mr][LoadHeroM][tmm]
+(These monsters aren't letting up.)[AN][ce]
+(Don't know why I can't shake this[N]
+dread...)[A]
+[X]
+
+## Ch5LargeReinforcementText2
+[mr][LoadHeroM]
+What the hell?![4][4] Everyone,[N]
+get on that side![A]
+[X]
+
 ## Ch5Left
 The left side worries me.
 [X]
@@ -1108,8 +1122,8 @@ The right side worries me.
 [X]
 
 ## Ch5SkullDeadVisit
-[r][LoadActive]
-[ml][LoadCivBoy]
+[ml][LoadActive]
+[r][LoadCivBoy]
 
 [r]
 ...![A][css]

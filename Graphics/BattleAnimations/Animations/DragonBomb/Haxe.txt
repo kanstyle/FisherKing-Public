@@ -15,19 +15,16 @@ C1B                               #Play quick "heavy step" SFE
 15 p- Haxe_005.png
 C22                               #Play short sword swinging SFE
 4 p- Haxe_006.png
-C05                               #Call spell associated with equipped weapon
 4 p- Haxe_007.png
+C05                               #Call spell associated with equipped weapon
 4 p- Haxe_008.png
 4 p- Haxe_009.png
 4 p- Haxe_010.png
 4 p- Haxe_011.png
 1 p- Haxe_012.png
 C1B                               #Play quick "heavy step" SFE
-C13                               #ranged attack - hand axe for Hector
-3 p- Haxe_013.png
-2 p- Haxe_004.png
-1 p- Haxe_005.png
 C01                               #NOP
+2 p- Haxe_013.png
 2 p- Haxe_014.png
 C06                               #Begin opponent's turn after hit.next code 0D.
 2 p- Haxe_015.png
@@ -66,18 +63,14 @@ C1B                               #Play quick "heavy step" SFE
 C22                               #Play short sword swinging SFE
 4 p- Haxe_006.png
 C05                               #Call spell associated with equipped weapon
-4 p- Haxe_007.png
 4 p- Haxe_008.png
 4 p- Haxe_009.png
 4 p- Haxe_010.png
 4 p- Haxe_011.png
 1 p- Haxe_012.png
 C1B                               #Play quick "heavy step" SFE
-C13                               #ranged attack - hand axe for Hector
-3 p- Haxe_013.png
-2 p- Haxe_004.png
-1 p- Haxe_005.png
 C01                               #NOP
+2 p- Haxe_013.png
 2 p- Haxe_014.png
 C06                               #Begin opponent's turn after hit.next code 0D.
 2 p- Haxe_015.png
@@ -96,19 +89,16 @@ C1B                               #Play quick "heavy step" SFE
 15 p- Haxe_005.png
 C22                               #Play short sword swinging SFE
 4 p- Haxe_006.png
-C05                               #Call spell associated with equipped weapon
 4 p- Haxe_007.png
+C05                               #Call spell associated with equipped weapon
 4 p- Haxe_008.png
 4 p- Haxe_009.png
 4 p- Haxe_010.png
 4 p- Haxe_011.png
 1 p- Haxe_012.png
-C13                               #ranged attack - hand axe for Hector
 C1B                               #Play quick "heavy step" SFE
-3 p- Haxe_013.png
-2 p- Haxe_004.png
-1 p- Haxe_005.png
 C01                               #NOP
+2 p- Haxe_013.png
 2 p- Haxe_014.png
 C06                               #Begin opponent's turn after hit.next code 0D.
 2 p- Haxe_015.png
@@ -147,18 +137,14 @@ C1B                               #Play quick "heavy step" SFE
 C22                               #Play short sword swinging SFE
 4 p- Haxe_006.png
 C05                               #Call spell associated with equipped weapon
-4 p- Haxe_007.png
 4 p- Haxe_008.png
 4 p- Haxe_009.png
 4 p- Haxe_010.png
 4 p- Haxe_011.png
 1 p- Haxe_012.png
-C13                               #ranged attack - hand axe for Hector
 C1B                               #Play quick "heavy step" SFE
-3 p- Haxe_013.png
-2 p- Haxe_004.png
-1 p- Haxe_005.png
 C01                               #NOP
+2 p- Haxe_013.png
 2 p- Haxe_014.png
 C06                               #Begin opponent's turn after hit.next code 0D.
 2 p- Haxe_015.png
@@ -215,19 +201,16 @@ C1B                               #Play quick "heavy step" SFE
 15 p- Haxe_005.png
 C22                               #Play short sword swinging SFE
 4 p- Haxe_006.png
-C05                               #Call spell associated with equipped weapon
 4 p- Haxe_007.png
+C05                               #Call spell associated with equipped weapon
 4 p- Haxe_008.png
 4 p- Haxe_009.png
 4 p- Haxe_010.png
 4 p- Haxe_011.png
 1 p- Haxe_012.png
-C13                               #ranged attack - hand axe for Hector
 C1B                               #Play quick "heavy step" SFE
-3 p- Haxe_013.png
-2 p- Haxe_004.png
-1 p- Haxe_005.png
 C01                               #NOP
+2 p- Haxe_013.png
 2 p- Haxe_014.png
 C06                               #Begin opponent's turn after hit.next code 0D.
 2 p- Haxe_015.png
