@@ -241,3 +241,9 @@ The Devil[X]
 
 ## DevilDesc
 Placeholder.[X]
+
+## LionName
+Lion[X]
+
+## LionDesc
+Placeholder.[X]

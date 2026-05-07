@@ -46,80 +46,60 @@ ENDA
 ALIGN 4
 TeacherDeathQuoteEvent:
 Text(TeacherDQ)
-SVAL 0x7 Teacher
-ENUF BleedoutFlag
 NoFade
 ENDA
 
 ALIGN 4
 HeroDeathQuoteEvent:
 Text(HeroDQ)
-SVAL 0x7 HeroChar
-ENUF BleedoutFlag
 NoFade
 ENDA
 
 ALIGN 4
 DragonDeathQuoteEvent:
 Text(DragonDQ)
-SVAL 0x7 Dragon
-ENUF BleedoutFlag
 NoFade
 ENDA
 
 ALIGN 4
 PillowDeathQuoteEvent:
 Text(PillowDQ)
-SVAL 0x7 Pillow
-ENUF BleedoutFlag
 NoFade
 ENDA
 
 ALIGN 4
 BrotherDeathQuoteEvent:
 Text(BrotherDQ)
-SVAL 0x7 Brother
-ENUF BleedoutFlag
 NoFade
 ENDA
 
 ALIGN 4
 HunterDeathQuoteEvent:
 Text(HunterDQ)
-SVAL 0x7 Hunter
-ENUF BleedoutFlag
 NoFade
 ENDA
 
 ALIGN 4
 PigeonDeathQuoteEvent:
 Text(PigeonDQ)
-SVAL 0x7 Pigeon
-ENUF BleedoutFlag
 NoFade
 ENDA
 
 ALIGN 4
 BunnyDeathQuoteEvent:
 Text(BunnyDQ)
-SVAL 0x7 Bunny
-ENUF BleedoutFlag
 NoFade
 ENDA
 
 ALIGN 4
 BabyDeathQuoteEvent:
 Text(BabyDQ)
-SVAL 0x7 Baby
-ENUF BleedoutFlag
 NoFade
 ENDA
 
 ALIGN 4
 SwanDeathQuoteEvent:
 Text(SwanDQ)
-SVAL 0x7 Swan
-ENUF BleedoutFlag
 NoFade
 ENDA
 
@@ -138,25 +118,13 @@ NoFade
 ENDA
 
 ALIGN 4
-BabyDeathQuoteEvent:
-Text(BabyDQ)
-SVAL 0x7 Baby
-ENUF BleedoutFlag
-NoFade
-ENDA
-
-ALIGN 4
 StormDeathQuoteEvent:
 Text(StormDQ)
-SVAL 0x7 Storm
-ENUF BleedoutFlag
 NoFade
 ENDA
 
 ALIGN 4
 GaleDeathQuoteEvent:
 Text(GaleDQ)
-SVAL 0x7 Gale
-ENUF BleedoutFlag
 NoFade
 ENDA

@@ -54,6 +54,11 @@ ALIGN 4
 ForcedDeploymentList: //Vanilla list at 0x9ED64C
 ForcedDeployment(HeroChar,LockedPosition,AllModes,AllChapters)
 ForcedDeployment(Teacher,LockedPosition,AllModes,AllChapters)
+ForcedDeployment(Swan,LockedPosition,AllModes,Ch6)
+ForcedDeployment(Lion,LockedPosition,AllModes,Ch6)
+ForcedDeployment(Dragon,LockedPosition,AllModes,Ch6)
+ForcedDeployment(Pillow,LockedPosition,AllModes,Ch6)
+
 EndForcedDeploymentList
 
 DeploymentGroupChapterList:

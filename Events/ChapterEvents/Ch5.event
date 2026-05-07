@@ -34,7 +34,7 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-	TurnEventPlayer(0x0,BleedoutChapterTurnEvent,1,255)
+	TurnEventEnemy(0x0,BleedoutChapterTurnEvent,1,255)
 	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
 	TurnEventPlayer(0x0,StormGaleIntro,1)
 	TurnEventPlayer(0x0,Turn1Routine,1)

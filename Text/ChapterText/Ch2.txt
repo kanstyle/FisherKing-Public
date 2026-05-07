@@ -617,32 +617,29 @@ For a really fair price, I'll fly[N]
 'em right out of here.[A]
 
 [ml][ts]
-Hmm...[4][4][4] [ts]Okay.[N]
-I trust you.[A]
-
-[mr]
+Hmm...[4][4][4] [ts]Okay.[N] I trust you.[AN]
 I dunno if we'll let you fly Songbird[N]
 out of here, but we could use the help.[A]
 
-[ml]
+[mr]
 Oh, er, y-yeah![4] That's okay.[N][4][4]
 [tmm](Damn it! At least I can get a paycheck...)[AN][tmm]
 I'll show you I'm real trustworthy.[A]
 
-[mr]
+[ml]
 Sounds good to me.[4] Either way, though,[N]
 you might wanna be careful.[AN]
 See those skeletons with the bows?[N]
 I heard a lot of those come out at night.[A]
 
-[ml][ts]
+[mr][ts]
 ...![A]
 
-[mr][ts]
+[ml][ts]
 So it'd be a shame if you had to[N]
 fly all the way back by yourself.[A]
 
-[ml][ts]
+[mr][ts]
 Y-Yeah, that's, um...[4][4] Yeah, yeah![N]
 Yeah![4] L-let's go![A]
 [X]

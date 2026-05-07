@@ -36,7 +36,7 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-	TurnEventPlayer(0x0,BleedoutChapterTurnEvent,1,255)
+	TurnEventEnemy(0x0,BleedoutChapterTurnEvent,1,255)
 	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
 	TurnEventPlayer(0x0,WaitTeacher,1,255)
 	TurnEventEnemy(0x0,EndChapter,1,255)
@@ -454,12 +454,14 @@ EndingScene:
 // Chapter Select Menu
 
 Start := 0x1000
+CSPg1Start := 0x1
 CSPg1 := 0x8001
 CSPg2 := 0x8002
 CSGo := 0x8010
 EndPage := 0x8999
-GoToNextPage := 0x9000
+GoToPage2 := 0x9000
 GoBack := 0x9001
+GoToPage1 := 0x9002
 
 EndMenuSkipStartEvent := 0x9003
 EndMenu := 0x9002
@@ -522,7 +524,7 @@ LABEL CSPg1
 	BEQ 0x16 5 2
 	//CenterTextbox(DebugPauseText)
 	SVAL 2 0x7
-	BEQ GoToNextPage 5 2
+	BEQ GoToPage2 5 2
 
 	LABEL GoBack
 		//CenterTextbox(DebugPauseText)
@@ -558,17 +560,93 @@ LABEL CSPg1
 		//CenterTextbox(DebugPauseText)
 		GOTO EndPage
 		
-	LABEL GoToNextPage
+	LABEL GoToPage2
 		//CenterTextbox(DebugPauseText)
 		GOTO CSPg2
-
-	LABEL EndPage
-		//CenterTextbox(DebugPauseText)
-		GOTO CSGo
 		
 //------------------------	
-	LABEL CSPg2
-	GOTO Start
+LABEL CSPg2
+// result in slot 0xC
+/*
+0: Back
+1: Ch 6
+2: Ch 7
+3: Ch 8
+4: Ch 9
+5: Ch 10
+6: Ch 11
+7: Next Page
+*/
+// Slot 2 has chapter number to check
+// Slot 8 will have target chapter number
+CLEAN
+CallMenu(GSMChapterSelectPg2)
+	SADD 5 0xC 0
+	SVAL 2 0x0
+	BEQ GoToPage1 5 2
+	//CenterTextbox(DebugPauseText)
+	SVAL 2 0x1
+	BEQ 0x17 5 2
+	//CenterTextbox(DebugPauseText)
+	SVAL 2 0x2
+	BEQ 0x18 5 2
+	//CenterTextbox(DebugPauseText)
+	SVAL 2 0x3
+	BEQ 0x19 5 2
+	//CenterTextbox(DebugPauseText)
+	SVAL 2 0x4
+	BEQ 0x1A 5 2
+	//CenterTextbox(DebugPauseText)
+	SVAL 2 0x5
+	BEQ 0x1B 5 2
+	//CenterTextbox(DebugPauseText)
+	SVAL 2 0x6
+	BEQ 0x1C 5 2
+	//CenterTextbox(DebugPauseText)
+	SVAL 2 0x7
+	BEQ GoToPage2 5 2
+
+	LABEL GoToPage1
+		CenterTextbox(DebugPauseText)
+		GOTO CSPg1Start
+	
+	LABEL 0x17
+		SVAL 8 Ch6
+		CenterTextbox(DebugPauseText)
+		GOTO EndPage
+		
+	LABEL 0x18
+		SVAL 8 Ch7
+		CenterTextbox(DebugPauseText)
+		GOTO EndPage
+		
+	LABEL 0x19
+		SVAL 8 Ch8
+		CenterTextbox(DebugPauseText)
+		GOTO EndPage
+		
+	LABEL 0x1A
+		SVAL 8 Ch9
+		CenterTextbox(DebugPauseText)
+		GOTO EndPage
+		
+	LABEL 0x1B
+		SVAL 8 Ch10
+		CenterTextbox(DebugPauseText)
+		GOTO EndPage
+		
+	LABEL 0x1C
+		SVAL 8 Ch11
+		CenterTextbox(DebugPauseText)
+		GOTO EndPage
+		
+	LABEL GoToPage2
+		CenterTextbox(DebugPauseText)
+		GOTO CSPg2
+
+LABEL EndPage
+	CenterTextbox(DebugPauseText)
+	GOTO CSGo
 	
 //------------------------
 	LABEL CSGo
@@ -673,6 +751,23 @@ LABEL CSPg1
 		AutoLevel(Snot, 8)
 		AutoLevel(Storm, 8)
 		MNC2 Ch5d
+		//GOTO EndMenuSkipStartEvent
+		
+	SVAL 7 Ch6
+	CenterTextbox(DebugPauseText)
+	BLT EndMenuSkipStartEvent 8 7
+		//LOAD1 0x1 UnitsCh5 //no units in ch5d
+		AutoLevel(HeroChar, 9)
+		AutoLevel(Dragon, 9)
+		AutoLevel(Pillow, 9)
+		AutoLevel(Pigeon, 9)
+		AutoLevel(Brother, 9)
+		AutoLevel(Bunny, 9)
+		AutoLevel(Baby, 9)
+		AutoLevel(Swan, 9)
+		AutoLevel(Snot, 9)
+		AutoLevel(Storm, 9)
+		MNC2 Ch6
 		//GOTO EndMenuSkipStartEvent
 		
 	UnsetFlag(0xEF)

@@ -36,7 +36,7 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-TurnEventPlayer(0x0,BleedoutChapterTurnEvent,1,255)
+TurnEventEnemy(0x0,BleedoutChapterTurnEvent,1,255)
 END_MAIN
 
 CharacterBasedEvents:

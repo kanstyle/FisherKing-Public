@@ -49,3 +49,4 @@
 #define DaybreakEmpty 0x4e
 #define BlackBG 0x4f
 #define LowMageVillageBG 0x50
+#define PillowKillCG 0x51

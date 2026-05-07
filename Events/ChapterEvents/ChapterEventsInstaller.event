@@ -28,11 +28,11 @@ ALIGN 4
   ALIGN 4
   #include "Ch5d.event"
 }
-/*{
+{
   ALIGN 4
   #include "Ch6.event"
 }
-{
+/*{
   ALIGN 4
   #include "Ch7.event"
 }

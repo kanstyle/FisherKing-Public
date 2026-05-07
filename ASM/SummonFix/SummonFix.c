@@ -2,7 +2,7 @@
 #include "SummonFix.h"
  
 bool CanSigilCrossTerrain(int terrain) {
-	struct Unit temp;
+	struct Unit temp = {0};
 	temp.pClassData = GetClassData(0x77);
 		//gEventSlots[9] = temp.pClassData->pMovCostTable[0]; //giving the correct address
 	const s8* lookup = GetUnitMovementCost(&temp);
@@ -10,7 +10,7 @@ bool CanSigilCrossTerrain(int terrain) {
 	if (lookup[terrain] > 0) {
 		gEventSlots[5] = lookup[terrain];
 	}
-	ClearUnit(&temp);
+	//ClearUnit(&temp);
     return (lookup[terrain] > 0) ? TRUE : FALSE;
 }
 

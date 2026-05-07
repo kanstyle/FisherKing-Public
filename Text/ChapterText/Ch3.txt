@@ -1500,7 +1500,7 @@ towards a greater cause...
 [r][LoadWise]
 [fr][LoadPillow]
 
-[l][ts]
+[l]
 Well, too bad.[4] Doesn't matter[N]
 to me if you want it or not.[AN]
 Here.[A][css][ml]

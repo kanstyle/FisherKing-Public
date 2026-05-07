@@ -8,6 +8,11 @@
 #define Ch5 0x6
 #define Ch5d 0x7
 #define Ch6 0x8
+#define Ch7 0x9
+#define Ch8 0xA
+#define Ch9 0xB
+#define Ch10 0xC
+#define Ch11 0xD
 
 #define MidnightCh 0x2C
 #define BaronManorEntranceCh 0x2D

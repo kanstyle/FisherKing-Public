@@ -1,0 +1,12 @@
+## Ch7Title
+
+Ch. 7[X]
+
+## Ch7Objective
+Rout enemy
+[X]
+
+## Ch7ObjectiveLong ^
+Defeat all enemies
+within the time limit.
+[X]

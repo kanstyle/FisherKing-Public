@@ -13,7 +13,7 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-	TurnEventPlayer(0x0,BleedoutChapterTurnEvent,1,255)
+	TurnEventEnemy(0x0,BleedoutChapterTurnEvent,1,255)
 	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
 	InfiniteTurnEventPlayer(0x0,TurnHPDrainEvent,2)
 	InfiniteTurnEventPlayer(0x0,TurnHealEvent,2)
@@ -197,6 +197,10 @@ BeginningScene:
 	ENDA
 
 EndingScene:
+	DISA Storm
+	DISA Gale
+	DISA Teacher
+
 	FADI 4
 	MUSCFAST 0x777F
 	DoAllThree
@@ -346,7 +350,7 @@ EndingScene:
 	CenterTextbox(Ch5dTeacherEnd2)
 	
 	CALL EndEventRoutine
-	MNC2 Ch0
+	MNC2 Ch6
 	NoFade
 	ENDA
 

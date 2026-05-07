@@ -39,6 +39,7 @@
 #define DevilMug 0x25
 #define PillowSadMug 0x26
 #define OldPrinceEyesClosedMug 0x27
+#define LionMug 0x28
 
 #define AxeBoneCard 0xAD
 #define LanceBoneCard 0xAE
@@ -71,6 +72,8 @@
 #define Swan 0xE
 #define Storm 0xF
 #define Gale 0x10
+#define Lion 0x11
+
 #define YoungPrince 0x20
 #define YoungTeacher 0x21
 #define OldPrince 0x22

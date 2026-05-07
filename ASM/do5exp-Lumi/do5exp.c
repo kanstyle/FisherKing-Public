@@ -1,6 +1,4 @@
-#include "global.h"
-#include "bmunit.h"
-#include "bmbattle.h"
+#include "gbafe.h"
 
 int GetUnitExpCalcLevel(struct Unit* unit, bool isTarget){
     int result = unit->level;

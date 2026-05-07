@@ -98,6 +98,7 @@ POIN Chess2BG; WORD 0x1; POIN Chess2BGPal
 POIN DaybreakEmptyBG; WORD 0x1; POIN DaybreakEmptyBGPal
 POIN StockBlackBG; WORD 0x1; POIN StockBlackBGPal
 POIN FE9LowMageVillageBG; WORD 0x1; POIN FE9LowMageVillageBGPal
+POIN PillowKillBG; WORD 0x1; POIN PillowKillBGPal
 
 ALIGN 4; ButterflyInverted224BG:
 #incbin "224ButterflyInverted.dmp"
@@ -223,4 +224,9 @@ ALIGN 4; FE9LowMageVillageBG:
 #incbin "224LowMageVillage.dmp"
 ALIGN 4; FE9LowMageVillageBGPal:
 #incbin "224LowMageVillagePal.dmp"
+
+ALIGN 4; PillowKillBG:
+#incbin "224PillowKill.dmp"
+ALIGN 4; PillowKillBGPal:
+#incbin "224PillowKillPal.dmp"
 

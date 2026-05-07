@@ -160,5 +160,21 @@ MenuOption(Ch5dTitle, 0, 0)
 MenuOption(GSMNext, 0, 0)
 MenuTerminator
 
+ALIGN 4
+GSMChapterSelectPg2:
+MenuDefinition(6, 1, 18, 0, 1, GSMChapterSelectPg2Options)
+
+ALIGN 4
+GSMChapterSelectPg2Options:
+MenuOption(GSMBack, 0, 0)
+MenuOption(Ch6Title, 0, 0)
+MenuOption(Ch7Title, 0, 0)
+MenuOption(Ch8Title, 0, 0)
+MenuOption(Ch9Title, 0, 0)
+MenuOption(Ch10Title, 0, 0)
+MenuOption(Ch11Title, 0, 0)
+MenuOption(GSMNext, 0, 0)
+MenuTerminator
+
 
 #include "LordSplitMenuPlus.lyn.event"

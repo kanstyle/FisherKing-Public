@@ -27,6 +27,7 @@ ENDA
 
 ALIGN 4
 KillEvent:
+ASMC TriggerDeathQuoteForActiveUnit|1
 SVAL 0x1 0xFFFF
 SVAL 0x2 0x1
 ASMC AutoLevelDownASMC|1
@@ -34,5 +35,6 @@ ASMC AutoLevelDownASMC|1
 SVAL 0x1 0xFFFF
 SVAL 0x6 0x255
 ASMC ASMC_SelfDamageLikeBomb|1
+ASMC KillActiveUnit|1
 NoFade
 ENDA

@@ -1,3 +1,345 @@
 ## Ch6Title
 
-Ch. 6: It's My Own Invention[X]
+Ch. 6: Skullcrush[X]
+
+## Ch6Objective
+Rout enemy
+[X]
+
+## Ch6ObjectiveLong ^
+Defeat all enemies
+within the time limit.
+[X]
+
+## Ch6HeroIntro
+[ml][LoadHeroM]
+[r][LoadDragon]
+[fr][LoadPillow]
+[r]
+So, what do we do?[A]
+
+[ml]
+Well, before we can free Songbird,[N]
+we've gotta figure out where they are.[AN]
+Once we know that, we can scout it out[N]
+and find a way inside.[A]
+
+[r]
+Are there any prisons in the city?[A]
+
+[fr]
+I don't think Songbird[N]
+would be at one of those.[A]
+
+[ml]
+Huh?[A]
+
+[fr]
+Since Songbird has powers, of some kind...[N]
+they'd probably be in a low mage prison.[AN]
+Usually those are built far away from cities,[N]
+so they're harder to escape...[A]
+
+[ml][ts]
+Oh, good point![N]
+Never woulda thought of that.[AN][ts][ce]
+'Course, that makes it harder[N]
+to find on our own...[A][oe]
+
+[fr]
+Why don't we visit the low mage[N]
+district?[4][4] They'd know...[A]
+
+[r][tmm][ce]
+...[A][tmm]
+
+[ml]
+Never been to one of those before.[N]
+What about you, Dragon?[A]
+
+[r][oe]
+...Yeah.[A]
+[X]
+
+## Ch6TeacherIntro
+[mr][LoadTeacher]
+[l][LoadPurpleSoldier]
+[fl][LoadPurpleFighter]
+
+[mr]
+I'm a personal friend of Princess Eagle's.[N][4][4]
+She'd recognize my signature if she saw it.[A]
+
+[l]
+You think you're the first one to come[N]
+requesting an 'audience' with Her Ladyship?[A]
+[X]
+
+## Ch6TeacherIntroNarration
+After the attack, I caught wind that[N]
+Eagle had remained to administrate[N]
+the reconstruction.[AN]
+If I meant to find the prince, what[N]
+better place to start than his wife,[N]
+whom I'd known since she was twelve?[N]
+Or so I had naively thought.[A]
+[X]
+
+## Ch6TeacherIntro2
+[mr][LoadTeacher]
+[l][LoadPurpleSoldier]
+[fl][LoadPurpleFighter]
+
+[mr]
+I was at the ball on the night of the[N]
+attack, you fools.[AN]
+Does Hero's Company sound familiar?[N][4][4]
+I fought alongside the princess myself.[A]
+
+[l]
+Oh, yeah.[4][4] I bet she gave you a little[N]
+kiss on the cheek, too.[A]
+
+[mr]
+If she knew you were wasting my time like[N]
+this, she'd have you tarred and feathered![A]
+
+[fr]
+Look.[4][4] You keep pushing us, and we[N]
+might snap some of those brittle bones.[AN]
+Go on home to the missus, will you?[A]
+
+[mr][ce]
+What lovely lads you are.[A]
+[X]
+
+## Ch6TeacherIntro3
+[mr][LoadTeacher][tmm]
+(Hm?[4][4] Wait, is that...?)[A]
+[X]
+
+## Ch6TeacherIntro4
+[mr][LoadTeacher]
+[l][LoadStorm]
+[fl][LoadGale]
+[mr]
+Hail, there![4][4] I recognize the two of you.[N]
+You assisted us on the night of the attack.[AN]
+Aren't you Baby's parents?[A]
+
+[l][ts]
+Indeed, friend![4][4] Teacher, was it?[A]
+
+[fl][ts]
+Yes, I recognize you as well.[N]
+Can we help you?[A]
+
+[mr]
+Are you here to meet with the princess,[N]
+by any chance?[A]
+
+[l]
+The baron, actually.[4][4] We're hired swords,[N]
+same as you.[A]
+[X]
+
+## Ch6TeacherIntroNarration2
+Foreigners, with a daughter learning[N]
+to kill low mages...[N][4][4]
+Just hired swords, were they?[A]
+[X]
+
+## Ch6TeacherIntro4
+[mr][LoadTeacher]
+[l][LoadStorm]
+[fl][LoadGale]
+[mr]
+Mind if I ask you a favor?[N][4][4]
+Could you possibly--[A]
+[X]
+
+## Ch6TeacherIntro5
+[mr][LoadPurpleSoldier]
+Guards![4][4] There's fighting![N][4][4]
+Fighting's broken out at the gates![A]
+[X]
+
+## Ch6LionSwanNarration
+Earlier...[A]
+[X]
+
+## Ch6LionSwanBrownBoxText
+Outskirts
+[X]
+
+## Ch6LionSwanIntro
+[mr][LoadSwan]
+[ml][LoadLion][ts]
+C'mon, Swan![4][4] If you hate guard duty[N]
+that much, why don't you quit?[A]
+
+[mr][ts]
+Who said I hated it?[N][4]
+I don't hate it.[AN]
+Besides, what kind of example[N]
+would that set for you?[A]
+
+[ml]
+You're always complaining about it![A]
+
+[mr][ce]
+I complain in moderation.[AN][oe]
+You would, too, if you had to guard the[N]
+low mage district in times like these.[A]
+
+[ml]
+...Yeah, maybe.[A]
+
+[mr]
+Oh? I figured you'd have a retort.[AN]
+Like,[mmr][ce][oq]Ha! I'm not afraid of any low mages!"[4][4][4][4][N]
+[oe]Or some such.[A]
+
+[ml]
+You think they really did it?[A]
+
+[mr]
+What?[4][4] Brought the beasts here?[A]
+
+[ml]
+That's what the rumors say.[A]
+
+[mr]
+[ce]...I don't know.[oe] I prefer not[N]
+to think about low mages when I can.[A]
+[X]
+
+## Ch6ThugsArrive
+[l][LoadSwan]
+[fl][LoadLion]
+[r][LoadSkull]
+[fr][LoadBandit]
+
+[l]
+Ah.[4][4] Can I help you, good si--[A]
+
+[r]
+Let us through, lads.[A]
+
+[l]
+Easy, there.[4][4] Tell me what's in[N]
+those bags of yours, first.[A]
+
+[r]
+Let us through, I said.[A]
+
+[l]
+And I told you to empty those bags, sir.[A]
+
+[r]
+Trying to start trouble, boy?[A]
+
+[fl]
+Don't talk to my brother like that,[N]
+knuckle-dragger![A]
+
+[l]
+Stay out of this, Lion![4][4][N]
+Don't be stupid.[A]
+
+## Ch6HeroArrives
+[fl][LoadSwan]
+[l][LoadSkull]
+[r][LoadHeroM]
+[fr][LoadDragon]
+
+[r]
+Swan![4][4] Hey![4][4][N]
+And Skull?[4][4] What're you doing here?[A]
+
+[l][ce]
+Oh, king's rings...[AN][oe]
+
+[fl]
+Hero![4][4] Let me handle this, please.[A]
+
+[fr]
+This is the low mage district.[N]
+Where're you going with all these thugs?[A]
+
+[l]
+Walk away, all of you.[N]
+This doesn't concern you.[A]
+
+[r]
+Don't be stupid, Skull.[N]
+Don't you have kids?[A]
+
+[l]
+I still do, no thanks to those monsters![N]
+Who do you think brought them into our city?[A]
+
+[fr]
+What the hell're you talking about?[A]
+
+[l]
+The low mage district should've been the[N]
+first to fall, but it's standing, same as ever![A]
+[X]
+
+## Ch6SkullBomb
+
+[ml][LoadSkull]
+If you won't let us, we'll do it the hard way![AN]
+Now that Songbird's gone, we can't take any[N]
+chances.[AN]
+This is for our children![A]
+
+[mr][LoadHeroM]
+Wh...[4][4][mvr] He's got firebombs![N][4][4]
+Skull, if you--![A]
+
+[ml]
+Too late![A]
+[X]
+
+## Ch6PillowNarration
+I didn't want this.[AN]
+You made me do this.[AN]
+You've always made us do this.[A]
+[X]
+
+## Ch6PillowNarration2
+It'll always be like this.[A]
+[X]
+
+## Ch6SkullKilled
+[r][LoadPillow]
+[fr][LoadHeroM]
+[l][LoadSwan]
+[fl][LoadLion]
+
+[fr]
+Pillow...[A]
+
+[fl]
+She...[4][4][4][4] his head...[4][4][4][4][N]
+Sh-she crushed his...[A]
+
+[r][LoadPillowSad][tmm]
+...[A][tmm]
+
+[ffr]
+She...[4][4] killed him![A][css][4][4][4]
+She's a low mage![A][css]
+Get her![A][css]
+
+[l]
+Stop![4][4] Stay away![N][4][4]
+No one move![A]
+
+[fl]
+E-everyone, calm down![A]
+
+[fr]
+That's not happening.[4][4] Here they come![A]

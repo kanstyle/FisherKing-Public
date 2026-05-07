@@ -304,3 +304,11 @@ OldPrinceEyesClosedMugData: // LL
 #incbin "dmp/OldPrinceEyesClosed_palette.dmp"
 #incbin "dmp/OldPrinceEyesClosed_minimug.dmp"
 setMugEntry(OldPrinceEyesClosedMug, OldPrinceEyesClosedMugData, 2, 5, 3, 3)
+
+ALIGN 16
+LionMugData: // LL
+#incbin "dmp/Lion_mug.dmp"
+#incbin "dmp/Lion_frames.dmp"
+#incbin "dmp/Lion_palette.dmp"
+#incbin "dmp/Lion_minimug.dmp"
+setMugEntry(LionMug, LionMugData, 3, 6, 3, 4)

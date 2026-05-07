@@ -1,5 +1,1 @@
-ALIGN 4
-TeacherDeathQuoteEvent:
-text(TeacherDQ)
-NoFade
-ENDA
+// TeacherDeathQuoteEvent is defined in Events/EventTables/Death_Quote_Table.event

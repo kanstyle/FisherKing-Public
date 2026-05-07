@@ -1,0 +1,119 @@
+EventPointerTable(Ch6EventsID, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	TurnEventEnemy(0x0,BleedoutChapterTurnEvent,1,255)
+	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
+	TurnEventPlayer(0x0,TeacherReinforcementsEvent,2)
+	END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+	END_MAIN
+
+MiscBasedEvents:
+	CauseGameOverIfLordDies
+	DefeatAll
+	AFEV BleedoutFlag BleedoutChapterAlwaysEvent 0x0
+	END_MAIN
+
+LocationBasedEvents:
+	END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [5,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0] //hero
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [4,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0] //dragon
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [4,2] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0] //lion
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [5,2] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0] //swan
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [3,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [2,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [4,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [2,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
+
+LionUnits:
+	UNIT Lion HighMage 0x40 Level(7,Ally,False)     [0,0] 0b 0x0 0x0 0x0 [Thunder, Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+TeacherUnits:
+	UNIT Teacher Veteran 0x40 Level(10,Ally,False)     [18,2] 0b 0x0 0x1 REDA16R2 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Storm Myrmidon 0x40 Level(10,Ally,False)     [18,3] 0b 0x0 0x1 REDA17R3 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Gale Troubadour 0x40 Level(10,Ally,False)     [18,2] 0b 0x0 0x1 REDA18R2 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
+
+NPCUnits:
+	UNIT
+
+EnemyUnits:
+	UNIT 0x81 Mercenary 0x40 Level(9,Enemy,True)     [12,11] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	CALL StartEventRoutine
+	
+	FADI 4
+	SetBackground(PillowKillCG)
+	STAL 120
+	CenterTextbox(Ch6PillowNarration)
+	FADI 6
+	CLEAN
+	FADU 6
+	
+	FADI 16
+	LOAD1 0x1 LionUnits
+	LOAD1 0x1 EnemyUnits
+	GotoPrepScreen
+	ENDA
+	
+TeacherReinforcementsEvent:
+	REVEAL Teacher
+	REVEAL Storm
+	REVEAL Gale
+	CAM1 [16,2]
+	STAL 60
+	LOAD1 0x1 TeacherUnits
+	Highlight(Teacher)
+	
+	NoFade
+	ENDA
+
+EndingScene:
+	CALL EndEventRoutine
+	MNC2 Ch0
+	NoFade
+	ENDA
