@@ -288,20 +288,79 @@ first to fall, but it's standing, same as ever![A]
 [X]
 
 ## Ch6SkullBomb
+[l][LoadSkull]
+You don't know anything.[N]
+You're not from here.[AN]
+You don't care![A]
 
-[ml][LoadSkull]
-If you won't let us, we'll do it the hard way![AN]
-Now that Songbird's gone, we can't take any[N]
-chances.[AN]
-This is for our children![A]
+[r][LoadHeroM]
+Skull, what're you doing?![N][4][4]
+Just calm down, man![A]
 
-[mr][LoadHeroM]
-Wh...[4][4][mvr] He's got firebombs![N][4][4]
+[fl][LoadSwan]
+Drop the bag, and come back[N]
+over here, please![A]
+
+[l]
+Shut up.[N]
+Both of you, shut up![A]
+
+[ffl]
+Who are these people?[A]
+
+[ffr]
+There's a low mage with 'em![A]
+
+[r]
+What if...[4][4] uh...[4][4][N]
+What if Songbird was here, huh?[AN]
+What would Songbird say?[A]
+
+[l]
+Songbird?[AN]
+Songbird's gone![4][4] 'Cause of[mvl] YOU![A]
+
+[fr][LoadDragon]
+Should I grab him?[A]
+
+[fl]
+No![4][4] No grabbing![4][4][N]
+We don't need to agitate him further.[A]
+
+[l]
+Low mages can't control themselves.[4][4][N]
+They hate us.[4][4] Always have![A]
+
+[fr][mfr]
+Yeah?[4][4] Why shouldn't they,[N]
+you piece of trash?![A]
+
+[fl]
+Stop it, I said! Let me...[A]
+[clear]
+[LoadLion]
+Wh...[4][4][mvr] He's got firebombs![A]
+
+[l]
+They have to go![N]
+Them, or us![A]
+
+[r]
+Skull![4][4][N]
 Skull, if you--![A]
 
-[ml]
-Too late![A]
+[ffr]
+Yeah, do it![A]
+
+[ffl]
+Do it![A]
+
+[r]
+SKULL![A]
 [X]
+
+//Pillow kills skull
+//gruesome CG image of skull's boots covered in blood appears
 
 ## Ch6PillowNarration
 I didn't want this.[AN]
@@ -313,6 +372,7 @@ You've always made us do this.[A]
 It'll always be like this.[A]
 [X]
 
+//back to map
 ## Ch6SkullKilled
 [r][LoadPillow]
 [fr][LoadHeroM]
@@ -343,3 +403,4 @@ E-everyone, calm down![A]
 
 [fr]
 That's not happening.[4][4] Here they come![A]
+[X]
