@@ -362,14 +362,27 @@ SKULL![A]
 //Pillow kills skull
 //gruesome CG image of skull's boots covered in blood appears
 
-## Ch6PillowNarration
+## Ch6PillowNarrationScratch
 I didn't want this.[AN]
 You made me do this.[AN]
 You've always made us do this.[A]
 [X]
 
-## Ch6PillowNarration2
+## Ch6PillowNarration2Scratch
 It'll always be like this.[A]
+[X]
+
+## Ch6PillowNarration
+Hello.[AN]
+My name is Pillow.[AN]
+It's not my real name, but my parents[N]
+called me that before they were killed.[AN]
+I don't know your name.[N][4][4][4]
+I don't want to save anyone.[N][4][4][4]
+I don't want to be a hero.[AN][4][4][4]
+I didn't want to be your executioner.[N][4][4][4][4]
+And I can't mourn you.[N][4][4][4][4][4][4][4]
+I'm sorry.[A]
 [X]
 
 //back to map
