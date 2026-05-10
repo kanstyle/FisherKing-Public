@@ -371,16 +371,6 @@ SKULL![A]
 //Pillow kills skull
 //gruesome CG image of skull's boots covered in blood appears
 
-## Ch6PillowNarrationScratch
-I didn't want this.[AN]
-You made me do this.[AN]
-You've always made us do this.[A]
-[X]
-
-## Ch6PillowNarration2Scratch
-It'll always be like this.[A]
-[X]
-
 ## Ch6PillowNarration
 Hello.[A][N]
 I didn't know your name, but mine[N]
