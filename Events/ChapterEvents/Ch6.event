@@ -74,6 +74,50 @@ NPCUnits:
 EnemyUnits:
 	UNIT 0x81 Mercenary 0x40 Level(9,Enemy,True)     [12,11] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
 	UNIT
+	
+TeacherGateUnits:
+	UNIT Teacher Veteran 0x40 Level(10,Ally,False)     [7,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT 0x81 Soldier 0x40 Level(10,NPC,False)     [8,2] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT 0x81 Fighter 0x40 Level(10,NPC,False)     [6,2] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+StormGateUnits:
+	UNIT Storm Myrmidon 0x40 Level(10,Ally,False)     [6,9] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Gale Troubadour 0x40 Level(10,Ally,False)     [8,9] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+MessengerGateUnits:
+	UNIT 0x82 LanceCav 0x40 Level(10,NPC,False)     [7,9] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+SwanUnits:
+	UNIT 0x81 AxeCav 0x40 Level(10,NPC,False)     [8,2] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Lion Mage 0x40 Level(10,NPC,False)     [8,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+ThugsUnits:
+	UNIT Skull Fighter 0x40 Level(10,Enemy,False)     [18,2] 0b 0x0 0x1 REDA16R2 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT 0x82 Brigand 0x40 Level(10,Enemy,False)     [18,2] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT 0x83 Mercenary 0x40 Level(10,Enemy,False)     [18,3] 0b 0x0 0x1 REDA17R3 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+ThugsUnits2:
+	UNIT 0x84 Fighter 0x40 Level(10,Enemy,False)     [12,0] 0b 0x0 0x1 REDA12R0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT 0x84 Fighter 0x40 Level(10,Enemy,False)     [13,0] 0b 0x0 0x1 REDA13R1 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT 0x84 CivMan 0x40 Level(10,Enemy,False)     [14,0] 0b 0x0 0x1 REDA14R1 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	
+	UNIT 0x84 Mercenary 0x40 Level(10,Enemy,False)     [18,9] 0b 0x0 0x1 REDA14R4 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT 0x84 CivMan 0x40 Level(10,Enemy,False)     [18,10] 0b 0x0 0x1 REDA13R5 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+HeroUnits:
+	UNIT HeroChar UpstartM 0x40 Level(10,Ally,False)     [18,1] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Headsman 0x40 Level(10,Ally,False)     [18,2] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
+
+PillowUnits:
+	UNIT Pillow LowVoice 0x40 Level(10,Ally,False)     [13,3] 0b 0x0 0x0 0x0 [Loneliness] [0x0,0x0,0x0,0x0]
+	UNIT
 
 Traps1:
 	ENDTRAP
@@ -85,11 +129,96 @@ Traps2:
 
 BeginningScene:
 	CALL StartEventRoutine
+	Music(ThraciaPreparationsID)
 	
+	FADI 16
+	SetBackground(Town_Day)
+	Text(Ch6HeroIntro)
+	FADI 4
+	
+	LOMA BaronManorEntranceCh
+	LOAD2 0x1 TeacherGateUnits
+	ENUN
+	FADU 6
+	BROWNBOXTEXT Ch3BaronManorBrownBox [8,8]
+	ENUN
+	Highlight(Teacher)
+	Text(Ch6TeacherIntro)
+	CenterTextbox(Ch6TeacherIntroNarration)
+	Text(Ch6TeacherIntro2)
+	STAL 45
+	LOAD2 0x1 StormGateUnits
+	MOVE 8 Teacher [7,6]
+	ENUN
+	Highlight(Teacher)
+	Text(Ch6TeacherIntro3)
+	MOVE 8 Teacher [7,8]
+	ENUN
+	Text(Ch6TeacherIntro4)
+	CenterTextbox(Ch6TeacherIntroNarration2)
+	Text(Ch6TeacherIntro5)
+	MUSCMID FFTAnxiety
+	LOAD2 0x1 MessengerGateUnits
+	ENUN
+	Highlight(0x82)
+	Text(Ch6TeacherIntro6)
+	FADI 4
+	DoAllThree
+	
+	LOMA Ch6
+	MUSCSLOW 0x4C //birds chirping
+	CAM1 [18,0]
+	LOAD2 0x1 SwanUnits
+	ENUN
+	FADU 4
+	BROWNBOXTEXT Ch6LionSwanBrownBoxText [8,8]
+	CenterTextbox(Ch6LionSwanNarration)
+	Highlight(0x81)
+	Text(Ch6LionSwanIntro)
+	STAL 60
+	MUSCMID FFTAnxiety
+	LOAD2 0x1 ThugsUnits
+	ENUN
+	STAL 30
+	MOVE 5 Skull [9,2]
+	MOVE 5 0x82 [10,2]
+	MOVE 5 0x83	[10,3]
+	ENUN
+	STAL 30
+	LOAD2 0x1 ThugsUnits2
+	ENUN
+	STAL 30
+	Highlight(Skull)
+	Text(Ch6ThugsArrive)
+	STAL 60
+	LOAD2 0x1 HeroUnits
+	ENUN
+	MOVE 5 HeroChar [11,2]
+	MOVE 5 Dragon [12,3]
+	ENUN
+	WARPIN [13,3]
+	LOAD2 0x1 PillowUnits
+	ENDWARP
+	ENUN
+	STAL 30
+	Highlight(HeroChar)
+	Text(Ch6HeroArrives)
+	STAL 60
+	MOVE 5 Skull [9,1]
+	ENUN
+	Highlight(Skull)
+	Text(Ch6SkullBomb)
+	MUSCMID 0x777F
+	StartBattle
+	NormalDamage(0x0,99)
+	FIGHT_MAP Pillow Skull 0x0 0x0
+	DISA Skull
+	STAL 45
 	FADI 4
 	SetBackground(PillowKillCG)
 	STAL 120
 	CenterTextbox(Ch6PillowNarration)
+	STAL 60
 	FADI 6
 	CLEAN
 	FADU 6

@@ -104,7 +104,7 @@ kiss on the cheek, too.[A]
 If she knew you were wasting my time like[N]
 this, she'd have you tarred and feathered![A]
 
-[fr]
+[fl]
 Look.[4][4] You keep pushing us, and we[N]
 might snap some of those brittle bones.[AN]
 Go on home to the missus, will you?[A]
@@ -149,7 +149,7 @@ to kill low mages...[N][4][4]
 Just hired swords, were they?[A]
 [X]
 
-## Ch6TeacherIntro4
+## Ch6TeacherIntro5
 [mr][LoadTeacher]
 [l][LoadStorm]
 [fl][LoadGale]
@@ -158,14 +158,14 @@ Mind if I ask you a favor?[N][4][4]
 Could you possibly--[A]
 [X]
 
-## Ch6TeacherIntro5
+## Ch6TeacherIntro6
 [mr][LoadPurpleSoldier]
 Guards![4][4] There's fighting![N][4][4]
 Fighting's broken out at the gates![A]
 [X]
 
 ## Ch6LionSwanNarration
-Earlier...[A]
+Earlier, near the low mage district...[A]
 [X]
 
 ## Ch6LionSwanBrownBoxText
@@ -192,12 +192,12 @@ I complain in moderation.[AN][oe]
 You would, too, if you had to guard the[N]
 low mage district in times like these.[A]
 
-[ml]
+[ml][ts]
 ...Yeah, maybe.[A]
 
-[mr]
+[mr][ts]
 Oh? I figured you'd have a retort.[AN]
-Like,[mmr][ce][oq]Ha! I'm not afraid of any low mages!"[4][4][4][4][N]
+Like,[mmr][ce] [oq]Ha! I'm not afraid of any low mages!"[4][4][4][4][N]
 [oe]Or some such.[A]
 
 [ml]
@@ -246,6 +246,7 @@ knuckle-dragger![A]
 [l]
 Stay out of this, Lion![4][4][N]
 Don't be stupid.[A]
+[X]
 
 ## Ch6HeroArrives
 [fl][LoadSwan]
@@ -272,19 +273,24 @@ Walk away, all of you.[N]
 This doesn't concern you.[A]
 
 [r]
-Don't be stupid, Skull.[N]
-Don't you have kids?[A]
+Shouldn't a bunch of guys like you be[N]
+helping out with the reconstruction?[A]
 
 [l]
-I still do, no thanks to those monsters![N]
-Who do you think brought them into our city?[A]
+Oh, we're gonna help, all right.[4][4] Who[N]
+do you think called all those beasts here?[A]
 
 [fr]
 What the hell're you talking about?[A]
 
 [l]
 The low mage district should've been the[N]
-first to fall, but it's standing, same as ever![A]
+first to fall.[A] But look![4][4] There wasn't[N]
+a scratch on it.[A]
+
+[r]
+You think they can just call up[N]
+monsters?[4][4] Are you insane?![A]
 [X]
 
 ## Ch6SkullBomb
@@ -294,8 +300,15 @@ You're not from here.[AN]
 You don't care![A]
 
 [r][LoadHeroM]
-Skull, what're you doing?![N][4][4]
+He's going over to the fence...[N][4][4]
+Skull, what're you doing?![AN][4][4]
 Just calm down, man![A]
+
+[ffl]
+Who are these people?[A]
+
+[ffr]
+There's a low mage with 'em![A]
 
 [fl][LoadSwan]
 Drop the bag, and come back[N]
@@ -304,12 +317,6 @@ over here, please![A]
 [l]
 Shut up.[N]
 Both of you, shut up![A]
-
-[ffl]
-Who are these people?[A]
-
-[ffr]
-There's a low mage with 'em![A]
 
 [r]
 What if...[4][4] uh...[4][4][N]
@@ -339,7 +346,8 @@ you piece of trash?![A]
 Stop it, I said! Let me...[A]
 [clear]
 [LoadLion]
-Wh...[4][4][mvr] He's got firebombs![A]
+Wh...[4][4][mfl] He's got firebombs![N]
+He's gonna throw 'em over the fence![A]
 
 [l]
 They have to go![N]
@@ -348,10 +356,11 @@ Them, or us![A]
 [r]
 Skull![4][4][N]
 Skull, if you--![A]
-
+[fr][clear][css]
 [ffr]
 Yeah, do it![A]
 
+[fl][clear][css]
 [ffl]
 Do it![A]
 
@@ -373,16 +382,15 @@ It'll always be like this.[A]
 [X]
 
 ## Ch6PillowNarration
-Hello.[AN]
-My name is Pillow.[AN]
+Hello.[A][N]
+I didn't know your name, but mine[N]
+is Pillow. I'm a low mage.[AN]
 It's not my real name, but my parents[N]
 called me that before they were killed.[AN]
-I don't know your name.[N][4][4][4]
-I don't want to save anyone.[N][4][4][4]
-I don't want to be a hero.[AN][4][4][4]
-I didn't want to be your executioner.[N][4][4][4][4]
-And I can't mourn you.[N][4][4][4][4][4][4][4]
-I'm sorry.[A]
+I don't want to save anyone.[AN]
+I don't want to execute the wicked.[AN]
+And I can't mourn you.[AN]
+Goodbye.[A]
 [X]
 
 //back to map
