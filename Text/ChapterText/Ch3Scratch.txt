@@ -61,3 +61,205 @@ them straight immediately.[A]
 Ha![4][4] On second thought, some[N]
 embellishment may be good[tmm]...[tmm][A]
 [X]
+
+## BaseConvoPillowCat1
+
+[mr][LoadPillowCiv]
+[tmm][CloseEyes]
+(Maybe I should put my crown back on...[....][N]
+The demons are giving me a headache.)[AN][X]
+
+
+## BaseConvoPillowCat2
+
+[ml][LoadCivWoman]
+[MoveMidLeft]Ah![....]
+Not up there, you furry beast![N]
+
+[ffr]
+Meoowww![AN]
+
+[mr][LoadPillowCiv][tmm]
+(Hmm?)[AN][X]
+
+
+## BaseConvoPillowCat3
+
+[ml][LoadCivWoman]
+[r][LoadPillowCiv]
+
+[ml]
+Come on, Barley![....] Come down to mama.[AN]
+
+[ffr]
+Rrreoww...[AN]
+
+[ml]
+Be a good boy![b] Won't you please?[AN]
+
+[ffr]
+...[AN]
+
+[r][tmm]
+(Poor cat...[N]
+Maybe I could...)[AN][X]
+
+
+## BaseConvoPillowFlashback
+
+Low magic makes your mind real![N]
+Your thoughts are your weapon![AN]
+Reach out to the Lowland Demons[N]
+with invisible hands -- twist their[N]
+limbs and break their necks![AN][X]
+
+
+## BaseConvoPillowCat4
+
+[ml][LoadCivWoman]
+[r][LoadPillowCiv]
+
+[tmm][CloseEyes]
+(...)[AN]
+(Maybe I shouldn't...[b][N]
+but I do want to pet that cat...)[AN][css]
+[OpenEyes]
+(Maybe I could just...)[b][AN]
+
+[ffr]
+Mrrp?[AN]
+
+[ml]
+Barley?[AN]
+
+[r][tmm][CloseEyes]
+(Careful, careful...[N]
+Scritch, scritch...)[AN]
+
+[ffr]
+Mrrr...[N]
+Mrrr...[AN]
+
+[ml]
+You're looking rather relaxed all[N]
+of a sudden, Barley.[AN]
+
+[r][ts]
+Ehehee...[b][N]
+So soft...[b][N]
+What a good boy...[AN]
+
+[ml]
+Er...[b] Are you speaking to my cat?[AN]
+
+[r][css][OpenEyes][MoveRight]
+Hmm?[b] Oh, er, I was just...[b][N]
+admiring him...[AN]
+
+[ml][ts]
+Haha![b] Isn't he a handsome boy?[b][N]
+
+[r]
+Mm-hmm![b] And he's so soft![AN]
+
+[ml]
+He-- [b][ts] Wait, what?[AN]
+
+[r]
+Um, I mean...[b][N]
+He LOOKS soft![AN]
+[tmm]
+(I'd better get him down, but I don't[N]
+want to hurt him!)[AN]
+
+[ffr]
+Mmmrrr...[AN]
+
+[r]
+(Nudge.)[AN]
+
+[ffr]
+Mrr?[AN]
+
+[r]
+(Nudge.[b] Nudge.)[AN]
+(Nuuuuuuuudge...)[AN]
+
+[ffr]
+Meow![AN]
+
+[r][css][MoveRight][tmm]
+Eeek![AN]
+
+[ml]
+Barley, you silly cat![b][N]
+Don't just jump onto strangers![AN]
+
+[r]
+I-It's okay![b][N]
+Just spooked me a little.[AN]
+
+[ml][ts]
+He looks quite happy over there[N]
+in your lap.[AN]
+Why, you've got enough pillows for[N]
+an army of cats![b] Haha![AN]
+Why is that, if you don't mind my[N]
+asking?[AN]
+
+[r][ts]
+...Oh, er, magic![b] High magic.[b][N]
+It's...[b] hard to explain...[AN]
+Here, you can have Barley back.[AN]
+[css][MoveRight]
+
+[ml][MoveMidLeft][ts]
+Thank you, miss.[b] You don't look much[N]
+like a priest or a scholar,[AN]
+but you seem like a good sort.[b][N]
+Don't be a stranger, now![AN]
+
+[r]
+Bye![b][AN]
+[css]
+[ml][clear]
+[r][tmm]
+(Heh... my headache went away.)[AN][X]
+
+
+## Ch3Notes
+
+As you know, the founder of our nation[N]
+sought to learn the nature of all things.[AN]
+She traveled to the Lowlands in pursuit[N]
+of wisdom, where she became one with the earth.[A]
+Thus 
+[X]
+
+
+## Ch3Village2Text
+
+[ml][LoadTeacher]
+[mr][LoadCivManOld]
+Well, well.[4][4] New in town, sonny?[A]
+
+[ml]
+[tmm]([oq]Sonny"?)[N]
+You could say that.[4] Why?[A]
+
+[mr]
+Well, now![4] You should know[tmm]...[tmm][A]
+
+[ml]
+[X]
+
+## Ch3Village2TextNarration
+[oq]'Sonny'?" I thought to myself again,[N]
+not really listening.[N]
+I was tempted to let it slide.[AN]
+However, men my age numbered few in[N]
+the Highlands, and that was an[N]
+indefensibly annoying way to greet[N]
+a fellow elder.[N]
+I was well within my rights to retaliate.[A]
+[X]
