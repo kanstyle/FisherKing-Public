@@ -40,6 +40,7 @@
 #define PillowSadMug 0x26
 #define OldPrinceEyesClosedMug 0x27
 #define LionMug 0x28
+#define MuscleMug 0x44
 
 #define AxeBoneCard 0xAD
 #define LanceBoneCard 0xAE
@@ -87,6 +88,7 @@
 #define Ch5Skull 0x2A
 
 #define Devil 0x40
+#define Muscle 0x41
 
 #define Ch2BeastBoss 0xAB
 #define JabberwockBoss 0xAD
@@ -108,6 +110,8 @@
 #define Ch4NPCWoman 0xF2
 #define Cart 0xF3
 #define Civilian 0xF4
+#define GuardUnit 0x7d
+#define Thug 0x7e
 
 // Classes
 #define UpstartF EirikaLord
@@ -214,6 +218,7 @@
 #define Death 0x4a
 
 #define Key 0x6b 
+#define CyclonicLance 0x69
 #define ThousandGold 0x9f
 
 #define Bomb 0xC1

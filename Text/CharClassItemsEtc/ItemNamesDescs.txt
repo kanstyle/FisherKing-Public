@@ -1247,3 +1247,11 @@ Key[X]
 
 ## KeyDesc
 Opens doors and chests.[X]
+
+## CyclonicLanceName ^
+Cyclonic Lance
+[X]
+
+## CyclonicLanceDesc
+Effective against fliers. Uses Str/2.
+[X]

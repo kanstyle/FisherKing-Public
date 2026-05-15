@@ -25,6 +25,7 @@ DeathQuote(Skull,0xFF,DefeatBossFlag,Ch1SkullDQ)
 DeathQuote(Songbird,Ch2,0x0,0x0,Ch2SongbirdDeathQuoteEvent)
 DeathQuote(Wise,0xFF,DefeatBossFlag,Ch3WiseDQ)
 DeathQuote(JabberwockBoss,0xFF,DefeatBossFlag,0x0)
+DeathQuote(Muscle,0xFF,DefeatBossFlag,0x0,MuscleDeathQuoteEvent)
 
 // NPC Units
 
@@ -126,5 +127,11 @@ ENDA
 ALIGN 4
 GaleDeathQuoteEvent:
 Text(GaleDQ)
+NoFade
+ENDA
+
+ALIGN 4
+MuscleDeathQuoteEvent:
+Text(MuscleDQ)
 NoFade
 ENDA

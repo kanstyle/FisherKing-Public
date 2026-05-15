@@ -1,10 +1,11 @@
 #include "gbafe.h"
 #include "SteadySteady.h"
- 
- // skill sys 
-extern int SkillTester(struct BattleUnit* unit, int id); 
-extern int prMovGetter(struct Unit* unit); 
+
+ // skill sys
+extern int SkillTester(struct BattleUnit* unit, int id);
+extern int prMovGetter(struct Unit* unit);
 extern int SteadySteadyID_Link;
+extern s8 IsItemEffectiveAgainst(u16 item, struct Unit* unit);
 
 void SteadySteadyEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB) {
 	if(bunitA == &gBattleActor) {
@@ -14,7 +15,8 @@ void SteadySteadyEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB) {
 			if (gActionData.moveCount <= ((prMovGetter(&gBattleActor.unit)/2) - 2)) { //if moving =< full move -2
 				gBattleActor.battleCritRate += 15;
 				gBattleActor.battleHitRate += 50;
-				gBattleActor.battleAttack += (GetItemMight(&gBattleActor.weapon) / 2);
+				int mult = IsItemEffectiveAgainst(gBattleActor.weapon, &bunitB->unit) ? 3 : 1;
+				gBattleActor.battleAttack += (GetItemMight(&gBattleActor.weapon) / 2) * mult; //tripled if effective
 			}
 		}
 	}

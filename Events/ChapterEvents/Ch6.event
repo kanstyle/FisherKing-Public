@@ -55,7 +55,6 @@ Units1:
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [3,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [2,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [4,3] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [2,4] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT
 
 LionUnits:
@@ -72,7 +71,33 @@ NPCUnits:
 	UNIT
 
 EnemyUnits:
-	UNIT 0x81 Mercenary 0x40 Level(9,Enemy,True)     [12,11] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	//top middle
+	UNIT Thug Mercenary 0x40 Level(9,Enemy,True)     [9,3] 0b 0x0 0x0 0x0 [SteelSword] ChargeAI
+	UNIT GuardUnit Mage 0x40 Level(9,Enemy,True)     [10,3] 0b 0x0 0x0 0x0 [Fire] ChargeAI
+	UNIT GuardUnit Knight 0x40 Level(9,Enemy,True)     [8,3] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT Thug Fighter 0x40 Level(9,Enemy,True)     [8,2] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
+	UNIT Thug Brigand 0x40 Level(9,Enemy,True)     [11,2] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT GuardUnit Knight 0x40 Level(9,Enemy,True)     [11,3] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	
+	//top right
+	UNIT GuardUnit Archer 0x40 Level(9,Enemy,True)     [10,5] 0b 0x0 0x0 0x0 [Longbow] AttackInRangeAI
+	
+	UNIT Thug Fighter 0x40 Level(9,Enemy,True)     [13,2] 0b 0x0 0x0 0x0 [Halberd] AttackInRangeAI
+	UNIT Thug Fighter 0x40 Level(9,Enemy,True)     [12,1] 0b 0x0 0x0 0x0 [Swordreaver] AttackInRangeAI
+	UNIT GuardUnit Knight 0x40 Level(9,Enemy,True)     [12,1] 0b 0x0 0x0 0x0 [Swordreaver] AttackInRangeAI
+	
+	//bottom left
+	UNIT GuardUnit Mage 0x40 Level(9,Enemy,True)     [2,8] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	UNIT Thug Mercenary 0x40 Level(9,Enemy,True)     [3,8] 0b 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+	
+	//bottom middle
+	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [8,11] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [3,11] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [13,11] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [18,11] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	
+	//bottom right
+	UNIT Muscle Warrior 0x40 Level(1,Enemy,False)     [18,10] 0b 0x0 0x0 0x0 [SteelBow,SilverAxe] AttackInRangeAI
 	UNIT
 	
 TeacherGateUnits:
@@ -128,6 +153,10 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
+	REMU Teacher
+	REMU Storm
+	REMU Gale
+	
 	CALL StartEventRoutine
 	Music(ThraciaPreparationsID)
 	
@@ -224,10 +253,13 @@ BeginningScene:
 	FADU 6
 	
 	FADI 16
+	DoAllThree
 	LOAD1 0x1 LionUnits
 	LOAD1 0x1 EnemyUnits
 	GotoPrepScreen
 	ENDA
+	
+	//Add a turn 1 event where swan points out that there's guards admidst the thugs
 	
 TeacherReinforcementsEvent:
 	REVEAL Teacher

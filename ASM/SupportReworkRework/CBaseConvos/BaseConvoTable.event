@@ -52,6 +52,13 @@
 			bg(Woodland_Night)
 			text(Ch5BaseBunnyPillow)
 			eventID(0x25)
+	Chapter(Ch6)
+		Entry
+			name(Ch6BasePillowDragonName)
+			music(WildFieldsID)
+			bg(Town_Day)
+			text(Ch6BasePillowDragon)
+			eventID(0x25)
 	POP
 	}
 #endif // BASE_CONVO_TABLE

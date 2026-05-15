@@ -247,3 +247,21 @@ Lion[X]
 
 ## LionDesc
 Placeholder.[X]
+
+## GuardName
+Guard[X]
+
+## GuardDesc
+Placeholder.[X]
+
+## ThugName
+Thug[X]
+
+## MuscleName
+Muscle[X]
+
+## MuscleDesc
+Placeholder.[X]
+
+## ThugDesc
+Placeholder.[X]

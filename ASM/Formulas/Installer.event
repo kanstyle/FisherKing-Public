@@ -1,1 +1,7 @@
-#include "Formulas.lyn.event" 
+#include "Formulas.lyn.event"
+
+ALIGN 4
+HalfPowWeaponList:
+BYTE 0x02 // Quickblade
+BYTE 0x69 // Cyclonic Lance
+BYTE 0x00

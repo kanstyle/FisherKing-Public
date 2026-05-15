@@ -3,12 +3,146 @@
 Ch. 6: Skullcrush[X]
 
 ## Ch6Objective
-Rout enemy
+Hero escapes
 [X]
 
 ## Ch6ObjectiveLong ^
-Defeat all enemies
+Escape to the southeast
 within the time limit.
+[X]
+
+## Ch6BasePillowDragonName
+Make-believe[X]
+
+## Ch6BasePillowDragon
+
+[ml][LoadDragon]
+[mr][LoadPillow]
+
+[mr]
+Hey, Dragon.[A]
+
+[ml]
+What's up?[A]
+
+[mr]
+You liked to read when you[N]
+were a kid, right?[A]
+
+[ml]
+Yeah, kinda.[4][4] Mostly adventure[N]
+stories.[4][4] Kid stuff.[AN][ts]
+...To be honest, I liked the ones[N]
+where you were, kinda...[A] supposed[N]
+to imagine yourself in the story.[AN]
+You know?[A]
+
+[mr]
+Me too![4] That's actually what I[N]
+was going to ask about...[A]
+
+[ml][ts]
+Wait, what?[AN]
+[tmm](That's so specific.[4][N]
+She's gotta be up to something...)[A][tmm]
+
+[mr][ts]
+Did you ever come up with a sort[N]
+of...[4] fantasy persona for yourself?[A]
+
+[ml][ts]
+Uh...[4][4] not really...[A]
+
+[mr][ts]
+I did.[4] And all my friends did, too.[A][css]
+
+[ml][ce][ts][4][4][4][4][4][4][4][4]
+Well...[4][4] It wasn't really me.[4][N]
+[oe]It was, like, someone else.[A]
+
+[mr][mvr][ts]
+I'm listening.[A]
+
+[ml][ce][ts]
+King's rings...[A][oe]
+
+[r][ts]
+I'll keep bothering you until you tell me.[N][ts][ce]
+Unless you want me to be sad...[4][4] [mvr]Boo[mvr]hoo[mvr]hoo...[A][oe][ts]
+
+[ml][ts]
+...It's not that exciting.[4][4] She was[N]
+kinda like Eagle.[A] But she had long[N]
+hair.[4] And glasses.[4] And she did magic.[A]
+
+[r][ts]
+And...?[A]
+
+[ml][ts]
+...She could, like, go to different[N]
+worlds through doors.[AN]
+But the doors were cursed, or something,[N]
+[4] so if she did that too much, like...[AN]
+And there was, uh...[4][4][4][4][4][ce] a lot of stuff...[4][4][N]
+It was complicated.[A][oe]
+
+[r][ts]
+Awwww.[4][4] I would've played make-believe[N]
+with you, had I been there...[A]
+
+[ml]
+Wouldn't say no to that.[4][4][N]
+[ts]Being a kid wasn't all that fun.[A]
+
+[r]
+I don't think we've talked about[N]
+your childhood all that much.[A]
+
+[ml]
+Yeah.[AN]
+...Sorry.[4] I feel like I should tell[N]
+you more about myself.[4][4][4] I'm trying.[A]
+
+[r][ts]
+It's okay.[4][4] We'll get to know[N]
+you better pretty soon.[4] Here...[A]
+
+[ml][ts]
+[oq]We"?[4][4] Wait,[4] what's this?[A]
+
+[r][ts]
+It's a rulebook for a game.[AN]
+You make up characters, and act as them,[N]
+and make up stories together...[AN]
+And you've got one already.[A]
+
+[ml][ts][mml]
+Hold on--[A]
+
+[r][ts]
+Hero said he'd play.[4] I was going[N]
+to ask Teacher, too...[A]
+
+[ml][ce][ts]
+Okay, okay,[4] uh,[4] I--[4][4] Look,[4][N]
+maybe if it was just us two...[A][oe]
+
+[r][ts]
+Oh, come on...[N][4][4]
+I thought I was the shy one.[A]
+
+[ml][ts]
+Maybe we could just...[4][4] try it[N]
+by ourselves first?[4][4] Or--[A]
+
+[r][ts]
+Don't you want to see what kind[N]
+of character Teacher comes up with?[A]
+
+[ml][ts]
+...[4][4][4][4][4][4][4][4][4][N]
+...Actually, that does sound[N]
+pretty funny.[A]
 [X]
 
 ## Ch6HeroIntro

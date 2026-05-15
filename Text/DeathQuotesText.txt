@@ -92,3 +92,8 @@ help...![A][X]
 [mr][LoadSongbird]
 [mmr]Ah...[4][4] so...[4][4] once again,[N]
 I shall...[A][X]
+
+## MuscleDQ
+
+[mr][LoadMuscle]
+[mmr]Placeholder.[A][X]

@@ -64,9 +64,18 @@ int GetUnitAid(struct Unit* unit) { //universal 20 aid
 	return 20;
 }
 
+extern const u8 HalfPowWeaponList[];
+
 void HalvedPowEffect(struct BattleUnit* attacker, struct BattleUnit* defender) {
-	if (GetItemIndex(attacker->weapon) == 0x2) //Quickblade
-        attacker->battleAttack = attacker->battleAttack - (attacker->unit.pow/2);
+    int weaponId = GetItemIndex(attacker->weapon);
+    const u8* list = HalfPowWeaponList;
+    while (*list != 0) {
+        if (*list == weaponId) {
+            attacker->battleAttack -= attacker->unit.pow / 2;
+            return;
+        }
+        list++;
+    }
 }
 
 /*void BattleGenerateHitAttributes(struct BattleUnit* attacker, struct BattleUnit* defender) {
