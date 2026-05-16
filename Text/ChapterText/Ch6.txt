@@ -206,7 +206,7 @@ Oh, whatever.[4][4] You're like some[N]
 character in a crime novel.[A]
 
 [mr]
-You can't read.[A]
+You can't read novels.[A]
 
 [ml]
 Uh, yeah, I know![4][4] That's the joke![A]
@@ -216,13 +216,24 @@ What?[A][css]
 
 [ml][ce][mml]
 Whatever![AN][oe]
-Anyway, uh...[4][4][4][mml] here.[AN]
-That'll cover what you gave the[N]
-church, right?[A]
+Anyway, uh...[4][4][4] Apologize, and[N]
+I'll give you a present.[A]
+
+[mr]
+...My bad.[A]
+
+[ml][ts]
+Here.[A]
 
 [mr]
 Huh?[4][4] Wait, why're you paying me back?[N]
 This a joke?[A]
+
+[ml]
+It's not for you![4][4] It's for your church.[A]
+
+[mr]
+Oh.[4][4] Thanks--[A]
 
 [ml][ts]
 'Cause I make more money than you.[N]
