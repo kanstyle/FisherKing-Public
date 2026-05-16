@@ -82,7 +82,7 @@ And...?[A]
 ...She could, like, go to different[N]
 worlds through doors.[AN]
 But the doors were cursed, or something,[N]
-[4] so if she did that too much, like...[AN]
+so if she did that too much, like...[AN]
 And there was, uh...[4][4][4][4][4][ce] a lot of stuff...[4][4][N]
 It was complicated.[A][oe]
 
@@ -143,6 +143,104 @@ of character Teacher comes up with?[A]
 ...[4][4][4][4][4][4][4][4][4][N]
 ...Actually, that does sound[N]
 pretty funny.[A]
+[X]
+
+## Ch6BasePigeonBrother
+[mr][LoadBrother]
+[mr][tmm]
+(...)[AN]
+(Looks like I made it.[N]
+Now I just gotta head back...)[A][tmm][css]
+
+[ml][LoadPigeon][ts]
+Hey, Brother![4][4] Really crowded by[N]
+the church today, huh?[A]
+
+[mr][mmr][ts]
+Damn it![4][4] Son of a...[A]
+
+[ml]
+What?![4][4] All I did was say hi![A]
+
+[mr]
+Keep it down![4][4] King's damn rings![N]
+Don't shout my name out loud![A]
+
+[ml]
+Are you kidding me?! Someone hears "brother"[N]
+near a church and you're the first one in mind?[AN]
+Gimme a break![A]
+
+[mr]
+Just...[4][4] just quiet the hell down![N]
+What're you even bugging me for?[A][css]
+
+[ml][mml][ce]
+Nothing![4][4] I just saw you and[N]
+thought we were friends.[AN][oe]
+Why're you sneaking around a church,[N]
+anyway?[AN]
+
+[mr]
+Nothin'.[A]
+
+[ml]
+Looks like they're still really busy[N]
+with everyone who got hurt...[AN]
+
+[mr]
+Yeah. I just dropped off some money.[A]
+
+[ml]
+Wait, really?[4][4] Wow, that's nice![AN]
+Couldn't you just help them, though?[N]
+You know, with your staff?[A]
+
+[mr]
+Use your head for a sec, okay?[N][4][4]
+I got enemies in this city.[AN]
+Don't want the church mixed up in that.[A]
+
+[ml]
+Oh, whatever.[4][4] You're like some[N]
+character in a crime novel.[A]
+
+[mr]
+You can't read.[A]
+
+[ml]
+Uh, yeah, I know![4][4] That's the joke![A]
+
+[mr]
+What?[A][css]
+
+[ml][ce][mml]
+Whatever![AN][oe]
+Anyway, uh...[4][4][4][mml] here.[AN]
+That'll cover what you gave the[N]
+church, right?[A]
+
+[mr]
+Huh?[4][4] Wait, why're you paying me back?[N]
+This a joke?[A]
+
+[ml][ts]
+'Cause I make more money than you.[N]
+'Cause I can fly.[4][4] And you can't.[4][4] Heehee.[A]
+
+[mr][ce]
+Are you serious?![4][4] [ce]God dammit...![A][oe]
+
+[ml]
+Plus, I don't mind eating some pegasus feed.[N]
+It's kinda good sometimes.[A]
+
+[mr]
+No.[4][4] Take this back.[N]
+You're gonna eat people food.[A]
+
+[ml][ts]
+Oh yeah?[4][4] Make me![A]
 [X]
 
 ## Ch6HeroIntro
