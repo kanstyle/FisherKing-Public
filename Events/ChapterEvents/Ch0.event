@@ -101,8 +101,10 @@ UnitsCh4:
 	UNIT
 
 UnitsCh5:
+	UNIT Storm Myrmidon 0x40 Level(7,Ally,False)     [0,0] 0b 0x0 0x0 0x0 [PatientKatti,SteelSword] [0x0,0x0,0x0,0x0]
+	UNIT Gale Troubadour 0x40 Level(7,Ally,False)     [0,0] 0b 0x0 0x0 0x0 [Quickblade,Breeze] [0x0,0x0,0x0,0x0]
 	UNIT
-	
+
 TeacherUnit:
 	UNIT YoungTeacher Veteran 0x40 Level(10,Ally,False)     [2,13] 0b 0x0 0x1 REDA3R14 [IronLance,SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT
@@ -750,13 +752,14 @@ LABEL EndPage
 		AutoLevel(Swan, 8)
 		AutoLevel(Snot, 8)
 		AutoLevel(Storm, 8)
+		AutoLevel(Gale, 8)
 		MNC2 Ch5d
 		//GOTO EndMenuSkipStartEvent
 		
 	SVAL 7 Ch6
 	CenterTextbox(DebugPauseText)
 	BLT EndMenuSkipStartEvent 8 7
-		//LOAD1 0x1 UnitsCh5 //no units in ch5d
+		LOAD1 0x1 UnitsCh5
 		AutoLevel(HeroChar, 9)
 		AutoLevel(Dragon, 9)
 		AutoLevel(Pillow, 9)
@@ -767,6 +770,7 @@ LABEL EndPage
 		AutoLevel(Swan, 9)
 		AutoLevel(Snot, 9)
 		AutoLevel(Storm, 9)
+		AutoLevel(Gale, 9)
 		MNC2 Ch6
 		//GOTO EndMenuSkipStartEvent
 		

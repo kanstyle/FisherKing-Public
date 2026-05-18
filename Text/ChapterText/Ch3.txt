@@ -12,7 +12,7 @@ Fight in the arena[N]
 and run errands.[X]
 
 ## Ch3BaseHunterName
-Hunter's Here
+Hunter/Teacher/Hero
 [X]
 
 ## Ch3BaseHunter

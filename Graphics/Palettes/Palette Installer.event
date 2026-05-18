@@ -21,3 +21,12 @@ HunterBowArmorPal:
 SwanAxeCavFPal:
 	#incbin "./_palettes/SwanAxeCavFPal.lzpal" 
 
+StormMyrmidonPal:
+	#incbin "./_palettes/StormMyrmidonPal.lzpal" 
+
+BrotherPriestPal:
+	#incbin "./_palettes/BrotherPriestPal.lzpal" 
+
+LionMagePal:
+	#incbin "./_palettes/LionMagePal.lzpal" 
+

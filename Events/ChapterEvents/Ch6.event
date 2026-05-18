@@ -15,7 +15,9 @@ PointerList:
 TurnBasedEvents:
 	TurnEventEnemy(0x0,BleedoutChapterTurnEvent,1,255)
 	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
+	TurnEventPlayer(0x0,SwanGuardsEvent,1)
 	TurnEventPlayer(0x0,TeacherReinforcementsEvent,2)
+	TurnEventPlayer(0x0,ChargingBlockEvent,2)
 	END_MAIN
 
 ALIGN 32
@@ -58,7 +60,7 @@ Units1:
 	UNIT
 
 LionUnits:
-	UNIT Lion HighMage 0x40 Level(7,Ally,False)     [0,0] 0b 0x0 0x0 0x0 [Thunder, Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT Lion HighMage 0x40 Level(7,Ally,False)     [0,0] 0b 0x0 0x0 0x0 [Thunder, Fire, Vulnerary] [0x0,0x0,0x0,0x0]
 	UNIT
 	
 TeacherUnits:
@@ -76,19 +78,23 @@ EnemyUnits:
 	UNIT GuardUnit Mage 0x40 Level(9,Enemy,True)     [10,3] 0b 0x0 0x0 0x0 [Fire] ChargeAI
 	UNIT GuardUnit Knight 0x40 Level(9,Enemy,True)     [8,3] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
 	UNIT Thug Fighter 0x40 Level(9,Enemy,True)     [8,2] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
-	UNIT Thug Brigand 0x40 Level(9,Enemy,True)     [11,2] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT Thug Brigand 0x40 Level(9,Enemy,True)     [11,2] 0b 0x0 0x0 0x0 [SteelAxe] ChargeAI
 	UNIT GuardUnit Knight 0x40 Level(9,Enemy,True)     [11,3] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
 	
 	//top right
 	UNIT GuardUnit Archer 0x40 Level(9,Enemy,True)     [10,5] 0b 0x0 0x0 0x0 [Longbow] AttackInRangeAI
 	
-	UNIT Thug Fighter 0x40 Level(9,Enemy,True)     [13,2] 0b 0x0 0x0 0x0 [Halberd] AttackInRangeAI
-	UNIT Thug Fighter 0x40 Level(9,Enemy,True)     [12,1] 0b 0x0 0x0 0x0 [Swordreaver] AttackInRangeAI
-	UNIT GuardUnit Knight 0x40 Level(9,Enemy,True)     [12,1] 0b 0x0 0x0 0x0 [Swordreaver] AttackInRangeAI
+	UNIT Thug Fighter 0x40 Level(9,Enemy,True)     [14,2] 0b 0x0 0x0 0x0 [Halberd] AttackInRangeAI
+	UNIT Thug Fighter 0x40 Level(9,Enemy,True)     [13,1] 0b 0x0 0x0 0x0 [Swordreaver] AttackInRangeAI
+	UNIT GuardUnit Knight 0x40 Level(9,Enemy,True)     [14,1] 0b 0x0 0x0 0x0 [Swordreaver] AttackInRangeAI
 	
 	//bottom left
 	UNIT GuardUnit Mage 0x40 Level(9,Enemy,True)     [2,8] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	
 	UNIT Thug Mercenary 0x40 Level(9,Enemy,True)     [3,8] 0b 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+	
+	//guarding chest
+	UNIT Thug Mercenary 0x40 Level(9,Enemy,True)     [6,12] 0b 0x0 0x0 0x0 [IronSword] BossAI
 	
 	//bottom middle
 	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [8,11] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
@@ -98,6 +104,19 @@ EnemyUnits:
 	
 	//bottom right
 	UNIT Muscle Warrior 0x40 Level(1,Enemy,False)     [18,10] 0b 0x0 0x0 0x0 [SteelBow,SilverAxe] AttackInRangeAI
+	UNIT
+	
+ChargingBlockUnits:
+	UNIT GuardUnit Soldier 0x40 Level(9,Enemy,True)     [13,13] 0b 0x0 0x0 0x0 [IronLance] ChargeAI
+	UNIT GuardUnit Soldier 0x40 Level(9,Enemy,True)     [14,13] 0b 0x0 0x0 0x0 [IronLance] ChargeAI
+	UNIT GuardUnit Fighter 0x40 Level(9,Enemy,True)     [13,12] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
+	UNIT GuardUnit Fighter 0x40 Level(9,Enemy,True)     [14,12] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
+	UNIT
+	
+WyvernReinforcementUnits:
+	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [0,4] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [0,7] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [0,10] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
 	UNIT
 	
 TeacherGateUnits:
@@ -259,8 +278,6 @@ BeginningScene:
 	GotoPrepScreen
 	ENDA
 	
-	//Add a turn 1 event where swan points out that there's guards admidst the thugs
-	
 TeacherReinforcementsEvent:
 	REVEAL Teacher
 	REVEAL Storm
@@ -270,6 +287,22 @@ TeacherReinforcementsEvent:
 	LOAD1 0x1 TeacherUnits
 	Highlight(Teacher)
 	
+	NoFade
+	ENDA
+	
+SwanGuardsEvent:
+	MUSC HarvestDance
+	Highlight(Swan)
+	Text(SwanGuardsText)
+	NoFade
+	ENDA
+
+ChargingBlockEvent:
+	CAM1 [13,13]
+	STAL 40
+	LoadReinforcements(ChargingBlockUnits)
+	HighlightTile(13,13)
+	Text(ChargingBlockText)
 	NoFade
 	ENDA
 

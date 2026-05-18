@@ -32,7 +32,7 @@ We're finished!![A]
 [X]
 
 ## Ch5BaseBunnyPillowName
-All in your head?[X]
+Bunny/Pillow[X]
 
 ## Ch5BaseBunnyPillow
 [mr][LoadBunny]

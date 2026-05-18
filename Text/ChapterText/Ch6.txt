@@ -12,7 +12,7 @@ within the time limit.
 [X]
 
 ## Ch6BasePillowDragonName
-Make-believe[X]
+Pillow/Dragon[X]
 
 ## Ch6BasePillowDragon
 
@@ -145,6 +145,9 @@ of character Teacher comes up with?[A]
 pretty funny.[A]
 [X]
 
+## Ch6BasePigeonBrotherName
+Pigeon/Brother[X]
+
 ## Ch6BasePigeonBrother
 [mr][LoadBrother]
 [mr][tmm]
@@ -167,8 +170,8 @@ Keep it down![4][4] King's damn rings![N]
 Don't shout my name out loud![A]
 
 [ml]
-Are you kidding me?! Someone hears "brother"[N]
-near a church and you're the first one in mind?[AN]
+Are you kidding me?![4][4] You think you're[N]
+the only [oq]brother" near a church?[AN]
 Gimme a break![A]
 
 [mr]
@@ -178,8 +181,8 @@ What're you even bugging me for?[A][css]
 [ml][mml][ce]
 Nothing![4][4] I just saw you and[N]
 thought we were friends.[AN][oe]
-Why're you sneaking around a church,[N]
-anyway?[AN]
+What're you doing sneaking around a[N]
+church, anyway?[A]
 
 [mr]
 Nothin'.[A]
@@ -191,8 +194,8 @@ with everyone who got hurt...[AN]
 [mr]
 Yeah. I just dropped off some money.[A]
 
-[ml]
-Wait, really?[4][4] Wow, that's nice![AN]
+[ml][ts]
+Wait, really?[4][4] Wow, that's nice![AN][ts]
 Couldn't you just help them, though?[N]
 You know, with your staff?[A]
 
@@ -219,15 +222,14 @@ Whatever![AN][oe]
 Anyway, uh...[4][4][4] Apologize, and[N]
 I'll give you a present.[A]
 
-[mr]
-...My bad.[A]
+[mr][ce]
+...My bad.[4][4] For snapping.[A]
 
-[ml][ts]
+[ml][mml][ts]
 Here.[A]
 
-[mr]
-Huh?[4][4] Wait, why're you paying me back?[N]
-This a joke?[A]
+[mr][ts][oe]
+Huh?[4][4] Wait, what's this money for?[A]
 
 [ml]
 It's not for you![4][4] It's for your church.[A]
@@ -239,19 +241,16 @@ Oh.[4][4] Thanks--[A]
 'Cause I make more money than you.[N]
 'Cause I can fly.[4][4] And you can't.[4][4] Heehee.[A]
 
-[mr][ce]
+[mr][ce][ts]
 Are you serious?![4][4] [ce]God dammit...![A][oe]
 
-[ml]
+[ml][ts]
 Plus, I don't mind eating some pegasus feed.[N]
 It's kinda good sometimes.[A]
 
-[mr]
+[mr][ts]
 No.[4][4] Take this back.[N]
 You're gonna eat people food.[A]
-
-[ml][ts]
-Oh yeah?[4][4] Make me![A]
 [X]
 
 ## Ch6HeroIntro
@@ -657,4 +656,52 @@ E-everyone, calm down![A]
 
 [fr]
 That's not happening.[4][4] Here they come![A]
+[X]
+
+//turn 1 reinforcements
+## ChargingBlockText
+[mr][LoadPurpleSoldier]
+The fighting's coming from over here![A]
+
+[ml][LoadPurpleFighter]
+Who's fighting?[N][4][4]
+Can't see what's goin' on.[A]
+
+[mr]
+There's guards over there![N][4][4]
+Reinforce them![A]
+[X]
+
+//turn 1 event
+## SwanGuardsText
+[fl][LoadLion]
+Look![4][4] There's guards with the thugs![A]
+
+[l][LoadSwan]
+Finally![4][4] Some reinforcements![4][4][N]
+Hail![4][4] We need--[A]
+
+[mr][LoadPillowSad]
+They're not going to help us.[A]
+
+[fl]
+B-But we can't just fight them![N][4][4]
+We're not criminals![A]
+
+[mr][ce]
+...I think we are.[A]
+
+[l][ce]
+This...[4][4] this can't be happening![N][oe]
+Th-this is your fault![A]
+
+[mr][oe]
+...[A]
+
+[fl]
+Wait --[4][4] it's not her fault![4][4][N]
+Shut up, Swan![A]
+
+[l][ce]
+Damn it all...![A]
 [X]

@@ -12,7 +12,7 @@ Talk to Songbird.[X]
 
 ## Ch2BaseHeroPillowName
 
-Hero on Femininity (*)[X]
+Hero/Pillow[X]
 
 ## Ch2LocationText
 
@@ -143,7 +143,7 @@ Please do![A]
 
 ## Ch2BaseDragonTeacherName
 
-Elder Abuse (*)[X]
+Dragon/Teacher[X]
 
 ## Ch2BaseDragonTeacher
 

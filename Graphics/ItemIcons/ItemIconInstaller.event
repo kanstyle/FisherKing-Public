@@ -164,6 +164,9 @@ ORG ItemIconEntry(Hammer)
 ORG ItemIconEntry(SavageMaul)
 #incbin "Axes/SavageMaul.dmp"		// Ereshkigal
 
+ORG ItemIconEntry(Halberd)
+#incbin "Axes/IronLabrys.dmp"		// Ereshkigal
+
 // bows
 ORG ItemIconEntry(IronBow)
 #incbin "Bows/FirFlatbow.dmp"		// Ereshkigal

@@ -59,6 +59,12 @@
 			bg(Town_Day)
 			text(Ch6BasePillowDragon)
 			eventID(0x25)
+		Entry
+			name(Ch6BasePigeonBrotherName)
+			music(WildFieldsID)
+			bg(Town_Day)
+			text(Ch6BasePigeonBrother)
+			eventID(0x24)
 	POP
 	}
 #endif // BASE_CONVO_TABLE

@@ -27,3 +27,15 @@
 // SwanAxeCavFPal
 	setPalette(0x71,SwanAxeCavFPal)
 	setCBSP(0x71,Swan,0x1,AxeCavF)
+
+// StormMyrmidonPal
+	setPalette(0x72,StormMyrmidonPal)
+	setCBSP(0x72,Storm,0x1,Myrmidon)
+
+// BrotherPriestPal
+	setPalette(0x73,BrotherPriestPal)
+	setCBSP(0x73,Brother,0x1,Priest)
+
+// LionMagePal
+	setPalette(0x74,LionMagePal)
+	setCBSP(0x74,Lion,0x1,HighMage)
