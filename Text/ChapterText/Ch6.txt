@@ -633,7 +633,8 @@ Goodbye.[A]
 [fl][LoadLion]
 
 [fr]
-Pillow...[A]
+Oh no.[4][4][4][N][ce]
+Oh, please, no...[A]
 
 [fl]
 She...[4][4][4][4] his head...[4][4][4][4][N]
@@ -655,7 +656,14 @@ No one move![A]
 E-everyone, calm down![A]
 
 [fr]
-That's not happening.[4][4] Here they come![A]
+Wh-what do we do?[AN]
+We gotta run...[N][4][4][4][ce]
+We gotta, uh...[A][oe][clear]
+
+[fl]
+None of you lay a hand on her![N]
+We're leaving![4][4] Now![AN]
+Get in our way and you die![A]
 [X]
 
 //turn 1 reinforcements
@@ -704,4 +712,111 @@ Shut up, Swan![A]
 
 [l][ce]
 Damn it all...![A]
+[X]
+
+## TeacherArrivesText
+[r][LoadTeacher]
+[fr][LoadGale]
+
+[r]
+What the hell is going on here?[A]
+
+[fr]
+What a mess.[N][4][4]
+I can't make out who's fighting who.[A]
+[X]
+
+## TeacherArrivesNarration
+We followed the noise through[N]
+the streets to the source.[N][4][4][4]
+And at the center of the mayhem...[A]
+[X]
+
+## TeacherArrivesText2
+[ml][LoadTeacher]
+[r][LoadStorm]
+[fr][LoadGale]
+
+[ml][ce]
+King's rings...[4][4][4][oe] of course it's Hero.[A]
+
+[r][mvr]
+Baby must be with them, too![N][4][4]
+Hang on, sweetheart, we're coming![A]
+
+[fr]
+I'm right with you![A][css]
+
+[r]
+[clear]
+[fr]
+What about you?[A]
+
+[ml]
+Never mind me.[4][4] Go![A]
+[X]
+
+## TeacherArrivesNarration2
+He meant to rebel against the crown.[N]
+Couldn't I just leave him to his[N]
+fate, like I said I would?[4][4][N]
+What was it that animated me, then?[4][4][N]
+At the time, I didn't know.[A]
+[X]
+
+## Ch6VillageText
+[ml][LoadCivWoman]
+[mr][LoadCurrent]
+
+[ml][ce]
+First monsters, now there's fighting...[AN]
+[oe]Ah![4][4] Who are you?[4][4] Are you with the low[N]
+mages?[AN]
+I-I know it's a hard life for them, and[N]
+they wouldn't do such a thing, but...[AN]
+If there's a chance, I just...[AN][ce]
+It sounds horrible, but I wish they[N]
+just...[4][4] weren't here...[A]
+[X]
+
+## Ch6MuscleBQ
+[ml][LoadMuscle]
+You ain't getting past me![N]
+Killed my damn brother![AN]
+I'm gonna rip you in half![A]
+[X]
+
+## Ch6EndEventText
+[r][LoadTeacher]
+[fr][LoadPillow]
+[l][LoadDragon]
+[fl][LoadHeroM]
+
+[r][mvr]
+Hero![A]
+
+[fl]
+Wh-what are YOU doing here?![A]
+
+[r]
+What did you do, you stupid bastard?![A]
+
+[fl]
+Nothing![4][4] I didn't--[A]
+
+[fr]
+Someone tried to burn the low mage[N]
+settlement, and I stopped him.[A]
+
+[r]
+You killed somebody in the street?![A]
+
+[l]
+Shut up, old man![AN]
+Come with us, or get the hell[N]
+out of here![A]
+
+[r]
+...[4][4][4][4][4][N]
+Ride for the south gate![4][4] Go![A]
 [X]

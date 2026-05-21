@@ -1,5 +1,8 @@
 EventPointerTable(Ch6EventsID, PointerList)
 
+#define Ch6MuscleBQFlag 0x20
+#define Ch6VillageFlag 0x7
+
 PointerList:
 	POIN TurnBasedEvents
 	POIN CharacterBasedEvents
@@ -18,6 +21,7 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0,SwanGuardsEvent,1)
 	TurnEventPlayer(0x0,TeacherReinforcementsEvent,2)
 	TurnEventPlayer(0x0,ChargingBlockEvent,2)
+	TurnEventPlayer(0x0,WyvernReinforcementEvent,5)
 	END_MAIN
 
 ALIGN 32
@@ -31,6 +35,9 @@ MiscBasedEvents:
 	END_MAIN
 
 LocationBasedEvents:
+	Chest(CyclonicLance,7,14)
+	Village(Ch6VillageFlag,Ch6VillageEvent,11,13)
+	Seize(0x0,EndingScene,18,10)
 	END_MAIN
 
 Dunno1:
@@ -116,7 +123,9 @@ ChargingBlockUnits:
 WyvernReinforcementUnits:
 	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [0,4] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
 	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [0,7] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
-	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [0,10] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [0,8] 0b 0x0 0x1 REDA1R8 [SilverLance] ChargeAI
+	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [0,9] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [0,12] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
 	UNIT
 	
 TeacherGateUnits:
@@ -275,6 +284,8 @@ BeginningScene:
 	DoAllThree
 	LOAD1 0x1 LionUnits
 	LOAD1 0x1 EnemyUnits
+	
+	AddTrap(GreenSigilTrapID,18,10)
 	GotoPrepScreen
 	ENDA
 	
@@ -286,6 +297,10 @@ TeacherReinforcementsEvent:
 	STAL 60
 	LOAD1 0x1 TeacherUnits
 	Highlight(Teacher)
+	Text(TeacherArrivesText)
+	CenterTextbox(TeacherArrivesNarration)
+	Text(TeacherArrivesText2)
+	CenterTextbox(TeacherArrivesNarration2)
 	
 	NoFade
 	ENDA
@@ -305,9 +320,28 @@ ChargingBlockEvent:
 	Text(ChargingBlockText)
 	NoFade
 	ENDA
+	
+WyvernReinforcementEvent:
+	LoadReinforcements(WyvernReinforcementUnits)
+	NoFade
+	ENDA
+	
+Ch6VillageEvent:
+	SetBackground(HouseBG)
+	Text(Ch6VillageText)
+	FADI 8
+	CLEAN
+	FADU 8
+	GiveGold(1000)
+	
+	NoFade
+	ENDA
 
 EndingScene:
 	CALL EndEventRoutine
+	SetBackground(Town_Day)
+	Text(Ch6EndEventText)
+		
 	MNC2 Ch0
 	NoFade
 	ENDA
