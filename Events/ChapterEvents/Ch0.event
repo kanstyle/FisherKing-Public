@@ -104,6 +104,10 @@ UnitsCh5:
 	UNIT Storm Myrmidon 0x40 Level(7,Ally,False)     [0,0] 0b 0x0 0x0 0x0 [PatientKatti,SteelSword] [0x0,0x0,0x0,0x0]
 	UNIT Gale Troubadour 0x40 Level(7,Ally,False)     [0,0] 0b 0x0 0x0 0x0 [Quickblade,Breeze] [0x0,0x0,0x0,0x0]
 	UNIT
+	
+UnitsCh6:
+	UNIT Lion HighMage 0x40 Level(7,Ally,False)     [0,0] 0b 0x0 0x0 0x0 [Thunder, Fire, Vulnerary] [0x0,0x0,0x0,0x0]
+	UNIT
 
 TeacherUnit:
 	UNIT YoungTeacher Veteran 0x40 Level(10,Ally,False)     [2,13] 0b 0x0 0x1 REDA3R14 [IronLance,SteelBlade] [0x0,0x0,0x0,0x0]
@@ -466,7 +470,7 @@ GoBack := 0x9001
 GoToPage1 := 0x9002
 
 EndMenuSkipStartEvent := 0x9003
-EndMenu := 0x9002
+EndMenu := 0x9004
 
 GameStartMenuEvent:
 	PreventSkipping
@@ -476,7 +480,7 @@ LABEL Start
 	CLEAN
 LABEL 0x1001
 	CallMenu(GameStartMenu)
-	BEQ 0x0 0xC 0
+	BEQ EndMenu 0xC 0 // if Start Game is selected, end this menu
 	SVAL 8 1
 	BEQ 0x1 0xC 8
 	
@@ -558,7 +562,7 @@ LABEL CSPg1
 		GOTO EndPage
 		
 	LABEL 0x16
-		SVAL 8 Ch6
+		SVAL 8 Ch5d
 		//CenterTextbox(DebugPauseText)
 		GOTO EndPage
 		
@@ -609,7 +613,7 @@ CallMenu(GSMChapterSelectPg2)
 	BEQ GoToPage2 5 2
 
 	LABEL GoToPage1
-		CenterTextbox(DebugPauseText)
+		//CenterTextbox(DebugPauseText)
 		GOTO CSPg1Start
 	
 	LABEL 0x17
@@ -679,6 +683,7 @@ LABEL EndPage
 		AutoLevel(Dragon, 4)
 		AutoLevel(Pillow, 4)
 		AutoLevel(Brother, 4)
+		WEXPCalc(5)
 		MNC2 Ch2
 		//GOTO EndMenuSkipStartEvent
 	
@@ -696,6 +701,7 @@ LABEL EndPage
 		AutoLevel(Pillow, 5)
 		AutoLevel(Pigeon, 5)
 		AutoLevel(Brother, 5)
+		WEXPCalc(6)
 		MNC2 Ch3
 		//GOTO EndMenuSkipStartEvent
 		
@@ -709,9 +715,11 @@ LABEL EndPage
 		AutoLevel(HeroChar, 6)
 		AutoLevel(Dragon, 6)
 		AutoLevel(Pillow, 6)
+		AutoLevel(Hunter, 6)
 		AutoLevel(Pigeon, 6)
 		AutoLevel(Brother, 6)
 		AutoLevel(Bunny, 6)
+		WEXPCalc(7)
 		MNC2 Ch4
 		//GOTO EndMenuSkipStartEvent
 		
@@ -726,11 +734,13 @@ LABEL EndPage
 		AutoLevel(Dragon, 7)
 		AutoLevel(Pillow, 7)
 		AutoLevel(Pigeon, 7)
+		AutoLevel(Hunter, 7)
 		AutoLevel(Brother, 7)
 		AutoLevel(Bunny, 7)
 		AutoLevel(Baby, 7)
 		AutoLevel(Swan, 7)
 		AutoLevel(Snot, 7)
+		WEXPCalc(7)
 		MNC2 Ch5
 		//GOTO EndMenuSkipStartEvent
 		
@@ -747,12 +757,14 @@ LABEL EndPage
 		AutoLevel(Pillow, 8)
 		AutoLevel(Pigeon, 8)
 		AutoLevel(Brother, 8)
+		AutoLevel(Hunter, 8)
 		AutoLevel(Bunny, 8)
 		AutoLevel(Baby, 8)
 		AutoLevel(Swan, 8)
 		AutoLevel(Snot, 8)
 		AutoLevel(Storm, 8)
 		AutoLevel(Gale, 8)
+		WEXPCalc(9)
 		MNC2 Ch5d
 		//GOTO EndMenuSkipStartEvent
 		
@@ -766,12 +778,35 @@ LABEL EndPage
 		AutoLevel(Pigeon, 9)
 		AutoLevel(Brother, 9)
 		AutoLevel(Bunny, 9)
+		AutoLevel(Hunter, 9)
 		AutoLevel(Baby, 9)
 		AutoLevel(Swan, 9)
 		AutoLevel(Snot, 9)
 		AutoLevel(Storm, 9)
 		AutoLevel(Gale, 9)
 		MNC2 Ch6
+		WEXPCalc(5)
+		//GOTO EndMenuSkipStartEvent
+		
+	SVAL 7 Ch7
+	CenterTextbox(DebugPauseText)
+	BLT EndMenuSkipStartEvent 8 7
+		LOAD1 0x1 UnitsCh6
+		AutoLevel(HeroChar, 10)
+		AutoLevel(Dragon, 10)
+		AutoLevel(Pillow, 10)
+		AutoLevel(Pigeon, 10)
+		AutoLevel(Brother, 9)
+		AutoLevel(Hunter, 9)
+		AutoLevel(Bunny, 9)
+		AutoLevel(Baby, 9)
+		AutoLevel(Swan, 9)
+		AutoLevel(Snot, 9)
+		AutoLevel(Storm, 9)
+		AutoLevel(Gale, 9)
+		AutoLevel(Lion, 8)
+		MNC2 Ch7
+		WEXPCalc(6)
 		//GOTO EndMenuSkipStartEvent
 		
 	UnsetFlag(0xEF)

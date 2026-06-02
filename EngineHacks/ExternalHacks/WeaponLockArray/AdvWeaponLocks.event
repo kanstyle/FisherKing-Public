@@ -48,7 +48,7 @@ BYTE EndLockArray
 
 HeroArray:
 BYTE HardCharLock
-BYTE Hero
+BYTE HeroChar
 BYTE EndLockArray
 
 #endif // ADV_WEAPON_LOCKS

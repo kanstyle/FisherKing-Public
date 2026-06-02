@@ -20,12 +20,12 @@ EndEventRoutine:
 	ENDA
 
 BleedoutChapterAlwaysEvent:
-	ASMC ReviveAndSetPetrify|1
+	//ASMC ReviveAndSetPetrify|1
 	NoFade
 	ENDA
 
 BleedoutChapterTurnEvent:
-	CALL BleedoutTurnEvent
+	//CALL BleedoutTurnEvent
 	NoFade
 	ENDA
 

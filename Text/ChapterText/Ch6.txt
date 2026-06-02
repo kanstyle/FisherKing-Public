@@ -1,6 +1,6 @@
 ## Ch6Title
 
-Ch. 6: Skullcrush[X]
+Ch. 6: Hatred[X]
 
 ## Ch6Objective
 Hero escapes
@@ -820,3 +820,159 @@ out of here![A]
 ...[4][4][4][4][4][N]
 Ride for the south gate![4][4] Go![A]
 [X]
+
+## Ch6ThugsArriveSkullDead
+[l][LoadSwan]
+[fl][LoadLion]
+[r][LoadBandit]
+[fr][LoadArmoredBandit]
+
+[l]
+Ah.[4][4] Can I help you, good si--[A]
+
+[r]
+Let us through, lads.[A]
+
+[l]
+Easy, there.[4][4] Tell me what's in[N]
+those bags of yours, first.[A]
+
+[r]
+Let us through, I said.[A]
+
+[l]
+And I told you to empty those bags, sir.[A]
+
+[r]
+Trying to start trouble, boy?[A]
+
+[fl]
+Don't talk to my brother like that,[N]
+knuckle-dragger![A]
+
+[l]
+Stay out of this, Lion![4][4][N]
+Don't be stupid.[A]
+[X]
+
+## Ch6HeroArrivesSkullDead
+[fl][LoadSwan]
+[l][LoadBandit]
+[r][LoadHeroM]
+[fr][LoadDragon]
+
+[r]
+Swan![4][4] Hey![4][4][N]
+Who are all these guys?[A]
+
+[l][ce]
+Oh, king's rings...[AN][oe]
+
+[fl]
+Hero![4][4] Let me handle this, please.[A]
+
+[fr]
+This is the low mage district.[N]
+Where're you going with all these thugs?[A]
+
+[l]
+Walk away, all of you.[N]
+This doesn't concern you.[A]
+
+[r]
+Shouldn't a bunch of guys like you be[N]
+helping out with the reconstruction?[A]
+
+[l]
+Oh, we're gonna help, all right.[4][4] Who[N]
+do you think called all those beasts here?[A]
+
+[fr]
+What the hell're you talking about?[A]
+
+[l]
+The low mage district should've been the[N]
+first to fall.[A] But look![4][4] There wasn't[N]
+a scratch on it.[A]
+
+[r]
+You think they can just call up[N]
+monsters?[4][4] Are you insane?![A]
+[X]
+
+## Ch6SkullBombSkullDead
+[l][LoadBandit]
+You don't know anything.[N]
+You're not from here.[AN]
+You don't care![A]
+
+[r][LoadHeroM]
+He's going over to the fence...[N][4][4]
+What're you doing?![AN][4][4]
+Just calm down, man![A]
+
+[ffl]
+Who are these people?[A]
+
+[ffr]
+There's a low mage with 'em![A]
+
+[fl][LoadSwan]
+Drop the bag, and come back[N]
+over here, please![A]
+
+[l]
+Shut up.[N]
+Both of you, shut up![A]
+
+[r]
+What if...[4][4] uh...[4][4][N]
+What if Songbird was here, huh?[AN]
+What would Songbird say?[A]
+
+[l]
+Songbird?[AN]
+Songbird's gone![4][4][N]
+Songbird can't do a damn thing![AN][ce]
+Those monsters killed Skull![N]
+[mvl]They killed him![A][oe]
+
+[fr][LoadDragon]
+Should I grab him?[A]
+
+[fl]
+No![4][4] No grabbing![4][4][N]
+We don't need to agitate him further.[A]
+
+[l]
+Low mages can't control themselves.[4][4][N]
+They hate us.[4][4] Always have![A]
+
+[fr][mfr]
+Yeah?[4][4] Why shouldn't they,[N]
+you piece of trash?![A]
+
+[fl]
+Stop it, I said! Let me...[A]
+[clear]
+[LoadLion]
+Wh...[4][4][mfl] He's got firebombs![N]
+He's gonna throw 'em over the fence![A]
+
+[l]
+They have to go![N]
+Them, or us![A]
+
+[r]
+Stop![4][4][N]
+Look, if you--![A]
+[fr][clear][css]
+[ffr]
+Yeah, do it![A]
+
+[fl][clear][css]
+[ffl]
+Do it![A]
+
+[r]
+STOP![A][X]

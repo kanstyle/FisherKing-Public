@@ -82,6 +82,7 @@ NPCUnits:
 EnemyUnits:
 	//top middle
 	UNIT Thug Mercenary 0x40 Level(9,Enemy,True)     [9,3] 0b 0x0 0x0 0x0 [SteelSword] ChargeAI
+	//UNIT GuardUnit Sage 0x40 Level(1,Enemy,True)     [10,3] 0b 0x0 0x0 0x0 [Fire] ChargeAI							//FOR TESTING
 	UNIT GuardUnit Mage 0x40 Level(9,Enemy,True)     [10,3] 0b 0x0 0x0 0x0 [Fire] ChargeAI
 	UNIT GuardUnit Knight 0x40 Level(9,Enemy,True)     [8,3] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
 	UNIT Thug Fighter 0x40 Level(9,Enemy,True)     [8,2] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
@@ -150,6 +151,12 @@ SwanUnits:
 	
 ThugsUnits:
 	UNIT Skull Fighter 0x40 Level(10,Enemy,False)     [18,2] 0b 0x0 0x1 REDA16R2 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT 0x82 Brigand 0x40 Level(10,Enemy,False)     [18,2] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT 0x83 Mercenary 0x40 Level(10,Enemy,False)     [18,3] 0b 0x0 0x1 REDA17R3 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+ThugsUnitsSkullDead:
+	UNIT Thug Fighter 0x40 Level(10,Enemy,False)     [18,2] 0b 0x0 0x1 REDA16R2 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT 0x82 Brigand 0x40 Level(10,Enemy,False)     [18,2] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT 0x83 Mercenary 0x40 Level(10,Enemy,False)     [18,3] 0b 0x0 0x1 REDA17R3 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT
@@ -234,10 +241,17 @@ BeginningScene:
 	Text(Ch6LionSwanIntro)
 	STAL 60
 	MUSCMID FFTAnxiety
+	FlagNotSet(Ch5SkullDeadFlag,0x56)
 	LOAD2 0x1 ThugsUnits
+	GOTO 0x57
+	LABEL 0x56
+	LOAD2 0x1 ThugsUnitsSkullDead
+	LABEL 0x57
+	
 	ENUN
 	STAL 30
 	MOVE 5 Skull [9,2]
+	MOVE 5 Thug [9,2]
 	MOVE 5 0x82 [10,2]
 	MOVE 5 0x83	[10,3]
 	ENUN
@@ -246,7 +260,12 @@ BeginningScene:
 	ENUN
 	STAL 30
 	Highlight(Skull)
+	FlagNotSet(Ch5SkullDeadFlag,0x50)
 	Text(Ch6ThugsArrive)
+	GOTO 0x51
+	LABEL 0x50
+	Text(Ch6ThugsArriveSkullDead)
+	LABEL 0x51
 	STAL 60
 	LOAD2 0x1 HeroUnits
 	ENUN
@@ -259,17 +278,39 @@ BeginningScene:
 	ENUN
 	STAL 30
 	Highlight(HeroChar)
+	FlagNotSet(Ch5SkullDeadFlag,0x52)
 	Text(Ch6HeroArrives)
+	GOTO 0x53
+	LABEL 0x52
+	Text(Ch6HeroArrivesSkullDead)
+	LABEL 0x53
 	STAL 60
 	MOVE 5 Skull [9,1]
+	MOVE 5 Thug [9,1]
 	ENUN
 	Highlight(Skull)
+	Highlight(Thug)
+	FlagNotSet(Ch5SkullDeadFlag,0x54)
 	Text(Ch6SkullBomb)
+	GOTO 0x55
+	LABEL 0x54
+	Text(Ch6SkullBombSkullDead)
+	LABEL 0x55
 	MUSCMID 0x777F
+	
+	FlagNotSet(Ch5SkullDeadFlag,0x58)
 	StartBattle
 	NormalDamage(0x0,99)
 	FIGHT_MAP Pillow Skull 0x0 0x0
 	DISA Skull
+	GOTO 0x59
+	LABEL 0x58
+	StartBattle
+	NormalDamage(0x0,99)
+	FIGHT_MAP Pillow Thug 0x0 0x0
+	DISA Thug
+	LABEL 0x59
+	
 	STAL 45
 	FADI 4
 	SetBackground(PillowKillCG)
@@ -342,6 +383,6 @@ EndingScene:
 	SetBackground(Town_Day)
 	Text(Ch6EndEventText)
 		
-	MNC2 Ch0
+	MNC2 Ch7
 	NoFade
 	ENDA

@@ -1,0 +1,220 @@
+EventPointerTable(Ch7EventsID, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	TurnEventEnemy(0x0,BleedoutChapterTurnEvent,1,255)
+	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
+	END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+	END_MAIN
+
+MiscBasedEvents:
+	CauseGameOverIfLordDies
+	AFEV 0x0 CheckLowMageSurvival 0x0
+	AFEV 0x0 CheckBossSurvival 0x0
+	AFEV BleedoutFlag BleedoutChapterAlwaysEvent 0x0
+	END_MAIN
+
+LocationBasedEvents:
+	Armory(Ch7Armory,17,10)
+	Vendor(Ch7Vendor,14,11)
+	END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [22,10] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [23,11] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [22,9] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [23,9] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [24,8] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [24,10] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [24,7] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [21,11] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [23,8] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [20,10] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
+
+NPCUnits:
+	UNIT Ch7LowMage LowMage 0x40 Level(9,NPC,True)     [22,14] 0b 0x0 0x0 0x0 [Pain] BossAI
+	UNIT Ch7Wise LowMage 0x40 Level(12,NPC,False)     [11,15] 0b 0x0 0x0 0x0 [Exploitation] BossAI
+	UNIT Ch7LowMage LowMage 0x40 Level(9,NPC,True)     [2,11] 0b 0x0 0x0 0x0 [Pain] BossAI
+	UNIT
+
+EnemyUnits:
+	//below starting position
+	UNIT 0x81 Soldier 0x40 Level(10,Enemy,True)     [22,13] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT 0x81 HighMage 0x40 Level(10,Enemy,True)     [21,13] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	
+	//near starting position
+	UNIT 0x81 HighMage 0x40 Level(10,Enemy,True)     [16,10] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	UNIT 0x81 Knight 0x40 Level(10,Enemy,True)     [17,10] 0b 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
+	UNIT 0x81 Fighter 0x40 Level(10,Enemy,True)     [17,9] 0b 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+	UNIT 0x81 Myrmidon 0x40 Level(10,Enemy,True)     [16,9] 0b 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+	
+	//test
+	UNIT 0x81 Myrmidon 0x40 Level(10,Enemy,True)     [12,13] 0b 0x0 0x0 0x0 [IronSword] ChargeAIIgnoreNPC
+	
+	//upper right corner
+	UNIT 0x81 WyvernRider 0x40 Level(10,Enemy,True)     [26,0] 0b 0x0 0x0 0x0 [IronLance] ChargeAI
+	
+	//top middle ramp
+	UNIT 0x81 LanceCav 0x40 Level(10,Enemy,True)     [17,1] 0b 0x0 0x0 0x0 [IronLance] ChargeAI
+	UNIT 0x81 LanceCav 0x40 Level(10,Enemy,True)     [16,1] 0b 0x0 0x0 0x0 [IronLance] ChargeAI
+	UNIT 0x81 SwordCav 0x40 Level(10,Enemy,True)     [16,0] 0b 0x0 0x0 0x0 [Quickblade] ChargeAI
+	
+	UNIT 0x81 HighMage 0x40 Level(10,Enemy,True)     [16,5] 0b 0x0 0x0 0x0 [Thunder] BossAI
+	UNIT 0x81 HighMage 0x40 Level(10,Enemy,True)     [17,5] 0b 0x0 0x0 0x0 [Thunder] BossAI
+	
+	//west of river
+	UNIT 0x81 WyvernRider 0x40 Level(10,Enemy,True)     [8,6] 0b 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
+	UNIT
+	
+CaptainSquad1:
+	UNIT Captain Hero 0x40 Level(1,Enemy,True)     [21,1] 0b 0x0 0x0 0x0 [Quickblade] ChargeAI
+	UNIT 0x81 Mercenary 0x40 Level(10,Enemy,True)     [22,2] 0b 0x0 0x0 0x0 [Quickblade] ChargeAI
+	UNIT 0x81 Mercenary 0x40 Level(10,Enemy,True)     [20,2] 0b 0x0 0x0 0x0 [Quickblade] ChargeAI
+	UNIT 0x81 Shaman 0x40 Level(10,Enemy,True)     [21,0] 0b 0x0 0x0 0x0 [Pain] ChargeAI
+	UNIT
+	
+CaptainSquad2:
+	UNIT Captain Hero 0x40 Level(1,Enemy,True)     [13,1] 0b 0x0 0x0 0x0 [SilverAxe] AttackInRangeAI //turns to chargeAI later
+	UNIT 0x81 Fighter 0x40 Level(10,Enemy,True)     [14,2] 0b 0x0 0x0 0x0 [KillerAxe] AttackInRangeAI
+	UNIT 0x81 Fighter 0x40 Level(10,Enemy,True)     [12,2] 0b 0x0 0x0 0x0 [KillerAxe] AttackInRangeAI
+	UNIT 0x81 Shaman 0x40 Level(10,Enemy,True)     [13,0] 0b 0x0 0x0 0x0 [Pain] AttackInRangeAI
+	UNIT
+	
+CaptainSquad3:
+	UNIT Captain Hero 0x40 Level(1,Enemy,True)     [3,1] 0b 0x0 0x0 0x0 [Quickblade] AttackInRangeAI //turns to chargeAI later
+	UNIT 0x81 Mercenary 0x40 Level(10,Enemy,True)     [2,2] 0b 0x0 0x0 0x0 [Quickblade] AttackInRangeAI
+	UNIT 0x81 Mercenary 0x40 Level(10,Enemy,True)     [4,2] 0b 0x0 0x0 0x0 [KillerAxe] AttackInRangeAI
+	UNIT 0x81 Shaman 0x40 Level(10,Enemy,True)     [3,0] 0b 0x0 0x0 0x0 [Pain] AttackInRangeAI
+	UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+	
+CheckLowMageSurvival:
+	CHECK_EXISTS Ch7LowMage
+	BTrue(0x0)
+		CHECK_EXISTS Ch7Wise
+		BTrue(0x0)
+		GameOver
+	LABEL 0x0
+	NoFade
+	ENDA
+	
+CheckBossSurvival:
+	CHECK_EXISTS Captain
+	BTrue(0x0)
+		/*CHECK_EXISTS BossName
+		BTrue(0x0)*/
+		GameOver
+	LABEL 0x0
+	NoFade
+	ENDA
+
+CaptainSquad2Charge:
+	CAM1 [13,1]
+	STAL 30
+	Highlight(13,1)
+	//Text(Placeholder)
+	ChangeAICharge(13,1)
+	ChangeAICharge(14,2)
+	ChangeAICharge(12,2)
+	ChangeAICharge(13,0)
+	NoFade
+	ENDA
+	
+CaptainSquad3Charge:
+	CAM1 [3,1]
+	STAL 30
+	Highlight(3,1)
+	//Text(Placeholder)
+	ChangeAICharge(3,1)
+	ChangeAICharge(2,2)
+	ChangeAICharge(4,2)
+	ChangeAICharge(3,0)
+	NoFade
+	ENDA
+
+BeginningScene:
+	CALL StartEventRoutine
+	
+	DoAllThree
+	LOAD1 0x1 EnemyUnits
+	LOAD1 0x1 NPCUnits
+	LOAD1 0x1 CaptainSquad1
+	LOAD1 0x1 CaptainSquad2
+	LOAD1 0x1 CaptainSquad3
+	
+	
+	GotoPrepScreen
+	ENDA
+
+EndingScene:
+	CALL EndEventRoutine
+		
+	MNC2 Ch0
+	NoFade
+	ENDA
+	
+ALIGN 4
+Ch7Armory:
+	SHORT IronBlade
+	SHORT SteelSword
+	SHORT SteelLance
+	SHORT SteelAxe
+	SHORT SlimLance
+	SHORT SlimAxe
+	SHORT Javelin
+	SHORT HandAxe
+	SHORT Hammer
+	SHORT 0
+	SHORT 0
+	
+ALIGN 4
+Ch7Vendor:
+	SHORT Fire
+	SHORT Thunder
+	SHORT Pain
+	SHORT Heal
+	SHORT Mend
+	SHORT Restore
+	SHORT Torch
+	SHORT HeavyBomb
+	SHORT RedHornet
+	SHORT 0
+	SHORT 0

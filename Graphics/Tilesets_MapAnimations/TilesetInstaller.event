@@ -6,7 +6,11 @@
 	ALIGN 4
     SuperFieldsPalette:
     #incbin "Dmp/Palette/SuperFields_pal.dmp"
-	
+
+	ALIGN 4
+    SuperFieldsPalette2:
+    #incbin "Dmp/Palette/SuperFields2_pal.dmp"
+
 	ALIGN 4
     SuperFieldsConfig:
     #incbin "Dmp/Config/SuperFields_comp.dmp"
@@ -221,6 +225,7 @@
 	
 	EventPointerTable(SuperFieldsObjectID, SuperFieldsObject)
     EventPointerTable(SuperFieldsPaletteID, SuperFieldsPalette)
+    EventPointerTable(SuperFieldsPalette2ID, SuperFieldsPalette2)
     EventPointerTable(SuperFieldsConfigID, SuperFieldsConfig)
 
     // Fix mapchip for this tileset

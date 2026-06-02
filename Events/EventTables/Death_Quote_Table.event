@@ -31,7 +31,7 @@ DeathQuote(Muscle,0xFF,DefeatBossFlag,0x0,MuscleDeathQuoteEvent)
 
 DeathQuote(Ch4NPCMan,0xFF,0x0,0x0,NoblemanDeathQuoteEvent)
 DeathQuote(Ch4NPCWoman,0xFF,0x0,0x0,NoblewomanDeathQuoteEvent)
-DeathQuote(Ch5Skull,Ch5,0x0,Ch5SkullDQ)
+DeathQuote(Ch5Skull,Ch5,Ch5SkullDeadFlag,Ch5SkullDQ)
 
 DeathQuote(0xFFFF,0,0,0) // terminator
 

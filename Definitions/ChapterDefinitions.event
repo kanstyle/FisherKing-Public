@@ -77,6 +77,10 @@
 #define Ch6MapChangesID 0x2f
 #define Ch6EventsID 0x30
 
+#define Ch7MapID 0x31
+#define Ch7MapChangesID 0x33
+#define Ch7EventsID 0x34
+
 #define CityStreetMapID 0x32
 
 //0x24
@@ -160,3 +164,5 @@
 
 //0xBD taken
 #define FlasubanVillageNightPaletteID 0xBE
+
+#define SuperFieldsPalette2ID 0xBF

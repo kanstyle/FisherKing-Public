@@ -5,6 +5,7 @@
 #define GameOverFlag 0x65
 
 #define BleedoutFlag 0x12B
+#define Ch5SkullDeadFlag 0x12C
 #define HeroGenderswapFlag 0x28
 #define NoSkillQuotesFlag 0x27
 

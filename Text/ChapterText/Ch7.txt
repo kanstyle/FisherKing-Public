@@ -1,12 +1,48 @@
 ## Ch7Title
 
-Ch. 7[X]
+Ch. 7: Low Mages[X]
 
 ## Ch7Objective
-Rout enemy
+Boss/Defend
 [X]
 
 ## Ch7ObjectiveLong ^
-Defeat all enemies
-within the time limit.
+Defeat the captains
+and protect militia.
+[X]
+
+## Ch7WiseIntro
+[ml][LoadWise]
+[mr][LoadPurpleSoldier]
+
+[ml]
+What's going on here?[N][4][4]
+What do you want?[A]
+
+[mr]
+By order of the Lord Regent Gryphon,[4][4][N]
+combat-combat capable low mages must--[A]
+
+[ml]
+Mm.[4][4] I don't care about the Lord Regent.[AN]
+Is that all?[A]
+
+[mr]
+Well, I'm afraid I'll have to[N]
+place you under arrest, then.[A]
+
+[ml]
+Are you lost, boy?[4][4][N]
+This isn't your city.[A]
+
+[mr]
+Stand down![N][4][4]
+I'm not here to fight![A]
+
+[ml]
+My eyes like to play tricks on me,[N]
+but I see soldiers out there.[AN]
+It's too bad they aren't right here,[AN]
+'cause I'm gonna yank your stupid[N]
+little head off.[A]
 [X]

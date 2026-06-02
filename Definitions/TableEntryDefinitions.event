@@ -41,6 +41,7 @@
 #define OldPrinceEyesClosedMug 0x27
 #define LionMug 0x28
 #define MuscleMug 0x44
+#define WardenMug 0x45
 
 #define AxeBoneCard 0xAD
 #define LanceBoneCard 0xAE
@@ -86,9 +87,12 @@
 #define Gryphon 0x28
 #define Ch5Eagle 0x29
 #define Ch5Skull 0x2A
+#define Ch7LowMage 0x2B
+#define Ch7Wise 0x2C
 
 #define Devil 0x40
 #define Muscle 0x41
+#define Captain 0x42
 
 #define Ch2BeastBoss 0xAB
 #define JabberwockBoss 0xAD
@@ -110,6 +114,7 @@
 #define Ch4NPCWoman 0xF2
 #define Cart 0xF3
 #define Civilian 0xF4
+#define Rebel 0x7c
 #define GuardUnit 0x7d
 #define Thug 0x7e
 

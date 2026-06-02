@@ -78,8 +78,8 @@ LocationBasedEvents:
 	Door(12,11)
 	Door(13,11)
 	Chest(Restore,10,12)
-	Armory(Ch3Armory,2,1)
-	Vendor(Ch3Vendor,18,1)
+	Armory(Ch5Armory,2,1)
+	Vendor(Ch5Vendor,18,1)
 	END_MAIN
 
 Dunno1:
@@ -835,7 +835,7 @@ EndingScene:
 	ENDA
 	
 ALIGN 4
-Ch3Armory:
+Ch5Armory:
 	SHORT IronBlade
 	SHORT SteelSword
 	SHORT SteelLance
@@ -849,7 +849,7 @@ Ch3Armory:
 	SHORT 0
 	
 ALIGN 4
-Ch3Vendor:
+Ch5Vendor:
 	SHORT Fire
 	SHORT Thunder
 	SHORT Pain

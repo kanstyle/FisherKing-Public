@@ -265,3 +265,21 @@ Placeholder.[X]
 
 ## ThugDesc
 Placeholder.[X]
+
+## LowMageNPCName
+Low Mage[X]
+
+## LowMageNPCDesc
+Placeholder.[X]
+
+## CaptainName
+Captain[X]
+
+## CaptainDesc
+Placeholder.[X]
+
+## RebelName
+Rebel[X]
+
+## RebelDesc
+Placeholder.[X]

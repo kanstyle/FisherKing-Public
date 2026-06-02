@@ -1,4 +1,7 @@
 #define ChangeAI(UnitID, AI1, AI2) "SVAL s1 AI2 << 8 | AI1; CHAI UnitID"
+#define ChangeAICharge(UnitID) "SVAL s1 0x0 << 8 | 0x0; CHAI UnitID"
+#define ChangeAICharge(X,Y) "SVAL s1 0x0 << 8 | 0x0; CHAI [X,Y]"
+
 #define LootOnlyThenEscapeAI [0x6,0x5,0x4,0x0]
 #define StationaryBossAI [0x3, 0x3, 0x0, 0x20]
 #define AttackInPlaceAI [0x3,0x3,0x4,0x0]
@@ -71,6 +74,7 @@
 #define CameraMove(character) "CAM1 [character]"
 #define CameraCursorLocation(X,Y,time) "CAMERA [X,Y]; STAL 20; FlashCursor(X,Y,time)"
 #define HighlightTile(X,Y) "CAMERA [X,Y]; STAL 20; FlashCursor(X,Y,60)"
+#define Highlight(X,Y) "FlashCursor(X,Y,60)"
 #define Highlight(character) "CUMO character; STAL 60; CURE"
 #define CameraHighlight(character) "CAM1 [character]; STAL 20; CUMO character; STAL 60; CURE"
 #define MusicChange(song) "MUSC song"
@@ -95,6 +99,21 @@
 #define SoundEffect(music) "SOUN music"
 #define SFX(music) "SOUN music"
 
+// ReplaceItem(itemID, unitID)
+//   Gives itemID to the unit with character ID unitID.
+//   If the unit's inventory is full and the item is a weapon/staff, the
+//   lowest-ranked non-char-locked weapon/staff is sent to convoy to make room.
+//   If all such items have character locks, the new item goes to convoy instead.
+//   Non-weapon/staff items go to an empty slot or convoy. Silent (no popup).
+//   gEventSlots[1] = itemID (first arg), gEventSlots[2] = unitID (second arg)
+#define ReplaceItem(itemID, unitID) "SVAL 1 (itemID); SVAL 2 (unitID); ASMC ReplaceItemASMC|1"
+
+// BuyItem(itemID, unitID)
+//   Like ReplaceItem, but deducts the item's full purchase price from party gold
+//   first. Does nothing if the party cannot afford it.
+//   gEventSlots[1] = itemID (first arg), gEventSlots[2] = unitID (second arg)
+#define BuyItem(itemID, unitID) "SVAL 1 (itemID); SVAL 2 (unitID); ASMC BuyItemASMC|1"
+
 // RW here. i stole these from pikmin1211 on feucord from a really old post, so they may be bad
 #define LearnSkill(Unit,Skill) "SVAL 0x1 Skill; SVAL 0x2 Unit; ASMC (ASMC_HasSkill|1); BNE 0xED6B 0xC 0x0; ASMC (ASMC_LearnNewSkill|1); LABEL 0xED6B"
 #define ForgetSkill(Unit,Skill) "SVAL 0x1 Skill; SVAL 0x2 Unit; ASMC (ASMC_HasSkill|1); BEQ 0xED6C 0xC 0x0; ASMC (ASMC_ForgetSkill|1); LABEL 0xED6C"
@@ -111,6 +130,10 @@
 #define DefaultAI           [0x0,0x0,0x4,0x0]
 #define DefaultHealAI       [0x0,0x0,0x0,0x0]
 #define ChargeAI            [0x0,0x0,0x4,0x0]
+#define ChargeAIIgnoreNPC   [0x0,0x0,0x4,0x1]
+#define BossAIIgnoreNPC     [0x0,0x0,0x4,0x21]
+#define AttackInRangeAIIgnoreNPC [0x0,0x0,0x4,0x1]
+#define RangeAIIgnoreNPC    [0x0,0x3,0x4,0x1]
 #define ChargeHealAI        [0x0,0x0,0x0,0x0]
 #define BossAI              [0x0,0x3,0x4,0x20]
 #define BossHealAI          [0x3,0x3,0x0,0x20]
@@ -153,6 +176,10 @@
 
 #define AutoLevel(id, targetLevel) "ENUT 0xEF; SVAL s1 (id); SVAL s2 (targetLevel); ASMC AutoLevelASMC|1; ENUF 0xEF"
 #define AddAutoLevel(id, levelsToAdd) "ENUT 0xEF; SVAL s1 (id); SVAL s2 (levelsToAdd); ASMC AddAutoLevelASMC|1; ENUF 0xEF"
+
+// Approximates and applies WEXP gain for all player units over a given number of map turns.
+// Weapons are used proportionally to their durability; uses are consumed (wt<10 costs 2/shot, else 1).
+#define WEXPCalc(Turns) "SVAL s1 (Turns); ASMC WEXPCalc|1"
 
 //#define GiveExp(Unit,Amount) "SVAL 1 (Unit); SVAL 4 (Amount); ASMC ASMC_GiveExp|1"
 #define Placeholder "CenterTextbox(DebugPauseText)"

@@ -127,6 +127,7 @@
 [LoadOldPrinceEyesClosed] = [LoadFace][0x27][0x1]
 [LoadLion] = [LoadFace][0x28][0x1]
 [LoadMuscle] = [LoadFace][0x44][0x1]
+[LoadWarden] = [LoadFace][0x45][0x1]
 
 [LoadBandit] = [LoadFace][0x4C][0x1]
 [LoadArmoredBandit] = [LoadFace][0x4D][0x1]

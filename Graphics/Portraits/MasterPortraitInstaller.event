@@ -312,3 +312,19 @@ LionMugData: // LL
 #incbin "dmp/Lion_palette.dmp"
 #incbin "dmp/Lion_minimug.dmp"
 setMugEntry(LionMug, LionMugData, 3, 6, 3, 4)
+
+ALIGN 16
+MuscleMugData: // LL
+#incbin "dmp/Muscle_mug.dmp"
+#incbin "dmp/Muscle_frames.dmp"
+#incbin "dmp/Muscle_palette.dmp"
+#incbin "dmp/Muscle_minimug.dmp"
+setMugEntry(MuscleMug, MuscleMugData, 2, 5, 2, 3)
+
+ALIGN 16
+WardenMugData: // LL
+#incbin "dmp/Warden_mug.dmp"
+#incbin "dmp/Warden_frames.dmp"
+#incbin "dmp/Warden_palette.dmp"
+#incbin "dmp/Warden_minimug.dmp"
+setMugEntry(WardenMug, WardenMugData, 2, 5, 2, 3)
