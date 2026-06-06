@@ -7,6 +7,8 @@
 AdvWeaponLocks: @return usability bool in r0
 
 push {r4-r7,r14}
+cmp r0,#0
+beq RetTrue @null unit pointer: skip lock check
 mov r4,r0 @character pointer
 mov r5,r1 @item halfword
 mov r6,r2 @character wrank
@@ -34,11 +36,15 @@ ble GetCharID
 
 GetClassID:
 ldr r1,[r4,#4]
+cmp r1,#0
+beq RetTrue @null pClassData: skip lock check
 ldrb r1,[r1,#4]
 b GetIDEnd
 
 GetCharID:
 ldr r1,[r4]
+cmp r1,#0
+beq RetTrue @null pCharacterData: skip lock check
 ldrb r1,[r1,#4]
 
 GetIDEnd:

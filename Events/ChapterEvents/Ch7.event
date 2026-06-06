@@ -1,3 +1,9 @@
+#define RecruiterBQFlag 0xB
+#define RecruiterDragonBQFlag 0xC
+#define Ch7EVillageFlag 0x7
+#define Ch7MVillageFlag 0x8
+#define Ch7WVillageFlag 0x9
+
 EventPointerTable(Ch7EventsID, PointerList)
 
 PointerList:
@@ -15,6 +21,7 @@ PointerList:
 TurnBasedEvents:
 	TurnEventEnemy(0x0,BleedoutChapterTurnEvent,1,255)
 	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
+	TurnEventPlayer(0x0,NorthCavAddsEvent,6)
 	END_MAIN
 
 ALIGN 32
@@ -31,6 +38,9 @@ MiscBasedEvents:
 LocationBasedEvents:
 	Armory(Ch7Armory,17,10)
 	Vendor(Ch7Vendor,14,11)
+	Village(Ch7EVillageFlag,Ch7EVillageEvent,20,13)
+	Village(Ch7MVillageFlag,Ch7MVillageEvent,12,13)
+	Village(Ch7WVillageFlag,Ch7WVillageEvent,2,11)
 	END_MAIN
 
 Dunno1:
@@ -56,7 +66,7 @@ Units1:
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [23,9] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [24,8] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [24,10] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
-	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [24,7] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [25,7] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [21,11] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [23,8] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [20,10] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
@@ -93,6 +103,12 @@ EnemyUnits:
 	UNIT 0x81 HighMage 0x40 Level(10,Enemy,True)     [16,5] 0b 0x0 0x0 0x0 [Thunder] BossAI
 	UNIT 0x81 HighMage 0x40 Level(10,Enemy,True)     [17,5] 0b 0x0 0x0 0x0 [Thunder] BossAI
 	
+	//river
+	UNIT 0x81 Knight 0x40 Level(10,Enemy,True)     [9,9] 0b 0x0 0x0 0x0 [Horseslayer] BossAI
+	UNIT 0x81 Knight 0x40 Level(10,Enemy,True)     [9,8] 0b 0x0 0x0 0x0 [Horseslayer] BossAI
+	UNIT 0x81 Archer 0x40 Level(10,Enemy,True)     [8,7] 0b 0x0 0x0 0x0 [Longbow] BossAI
+	UNIT 0x81 Archer 0x40 Level(10,Enemy,True)     [8,10] 0b 0x0 0x0 0x0 [Longbow] BossAI
+	
 	//west of river
 	UNIT 0x81 WyvernRider 0x40 Level(10,Enemy,True)     [8,6] 0b 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
 	UNIT
@@ -112,10 +128,37 @@ CaptainSquad2:
 	UNIT
 	
 CaptainSquad3:
-	UNIT Captain Hero 0x40 Level(1,Enemy,True)     [3,1] 0b 0x0 0x0 0x0 [Quickblade] AttackInRangeAI //turns to chargeAI later
+	UNIT Recruiter Hero 0x40 Level(3,Enemy,False)     [3,1] 0b 0x0 0x0 0x0 [Quickblade] AttackInRangeAI //turns to chargeAI later
 	UNIT 0x81 Mercenary 0x40 Level(10,Enemy,True)     [2,2] 0b 0x0 0x0 0x0 [Quickblade] AttackInRangeAI
 	UNIT 0x81 Mercenary 0x40 Level(10,Enemy,True)     [4,2] 0b 0x0 0x0 0x0 [KillerAxe] AttackInRangeAI
 	UNIT 0x81 Shaman 0x40 Level(10,Enemy,True)     [3,0] 0b 0x0 0x0 0x0 [Pain] AttackInRangeAI
+	UNIT
+	
+NorthCavAdds:
+	UNIT 0x81 LanceCav 0x40 Level(10,Enemy,True)     [16,0] 0b 0x0 0x0 0x0 [IronLance] ChargeAI
+	UNIT 0x81 SwordCav 0x40 Level(10,Enemy,True)     [17,0] 0b 0x0 0x0 0x0 [IronSword] ChargeAI
+	UNIT
+	
+CivilianUnits:
+	UNIT 0x81 CivMan 0x40 Level(10,NPC,True)     [23,13] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	UNIT 0x82 CivWoman 0x40 Level(10,NPC,True)     [21,14] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	UNIT 0x83 CivBoy 0x40 Level(10,NPC,True)     [22,15] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	UNIT
+	
+CutsceneWiseUnits:
+	UNIT Ch7Wise LowMage 0x40 Level(10,NPC,True)     [22,14] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	UNIT
+	
+CutsceneSoldierUnits:
+	UNIT 0x81 Soldier 0x40 Level(10,Enemy,True)     [22,12] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT 0x81 HighMage 0x40 Level(10,Enemy,True)     [21,12] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	UNIT
+	
+CutscenePlayerUnits:
+	UNIT Teacher Veteran 0x40 Level(10,Ally,False)     [26,8] 0b 0x0 0x1 REDA25R8 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Headsman 0x40 Level(10,Ally,False)     [26,9] 0b 0x0 0x1 REDA24R9 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT HeroChar UpstartM 0x40 Level(10,Ally,False)     [26,10] 0b 0x0 0x1 REDA25R10 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Pillow Veteran 0x40 Level(10,Ally,False)     [0,0] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT
 
 Traps1:
@@ -139,8 +182,8 @@ CheckLowMageSurvival:
 CheckBossSurvival:
 	CHECK_EXISTS Captain
 	BTrue(0x0)
-		/*CHECK_EXISTS BossName
-		BTrue(0x0)*/
+		CHECK_EXISTS Recruiter
+		BTrue(0x0)
 		GameOver
 	LABEL 0x0
 	NoFade
@@ -172,6 +215,51 @@ CaptainSquad3Charge:
 
 BeginningScene:
 	CALL StartEventRoutine
+	SetBackground(Forest)
+	//BROWNBOXTEXT Ch7OutskirtsBrownBox [8,8]
+	//Text(Ch7IntroDiscussion)
+	FADI 4
+	CLEAN
+	CAM1 [22,14]
+	LOAD2 0x1 CaptainSquad1
+	LOAD2 0x1 CaptainSquad2
+	LOAD2 0x1 CaptainSquad3
+	LOAD2 0x1 CutsceneSoldierUnits
+	LOAD2 0x1 CivilianUnits
+	FADU 4
+	STAL 60
+	Highlight(22,12)
+	//Text(Ch7SoldierIntro)
+	
+	MOVE 5 0x81 [23,14]
+	MOVE 5 0x82 [21,15]
+	MOVE 5 0x83 [22,14]
+	ENUN
+	DISA 0x81
+	DISA 0x82
+	DISA 0x83
+	
+	STAL 60
+	LOAD2 0x2 CutsceneWiseUnits
+	STAL 30
+	Highlight(Ch7Wise)
+	Text(Ch7WiseIntro)
+	STAL 30
+	
+	CAM1 [21,0]
+	CAM1 [3,0]
+	Highlight(Recruiter)
+	//Text(Ch7RecruiterIntro)
+	
+	CAM1 [26,9]
+	STAL 45
+	LOAD2 0x1 CutscenePlayerUnits
+	STAL 30
+	WARPIN [26,9]
+	MOVE 65535 Pillow [26,9]
+	ENDWARP
+	Highlight(HeroChar)
+	//Text(Ch7HeroIntro)
 	
 	DoAllThree
 	LOAD1 0x1 EnemyUnits
@@ -180,25 +268,51 @@ BeginningScene:
 	LOAD1 0x1 CaptainSquad2
 	LOAD1 0x1 CaptainSquad3
 	
-	
 	GotoPrepScreen
 	ENDA
 
 EndingScene:
 	CALL EndEventRoutine
+	FADI 4
+	SetBackgroundSlow(Castle_Room)
+	BROWNBOXTEXT Ch7PalaceBrownBox [8,8]
+	//Text(Ch7GryphonWarden)
+	FADI 4
+	CLEAN
 		
 	MNC2 Ch0
 	NoFade
 	ENDA
 	
+NorthCavAddsEvent:
+	LoadReinforcements(NorthCavAdds)
+	NoFade
+	ENDA
+	
+Ch7EVillageEvent:
+	GiveItem(AkashicBow,0xFFFF)
+	NoFade
+	ENDA
+	
+Ch7MVillageEvent:
+	GiveItem(KillerBow,0xFFFF)
+	NoFade
+	ENDA
+	
+Ch7WVillageEvent:
+	NoFade
+	ENDA
+	
 ALIGN 4
 Ch7Armory:
-	SHORT IronBlade
+	SHORT SteelBlade
 	SHORT SteelSword
 	SHORT SteelLance
 	SHORT SteelAxe
 	SHORT SlimLance
-	SHORT SlimAxe
+	SHORT KillerAxe
+	SHORT KillerBow
+	SHORT KillingEdge
 	SHORT Javelin
 	SHORT HandAxe
 	SHORT Hammer

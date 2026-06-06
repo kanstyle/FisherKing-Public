@@ -12,6 +12,11 @@
 #define SetEnemyEscapePoint(ChapterID,EscapePointList) "PUSH; ORG EnemyEscapeTable + (ChapterID * 0x4); POIN EscapePointList; POP"
 #define SetNPCEscapePoint(ChapterID,EscapePointList) "PUSH; ORG NPCEscapeTable + (ChapterID * 0x4); POIN EscapePointList; POP"
 
+Chapter7EnemyEscapeTable:
+EscapePointTerminator
+
+SetEnemyEscapePoint(Ch7,Chapter7EnemyEscapeTable)
+
 Chapter4NPCEscapeTable:
 EscapePointEntry(23,15,EscapeDown)
 EscapePointEntry(24,15,EscapeDown)

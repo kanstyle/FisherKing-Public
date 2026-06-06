@@ -26,9 +26,11 @@ DeathQuote(Songbird,Ch2,0x0,0x0,Ch2SongbirdDeathQuoteEvent)
 DeathQuote(Wise,0xFF,DefeatBossFlag,Ch3WiseDQ)
 DeathQuote(JabberwockBoss,0xFF,DefeatBossFlag,0x0)
 DeathQuote(Muscle,0xFF,DefeatBossFlag,0x0,MuscleDeathQuoteEvent)
+DeathQuote(Recruiter,0xFF,DefeatBossFlag,0x0,RecruiterDeathQuoteEvent)
 
 // NPC Units
 
+DeathQuote(Ch7Wise,0xFF,0x0,0x0,Ch7WiseDeathQuoteEvent)
 DeathQuote(Ch4NPCMan,0xFF,0x0,0x0,NoblemanDeathQuoteEvent)
 DeathQuote(Ch4NPCWoman,0xFF,0x0,0x0,NoblewomanDeathQuoteEvent)
 DeathQuote(Ch5Skull,Ch5,Ch5SkullDeadFlag,Ch5SkullDQ)
@@ -133,5 +135,18 @@ ENDA
 ALIGN 4
 MuscleDeathQuoteEvent:
 Text(MuscleDQ)
+NoFade
+ENDA
+
+ALIGN 4
+RecruiterDeathQuoteEvent:
+Text(RecruiterDQ)
+NoFade
+ENDA
+
+ALIGN 4
+Ch7WiseDeathQuoteEvent:
+Text(Ch7WiseDQ)
+GameOver
 NoFade
 ENDA

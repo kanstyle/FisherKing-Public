@@ -42,6 +42,9 @@
 #define LionMug 0x28
 #define MuscleMug 0x44
 #define WardenMug 0x45
+#define RecruiterMug 0x46
+#define LowMageManMug 0x47
+#define LowMageWomanMug 0x48
 
 #define AxeBoneCard 0xAD
 #define LanceBoneCard 0xAE
@@ -93,6 +96,7 @@
 #define Devil 0x40
 #define Muscle 0x41
 #define Captain 0x42
+#define Recruiter 0x43
 
 #define Ch2BeastBoss 0xAB
 #define JabberwockBoss 0xAD
@@ -259,6 +263,8 @@
 #define Unknown 0xD9
 
 #define Angel 0xDA
+
+#define AkashicBow 0xDB
 
 //Statuses
 #define SpecialStatusID 5

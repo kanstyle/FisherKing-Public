@@ -1242,6 +1242,12 @@ Angel[X]
 ## AngelDesc
 Revives and heals ailments from afar.[X]
 
+## AkashicBowName ^
+Akashic Bow[X]
+
+## AkashicBowDesc
+Uses Mag vs. Res. Eff. [bow][flier].[X]
+
 ## KeyName ^
 Key[X]
 
@@ -1253,5 +1259,5 @@ Cyclonic Lance
 [X]
 
 ## CyclonicLanceDesc
-Effective against fliers. Uses Str/2.
+Eff. [flier]. Uses Str/2.
 [X]

@@ -212,6 +212,7 @@ EndingScene:
 	CenterTextbox(Ch5EndReport2)
 	STAL 60
 	CenterTextbox(Ch5EndReport3)
+	GiveGold(5000)
 	
 	/*FADI 8
 	SetBackgroundSlow(Daybreak)

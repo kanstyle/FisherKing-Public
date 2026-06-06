@@ -28,7 +28,7 @@
 #include "EVENTSCRIPT/EVENTSCRIPT_Installer.event"
 #include "ToggleDeploymentSwapping/ToggleDeploymentSwappingInstaller.event"
 #include "AutoLevelASMC/Installer.event"
-#include "BuyReplaceItem/Installer.event"
+//#include "BuyReplaceItem/Installer.event"
 #include "GroupAI/GroupAI.event"
 #include "WideEyed/Installer.event"
 #include "MultiSeizeUnits20200302/Installer.event"
@@ -53,7 +53,6 @@
 #include "Individual animation_ea_2/Installer.event" //credit to 7743
 #include "AircaliburEckesachsBindingBladeFix.event" //credit to ditto
 #include "WEXPCalc/WEXPCalc.lyn.event"
-#include "BuyReplaceItem/Installer.event"
 #include "PromotedAutolevels/Installer.event"
 //#include "do5exp-Lumi/do5exp.lyn.event" //credit to lumi (replaced by NewExpFormula)
 #include "NewExpFormula/NewExpFormula.lyn.event" //custom EXP & WEXP formulas

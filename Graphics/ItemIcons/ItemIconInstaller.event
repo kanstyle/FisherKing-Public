@@ -183,6 +183,9 @@ ORG ItemIconEntry(Longbow)
 ORG ItemIconEntry(HuntersBow)
 #incbin "Bows/HuntersBow.dmp"		
 
+ORG ItemIconEntry(AkashicBow)
+#incbin "Bows/AkashicBow.dmp"
+
 // Tomes!!! Tomes!!!
 ORG ItemIconEntry(Fire)
 #incbin "Tomes/ClassicFire.dmp"		// Ereshkigal

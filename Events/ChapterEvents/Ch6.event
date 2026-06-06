@@ -373,7 +373,7 @@ Ch6VillageEvent:
 	FADI 8
 	CLEAN
 	FADU 8
-	GiveGold(1000)
+	GiveGold(3000)
 	
 	NoFade
 	ENDA

@@ -243,7 +243,7 @@ SETarvosReinforcementUnits:
 	UNIT
 	
 GaleUnits:
-	UNIT Gale Troubadour 0x40 Level(7,Ally,False)     [23,9] 0b 0x0 0x1 REDA22R9 [Quickblade,Breeze] [0x0,0x0,0x0,0x0]
+	UNIT Gale Troubadour 0x40 Level(7,Ally,False)     [23,9] 0b 0x0 0x1 REDA22R9 [Quickblade,IronSword,Breeze,Heal] [0x0,0x0,0x0,0x0]
 	UNIT
 	
 StormUnits:

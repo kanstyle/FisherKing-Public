@@ -36,6 +36,7 @@ ItemEffectivenessPtr(Reginleif, LordWeaponEffectiveness)
 ItemEffectivenessPtr(ShadowKiller, MonsterEffectiveness)
 ItemEffectivenessPtr(BrightLance, MonsterEffectiveness)
 ItemEffectivenessPtr(Fiendcleaver, MonsterEffectiveness)
+ItemEffectivenessPtr(AkashicBow, AkashicBowEffectiveness)
 ItemEffectivenessPtr(BeaconBow, FlierAndMonster1)
 ItemEffectivenessPtr(Sieglinde, SacredWeaponEffectiveness)
 ItemEffectivenessPtr(Ivaldi, SacredWeaponEffectiveness)
@@ -80,6 +81,9 @@ SetWeaponEffectiveness(MonsterType, 4)
 WORD 0
 FlierAndMonster1: //Beacon bow
 SetWeaponEffectiveness(FlierType|MonsterType, 6)
+WORD 0
+AkashicBowEffectiveness:
+SetWeaponEffectiveness(FlierType|ArcherType, 6)
 WORD 0
 FlierAndMonster2: //Nidhogg
 SetWeaponEffectiveness(FlierType, 6)

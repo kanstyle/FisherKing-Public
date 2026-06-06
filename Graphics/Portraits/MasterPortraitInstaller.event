@@ -328,3 +328,27 @@ WardenMugData: // LL
 #incbin "dmp/Warden_palette.dmp"
 #incbin "dmp/Warden_minimug.dmp"
 setMugEntry(WardenMug, WardenMugData, 2, 5, 2, 3)
+
+ALIGN 16
+RecruiterMugData: // LL
+#incbin "dmp/Recruiter_mug.dmp"
+#incbin "dmp/Recruiter_frames.dmp"
+#incbin "dmp/Recruiter_palette.dmp"
+#incbin "dmp/Recruiter_minimug.dmp"
+setMugEntry(RecruiterMug, RecruiterMugData, 2, 6, 2, 4)
+
+ALIGN 16
+LowMageManMugData: // LL
+#incbin "dmp/LowMageMan_mug.dmp"
+#incbin "dmp/LowMageMan_frames.dmp"
+#incbin "dmp/LowMageMan_palette.dmp"
+#incbin "dmp/LowMageMan_minimug.dmp"
+setMugEntry(LowMageManMug, LowMageManMugData, 2, 5, 3, 3)
+
+ALIGN 16
+LowMageWomanMugData: // LL
+#incbin "dmp/LowMageWoman_mug.dmp"
+#incbin "dmp/LowMageWoman_frames.dmp"
+#incbin "dmp/LowMageWoman_palette.dmp"
+#incbin "dmp/LowMageWoman_minimug.dmp"
+setMugEntry(LowMageWomanMug, LowMageWomanMugData, 3, 6, 3, 4)

@@ -7,8 +7,50 @@ Boss/Defend
 [X]
 
 ## Ch7ObjectiveLong ^
-Defeat the captains
+Defeat the captains[N]
 and protect militia.
+[X]
+
+## Ch7OutskirtsBrownBox
+City Outskirts[X]
+
+## Ch7IntroDiscussion
+[fr][LoadTeacher]
+[r][LoadHeroM]
+[l][LoadDragon]
+[fl][LoadPillow]
+[r][ce]
+Ugh...[N][4][4]
+That's...[4][4] gotta be far enough.[AN]
+We can relax a little.[A][oe]
+
+[fr]
+It looks like the rest of the company[N]
+kept up with us.[4][4] That's a boon.[A]
+
+[l]
+Problem is, we don't have any supplies.[N]
+Gotta find food and somewhere to sleep before nightfall.[A]
+
+[l]
+Nobody made you come along, old man.[A]
+
+[fr]
+I'm just ensuring I understand the[N]
+situation.[AN]
+Are you sure this was the best[N]
+course of action?[A]
+
+[fl][ce]
+It's my fault...[AN][oe]
+I'm not really sorry, though.[A]
+
+[fr]
+You couldn't have disarmed him?[A]
+
+[fl]
+
+
 [X]
 
 ## Ch7WiseIntro
@@ -46,3 +88,25 @@ It's too bad they aren't right here,[AN]
 'cause I'm gonna yank your stupid[N]
 little head off.[A]
 [X]
+
+## Ch7HeroIntro
+[X]
+
+## RecruiterBQ
+
+[ml][LoadRecruiter]
+Placeholder.[A]
+[X]
+
+## RecruiterDragonBQ
+
+[mr][LoadDragon]
+Placeholder.[A]
+[clear]
+
+[ml][LoadRecruiter]
+Placeholder.[A]
+[X]
+
+## Ch7PalaceBrownBox
+Royal Palace[X]

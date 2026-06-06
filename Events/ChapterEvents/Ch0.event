@@ -102,7 +102,7 @@ UnitsCh4:
 
 UnitsCh5:
 	UNIT Storm Myrmidon 0x40 Level(7,Ally,False)     [0,0] 0b 0x0 0x0 0x0 [PatientKatti,SteelSword] [0x0,0x0,0x0,0x0]
-	UNIT Gale Troubadour 0x40 Level(7,Ally,False)     [0,0] 0b 0x0 0x0 0x0 [Quickblade,Breeze] [0x0,0x0,0x0,0x0]
+	UNIT Gale Troubadour 0x40 Level(7,Ally,False)     [0,0] 0b 0x0 0x0 0x0 [Quickblade,IronSword,Breeze,Heal] [0x0,0x0,0x0,0x0]
 	UNIT
 	
 UnitsCh6:
@@ -772,6 +772,7 @@ LABEL EndPage
 	CenterTextbox(DebugPauseText)
 	BLT EndMenuSkipStartEvent 8 7
 		LOAD1 0x1 UnitsCh5
+		SilentGiveGold(5000)
 		AutoLevel(HeroChar, 9)
 		AutoLevel(Dragon, 9)
 		AutoLevel(Pillow, 9)
@@ -792,6 +793,7 @@ LABEL EndPage
 	CenterTextbox(DebugPauseText)
 	BLT EndMenuSkipStartEvent 8 7
 		LOAD1 0x1 UnitsCh6
+		SilentGiveGold(3000)
 		AutoLevel(HeroChar, 10)
 		AutoLevel(Dragon, 10)
 		AutoLevel(Pillow, 10)

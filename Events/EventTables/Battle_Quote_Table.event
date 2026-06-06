@@ -23,4 +23,8 @@ SpecifiedBattleConvo(Pillow,Ch4LowlanderBoss,Ch4,Ch4PillowBossBQFlag,Ch4PillowBo
 //Ch6
 UnspecifiedBattleConvo(Muscle,Ch6,Ch6MuscleBQFlag,Ch6MuscleBQ)
 
+//Ch7
+SpecifiedBattleConvo(Dragon,Recruiter,Ch7,RecruiterDragonBQFlag,RecruiterDragonBQ)
+UnspecifiedBattleConvo(Recruiter,Ch7,RecruiterBQFlag,RecruiterBQ)
+
 BYTE 0xFF 0xFF 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 // Terminator
