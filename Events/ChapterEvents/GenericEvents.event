@@ -25,7 +25,7 @@ BleedoutChapterAlwaysEvent:
 	ENDA
 
 BleedoutChapterTurnEvent:
-	//CALL BleedoutTurnEvent
+	CALL BleedoutTurnEvent
 	NoFade
 	ENDA
 

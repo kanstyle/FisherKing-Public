@@ -86,4 +86,9 @@ echo Done!
 python fe8_stat_calculator.py
 python event_item_parser.py
 
+echo:
+echo Backing up save
+
+call "%base_dir%BackupSave.cmd"
+
 pause

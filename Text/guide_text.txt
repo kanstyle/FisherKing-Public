@@ -1,0 +1,140 @@
+
+# 0x5C9
+Gameplay
+[X]
+
+# 0x5CA
+Lore
+[X]
+
+# 0x5CB
+Other
+[X]
+
+## GuideCritSystemTitle
+New Crit System[X]
+
+## GuideCritSystemContent
+//EntryEntryEntryEntryEntryEntry[N]
+When displayed Crit is 50 or[N]
+higher, ALWAYS deal a critical[N]
+hit (2x damage).[N]
+Weapon Triangle adv.: +15 Crit[N]
+Each ally adjacent to the[N]
+target (flanking): +20 Crit[N]
+Enemies gain 15 Crit from WTA,[N]
+but cannot flank.[X]
+
+## GuideBleedoutTitle
+Bleedout System[X]
+
+## GuideBleedoutContent
+When an ally reaches 0 HP,[N]
+instead of dying, they are set[N]
+to 1 HP and given the Dying[N]
+status for 1 turn.[N]
+At the start of the next Enemy[N]
+Phase, Dying units will die.[N]
+Units who die will return next[N]
+chapter, but lose 1 level's[N]
+worth of stats permanently.[N]
+Dying status can be removed[N]
+with a Restore staff (or any[N]
+other ailment-healing effect).[N]
+Dying units cannot be targeted[N]
+by enemies.[X]
+
+## GuideSupportsTitle
+Supports[X]
+
+## GuideSupportsContent
+Traditional supports have been[N]
+removed.[N]
+Instead, most chapters feature[N]
+base conversations, viewable[N]
+in the Preparations menu.[N]
+Base conversations are[N]
+missable, and availability may[N]
+depend on player choices.[N]
+Conversations with rewards[N]
+will be marked with [oq](!!!)"[X]
+
+## GuideWeaponEXPTitle
+Weapon EXP[X]
+
+## GuideWeaponEXPContent
+Weapon EXP is no longer based[N]
+on kills or number of attacks.[N]
+Instead, you gain one instance[N]
+of WEXP per battle.[N]
+Units can S-rank multiple[N]
+weapon types.[X]
+
+## GuideEXPFormulaTitle
+EXP Formula[X]
+
+## GuideEXPFormulaContent
+Base EXP is 30 per kill,[N]
++/- 20% per level difference.[N]
+Boss kills give +50 EXP.[N]
+Dealing damage without a kill[N]
+gives 10 EXP.[X]
+
+## GuideHighlandsTitle
+The Highlands
+[X]
+
+## GuideHighlandsContent
+The setting of this story.[N]
+The Highlands are a small,[N]
+poor country nestled in a[N]
+remote mountain range.[N]
+It was founded 200 years ago[N]
+by refugees, led by the mythic[N]
+First King.[N]
+Surrounded by larger nations,[N]
+the Highlands face constant[N]
+aggression.[N]
+Only the efforts of the late[N]
+Elder Prince and low magic,[N]
+the Highlands' closely-guarded[N]
+military secret, have kept[N]
+their neighbors at bay[N]
+for the past 50 years.[N]
+The First King was said to[N]
+have disappeared into the[N]
+Lowlands, watching over us[N]
+among the spirits to this day.[X]
+
+## GuideLowlandsTitle
+The Lowlands
+[X]
+
+## GuideLowlandsContent
+An ancient, hostile land where[N]
+spirits and daemons dwell.[N]
+Great valleys stretch on into[N]
+darkness, said to reach the[N]
+very heart of the world.[N]
+The Lowland Queen rules in the[N]
+deepest depths. No living[N]
+mortal has ever seen her.[N]
+To this day, the Lowlands and[N]
+their denizens are poorly[N]
+understood. Fact is often[N]
+indistinguishable from legend.[X]
+
+## GuideDragonPoemTitle
+A Dragon[X]
+
+## GuideDragonPoemContent
+When we go to the meadow to[N]
+pick flowers, we imagine a[N]
+dragon.[N]
+We think of it as we carry the[N]
+flowers down the road[N]
+to the church.[N]
+When we wreath the child in[N]
+flowers and carry him outside,[N]
+we long for it to be a dragon,[N]
+in the dark valleys below.[X]

@@ -154,3 +154,5 @@ a skill when used.[X]
 #include "skillquotes.txt"
 
 #include "misc_text.txt"
+
+#include "guide_text.txt"

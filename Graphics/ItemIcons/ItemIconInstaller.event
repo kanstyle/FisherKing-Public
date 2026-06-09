@@ -180,6 +180,9 @@ ORG ItemIconEntry(SilverBow)
 ORG ItemIconEntry(Longbow)
 #incbin "Bows/OakLongbow.dmp"		// Ereshkigal
 
+ORG ItemIconEntry(KillerBow)
+#incbin "Bows/ElmLongbow.dmp"		// Ereshkigal
+
 ORG ItemIconEntry(HuntersBow)
 #incbin "Bows/HuntersBow.dmp"		
 

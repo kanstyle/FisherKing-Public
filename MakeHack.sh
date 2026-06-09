@@ -77,4 +77,8 @@ $python3 $symcombo "$target_sym" "$target_sym" "$base_dir/Tools/sym/VanillaOffse
 
 # TODO: generate patch (would require a linux version of ups)
 
+echo "Backing up save"
+
+bash "$base_dir/BackupSave.sh"
+
 echo "Done!"

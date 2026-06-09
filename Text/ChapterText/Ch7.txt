@@ -28,16 +28,24 @@ We can relax a little.[A][oe]
 It looks like the rest of the company[N]
 kept up with us.[4][4] That's a boon.[A]
 
-[l]
-Problem is, we don't have any supplies.[N]
-Gotta find food and somewhere to sleep before nightfall.[A]
+[r]
+But the rest of this is a nightmare...[N]
+We don't have any supplies.[AN]
+Gotta find food and somewhere to sleep[N]
+before nightfall.[A]
+
+[fr]
+A nightmare of our own design.[AN]
+And this was to stop a thug outside[N]
+the low mage district?[A]
 
 [l]
+From torching it, yeah.[N][4][4]
 Nobody made you come along, old man.[A]
 
 [fr]
-I'm just ensuring I understand the[N]
-situation.[AN]
+I know they didn't.[4][4] I'm just ensuring[N]
+I understand the situation.[AN]
 Are you sure this was the best[N]
 course of action?[A]
 
@@ -45,12 +53,40 @@ course of action?[A]
 It's my fault...[AN][oe]
 I'm not really sorry, though.[A]
 
-[fr]
-You couldn't have disarmed him?[A]
+[r]
+Couldn't you have disarmed him?[A]
 
 [fl]
+No.[4][4] With low magic, it's a lot[N]
+easier to just...[4][4] squish.[A]
 
+[r]
+This isn't a joke.[A]
 
+[fl]
+[ce]I know.[4][4] You just don't know much[N]
+about being a low mage.[4][4][oe] That's all.[A]
+
+[l]
+Let's just drop it.[N]
+Talk about what to do now.[A]
+
+[r]
+[ce]Yeah, okay.[AN][oe]
+Step one's a place to sleep.[AN]
+We can head out to the countryside[N]
+and try to find a quiet village.[AN]
+Step two's getting back in the low[N]
+mage district somehow.[A]
+
+[fr]
+It is?[4][4] Whatever for?[A]
+
+[r]
+We still need to rescue Songbird.[N]
+That hasn't changed.[AN]
+The low mages are the only ones[N]
+who can help us do it.[A]
 [X]
 
 ## Ch7WiseIntro
@@ -90,6 +126,34 @@ little head off.[A]
 [X]
 
 ## Ch7HeroIntro
+[fl]
+[l]
+[r][LoadHeroM]
+[fr][LoadPillow]
+
+[r]
+Huh? Hold on. Something's up.
+
+[fr]
+It's a sweep... They're recruiting from the villages.
+
+[l][LoadDragon]
+All the way out here?
+
+[fr]
+Usually they don't bother you if[N]
+you're far enough from the cities.[AN]
+Poor little worker bees.[N]
+They must be desperate...[A]
+
+[fl][LoadTeacher]
+In any case, I'd suggest making ourselves scarce. We can be glad they aren't looking for us.
+
+H: No, this is good. We can stop them.
+T: Oh, brother...
+H: We're trying to stop the war, right? Gotta start somewhere.
+D: Makes sense to me.
+H: Plus, if we prove we're willing to get our hands dirty for them, the low mage settlement'll have to let us in
 [X]
 
 ## RecruiterBQ

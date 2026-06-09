@@ -39,12 +39,12 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0,StormGaleIntro,1)
 	TurnEventPlayer(0x0,Turn1Routine,1)
 	TurnEventPlayer(0x0,Turn1Event,1)
-	TurnEventPlayer(0x0,Turn2Reinforcements,2)
+	//TurnEventPlayer(0x0,Turn2Reinforcements,2)
 	TurnEventPlayer(0x0,LargeReinforcementEvent,3)
 	TurnEventPlayer(0x0,Turn2Reinforcements,5)
 	TurnEventPlayer(0x0,SETarvosReinforcements,4)
 	TurnEventPlayer(0x0,SETarvosReinforcements,5)
-	TurnEventPlayer(0x0,WReinforcements,4)
+	//TurnEventPlayer(0x0,WReinforcements,4)
 	TurnEventPlayer(0x0,WReinforcements,5)
 	TurnEventPlayer(0x0,LargeReinforcementEvent2,6)
 	TurnEventPlayer(0x0,NEStairsReinforcementEvent,7)
@@ -157,7 +157,7 @@ EnemyUnits:
 	//UNIT Beast LanceBone 0x40 Level(7,Enemy,True)     [10,10] 0b 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
 	
 	//middle, below river
-	UNIT Lowlander Fighter 0x40 Level(7,Enemy,True)     [12,14] 0xb 0x0 0x0 0x0 [SavageMaul] AttackInRangeAI
+	UNIT Lowlander Fighter 0x40 Level(7,Enemy,True)     [12,14] 0b 0x0 0x0 0x0 [SavageMaul] AttackInRangeAI
 	
 	//upper left, by armory
 	UNIT Lowlander Knight 0x40 Level(7,Enemy,True)     [4,2] 0b 0x0 0x0 0x0 [HeavySpear] AttackInRangeAI

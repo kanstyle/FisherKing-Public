@@ -78,8 +78,8 @@ Did your arrow fly true?[A]
 Nope. That's when tragedy struck.[N]
 Or rather... my bowstring did.[A]
 
-[mr]
-Ouch...[A]
+[mr][ce]
+A classic blunder...[A][oe]
 
 [ml]
 But that's not the worst of it, no.[N]
@@ -100,45 +100,31 @@ N-no![A]
 [mr][ts]
 Ehehee.[A]
 
-[ml][ts][ce]
-Anyway, I was shaken.[4] My knees trembled.[AN]
-And an honorless thug took the opportunity[N]
-to strike![oe][AN]
-So, eager to restore my wounded pride,[N]
-I grabbed my sword--[A]
+[ml][ts]
+Anyway, it was one of my lowest moments.[N]
+Imagine if it'd gotten me killed![AN]
+I wouldn't want to put my biographers in[N]
+such an awkward spot.[A]
 
-[mr]
-You grasped it?[4] The hilt?[A]
-
-[ml]
-Yes--[A]
-
-[mr]
-Firmly?[4] And pulled?[A]
-
-[ml]
-Indeed--[A]
-
-[mr][MoveMidRight]
-Wow...[4][4] On the battlefield, too...[A]
+[mr][ts]
+Does Dragon ever hit you in the chest[N]
+when you're sparring?[A]
 
 [ml][ts]
-And then I stuck him! Like a pig![A]
+Yes![4][4][mml] She does![4][4][mml] And last time,[N]
+she laughed about it![A]
 
 [mr]
-And you made him squeal![A]
+I bet you could train yourself to make[N]
+less amusing noises...[AN]
+Maybe you could try holding your chest[N]
+under a waterfall and meditating.[A]
 
-[ml]
-Yes![4] And that's why they call me...[4] er...[4][4][N]
-Life-Stealer, the Foe-Squealer![A]
+[ml][ce]
+They'd fall off.[A]
 
-[mr]
-That WAS a stirring tale...[N]
-If I ever need to make a man squeal,[AN]
-I'll let you know.[A]
-
-[ml]
-Please do![A]
+[mr][ce]
+True...[A]
 [X]
 
 ## Ch2BaseDragonTeacherName

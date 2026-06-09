@@ -21,7 +21,12 @@ PointerList:
 TurnBasedEvents:
 	TurnEventEnemy(0x0,BleedoutChapterTurnEvent,1,255)
 	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
-	TurnEventPlayer(0x0,NorthCavAddsEvent,6)
+	TurnEventPlayer(0x0,Turn1Routine,1)
+	TurnEventPlayer(0x0,CaptainSquad2Charge,3)
+	TurnEventPlayer(0x0,CaptainSquad3Charge,5)
+	TurnEventPlayer(0x0,NorthCavAddsEvent,6,1)
+	TurnEventPlayer(0x0,NorthMageAddsEvent,7,1)
+	TurnEventPlayer(0x0,NorthFlierAddsEvent,7,1)
 	END_MAIN
 
 ALIGN 32
@@ -139,19 +144,29 @@ NorthCavAdds:
 	UNIT 0x81 SwordCav 0x40 Level(10,Enemy,True)     [17,0] 0b 0x0 0x0 0x0 [IronSword] ChargeAI
 	UNIT
 	
+NorthMagesAdds:
+	UNIT 0x81 HighMage 0x40 Level(10,Enemy,True)     [12,0] 0b 0x0 0x0 0x0 [Elfire] ChargeAI
+	UNIT 0x81 LowMage 0x40 Level(10,Enemy,True)     [13,0] 0b 0x0 0x0 0x0 [Pain] ChargeAI
+	UNIT
+
+NorthFlierAdds:
+	UNIT 0x81 HighMage 0x40 Level(10,Enemy,True)     [12,0] 0b 0x0 0x0 0x0 [Elfire] ChargeAI
+	UNIT 0x81 LowMage 0x40 Level(10,Enemy,True)     [13,0] 0b 0x0 0x0 0x0 [Pain] ChargeAI
+	UNIT
+	
 CivilianUnits:
-	UNIT 0x81 CivMan 0x40 Level(10,NPC,True)     [23,13] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
-	UNIT 0x82 CivWoman 0x40 Level(10,NPC,True)     [21,14] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
-	UNIT 0x83 CivBoy 0x40 Level(10,NPC,True)     [22,15] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	UNIT 0x81 CivMan 0x40 Level(10,NPC,True)     [11,14] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	UNIT 0x82 CivWoman 0x40 Level(10,NPC,True)     [10,15] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	UNIT 0x83 CivBoy 0x40 Level(10,NPC,True)     [12,15] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
 	UNIT
 	
 CutsceneWiseUnits:
-	UNIT Ch7Wise LowMage 0x40 Level(10,NPC,True)     [22,14] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	UNIT Ch7Wise LowMage 0x40 Level(10,NPC,True)     [11,15] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
 	UNIT
 	
 CutsceneSoldierUnits:
-	UNIT 0x81 Soldier 0x40 Level(10,Enemy,True)     [22,12] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
-	UNIT 0x81 HighMage 0x40 Level(10,Enemy,True)     [21,12] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	UNIT 0x81 Soldier 0x40 Level(10,Enemy,True)     [11,13] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT 0x81 HighMage 0x40 Level(10,Enemy,True)     [12,13] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
 	UNIT
 	
 CutscenePlayerUnits:
@@ -220,7 +235,7 @@ BeginningScene:
 	//Text(Ch7IntroDiscussion)
 	FADI 4
 	CLEAN
-	CAM1 [22,14]
+	CAM1 [11,15]
 	LOAD2 0x1 CaptainSquad1
 	LOAD2 0x1 CaptainSquad2
 	LOAD2 0x1 CaptainSquad3
@@ -228,12 +243,12 @@ BeginningScene:
 	LOAD2 0x1 CivilianUnits
 	FADU 4
 	STAL 60
-	Highlight(22,12)
+	Highlight(11,13)
 	//Text(Ch7SoldierIntro)
 	
-	MOVE 5 0x81 [23,14]
-	MOVE 5 0x82 [21,15]
-	MOVE 5 0x83 [22,14]
+	MOVE 5 0x81 [9,15]
+	MOVE 5 0x82 [11,15]
+	MOVE 5 0x83 [13,15]
 	ENUN
 	DISA 0x81
 	DISA 0x82
@@ -247,6 +262,7 @@ BeginningScene:
 	STAL 30
 	
 	CAM1 [21,0]
+	STAL 30
 	CAM1 [3,0]
 	Highlight(Recruiter)
 	//Text(Ch7RecruiterIntro)
@@ -286,6 +302,16 @@ EndingScene:
 	
 NorthCavAddsEvent:
 	LoadReinforcements(NorthCavAdds)
+	NoFade
+	ENDA
+	
+NorthMageAddsEvent:
+	LoadReinforcements(NorthMagesAdds)
+	NoFade
+	ENDA
+
+NorthFlierAddsEvent:
+	LoadReinforcements(NorthFlierAdds)
 	NoFade
 	ENDA
 	

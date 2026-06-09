@@ -28,7 +28,7 @@
 #include "EVENTSCRIPT/EVENTSCRIPT_Installer.event"
 #include "ToggleDeploymentSwapping/ToggleDeploymentSwappingInstaller.event"
 #include "AutoLevelASMC/Installer.event"
-//#include "BuyReplaceItem/Installer.event"
+#include "BuyReplaceItem/Installer.event"
 #include "GroupAI/GroupAI.event"
 #include "WideEyed/Installer.event"
 #include "MultiSeizeUnits20200302/Installer.event"

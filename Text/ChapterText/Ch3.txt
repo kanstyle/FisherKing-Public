@@ -1413,8 +1413,7 @@ arena?[4] I'm not worried.[A]
 These your friends, Pillow?[A]
 
 [fr][ts]
-Mm-hmm.[4] Hero's Company is fairly new,[N]
-but we're...[4] um...[4] pretty close.[A]
+Mm-hmm...[4] They treat me pretty nice.[A]
 
 [r]
 Heh.[4] Well, until you're no longer[N]
@@ -1429,6 +1428,9 @@ stuck her neck out for you, old man.[A]
 
 [r]
 Just some humor, girl.[4] Settle down.[A]
+
+[fr]
+It's okay, Dragon...[A]
 
 [fl]
 Yeah, well, it wasn't funny.[N]
@@ -1482,7 +1484,7 @@ Here.[A][css][ml]
 Heh.[4] If you insist[tmm]...[tmm][A]
 
 [fr]
-You're making me angry, Wise.[A]
+Be an adult, Wise.[A]
 
 [r]
 Oh?[4] Well, pardon me, then.[N]
@@ -1538,20 +1540,20 @@ What the hell was wrong with him?[A]
 [l]
 Some people just don't wanna be helped.[A]
 
-[r]
+[mr]
 [tmm]...[tmm][A]
 
 [fl]
 You okay, Pillow?[A]
 
-[r]
+[mr]
 ...He's first generation.[4] They're not stupid.[4][N]
 It's just...[4][4] complicated.[A]
 
 [fl]
 What do you mean?[A]
 
-[r][ce]
+[mr][ce]
 I'll tell you some other time.[A]
 [X]
 
@@ -1608,7 +1610,7 @@ gotten so soft quite yet.[A]
 [mr][LoadPillow]
 [tmm]...[AN][tmm]
 Fine.[4] I'll beat some[N]
-sense into you.[A]
+sense into you...[A]
 [clear]
 [X]
 

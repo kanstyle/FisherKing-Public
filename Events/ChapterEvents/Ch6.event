@@ -18,6 +18,7 @@ PointerList:
 TurnBasedEvents:
 	TurnEventEnemy(0x0,BleedoutChapterTurnEvent,1,255)
 	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
+	TurnEventPlayer(0x0,Turn1Routine,1)
 	TurnEventPlayer(0x0,SwanGuardsEvent,1)
 	TurnEventPlayer(0x0,TeacherReinforcementsEvent,2)
 	TurnEventPlayer(0x0,ChargingBlockEvent,2)

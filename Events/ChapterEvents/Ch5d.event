@@ -15,6 +15,7 @@ PointerList:
 TurnBasedEvents:
 	TurnEventEnemy(0x0,BleedoutChapterTurnEvent,1,255)
 	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
+	TurnEventPlayer(0x0,Turn1Routine,1)
 	InfiniteTurnEventPlayer(0x0,TurnHPDrainEvent,2)
 	InfiniteTurnEventPlayer(0x0,TurnHealEvent,2)
 	InfiniteTurnEventPlayer(0x0,SpawnCenterSiegeEvent,19)

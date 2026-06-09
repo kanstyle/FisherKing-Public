@@ -189,6 +189,8 @@ WaitTeacher:
 
 BeginningScene:
 	SetFlag(0xB0) //turn on casual mode
+	SetFlag(0xCB) //turn on guide
+	SetFlag(0xFA) //turn on guide
 	CALL StartEventRoutine
 	FadeOutMusic
 	
