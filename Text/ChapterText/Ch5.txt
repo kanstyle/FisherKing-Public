@@ -89,6 +89,9 @@ Why wouldn't they listen?[A]
 [X]
 
 ## Ch5BaseChessFlashback
+Teacher/Elder Prince[X]
+
+## Ch5BaseChessFlashback
 [r][LoadYoungPrince]
 [fr][LoadOldPrince]
 [ml][LoadYoungTeacher]
