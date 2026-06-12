@@ -124,17 +124,17 @@ their denizens are poorly[N]
 understood. Fact is often[N]
 indistinguishable from legend.[X]
 
-## GuideDragonPoemTitle
-Visions of a Dragon[X]
+## GuideBeastPoemTitle
+Visions of a Beast[X]
 
-## GuideDragonPoemContent
+## GuideBeastPoemContent
 When we go to the meadow to[N]
 pick flowers, we imagine a[N]
-dragon.[N]
+beast.[N]
 It looms as we carry the[N]
 flowers down the road[N]
 to the church.[N]
-When we wreath the child in[N]
+When we wreathe the child in[N]
 flowers and carry him outside,[N]
-we long for it to be a dragon,[N]
+we long to find the beast[N]
 in the dark valleys below.[X]

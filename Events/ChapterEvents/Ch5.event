@@ -119,7 +119,7 @@ EagleGuardUnits:
 	UNIT
 
 NPCUnits:
-	UNIT Ch5Skull Fighter 0x40 Level(8,NPC,True)     [22,6] 0b 0x0 0x0 0x0 [SteelAxe,Vulnerary] BossAI
+	UNIT Ch5Skull Fighter 0x40 Level(8,NPC,True)     [22,6] 0b 0x0 0x0 0x0 [IronAxe,Vulnerary] [0x6,0x0,0x0,0x20] //don't move, don't attack
 	UNIT SoldierChar Knight 0x40 Level(10,NPC,True)     [16,2] 0b 0x0 0x0 0x0 [SteelLance] BossAI
 	UNIT SoldierChar Knight 0x40 Level(10,NPC,True)     [16,3] 0b 0x0 0x0 0x0 [SteelLance] BossAI
 	UNIT SoldierChar Knight 0x40 Level(10,NPC,True)     [13,5] 0b 0x0 0x0 0x0 [SteelLance] BossAI

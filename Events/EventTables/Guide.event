@@ -20,7 +20,7 @@ MainGuideEntry(1, 0, GuideWeaponEXPTitle, GuideWeaponEXPContent, 0xCB, 0xCB)
 MainGuideEntry(1, 0, GuideEXPFormulaTitle, GuideEXPFormulaContent, 0xCB, 0xCB)
 MainGuideEntry(2, 0, GuideHighlandsTitle, GuideHighlandsContent, 0xCB, 0xCB)
 MainGuideEntry(2, 0, GuideLowlandsTitle, GuideLowlandsContent, 0xCB, 0xCB)
-MainGuideEntry(2, 0, GuideDragonPoemTitle, GuideDragonPoemContent, 0xCB, 0xCB)
+MainGuideEntry(2, 0, GuideBeastPoemTitle, GuideBeastPoemContent, 0xCB, 0xCB)
 MainGuideEntry(0xC, 0, 0, 0, 0, 0)
 WORD 0 0 0
 POP
