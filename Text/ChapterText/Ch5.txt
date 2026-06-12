@@ -720,6 +720,7 @@ How about that?[A]
 What?[4] King's rings, woman, isn't[N]
 that enough?[4] Am I--[A][css]
 
+[r]
 [mvl]
 [ml]
 [mfl]
@@ -908,7 +909,7 @@ Get out there and do some work.[A]
 [X]
 
 ## Ch5CiviliansScared
-[OpenFarFarLeft][LoadBaby]
+[ml][LoadCivManYoung]
 Wh-what are these big, slimy things?![N][4]
 They're making more monsters![A]
 [X]
@@ -1101,6 +1102,18 @@ dread...)[A]
 [mr][LoadHeroM]
 What the hell?![4][4] Everyone,[N]
 get on that side![A]
+[X]
+
+## Ch5LargeReinforcement2Text1
+[mr][LoadHeroM][tmm]
+(This is bad...[4][4][ce] Damn,[N]
+I can't relax...!)[A]
+[X]
+
+## Ch5LargeReinforcement2Text2
+[mr][LoadHeroM]
+Again?![4][4] C'mon, Eagle, we[N]
+need those reinforcements![A]
 [X]
 
 ## Ch5Left

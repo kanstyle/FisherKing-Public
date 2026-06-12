@@ -198,11 +198,8 @@ BeginningScene:
 	ENDA
 
 EndingScene:
-	DISA Storm
-	DISA Gale
-	DISA Teacher
-
 	FADI 4
+	
 	MUSCFAST 0x777F
 	DoAllThree
 	SetBackground(BlackBG)
@@ -214,6 +211,10 @@ EndingScene:
 	STAL 60
 	CenterTextbox(Ch5EndReport3)
 	GiveGold(5000)
+	
+	DISA Storm
+	DISA Gale
+	DISA Teacher
 	
 	/*FADI 8
 	SetBackgroundSlow(Daybreak)

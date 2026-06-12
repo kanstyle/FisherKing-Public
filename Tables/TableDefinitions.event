@@ -67,11 +67,6 @@
   #define AthosLock 0x00200000
 #endif
 
-//Used For Consolidated AdvWeaponLocks 
-#define PillowLock 0x01000000
-#define HeroLock 0x02000000
-
-
 // Weapon Effect
 #define NoEffect 0x0
 #define PoisonEffect 0x1

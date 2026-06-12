@@ -42,6 +42,12 @@ BYTE 0x00  //dummy
 BYTE 0x00  //dummy
 WORD CavSwordRepalAnim
 
+BYTE Baby
+BYTE HighMage
+BYTE 0x00  //dummy
+BYTE 0x00  //dummy
+WORD BabyMageAnim
+
 BYTE 0x00  //Unit: term data
 BYTE 0x00  //dummy
 BYTE 0x00  //dummy

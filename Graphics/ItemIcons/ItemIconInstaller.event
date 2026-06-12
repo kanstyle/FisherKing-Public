@@ -333,7 +333,7 @@ ORG ItemIconEntry(Death)
 ORG ItemIconEntry(Shadowshot)
 #incbin "Dark/Shadowshot.dmp"
 
-ORG ItemIconEntry(Unknown)
+ORG ItemIconEntry(DevilMagic)
 #incbin "Dark/Unknown.dmp"
 
 /*

@@ -320,7 +320,9 @@ BeginningScene:
 	STAL 60
 	FADI 6
 	CLEAN
-	FADU 6
+	MUSCMID HarvestDance
+	SetBackground(Town_Day)
+	Text(Ch6SkullKilled)
 	
 	FADI 16
 	DoAllThree

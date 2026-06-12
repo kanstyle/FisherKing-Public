@@ -1,8 +1,8 @@
-#define HeroLocked 0x01000000
-#define TeacherLocked 0x02000000
-#define PillowLocked 0x03000000
-#define DragonLocked 0x04000000
-#define BrotherLocked 0x05000000
-#define HunterLocked 0x06000000
-#define PigeonLocked 0x07000000
-#define BunnyLocked 0x08000000
+#define HeroLock 0x01000000
+#define PillowLock 0x02000000
+#define TeacherLock 0x03000000
+#define DragonLock 0x04000000
+#define BrotherLock 0x05000000
+#define HunterLock 0x06000000
+#define PigeonLock 0x07000000
+#define BunnyLock 0x08000000

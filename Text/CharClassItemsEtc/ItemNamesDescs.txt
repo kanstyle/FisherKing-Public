@@ -1203,8 +1203,9 @@ ally and grants Mov +5 until next turn.[N]
 Repairs when Gale kills a foe.[X]
 
 ## BreezeUseDesc
-Heals adjacent allies[N]
-and refreshes user.[X]
+Heals an adjacent ally[N]
+and boosts their Mov
+by 5 for 1 turn.[X]
 
 ## DervishKattiName ^
 Dervish Katti[X]

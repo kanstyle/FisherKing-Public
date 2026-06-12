@@ -671,7 +671,10 @@ LargeReinforcementEvent:
 	ENDA
 	
 LargeReinforcementEvent2:
-	//Text(LargeReinforcementEventText2)
+	MUSC EnemyAttackID
+	STAL 30
+	CameraCursor(HeroChar)
+	Text(Ch5LargeReinforcement2Text1)
 	CLEAN
 	CallMenu(Ch5LargeReinforcementMenu) //menu where you pick a side to spawn reinforcements on
 	BNE 0x0 0xC 0x0
@@ -692,6 +695,7 @@ LargeReinforcementEvent2:
 		GOTO 0x3
 		LABEL 0x2
 	LABEL 0x3
+	Text(Ch5LargeReinforcement2Text2)
 	NoFade
 	ENDA
 
@@ -762,13 +766,12 @@ EndingScene:
 	//text: oh shit
 	
 	FADI 8
-	CAMERA [7,0] //camera on central building
+	CAM1 [7,0] //camera on central building
 	DoAllThree
 	LOAD2 0x1 CivilianUnits
 	LOAD2 0x1 PlayerSquadUnitsEnd
 	FADU 8
-	CenterTextbox(DebugPauseText)
-	//text: civilians are scared
+	Highlight(11,1)
 	Text(Ch5CiviliansScared)
 	
 	//jabberwocks warp to building entrances
@@ -788,12 +791,12 @@ EndingScene:
 	18, 2,\
 	18, 4)
 	
-	CAMERA_CENTERED [12,4]
+	CAM1 [12,4]
 	STAL 30
 	Highlight(Ch5Eagle)
 	Text(Ch5DevilsComing)
 	
-	CAMERA [12,4]
+	CAM1 [12,4]
 	STAL 60
 	LOAD2 0x1 DevilUnits
 	UNCM(Devil,Hide)
@@ -811,7 +814,7 @@ EndingScene:
 	//mome rath event battle
 	StartBattle
 	CriticalHit(0x0,90)
-	FIGHT Devil JabberwockBlocker Unknown 0x0
+	FIGHT Devil JabberwockBlocker DevilMagic 0x0
 	DISA JabberwockBlocker
 	
 	STAL 30
@@ -819,7 +822,7 @@ EndingScene:
 	Highlight(Dragon)
 	Text(Ch5DragonEagleArgue)
 	STAL 60
-	WARPIN [0,0] //play warp in sound
+	SFX(0xB4) //play warp in sound
 	STAL 30
 	HighlightTile(11,0)
 	Text(Ch5JabberwockBack)
