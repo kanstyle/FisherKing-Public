@@ -43,6 +43,7 @@ StaffAnim(0xE5)
 UnarmedAnim(0xE4)
 WORD 0x0 // Seperator
 
+ALIGN 4
 {
 #include "Animations/PriestStaff/Staff Installer.event"
 }

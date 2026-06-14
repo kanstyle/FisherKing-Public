@@ -1,5 +1,8 @@
 #define RecruiterBQFlag 0xB
 #define RecruiterDragonBQFlag 0xC
+#define RecruiterPillowBQFlag 0xD
+#define RecruiterTeacherBQFlag 0xE
+#define RecruiterHeroBQFlag 0xF
 #define Ch7EVillageFlag 0x7
 #define Ch7MVillageFlag 0x8
 #define Ch7WVillageFlag 0x9
@@ -157,7 +160,7 @@ NorthFlierAdds:
 CivilianUnits:
 	UNIT 0x81 CivMan 0x40 Level(10,NPC,True)     [11,14] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
 	UNIT 0x82 CivWoman 0x40 Level(10,NPC,True)     [10,15] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
-	UNIT 0x83 CivBoy 0x40 Level(10,NPC,True)     [12,15] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	UNIT 0x83 CivGirl 0x40 Level(10,NPC,True)     [12,15] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
 	UNIT
 	
 CutsceneWiseUnits:
@@ -174,6 +177,10 @@ CutscenePlayerUnits:
 	UNIT Dragon Headsman 0x40 Level(10,Ally,False)     [26,9] 0b 0x0 0x1 REDA24R9 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT HeroChar UpstartM 0x40 Level(10,Ally,False)     [26,10] 0b 0x0 0x1 REDA25R10 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT Pillow Veteran 0x40 Level(10,Ally,False)     [0,0] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+CutsceneIntroWardenUnits:
+	UNIT 0x82 MageKnight_F 0x40 Level(10,Enemy,True)     [4,0] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 	UNIT
 
 Traps1:
@@ -229,11 +236,13 @@ CaptainSquad3Charge:
 	ENDA
 
 BeginningScene:
+	MUSC FFTAnxiety
 	CALL StartEventRoutine
 	SetBackground(Forest)
-	//BROWNBOXTEXT Ch7OutskirtsBrownBox [8,8]
-	//Text(Ch7IntroDiscussion)
+	BROWNBOXTEXT Ch7OutskirtsBrownBox [8,8]
+	Text(Ch7IntroDiscussion)
 	FADI 4
+	MUSCSLOW NoticeOfDeathID
 	CLEAN
 	CAM1 [11,15]
 	LOAD2 0x1 CaptainSquad1
@@ -244,7 +253,11 @@ BeginningScene:
 	FADU 4
 	STAL 60
 	Highlight(11,13)
-	//Text(Ch7SoldierIntro)
+	Text(Ch7SoldierIntro)
+	STAL 60
+	LOAD2 0x2 CutsceneWiseUnits
+	Highlight(Ch7Wise)
+	Text(Ch7SoldierIntro2)
 	
 	MOVE 5 0x81 [9,15]
 	MOVE 5 0x82 [11,15]
@@ -253,9 +266,9 @@ BeginningScene:
 	DISA 0x81
 	DISA 0x82
 	DISA 0x83
-	
 	STAL 60
-	LOAD2 0x2 CutsceneWiseUnits
+	MOVE 5 Ch7Wise [11,14]
+	ENUN
 	STAL 30
 	Highlight(Ch7Wise)
 	Text(Ch7WiseIntro)
@@ -265,7 +278,18 @@ BeginningScene:
 	STAL 30
 	CAM1 [3,0]
 	Highlight(Recruiter)
-	//Text(Ch7RecruiterIntro)
+	Text(RecruiterIntro)
+	STAL 45
+	LOAD2 0x1 CutsceneIntroWardenUnits
+	STAL 30
+	MOVE 5 0x82 [4,1]
+	ENUN
+	Highlight(0x82)
+	Text(RecruiterWarden)
+	MOVE 5 0x82 [4,0]
+	ENUN
+	DISA 0x82
+	STAL 60
 	
 	CAM1 [26,9]
 	STAL 45
@@ -277,6 +301,7 @@ BeginningScene:
 	Highlight(HeroChar)
 	//Text(Ch7HeroIntro)
 	
+	FADI 4
 	DoAllThree
 	LOAD1 0x1 EnemyUnits
 	LOAD1 0x1 NPCUnits

@@ -89,6 +89,42 @@ The low mages are the only ones[N]
 who can help us do it.[A]
 [X]
 
+## Ch7SoldierIntro
+[ml][LoadLowMageMan]
+[mr][LoadPurpleSoldier]
+[ml]
+...I'm telling you, we have[N]
+nothing to offer here.[AN]
+The old ones are too old, and[N]
+we never taught the young to fight.[AN]
+We work the land.[4][4] Nothing more.[A]
+
+[mr]
+I'm afraid the crown demands[N]
+your conscription.[AN]
+I cannot leave until you comply.[A][css]
+
+[ml][mvl]
+[fl][LoadCivGirl]
+Daddy?[4][4] Is that a soldier?[A]
+
+[l]
+Go inside, sweetie.[A]
+[X]
+
+## Ch7SoldierIntro2
+[mr][LoadWise]
+[ml][LoadLowMageMan]
+[mr]
+Looks like trouble.[A]
+
+[ml]
+Wise![A]
+
+[mr]
+Go inside.[4][4] And hide.[4][4][N]
+I'll handle this.[A][X]
+
 ## Ch7WiseIntro
 [ml][LoadWise]
 [mr][LoadPurpleSoldier]
@@ -156,20 +192,197 @@ D: Makes sense to me.
 H: Plus, if we prove we're willing to get our hands dirty for them, the low mage settlement'll have to let us in
 [X]
 
+## RecruiterIntro
+[ml][LoadRecruiter]
+[mr][LoadPurpleSoldier]
+Sir![4][4] There's trouble.[4][4] The[N]
+low mages aren't coming quietly.[A]
+
+[ml]
+Those fools...[4][4] Can't they[N]
+see we're armed?[AN]
+Why insist on bloodshed?[A]
+
+[mr]
+There's militias posted outside the[N]
+hamlets.[4][4] We've already lost a few men.[A]
+
+[ml]
+Don't let them provoke you.[AN]
+I won't tolerate harm to any[N]
+who pose no threat.[AN]
+Remember that these are our[N]
+countrymen.[A]
+
+[mr]
+Sir![A]
+[X]
+
+## RecruiterWarden
+[mr][LoadWarden]
+[oq]Oversee the operation",[N]
+Gryphon says...[AN]
+What am I, a nursemaid?[A]
+
+[ml][LoadRecruiter]
+Lady Warden.[A]
+
+[mr]
+Just [oq]Warden" is fine.[N]
+You can handle wrangling a[N]
+few low mages yourself, right?[A]
+
+[ml]
+We're well-trained--[A]
+
+[mr]
+Okay.[4][4] First of all, don't look[N]
+at me when you talk.[4][4] It's creepy.[A]
+
+[ml]
+[ce]My apologies--[A]
+
+[mr]
+It's mostly just your face, honestly.[N]
+Are they rationing eyebrows this year?[A]
+
+[ml]
+[oe]...[A]
+
+[mr]
+Anyway, I'll be watching from afar.[AN]
+Bring me as many recruits as you can,[N]
+and I'll judge whether they're any good.[A]
+
+[ml]
+Some of the low mages have turned[N]
+violent.[A] How much force are we[N]
+permitted to use, Warden?[A]
+
+[mr]
+What?[4][4] I don't care.[4][4][N]
+I'm not your mother.[AN]
+Just get it done, and we won't[N]
+have to see each other again.[A][css][clear]
+
+[ml]
+[4][4][4][4][tmm][ce](What's happening to this country?)[A]
+[X]
+
 ## RecruiterBQ
 
 [ml][LoadRecruiter]
-Placeholder.[A]
+Stand down![AN]
+Don't make this harder[N]
+than it has to be![A]
 [X]
 
 ## RecruiterDragonBQ
 
+[ml][LoadRecruiter]
+You there![4][4] Leave, and[N]
+you can keep your life![AN]
+We've no reason to fight.[A]
+[clear]
+
 [mr][LoadDragon]
-Placeholder.[A]
+Yeah?[4][4] So fighting's wrong,[AN]
+but hauling people off[N]
+to military camps isn't?[A]
 [clear]
 
 [ml][LoadRecruiter]
-Placeholder.[A]
+They're protecting our nation,[N]
+you fool![AN]
+You'll be killing more people[N]
+by getting in the way![A]
+[clear]
+
+[mr][LoadDragon]
+You think so?[N]
+Guess I'll start with you.[A]
+[clear]
+[X]
+
+## RecruiterPillowBQ
+
+[ml][LoadRecruiter]
+Low mage![4][4] Come quietly,[N]
+and we needn't harm you.[A]
+[clear]
+
+[mr][LoadPillow]
+Don't lie to me.[4][4][N]
+It's insulting.[A]
+[clear]
+
+[ml][LoadRecruiter]
+It's not a lie![A]
+[clear]
+
+[mr][LoadPillow]
+I'm in a bad mood.[N]
+I don't want to talk.[A]
+[clear]
+[X]
+
+## RecruiterTeacherBQ
+
+[ml][LoadRecruiter]
+You...[4][4] You're a knight[N]
+of the Highlands![AN]
+Tell your men to stand down,[N]
+sir![A]
+[clear]
+
+[mr][LoadTeacher]
+I'm a knight no longer, and[N]
+I'm not the one in command.[AN]
+It'd be an honor to me if[N]
+you stood down first.[A]
+[clear]
+
+[ml][LoadRecruiter]
+Why are you attacking?![AN]
+We could stop the fighting[N]
+here![A]
+[clear]
+
+[mr][LoadTeacher]
+[ce]Would that I could.[N][4][4]
+But we do what we must.[A]
+[clear]
+[X]
+
+## RecruiterHeroBQ
+[ml][LoadRecruiter]
+You! You're in charge,[N]
+aren't you?[AN]
+Why are you attacking us?![A]
+[clear]
+
+[mr][LoadHeroM][ts]
+Sorry, but I'm with the low[N]
+mages here.[AN]
+And I'm a criminal, so I can't[N]
+really afford to negotiate.[A]
+[clear][ts]
+
+[ml][LoadRecruiter]
+Tell the low mages to drop[N]
+their weapons,[A] and they won't[N]
+be harmed.[AN]
+Please![A]
+[clear]
+
+[mr][LoadHeroM]
+I'll need you to drop yours[N]
+first, then.[A]
+[clear]
+
+[ml][LoadRecruiter]
+...I can't do that.[A]
+[clear]
 [X]
 
 ## Ch7PalaceBrownBox

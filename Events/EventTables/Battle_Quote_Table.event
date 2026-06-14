@@ -25,6 +25,9 @@ UnspecifiedBattleConvo(Muscle,Ch6,Ch6MuscleBQFlag,Ch6MuscleBQ)
 
 //Ch7
 SpecifiedBattleConvo(Dragon,Recruiter,Ch7,RecruiterDragonBQFlag,RecruiterDragonBQ)
+SpecifiedBattleConvo(Pillow,Recruiter,Ch7,RecruiterPillowBQFlag,RecruiterPillowBQ)
+SpecifiedBattleConvo(Teacher,Recruiter,Ch7,RecruiterTeacherBQFlag,RecruiterTeacherBQ)
+SpecifiedBattleConvo(HeroChar,Recruiter,Ch7,RecruiterHeroBQFlag,RecruiterHeroBQ)
 UnspecifiedBattleConvo(Recruiter,Ch7,RecruiterBQFlag,RecruiterBQ)
 
 BYTE 0xFF 0xFF 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 // Terminator

@@ -16,12 +16,12 @@ C2E
 C1B
 C05
 3 p- magf_mg1_009.png
+L
 2 p- magf_mg1_010.png
 2 p- magf_mg1_011.png
-C47
 1 p- magf_mg1_012.png
-C01
 2 p- magf_mg1_013.png
+C01
 2 p- magf_mg1_014.png
 2 p- magf_mg1_015.png
 8 p- magf_mg1_016.png
@@ -33,27 +33,27 @@ C1B
 C06
 3 p- magf_mg1_020.png
 C1B
-3 p- magf_mg1_021.png
+3 p- magf_mg1_000.png
 C0D
 ~~~
 /// - Mode 3
 C07
 C03
 1 p- magf_mg1_000.png
+4 p- magf_mg1_021.png
+C1B
 4 p- magf_mg1_022.png
-C1B
 4 p- magf_mg1_023.png
-4 p- magf_mg1_024.png
 C1B
+4 p- magf_mg1_024.png
 4 p- magf_mg1_025.png
-4 p- magf_mg1_026.png
 C2F
-3 p- magf_mg1_027.png
-8 p- magf_mg1_028.png
-3 p- magf_mg1_029.png
-8 p- magf_mg1_030.png
-3 p- magf_mg1_031.png
-11 p- magf_mg1_032.png
+3 p- magf_mg1_026.png
+8 p- magf_mg1_027.png
+3 p- magf_mg1_028.png
+8 p- magf_mg1_029.png
+3 p- magf_mg1_030.png
+11 p- magf_mg1_031.png
 4 p- magf_mg1_001.png
 4 p- magf_mg1_002.png
 C1B
@@ -67,12 +67,12 @@ C2E
 C1B
 C05
 3 p- magf_mg1_009.png
+L
 2 p- magf_mg1_010.png
 2 p- magf_mg1_011.png
-C47
 1 p- magf_mg1_012.png
-C01
 2 p- magf_mg1_013.png
+C01
 2 p- magf_mg1_014.png
 2 p- magf_mg1_015.png
 8 p- magf_mg1_016.png
@@ -84,7 +84,7 @@ C1B
 C06
 3 p- magf_mg1_020.png
 C1B
-3 p- magf_mg1_021.png
+3 p- magf_mg1_000.png
 C0D
 ~~~
 /// - Mode 5
@@ -105,12 +105,12 @@ C2E
 C1B
 C05
 3 p- magf_mg1_009.png
+L
 2 p- magf_mg1_010.png
 2 p- magf_mg1_011.png
-C47
 1 p- magf_mg1_012.png
-C01
 2 p- magf_mg1_013.png
+C01
 2 p- magf_mg1_014.png
 2 p- magf_mg1_015.png
 8 p- magf_mg1_016.png
@@ -122,27 +122,27 @@ C1B
 C06
 3 p- magf_mg1_020.png
 C1B
-3 p- magf_mg1_021.png
+3 p- magf_mg1_000.png
 C0D
 ~~~
 /// - Mode 6
 C07
 C03
 1 p- magf_mg1_000.png
+4 p- magf_mg1_021.png
+C1B
 4 p- magf_mg1_022.png
-C1B
 4 p- magf_mg1_023.png
-4 p- magf_mg1_024.png
 C1B
+4 p- magf_mg1_024.png
 4 p- magf_mg1_025.png
-4 p- magf_mg1_026.png
 C2F
-3 p- magf_mg1_027.png
-8 p- magf_mg1_028.png
-3 p- magf_mg1_029.png
-8 p- magf_mg1_030.png
-3 p- magf_mg1_031.png
-11 p- magf_mg1_032.png
+3 p- magf_mg1_026.png
+8 p- magf_mg1_027.png
+3 p- magf_mg1_028.png
+8 p- magf_mg1_029.png
+3 p- magf_mg1_030.png
+11 p- magf_mg1_031.png
 4 p- magf_mg1_001.png
 4 p- magf_mg1_002.png
 C1B
@@ -156,12 +156,12 @@ C2E
 C1B
 C05
 3 p- magf_mg1_009.png
+L
 2 p- magf_mg1_010.png
 2 p- magf_mg1_011.png
-C47
 1 p- magf_mg1_012.png
-C01
 2 p- magf_mg1_013.png
+C01
 2 p- magf_mg1_014.png
 2 p- magf_mg1_015.png
 8 p- magf_mg1_016.png
@@ -173,27 +173,27 @@ C1B
 C06
 3 p- magf_mg1_020.png
 C1B
-3 p- magf_mg1_021.png
+3 p- magf_mg1_000.png
 C0D
 ~~~
 /// - Mode 7
 C02
 1 p- magf_mg1_000.png
 C0E
-3 p- magf_mg1_033.png
-1 p- magf_mg1_034.png
+3 p- magf_mg1_032.png
+1 p- magf_mg1_033.png
 C01
-3 p- magf_mg1_033.png
+3 p- magf_mg1_032.png
 C0D
 ~~~
 /// - Mode 8
 C02
 1 p- magf_mg1_000.png
 C0E
-3 p- magf_mg1_033.png
-1 p- magf_mg1_034.png
+3 p- magf_mg1_032.png
+1 p- magf_mg1_033.png
 C01
-3 p- magf_mg1_033.png
+3 p- magf_mg1_032.png
 C0D
 ~~~
 /// - Mode 9
@@ -226,12 +226,12 @@ C2E
 C1B
 C05
 3 p- magf_mg1_009.png
+L
 2 p- magf_mg1_010.png
 2 p- magf_mg1_011.png
-C47
 1 p- magf_mg1_012.png
-C01
 2 p- magf_mg1_013.png
+C01
 2 p- magf_mg1_014.png
 2 p- magf_mg1_015.png
 8 p- magf_mg1_016.png
@@ -243,7 +243,7 @@ C1B
 C06
 3 p- magf_mg1_020.png
 C1B
-3 p- magf_mg1_021.png
+3 p- magf_mg1_000.png
 C0D
 ~~~
 /// - End of animation

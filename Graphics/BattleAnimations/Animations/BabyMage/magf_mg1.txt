@@ -21,12 +21,12 @@ C2E                               #Show sage's normal magic rune drawing animati
 C1B                               #Play quick "heavy step" SFE
 C05                               #Call spell associated with equipped weapon
 3 p- magf_mg1_009.png
+L                                 #LOOPSTART {
 2 p- magf_mg1_010.png
 2 p- magf_mg1_011.png
-C47                               #Show cape flowing animation; Do NOT USE; VERY hardcoded; alternative is C01Hack Loop.
 1 p- magf_mg1_012.png
-C01                               #NOP
 2 p- magf_mg1_013.png
+C01                               #LOOPEND }  NOP
 2 p- magf_mg1_014.png
 2 p- magf_mg1_015.png
 8 p- magf_mg1_016.png
@@ -38,27 +38,27 @@ C1B                               #Play quick "heavy step" SFE
 C06                               #Begin opponent's turn after hit.next code 0D.
 3 p- magf_mg1_020.png
 C1B                               #Play quick "heavy step" SFE
-3 p- magf_mg1_021.png
+3 p- magf_mg1_000.png
 C0D                               #End of dodge animation. preceeded by 0x06
 ~~~
 /// - Mode 3               #Melee Critical Animation
 C07                               #Start attack animation; need 03 right before this.
 C03                               #Start attack animation; need 07 right after this.
 1 p- magf_mg1_000.png
+4 p- magf_mg1_021.png
+C1B                               #Play quick "heavy step" SFE
 4 p- magf_mg1_022.png
-C1B                               #Play quick "heavy step" SFE
 4 p- magf_mg1_023.png
-4 p- magf_mg1_024.png
 C1B                               #Play quick "heavy step" SFE
+4 p- magf_mg1_024.png
 4 p- magf_mg1_025.png
-4 p- magf_mg1_026.png
 C2F                               #Show sage's critical magic rune drawing animation
-3 p- magf_mg1_027.png
-8 p- magf_mg1_028.png
-3 p- magf_mg1_029.png
-8 p- magf_mg1_030.png
-3 p- magf_mg1_031.png
-11 p- magf_mg1_032.png
+3 p- magf_mg1_026.png
+8 p- magf_mg1_027.png
+3 p- magf_mg1_028.png
+8 p- magf_mg1_029.png
+3 p- magf_mg1_030.png
+11 p- magf_mg1_031.png
 4 p- magf_mg1_001.png
 4 p- magf_mg1_002.png
 C1B                               #Play quick "heavy step" SFE
@@ -72,12 +72,12 @@ C2E                               #Show sage's normal magic rune drawing animati
 C1B                               #Play quick "heavy step" SFE
 C05                               #Call spell associated with equipped weapon
 3 p- magf_mg1_009.png
+L                                 #LOOPSTART {
 2 p- magf_mg1_010.png
 2 p- magf_mg1_011.png
-C47                               #Show cape flowing animation; Do NOT USE; VERY hardcoded; alternative is C01Hack Loop.
 1 p- magf_mg1_012.png
-C01                               #NOP
 2 p- magf_mg1_013.png
+C01                               #LOOPEND }  NOP
 2 p- magf_mg1_014.png
 2 p- magf_mg1_015.png
 8 p- magf_mg1_016.png
@@ -89,7 +89,7 @@ C1B                               #Play quick "heavy step" SFE
 C06                               #Begin opponent's turn after hit.next code 0D.
 3 p- magf_mg1_020.png
 C1B                               #Play quick "heavy step" SFE
-3 p- magf_mg1_021.png
+3 p- magf_mg1_000.png
 C0D                               #End of dodge animation. preceeded by 0x06
 ~~~
 /// - Mode 5               #Ranged Animation 
@@ -110,12 +110,12 @@ C2E                               #Show sage's normal magic rune drawing animati
 C1B                               #Play quick "heavy step" SFE
 C05                               #Call spell associated with equipped weapon
 3 p- magf_mg1_009.png
+L                                 #LOOPSTART {
 2 p- magf_mg1_010.png
 2 p- magf_mg1_011.png
-C47                               #Show cape flowing animation; Do NOT USE; VERY hardcoded; alternative is C01Hack Loop.
 1 p- magf_mg1_012.png
-C01                               #NOP
 2 p- magf_mg1_013.png
+C01                               #LOOPEND }  NOP
 2 p- magf_mg1_014.png
 2 p- magf_mg1_015.png
 8 p- magf_mg1_016.png
@@ -127,27 +127,27 @@ C1B                               #Play quick "heavy step" SFE
 C06                               #Begin opponent's turn after hit.next code 0D.
 3 p- magf_mg1_020.png
 C1B                               #Play quick "heavy step" SFE
-3 p- magf_mg1_021.png
+3 p- magf_mg1_000.png
 C0D                               #End of dodge animation. preceeded by 0x06
 ~~~
 /// - Mode 6               #Ranged Critical Animation
 C07                               #Start attack animation; need 03 right before this.
 C03                               #Start attack animation; need 07 right after this.
 1 p- magf_mg1_000.png
+4 p- magf_mg1_021.png
+C1B                               #Play quick "heavy step" SFE
 4 p- magf_mg1_022.png
-C1B                               #Play quick "heavy step" SFE
 4 p- magf_mg1_023.png
-4 p- magf_mg1_024.png
 C1B                               #Play quick "heavy step" SFE
+4 p- magf_mg1_024.png
 4 p- magf_mg1_025.png
-4 p- magf_mg1_026.png
 C2F                               #Show sage's critical magic rune drawing animation
-3 p- magf_mg1_027.png
-8 p- magf_mg1_028.png
-3 p- magf_mg1_029.png
-8 p- magf_mg1_030.png
-3 p- magf_mg1_031.png
-11 p- magf_mg1_032.png
+3 p- magf_mg1_026.png
+8 p- magf_mg1_027.png
+3 p- magf_mg1_028.png
+8 p- magf_mg1_029.png
+3 p- magf_mg1_030.png
+11 p- magf_mg1_031.png
 4 p- magf_mg1_001.png
 4 p- magf_mg1_002.png
 C1B                               #Play quick "heavy step" SFE
@@ -161,12 +161,12 @@ C2E                               #Show sage's normal magic rune drawing animati
 C1B                               #Play quick "heavy step" SFE
 C05                               #Call spell associated with equipped weapon
 3 p- magf_mg1_009.png
+L                                 #LOOPSTART {
 2 p- magf_mg1_010.png
 2 p- magf_mg1_011.png
-C47                               #Show cape flowing animation; Do NOT USE; VERY hardcoded; alternative is C01Hack Loop.
 1 p- magf_mg1_012.png
-C01                               #NOP
 2 p- magf_mg1_013.png
+C01                               #LOOPEND }  NOP
 2 p- magf_mg1_014.png
 2 p- magf_mg1_015.png
 8 p- magf_mg1_016.png
@@ -178,27 +178,27 @@ C1B                               #Play quick "heavy step" SFE
 C06                               #Begin opponent's turn after hit.next code 0D.
 3 p- magf_mg1_020.png
 C1B                               #Play quick "heavy step" SFE
-3 p- magf_mg1_021.png
+3 p- magf_mg1_000.png
 C0D                               #End of dodge animation. preceeded by 0x06
 ~~~
 /// - Mode 7               #Dodge Melee Attack
 C02                               #Start of dodge
 1 p- magf_mg1_000.png
 C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
-3 p- magf_mg1_033.png
-1 p- magf_mg1_034.png
+3 p- magf_mg1_032.png
+1 p- magf_mg1_033.png
 C01                               #NOP
-3 p- magf_mg1_033.png
+3 p- magf_mg1_032.png
 C0D                               #End of dodge animation. preceeded by 0x06
 ~~~
 /// - Mode 8               #Dodge Ranged Attack
 C02                               #Start of dodge
 1 p- magf_mg1_000.png
 C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
-3 p- magf_mg1_033.png
-1 p- magf_mg1_034.png
+3 p- magf_mg1_032.png
+1 p- magf_mg1_033.png
 C01                               #NOP
-3 p- magf_mg1_033.png
+3 p- magf_mg1_032.png
 C0D                               #End of dodge animation. preceeded by 0x06
 ~~~
 /// - Mode 9               #Equiped with Melee Weapon
@@ -231,12 +231,12 @@ C2E                               #Show sage's normal magic rune drawing animati
 C1B                               #Play quick "heavy step" SFE
 C05                               #Call spell associated with equipped weapon
 3 p- magf_mg1_009.png
+L                                 #LOOPSTART {
 2 p- magf_mg1_010.png
 2 p- magf_mg1_011.png
-C47                               #Show cape flowing animation; Do NOT USE; VERY hardcoded; alternative is C01Hack Loop.
 1 p- magf_mg1_012.png
-C01                               #NOP
 2 p- magf_mg1_013.png
+C01                               #LOOPEND }  NOP
 2 p- magf_mg1_014.png
 2 p- magf_mg1_015.png
 8 p- magf_mg1_016.png
@@ -248,7 +248,7 @@ C1B                               #Play quick "heavy step" SFE
 C06                               #Begin opponent's turn after hit.next code 0D.
 3 p- magf_mg1_020.png
 C1B                               #Play quick "heavy step" SFE
-3 p- magf_mg1_021.png
+3 p- magf_mg1_000.png
 C0D                               #End of dodge animation. preceeded by 0x06
 ~~~
 /// - End of animation

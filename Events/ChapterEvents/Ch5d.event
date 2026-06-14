@@ -212,9 +212,9 @@ EndingScene:
 	CenterTextbox(Ch5EndReport3)
 	GiveGold(5000)
 	
-	DISA Storm
-	DISA Gale
-	DISA Teacher
+	REMU Storm
+	REMU Gale
+	REMU Teacher
 	
 	/*FADI 8
 	SetBackgroundSlow(Daybreak)

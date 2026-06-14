@@ -138,7 +138,7 @@
 [LoadCivManBald] = [LoadFace][0x58][0x1]
 [LoadCivManOld] = [LoadFace][0x59][0x1]
 [LoadCivWoman] = [LoadFace][0x60][0x1]
-[LoadCivManSquint] = [LoadFace][0x5A][0x1]
+[LoadCivMan] = [LoadFace][0x5A][0x1]
 [LoadCivManOldBlonde] = [LoadFace][0x5B][0x1]
 [LoadCivManYoung] = [LoadFace][0x5C][0x1]
 [LoadCivManTeen] = [LoadFace][0x5D][0x1]
