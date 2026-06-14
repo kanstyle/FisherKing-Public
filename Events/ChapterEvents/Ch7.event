@@ -182,6 +182,34 @@ CutscenePlayerUnits:
 CutsceneIntroWardenUnits:
 	UNIT 0x82 MageKnight_F 0x40 Level(10,Enemy,True)     [4,0] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 	UNIT
+	
+WardenGuardsEndCutscene1:
+	UNIT 0x81 Druid 0x40 Level(10,Enemy,True)     [3,5] 0b 0x0 0x0 0x0 [Pain] AttackInRangeAI
+	UNIT
+	
+WardenGuardsEndCutscene2:
+	UNIT 0x81 Druid 0x40 Level(10,Enemy,True)     [4,4] 0b 0x0 0x0 0x0 [Pain] AttackInRangeAI
+	UNIT
+	
+WardenGuardsEndCutscene3:
+	UNIT 0x81 Druid 0x40 Level(10,Enemy,True)     [5,5] 0b 0x0 0x0 0x0 [Pain] AttackInRangeAI
+	UNIT
+	
+WardenGuardsEndCutscene4:
+	UNIT 0x81 Shaman 0x40 Level(10,Enemy,True)     [3,4] 0b 0x0 0x0 0x0 [Pain] AttackInRangeAI
+	UNIT
+	
+WardenGuardsEndCutscene5:
+	UNIT 0x81 Shaman 0x40 Level(10,Enemy,True)     [5,4] 0b 0x0 0x0 0x0 [Pain] AttackInRangeAI
+	UNIT
+	
+PlayerUnitsEndCutscene:
+	UNIT Teacher Veteran 0x40 Level(10,Ally,False)     [5,10] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Dragon Headsman 0x40 Level(10,Ally,False)     [4,9] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT HeroChar UpstartM 0x40 Level(10,Ally,False)     [3,10] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Pillow LowVoice 0x40 Level(10,Ally,False)     [4,11] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT Ch7Wise LowMage 0x40 Level(10,NPC,False)     [4,12] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
 
 Traps1:
 	ENDTRAP
@@ -315,9 +343,46 @@ BeginningScene:
 EndingScene:
 	CALL EndEventRoutine
 	FADI 4
-	SetBackgroundSlow(Castle_Room)
-	BROWNBOXTEXT Ch7PalaceBrownBox [8,8]
-	//Text(Ch7GryphonWarden)
+	DoAllThree
+	LOAD2 0x1 PlayerUnitsEndCutscene
+	SetBackground(Plain)
+	//Text() //talking to Wise
+	FADI 8
+	CLEAN
+	FADU 8
+	
+	CAM1 [4,8]
+	MOVE 5 [4,6] 0x82
+	ENUN
+	STAL 30
+	Highlight(0x82)
+	//Text
+	
+	//Warden summons soldiers
+	WARPIN [3,5]
+	LOAD2 0x1 WardenGuardsEndCutscene1
+	ENDWARP
+	STAL 45
+	WARPIN [4,4]
+	LOAD2 0x1 WardenGuardsEndCutscene2
+	ENDWARP
+	STAL 45
+	WARPIN [5,5]
+	LOAD2 0x1 WardenGuardsEndCutscene3
+	ENDWARP
+	STAL 45
+	WARPIN [3,4]
+	LOAD2 0x1 WardenGuardsEndCutscene4
+	ENDWARP
+	STAL 45
+	WARPIN [5,4]
+	LOAD2 0x1 WardenGuardsEndCutscene5
+	ENDWARP
+	STAL 45
+	Highlight(Dragon)
+	//Text() //Dragon wants to attack Warden
+	//cg with narration
+	//
 	FADI 4
 	CLEAN
 		
