@@ -341,23 +341,26 @@ BeginningScene:
 	ENDA
 
 EndingScene:
-	CALL EndEventRoutine
 	FADI 4
+	CALL EndEventRoutine
 	DoAllThree
+	CAM1 [4,8]
 	LOAD2 0x1 PlayerUnitsEndCutscene
+	LOAD2 0x1 CutsceneIntroWardenUnits
 	SetBackground(Plain)
 	//Text() //talking to Wise
 	FADI 8
 	CLEAN
 	FADU 8
 	
-	CAM1 [4,8]
-	MOVE 5 [4,6] 0x82
+	STAL 60
+	MOVE 5 0x82 [4,6]
 	ENUN
 	STAL 30
+	MUSCMID NoticeOfDeathID
 	Highlight(0x82)
-	//Text
-	
+	Text(Ch7EndWardenAppears)
+	STAL 45
 	//Warden summons soldiers
 	WARPIN [3,5]
 	LOAD2 0x1 WardenGuardsEndCutscene1
@@ -380,9 +383,21 @@ EndingScene:
 	ENDWARP
 	STAL 45
 	Highlight(Dragon)
-	//Text() //Dragon wants to attack Warden
-	//cg with narration
-	//
+	FADI 8
+	SetBackground(Plain)
+	Text(Ch7EndWardenAppears2) //Dragon wants to attack Warden
+	FADI 4
+	STAL 90
+	MUSCSLOW 0x777F
+	STAL 60
+	SetBackgroundSlow(Heart)
+	CenterTextbox(Ch7EndPillowNarration)
+	STAL 60
+	FADI 4
+	CLEAN
+	STAL 60
+	SetBackground(BlackBG)
+	CenterTextbox(Ch7EndDragonInjuredNarration)
 	FADI 4
 	CLEAN
 		

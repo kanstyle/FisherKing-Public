@@ -19,6 +19,7 @@
 [Beat] = [ToggleMouthMove]...[.4][ToggleMouthMove]
 [b] = [Beat]
 [4] = [.4]
+[7] = [.7]
 [Event] = [LoadOverworldFaces]
 [OpenQuote] = [0xC2][0x93]
 [oq] = [0xC2][0x93]
