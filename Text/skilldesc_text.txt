@@ -1,3 +1,7 @@
+## SD_Runic
+Runic: Place a light rune and[N]
+refresh. Once per map.[X]
+
 ## SD_StormEye
 Storm Eye: Gain +20 Avoid[N]
 vs. all adjacent foes.[X]

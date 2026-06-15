@@ -129,7 +129,10 @@ UnitMenuTable:
 	
   //CallPillow
 	MenuCommand(UM_CallPillow, UM_CallPillowDesc, NormalText, CallPillow_Usability, CallPillowAction)
-	
+
+  //Runic
+	MenuCommand(UM_Runic, UM_RunicDesc, NormalText, Runic_Usability, Runic_Effect)
+
 	//ExtendedDestruction
 	MenuCommand(UM_ExtendedDestruction, UM_ExtendedDestructionDesc, NormalText, ExtendedDestruction_Usability, ExtendedDestructionAction)
 

@@ -4,6 +4,9 @@
 
 //My Skills
 
+//Runic
+#define RunicID 153
+
 //VantageMinus
 #define VantageMinusID 147
 
@@ -1172,7 +1175,7 @@
 
 //Resolve: When HP < 50%, gain 1.5x Str, Skl, & Spd.
 //By Sme
-#define ResolveID 153
+#define ResolveID 255
 
 //Fortress Defense: +5 Def, -3 Str/Mag
 //By Leonarth

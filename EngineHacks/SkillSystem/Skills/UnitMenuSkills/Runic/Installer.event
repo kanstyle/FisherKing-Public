@@ -1,0 +1,17 @@
+#include "Runic.lyn.event"
+
+ALIGN 4
+RunicID_Link:
+WORD RunicID
+RunicTargetBottomText_Link:
+WORD RunicTargetBottomText
+
+// Calls BeginTargetSelectionASMC (set up via gEventSlots by Runic_Effect) to let
+// the player pick an adjacent tile, then places the light rune at the chosen
+// tile (SlotB) via RunicPlaceLightRuneASMC.
+ALIGN 4
+RunicTargetSelectEvent:
+ASMC BeginTargetSelectionASMC|1
+//Text(PigeonDQ)
+ASMC RunicPlaceLightRuneASMC|1
+ENDA

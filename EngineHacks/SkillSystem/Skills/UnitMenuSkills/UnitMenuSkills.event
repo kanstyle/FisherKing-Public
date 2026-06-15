@@ -11,6 +11,8 @@
 
 #include "CallPillow/Installer.event"
 
+#include "Runic/Installer.event"
+
 ALIGN 4
 NewDanceUsability:
 #incbin "Dance/NewDanceUsability.dmp"

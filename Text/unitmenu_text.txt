@@ -287,6 +287,9 @@ Select an ally to heal.[X]
 ## DrawBackTargetBottomText
 Select an ally to pull.[X]
 
+## RunicTargetBottomText
+Select a tile.[X]
+
 ##UM_GoddessDance
  Goddess Dance[X]
 
@@ -304,7 +307,14 @@ deal remaining uses as damage.[X]
 ## UM_Stride
  Stride[X]
 
-## UM_StrideDesc 
+## UM_StrideDesc
 Increase movement of all[N]
-allied units in a 3 tile[N] 
+allied units in a 3 tile[N]
 radius by 3.[X]
+
+## UM_Runic
+ Rune[X]
+
+## UM_RunicDesc
+Place a light rune and[N]
+refresh. 1/map.[X]
