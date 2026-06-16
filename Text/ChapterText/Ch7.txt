@@ -539,109 +539,270 @@ the horse!"[4][4][4][4][4][4][AN]
 
 ## Ch7MVillageIntroText
 [ml][LoadActive]
-[mr][LoadCivMan]
+[mr][LoadCivManOld]
 
 [mr]
-Silver lance for 3000g[N]
-or wait 2 turns.[A]
+Hey, you there![4][4] Look at this.[N]
+A beauty, isn't she?[AN]
+I'm trying to offload this thing[N]
+before the soldiers take it.[AN]
+I'll sell it for...[7] er...[N]
+3000...[7] hmm...[7] actually...[A]
 [X]
 
 ## Ch7MVillageBuyChoice
 Buy the Silver Lance (3000g).[X]
 
 ## Ch7MVillageBuyDesc
-Buy it now for 3000 gold.[X]
+Buy it now for full price.[X]
 
 ## Ch7MVillageWaitChoice
-Wait for a better price.[X]
+Wait 2 turns for a better price.[X]
 
 ## Ch7MVillageWaitDesc
-Come back later.[X]
+Come back in exactly 2 turns.[X]
 
 ## Ch7MVillageBoughtText
 [ml][LoadActive]
-[mr][LoadCivMan]
+[mr][LoadCivManOld]
 
 [mr]
-Bought at full price.[A]
+Yes, that's a fair price, isn't it?[N]
+Thank you![4] Thank you very much![A]
 [X]
 
 ## Ch7MVillageNoGoldText
 [ml][LoadActive]
-[mr][LoadCivMan]
+[mr][LoadCivManOld]
 
 [mr]
-Not enough gold.[A]
+Wait, but...[7] you can't afford it![N]
+What're you trying to pull?![AN]
+King's rings; I'm just an old man![A]
 [X]
 
 ## Ch7MVillageReturnText
 [ml][LoadActive]
-[mr][LoadCivMan]
+[mr][LoadCivManOld]
 
 [mr]
-Back again, eh?[4][4] Well, the[N]
-price has dropped, just like I said.[AN]
-It's 1500 gold now.[4][4] Or...[AN]
-wait another couple of turns and[N]
-I'll just give it to you for free.[A]
+Ah, it's you![4] No one's buying my[N]
+lance![4] Can you believe it?[AN]
+I was doing some thinking about[N]
+the price...[AN]
+I was being unfair, wasn't I?[4][N]
+How about 1500 gold?[AN]
+Er...[4][4] Actually...[4][4][N]
+Let me think...[A]
 [X]
 
 ## Ch7MVillageBuy1500Choice
-Buy the Silver Lance (1500g)[X]
+Buy the Silver Lance (1500g).[X]
 
 ## Ch7MVillageBuy1500Desc
 Buy it now for 1500 gold.[X]
 
 ## Ch7MVillageWaitFreeChoice
-Wait for it to be free[X]
+Wait for the price to drop.[X]
 
 ## Ch7MVillageWaitFreeDesc
-Come back in 2 turns.[X]
+Come back in exactly 2 turns,[N]
+again.[X]
 
 ## Ch7MVillageBought1500Text
 [ml][LoadActive]
-[mr][LoadCivMan]
+[mr][LoadCivManOld]
 
 [mr]
-Take it at half price.[A]
+Thank you, thank you![N][4]
+Much more reasonable, eh?[A]
 [X]
 
 ## Ch7MVillageFreeText
 [ml][LoadActive]
-[mr][LoadCivMan]
+[mr][LoadCivManOld]
 
 [mr]
-Take it for free.[A]
+Oh, you know what...[N]
+It's probably fake, isn't it?[AN]
+I probably got duped![N][4][4]
+That's why I can't find a buyer![AN]
+You know what?[4] Just take it![N]
+I'm sick of looking at that old thing.[A]
 [X]
 
 ## Ch7MVillageWrongTurnText
 [ml][LoadActive]
-[mr][LoadCivMan]
+[mr][LoadCivManOld]
 
 [mr]
-PLACEHOLDER: Sorry, friend.[4][4] You took[N]
-too long, and the lance already[N]
-sold to someone else.[AN]
-PLACEHOLDER: Should've come back[N]
-sooner.[A]
+Hey there![4][4] Guess what?[4][4][N]
+I managed to sell my lance![AN]
+Isn't that great?[4][4][N]
+Lucky me![4][4] Aren't you happy for me?[A]
+[X]
+
+## Ch7MVillageReminder
+Remember to visit again in[N]
+[red]exactly 2 turns.[red][A]
 [X]
 
 ## Ch7WVillageText
 [ml][LoadActive]
-[mr][LoadCivMan]
+[mr][LoadPurpleSoldier]
 
-[mr]
-Skill scroll or weapon?[A]
+[mr][mmr]
+Oh, king's rings![N]
+Y-You didn't see anything, alright?[AN]
+Please don't report me![N]
+I don't wanna fight in the Lowlands![AN]
+I was there in the city when it[N]
+happened, and it...[4][4] it was...[AN]
+I-I want to get back to my kids.[N]
+I can't leave them alone anymore.[AN]
+I'll give you something if you just[N]
+forget you saw me.[4][4] O-okay?[A]
 [X]
 
 ## Ch7WVillageKillerBowChoice
-Take the Killer Bow[X]
+Take the Physic staff.[X]
 
 ## Ch7WVillageKillerBowDesc
-A bow with high critical rate.[X]
+A staff that heals from afar.[X]
 
 ## Ch7WVillageSkillScrollChoice
-Take the Skill Scroll[X]
+Take the Runic scroll.[X]
 
 ## Ch7WVillageSkillScrollDesc
-Runic skill scroll.[X]
+Runic: Place an impassable rune, then[N]
+refresh your turn. Once per map.[X]
+
+## Ch7EVillageText
+[ml][LoadCurrent]
+[mr][LoadLowMageWoman]
+Wh-what's going on?[4][4] Are you[N]
+s-soldiers?[AN]
+Wait, are you here to see me?[N]
+W-wait, no, of course not...[4][4][AN]
+[ce]The sea, like me...[7] n-no, wait...[AN][oe]
+I'm sorry, I'm not making sense.[N]
+[ce]I-I need pellets; I, er...[AN][oe]
+H-Here's something I made. I'm sorry.[AN]
+I made it when I was thinking about...[N][7]
+the sea...[A]
+[X]
+
+## Ch7WiseTalkText
+[ml][LoadPillow]
+[mr][LoadWise]
+
+[mr][ts]
+...It's you again.[A]
+
+[ml]
+Wise![4][4] I'm glad you're okay.[A]
+
+[mr][ts]
+Of course I am.[4][4] I'm like a mule.[A]
+
+[ml]
+...Did you find pellets?[N][4][4][LoadPillowSad]
+I'm sorry about the arena money...[A][LoadPillow]
+
+[mr]
+I found some.[4][4] Chin up.[4][4][N]
+I told you I didn't want the money.[A]
+
+[ml]
+You should've taken it.[A]
+
+[mr]
+No.[A]
+
+[ml]
+Don't be stupid.[A]
+
+[mr]
+It's a waste.[4][4] You're young.[4][4][N]
+You've got more to live through.[AN]
+Me...[4][4] There's not much more[N]
+I have to do before I'm done.[A]
+
+[ml]
+Don't say that.[4][4] [ce]I hate it when people[N]
+talk like that.[AN][oe]
+It makes everything sound so sad.[A]
+
+[mr]
+It's not sad for you.[4][4] You're going[N]
+to live a different life than mine.[AN]
+Little by little, it will be better.[AN][ts]
+I'm lucky.[4][4] I grew old.[4][4] That's enough.[A][css]
+
+[ml][ts][LoadPillowSad][ce][mml]
+It's...[4][4] [mml]It's not enough.[A]
+[X]
+
+## Ch7WiseTalkHelpedText
+[ml][LoadPillow]
+[mr][LoadWise]
+
+[mr][ts]
+...It's you again.[A]
+
+[ml]
+Wise![4][4] I'm glad you're okay.[A]
+
+[mr][ts]
+Of course I am.[4][4] I'm like a mule.[A]
+
+[ml]
+Did you buy pellets?[A]
+
+[mr]
+Mm.[4][4] A few.[4][4] I'm old.[4][4][N]
+I won't need many more of them.[A]
+
+[ml]
+Don't say that.[4][4] [ce]I hate it when people[N]
+talk like that.[A][oe]
+
+[mr]
+I also bought some food for the[N]
+people here.[A]
+
+[ml]
+Wise...[A]
+
+[mr]
+There's nothing special in this world[N]
+that will come and save us.[AN]
+You can pray and pray, but there's no[N]
+use in it.[A]
+
+[ml]
+What do you mean?[A]
+
+[mr]
+I learned this when I was a soldier.[N]
+It broke me down every day, a little bit...[AN]
+It makes it hard to see good things,[N]
+like you do.[4][4] I still can't do it.[AN]
+The pellets don't fix that.[A]
+
+[ml]
+But you have to try.[4][4] Or else...[A]
+
+[mr]
+Mm.[4][4] I am trying.[4][4] That's what I'm[N]
+doing now.[4][4] Since I saw you.[AN]
+That's why I bought the food.[A]
+
+[ml]
+That's...[4][4][ts] that's good.[4][4] I'm glad.[A]
+
+[mr]
+It's too late for me to see it like you do.[N]
+But I want to see it, just a little.[AN]
+That's enough for me.[A]
+[X]

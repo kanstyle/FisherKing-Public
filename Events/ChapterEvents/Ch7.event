@@ -270,8 +270,7 @@ CaptainSquad3Charge:
 	NoFade
 	ENDA
 
-BeginningScene:
-	
+BeginningScene: 
 	MUSC FFTAnxiety
 	CALL StartEventRoutine
 	SetBackground(Forest)
@@ -429,11 +428,21 @@ NorthFlierAddsEvent:
 	ENDA
 	
 WiseTalk:
+	FlagIsSet(HelpedWiseFlag, 0x0)
+		Text(Ch7WiseTalkHelpedText)
+		GiveItem(Butterfly,0xFFFF)
+		GOTO 0x1
+	LABEL 0x0
+	Text(Ch7WiseTalkText)
+	LABEL 0x1
 	GiveItem(Loneliness,0xFFFF)
 	NoFade
 	ENDA
 	
 Ch7EVillageEvent:
+	FADI 16
+	SetBackground(HouseBG)
+	Text(Ch7EVillageText)
 	GiveItem(AkashicBow,0xFFFF)
 	NoFade
 	ENDA
@@ -456,6 +465,7 @@ Ch7MVillageEvent:
 				GOTO 0x4
 		LABEL 0x1
 			// Option 1: wait two turns for a better price
+			CenterTextbox(Ch7MVillageReminder)
 			COUNTER_SET 0 2
 			SetFlag(Ch7MVillageWaitingFlag)
 			UnsetFlag(Ch7MVillageWindowFlag)
@@ -575,8 +585,9 @@ Ch7Armory:
 	SHORT SteelAxe
 	SHORT SlimLance
 	SHORT KillerAxe
-	SHORT KillerBow
+	SHORT KillerLance
 	SHORT KillingEdge
+	SHORT Swordreaver
 	SHORT Javelin
 	SHORT HandAxe
 	SHORT Hammer
@@ -587,7 +598,9 @@ ALIGN 4
 Ch7Vendor:
 	SHORT Fire
 	SHORT Thunder
+	SHORT Light
 	SHORT Pain
+	SHORT Exploitation
 	SHORT Heal
 	SHORT Mend
 	SHORT Restore
