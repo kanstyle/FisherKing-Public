@@ -54,6 +54,7 @@
 #include "AircaliburEckesachsBindingBladeFix.event" //credit to ditto
 #include "WEXPCalc/WEXPCalc.lyn.event"
 #include "PromotedAutolevels/Installer.event"
+#include "TurnAutosave/Installer.event" //credit to 7743 and vesly
 //#include "do5exp-Lumi/do5exp.lyn.event" //credit to lumi (replaced by NewExpFormula)
 #include "NewExpFormula/NewExpFormula.lyn.event" //custom EXP & WEXP formulas
 //#include "SupportReworkRework/SupportRework.event"

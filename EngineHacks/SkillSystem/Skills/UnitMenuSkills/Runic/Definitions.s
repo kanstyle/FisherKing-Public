@@ -22,3 +22,8 @@ SET_FUNC GetTrapAt, (0x0802E1F0+1)
 
 @ light rune map animation (lightrunefx.s)
 SET_FUNC StartLightRuneAnim, (0x08021685+1)
+
+@ Light Rune item's own target list builder (bmtarget.c) - adjacent,
+@ unoccupied, untrapped, flyable tiles. Borrowed directly so Runic
+@ picks the same legal tiles the Light Rune item does.
+SET_FUNC MakeTargetListForLightRune, (0x08026580+1)

@@ -517,16 +517,14 @@ That's an order![A]
 Sorry, Pillow.[oe] I love you.[A]
 [X]
 
-
-
 ## Ch7EndPillowNarration
 I can stop her.[A][N]
-I'll pull her back.[A][N][7][7][7][7][7]
-Gently...[N][7][7][7][7][7]
-I'll grab her gently...[N][7][7][7][7][7]
-So gently...[7][7][7][7][7][AN]
-Please...[7][7][7][7][7] please...[AN]
-Please, Dragon...[N][7][7][7][7][7]
+I'll pull her back.[A][N][7][7]
+Gently...[N][7][7]
+I'll grab her gently...[N][7][7]
+So gently...[7][7][AN]
+Please...[7][7] please...[7][7][AN]
+Please, Dragon...[N][7][7]
 Please...[A]
 [X]
 
@@ -538,3 +536,112 @@ Please...[A]
 the horse!"[4][4][4][4][4][4][AN]
 [oq]Dragon...[4][4] Dragon, please..."[A]
 [X]
+
+## Ch7MVillageIntroText
+[ml][LoadActive]
+[mr][LoadCivMan]
+
+[mr]
+Silver lance for 3000g[N]
+or wait 2 turns.[A]
+[X]
+
+## Ch7MVillageBuyChoice
+Buy the Silver Lance (3000g).[X]
+
+## Ch7MVillageBuyDesc
+Buy it now for 3000 gold.[X]
+
+## Ch7MVillageWaitChoice
+Wait for a better price.[X]
+
+## Ch7MVillageWaitDesc
+Come back later.[X]
+
+## Ch7MVillageBoughtText
+[ml][LoadActive]
+[mr][LoadCivMan]
+
+[mr]
+Bought at full price.[A]
+[X]
+
+## Ch7MVillageNoGoldText
+[ml][LoadActive]
+[mr][LoadCivMan]
+
+[mr]
+Not enough gold.[A]
+[X]
+
+## Ch7MVillageReturnText
+[ml][LoadActive]
+[mr][LoadCivMan]
+
+[mr]
+Back again, eh?[4][4] Well, the[N]
+price has dropped, just like I said.[AN]
+It's 1500 gold now.[4][4] Or...[AN]
+wait another couple of turns and[N]
+I'll just give it to you for free.[A]
+[X]
+
+## Ch7MVillageBuy1500Choice
+Buy the Silver Lance (1500g)[X]
+
+## Ch7MVillageBuy1500Desc
+Buy it now for 1500 gold.[X]
+
+## Ch7MVillageWaitFreeChoice
+Wait for it to be free[X]
+
+## Ch7MVillageWaitFreeDesc
+Come back in 2 turns.[X]
+
+## Ch7MVillageBought1500Text
+[ml][LoadActive]
+[mr][LoadCivMan]
+
+[mr]
+Take it at half price.[A]
+[X]
+
+## Ch7MVillageFreeText
+[ml][LoadActive]
+[mr][LoadCivMan]
+
+[mr]
+Take it for free.[A]
+[X]
+
+## Ch7MVillageWrongTurnText
+[ml][LoadActive]
+[mr][LoadCivMan]
+
+[mr]
+PLACEHOLDER: Sorry, friend.[4][4] You took[N]
+too long, and the lance already[N]
+sold to someone else.[AN]
+PLACEHOLDER: Should've come back[N]
+sooner.[A]
+[X]
+
+## Ch7WVillageText
+[ml][LoadActive]
+[mr][LoadCivMan]
+
+[mr]
+Skill scroll or weapon?[A]
+[X]
+
+## Ch7WVillageKillerBowChoice
+Take the Killer Bow[X]
+
+## Ch7WVillageKillerBowDesc
+A bow with high critical rate.[X]
+
+## Ch7WVillageSkillScrollChoice
+Take the Skill Scroll[X]
+
+## Ch7WVillageSkillScrollDesc
+Runic skill scroll.[X]

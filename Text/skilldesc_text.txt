@@ -1,6 +1,7 @@
 ## SD_Runic
-Runic: Place a light rune and[N]
-refresh. Once per map.[X]
+Runic: Place an impassible rune[N]
+in an adjacent tile, then refresh[N]
+your turn. Once per map.[X]
 
 ## SD_StormEye
 Storm Eye: Gain +20 Avoid[N]

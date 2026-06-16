@@ -131,6 +131,36 @@ MenuOption(Ch5Middle, Ch5MiddleDesc, 0)
 MenuOption(Ch5Right, Ch5RightDesc, 0)
 MenuTerminator
 
+ALIGN 4
+Ch7MVillageMenu1:
+MenuDefinition(4, 8, 21, 0, 1, Ch7MVillageMenu1Options)
+
+ALIGN 4
+Ch7MVillageMenu1Options:
+MenuOption(Ch7MVillageBuyChoice, Ch7MVillageBuyDesc, 0)
+MenuOption(Ch7MVillageWaitChoice, Ch7MVillageWaitDesc, 0)
+MenuTerminator
+
+ALIGN 4
+Ch7MVillageMenu2:
+MenuDefinition(4, 8, 21, 0, 1, Ch7MVillageMenu2Options)
+
+ALIGN 4
+Ch7MVillageMenu2Options:
+MenuOption(Ch7MVillageBuy1500Choice, Ch7MVillageBuy1500Desc, 0)
+MenuOption(Ch7MVillageWaitFreeChoice, Ch7MVillageWaitFreeDesc, 0)
+MenuTerminator
+
+ALIGN 4
+Ch7WVillageMenu:
+MenuDefinition(4, 8, 21, 0, 1, Ch7WVillageMenuOptions)
+
+ALIGN 4
+Ch7WVillageMenuOptions:
+MenuOption(Ch7WVillageKillerBowChoice, Ch7WVillageKillerBowDesc, 0)
+MenuOption(Ch7WVillageSkillScrollChoice, Ch7WVillageSkillScrollDesc, 0)
+MenuTerminator
+
 
 //Game Start Menu
 

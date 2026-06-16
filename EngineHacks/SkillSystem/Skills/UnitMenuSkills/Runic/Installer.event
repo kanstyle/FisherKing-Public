@@ -6,12 +6,22 @@ WORD RunicID
 RunicTargetBottomText_Link:
 WORD RunicTargetBottomText
 
-// Calls BeginTargetSelectionASMC (set up via gEventSlots by Runic_Effect) to let
-// the player pick an adjacent tile, then places the light rune at the chosen
-// tile (SlotB) via RunicPlaceLightRuneASMC.
+// Lets the player pick a tile via MakeTargetListForLightRune (the Light Rune
+// item's own target list builder - adjacent, unoccupied, untrapped, flyable
+// tiles), then drops a light rune on it. Uses the same non-event-engine
+// TargetSelectionProc system as SacrificeDrawBack (NewTargetSelection +
+// TargetSelectionDefinition), but mirrored after vanilla's gSelectInfo_PutTrap
+// (used by the Light Rune item itself) instead of gDrawBackTargetSelection:
+// no Init/SwitchIn unit-info window (that was drawing the unwanted top-right
+// box and messing with the camera/tile graphics), and SubtitleMapSelect_End
+// for proper tile-selection cleanup.
 ALIGN 4
-RunicTargetSelectEvent:
-ASMC BeginTargetSelectionASMC|1
-//Text(PigeonDQ)
-ASMC RunicPlaceLightRuneASMC|1
-ENDA
+gRunicTargetSelection:
+POIN 0x00000000 // Init
+POIN 0x08029D29 // End -- SubtitleMapSelect_End
+POIN 0x00000000 // Init Target
+POIN 0x00000000 // Switch In
+POIN 0x00000000 // Switch Out
+POIN RunicTargetAPress // A Press
+POIN 0x08022749 // B Press -- GenericSelection_BackToUM
+POIN 0x00000000 // R Press

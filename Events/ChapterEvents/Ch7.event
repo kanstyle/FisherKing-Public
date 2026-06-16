@@ -7,6 +7,10 @@
 #define Ch7MVillageFlag 0x8
 #define Ch7WVillageFlag 0x9
 #define WisePillowFlag 0x10
+#define Ch7MVillageWaitingFlag 0x11
+#define Ch7MVillageWindowFlag 0x12
+#define Ch7MVillageWindowPassedFlag 0x13
+#define Ch7MVillageWaitFreeFlag 0x14
 
 EventPointerTable(Ch7EventsID, PointerList)
 
@@ -31,6 +35,7 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0,NorthCavAddsEvent,6,1)
 	TurnEventPlayer(0x0,NorthMageAddsEvent,7,1)
 	TurnEventPlayer(0x0,NorthFlierAddsEvent,7,1)
+	InfiniteTurnEventPlayer(0x0,Ch7MVillageTurnCheck,1)
 	END_MAIN
 
 ALIGN 32
@@ -85,7 +90,7 @@ Units1:
 NPCUnits:
 	UNIT Ch7LowMage LowMage 0x40 Level(9,NPC,True)     [22,14] 0b 0x0 0x0 0x0 [Pain] BossAI
 	UNIT Ch7Wise LowMage 0x40 Level(12,NPC,False)     [11,15] 0b 0x0 0x0 0x0 [Exploitation] BossAI
-	UNIT Ch7LowMage LowMage 0x40 Level(9,NPC,True)     [2,11] 0b 0x0 0x0 0x0 [Pain] BossAI
+	UNIT Ch7LowMage LowMage 0x40 Level(9,NPC,True)     [2,13] 0b 0x0 0x0 0x0 [Pain] BossAI
 	UNIT
 
 EnemyUnits:
@@ -266,6 +271,7 @@ CaptainSquad3Charge:
 	ENDA
 
 BeginningScene:
+	
 	MUSC FFTAnxiety
 	CALL StartEventRoutine
 	SetBackground(Forest)
@@ -433,11 +439,131 @@ Ch7EVillageEvent:
 	ENDA
 	
 Ch7MVillageEvent:
-	GiveItem(KillerBow,0xFFFF)
+	FlagNotSet(Ch7MVillageWaitingFlag, 0x0)
+		// ---- First visit: merchant offers the Silver Lance ----
+		FADI 16
+		SetBackground(HouseBG)
+		Text(Ch7MVillageIntroText)
+		CallMenu(Ch7MVillageMenu1)
+		BNE 0x1 0xC 0x0
+			// Option 0: buy now for 3000 gold
+			CHECK_MONEY
+			SVAL 1 3000
+			BLT 0x2 0xC 0x1
+				SilentSubGold(3000)
+				GiveItem(SilverLance,0xFFFF)
+				Text(Ch7MVillageBoughtText)
+				GOTO 0x4
+		LABEL 0x1
+			// Option 1: wait two turns for a better price
+			COUNTER_SET 0 2
+			SetFlag(Ch7MVillageWaitingFlag)
+			UnsetFlag(Ch7MVillageWindowFlag)
+			UnsetFlag(Ch7MVillageWindowPassedFlag)
+			UnsetFlag(Ch7MVillageFlag)
+			GOTO 0x4
+		LABEL 0x2
+			// Not enough gold
+			Text(Ch7MVillageNoGoldText)
+			UnsetFlag(Ch7MVillageFlag)
+			GOTO 0x4
+
+	LABEL 0x0
+	// ---- Revisit while waiting ----
+	FlagIsSet(Ch7MVillageWindowFlag, 0x3)
+		// Came back on exactly the right turn
+		FlagIsSet(Ch7MVillageWaitFreeFlag, 0x6)
+			// Third visit: player committed to waiting for free
+			FADI 16
+			SetBackground(HouseBG)
+			Text(Ch7MVillageFreeText)
+			GiveItem(SilverLance,0xFFFF)
+			SetFlag(Ch7MVillageFlag)
+			UnsetFlag(Ch7MVillageWaitingFlag)
+			UnsetFlag(Ch7MVillageWindowFlag)
+			UnsetFlag(Ch7MVillageWindowPassedFlag)
+			UnsetFlag(Ch7MVillageWaitFreeFlag)
+			GOTO 0x4
+		LABEL 0x6
+		// Second visit: offer buy 1500 or wait for free
+		FADI 16
+		SetBackground(HouseBG)
+		Text(Ch7MVillageReturnText)
+		/*RemoveBackground
+		FADU 16*/
+		CallMenu(Ch7MVillageMenu2)
+		BNE 0x5 0xC 0x0
+			// Option 0: buy now for 1500 gold
+			CHECK_MONEY
+			SVAL 1 1500
+			BLT 0x2 0xC 0x1
+				SilentSubGold(1500)
+				GiveItem(SilverLance,0xFFFF)
+				Text(Ch7MVillageBought1500Text)
+				SetFlag(Ch7MVillageFlag)
+				UnsetFlag(Ch7MVillageWaitingFlag)
+				UnsetFlag(Ch7MVillageWindowFlag)
+				UnsetFlag(Ch7MVillageWindowPassedFlag)
+				GOTO 0x4
+	LABEL 0x5
+		// Option 1: wait two more turns for it to be free
+		COUNTER_SET 0 2
+		SetFlag(Ch7MVillageWaitFreeFlag)
+		UnsetFlag(Ch7MVillageWindowFlag)
+		UnsetFlag(Ch7MVillageWindowPassedFlag)
+		UnsetFlag(Ch7MVillageFlag)
+		GOTO 0x4
+
+	LABEL 0x3
+	// Came back on the wrong turn - deal's off
+	FADI 16
+	SetBackground(HouseBG)
+	Text(Ch7MVillageWrongTurnText)
+	/*RemoveBackground
+	FADU 16*/
+	SetFlag(Ch7MVillageFlag)
+	UnsetFlag(Ch7MVillageWaitingFlag)
+	UnsetFlag(Ch7MVillageWindowFlag)
+	UnsetFlag(Ch7MVillageWindowPassedFlag)
+	UnsetFlag(Ch7MVillageWaitFreeFlag)
+
+	LABEL 0x4
+	RemoveBackground
+	FADU 16
 	NoFade
 	ENDA
-	
+
+Ch7MVillageTurnCheck:
+	FlagIsSet(Ch7MVillageWaitingFlag, 0x0)
+	FlagNotSet(Ch7MVillageWindowPassedFlag, 0x0)
+	FlagIsSet(Ch7MVillageWindowFlag, 0x1)
+		// The window was open and went unused - close it for good
+		UnsetFlag(Ch7MVillageWindowFlag)
+		SetFlag(Ch7MVillageWindowPassedFlag)
+		GOTO 0x0
+	LABEL 0x1
+		// Count down to the 2-turn mark, then open the window
+		COUNTER_DEC 0
+		COUNTER_CHECK 0
+		BNE 0x0 0xC 0x0
+		SetFlag(Ch7MVillageWindowFlag)
+	LABEL 0x0
+	NoFade
+	ENDA
+
 Ch7WVillageEvent:
+	FADI 16
+	SetBackground(HouseBG)
+	Text(Ch7WVillageText)
+	RemoveBackground
+	FADU 16
+	CallMenu(Ch7WVillageMenu)
+	BNE 0x0 0xC 0x0
+		GiveItem(KillerBow,0xFFFF)
+		GOTO 0x1
+	LABEL 0x0
+	GiveItemWithDurability(SkillScroll,RunicID,0xFFFF)
+	LABEL 0x1
 	NoFade
 	ENDA
 	
