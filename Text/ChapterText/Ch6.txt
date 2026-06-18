@@ -779,6 +779,41 @@ It sounds horrible, but I wish they[N]
 just...[4][4] weren't here...[A]
 [X]
 
+## Ch6VillageNotAGuardChoice
+Say you're not a guard.[X]
+
+## Ch6VillageNotAGuardDesc
+At least it's honest.[X]
+
+## Ch6VillageNotAGuardText
+[ml][LoadCivWoman]
+[mr][LoadCurrent]
+[ml]
+Wh-what?[4][4] Then you're with the[N]
+low mages, aren't you?![AN]
+D-don't bring monsters here![AN]
+Please![4][4] We've suffered so much...[N][4][4][ce]
+M-my poor daughter...[A][oe]
+[X]
+
+## Ch6VillageLieChoice
+Lie.[X]
+
+## Ch6VillageLieDesc
+Claim to be a guard.[X]
+
+## Ch6VillageLieText
+[ml][LoadCivWoman]
+[mr][LoadCurrent]
+[ml]
+You're a guard?[4][4] [ce]Oh, thank the king.[AN]
+[oe]
+I-I don't want the low mages to be hurt,[N]
+but the violence has to stop.[AN]
+Please, take this if you need to![N]
+I just want it to be over...[A]
+[X]
+
 ## Ch6MuscleBQ
 [ml][LoadMuscle]
 You ain't getting past me![N]

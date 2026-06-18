@@ -263,3 +263,64 @@ indefensibly annoying way to greet[N]
 a fellow elder.[N]
 I was well within my rights to retaliate.[A]
 [X]
+
+## Ch3TalkingToBabysTeacher
+[ml][LoadTeacher]
+[mr][LoadCivManOld]
+
+[mr]
+You! Have you seen a short girl[N]
+with a big hat, sonny?[A]
+
+[ml]
+[oq]Sonny"?[N]
+How old are you, may I ask, sir?[A]
+
+[mr]
+Eighty-one, and not a day over.[A]
+
+[ml]
+Oh, dear.[4] Sorry to hear that.[A]
+
+[ml][mvl]
+[fl][LoadBaby]
+
+[fl]
+Looking for me?[A]
+
+[mr]
+Yes! Why are you running all over town,[N]
+chatting up every local simpleton?[AN]
+Your parents brought you here to study,[N]
+and that's what you shall do.[A]
+
+[fl][ce]
+Oh, brother.[AN][oe]
+I AM studying![A]
+
+[mr]
+Forget about daemons, Baby! They're pure[N]
+superstition and delusion, nothing more.[AN]
+Unless you want to wrangle low mages for[N]
+a living, you needn't bother with them.[A]
+
+[l]
+[oq]Wrangle"?[4][N]
+That's a nasty way to put it.[A]
+
+[fl]
+Well, Professor, if you're so sure,[AN]
+then how come different people report[N]
+seeing similar daemons?[4][4] Hmmmm?[A]
+
+[mr]
+Who cares?![A]
+
+[fl]
+I do![4][ce][ts] And that's why I've had it with you![N]
+I'm taking an extended vacation.[A][css][clear]
+
+[mr][mmr]
+Come back here![4] Your parents[N]
+will hear about this![A]
+[X]

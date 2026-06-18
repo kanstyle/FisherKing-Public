@@ -1698,7 +1698,7 @@ How old are you, may I ask, sir?[A]
 Eighty-one, and not a day over.[A]
 
 [ml]
-Oh, dear.[4] Sorry to hear that.[A]
+Oh, dear.[4] Sorry to hear that.[A][css]
 
 [ml][mvl]
 [fl][LoadBaby]
@@ -1713,34 +1713,35 @@ Your parents brought you here to study,[N]
 and that's what you shall do.[A]
 
 [fl][ce]
-Oh, brother.[AN][oe]
-I AM studying![A]
+Oh, brother.[N][oe]
+I AM studying! Look at this.[AN][ts]
+Thirty-four percent of people I asked[N]
+think [oq]daemons" are physical beasts.[AN]
+Twenty-one percent said they're intangible[N]
+spirits.[AN]
+Fifteen percent said they're not real[N]
+at all, and they're a disease of the mind![AN]
+And that's just the top three responses.[N]
+Isn't that interesting?[A]
+
+[ml][ts]
+Who cares about daemons?![N]
+They're not real.[AN]
+The local simpletons and low mages[N]
+use them to explain their madness.[AN]
+
+[mr][ts]
+Ah, another point for [oq]not real"...[A][css]
+
+[ml][ts][mml]
+Stop it! You're here to learn to fight[N]
+low mages, and I'll have you do so![A]
 
 [mr]
-Forget about daemons, Baby! They're pure[N]
-superstition and delusion, nothing more.[AN]
-Unless you want to wrangle low mages for[N]
-a living, you needn't bother with them.[A]
-
-[l]
-[oq]Wrangle"?[4][N]
-That's a nasty way to put it.[A]
-
-[fl]
-Well, Professor, if you're so sure,[AN]
-then how come different people report[N]
-seeing similar daemons?[4][4] Hmmmm?[A]
-
-[mr]
-Who cares?![A]
-
-[fl]
-I do![4][ce][ts] And that's why I've had it with you![N]
-I'm taking an extended vacation.[A][css][clear]
-
-[mr][mmr]
-Come back here![4] Your parents[N]
-will hear about this![A]
+I'm already good at that![4][4] And that's why[N]
+I hereby declare myself graduated.[AN]
+Goodbye![A]
+[clear]
 [X]
 
 

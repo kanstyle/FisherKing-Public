@@ -165,3 +165,8 @@
 #define DoorUnlock 0xB1
 #define WeaponBroke 0x5C
 #define ItemStolen 0x5C
+
+//Standard Music
+#define AttackMusic FF_MysticQuest_Battle1ID
+#define DefendMusic CrossingSwordsID
+#define BossMusic FaithIsMyPillarID

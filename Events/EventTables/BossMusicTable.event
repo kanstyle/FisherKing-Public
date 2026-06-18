@@ -3,6 +3,13 @@
 
 ALIGN 4
 BossBGMTable:
+BossBGMEntry(Skull,BossMusic)
+BossBGMEntry(Ch2BeastBoss,BossMusic)
+BossBGMEntry(Wise,BossMusic)
+BossBGMEntry(Ch4LowlanderBoss,SteelGiantID)
+BossBGMEntry(JabberwockBoss,BossMusic)
+BossBGMEntry(Muscle,BossMusic)
+BossBGMEntry(Recruiter,BossMusic)
 BossBGMTerminator
 
 PUSH

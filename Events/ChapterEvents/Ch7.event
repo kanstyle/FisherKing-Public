@@ -271,7 +271,7 @@ CaptainSquad3Charge:
 	ENDA
 
 BeginningScene: 
-	MUSC FFTAnxiety
+	MUSC DarkBattleID
 	CALL StartEventRoutine
 	SetBackground(Forest)
 	BROWNBOXTEXT Ch7OutskirtsBrownBox [8,8]
@@ -443,6 +443,7 @@ Ch7EVillageEvent:
 	FADI 16
 	SetBackground(HouseBG)
 	Text(Ch7EVillageText)
+	RemoveBackground
 	GiveItem(AkashicBow,0xFFFF)
 	NoFade
 	ENDA
@@ -561,7 +562,7 @@ Ch7MVillageTurnCheck:
 	NoFade
 	ENDA
 
-Ch7WVillageEvent:
+Ch7WVillageEvent: 
 	FADI 16
 	SetBackground(HouseBG)
 	Text(Ch7WVillageText)
@@ -569,7 +570,7 @@ Ch7WVillageEvent:
 	FADU 16
 	CallMenu(Ch7WVillageMenu)
 	BNE 0x0 0xC 0x0
-		GiveItem(KillerBow,0xFFFF)
+		GiveItem(Physic,0xFFFF)
 		GOTO 0x1
 	LABEL 0x0
 	GiveItemWithDurability(SkillScroll,RunicID,0xFFFF)

@@ -172,7 +172,7 @@ EnemyUnits:
 	UNIT Lowlander Mercenary 0x40 Level(7,Enemy,True)     [5,10] 0b 0x0 0x0 0x0 [SavageBlade] ChargeAI
 	
 	//right middle ruined house
-	UNIT Beast Cyclops 0x40 Level(1,Enemy,True)     [17,14] 0b 0x0 0x0 0x0 [SilverAxe,MasterSeal] BossAI
+	UNIT Beast Cyclops 0x40 Level(1,Enemy,True)     [17,14] 0b 0x0 0x0 0x0 [SilverAxe,Dracoshield] BossAI
 	
 	//left sub-river
 	UNIT Beast Gargoyle 0x40 Level(7,Enemy,True)     [3,14] 0b 0x0 0x0 0x0 [SteelLance] AttackInRangeAI //covers bunny house

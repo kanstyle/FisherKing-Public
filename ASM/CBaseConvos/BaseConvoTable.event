@@ -65,6 +65,19 @@
 			bg(Town_Day)
 			text(Ch6BasePigeonBrother)
 			eventID(0x24)
+	Chapter(Ch7)
+		Entry
+			name(Ch7BaseStormGaleBabyName)
+			music(WildFieldsID)
+			bg(Forest_2)
+			text(Ch7BaseStormGaleBaby)
+			eventID(0x25)
+		Entry
+			name(Ch7BaseSwanLionName)
+			music(WildFieldsID)
+			bg(Plain)
+			text(Ch7BaseSwanLion)
+			eventID(0x24)
 	POP
 	}
 #endif // BASE_CONVO_TABLE

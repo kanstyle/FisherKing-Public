@@ -1,0 +1,95 @@
+## Ch0BunnyTalk
+
+[ml][LoadBunny][CloseEyes]
+Oh man, what do I do...?[N]
+Gotta get my nerves under control...[A]
+
+[mr][LoadYoungPrince]
+Miss?[4] Is there a problem?[A][css]
+
+[ml][OpenEyes][MoveMidLeft]
+Ah![4] Your Highness![4] I, uh, I'm okay![N]
+You don't need to waste your time on me.[AN]
+
+[mr] 
+Oh, no.[4] It's my duty to see that my[N]
+troops are able to fight their best.[A]
+
+[ml]
+Er...[4] well...[4] In that case...[4][N]
+You know about Lowland daemons, right,[N]
+milord?[AN]
+They're invisible bugs that can infect[N]
+your brain,[A] and make you see things[N]
+that aren't there,[A] and remember things[N]
+that didn't happen...[AN]
+We could all be infected right now![AN]
+Er, that's what I'm worried about,[N]
+I-I mean.[A]
+
+[mr]
+Um...[A][X]
+
+
+## Ch0IDoubtIt
+
+I doubt it.[X]
+
+## Ch0IDoubtItDesc
+
+This girl isn't as charming as Eagle.[X]
+
+## Ch0ItCouldBe
+
+It could be...[X]
+
+## Ch0ItCouldBeDesc
+
+She is rather charming, though...[X]
+
+
+## Ch0BunnyTalkDemons
+
+[ml][LoadBunny]
+[mr][LoadYoungPrince]
+That is a rather unsettling notion...[N]
+Where did you hear such a thing?[A]
+
+[ml]
+The other soldiers. The ones from the[N]
+training camps talk about this stuff a lot.[A]
+
+[mr]
+Hmm...[4] The training camps?[4][N]
+Are you sure?[A][css]
+
+[ml][MoveMidLeft]
+No, I'm not![4] That's the scariest part![A][X]
+
+## Ch0BunnyTalkNoDemons
+
+[ml][LoadBunny]
+[mr][LoadYoungPrince][ts]
+Have no fear.[4] My friend, Eagle, once[N]
+asked me if perhaps life is but a dream.[AN]
+Who are we to say it's not?[A]
+
+[ml][ts]
+Er, true, but...[4][AN]
+What if the daemons told you the sky is blue,[N]
+but they told someone else the sky is red?[A]
+
+[mr]
+Um...[A]
+
+[ml]
+It's kinda scary, right?[N]
+What would you do?[A]
+
+[mr][ts]
+Well, I am the prince, so my word[N]
+would win out, wouldn't it?[4] Haha![A]
+
+[ml]
+Ahaha...[AN][tmm]
+(That's a really scary joke...!)[A][X]

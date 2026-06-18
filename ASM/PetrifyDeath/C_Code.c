@@ -232,6 +232,55 @@ void IsUnitDying(int id, ProcPtr proc) {
 	return;
 }
 
+// Hook: replacement for TickActiveFactionTurn (vanilla in bmunit.c).
+// All logic is identical to vanilla except: a Dying unit (statusIndex == UNIT_STATUS_PETRIFY
+// with supportBits & 0x1 set) never has its statusDuration decremented.  This prevents the
+// normal status-decay display from clearing the petrify status; CullPetrifiedUnits /
+// BleedoutTurnEvent handle culling explicitly instead.
+void TickActiveFactionTurn(void) {
+    int i, displayMapChange = FALSE;
+
+    InitTargets(0, 0);
+
+    for (i = gPlaySt.faction + 1; i < gPlaySt.faction + 0x40; ++i) {
+        struct Unit* unit = GetUnit(i);
+
+        if (!UNIT_IS_VALID(unit))
+            continue;
+
+        if (unit->state & (US_UNAVAILABLE | US_RESCUED))
+            continue;
+
+        if (unit->barrierDuration != 0)
+            unit->barrierDuration--;
+
+        if (unit->torchDuration != 0) {
+            unit->torchDuration--;
+            displayMapChange = TRUE;
+        }
+
+        if (unit->statusDuration != 0) {
+            if (unit->statusIndex != UNIT_STATUS_RECOVER) {
+                // Don't tick Dying units (first-death petrify); their duration stays at 1
+                // so GetDyingPetrifiedUnit / BleedoutTurnEvent can cull them on schedule.
+                if (!(unit->statusIndex == UNIT_STATUS_PETRIFY && (unit->supportBits & 0x1)))
+                    unit->statusDuration--;
+            }
+
+            if (unit->statusDuration == 0)
+                AddTarget(unit->xPos, unit->yPos, unit->index, 0);
+        }
+    }
+
+    if (displayMapChange) {
+        RenderBmMapOnBg2();
+        RefreshEntityBmMaps();
+        RenderBmMap();
+        NewBMXFADE(TRUE);
+        RefreshUnitSprites();
+    }
+}
+
 /*bool GetNotDyingPetrifiedUnit(ProcPtr proc) {
 	int i;
 	

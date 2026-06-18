@@ -11,6 +11,27 @@ Defeat the captains[N]
 and protect militia.
 [X]
 
+## Ch7BaseStormGaleBabyName
+Storm/Gale/Baby
+[X]
+
+## Ch7BaseStormGaleBaby
+[r][LoadStorm]
+[fr][LoadGale]
+[ml][LoadBaby]
+Placeholder.[A]
+[X]
+
+## Ch7BaseSwanLionName
+Swan/Lion
+[X]
+
+## Ch7BaseSwanLion
+[mr][LoadLion]
+[ml][LoadSwan]
+Placeholder.[A]
+[X]
+
 ## Ch7OutskirtsBrownBox
 City Outskirts[X]
 
@@ -162,34 +183,53 @@ little head off.[A]
 [X]
 
 ## Ch7HeroIntro
-[fl]
-[l]
 [r][LoadHeroM]
 [fr][LoadPillow]
 
 [r]
-Huh? Hold on. Something's up.
+Huh?[4][4] Hold on.[4][4] Something's up.[A]
 
 [fr]
-It's a sweep... They're recruiting from the villages.
+It's a sweep...[N]
+They're recruiting from the villages.[AN]
+[LoadPillowSad]Well, not really recruiting...[A]
 
 [l][LoadDragon]
-All the way out here?
+All the way out here?[A]
 
-[fr]
+[fr][LoadPillow]
 Usually they don't bother you if[N]
 you're far enough from the cities.[AN]
-Poor little worker bees.[N]
-They must be desperate...[A]
+[ce]Poor little worker bees.[N]
+They must be desperate...[A][oe]
 
 [fl][LoadTeacher]
-In any case, I'd suggest making ourselves scarce. We can be glad they aren't looking for us.
+Probably hard finding people who want[N]
+to throw themselves into the Lowlands.[AN]
+[ce]Or easy, depending on how mad they are.[AN][oe]
+In any case, I'd suggest making[N]
+ourselves scarce.[AN]
+We can be glad they aren't looking[N]
+for us.[A]
 
-H: No, this is good. We can stop them.
-T: Oh, brother...
-H: We're trying to stop the war, right? Gotta start somewhere.
-D: Makes sense to me.
-H: Plus, if we prove we're willing to get our hands dirty for them, the low mage settlement'll have to let us in
+[r]
+No, this is good.[4][4] We can stop them.[A]
+
+[fl][ce]
+Oh, brother...[A][oe]
+
+[r]
+We're trying to stop the war, right?[4][4][N]
+Gotta start somewhere.[A]
+
+[l]
+Makes sense to me.[A]
+
+[r]
+Plus, if we prove we're willing[N]
+to get our hands dirty for them,[AN]
+the low mage settlement'll have[N]
+to let us in.[A]
 [X]
 
 ## RecruiterIntro
@@ -383,6 +423,54 @@ first, then.[A]
 [ml][LoadRecruiter]
 ...I can't do that.[A]
 [clear]
+[X]
+
+## Ch7EndWiseConversation
+[mr][LoadWise]
+[l][LoadHeroM]
+[fl][LoadDragon]
+
+[mr]
+It's you three.[A]
+
+[l]
+Hi.[4][4] Wise, was it?[A]
+
+[mr]
+Mm.[4][4] I suppose you'll want some[N]
+compensation for what you just did.[A]
+
+[fl][ce]
+A [oq]thanks" would be nice, to start.[A][oe]
+
+[l]
+I had something in mind, but it's[N]
+not gonna cost you anything.[AN]
+We want into the low mage settlement,[N]
+by the city.[AN]
+So, you saw what we just did, right?[N]
+Think you can vouch for us?[A]
+
+[mr]
+Mm.[4][4] Probably.[A]
+You can get in, but they aren't[N]
+gonna trust you just like that.[A]
+
+[l]
+Why not?[4][4] Didn't we just[N]
+stick our necks out?[A]
+
+[mr]
+You're criminals.[N]
+Gonna bring trouble.[A]
+
+[l][ce]
+...True...[AN][oe]
+But we can do more stuff for them.[N]
+As much as we can afford to do.[A]
+
+[mr]
+Well, it better be a lot.[A]
 [X]
 
 ## Ch7EndWardenAppears
@@ -644,7 +732,7 @@ Lucky me![4][4] Aren't you happy for me?[A]
 
 ## Ch7MVillageReminder
 Remember to visit again in[N]
-[red]exactly 2 turns.[red][A]
+[ToggleRed]exactly 2 turns.[ToggleRed][A]
 [X]
 
 ## Ch7WVillageText

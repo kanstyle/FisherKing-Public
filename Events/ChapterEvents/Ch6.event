@@ -21,7 +21,7 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0,Turn1Routine,1)
 	TurnEventPlayer(0x0,SwanGuardsEvent,1)
 	TurnEventPlayer(0x0,TeacherReinforcementsEvent,2)
-	TurnEventPlayer(0x0,ChargingBlockEvent,2)
+	TurnEventPlayer(0x0,ChargingBlockEvent,3)
 	TurnEventPlayer(0x0,WyvernReinforcementEvent,5)
 	END_MAIN
 
@@ -37,6 +37,7 @@ MiscBasedEvents:
 
 LocationBasedEvents:
 	Chest(CyclonicLance,7,14)
+	ChestMoney(2000,9,5)
 	Village(Ch6VillageFlag,Ch6VillageEvent,11,13)
 	Seize(0x0,EndingScene,18,10)
 	END_MAIN
@@ -95,7 +96,7 @@ EnemyUnits:
 	
 	UNIT Thug Fighter 0x40 Level(9,Enemy,True)     [14,2] 0b 0x0 0x0 0x0 [Halberd] AttackInRangeAI
 	UNIT Thug Fighter 0x40 Level(9,Enemy,True)     [13,1] 0b 0x0 0x0 0x0 [Swordreaver] AttackInRangeAI
-	UNIT GuardUnit Knight 0x40 Level(9,Enemy,True)     [14,1] 0b 0x0 0x0 0x0 [Swordreaver] AttackInRangeAI
+	UNIT GuardUnit Knight 0x40 Level(9,Enemy,True)     [15,9] 0b 0x0 0x0 0x0 [Axereaver] AttackInRangeAI
 	
 	//bottom left
 	UNIT GuardUnit Mage 0x40 Level(9,Enemy,True)     [2,8] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
@@ -107,27 +108,35 @@ EnemyUnits:
 	
 	//bottom middle
 	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [8,11] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
-	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [3,11] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT GuardUnit PegasusKnight 0x40 Level(9,Enemy,True)     [3,11] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
 	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [13,11] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
-	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [18,11] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT GuardUnit PegasusKnight 0x40 Level(9,Enemy,True)     [18,11] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
 	
 	//bottom right
 	UNIT Muscle Warrior 0x40 Level(1,Enemy,False)     [18,10] 0b 0x0 0x0 0x0 [SteelBow,SilverAxe] AttackInRangeAI
 	UNIT
 	
 ChargingBlockUnits:
-	UNIT GuardUnit Soldier 0x40 Level(9,Enemy,True)     [13,13] 0b 0x0 0x0 0x0 [IronLance] ChargeAI
-	UNIT GuardUnit Soldier 0x40 Level(9,Enemy,True)     [14,13] 0b 0x0 0x0 0x0 [IronLance] ChargeAI
-	UNIT GuardUnit Fighter 0x40 Level(9,Enemy,True)     [13,12] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
-	UNIT GuardUnit Fighter 0x40 Level(9,Enemy,True)     [14,12] 0b 0x0 0x0 0x0 [IronAxe] ChargeAI
+	//UNIT GuardUnit Soldier 0x40 Level(9,Enemy,True)     [13,14] 0b 0x0 0x1 REDA13R13 [IronLance] ChargeAI
+	UNIT GuardUnit Soldier 0x40 Level(9,Enemy,True)     [14,14] 0b 0x0 0x1 REDA14R13 [IronLance] ChargeAI
+	//UNIT GuardUnit Fighter 0x40 Level(9,Enemy,True)     [13,14] 0b 0x0 0x1 REDA13R12 [IronAxe] ChargeAI
+	UNIT GuardUnit Fighter 0x40 Level(9,Enemy,True)     [14,14] 0b 0x0 0x1 REDA14R12 [IronAxe] ChargeAI
+	UNIT
+	
+ChargingBlockUnits2:
+	UNIT GuardUnit Soldier 0x40 Level(9,Enemy,True)     [18,9] 0b 0x0 0x0 [IronLance] ChargeAI
+	UNIT
+	
+ChargingBlockUnits3:
+	UNIT GuardUnit Mercenary 0x40 Level(9,Enemy,True)     [18,9] 0b 0x0 0x0 [SteelSword] ChargeAI
 	UNIT
 	
 WyvernReinforcementUnits:
-	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [0,4] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT GuardUnit PegasusKnight 0x40 Level(9,Enemy,True)     [0,4] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
 	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [0,7] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
 	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [0,8] 0b 0x0 0x1 REDA1R8 [SilverLance] ChargeAI
 	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [0,9] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
-	UNIT GuardUnit WyvernRider 0x40 Level(9,Enemy,True)     [0,12] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
+	UNIT GuardUnit PegasusKnight 0x40 Level(9,Enemy,True)     [0,12] 0b 0x0 0x0 0x0 [SteelLance] ChargeAI
 	UNIT
 	
 TeacherGateUnits:
@@ -362,6 +371,8 @@ ChargingBlockEvent:
 	LoadReinforcements(ChargingBlockUnits)
 	HighlightTile(13,13)
 	Text(ChargingBlockText)
+	LoadReinforcements(ChargingBlockUnits2)
+	LoadReinforcements(ChargingBlockUnits3)
 	NoFade
 	ENDA
 	
@@ -371,13 +382,23 @@ WyvernReinforcementEvent:
 	ENDA
 	
 Ch6VillageEvent:
+	FADI 16
 	SetBackground(HouseBG)
 	Text(Ch6VillageText)
-	FADI 8
-	CLEAN
-	FADU 8
-	GiveGold(3000)
-	
+	FADU 16
+	CallMenu(Ch6VillageMenu)
+	BNE 0x0 0xC 0x0
+		//say you're not a guard
+		Text(Ch6VillageNotAGuardText)
+		RemoveBackground
+		GiveItem(Butterfly,0xFFFF)
+		GOTO 0x1
+	LABEL 0x0
+	//lie 
+	Text(Ch6VillageLieText)
+	RemoveBackground
+	GiveItem(Lancereaver,0xFFFF)
+	LABEL 0x1
 	NoFade
 	ENDA
 

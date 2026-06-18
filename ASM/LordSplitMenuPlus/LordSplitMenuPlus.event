@@ -162,6 +162,17 @@ MenuOption(Ch7WVillageSkillScrollChoice, Ch7WVillageSkillScrollDesc, 0)
 MenuTerminator
 
 
+ALIGN 4
+Ch6VillageMenu:
+MenuDefinition(4, 8, 21, 0, 1, Ch6VillageMenuOptions)
+
+ALIGN 4
+Ch6VillageMenuOptions:
+MenuOption(Ch6VillageNotAGuardChoice, Ch6VillageNotAGuardDesc, 0)
+MenuOption(Ch6VillageLieChoice, Ch6VillageLieDesc, 0)
+MenuTerminator
+
+
 //Game Start Menu
 
 ALIGN 4
