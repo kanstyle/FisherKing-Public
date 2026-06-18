@@ -265,7 +265,7 @@ Be honest.[A]
 
 [r]
 Do you think I'm weak if I[N]
-need daemon pellets?[A][css][4][4][4]
+need spirit pellets?[A][css][4][4][4]
 
 [l]
 ...That's different.[A]
@@ -405,7 +405,7 @@ Yes, sir.[A]
 [fr]
 I'll call reinforcements from the capital.[N]
 They'll arrive in about one hour.[AN]
-You've some high-grade daemon pellets[N]
+You've some high-grade spirit pellets[N]
 with you, do you not?[A]
 
 [l][ce]
@@ -945,9 +945,8 @@ Hello, Devil.[N][4][4]
 
 ## Ch5DevilDescription
 There was no need for the titan to move.[4][4][N]
-The daemon pellets vanished from Eagle's[N]
-palm, spirited away inside the steel[N]
-fortress.[A]
+The spirit pellets vanished from Eagle's[N]
+palm, consumed by the steel fortress.[A]
 [X]
 
 ## Ch5DevilTargeting

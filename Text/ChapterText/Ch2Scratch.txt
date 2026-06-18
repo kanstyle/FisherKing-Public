@@ -110,7 +110,7 @@ humble envoy, milord.[AN]
 I've come to see you.[A]
 
 [mr]
-...[4][4][4]You...[4][4] You're a Lowland daemon,[N][4][4]
+...[4][4][4]You...[4][4] You're a Lowland spirit,[N][4][4]
 aren't you?[A]
 
 [ml]
@@ -145,7 +145,7 @@ humble envoy, milord.[AN]
 I've come to see you.[A]
 
 [ml]
-...[4][4][4]You...[4][4] You're a Lowland daemon,[4][4]
+...[4][4][4]You...[4][4] You're a Lowland spirit,[4][4]
 aren't you?[A]
 
 [mr]
@@ -194,7 +194,7 @@ Hey, Pillow.[4] Doing okay?[N]
 The Lowlands give you headaches, right?[A]
 
 [mr][ts]
-Hm?[4] Oh, I'm fine.[4] The daemons haven't[N]
+Hm?[4] Oh, I'm fine.[4] The spirits haven't[N]
 been bothering me as much lately.[AN]
 [ts]...Thanks for asking, though.[A]
 

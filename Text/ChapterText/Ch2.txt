@@ -28,7 +28,7 @@ Hey, Pillow.[4] Doing okay?[N]
 The Lowlands give you headaches, right?[A]
 
 [mr][ts]
-Hm?[4] Oh, I'm fine.[4] The daemons haven't[N]
+Hm?[4] Oh, I'm fine.[4] The spirits haven't[N]
 been bothering me as much lately.[AN]
 [ts]...Thanks for asking, though.[A]
 
@@ -365,7 +365,7 @@ I...[4] um...[4] I-I can handle it.[A]
 Oh?[4] Is something the matter?[A]
 
 [fr]
-The daemons get...[4][4] agitated when[N]
+The spirits get...[4][4] agitated when[N]
 I'm in the Lowlands.[AN]
 M-my crown helps, but...[A]
 
