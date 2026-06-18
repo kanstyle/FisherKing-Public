@@ -10,6 +10,9 @@ SpecifiedBattleConvo(Teacher,Skull,Ch1,Ch1SkullTeacherBQFlag,Ch1SkullTeacherBQ)
 SpecifiedBattleConvo(HeroChar,Skull,Ch1,Ch1SkullHeroBQFlag,Ch1SkullHeroBQ)
 UnspecifiedBattleConvo(Skull,Ch1,Ch1SkullBQFLag,Ch1SkullBQ)
 
+//Ch2
+UnspecifiedBattleConvo(Songbird,Ch2,Ch2SongbirdBQFlag,Ch2SongbirdBQ)
+
 //Ch3
 SpecifiedBattleConvo(Pillow,Wise,Ch3,Ch3PillowWiseBQFlag,Ch3PillowWiseBQ)
 SpecifiedBattleConvo(Dragon,Wise,Ch3,Ch3DragonWiseBQFlag,Ch3DragonWiseBQ)

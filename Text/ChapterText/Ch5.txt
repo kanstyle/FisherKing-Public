@@ -88,7 +88,7 @@ all the whispering ghosts.[AN]
 Why wouldn't they listen?[A]
 [X]
 
-## Ch5BaseChessFlashback
+## Ch5BaseChessFlashbackName
 Teacher/Elder Prince[X]
 
 ## Ch5BaseChessFlashback
@@ -96,32 +96,32 @@ Teacher/Elder Prince[X]
 [fr][LoadOldPrince]
 [ml][LoadYoungTeacher]
 
-[r]
+[r][ts]
 Checkmate![A]
 
-[ml]
+[ml][ts]
 Argh![4][4][N]
 Curse this game...[A]
 
-[fr]
+[fr][ts]
 Hahaha![AN]
 I've seen you less incensed[N]
 over battlefield losses.[A]
 
-[ml]
+[ml][ts]
 This is a different thing entirely![AN]
 I can't compete with a young man's[N]
 agile mind in these abstract games.[AN]
-And to think I'm a year closer to[N]
+[ce]And to think I'm a year closer to[N]
 the grave today...[A]
 
-[fr]
+[fr][ts]
 Happy birthday, by the way.[A]
 
-[ml]
+[ml][ts][oe]
 ...Milord.[A]
 
-[fr]
+[fr][ts]
 Hahahaha![A]
 
 [r]
@@ -131,15 +131,15 @@ Perhaps you just need more practice?[A]
 Face it, O great Silver General.[N][4][4]
 You're still a beginner.[A]
 
-[ml]
+[ml][ts]
 Aren't we practicing right now?[N][4][4]
 And I'm not getting a lick better.[A]
 
-[r]
+[r][ts][ce]
 Well, I suppose you'll just have[N]
-to acknowledge my superiority, then.[A]
+to acknowledge my superiority, then.[A][oe]
 
-[ml]
+[ml][ts]
 Hold on, now.[A]
 
 [fr]
@@ -161,25 +161,48 @@ Excuse me, Teacher![A]
 [css][clear]
 
 [fr][mmr]
-Mention that girl's name, and off he goes. Delightful, isn't it?
-[ml]She's just as bad. I had to seat those two on either end of the lecture hall to make them pay attention.
-[mr]Ha! Well, that aside... I've a present for you.
-[ml]Oh, really?
-[mr]Come now, don't give me that look! This year, I'm serious.
+Mention that girl's name,[N]
+and off he goes.[AN]
+Delightful, isn't it?[A]
+
 [ml]
-I sure hope so... Where is it, then? May I see it?
+She's just as bad.[AN]
+I had to seat those two on either end of[N]
+the lecture hall so they'd pay attention.[A]
 
 [mr]
-Not so fast.[4][4] I want to make sure you'll like it.[AN]
-Tell me, Teacher -- [4][4] do you want to get better[N]
-at chess?[A]
+Ha![4][4] Well, that aside...[N]
+I've a present for you.[A]
 
-[ml]Of course I do. Imagine if the academy cadets saw me losing to their classmate! They'd never listen to a word I said.
+[ml]
+Oh, really?[A]
 
-[mr]Wonderful.[4][4] Happy birthday,[N]
+[mr][ts]
+Come now, don't give me that look![N]
+This year, I'm serious.[A]
+
+[ml][ts]
+I sure hope so...[N]
+Where is it, then?[4][4] May I see it?[A]
+
+[mr]
+Not so fast.[4][4][N]
+I want to make sure you'll like it.[AN]
+Tell me, Teacher --[4][4] do you want to[N]
+get better at chess?[A]
+
+[ml]
+Of course I do.[AN]
+Imagine if the academy cadets saw[N]
+me losing to their classmate![AN]
+They'd never listen to a word I said.[A]
+
+[mr][ts]
+Wonderful.[4][4] Happy birthday,[N]
 then, my friend.[A]
 
-[ml]Thank you, milord.[N]
+[ml][ts]
+Thank you, milord.[N][4][4][4][4]
 ...What is this?[A]
 
 [mr]
@@ -189,27 +212,29 @@ present whenever we played?[A]
 [ml]
 Of course I did, but...[A]
 
-[mr]
+[mr][ts]
 I had him record our games, move by move,[N]
 in that book.[AN]
 With that, you can learn even when I'm[N]
 not with you.[A]
 
-[ml]I see...[4][4][4] Interesting.[A]
+[ml][ts]
+I see...[4][4][4] Interesting.[A]
 
 [mr]
 You don't sound too enthusiastic.[4][4][N]
-It was quite clever of me, no?[A]
-Come now, don't hold your praise back![A]
+It was quite clever of me, no?[AN]
+[ts]Come now, don't hold your praise back![A]
 
-[ml]
-Yes, quite clever. I'll treasure it.
+[ml][ts]
+Yes, quite clever.[N]
+I'll treasure it.[A]
 
-[mr]
+[mr][mmr][ts]
 Don't treasure it, use it![N]
-Expand that mind of yours![A]
+[mmr]Expand that mind of yours![A]
 
-[ml]
+[ml][ts]
 Yes, yes![4][4] Settle down![A]
 [X]
 

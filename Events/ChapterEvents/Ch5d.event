@@ -351,6 +351,7 @@ EndingScene:
 	Highlight(0x81)
 	Text(Ch5dTeacherEnd1)
 	CenterTextbox(Ch5dTeacherEnd2)
+	FADI 4
 	
 	CALL EndEventRoutine
 	MNC2 Ch6

@@ -38,3 +38,10 @@ ASMC ASMC_SelfDamageLikeBomb|1
 ASMC KillActiveUnit|1
 NoFade
 ENDA
+
+// Units listed here are exempt from the petrify-on-death system
+// They die immediately at 0 HP (normal permadeath) instead of entering the dying state
+ALIGN 4
+PetrifyDeathExceptionTable:
+BYTE Sigil
+BYTE 0x00 // terminator

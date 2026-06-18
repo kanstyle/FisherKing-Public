@@ -839,3 +839,8 @@ stands the Prince himself.[A]
 [r][tmm][ce]
 (The Prince...)[AN][css][4][4][4]
 Let's talk about something else.[A][X]
+
+## Ch2SongbirdBQ
+[ml]
+Ah, so even if I pose[N]
+no threat...[A][X]

@@ -1,12 +1,25 @@
-#include "C_Code.h" // headers 
-extern void* KillEvent; 
+#include "C_Code.h" // headers
+extern void* KillEvent;
+
+// Table of PIDs exempt from the petrify-on-death system; defined in Installer.event.
+// Units in this list die immediately at 0 HP instead of entering the dying (petrified) state.
+// The table is terminated by 0x00.
+extern u8 PetrifyDeathExceptionTable[];
+
+static bool IsUnitPetrifyException(u8 pid) {
+    u8* tbl = PetrifyDeathExceptionTable;
+    while (*tbl != 0x00)
+        if (*tbl++ == pid) return TRUE;
+    return FALSE;
+}
 
 //new hook
 void KillUnitOnCombatDeath(struct Unit* unitA, struct Unit* unitB) {
     if (GetUnitCurrentHp(unitA) != 0)
         return;
 
-    if (UNIT_FACTION(unitA) == FACTION_BLUE && !(unitA->supportBits & 0x1)) {
+    if (UNIT_FACTION(unitA) == FACTION_BLUE && !(unitA->supportBits & 0x1)
+            && !IsUnitPetrifyException(unitA->pCharacterData->number)) {
         // First death: petrify instead of kill
         unitA->curHP = 1;
         unitA->state &= ~US_HIDDEN;
@@ -142,7 +155,8 @@ void UnitKill(struct Unit* unit) {
             unit->pCharacterData = NULL;
             return;
         }
-        if (!(unit->supportBits & 0x1)) {
+        if (!(unit->supportBits & 0x1)
+                && !IsUnitPetrifyException(unit->pCharacterData->number)) {
             // First death: petrify instead of killing permanently.
             // BATTLE_PostCombatDeathFades sets US_HIDDEN before this runs;
             // we clear it along with any dead/undeployed flags so the unit
@@ -156,7 +170,7 @@ void UnitKill(struct Unit* unit) {
             unit->supportBits |= 0x1;
             return;
         }
-        // Second death (support bit already set): kill permanently
+        // Exception unit on first death, or second death: kill permanently
         unit->state |= (US_DEAD | US_HIDDEN);
         InitUnitsupports(unit);
         return;
@@ -173,7 +187,8 @@ void UnitKill(struct Unit* unit) {
 void DisplayDefeatTalkForPid(u8 pid) {
     struct Unit* unit = GetUnitFromCharId(pid);
     if (unit != NULL && UNIT_FACTION(unit) == FACTION_BLUE) {
-        if (!(unit->supportBits & 0x1))
+        if (!(unit->supportBits & 0x1)
+                && !IsUnitPetrifyException(unit->pCharacterData->number))
             return; // First death: unit will be petrified, no quote yet.
         if (unit->statusIndex == UNIT_STATUS_PETRIFY)
             return; // Being culled: TriggerDeathQuoteForActiveUnit already showed the death quote.

@@ -52,6 +52,12 @@
 			bg(Woodland_Night)
 			text(Ch5BaseBunnyPillow)
 			eventID(0x25)
+		Entry
+			name(Ch5BaseChessFlashbackName)
+			music(TheQuestForRudrasMines)
+			bg(Castle_Room)
+			text(Ch5BaseChessFlashback)
+			eventID(0x24)
 	Chapter(Ch6)
 		Entry
 			name(Ch6BasePillowDragonName)

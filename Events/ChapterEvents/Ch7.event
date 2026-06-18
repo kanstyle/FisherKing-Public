@@ -241,7 +241,7 @@ CheckBossSurvival:
 	BTrue(0x0)
 		CHECK_EXISTS Recruiter
 		BTrue(0x0)
-		GameOver
+		CALL EndingScene
 	LABEL 0x0
 	NoFade
 	ENDA

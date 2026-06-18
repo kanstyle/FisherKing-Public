@@ -5,6 +5,7 @@ EventPointerTable(Ch2EventsID, PointerList)
 #define Ch2TentFlag 0x9
 #define Ch2PigeonBrotherTalkFlag 0x10
 #define Ch2PigeonHeroTalkFlag 0xA
+#define Ch2SongbirdBQFlag 0xB
 
 PointerList:
 	POIN TurnBasedEvents

@@ -369,22 +369,20 @@ BeginningScene:
 	ENDA
 
 EndingScene:
-	Music(RoadTakenID)
-	FADI 16
+	Music(EditModeID)
+	FADI 4
 	SetBackground(Town_Day)
 	Text(BabyRecruitment)
 	LOAD1 0x1 BabyRecruitUnits
 	RemoveBackground
 	
 	CALL WiseEndEvent
+	
+	SetBackground(Town_Day)
 	Text(Ch3EndDress)
 	RemoveBackground
 	
-	//SetBackground(
-	
-	SetBackgroundSlow(Town_Day)
 	CALL PigeonLeavesEvent
-	RemoveBackground
 	
 	CALL EndEventRoutine
 	MNC2 Ch4
@@ -569,7 +567,7 @@ Ch3WomanTalkEvent:
 WiseEndEvent:
 	FlagIsSet(Ch3WiseTalkFlag, 0x0)
 		PreventSkippingAllowB
-		SetBackgroundSlow(0x5)
+		SetBackgroundSlow(Town_Day)
 		Text(Ch3WiseEndIntro)
 		CALL StopSkippingEvent
 		PreventSkipping
@@ -601,19 +599,23 @@ PigeonLeavesEvent:
 			SVAL 1 1000
 			BLT 0x2 0xC 0x1 //Check money, if don't have money go to 0x2
 			//otherwise pay pigeon, then skip to end
+			SetBackground(Town_Day)
 			Text(Ch3EndPaidPigeon)
 			GOTO 0x1
 	LABEL 0x2
 		REMU Pigeon
+		SetBackground(Town_Day)
 		Text(Ch3EndDidntPayPigeon)
 		LOAD1 0x1 SnotUnits
 		GOTO 0x1
 		//pigeon leaves
 	LABEL 0x0
+		SetBackground(Town_Day)
 		Text(Ch3EndPigeonDead)
 		LOAD1 0x1 SnotUnits
 		//get snot
 	LABEL 0x1
+	RemoveBackground
 	NoFade
 	ENDA
 
