@@ -894,3 +894,123 @@ It's too late for me to see it like you do.[N]
 But I want to see it, just a little.[AN]
 That's enough for me.[A]
 [X]
+
+//if pigeon left in Ch3 because she wasn't paid
+## Ch7PigeonIntro
+[mr][LoadPigeon]
+[tmm](Conscription sweep, huh?)[AN]
+(I hope Brother's okay.[N]
+Didn't see him at the church.)[AN]
+(...)[AN]
+[ce](...)[AN]
+[mmr](...!)[AN]
+(AAAAAH![N][4][4][4]
+I'm always focusing on the sad stuff!)[AN][oe]
+(It's gonna get me killed!)[A]
+[X]
+
+//pigeon re-recruitment
+## Ch7BrotherPigeonTalkText
+[mr][LoadPigeon]
+[ml][LoadBrother]
+[mr]
+B-Brother?![A]
+
+[ml]
+Pigeon?![AN]
+What the hell're you doing[N]
+all the way out here?[A]
+
+[mr]
+Uh, well, I was blending in with the soldiers,[N]
+and I was gonna try to grab a new lance...[A]
+
+[ml]
+How come you're not dressed[N]
+like them, then?[A]
+
+[mr]
+[ce]'Cause I'm BROKE![N][4][4][oe]
+'Cause your stupid boss didn't PAY me![A]
+
+[ml]
+Wait, what?[4][4] Really?[4][4][N]
+That dick...[A]
+
+[mr]
+You didn't know?[A]
+
+[ml]
+Nah.[4][4] I thought you just up and left.[A]
+
+[mr]
+No![4][4] No no no no![N][4][4]
+I don't wanna leave![A]
+
+[ml]
+Well, it's kinda hairy right now.[N]
+We're criminals.[AN]
+We'll be fine, but...[4][4] you know.[N]
+Might wanna be careful.[A]
+
+[mr]
+...So I guess we won't be[N]
+seeing each other for a bit.[AN]
+Again.[A]
+
+[ml]
+Yeah.[A]
+
+[mr][tmm]
+...[A][tmm]
+
+[ml]
+Oh, yeah.[4][4] I told one of your[N]
+jokes to a guy last night.[A]
+
+[mr][ts]
+You did?[4][4] Which one?[A]
+
+[ml]
+The one about the horse, and the tax[N]
+documents, and breathing underwater.[A]
+
+[mr]
+I love that one![4][4] Did he laugh?[A]
+
+[ml]
+Yeah.[4][4] It's a good joke.[A]
+
+[mr][mmr]
+Nice![AN][ts]
+[4][4][4][4][4]...But, uh...[A]
+
+[ml]
+I just wish we could hang out more,[N]
+I guess.[4][4] That's all.[A]
+
+[mr][ce][tmm]
+...[A][tmm]
+Rrrrgh![4][4][4][4][oe] Okay![4][4] I made up my mind.[N][4][4]
+I'm staying.[A]
+
+[ml]
+I told you we're cri--[A]
+
+[mr][mmr]
+I'm already a criminal![A]
+
+[ml]
+Oh.[4][4] ...Yeah.[4][4][4] Damn.[N][4][4]
+That's true.[AN]
+But you need money.[N]
+You're just gonna hire yourself?[A]
+
+[mr][ts]
+Sure![4][4] They'll still pay me.[N][4][4]
+Just not on purpose.[A]
+[X]
+
+## Ch7GoldStolen
+[ToggleRed]Check your gold.[ToggleRed][A]
+[X]

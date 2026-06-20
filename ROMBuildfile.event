@@ -47,6 +47,10 @@
 	
 	ASSERT (FreeSpaceEnd - currentOffset) // So that you don't overwrite vanilla tables if using default freespace
 	
+	// CRC Correction
+    ALIGN 16
+    WORD 0 0 0 0
+	
     MESSAGE Used free space ends at currentOffset
 #else
     ERROR "You are not assembling FE8 events!"

@@ -54,6 +54,7 @@
 #define NegateCriticals 0x00008000
 #define CannotUse 0x00010000
 #define NegateDef 0x00020000
+#define DoubleTriangle 0x00400000 //added by me, but it's in builder by default
 #ifdef _FE8_
   #define EirikaLock 0x00040000
   #define EphraimLock 0x00080000

@@ -36,6 +36,14 @@ void JuggernautPreBattleEffect(struct BattleUnit* bunitA, struct BattleUnit* bun
 	if (SkillTester(bunitA, JuggernautID_Link) == 0) {
 		return;
 	}
+	// Juggernaut is immune to the negate defense item ability (0x00020000 / IA_NEGATE_DEFENSE).
+	// Restore battleDefense if it was zeroed by the attacker's weapon.
+	if (bunitB->weaponAttributes & IA_NEGATE_DEFENSE) {
+		if (bunitB->weaponAttributes & IA_MAGIC)
+			bunitA->battleDefense = bunitA->terrainResistance + bunitA->unit.res;
+		else
+			bunitA->battleDefense = bunitA->terrainDefense + bunitA->unit.def;
+	}
 	int originalAttack = bunitB->battleAttack;
 	int damageDiff = 0;
 	damageDiff = originalAttack - bunitA->battleDefense;

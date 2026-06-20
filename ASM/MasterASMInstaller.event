@@ -66,7 +66,7 @@
 //#include "ModularGoalWindow/Tables/MGWText/MGWText.event"
 
 #include "FE8-Walking_Sounds_Fix/FE8-Walking_Sounds_EA.event"
-//#include "FixedAutolevels.event"
+#include "FixedAutolevels.event"
 //#include "FixLevelOfPromotedEnemy.event" //fix promoted enemy autoleveling glitch (circleseverywhere)
 
 //#include "CritSystem/Installer.event"

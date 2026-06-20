@@ -194,6 +194,9 @@ void DoGaleforce(struct Proc* proc) {
 }
 
 void MyOwnBloodEffect(struct Proc* proc) {
+	if (gActiveUnit->index != gBattleActor.unit.index) { // gBattleHitArray is stale if we weren't the attacker in the last combat
+		return;
+	}
 	if (SkillTester(gActiveUnit, MyOwnBloodID_Link) == 0) {
 		//gEventSlots[6] = 0x5;
 		return;

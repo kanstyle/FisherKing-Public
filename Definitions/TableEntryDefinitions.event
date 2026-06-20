@@ -187,6 +187,7 @@
 #define FlierMC 0x880bb96
 #define CivilianMC 0x880ba51
 #define DemonKingMC 0x880bbd7
+#define PillowMC 0x880BC59
 
 // Item Types
 #define Sword 0x0

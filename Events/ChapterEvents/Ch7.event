@@ -11,6 +11,7 @@
 #define Ch7MVillageWindowFlag 0x12
 #define Ch7MVillageWindowPassedFlag 0x13
 #define Ch7MVillageWaitFreeFlag 0x14
+#define Ch7PigeonTalkFlag 0x15
 
 EventPointerTable(Ch7EventsID, PointerList)
 
@@ -29,6 +30,7 @@ PointerList:
 TurnBasedEvents:
 	TurnEventEnemy(0x0,BleedoutChapterTurnEvent,1,255)
 	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
+	TurnEventPlayer(0x0,PigeonAppearsEvent,1)
 	TurnEventPlayer(0x0,Turn1Routine,1)
 	TurnEventPlayer(0x0,CaptainSquad2Charge,3)
 	TurnEventPlayer(0x0,CaptainSquad3Charge,5)
@@ -41,6 +43,7 @@ TurnBasedEvents:
 ALIGN 32
 CharacterBasedEvents:
 	CharacterEventBothWays(WisePillowFlag,WiseTalk,Pillow,Ch7Wise)
+	CharacterEventBothWays(Ch7PigeonTalkFlag,Ch7BrotherPigeonTalk,Pigeon,Brother)
 	END_MAIN
 
 MiscBasedEvents:
@@ -334,17 +337,33 @@ BeginningScene:
 	MOVE 65535 Pillow [26,9]
 	ENDWARP
 	Highlight(HeroChar)
-	//Text(Ch7HeroIntro)
+	Text(Ch7HeroIntro)
 	
-	FADI 4
+	FADI 8
 	DoAllThree
 	LOAD1 0x1 EnemyUnits
 	LOAD1 0x1 NPCUnits
 	LOAD1 0x1 CaptainSquad1
 	LOAD1 0x1 CaptainSquad2
 	LOAD1 0x1 CaptainSquad3
-	
 	GotoPrepScreen
+	ENDA
+	
+PigeonAppearsEvent:
+	FlagIsSet(PigeonLeftFlag,0x0)
+		CAM1 [22,10]
+		REVEAL Pigeon
+		CUSE Pigeon
+		MOVE 65535 Pigeon [25,0]
+		CAM1 [25,0]
+		STAL 60
+		Highlight(Pigeon)
+		Text(Ch7PigeonIntro)
+	LABEL 0x0
+	FlagNotSet(PigeonLeftFlag,0x1)
+		SetFlag(Ch7PigeonTalkFlag)
+	LABEL 0x1
+	NoFade
 	ENDA
 
 EndingScene:
@@ -427,6 +446,14 @@ NorthFlierAddsEvent:
 	NoFade
 	ENDA
 	
+Ch7BrotherPigeonTalk:
+	Text(Ch7BrotherPigeonTalkText)
+	CUSA Pigeon
+	SilentSubGold(1000)
+	CenterTextbox(Ch7GoldStolen)
+	NoFade
+	ENDA
+
 WiseTalk:
 	FlagIsSet(HelpedWiseFlag, 0x0)
 		Text(Ch7WiseTalkHelpedText)

@@ -1,5 +1,7 @@
 StartEventRoutine:
 	SetFlag(BleedoutFlag)
+	ASMC ZeroInClearEffect|1
+	ASMC BreezeChapterRepair|1
 	NoFade
 	ENDA
 

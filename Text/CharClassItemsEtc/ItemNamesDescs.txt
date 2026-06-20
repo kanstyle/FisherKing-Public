@@ -91,7 +91,7 @@ Red Hornet[X]
 
 ## RedHornetDesc ^
 
-Fixed Mt plus 25% of target's max HP.[N]Hits Res. Cannot crit.[X]
+Fixed Mt plus 25% of target's max HP.[N]Hits Res.[X]
 
 
 ## GoldHornetName ^

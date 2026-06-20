@@ -131,15 +131,15 @@ Sky-Rat,CantoID
 Mage-General,0x0
 Bonewalker (Lance),0x0
 Bonewalker (Axe),0x0
-SwordCav,0x0
-AxeCav,0x0
-BowCav,0x0
-SwordPal,0x0
-AxePal,0x0
-BowPal,0x0
-LancePal,0x0
+SwordCav,CantoID
+AxeCav,CantoID
+BowCav,CantoID
+SwordPal,CantoID
+AxePal,CantoID
+BowPal,CantoID
+LancePal,CantoID
 Carriage,0x0
-AxeCavF,0x0
+AxeCavF,CantoID
 JabberwockyClass,JuggernautID
 0,0x0
 0,0x0

@@ -276,6 +276,29 @@ void BreezeRepair(struct Proc* proc) {
     }
 }
 
+void BreezeChapterRepair(struct Proc* proc) {
+	// Repair all Breeze staves unconditionally at chapter start
+	int unitID = 1;
+	int maxCount = 62;
+
+	while (unitID < maxCount) {
+		struct Unit* curUnit = GetUnit(unitID);
+		for (int j = 0; j < GetUnitItemCount(curUnit); j++) {
+			u16 curItem = curUnit->items[j];
+			if (GetItemIndex(curItem) == 0xD5)
+				curUnit->items[j] = MakeNewItem(0xD5);
+		}
+		unitID++;
+	}
+
+	u16* convoy = GetConvoyItemArray();
+	for (int i = 0; (i < 150) || ((i < ConvoySize_Link) && (*convoy)); i++) {
+		if (GetItemIndex(*convoy) == 0xD5)
+			*convoy = MakeNewItem(0xD5);
+		convoy++;
+	}
+}
+
 void BreezeRefresh(struct Unit* unit, struct Proc* proc) {
 	if (!(gActiveUnit->state & 0x400) &&
 		(gActionData.unitActionType == UNIT_ACTION_STAFF) &&

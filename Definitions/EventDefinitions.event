@@ -14,6 +14,7 @@
 #define ThiefSoldFlag 0x7A
 #define BaronGoldFlag 0x7B
 #define HelpedWiseFlag 0x80
+#define PigeonLeftFlag 0x81
 
 //AI
 

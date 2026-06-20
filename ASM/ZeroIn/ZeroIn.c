@@ -87,6 +87,16 @@ void ZeroInPostBattleEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB
 	}
 }
 
+void ZeroInClearEffect(struct Proc* proc) {
+	// Clear the ZeroIn weapon-type mark (supports[5]) for all player units at chapter start
+	for (int i = 1; i < 0x47; i++) {
+		struct Unit* unit = GetUnit(i);
+		if (!unit || !unit->pCharacterData) continue;
+		if (SkillTester(unit, ZeroInID_Link))
+			unit->supports[5] = 0;
+	}
+}
+
 void ZeroInPreBattleEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB) {
 	int weaponTypeAdj; //increase weapon type values by 1 so that having 0 in support[5] doesn't give you WTA vs swords
 	if (SkillTester(bunitA, ZeroInID_Link) != 0) {
