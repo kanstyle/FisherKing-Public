@@ -212,15 +212,15 @@ bool BreezeRepairCheck(struct Proc* proc) {
 	struct NewBattleHit* it;
 
     for (it = NewBattleHitArray; !(it->info & BATTLE_HIT_INFO_END); ++it) {
-        if (isDefenderRound(it)) { //if defender, break
-			//gEventSlots[6] = 0x1;
-			break;
+        if (isDefenderRound(it)) { //if defender, skip
+			continue;
 		}
-		if (killsTarget(it)) { //if attacker, and not a miss, and end of battle
-			//gEventSlots[6] = 0x4;
+		if (killsTarget(it)) { //if attacker kill
+			gEventSlots[8] = 0x4;
 			return true;
 		}
     }
+	gEventSlots[8] = 0x1;
 	return false;
 }
 
@@ -239,20 +239,21 @@ bool BreezeRepairCheck(struct Proc* proc) {
 }*/
 
 void BreezeRepair(struct Proc* proc) {
+	gEventSlots[2] = 1;
     // Only proceed if the active unit is Gale
     if (gActiveUnit->pCharacterData->number != 0x10) {
         return;
     }
-    
+    gEventSlots[3] = 1;
     // Only proceed if Gale got a kill
     if (!BreezeRepairCheck(proc)) {
         return;
     }
-    
+    gEventSlots[4] = 1;
     // Refresh Breeze in all unit inventories
     int unitID = 1;
     int maxCount = 62;
-    
+    gEventSlots[5] = 1;
     while(unitID < maxCount) {
         struct Unit* curUnit = GetUnit(unitID);
         
@@ -265,6 +266,7 @@ void BreezeRepair(struct Proc* proc) {
         
         unitID++;
     }
+	gEventSlots[6] = 1;
     
     // Refresh Breeze in convoy
     u16* convoy = GetConvoyItemArray();
@@ -274,6 +276,7 @@ void BreezeRepair(struct Proc* proc) {
         }
         convoy++;
     }
+	gEventSlots[7] = 1;
 }
 
 void BreezeChapterRepair(struct Proc* proc) {

@@ -58,8 +58,8 @@ ALIGN 32
 CharacterBasedEvents:
 	CharacterEventBothWays(StormBabyTalkFlag,StormBabyTalk,Storm,Baby)
 	CharacterEventBothWays(GaleBabyTalkFlag,GaleBabyTalk,Gale,Baby)
-	CharacterEventBothWays(StormHeroTalkFlag,StormHeroTalk,Storm,HeroChar)
-	CharacterEventBothWays(GaleHeroTalkFlag,GaleHeroTalk,Gale,HeroChar)
+	//CharacterEventBothWays(StormHeroTalkFlag,StormHeroTalk,Storm,HeroChar)
+	//CharacterEventBothWays(GaleHeroTalkFlag,GaleHeroTalk,Gale,HeroChar)
 	CharacterEventBothWays(StormSkullTalkFlag,StormSkullTalk,Storm,Ch5Skull)
 	CharacterEventBothWays(HeroSkullTalkFlag,SkullTalk,HeroChar,Ch5Skull)
 	//CharacterEventBothWays(HeroSkullTalkFlag,LargeReinforcementEvent,HeroChar,Ch5Skull)
@@ -77,7 +77,7 @@ LocationBasedEvents:
 	Door(21,2)
 	Door(12,11)
 	Door(13,11)
-	Chest(Restore,10,12)
+	Chest(BurningSteel,10,12)
 	Armory(Ch5Armory,2,1)
 	Vendor(Ch5Vendor,18,1)
 	END_MAIN

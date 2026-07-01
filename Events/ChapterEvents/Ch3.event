@@ -8,6 +8,8 @@ EventPointerTable(Ch3EventsID, PointerList)
 #define Ch3DragonWiseBQFlag 0xC
 #define Ch3BunnyWiseBQFlag 0xD
 #define Ch3WiseBQFlag 0xE
+#define Ch3BunnyRecruitedFlag 0xF
+#define BunnyCutscene 0x81
 
 PointerList:
 	POIN TurnBasedEvents
@@ -107,10 +109,10 @@ EnemyUnits2:
 EnemyUnits3:
 	UNIT Combatant Archer 0x40 Level(5,Enemy,True)     [1,6] 0b 0x0 0x1 REDA1R6 [IronBow] ChargeAIIgnoreNPC
 	UNIT Combatant Archer 0x40 Level(5,Enemy,True)     [1,8] 0b 0x0 0x1 REDA1R8 [IronBow] ChargeAIIgnoreNPC
-	UNIT Combatant Mage 0x40 Level(5,Enemy,True)     [0,5] 0b 0x0 0x1 REDA0R5 [Thunder] ChargeAIIgnoreNPC
-	UNIT Combatant Mage 0x40 Level(5,Enemy,True)     [0,9] 0b 0x0 0x1 REDA0R9 [Thunder] ChargeAIIgnoreNPC
-	UNIT Combatant PegasusKnight 0x40 Level(5,Enemy,True)     [2,8] 0b 0x0 0x1 REDA2R8 [HeavySpear] AttackInRangeAI
-	UNIT Combatant PegasusKnight 0x40 Level(5,Enemy,True)     [2,6] 0b 0x0 0x1 REDA2R6 [SteelLance] AttackInRangeAI
+	UNIT Combatant Mage 0x40 Level(5,Enemy,True)     [0,5] 0b 0x0 0x1 REDA0R5 [Fire] ChargeAIIgnoreNPC
+	UNIT Combatant Mage 0x40 Level(5,Enemy,True)     [0,9] 0b 0x0 0x1 REDA0R9 [Fire] ChargeAIIgnoreNPC
+	UNIT Combatant PegasusKnight 0x40 Level(5,Enemy,True)     [2,8] 0b 0x0 0x1 REDA2R8 [HeavySpear] AttackInRangeAIIgnoreNPC
+	UNIT Combatant PegasusKnight 0x40 Level(5,Enemy,True)     [2,6] 0b 0x0 0x1 REDA2R6 [SteelLance] AttackInRangeAIIgnoreNPC
 	UNIT Combatant Shaman 0x40 Level(7,Enemy,True)     [0,7] 0b 0x0 0x1 REDA0R7 [Pain] ChargeAIIgnoreNPC
 	UNIT
 	
@@ -177,16 +179,20 @@ TeacherTownUnits:
 	UNIT Teacher Veteran 0x40 Level(10,Ally,False)     [3,17] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
 	UNIT
 
+BunnyCutsceneUnits:
+	UNIT BunnyCutscene BunnyRecruit 0x40 Level(5,NPC,False)     [2,18] 0b 0x0 0x0 0x0 [0x0] DoNothingAI	
+	UNIT
+	
 BunnyUnits:
-	UNIT Bunny BunnyRecruit 0x40 Level(5,NPC,False)     [2,18] 0b 0x0 0x0 0x0 [Axereaver,Javelin,Swordbreaker] DoNothingAI	
+	UNIT Bunny BunnyRecruit 0x40 Level(5,Ally,False)     [2,18] 0b 0x0 0x0 0x0 [Axereaver,Javelin,Swordbreaker] DoNothingAI	
 	UNIT
 	
 BabyUnits:
-	UNIT Baby Mage_F 0x40 Level(5,NPC,False)     [18,19] 0b 0x0 0x0 0x0 [Lightning,Fire] DoNothingAI	
+	UNIT Baby Mage_F 0x40 Level(5,NPC,False)     [18,19] 0b 0x0 0x0 0x0 [Lightning,Secula] DoNothingAI	
 	UNIT
 	
 BabyRecruitUnits:
-	UNIT Baby Mage_F 0x40 Level(5,Ally,False)     [18,19] 0b 0x0 0x0 0x0 [Lightning,Fire] DoNothingAI	
+	UNIT Baby Mage_F 0x40 Level(5,Ally,False)     [18,19] 0b 0x0 0x0 0x0 [Lightning,Secula] DoNothingAI	
 	UNIT
 	
 BabyTeacherUnits:
@@ -272,7 +278,7 @@ BeginningScene:
 		GOTO 0x5
 	LABEL 0x6
 		AllowSkipping
-		Text(Ch3HeartNoText)
+		CenterTextbox(Ch3HeartNoText)
 		GOTO 0x4
 	LABEL 0x5
 	RemoveBackground
@@ -306,6 +312,7 @@ BeginningScene:
 				RemoveBackground
 				SetBackground(BlackBG)
 				FlagNotSet(ThiefSoldFlag, 0x21)
+					CenterTextbox(Ch3ThiefSoldPowder)
 					GiveGold(1000)
 					SetFlag(ThiefSoldFlag)
 				LABEL 0x21
@@ -342,18 +349,19 @@ BeginningScene:
 	RemoveBackground
 	FADU 16
 
-	LOAD2 0x1 BunnyUnits
-	MOVE 5 Bunny [10,18]
+	LOAD2 0x1 BunnyCutsceneUnits
+	MOVE 5 BunnyCutscene [10,18]
 	ENUN
-	Highlight(Bunny)
+	Highlight(BunnyCutscene)
 	Text(Ch3StartBunny)
 	FADI 6
 	
 	DoAllThree
 	
-	LOAD2 0x1 BunnyUnits
-	MOVE 65535 Bunny [1,7]
-	CUSA Bunny
+	FlagNotSet(Ch3BunnyRecruitedFlag, 0x25)
+		LOAD1 0x1 BunnyUnits
+	LABEL 0x25
+	SetFlag(Ch3BunnyRecruitedFlag)
 	LOAD1 0x1 EnemyUnits1
 	ENUN
 	

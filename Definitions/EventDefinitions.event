@@ -9,12 +9,13 @@
 #define HeroGenderswapFlag 0x28
 #define NoSkillQuotesFlag 0x27
 
-#define BelieveInDemonsFlag 0x78
+#define BelieveInDemonsFlag 0x82
 #define ThiefDealFlag 0x79
 #define ThiefSoldFlag 0x7A
 #define BaronGoldFlag 0x7B
 #define HelpedWiseFlag 0x80
 #define PigeonLeftFlag 0x81
+#define AllItemsPerChapterFlag 0x78
 
 //AI
 

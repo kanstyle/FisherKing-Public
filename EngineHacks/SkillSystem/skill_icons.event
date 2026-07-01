@@ -83,6 +83,9 @@ ORG SkillIcon(FrenzyID)
 ORG SkillIcon(AdeptID)
 #incbin "SkillIcons/Adept.dmp"
 
+ORG SkillIcon(PiercingID)
+#incbin "SkillIcons/Adept.dmp"
+
 ORG SkillIcon(CantoID)
 #incbin "SkillIcons/Canto.dmp"
 

@@ -1,4 +1,5 @@
 #include "gbafe.h"
+#include "../SupportRegistry.h"
 
 // skill sys
 extern int SkillTester(struct Unit* unit, int id);
@@ -118,7 +119,7 @@ int RunicTargetAPress(struct TargetSelectionProc* targetProc, struct TargetEntry
     gActiveUnit->supports[5] |= RUNIC_REFRESH_PENDING;
 
     // end the unit's turn; RunicPostAction will refresh them afterward
-	gEventSlots[9] = 1000;
+	//gEventSlots[9] = 1000;
     gActiveUnit->state |= (US_HAS_MOVED | US_CANTOING);
 
 	gActionData.unitActionType = UNIT_ACTION_WAIT;
@@ -128,6 +129,10 @@ int RunicTargetAPress(struct TargetSelectionProc* targetProc, struct TargetEntry
 // Registered in PostActionCalcFunctions (PostActionCalcLoop.event), called
 // with r0 = unit struct immediately after the "Turn ended" bit is set.
 void RunicPostAction(struct Unit* unit) {
+	if (SkillTester(gActiveUnit, RunicID_Link) == 0) {
+        return;
+    }
+	
     if (!(unit->supports[5] & RUNIC_REFRESH_PENDING)) {
         return;
     }

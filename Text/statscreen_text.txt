@@ -125,7 +125,7 @@ Special[X]
 Dying[X]
 
 # 0x0557
-Will die permanently if not[N]
+Will die and lose stats if not[N]
 healed with a Restore staff[N]
 (or chapter is completed).[X]
 

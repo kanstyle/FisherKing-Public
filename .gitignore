@@ -71,9 +71,10 @@ Temporary Items
 .apdisk
 
 # Claude
-.skill
-.claude
-.vs
+.claude/
+.mcp.json
+*.skill
+CLAUDE.md
 
 # FE8 base ROM folder
 fireemblem8u-master/

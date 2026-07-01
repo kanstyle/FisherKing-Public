@@ -376,10 +376,10 @@ Jerry's life is in my hands![AN][X]
 In this game, when player units reach[N]
 0 HP, they will not die.[AN]
 Instead, they enter a [Red]Dying[Red] state and must[N]
-be healed with a [Red]Restore[Red] staff on the[N]
-next turn.[AN]
+be healed with a [Red]Restore[Red] staff before[N]
+the next Enemy Phase.[AN]
 If not healed, they will be removed from the[N]
-map and [Red]lose 1 level's worth of stats[Red].[N]
+map and [Red]lose 1 level's worth of stats.[Red][N]
 [Red]There is no permadeath.[Red][A][X]
 
 ## Ch0OldPrinceAppears
@@ -491,9 +491,9 @@ Miss?[4] Is there a problem?[A][css]
 
 [ml][OpenEyes][MoveMidLeft]
 Ah![4] Your Highness![4] I, uh, I'm okay![N]
-You don't need to waste your time on me.[AN]
+You don't need to waste your time on me.[A]
 
-[mr] 
+[mr]
 Oh, no.[4] It's my duty to see that my[N]
 troops are able to fight their best.[A]
 

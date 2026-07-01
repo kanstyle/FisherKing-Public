@@ -266,6 +266,8 @@
 #define Angel 0xDA
 
 #define AkashicBow 0xDB
+#define BurningSteel 0xDC
+#define Secula 0xDD
 
 //Statuses
 #define SpecialStatusID 5

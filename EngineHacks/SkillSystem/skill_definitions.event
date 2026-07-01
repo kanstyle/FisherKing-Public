@@ -3,6 +3,8 @@
 //Skills are categorized broadly by where their effect is applied, in no particular order within each category.
 
 //My Skills
+//Piercing
+#define PiercingID 164
 
 //Runic
 #define RunicID 153
@@ -821,7 +823,7 @@
 
 // Arcane Blade: When initiating battle at 1 range: Add 3+(Mag/2) to Hit and Crit.
 //By Zeta
-#define ArcaneBladeID 164
+#define ArcaneBladeID 255
 
 //Blue Flame: Attack +2. When adjacent to an ally, Attack +4.
 //By Sme

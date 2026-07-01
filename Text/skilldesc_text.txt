@@ -17,12 +17,16 @@ Pillow's Fan: Gain +15 Hit/Avo[N]
 and +5 Crit while within 3 tiles[N]
 of Pillow.[X]
 
+## SD_Piercing
+Piercing: Ignore opponent's Def/Res.[X]
+
 ## SD_Bold
 Bold: Opponent gets +15 Crit.[X]
 
 ## SD_Juggernaut
 Juggernaut: Halves damage taken,[N]
-except from critical hits.[X]
+except from critical hits.[N]
+Defenses can't be ignored.[X]
 
 ## SD_ZeroIn ^
 Zero In: Combat Art -- Once per map, after[N]

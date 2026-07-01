@@ -8,6 +8,7 @@ ORG 2*0xFF+SkillDescTable
 SkillDescription(StormEyeID,SD_StormEye)
 SkillDescription(ShikariID,SD_Shikari)
 SkillDescription(PillowsBiggestFanID,SD_PillowsBiggestFan)
+SkillDescription(PiercingID,SD_Piercing)
 SkillDescription(BoldID,SD_Bold)
 SkillDescription(JuggernautID,SD_Juggernaut)
 SkillDescription(ZeroInID,SD_ZeroIn)

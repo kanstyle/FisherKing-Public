@@ -62,7 +62,7 @@ ENDB
 
 PUSH //prep shop
 ORG 0xA188E4
-SHLI IronSword IronAxe IronBow IronLance Fire Flux Bomb Heal Restore Torch
+SHLI IronSword IronAxe IronBow IronLance Fire Flux Bomb Heal Restore Torch Vulnerary
 BYTE 0x0 0x0
 POP
 

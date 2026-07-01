@@ -42,7 +42,7 @@ Dying status can be removed[N]
 with a Restore staff (or any[N]
 other ailment-healing effect).[N]
 Dying units cannot be targeted[N]
-by enemies.[X]
+by enemies or rescued.[X]
 
 ## GuideSupportsTitle
 Supports[X]

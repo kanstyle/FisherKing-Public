@@ -16,10 +16,123 @@ Storm/Gale/Baby
 [X]
 
 ## Ch7BaseStormGaleBaby
-[r][LoadStorm]
-[fr][LoadGale]
-[ml][LoadBaby]
-Placeholder.[A]
+[mr][LoadGale]
+[ml][LoadStorm]
+Well, we're in a bit of a pickle.[AN]
+[ce]And poor Skull...[A][oe]
+
+[mr]
+I'll say.[4][4] Very careless of us.[AN]
+I only sent Baby along to the settlement[N]
+in case she found some interesting intel.[AN]
+I should've expected a commonplace errand[N]
+to turn into a melee.[A]
+
+[ml]
+Come on, now. You saw the unrest.[N]
+We're not immune to these things back home.[A]
+
+[mr]
+Oh, unrest is one thing.[AN]
+A terrorist attack, and the guards just join[N]
+in the fun?[4][4] Imagine the scandal![A][css]
+
+[fr][LoadBaby][ts]
+Indeed![4][4] Imagine the scandal![A][css]
+
+[mr][mvr]
+Well, look who's here.[AN][ts]
+Your father and I were just having[N]
+a tactical meeting.[A]
+
+[fr]
+What?[4][4] You were just gossiping.[A]
+
+[ml][ts]
+True![A]
+
+[r][ts][ce]
+Fair.[A][oe]
+
+[ml]
+In any case, we've now unwittingly[N]
+become criminals.[A]
+
+[r]
+Wittingly.[A]
+
+[ml]
+We've unfortunately become criminals.[AN]
+Now, Baby.[4][4] What does a good agent[N]
+do in this kind of scenario?[A]
+
+[fr][ts]
+Damage control![A]
+
+[r][ts]
+In what capacity?[A]
+
+[fr][ts]
+Evaluate if the mission is salvageable.[AN]
+If so, proceed while avoiding capture[N]
+or further jeopardizing the mission![AN][tmm]
+(Though that is quite vague...)[A][tmm]
+
+[r]
+That's my girl.[A]
+
+[ml]
+Excellent![4][4] Now, let's evaluate.[A]
+
+[fr][ts]
+Hmm...[4][4] Well, we're currently embedded[N]
+with a mercenary group.[AN]
+And our identities are uncompromised.[AN]
+Lacking advanced tracking or law[N]
+enforcement, unlikely we'll be investigated.[AN]
+But the city's looking for culprits, so we[N]
+could be in more danger if we stayed there.[A]
+
+[r]
+With you so far.[4][4] And thus?[A]
+
+[fr][ce]
+Er...[A][oe]
+
+[ml][ts]
+Come on![4][4] Almost there![A]
+
+[fr][ts]
+I-I don't know![4][4] I guess we should stay,[N]
+but I've got a bad feeling about it.[A]
+
+[r]
+What kind?[4][4] Eating even worse rations?[A]
+
+[fr]
+No, no![4][4] It's hard to explain.[N][4][4][ce]
+I give up.[A]
+
+[ml][ce]
+Ah, well...[4][4] I guess we'll score you an[N]
+eight out of ten this time.[A]
+
+[fr][oe]
+I-I'm actually worried about the food![N]
+It might be so bad we'll die![AN]
+That's my conclusion![N]
+I get another point, right?[A]
+
+[ml]
+Well, some of the brass might've[N]
+been convinced by that...[A]
+
+[r]
+Well, you already gave up.[N]
+So, eight points is generous, isn't it?[A]
+
+[fr]
+Awwww...[A]
 [X]
 
 ## Ch7BaseSwanLionName
@@ -28,8 +141,77 @@ Swan/Lion
 
 ## Ch7BaseSwanLion
 [mr][LoadLion]
+[mr][ce]
+Oh, man, this is bad, this is bad...[A]
+
 [ml][LoadSwan]
-Placeholder.[A]
+Lion?[4][4] Oh, Dandelion?[4][4][N]
+You're wilting.[A][css]
+
+[mr][oe][mmr]
+Shut up![N][4][4]
+Why aren't you as freaked out as me?![A]
+
+[ml]
+I am.[4][4] I'm just keeping it to myself.[A]
+
+[mr]
+Wh-what are we gonna do?[AN]
+We're innocent, and we got mixed up[N]
+in this whole thing...[A]
+
+[ml][ce]
+I don't know.[A][oe]
+
+[mr]
+You gotta know![N]
+You're a guard, right?[AN]
+What do you do when you[N]
+know someone's innocent?[A]
+
+[ml][tmm][ce]
+...[AN][tmm]
+Being a guard is complicated[N]
+work, you know.[A]
+
+[mr]
+What do you mean?[N][4][4]
+What's complicated about it?[A]
+
+[ml][oe]
+Well, lots of things, obviously.[N][4][4]
+Such as, er...[4][4] ahem.[AN]
+For example, regarding justice:[N]
+consequentalism or deontology?[A]
+
+[mr][mmr][ce]
+I don't know what those meeeeean![N][4][4][oe]
+If you don't know, just say so![A]
+
+[ml][ce]
+Oh, dear...[4][4][N]
+Well, you dragged it out of me.[AN][oe]
+I don't know.[4][4] Being a guard is[N]
+mostly about doing what you're told.[AN]
+You don't really worry yourself over[N]
+things like this.[A]
+
+[mr][ce][tmm]
+...[AN][tmm]
+So we're doomed.[A]
+
+[ml][mml]
+No![AN]
+Look at me, okay?[4][4][N]
+We'll worm our way out of this, somehow.[AN]
+I'll talk to someone.[4][4] I'm a good talker.[4][4][N]
+Look at my pretty face.[A]
+
+[mr][oe]
+...I miss Mom and Dad.[A]
+
+[ml][ce]
+I know.[A]
 [X]
 
 ## Ch7OutskirtsBrownBox

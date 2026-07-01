@@ -1119,43 +1119,52 @@ A premium weapon for opportune times.
 [mr][LoadHeroM][tmm]
 (These monsters aren't letting up.)[AN][ce]
 (Don't know why I can't shake this[N]
-dread...)[A]
+dread...)[AN][oe]
+(They'd better not come from...)[A]
 [X]
 
 ## Ch5LargeReinforcementText2
 [mr][LoadHeroM]
-What the hell?![4][4] Everyone,[N]
-get on that side![A]
+What the hell?![4][4] I was thinking[N]
+about...![AN]
+Everyone, get on that side![A]
 [X]
 
 ## Ch5LargeReinforcement2Text1
 [mr][LoadHeroM][tmm]
 (This is bad...[4][4][ce] Damn,[N]
-I can't relax...!)[A]
+I can't relax...!)[AN]
+(Wait, no! What if it's happening[N]
+again?[4][4] They're reading my mind!)[AN][ce]
+(Okay, this time, I'll try worrying[N]
+real hard about...)[A][oe]
 [X]
 
 ## Ch5LargeReinforcement2Text2
 [mr][LoadHeroM]
-Again?![4][4] C'mon, Eagle, we[N]
-need those reinforcements![A]
+[mmr]
+What?![4][4] No way![N][ce]
+You gotta be screwing with me![AN][oe]
+C'mon, Eagle, we need those[N]
+reinforcements![A]
 [X]
 
 ## Ch5Left
-The left side worries me.
+...the left side.
 [X]
 
 ## Ch5LeftDesc
 [X]
 
 ## Ch5Middle
-The middle worries me.
+...the middle.
 [X]
 
 ## Ch5MiddleDesc
 [X]
 
 ## Ch5Right
-The right side worries me.
+...the right side.
 [X]
 
 ## Ch5RightDesc

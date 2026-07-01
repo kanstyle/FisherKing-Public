@@ -91,8 +91,8 @@ problem for you![4] Heeheehee.[A][X]
 ## ZeroInMonster
 
 [mr][LoadBaby][ts]
-[mr]Time for Lowland beasts[N]
-to Lowland cease![A][X]
+[mr]Fangs and claws?[N]
+I'll give you pause![A][X]
 
 ## ZeroInBadItem
 

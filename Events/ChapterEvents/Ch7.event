@@ -148,7 +148,7 @@ CaptainSquad2:
 CaptainSquad3:
 	UNIT Recruiter Hero 0x40 Level(3,Enemy,False)     [3,1] 0b 0x0 0x0 0x0 [Quickblade] AttackInRangeAI //turns to chargeAI later
 	UNIT 0x81 Mercenary 0x40 Level(10,Enemy,True)     [2,2] 0b 0x0 0x0 0x0 [Quickblade] AttackInRangeAI
-	UNIT 0x81 Mercenary 0x40 Level(10,Enemy,True)     [4,2] 0b 0x0 0x0 0x0 [KillerAxe] AttackInRangeAI
+	UNIT 0x81 Fighter 0x40 Level(10,Enemy,True)     [4,2] 0b 0x0 0x0 0x0 [KillerAxe] AttackInRangeAI
 	UNIT 0x81 Shaman 0x40 Level(10,Enemy,True)     [3,0] 0b 0x0 0x0 0x0 [Pain] AttackInRangeAI
 	UNIT
 	
@@ -626,7 +626,7 @@ ALIGN 4
 Ch7Vendor:
 	SHORT Fire
 	SHORT Thunder
-	SHORT Light
+	SHORT Secula
 	SHORT Pain
 	SHORT Exploitation
 	SHORT Heal

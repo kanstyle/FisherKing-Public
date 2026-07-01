@@ -1262,3 +1262,26 @@ Cyclonic Lance
 ## CyclonicLanceDesc
 Eff. [flier]. Uses Str/2.
 [X]
+
+## BurningSteelName ^
+Burning Steel
+[X]
+
+## BurningSteelDesc ^
+Str vs. Res in melee, Mag vs. Res at range.
+[X]
+
+## WindSwordName ^
+Howling Sabre
+[X]
+
+## WindSwordDesc ^
+Str vs. Res in melee, Mag vs. Res at range.
+[X]
+
+## SeculaName ^
+Secula
+[X]
+
+## SeculaDesc
+[X]

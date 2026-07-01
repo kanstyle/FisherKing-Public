@@ -89,7 +89,7 @@ u8 VisitCommandUsability(const struct MenuItemDef* def, int number) {
         return MENU_NOTSHOWN;
     }
 	
-	if (gActiveUnit->pClassData->number == 0x77) {
+	if (gActiveUnit->pClassData->number == 0x77) { //sigil
         return MENU_NOTSHOWN;
     }
 
@@ -116,4 +116,26 @@ u8 VisitCommandUsability(const struct MenuItemDef* def, int number) {
     }
 
     return MENU_NOTSHOWN;
+}
+
+u8 TalkCommandUsability(const struct MenuItemDef* def, int number) {
+
+    if (gActiveUnit->state & US_HAS_MOVED) {
+        return MENU_NOTSHOWN;
+    }
+	
+	if (gActiveUnit->pClassData->number == 0x77) { //sigil
+        return MENU_NOTSHOWN;
+    }
+
+    MakeTalkTargetList(gActiveUnit);
+    if (GetSelectTargetCount() == 0) {
+        return MENU_NOTSHOWN;
+    }
+
+    if (gActiveUnit->statusIndex == UNIT_STATUS_SILENCED) {
+        return MENU_DISABLED;
+    }
+
+    return MENU_ENABLED;
 }

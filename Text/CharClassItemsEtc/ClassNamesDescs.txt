@@ -15,7 +15,7 @@ gender-changing magic works, nor its[N]
 origins (not even Hero).[X]
 
 ## LowVoiceName
-Low-Voice[X]
+Pillowbound[X]
 
 ## LowVoiceDesc
 Born legless, Pillow gets around via[N]
@@ -54,7 +54,8 @@ who ride stolen pegasi.[X]
 Recruit[X]
 
 ## BunnyRecruitDesc
-Placeholder.[X]
+A veteran soldier in the body[N]
+of a young footwoman.[X]
 
 ## SigilClassName
 Sigil[X]
@@ -73,19 +74,23 @@ Placeholder.[X]
 Prince[X]
 
 ## PeerClassDesc
-Placeholder.[X]
+The nobles of the Highlands[N]
+are hardly respected abroad.[X]
 
 ## MageGeneralClassName ^
 Mage-General[X]
 
 ## MageGeneralClassDesc
-Placeholder.[X]
+A high mage raised from birth[N]
+to exceed all others.[X]
 
 ## VeteranClassName
 Veteran[X]
 
 ## VeteranClassDesc
-Placeholder.[X]
+I didn't think myself sentimental,[N]
+but ever found excuses to remain[N]
+in my dingy armor.[X]
 
 ## CarriageClassName
 Carriage[X]
@@ -97,67 +102,77 @@ Placeholder.[X]
 Axe Cavalier[X]
 
 ## AxeCavClassDesc
-Placeholder.[X]
+An axe-wielder on horseback.[X]
 
 ## JabberwockClassName
 Jabberwock[X]
 
 ## JabberwockClassDesc
-Placeholder.[X]
+Some fell titan of slime[N]
+and filth. Spawns other[N]
+creatures from the depths.[X]
 
 ## LowMageClassName
 Low Mage[X]
 
 ## LowMageClassDesc
-Placeholder.[X]
+A Highland invention even[N]
+the empires respect. Manifests[N]
+their own fears to crush foes.[X]
 
 ## HighMageClassName
 High Mage[X]
 
 ## HighMageClassDesc
-Placeholder.[X]
+A wielder of conventional high[N]
+magic learned through study.[X]
 
 ## HighSageClassName
 High Sage[X]
 
 ## HighSageClassDesc
-Placeholder.[X]
+An elite scholar of high[N]
+magic.[X]
 
 ## MonolithClassName
 Monolith[X]
 
 ## MonolithClassDesc
-Placeholder.[X]
+One made to endure the greatest[N]
+pain so that it may inflict the[N]
+same upon the enemy.[X]
 
 ## LanceCavClassName ^
 Lance Cavalier[X]
 
 ## LanceCavClassDesc
-Placeholder.[X]
+A lance-wielder on horseback.[X]
 
 ## SwordCavClassName ^
 Sword Cavalier[X]
 
 ## SwordCavClassDesc
-Placeholder.[X]
+A sword-wielder on horseback.[X]
 
 ## BowCavClassName ^
 Bow Cavalier[X]
 
 ## BowCavClassDesc
-Placeholder.[X]
+A bow-wielder on horseback.[X]
 
 ## LancePalClassName ^
 Lance Paladin[X]
 
 ## LancePalClassDesc
-Placeholder.[X]
+An elite lance-wielder on[N]
+horseback.[X]
 
 ## SwordPalClassName ^
 Sword Paladin[X]
 
 ## SwordPalClassDesc
-Placeholder.[X]
+An elite sword-wielder on[N]
+horseback.[X]
 
 ## BowPalClassName ^
 Bow Paladin[X]

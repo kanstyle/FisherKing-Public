@@ -16,6 +16,7 @@
 #define Malkhut_index 0x38
 #define Bolganone_index 0x4B
 #define BombRanged_index 0x4C
+#define Wind_index 0x4D
 
 #include "CSA System FE8/Master Spell Animation Installer.event"
 
@@ -37,6 +38,13 @@
 #include "Event/AraiGale.event"
 #include "Event/Bolganone.event"
 #include "Event/BombRanged/BombRanged.event"
+
+// csa2bin-generated animation: provides WindFrameData / WindOAMObjRL / ... / WindOAMBgLR.
+// Register it with the CSA system's own macros (from the Master installer above),
+// the same way CSA_Creator's exported spells do.
+#include "Event/Wind/Wind.event"
+//setCustomSpell_nodim(Wind_index)
+setCSATable(Wind_index, WindFrameData, WindOAMObjRL, WindOAMObjLR, WindOAMBgRL, WindOAMBgLR)
 
 
 
@@ -60,5 +68,3 @@ Spell Mirror - Mikey Seregon
 Malkhut - Arch
 Tornado - Arch
 */
-
-

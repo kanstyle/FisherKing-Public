@@ -1,5 +1,6 @@
 #include "gbafe.h"
 #include "ZeroIn.h"
+#include "../SupportRegistry.h"
  
  // skill sys 
 extern int SkillTester(struct Unit* unit, int id); 
@@ -34,7 +35,7 @@ extern u8* AttackTypeByte_Link;
 int ZeroInUsability(const struct MenuItemDef * def, int number) {
 	//true if can attack, has skill, and support 0x5 is empty
 	if (!SkillTester(gActiveUnit, ZeroInID_Link)) return MENU_NOTSHOWN;
-	if (gActiveUnit->supports[5] != 0) return MENU_NOTSHOWN;
+	if ((gActiveUnit->supports[5] & SS5_ZEROIN_WEAPON_MASK) != 0) return MENU_NOTSHOWN;
 	return AttackCommandUsability(def, number);
 }
 
@@ -82,7 +83,7 @@ void ZeroInPostBattleEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB
 			CallEvent(&BadItemQuoteEvent, 1); 
 			return;
 		}
-		bunitA->unit.supports[5] = weaponTypeAdj;
+		bunitA->unit.supports[5] = (bunitA->unit.supports[5] & ~SS5_ZEROIN_WEAPON_MASK) | (weaponTypeAdj & SS5_ZEROIN_WEAPON_MASK);
 		//gEventSlots[8] = 0;
 	}
 }
@@ -93,7 +94,7 @@ void ZeroInClearEffect(struct Proc* proc) {
 		struct Unit* unit = GetUnit(i);
 		if (!unit || !unit->pCharacterData) continue;
 		if (SkillTester(unit, ZeroInID_Link))
-			unit->supports[5] = 0;
+			unit->supports[5] &= ~SS5_ZEROIN_WEAPON_MASK;
 	}
 }
 
@@ -101,7 +102,7 @@ void ZeroInPreBattleEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB)
 	int weaponTypeAdj; //increase weapon type values by 1 so that having 0 in support[5] doesn't give you WTA vs swords
 	if (SkillTester(bunitA, ZeroInID_Link) != 0) {
 		weaponTypeAdj = bunitB->weaponType + 0x1;
-		if (weaponTypeAdj == bunitA->unit.supports[5]) {
+		if ((weaponTypeAdj == (bunitA->unit.supports[5] & SS5_ZEROIN_WEAPON_MASK)) || (*AttackTypeByte_Link == ZeroInAttackType_Link)) {
 			bunitA->wTriangleHitBonus = 20;
 			bunitA->wTriangleDmgBonus = 2;
 			bunitB->wTriangleHitBonus = -20;
@@ -110,7 +111,7 @@ void ZeroInPreBattleEffect(struct BattleUnit* bunitA, struct BattleUnit* bunitB)
 	}
 	if (SkillTester(bunitB, ZeroInID_Link) != 0) {
 		weaponTypeAdj = bunitA->weaponType + 0x1;
-		if (weaponTypeAdj == bunitB->unit.supports[5]) {
+		if ((weaponTypeAdj == (bunitA->unit.supports[5] & SS5_ZEROIN_WEAPON_MASK)) || (*AttackTypeByte_Link == ZeroInAttackType_Link)) {
 			bunitB->wTriangleHitBonus = 20;
 			bunitB->wTriangleDmgBonus = 2;
 			bunitA->wTriangleHitBonus = -20;

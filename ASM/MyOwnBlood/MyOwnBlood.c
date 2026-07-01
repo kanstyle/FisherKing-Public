@@ -194,7 +194,7 @@ void DoGaleforce(struct Proc* proc) {
 }
 
 void MyOwnBloodEffect(struct Proc* proc) {
-	if (gActiveUnit->index != gBattleActor.unit.index) { // gBattleHitArray is stale if we weren't the attacker in the last combat
+	if (gActionData.unitActionType != UNIT_ACTION_COMBAT) { // gBattleHitArray is stale if the active unit's last action wasn't combat
 		return;
 	}
 	if (SkillTester(gActiveUnit, MyOwnBloodID_Link) == 0) {

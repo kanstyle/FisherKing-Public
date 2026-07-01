@@ -1,0 +1,16 @@
+#include "Piercing.lyn.event"
+
+ALIGN 4
+PiercingID_Link:
+WORD PiercingID
+
+ALIGN 4
+JuggernautID_Link:
+WORD JuggernautID
+
+// Weapons listed here grant the Piercing effect without the skill
+ALIGN 4
+PiercingWeaponList:
+BYTE Razorbeak
+BYTE Light
+BYTE 0

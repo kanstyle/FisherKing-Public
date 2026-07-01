@@ -92,7 +92,7 @@ UnitsCh2:
 	UNIT
 	
 UnitsCh3:
-	UNIT Baby Mage_F 0x40 Level(5,Ally,False)     [18,19] 0b 0x0 0x0 0x0 [Lightning,Fire] DoNothingAI
+	UNIT Baby Mage_F 0x40 Level(5,Ally,False)     [18,19] 0b 0x0 0x0 0x0 [Lightning,Secula] DoNothingAI
 	UNIT Bunny BunnyRecruit 0x40 Level(5,Ally,False)     [2,18] 0b 0x0 0x0 0x0 [Axereaver,Javelin,Swordbreaker] DoNothingAI
 	UNIT
 	
@@ -401,13 +401,18 @@ TutorialEvent:
 
 ALIGN 4
 Ch0BunnyPrinceTalk:
+	PreventSkippingAllowB
 	Text(Ch0BunnyTalk)
+	StopSkipping
+	PreventSkipping
 	CallMenu(Ch0BunnyMenu)
 	BEQ 0 0xC 0x0
 		SetFlag(BelieveInDemonsFlag)
+		AllowSkipping
 		Text(Ch0BunnyTalkDemons)
 		GOTO 0x1
 	LABEL 0x0
+	AllowSkipping
 	Text(Ch0BunnyTalkNoDemons)
 	LABEL 0x1
 	CenterTextbox(Ch0ChoiceTutorial)

@@ -131,10 +131,10 @@ EnemyUnits:
 	
 	//by south treasure room top door
 	UNIT Beast BowBone 0x40 Level(6,Enemy,True)     [13,12] 0b 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
-	UNIT Lowlander Myrmidon 0x40 Level(6,Enemy,True)     [11,12] 0b 0x0 0x0 0x0 [LightBrand] BossAI
+	UNIT Lowlander Myrmidon 0x40 Level(6,Enemy,True)     [11,12] 0b 0x0 0x0 0x0 [BurningSteel] BossAI
 	
 	//south treasure room
-	UNIT Lowlander Myrmidon 0x40 Level(6,Enemy,True)     [10,15] 0b 0x0 0x0 0x0 [LightBrand] AttackInRangeAI
+	UNIT Lowlander Myrmidon 0x40 Level(6,Enemy,True)     [10,15] 0b 0x0 0x0 0x0 [BurningSteel] AttackInRangeAI
 	
 	//by south treasure room bottom door
 	UNIT Lowlander Archer 0x40 Level(6,Enemy,True)     [14,15] 0b 0x0 0x0 0x0 [SilverBow] BossAI
@@ -490,8 +490,10 @@ BeginningScene:
 	Text(Ch4PrinceRoomTalk)
 	CenterTextbox(Ch4PrinceRoomTalkText)
 	Text(Ch4PrinceRoomTalk2)
-	CenterTextbox(Ch4PrinceRoomTalkText2)
+	CenterTextbox(Ch4PrinceRoomTalkText4)
 	Text(Ch4PrinceRoomTalk3)
+	CenterTextbox(Ch4PrinceRoomTalkText2)
+	Text(Ch4PrinceRoomTalk6)
 	CenterTextbox(Ch4PrinceRoomTalkText3)
 	MOVE 5 0x80 [6,6]
 	ENUN
@@ -501,6 +503,9 @@ BeginningScene:
 	STAL 90
 	CGText(Ch4HeroStare1)
 	CGText(Ch4HeroStare2)
+	CGText(Ch4HeroStare3)
+	CGText(Ch4HeroStare4)
+	CGText(Ch4HeroStare5)
 	FADI 8
 	CLEAN
 	FADU 8

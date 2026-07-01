@@ -2,6 +2,7 @@ EventPointerTable(Ch6EventsID, PointerList)
 
 #define Ch6MuscleBQFlag 0x20
 #define Ch6VillageFlag 0x7
+#define Ch6LionRecruitFlag 0x8
 
 PointerList:
 	POIN TurnBasedEvents
@@ -335,7 +336,10 @@ BeginningScene:
 	
 	FADI 16
 	DoAllThree
-	LOAD1 0x1 LionUnits
+	FlagNotSet(Ch6LionRecruitFlag, 0x60)
+		LOAD1 0x1 LionUnits
+	LABEL 0x60
+	SetFlag(Ch6LionRecruitFlag)
 	LOAD1 0x1 EnemyUnits
 	
 	AddTrap(GreenSigilTrapID,18,10)
@@ -354,6 +358,9 @@ TeacherReinforcementsEvent:
 	CenterTextbox(TeacherArrivesNarration)
 	Text(TeacherArrivesText2)
 	CenterTextbox(TeacherArrivesNarration2)
+	
+	UNCR(Gale,NotDeployed)
+	UNCR(Storm,NotDeployed)
 	
 	NoFade
 	ENDA

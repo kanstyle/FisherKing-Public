@@ -584,6 +584,11 @@ Gotta be way more than 1,000.[A]
 [tmm]...[tmm][A]
 [X]
 
+## Ch3ThiefSoldPowder
+I decided to find a different[N]
+buyer who'd actually pay.[A]
+[X]
+
 ## Ch3ThiefNoDealChoice
 Sell the blasting powder elsewhere.[X]
 
@@ -1844,20 +1849,20 @@ at all, and they're a disease of the mind![AN]
 And that's just the top three responses.[N]
 Isn't that interesting?[A]
 
-[ml][ts]
+[mr][ts]
 Who cares about spirits?![N]
 They're not real.[AN]
 The local simpletons and low mages[N]
 use them to explain their madness.[AN]
 
-[mr][ts]
+[fl][ts]
 Ah, another point for [oq]not real"...[A][css]
 
-[ml][ts][mml]
+[mr][ts][mmr]
 Stop it! You're here to learn to fight[N]
 low mages, and I'll have you do so![A]
 
-[mr]
+[fl]
 I'm already good at that![4][4] And that's why[N]
 I hereby declare myself graduated.[AN]
 Goodbye![A]

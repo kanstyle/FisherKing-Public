@@ -2,7 +2,7 @@
  Zero In[X]
  
 ## UM_ZeroInDesc
-Gain WTA against enemy
+Gain WTA against enemy[N]
 weapon type for rest of map.[X]
  
 ## UM_SweepDesc

@@ -1,5 +1,6 @@
 #include "gbafe.h"
 #include "ButterflyItem.h"
+#include "../SupportRegistry.h"
  
  // skill sys 
 extern u16* ButterflyItemEvent;
@@ -54,7 +55,7 @@ void ButterflyItemEffect(ProcPtr proc) {
 	
 	CallEvent(&ButterflyItemEvent, 1);
 	gActiveUnit->state &= ~0x2; //unset unselectable
-	gActiveUnit->supports[5] = 0x1; //set butterfly galeforce flag
+	gActiveUnit->supports[5] |= SS5_BUTTERFLY_GALEFORCE; //set butterfly galeforce flag
 	
 	BattleApplyItemEffect(proc);
     //BeginBattleAnimations();
@@ -72,12 +73,12 @@ s8 ButterflyItemUsability(struct Unit* unit)
 void ButterflyGaleforce(struct Proc* proc) {
 	//gEventSlots[8] = 0x222;
 	//CallEvent(&ButterflyTestEvent, 1);
-	if ((gActiveUnit->supports[5] == 0x1) && (gActiveUnit->state & 0x2) && (gActiveUnit->pCharacterData->number == 0x02)) { //if is teacher, support 6 is 1, and finished cantoing
+	if ((gActiveUnit->supports[5] & SS5_BUTTERFLY_GALEFORCE) && (gActiveUnit->state & 0x2) && (gActiveUnit->pCharacterData->number == 0x02)) { //if is teacher, support 6 is 1, and finished cantoing
 		//gEventSlots[8] = 0x333;
 		//CallEvent(&ButterflyTestEvent, 1);
 		gActiveUnit->state &= ~0x40; //unset has_moved
 		gActiveUnit->state &= ~0x2; //unset unselectable
-		gActiveUnit->supports[5] = 0; //unset butterfly galeforce flag
+		gActiveUnit->supports[5] &= ~SS5_BUTTERFLY_GALEFORCE; //unset butterfly galeforce flag
 		//CallEvent(&ButterflyTestEvent, 1);
 		PlaySoundEffect(0x127);
 	}
