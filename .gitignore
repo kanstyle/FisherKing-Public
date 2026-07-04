@@ -1,7 +1,3 @@
-# Git
-.gitignore
-.gitattributes
-.gitmodules
 
 # Windows image file caches
 Thumbs.db
@@ -38,7 +34,6 @@ $RECYCLE.BIN/
 *.ss8
 *.ss9
 *.sym
-/*.png
 !Tools/sym/*.sym
 *.elf
 docs/
