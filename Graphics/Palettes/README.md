@@ -1,3 +1,6 @@
+1. Paste palettes in my_palettes.txt
+2. Drag my_palettes.txt onto pal2EA.exe
+
 # Pal2EA
 
 ** Character palette compression tool for the Fire Emblem GBA games; to be used with Event Assembler **

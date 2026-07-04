@@ -45,8 +45,7 @@ Wide-Eyed: +50 Crit. After combat,[N]
 
 ## SD_AnvilDrop
 Anvil Drop: When unable to double-attack,[N]
-gain bonus Attack equal to 50% of[N]
-weapon Mt.[X]
+double weapon Mt.[X]
 
 ## SD_SteadySteady
 Steady, Steady...: When moving Move-2[N]

@@ -41,6 +41,9 @@ CHECK_COORDS Pillow //get pillow coords
 SADD 0xB 0xC 0 //copy pillow coords to slot B
 SET_CURSOR_SB //put cursor on pillow
 EVBIT_MODIFY 0
+
+SVAL 1 0xBD
+ASMC RepairSingleItem|1
 NoFade 
 ENDA 
 

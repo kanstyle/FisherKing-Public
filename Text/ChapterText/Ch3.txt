@@ -135,7 +135,7 @@ church, anyway?[A]
 [mr]
 Nothin'.[A]
 
-[ml]
+[ml][ts]
 So, you're just doing it for fun?[N]
 Gonna be an actor?[A]
 
@@ -149,10 +149,10 @@ I could give you some sneaking tips.[AN]
 You just gotta call me [oq]mistress",[N]
 and, like, give me a back rub first.[A]
 
-[mr][ts]
-Pfft.[A][ts]
+[mr]
+Pfft.[A]
 
-[ml][mml][ts]
+[ml][mml]
 Got you![4][4] You laughed![A]
 
 [mr]

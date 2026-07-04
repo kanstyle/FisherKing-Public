@@ -8,4 +8,5 @@ WORD 200
 ALIGN 4
 PerChapterItemsList:
 BYTE Breeze
+BYTE Loneliness
 BYTE 0 // terminator

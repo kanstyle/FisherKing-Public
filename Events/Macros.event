@@ -177,6 +177,23 @@
 #define AutoLevel(id, targetLevel) "ENUT 0xEF; SVAL s1 (id); SVAL s2 (targetLevel); ASMC AutoLevelASMC|1; ENUF 0xEF"
 #define AddAutoLevel(id, levelsToAdd) "ENUT 0xEF; SVAL s1 (id); SVAL s2 (levelsToAdd); ASMC AddAutoLevelASMC|1; ENUF 0xEF"
 
+#define SetUnitStatus(UnitId, StatusDefinition, Value) "SVAL 4 0x03; SVAL 1 UnitId; SVAL 3 StatusDefinition; SVAL 5 Value; ASMC SetUnitStatus"
+#define AddUnitStatus(UnitId, StatusDefinition, Value) "GetUnitStatus(UnitId, StatusDefinition); \
+SVAL 5 Value; \
+SADD 5 0xC 5; \
+SVAL 4 0x03; \
+SVAL 1 UnitId; \
+SVAL 3 StatusDefinition; \
+ASMC SetUnitStatus"
+
+#define SubUnitStatus(UnitId, StatusDefinition, Value) "GetUnitStatus(UnitId, StatusDefinition); \
+SVAL 5 Value; \
+SSUB 5 0xC 5; \
+SVAL 4 0x03; \
+SVAL 1 UnitId; \
+SVAL 3 StatusDefinition; \
+ASMC SetUnitStatus"
+
 // Approximates and applies WEXP gain for all player units over a given number of map turns.
 // Weapons are used proportionally to their durability; uses are consumed (wt<10 costs 2/shot, else 1).
 #define WEXPCalc(Turns) "SVAL s1 (Turns); ASMC WEXPCalc|1"

@@ -177,13 +177,13 @@ void MakeTargetListForBreeze(struct Unit* unit) {
     int x = unit->xPos;
     int y = unit->yPos;
 	gSubjectUnit = unit;
-	gEventSlots[9] = 31;
+	//gEventSlots[9] = 31;
 	
 	InitTargets(x, y);
-	gEventSlots[9] = 32;
+	//gEventSlots[9] = 32;
 
     Item_TURange(unit, TryAddUnitToBreezeTargetList, BreezeID_Link); //IER
-	gEventSlots[9] = 33;
+	//gEventSlots[9] = 33;
     return;
 }
 
@@ -193,18 +193,18 @@ bool BreezeUsability(struct Unit* unit) {
 }
 
 void BreezeStaffTargeting(struct Unit* unit) {
-	gEventSlots[9] = 1;
+	//gEventSlots[9] = 1;
 
 	MakeTargetListForBreeze(unit);
-	gEventSlots[9] = 2;
+	//gEventSlots[9] = 2;
 	
 	BmMapFill(gBmMapRange, -1);
-	gEventSlots[9] = 3;
+	//gEventSlots[9] = 3;
 	
 	StartBottomHelpText(
 		StartTargetSelection(&BreezeStaffSelectInfo),
 		GetStringFromIndex(0x874)); //"Select a character to restore HP to"
-	gEventSlots[9] = 5;
+	//gEventSlots[9] = 5;
 }
 
 bool BreezeRepairCheck(struct Proc* proc) {
@@ -216,11 +216,11 @@ bool BreezeRepairCheck(struct Proc* proc) {
 			continue;
 		}
 		if (killsTarget(it)) { //if attacker kill
-			gEventSlots[8] = 0x4;
+			//gEventSlots[8] = 0x4;
 			return true;
 		}
     }
-	gEventSlots[8] = 0x1;
+	//gEventSlots[8] = 0x1;
 	return false;
 }
 
@@ -239,21 +239,21 @@ bool BreezeRepairCheck(struct Proc* proc) {
 }*/
 
 void BreezeRepair(struct Proc* proc) {
-	gEventSlots[2] = 1;
+	//gEventSlots[2] = 1;
     // Only proceed if the active unit is Gale
     if (gActiveUnit->pCharacterData->number != 0x10) {
         return;
     }
-    gEventSlots[3] = 1;
+    //gEventSlots[3] = 1;
     // Only proceed if Gale got a kill
     if (!BreezeRepairCheck(proc)) {
         return;
     }
-    gEventSlots[4] = 1;
+    //gEventSlots[4] = 1;
     // Refresh Breeze in all unit inventories
     int unitID = 1;
     int maxCount = 62;
-    gEventSlots[5] = 1;
+    //gEventSlots[5] = 1;
     while(unitID < maxCount) {
         struct Unit* curUnit = GetUnit(unitID);
         
@@ -266,7 +266,7 @@ void BreezeRepair(struct Proc* proc) {
         
         unitID++;
     }
-	gEventSlots[6] = 1;
+	//gEventSlots[6] = 1;
     
     // Refresh Breeze in convoy
     u16* convoy = GetConvoyItemArray();
@@ -276,7 +276,7 @@ void BreezeRepair(struct Proc* proc) {
         }
         convoy++;
     }
-	gEventSlots[7] = 1;
+	//gEventSlots[7] = 1;
 }
 
 void BreezeChapterRepair(struct Proc* proc) {
@@ -366,7 +366,7 @@ u8 BreezeStaffTargetChange(struct Proc* proc, struct TargetEntry* target) {
 }
 
 int BreezeStaffInitSelect(struct Proc* proc) {
-	gEventSlots[9] = 4;
+	//gEventSlots[9] = 4;
     StartUnitHpInfoWindow(proc);
 	return 1;
 }
@@ -392,4 +392,33 @@ void ExecBreezeStaff(struct Proc* proc) {
 	//perform the item effect & do battle anims
 	BattleApplyItemEffect(proc);
 	BeginBattleAnimations();
+}
+
+void RepairSingleItem(int item) {
+    int unitID = 1;
+    int maxCount = 62;
+    //gEventSlots[5] = 1;
+    while(unitID < maxCount) {
+        struct Unit* curUnit = GetUnit(unitID);
+        
+        for(int j = 0; j < GetUnitItemCount(curUnit); j++) {
+            u16 curItem = curUnit->items[j];
+            if(GetItemIndex(curItem) == item) { // If item is Breeze
+                curUnit->items[j] = MakeNewItem(item);
+            }
+        }
+        
+        unitID++;
+    }
+	//gEventSlots[6] = 1;
+    
+    // Refresh Breeze in convoy
+    u16* convoy = GetConvoyItemArray();
+    for (int i = 0; (i < 150) || ((i < 200) && (*convoy)); i++) {
+        if (GetItemIndex(*convoy) == item) {
+            *convoy = MakeNewItem(item);
+        }
+        convoy++;
+    }
+	//gEventSlots[7] = 1;
 }

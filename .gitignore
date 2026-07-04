@@ -1,3 +1,8 @@
+# Git
+.gitignore
+.gitattributes
+.gitmodules
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -81,3 +86,9 @@ fireemblem8u-master/
 
 FEBuilderGBA-master/
 patch2/
+
+# Tools
+sprite_sheet.py
+
+# Misc
+saves/

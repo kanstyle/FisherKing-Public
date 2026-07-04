@@ -116,7 +116,7 @@ Low magic overpowers high magic.[X]
 Deception[X]
 
 
-## DeceptionDesc ^
+## DeceptionDesc 
 
 Ignores Res.[X]
 
@@ -126,7 +126,7 @@ Ignores Res.[X]
 Exploitation[X]
 
 
-## ExploitationDesc ^
+## ExploitationDesc 
 
 Drains HP into caster.[X]
 
@@ -141,7 +141,7 @@ Death[X]
 Unfamiliarity[X]
 
 
-## UnfamiliarityDesc ^
+## UnfamiliarityDesc 
 
 Long-range.[X]
 
@@ -161,9 +161,10 @@ Torture[X]
 Loneliness[X]
 
 
-## LonelinessDesc ^
+## LonelinessDesc
 
-[.][lock] Pillow. Long-range.[X]
+[.][lock] Pillow. Repairs whenever Pillow's[N]
+sigil calls her.[X]
 
 
 ## HerosFlairName ^
@@ -184,7 +185,7 @@ Hunter's Bow[X]
 
 "Moonshine"[X]
 
-## MoonshineDesc ^
+## MoonshineDesc 
 
 Don't even think about it.[X]
 

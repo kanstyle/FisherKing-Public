@@ -660,7 +660,7 @@ Wh-what do we do?[AN]
 We gotta run...[N][4][4][4][ce]
 We gotta, uh...[A][oe][clear]
 
-[fl]
+[fr][LoadDragon]
 None of you lay a hand on her![N]
 We're leaving![4][4] Now![AN]
 Get in our way and you die![A]

@@ -62,8 +62,9 @@ adding yourself!
 - DrGreen3339: "4" portrait
 - Leo Link: Baron animation
 - Warpath: Baron map sprite
-- Skidmarc25: Water magic animations
 
 # Music
 
 - Sme: At the Bottom of Night
+- A lot of others
+(WIP)

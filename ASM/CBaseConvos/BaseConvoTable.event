@@ -41,14 +41,14 @@
 	Chapter(Ch3)
 		Entry
 			name(Ch3BaseHunterName)
-			music(Town_Day)
-			bg(0x18)
+			music(WildFieldsID)
+			bg(Town_Day)
 			text(Ch3BaseHunter)
 			eventID(0x25)
 		Entry
 			name(Ch3BasePigeonBrotherName)
-			music(Town_Day)
-			bg(0x18)
+			music(WildFieldsID)
+			bg(Town_Day)
 			text(Ch3BasePigeonBrother)
 			eventID(0x24)
 	Chapter(Ch5)

@@ -67,6 +67,7 @@ int CallPillowAction(struct Proc* proc) {
 		gEventSlots[7] = 1;
 	}
 	
+	RepairSingleItem(0xBD);
 	CallEvent(&CallPillowEvent, 1);
 	
 	if (NextRN_100() < 10 && CheckFlag(NoSkillQuotesFlag_Link) == 0) {

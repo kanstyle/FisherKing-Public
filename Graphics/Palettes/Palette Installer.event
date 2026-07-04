@@ -30,3 +30,6 @@ BrotherPriestPal:
 LionMagePal:
 	#incbin "./_palettes/LionMagePal.lzpal" 
 
+JabberwockPal:
+	#incbin "./_palettes/JabberwockPal.lzpal" 
+

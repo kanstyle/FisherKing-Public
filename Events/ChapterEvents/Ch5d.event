@@ -359,9 +359,10 @@ EndingScene:
 	ENDA
 
 TurnHealEvent:
-	SVAL 0x1 JabberwockBoss
-	SVAL 0x6 0xA // 10 hp
-	ASMC ASMC_HealLikeVulnerary|1
+	Highlight(JabberwockBoss)
+	AddUnitStatus(JabberwockBoss,CurrentHP,10)
+	SFX(0x111) //heal SFX
+	
 	SET_ACTIVE 0x0
 	NoFade
 	ENDA

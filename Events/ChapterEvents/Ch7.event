@@ -274,6 +274,10 @@ CaptainSquad3Charge:
 	ENDA
 
 BeginningScene: 
+	FlagNotSet(PigeonLeftFlag,0x0)
+		SetFlag(Ch7PigeonTalkFlag)
+	LABEL 0x0
+	
 	MUSC DarkBattleID
 	CALL StartEventRoutine
 	SetBackground(Forest)
@@ -462,7 +466,7 @@ WiseTalk:
 	LABEL 0x0
 	Text(Ch7WiseTalkText)
 	LABEL 0x1
-	GiveItem(Loneliness,0xFFFF)
+	GiveItem(Exploitation,0xFFFF)
 	NoFade
 	ENDA
 	
@@ -628,7 +632,7 @@ Ch7Vendor:
 	SHORT Thunder
 	SHORT Secula
 	SHORT Pain
-	SHORT Exploitation
+	SHORT Deception
 	SHORT Heal
 	SHORT Mend
 	SHORT Restore

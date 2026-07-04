@@ -39,3 +39,7 @@
 // LionMagePal
 	setPalette(0x74,LionMagePal)
 	setCBSP(0x74,Lion,0x1,HighMage)
+
+// JabberwockPal
+	setPalette(0x75,JabberwockPal)
+	setCBSP(0x75,JabberwockBoss,0x1,Jabberwock)
