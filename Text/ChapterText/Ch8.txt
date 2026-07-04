@@ -1,2 +1,16 @@
 ## Ch8Title
 Ch. 8: Hero and Prince, pt. II[X]
+
+## Ch8OpeningNarration
+"Are you crying?"[AN]
+"..."[AN]
+"Hero."[AN]
+"S-so what?[4][4] Dragon's my best friend.[N]
+She's l-like my sister.[4][4] She...[4][4][N]
+she trusts me.[4][4] I-I'm supposed to[N]
+look out for her."[AN]
+"Pull it together before we reach the[N]
+low mage district.[4][4] They won't trade[N]
+favors with someone who looks weak."[AN]
+"Sh-shut up, man.[4][4] I don't care."[A]
+[X]

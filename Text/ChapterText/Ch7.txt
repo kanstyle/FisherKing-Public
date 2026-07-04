@@ -11,6 +11,161 @@ Defeat the captains[N]
 and protect militia.
 [X]
 
+## Ch7HeroLionBaseName
+Hero/Lion
+[X]
+
+## Ch7HeroLionBase
+[mr][LoadHeroM]
+
+[mr][ce][tmm]Now or never. Here goes...)[A][tmm][css]
+[ml][LoadLion]
+[mr][oe]
+Hey.[4] Lion, right?[A]
+
+[ml]
+Huh?[4] Oh.[4] Mm-hmm.[A]
+
+[mr]
+I, uh...[4][4] I just wanted to say[N]
+I'm sorry you got mixed up in this.[AN]
+It's my fault.[A]
+
+[ml]
+Yeah.[4][4] Uh...[4][4] it's okay.[A]
+
+[mr]
+Uh, no, I mean, I'm actually sorry.[4][4][N]
+You don't have to say it's okay.[AN]
+
+[ml]
+It's actually--[A]
+
+[mr]
+Like, uh...[4][4] if you wanna hit me, or--[A]
+
+[ml]
+What?![4][4] I'm not gonna hit you![A]
+
+[mr]
+[ts]Okay![4][4] Good![4][4] Thanks![4][4][N]
+I mean, I'm glad![AN]
+[tmm](Wow, I'm awful at this![4][4][N]
+Pleeeeeeease kill me!)[tmm][AN]
+[ts]Anyway, I'm Hero.[4][4] If you need[N]
+anything, just let me know.[AN]
+You don't even have to fight, if[N]
+you want. We'll cover for you.[A]
+
+[ml]
+You guys fought the monsters on the[N]
+night of the invasion, right?[AN]
+Swan told me all about you.[A]
+
+[mr]
+Huh? Oh, yeah, absolutely.[N]
+We really earned our keep.[AN]
+Swan did, too.[A]
+
+[ml][ce]
+...I wish I could've been out there.[A]
+
+[mr]
+Was, uh... was your family okay?[A]
+
+[ml][oe]
+Mm-hmm.[4][4] We were really lucky.[AN]
+My parents used to be soldiers,[N]
+so they knew what to do.[AN]
+I just mean...[4][4] it sounds stupid,[N]
+but I wanna be a hero, too.[A]
+
+[mr]
+Oh, no no no, that's not stupid![N]
+That's awesome![4][4] Good for you![A]
+
+[ml]
+I wanted to be a guard, like Swan.[4][4][N]
+[ce]Or, well, I used to.[A][oe]
+
+[mr][ce]
+Yeah, that might be a little tough now...[A][oe]
+
+[ml]
+The guards didn't even listen to us.[AN]
+They just attacked us right away;[N][4][4]
+they didn't even know what happened...[A]
+
+[mr]
+Yeah...[4][4] I mean, that's how it goes[N]
+when you're a guard, I guess.[A]
+
+[ml]
+You're a mercenary, right?[N]
+Do you ever get to help people?[A]
+
+[mr][ts]
+Of course![4] We kept people safe[N]
+from the invasion, right?[A]
+
+[ml][ts]
+Yeah, but you got paid for that,[N]
+right?[A]
+
+[mr]
+Yeah, but...[4] you know.[N]
+It still counts![AN]
+That's the best you're gonna[N]
+do, most of the time.[A]
+
+[ml]
+Really?[A]
+
+[mr]
+Well, yeah.[A]
+
+[ml]
+Oh.[A]
+
+[mr][ts]
+I mean, it could be worse, right?[AN]
+I started calling myself [oq]Hero"[N]
+just so I could impress a girl.[AN]
+[tmm](I think I did. Pretty sure.)[tmm][A]
+
+[ml][mml][ts]
+Wait, no![4][4] That's not why I wanna[N]
+do it![4][4] I-I just--[A]
+
+[mr]
+To be fair, I did it for Princess[N]
+Eagle.[4][4] And I actually kinda had a shot.[AN]
+Can't really blame me.[A][css]
+
+[ml][mml]
+WHAT?![4][4] Princess Eagle?![AN]
+You're lying![4][4] You gotta be lying![A]
+
+[mr][ts]
+No, I swear![ce][4][4] I went to the Royal[N]
+Military Aca--[A]
+
+[ml][ts]
+Wouldn't you have to be super[N]
+good-looking?[4][4] You're all skinny, like me![A]
+
+[mr][mmr][oe]
+Whoa, hold on![4][4] You can't just SAY[N]
+that to a guy![4][4] C'mon![A]
+
+[ml]
+Sorry.[4][4] You said I could hit[N]
+you, though.[A]
+
+[mr][ce]
+I guess...[A]
+[X]
+
 ## Ch7BaseStormGaleBabyName
 Storm/Gale/Baby
 [X]
@@ -338,7 +493,7 @@ What do you want?[A]
 
 [mr]
 By order of the Lord Regent Gryphon,[4][4][N]
-combat-combat capable low mages must--[A]
+combat-capable low mages must--[A]
 
 [ml]
 Mm.[4][4] I don't care about the Lord Regent.[AN]

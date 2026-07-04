@@ -127,7 +127,7 @@ INLINE ClassLevelUpSkillTable,Skill Pointer
 0x7D Elder Bael 2,0x0
 0x7E Journeyman (2),0x0
 Noble,0x0
-Sky-Rat,ThiefSkillList
+Sky-Rat,ThiefSkillList|IsPointer
 None,0x0
 -,0x0
 -,0x0

@@ -139,3 +139,78 @@ u8 TalkCommandUsability(const struct MenuItemDef* def, int number) {
 
     return MENU_ENABLED;
 }
+
+u8 ArmoryCommandUsability(const struct MenuItemDef* def, int number) {
+
+    if (gActiveUnit->pClassData->number == CLASS_PHANTOM) {
+        return MENU_NOTSHOWN;
+    }
+	
+	if (gActiveUnit->pClassData->number == 0x77) { //sigil
+        return MENU_NOTSHOWN;
+    }
+
+    if (gActiveUnit->state & US_HAS_MOVED) {
+        return MENU_NOTSHOWN;
+    }
+
+    return GetAvailableTileEventCommand(gActiveUnit->xPos, gActiveUnit->yPos) == TILE_COMMAND_ARMORY
+        ? MENU_ENABLED : MENU_NOTSHOWN;
+}
+
+u8 VendorCommandUsability(const struct MenuItemDef* def, int number) {
+
+    if (gActiveUnit->pClassData->number == CLASS_PHANTOM) {
+        return MENU_NOTSHOWN;
+    }
+	
+	if (gActiveUnit->pClassData->number == 0x77) { //sigil
+        return MENU_NOTSHOWN;
+    }
+
+    if (gActiveUnit->state & US_HAS_MOVED) {
+        return MENU_NOTSHOWN;
+    }
+
+    return GetAvailableTileEventCommand(gActiveUnit->xPos, gActiveUnit->yPos) == TILE_COMMAND_VENDOR
+        ? MENU_ENABLED : MENU_NOTSHOWN;
+}
+
+u8 SecretShopCommandUsability(const struct MenuItemDef* def, int number) {
+    if (gActiveUnit->pClassData->number == CLASS_PHANTOM) {
+        return MENU_NOTSHOWN;
+    }
+	
+	if (gActiveUnit->pClassData->number == 0x77) { //sigil
+        return MENU_NOTSHOWN;
+    }
+
+    if (gActiveUnit->state & US_HAS_MOVED) {
+        return MENU_NOTSHOWN;
+    }
+
+    return GetAvailableTileEventCommand(gActiveUnit->xPos, gActiveUnit->yPos) == TILE_COMMAND_SECRET
+        ? MENU_ENABLED : MENU_NOTSHOWN;
+}
+
+u8 ArenaCommandUsability(const struct MenuItemDef* def, int number) {
+
+    if (gActiveUnit->pClassData->number == CLASS_PHANTOM) {
+        return MENU_NOTSHOWN;
+    }
+	
+	if (gActiveUnit->pClassData->number == 0x77) { //sigil
+        return MENU_NOTSHOWN;
+    }
+
+    if (gActiveUnit->state & US_HAS_MOVED) {
+        return MENU_NOTSHOWN;
+    }
+
+    if (gBmMapTerrain[gActiveUnit->yPos][gActiveUnit->xPos] != TERRAIN_ARENA_08) {
+        return MENU_NOTSHOWN;
+    }
+
+    return ArenaIsUnitAllowed(gActiveUnit)
+        ? MENU_ENABLED : MENU_DISABLED;
+}

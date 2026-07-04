@@ -170,8 +170,15 @@ void UnitKill(struct Unit* unit) {
             unit->supportBits |= 0x1;
             return;
         }
-        // Exception unit on first death, or second death: kill permanently
-        unit->state |= (US_DEAD | US_HIDDEN);
+		if (IsUnitPetrifyException(unit->pCharacterData->number)) { //if you're a petrify-death exception
+			unit->state |= (US_DEAD | US_HIDDEN);
+			InitUnitsupports(unit);
+			return;
+		}
+		
+        // On second death: remove from map
+        unit->state |= (US_HIDDEN | US_NOT_DEPLOYED);
+		unit->statusIndex = 0;
         InitUnitsupports(unit);
         return;
     }

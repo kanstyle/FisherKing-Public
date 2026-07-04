@@ -1401,7 +1401,7 @@ Uh-huh.[A]
 
 [l][ce]
 Brother's still here, but...[N][4][4]
-It looks like Pigeon flew the coop.[AN]
+It looks like Pigeon flew the coop.[AN][oe]
 Teacher and I found an angry note[N]
 from her.[A]
 
@@ -1480,7 +1480,7 @@ Still, we could use a few more hands.[A]
 Oh...?[A]
 
 [l]
-That's your cue![4][4] Come on out![A]
+That's your cue![4][4] Come on out![A][css]
 
 [ffr][ts]
 [fl][clear]

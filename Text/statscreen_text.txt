@@ -138,5 +138,14 @@ Low M.[X]
 # 0x051B
 Special[X]
 
+# 0x0565
+High magic mastery level.[X]
+
+# 0x0566
+Special weapon mastery level.[X]
+
+# 0x0567
+Low magic mastery level.[X]
+
 ## PlaceholderText
 Placeholder.[A][X]

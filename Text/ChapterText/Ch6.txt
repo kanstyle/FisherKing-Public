@@ -7,7 +7,7 @@ Hero escapes
 [X]
 
 ## Ch6ObjectiveLong ^
-Escape to the southeast
+Escape to the southeast[N]
 within the time limit.
 [X]
 

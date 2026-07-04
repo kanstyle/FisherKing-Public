@@ -213,6 +213,11 @@ BeginningScene:
 	ASMC ForceHeroMale|1
 	SetFlag(BleedoutFlag)
 	
+	CHECK_EXISTS Pigeon
+	BNE 0x99 0xC 0x0
+		SetFlag(0x24)
+	LABEL 0x99
+	
 	SetBackgroundSlow(Town_Gate)
 	BROWNBOXTEXT Ch3CityGatesBrownBox [8,8]
 	Text(Ch3StartGates)
@@ -294,7 +299,7 @@ BeginningScene:
 	
 	Music(FFTAnxiety)
 		//brother event
-	CHECK_ALIVE Brother
+	CHECK_EXISTS Brother
 	BEQ 1 0x0 0xC
 		PreventSkippingAllowB
 		SetBackgroundSlow(Inn)
@@ -319,7 +324,7 @@ BeginningScene:
 				GOTO 0x2
 			LABEL 0x3
 				AllowSkipping
-				CHECK_ALIVE Pigeon
+				CHECK_EXISTS Pigeon
 				BNE 0x11 0x0 0xC
 					Text(Ch3StartBrotherThiefDealNoPigeon)
 				GOTO 0x12

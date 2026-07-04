@@ -72,6 +72,7 @@ ALIGN 4
 
 AssassinSkillList:
 BYTE 255 StealID
+BYTE 255 LocktouchID
 BYTE 1 LethalityID
 BYTE 00 00
 ALIGN 4

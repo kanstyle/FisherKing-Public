@@ -7,10 +7,15 @@ POIN MenuBannerGfx
 
 
 
+/*ORG 0xA07AF8
+#incbin "SaveMenuNewDark.pal"*/
+/*ORG 0xA07AD8
+#incbin "SaveMenuNew.pal"*/
+
 ORG 0xA07AF8
-#incbin "SaveMenuNewDark.pal"
+#incbin "SaveMenuDark.png.pal.dmp"
 ORG 0xA07AD8
-#incbin "SaveMenuNew.pal"
+#incbin "SaveMenuDark.png.pal.dmp"
 
 ORG 0xA07B18
 #incbin "SaveMenu.png.pal.dmp"
