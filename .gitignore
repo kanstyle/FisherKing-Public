@@ -70,20 +70,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# Claude
-.claude/
-.mcp.json
-*.skill
-CLAUDE.md
-
 # FE8 base ROM folder
 fireemblem8u-master/
 
 FEBuilderGBA-master/
 patch2/
-
-# Tools
-sprite_sheet.py
-
-# Misc
-saves/
