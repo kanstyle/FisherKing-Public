@@ -2,6 +2,8 @@ StartEventRoutine:
 	SetFlag(BleedoutFlag)
 	ASMC ZeroInClearEffect|1
 	ASMC BreezeChapterRepair|1
+	SVAL 1 Loneliness //repair loneliness
+	ASMC RepairSingleItem|1
 	NoFade
 	ENDA
 

@@ -83,6 +83,10 @@
 
 #define CityStreetMapID 0x32
 
+#define Ch8MapID 0x35
+#define Ch8MapChangesID 0x36
+#define Ch8EventsID 0x37
+
 //0x24
 
 //TILESET IDs (START FROM 0x88 when replacing stuff)

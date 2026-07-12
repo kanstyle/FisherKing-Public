@@ -51,7 +51,8 @@ adding yourself!
 - Nuramon: Villager battle animation
 - Der: Bandana Archer battle animation
 - Dominus Vobiscum: Noble map sprite
-- Flasuban: Sword peg anim, village v2 tileset
+- Flasuban: Sword peg anim, village v2 tileset, super village tileset
+- N426: Village v2 tileset, super village tileset
 - epicer: Lance Bonewalker map sprite, class card
 - Snerdels: Axe Bonewalker map sprite
 - SALVAGED: Monoweapon cav map sprites, monoweapon pal class cards

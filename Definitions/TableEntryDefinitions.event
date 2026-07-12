@@ -45,6 +45,7 @@
 #define RecruiterMug 0x46
 #define LowMageManMug 0x47
 #define LowMageWomanMug 0x48
+#define EagleYoungMug 0x49
 
 #define AxeBoneCard 0xAD
 #define LanceBoneCard 0xAE

@@ -56,6 +56,14 @@ str r1, [r6, #0x0C]
 	mov r0, r6 
 	blh 0x8028130 @ ShowUnitSMS
 
+	@ this is a skill effect (Sacrifice/ArdentSacrifice/ReciprocalAid/DrawBack/
+	@ Genderswap), not real combat -- mark it as such so
+	@ GetBattleUnitUpdatedWeaponExp doesn't grant WEXP off of stale
+	@ canCounter/weaponAttributes left over from this unit's last real fight
+	ldr r0, =0x0203A958 @ActionData
+	mov r1, #0x1A    @ UNIT_ACTION_USE_ITEM
+	strb r1, [r0, #0x11]
+
 	@回復やダメージの結果をRAMUnitに書き戻して確定させます
 	mov r0, r5       @Arg1: Unit
 	mov r1, r6       @Arg2: 戦闘アニメで右側.CopyUnit

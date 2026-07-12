@@ -138,6 +138,9 @@ Low M.[X]
 # 0x051B
 Special[X]
 
+# 0x0558
+A special effect is active.[X]
+
 # 0x0565
 High magic mastery level.[X]
 

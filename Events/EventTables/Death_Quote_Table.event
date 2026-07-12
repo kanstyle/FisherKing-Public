@@ -55,6 +55,7 @@ ENDA
 ALIGN 4
 HeroDeathQuoteEvent:
 Text(HeroDQ)
+GameOver
 NoFade
 ENDA
 

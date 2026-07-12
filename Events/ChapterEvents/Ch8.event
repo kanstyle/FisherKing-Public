@@ -1,0 +1,111 @@
+EventPointerTable(Ch8EventsID, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	TurnEventEnemy(0x0,BleedoutChapterTurnEvent,1,255)
+	TurnEventPlayer(0x0,HeroGenderFlagTurnEvent,1,255)
+	TurnEventPlayer(0x0,Turn1Routine,1)
+	END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+	END_MAIN
+
+MiscBasedEvents:
+	CauseGameOverIfLordDies
+	AFEV BleedoutFlag BleedoutChapterAlwaysEvent 0x0
+	END_MAIN
+
+LocationBasedEvents:
+	END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	UNIT Dragon Veteran 0x40 Level(10,Ally,False)     [16,10] 0b 0x0 0x0 0x0 [IronLance, SteelBlade] [0x0,0x0,0x0,0x0]
+	UNIT
+
+NPCUnits:
+	UNIT Ch7LowMage LowMage 0x40 Level(9,NPC,True)     [22,14] 0b 0x0 0x0 0x0 [Pain] BossAI
+	UNIT Ch7Wise LowMage 0x40 Level(12,NPC,False)     [11,15] 0b 0x0 0x0 0x0 [Exploitation] BossAI
+	UNIT Ch7LowMage LowMage 0x40 Level(9,NPC,True)     [2,13] 0b 0x0 0x0 0x0 [Pain] BossAI
+	UNIT
+
+EnemyUnits:
+	//below starting position
+	UNIT 0x81 Soldier 0x40 Level(10,Enemy,True)     [22,13] 0b 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT 0x81 HighMage 0x40 Level(10,Enemy,True)     [21,13] 0b 0x0 0x0 0x0 [Fire] AttackInRangeAI
+	UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	FlagNotSet(PigeonLeftFlag,0x0)
+		SetFlag(Ch7PigeonTalkFlag)
+	LABEL 0x0
+	CALL StartEventRoutine
+	SetBackground(Heart)
+	STAL 45
+	CenterTextbox(Ch8OpeningNarration)
+	FADI 4
+	CLEAN
+	STAL 120
+	MUSCMID ForbiddenForestID
+	SetBackground(ButterflyInverted)
+	STAL 60
+	CenterTextbox(Ch8OpeningNarrationPillow)
+	STAL 45
+	FADI 4
+	CLEAN
+	MUSCSLOW 0x777F
+	STAL 60
+	SetBackground(Castle_Hall)
+	MUSCMID OmenID
+	BROWNBOXTEXT Ch8AcademyBrownBox [8,8]
+	Text(Ch8IntroConvo)
+	FADI 4
+	CLEAN
+	
+	LOAD1 0x1 EnemyUnits
+	GotoPrepScreen
+	ENDA
+
+EndingScene:
+	FADI 4
+	CALL EndEventRoutine
+	DoAllThree
+		
+	MNC2 Ch0
+	NoFade
+	ENDA

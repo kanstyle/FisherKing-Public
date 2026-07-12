@@ -352,3 +352,11 @@ LowMageWomanMugData: // LL
 #incbin "dmp/LowMageWoman_palette.dmp"
 #incbin "dmp/LowMageWoman_minimug.dmp"
 setMugEntry(LowMageWomanMug, LowMageWomanMugData, 3, 6, 3, 4)
+
+ALIGN 16
+EagleYoungMugData: // LL
+#incbin "dmp/EagleYoung_mug.dmp"
+#incbin "dmp/EagleYoung_frames.dmp"
+#incbin "dmp/EagleYoung_palette.dmp"
+#incbin "dmp/EagleYoung_minimug.dmp"
+setMugEntry(EagleYoungMug, EagleYoungMugData, 3, 5, 4, 3)

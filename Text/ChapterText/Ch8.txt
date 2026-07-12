@@ -1,16 +1,220 @@
 ## Ch8Title
-Ch. 8: Hero and Prince, pt. II[X]
+Ch. 8: Dragon[X]
+
+## Ch8Objective
+Defeat Skull
+[X]
+
+## Ch8ObjectiveLong
+Defeat Skull.
+[X]
+
+## Ch8Objective2 ^
+Talk to Prisoner
+[X]
+
+## Ch8ObjectiveLong2 ^
+Reach the prisoner[N]
+in time.[X]
 
 ## Ch8OpeningNarration
-"Are you crying?"[AN]
-"..."[AN]
-"Hero."[AN]
-"S-so what?[4][4] Dragon's my best friend.[N]
+[oq]Are you crying?"[AN]
+[oq]..."[AN]
+[oq]Hero."[AN]
+[oq]S-so what?[4][4] Dragon's my best friend.[N]
 She's l-like my sister.[4][4] She...[4][4][N]
 she trusts me.[4][4] I-I'm supposed to[N]
 look out for her."[AN]
-"Pull it together before we reach the[N]
+[oq]Pull it together before we reach the[N]
 low mage district.[4][4] They won't trade[N]
 favors with someone who looks weak."[AN]
-"Sh-shut up, man.[4][4] I don't care."[A]
+[oq]Sh-shut up, man.[4][4] I don't care."[A]
+[X]
+
+## Ch8OpeningNarrationPillow
+Hi, Dragon.[4][4] It's me.[4][4] Pillow.[4][4][AN]
+I don't know if I ever told you.[4][4][AN]
+When I was young, I used to be so[N]
+angry.[4][4] I joined up with my first[N]
+mercenary troupe when I was fourteen.[AN]
+I thought I was bound to die soon,[N]
+so...[4][4] you know.[4][4]
+[oq]Oh, why bother introducing myself?[4][4][N]
+They don't need to know my name."[AN]
+[oq]Oh, why bother buying new clothes?[N][4][4]
+I won't need them next year."[AN]
+But every year, I didn't die.[AN]
+Honestly, it was annoying.[4][4] It made[N]
+me feel stupid, putting off all those[N]
+things like I did.[A] I wished I knew when[N]
+it would happen, so I could save up my[N]
+money and splurge on some nice food the[N]
+night before.[AN]
+But then, on my thirtieth birthday,[N]
+I realized...[4][4] maybe I wasn't going to die[N]
+for a long time.[A] I finally decided that...[N][4][4]
+I wanted to...[4][4] try to be happier.[AN]
+I started buying myself more books,[N]
+and nicer pillows, and talking more.[AN]
+And then I met you.[AN]
+It was like the world was proud of me.[4][4][N]
+Saying, [oq]There! You see? Keep going,[N]
+just like that! It's not too late!"[AN]
+You know?[AN]
+...[AN]
+Dragon...[A]
+[X]
+
+## Ch8AcademyBrownBox ^
+Royal Academy
+[X]
+
+## Ch8IntroConvo
+[mr][LoadDragon]
+[tmm]
+(Hm...?[4][4] Oh, the academy.[N]
+Right.[4][4] I was...)[A][tmm]
+
+[ml][LoadYoungPrince][ts]
+Hello, Dragon![N]
+It's good to see you again.[A]
+
+[mr][ts]
+Hi, Prince.[N]
+Yeah, I, uh...[4][4] came to visit.[A]
+
+[ml][ts]
+So you're a student, then?[AN]
+Will you be joining us on our[N]
+exercise this afternoon?[A]
+
+[mr][ts]
+Yeah.[4][4] [ce]Guess I have to,[N]
+if I'm a student.[A][oe]
+
+[ml][mvl][fl][LoadEagleYoung][ts]
+There you are, Dragon![4][4] Oh, I like[N]
+your bun.[4][4] Did you braid it yourself?[A]
+
+[mr]
+Thanks.[4][4] When have I ever[N]
+not done it myself?[A]
+
+[fl]
+Well, you're looking very pretty.[4][4][N]
+Color me a little jealous...[A]
+
+[mr][mvr][fr][LoadYoungTeacher][ts]
+Dragon![4][4] Eagle![4][4] Where were[N]
+you during morning lessons?[A]
+
+[r]
+I was, uh...[4][4] doing...[4][4] something...[A]
+
+[fl]
+Apologies, Teacher.[4][4] I was meeting[N]
+with a suitor.[4][4] Father arranged it.[A]
+
+[fr]
+I see.[4][4][N]
+Is that what kept you as well, Dragon?[A]
+
+[r]
+Me?[4][4] ...No.[4][4] I don't get any suitors.[A]
+
+[fr]
+Oh, that's right.[4][4] Because of...[A]
+
+[l]
+Because of...[A]
+
+[r][ce][mvr]
+Shut up![4][4][4][4] [oe]I never even told you about that![N]
+It's none of your damn business![AN]
+And I don't need suitors.[4][4][N]
+I've got Pillow now.[A]
+
+[fr]
+A low mage, isn't she?[A]
+
+[r]
+So what?[4][4] Got a problem?[A]
+
+[l]
+Oh, how nice![4][4] Are the two of you to[N]
+marry, then?[4][4] Like Eagle and myself?[A]
+
+[r]
+I...[4][4] I don't know.[A]
+
+[fl]
+Pillow would look wonderful in a wedding[N]
+dress, wouldn't she?[AN]
+Would you dress as a man or a woman for[N]
+the ceremony, do you think?[A]
+
+[fr]
+Are you embarrassed about being...[A]
+
+[r]
+No![4][4] I'm a woman![4][4] I don't know![N]
+I don't know anything![AN]
+Stop asking me all this shit![A] 
+[X]
+
+## Ch8IntroConvo2
+[r][LoadDragon]
+
+[r]
+Huh?[4][4] Where are we?[AN]
+Oh, the field exercise...[A]
+
+[l][LoadYoungPrince]
+[tmm][ce](Deep breaths...[4][4] deep breaths...)[AN][oe]
+Eagle?[A]
+
+[fl][LoadEagleYoung]
+Hm?[A]
+
+[l]
+I-I'd just like to say that[N]
+I'm a bit tired.[AN]
+And thus my sword form might[N]
+be a little off.[AN]
+N-not to make excuses, I mean![AN]
+[ce]I just...[4][4] wouldn't want to put you[N]
+in danger by overstating my ability.[A][oe]
+
+[fl]
+No, no, I understand completely.[AN]
+I'm afraid that I, too, am a little[N]
+sleep-deprived,[A] and thus I may require[N]
+some additional support...[A]
+
+[l][mvl]
+Ah![4][4] Really?![4][4] Forget I[N]
+said anything, then![A]
+
+[r][ce]
+[tmm](These two...)[A][tmm][oe]
+
+[fr][LoadYoungTeacher][ce]
+Unfortunately, I don't factor cutesy[N]
+antics into my grading, milord and lady.[A][oe]
+
+[fl][ce][ts]
+Ah, well...[4][4] It was worth a try.[A][oe]
+
+[l]
+Y-yes, my apologies![4][4][N]
+All an act, you see.[A]
+
+[fr]
+Dragon, you're in the lead.[A]
+
+[r]
+Wait, who are we after?[AN][tmm]
+(Oh, wasn't it some...[4][4] thugs?[N][ce]
+Terrorists...?[4][4] No, wait...)[AN][oe]
+(I guess it doesn't matter.)[A]
 [X]

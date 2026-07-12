@@ -211,6 +211,136 @@ No.[4][4] Take this back.[N]
 You're gonna eat people food.[A]
 [X]
 
+## Ch3BaseHeroDragonPillowName
+Hero/Dragon/Pillow
+[X]
+
+## Ch3BaseHeroDragonPillow
+[mr][LoadForceHeroF]
+[l][LoadDragon]
+[fl][LoadPillow]
+
+[mr]
+So, uh...[A]
+
+[fl]
+Hm?[A]
+
+[mr][ts]
+Party dress, huh?[A]
+
+[l]
+Yeah?[A]
+
+[mr]
+Yeah![A]
+
+[fl]
+Excited?[A]
+
+[mr]
+Duh![4][4] I finally get to ditch these[N]
+dirty old rags for a night.[AN]
+[ce]Show off my natural beauty, and stuff.[A][oe]
+
+[fl][ts]
+Hmm...[4][4] we always do seem to[N]
+accumulate a lot of dirt.[A]
+
+[l][ts]
+Only 'cause I'm always knocking[N]
+her on her ass when we spar.[A]
+
+[mr][ts]
+Huh?[A]
+
+[l]
+What?[A]
+
+[mr]
+Isn't Pillow always on her ass? Since...[N][4][4]
+y'know.[4][4] I don't wanna be insensitive, but...[A]
+
+[fl][ts]
+It's okay.[N][ce]
+I know how jealous you leg-walkers are...[A][oe]
+
+[l][ts]
+I wasn't talking about Pillow, idiot![4][4][N]
+You think I'm beating her up?[A]
+
+[mr]
+Wh--[4][4] no! I figured it was,[N]
+like, a euphemism, or something![AN]
+Like, you two roll around in[N]
+the dirt when you--[A]
+
+[l][ce]
+We gotta kill him, Pillow.[A][oe]
+
+[fl][ce]
+True...[AN][ts]
+Then we buy a new dress for me, instead.[A][oe]
+
+[mr][ts]
+You said [oq]knocking 'her' on 'her' ass".[A]
+
+[l]
+Yeah?[A]
+
+[mr]
+But then you just said [oq]him"![A]
+
+[l]
+...What?[4][4] What do you--[A]
+
+[mr]
+Are you talking about me?[A]
+
+[l][mvl]
+Who the hell else?![A]
+
+[mr]
+You can't call me [oq]her" and "him"![4][4][N]
+It's confusing.[A]
+
+[l]
+Your fault for switching genders all the time.[4][4][N]
+What am I supposed to call you?[A]
+
+[mr]
+Uh...[4][4][4][4] hmm.[4][4] I mean, I'm still just Hero.[4][4][N]
+I don't feel a whole lot different.[A]
+
+[fl]
+So, you're a man, then?[N]
+Even when you're a woman...?[A]
+
+[mr]
+I guess.[4][4] I dunno.[4][4][N]
+I'd have to think about it.[A]
+
+[l]
+Hmm.[A]
+
+[mr][ts]
+Oh, wait.[4][4] Maybe if I get to wear a really[N]
+expensive, fancy dress, I'll figure it out.[A]
+
+[l]
+Heh.[4][4] Yeah.[4][4][ts][N]
+I mean, that's what did it for me.[A]
+
+[mr]
+Wait, what?[A]
+
+[fl][ts]
+Awww...[A]
+
+[l][ts][ce]
+Never mind.[A]
+[X]
+
 ## Ch3CityGatesBrownBox
 City Gates[X]
 

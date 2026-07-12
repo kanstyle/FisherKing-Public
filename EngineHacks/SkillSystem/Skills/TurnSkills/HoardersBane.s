@@ -527,6 +527,13 @@ bne ExitWait
 	@blh 0x08019108       @GetUnitStruct	{J}
 	mov r5, r0	@Unit
 
+	@ this is a Vulnerary heal, not real combat -- mark it as such so
+	@ GetBattleUnitUpdatedWeaponExp doesn't grant WEXP off of stale
+	@ canCounter/weaponAttributes left over from this unit's last real fight
+	ldr r0, =ActionData
+	mov r1, #0x1A    @ UNIT_ACTION_USE_ITEM
+	strb r1, [r0, #0x11]
+
 	@回復やダメージの結果をRAMUnitに書き戻して確定させます
 	mov r0, r5       @Arg1: Unit
 	mov r1, r6       @Arg2: 戦闘アニメで右側.CopyUnit

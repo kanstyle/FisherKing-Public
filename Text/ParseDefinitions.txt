@@ -7,6 +7,7 @@
 [YN] = [Yes]
 [NY] = [No]
 [ToggleInvert] = [ToggleColorInvert]
+[red] = [ToggleRed]
 [Red] = [ToggleRed]
 [tr] = [ToggleRed]
 [Blink] = [CloseEyes][.][OpenEyes]
@@ -132,6 +133,7 @@
 [LoadRecruiter] = [LoadFace][0x46][0x1]
 [LoadLowMageMan] = [LoadFace][0x47][0x1]
 [LoadLowMageWoman] = [LoadFace][0x48][0x1]
+[LoadEagleYoung] = [LoadFace][0x49][0x1]
 
 [LoadBandit] = [LoadFace][0x4C][0x1]
 [LoadArmoredBandit] = [LoadFace][0x4D][0x1]
@@ -155,9 +157,9 @@
 [tmm] = [ToggleMouthMove]
 [ts] = [ToggleSmile]
 [css] = [CloseSpeechSlow]
-[ce] = [CloseEyes][CloseEyes][CloseEyes]
-[oe] = [OpenEyes][OpenEyes][OpenEyes]
-[hce] = [HalfCloseEyes][HalfCloseEyes][HalfCloseEyes]
+[ce] = [CloseEyes][.][CloseEyes][.][CloseEyes][.][CloseEyes]
+[oe] = [OpenEyes][.][OpenEyes][.][OpenEyes][.][OpenEyes]
+[hce] = [HalfCloseEyes][.][HalfCloseEyes][.][HalfCloseEyes][.][HalfCloseEyes]
 
 [period] = [0xDE][0x82]
 [dquote] = [0xDE][0x83]
@@ -183,7 +185,7 @@
 [sword] = [0xDE][0x97]
 [colon] = [0xDE][0x98]
 [comma] = [0xDE][0x9B]
-[star] = [0xBD]
+[star] = [0xDE][0xBD]
 
 [zero] = [0xe2][0x81][0xb0]
 [one] = [0xc2][0xb9]

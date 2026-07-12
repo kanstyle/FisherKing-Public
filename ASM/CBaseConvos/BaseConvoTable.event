@@ -46,11 +46,17 @@
 			text(Ch3BaseHunter)
 			eventID(0x25)
 		Entry
+			name(Ch3BaseHeroDragonPillowName)
+			music(WildFieldsID)
+			bg(Town_Day)
+			text(Ch3BaseHeroDragonPillow)
+			eventID(0x24)
+		Entry
 			name(Ch3BasePigeonBrotherName)
 			music(WildFieldsID)
 			bg(Town_Day)
 			text(Ch3BasePigeonBrother)
-			eventID(0x24)
+			eventID(0x23)
 	Chapter(Ch5)
 		Entry
 			name(Ch5BaseBunnyPillowName)
@@ -71,12 +77,6 @@
 			bg(Town_Day)
 			text(Ch6BasePillowDragon)
 			eventID(0x25)
-		Entry
-			name(Ch6BasePigeonBrotherName)
-			music(WildFieldsID)
-			bg(Town_Day)
-			text(Ch6BasePigeonBrother)
-			eventID(0x24)
 	Chapter(Ch7)
 		Entry
 			name(Ch7BaseStormGaleBabyName)

@@ -20,13 +20,12 @@ static int GetEffectiveLevel(struct Unit* unit) {
 // GetBattleUnitExpGain
 //
 // Formula:
-//   base  = 10 (damage dealt, no kill)
-//          30 (kill)
-//          80 (boss kill = 30 + 50 bonus)
-//   diff  = target_eff_level - actor_eff_level
-//   exp   = floor(base * (1 + 0.20 * diff))
-//         = base + base * diff / 5
-//   clamp to [1, 100]; 0 if no damage was dealt.
+//   base   = 30
+//   diff   = target_eff_level - actor_eff_level
+//   result = base + base * diff / 4   (+/-25% per level of diff; diff=0 -> base)
+//   If kill:      result = max(result, 6); boss kill adds a flat 40; clamp to 100.
+//   If not kill:  result = result / 3, clamped to [3, 10].
+//   0 if no damage was dealt.
 // ============================================================
 int GetBattleUnitExpGain(struct BattleUnit* actor, struct BattleUnit* target) {
     int base, levelDiff, result;
@@ -41,23 +40,24 @@ int GetBattleUnitExpGain(struct BattleUnit* actor, struct BattleUnit* target) {
     if (!actor->nonZeroDamage)
         return 0;
 
-    // Base EXP from outcome
-    if (target->unit.curHP == 0) {
-        // Kill
-        base = 30;
-        if (UNIT_CATTRIBUTES(&target->unit) & CA_BOSS)
-            base += 50; // Boss kill bonus
-    } else {
-        // Damage dealt, no kill
-        base = 10;
-    }
+    base = 30;
 
-    // Level scaling: +20% per level enemy > actor, -20% per level actor > enemy
+    // Level scaling: +/-25% per level of difference; diff = 0 leaves base unchanged.
     levelDiff = GetEffectiveLevel(&target->unit) - GetEffectiveLevel(&actor->unit);
-    result = base + base * levelDiff / 5;
+    result = base + base * levelDiff / 4;
 
-    if (result < 1)   result = 1;
-    if (result > 100) result = 100;
+    if (target->unit.curHP == 0) {
+        // Kill: floor of 6, boss kill adds a flat 40, then clamp to 100.
+        if (result < 6) result = 6;
+        if (UNIT_CATTRIBUTES(&target->unit) & CA_BOSS)
+            result += 40;
+        if (result > 100) result = 100;
+    } else {
+        // Not a kill: scaled down, clamped to [3, 10].
+        result /= 3;
+        if (result < 3)  result = 3;
+        if (result > 10) result = 10;
+    }
 
     return result;
 }
@@ -94,6 +94,18 @@ int GetBattleUnitUpdatedWeaponExp(struct BattleUnit* bu) {
 
     // Outside arena: require weapon/staff that tracks WEXP, block locked/magic weapons
     if (!(gBattleStats.config & BATTLE_CONFIG_ARENA)) {
+        // Guard against stale gBattleActor/gBattleTarget data: some non-combat
+        // skill effects (HoardersBane's end-of-turn Vulnerary heal, the
+        // SacrificeDrawBack family, Genderswap's heal-like effect) reuse this
+        // same BattleUnit struct for a combat-style animation and write it
+        // back through UpdateUnitFromBattle without ever calling
+        // SetBattleUnitWeapon, so canCounter/weaponAttributes can still be
+        // holding leftover values from the unit's last real fight. Only grant
+        // WEXP if the current action is genuinely a fight or a staff use.
+        if (gActionData.unitActionType != UNIT_ACTION_COMBAT &&
+            gActionData.unitActionType != UNIT_ACTION_STAFF)
+            return -1;
+
         if (!bu->canCounter)
             return -1;
 
